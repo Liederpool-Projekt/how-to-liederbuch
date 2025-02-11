@@ -1,27 +1,67 @@
 project:
-  type: book
+  type: website
 
-book:
+website:
   title: "How To Liederbuch"
-  author: ""
-  date-format: DD.MM.YYYY
-  date: "2/10/2025"
-  search: true
-  chapters:
-    - index.qmd
-    - vorbereitung.qmd
-    - part: lilypond_einrichten.qmd
-    - part: frescobaldi_einrichten.qmd
-    - part: git_einrichten.qmd
-    - lifehacks.qmd
+  #author: ""
+  #image: ""
+  #favicon: ""
+  #site-url: ""
+  page-navigation: true
+  bread-crumbs: true
+  search:
+    show-item-context: true
+  navbar: 
+    background: light
+    #logo: ""
+    title: "How To Liederbuch"
+    left:
+      - text: "Moin"
+        href: index.qmd
+      - text: "Einführung"
+        href: vorbereitung.qmd
+      - text: "Doku"
+        href: doku.qmd
+  sidebar: 
+    - id: vorbereitung
+      title: "Vorbereitung"
+      style: floating
+      collapse-level: 2
+      align: left
+      contents:
+        - section: "Vorbereitung"
+          href: vorbereitung.qmd
+          contents:
+            - lilypond_einrichten.qmd
+            - frescobaldi_einrichten.qmd
+            - git_einrichten.qmd
+            
+    - id: doku
+      title: "Doku"
+      style: floating
+      collapse-level: 2
+      align: left
+      contents:
+        - section: "Doku"
+          href: doku.qmd
+          contents:
+            - lifehacks.qmd
 
 bibliography: references.bib
 
 format:
   html:
-    theme: cosmo
-  pdf:
-    documentclass: scrreprt
+    toc: true
+    theme: 
+      light: cosmo
+    code-copy: true
+    code-overflow: wrap
+    grid:
+      sidebar-width: 250px
+      body-width: 900px
+      margin-width: 300px
+
+freeze: true
 
 editor: visual
 

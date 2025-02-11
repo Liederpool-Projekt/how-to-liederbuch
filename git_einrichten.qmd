@@ -37,7 +37,7 @@ Oder man nutzt es in der Konsole. Dann braucht man die Git Shell: [Link](https:/
 
 Da du Git vermutlich zum ersten Mal nutzt, brauchst du zuerst einen SSH-Key. Der SSH-Key ist dafür da, dass das Remote-Repo weiß, dass dein lokales Repo auch zu dir gehört. Sonst könnte ja jeder, der den SSH-Link hat (siehe dazu @fig-sshkey), Zugriff aufs Repo haben. Er ist also ein Identifikationsmittel für deinen Account. Dafür hinterlegst du den *public key* in deinem Git-Account und sagst deinem Git-Programm (SmartGit, SourceTree, TortoiseGit), wo deine Schlüssel-Datei liegt. Diese Datei ist auch nochmal extra passwortgeschützt. Sie sollte auf keinen Fall gelöscht oder verschoben werden. Die lange Erklärung kannst du [hier](https://www.rrz.uni-hamburg.de/services/hpc/grundwissen/ssh-keys.html) nachlesen.
 
-![Das rot markierte ist ein SSH-Link.](https://anupdhakal.com/static/1ea06fda1c5fa35c6f512e321d5c8923/8b936/github-repo-ssh-link-example.png){#fig-sshkey alt="Das ist der SSH-Link."}
+![Das ist der SSH-Link.](https://anupdhakal.com/static/1ea06fda1c5fa35c6f512e321d5c8923/8b936/github-repo-ssh-link-example.png){#fig-sshkey}
 
 ### SSH-Key erstellen
 
