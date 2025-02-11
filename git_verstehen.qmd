@@ -1,0 +1,138 @@
+# Was ist eigentlich Git?
+
+Git ist ein Versionierungssystem, welches frei als Open-Source-Software zur Verfügung gestellt wird. Git wird für die **Versionskontrolle** (stetige Protokollierung von Änderungen) von Dateien eingesetzt.
+
+Vor allem im Programmierbereich dient Git dazu, die eigenen Änderungen zu überwachen, sie rückgängig zu machen. Die wesentliche Nutzung findet in sogenannten „Repositories“ (Repos) statt. Das ist quasi ein Ordner, in dem sich Dateien und andere Ordner befinden, quasi eine Art „Arbeitsordner“ oder „Arbeitsverzeichnis“. Dabei gibt es verschiedene Orte, an dem dieser Arbeitsordner liegt.
+
+1.  Das **Remote Repo** liegt auf einem Git-Server („Remote“).
+2.  Das **Local Repo** ist das Abbild einer Version des Remote Repos.
+3.  Die **Working Copy** (in @fig-git „User“) ist die lokale Bearbeitung des Local Repos.
+
+![](images/git.png){#fig-git}
+
+Dadurch ergeben sich am Repo für Bearbeiter\*innen folgende Möglichkeiten:
+
+-   Die eigene Arbeit kann einfach wieder in die zentrale Basis integriert werden.
+
+-   Es kann zeitgleich weiterentwickelt werden, z.B. jeder an verschiedenen Features.
+
+-   Die Versionierung verhindert, dass bereits getätigte Arbeiten verloren gehen bzw. überschrieben werden.
+
+-   Bei Bedarf kann zu früheren Versionen zurückgekehrt werden oder simultan an verschiedenen Versionen gearbeitet werden (auch „Branches“ genannt).
+
+## Spielerisch Git lernen
+
+Hier gibt es eine tolle Spielwiese zum Ausprobieren: <https://learngitbranching.js.org/>. Sinnvoll für uns ist mindestens die Einführung.
+
+## Einrichten des Repos
+
+### Nutzt du Git zum ersten Mal?
+
+Wenn ja, dann solltest du dir erst einen SSH-Key besorgen.
+
+#### Was ist das?
+
+Kurze Erklärung: Der SSH-Key ist dafür da, dass das Remote-Repo weiß, dass dein lokales Repo auch zu dir gehört. Sonst könnte ja jeder, der den SSH-Link hat, Zugriff aufs Repo haben. Er ist also ein Identifikationsmittel für deinen Account. Dafür hinterlegst du den *public key* in deinem Git-Account und sagst deinem Git-Programm (SmartGit, SourceTree, TortoiseGit), wo deine Schlüssel-Datei liegt. Diese Datei ist auch nochmal extra passwortgeschützt. Sie sollte auf keinen Fall gelöscht oder verschoben werden. Die lange Erklärung kannst du [hier](https://www.rrz.uni-hamburg.de/services/hpc/grundwissen/ssh-keys.html) nachlesen.
+
+#### Was musst du machen?
+
+Du musst dir einen SSH-Key erstellen und das **Passwort, *public key* und *private key* und Schlüsseldatei** speichern/aufbewahren. Eine Anleitung findest du [hier](https://www.heise.de/tipps-tricks/SSH-Key-erstellen-so-geht-s-4400280.html?hg=1&hgi=0&hgf=false).
+
+Anschließend hinterlegst du den *public key* in deinem Git-Account (unter Einstellungen -\> SSH- / GPG-Schlüssel -\> Schlüssel hinzufügen).
+
+Beim Klonen eines Liederbuchs wirst du dann irgendwann nach deiner Schlüsseldatei gefragt (für die du dann auch das Passwort brauchst).
+
+Klingt alles sehr kompliziert - ist es auch, **aber:** Du musst das **nur einmal** machen und dann funktioniert es einfach.
+
+### Ein bestehendes Liederbuch-Repo klonen
+
+1.  Remote-Repo klonen Das sieht je nach GUI verschieden aus. Irgendwo gibt es die Option `Clone` und da kann dann der Link zum Remote-Repo eingeben werden. ![](https://anupdhakal.com/static/1ea06fda1c5fa35c6f512e321d5c8923/8b936/github-repo-ssh-link-example.png) Wichtig ist bei dem Prozess: Submodule müssen inkludiert werden. Irgendwo kann man dann den Speicherort des lokalen Repos festlegen. Es empfiehlt sich, einen Ordner zu haben, wo alle Git-Repos drin sind. Dies ist aber nicht notwendig für irgendetwas.
+2.  Fertig!
+
+### Ein neues Liederbuch-Repo mit dem Vorlagen-Repo erstellen
+
+1.  Du gehst auf: [boernel/lilypond-vorlagen: Vorlagen zur Erstellung eines Liederbuches mit den Lilypondscripten. - lilypond-vorlagen - Tuxgit](https://git.zahlenlabyrinth.de/boernel/lilypond-vorlagen)
+
+2.  Du klickst auf `Dieses Template verwenden`
+
+3.  Du folgst den Schritten (Besitzer\*innen, Name, ... festlegen) Wichtig: Bei Template muss `lilypond-vorlagen` ausgewählt sein
+
+4.  Dann kannst du einfach weitermachen wie bei "Ein bestehendes Liederbuch-Repo klonen"
+
+## Grundbegriffe im Git-Alltag
+
+*alphabetisch sortiert*
+
+### Branches
+
+Beim Einsatz von Git dienen Branches (engl.: to branch - sich verzweigen) dazu, um einen separaten Arbeitszweig zu erstellen. Dieser kann dann auch als neuer Kontext gesehen werden, in dem gearbeitet wird. So kann z.B. die Programmierung eines Sicherheits-Patches in einem eigenen Branch erfolgen (im Kontext des Patches), der bei Fertigstellung und nach dem Testen zurück in den Master-Zweig eingearbeitet wird. Das Wiedereinführen funktioniert bei uns über einen Pull Request.
+
+Befehl: `git branch NAME`
+
+### Checkout
+
+Das Wechseln von einem Branch in einen anderen Branch.
+
+Befehl: `git checkout BRANCH`
+
+### Commit
+
+Ein Commit in einem Git-Repository speichert eine Abbildung aller Dateien in deinem Projektverzeichnis. Es ist wie ein riesiges Kopieren und Einfügen, nur besser.
+
+Allerdings will Git die Commits so schlank wie möglich halten, also kopiert es nicht einfach stur das ganze Verzeichnis jedes Mal wenn du committest. Es kann (wenn möglich) Commits als Menge von Änderungen zusammenpacken, von einer Version des Repositorys zur nächsten.
+
+Außerdem führt Git ein Protokoll darüber, welche Commits wann gemacht wurden, und welcher auf welchen folgt. Dieses Protokoll zu haben ist eine tolle Sache für jeden, der an einem Projekt arbeitet. Commits sind sehr ressourcenschonend, und zwischen ihnen wechseln geht superschnell!
+
+Befehl: `git commit`
+
+### Fetch
+
+Der Befehl `git fetch` importiert Commits von einem Remote-Repository in das lokale Repo. Dabei werden die Commits des Remote-Repos aber **nicht** ins lokale Repo überführt (wie bei `git pull`). Fetching ist die geeignete Methode, um einzusehen, woran andere gearbeitet haben. Da auf diese Weise importierte Inhalte von Remote-Branches repräsentiert werden, haben sie absolut keinen Effekt auf die lokale Entwicklungsarbeit.
+
+*Alternative Erklärung:* `git fetch` holt Änderungen aus dem Remote-Repository, aber wendet diese nicht auf den lokalen Code an.
+
+### HEAD
+
+`HEAD` ist ein Alias für den Commit, der gerade ausgecheckt ist -- es ist im Prinzip der Commit, an den du deinen nächsten Commit hängst.
+
+`HEAD` zeigt immer auf den neuesten Commit. Die meisten Git-Befehle, die den Baum verändern, fangen damit an, dass sie `HEAD` verschieben.
+
+Normalerweise zeigt `HEAD` auf einen Branch-Namen (z.B. `bugFix`). Wenn du einen Commit machst, wird `bugFix` auf diesen Commit geschoben, und `HEAD` (da es auf `bugFix` zeigt) automatisch auch.
+
+### Merge
+
+Die einfachste Methode, mit der man Branches zusammenführen kann, ist `git merge`. Das Mergen erzeugt in git einen speziellen Commit, der zwei Vorgänger hat. Ein solcher Commit bedeutet im Prinzip "ich möchte alle Arbeit von dem Vorgänger hier und dem dort *und* allen ihren jeweiligen Vorgängern miteinander kombinieren".
+
+Befehl: `git merge`
+
+### Pull
+
+Mit dem pull-Befehl kann man Änderungen aus einem Remote-Repository holen und mit dem lokalen Repository, also den Dateien, an denen man derzeit arbeitet, synchronisieren.
+
+### Push
+
+Mit `git push` können Commits nun von einem lokalen Repository in ein Remote-Repo transferiert werden. Dieser Befehl ist das Gegenstück zu git fetch. Während beim Fetching Commits in lokale Branches importiert werden, exportiert git push Commits in Remote-Branches. Es besteht die Möglichkeit, Änderungen zu überschreiben; entsprechend sorgfältig sollte der Befehl genutzt werden.
+
+### Repository
+
+In ein Repository bzw. einem Repo befinden sich alle Dateien inklusive derer vorangegangenen Versionen. Dadurch stehen stets alle Änderungen zur Verfügung, die von einer Datei ins Repo gespielt wurden und es kann nachvollzogen werden Wer, Wann, welche Änderungen durchgeführt hat. Das besondere an Git ist, dass jede lokale Working Directory eines Users (ein "Klon" - via "git clone") wieder ein vollständiges, eigenes, lokales Repo darstellt. Es existieren somit mehrere Kopien der Repos, der, der einen Klon besitzt, kann daran arbeiten - inklusive kompletter History, auch offline und ohne Abhängigkeit von einem zentralen Server. Die Änderungen aus dem eigenen Repo/der Working Copy können dann auf einen Ruck oder Schritt für Schritt, wenn sie als public angesehen werden, wieder in das Remote-Repo "gepusht" werden (git push).
+
+### Rebase
+
+Der zweite Weg um Inhalte aus verschiedenen Branches zu kombinieren ist`git rebase`. Rebasen nimmt im Prinzip eine Menge von Commits, "kopiert" sie und packt sie auf etwas anderes drauf.
+
+Auch wenn das erst mal komisch klingt, liegt der Vorteil von Rebase darin, dass man es benutzen kann um hübsch lineare Abfolgen von Commits zu erhalten. Das Commit-Protokoll des Repositorys wird durch Rebase eine ganze Ecke einfacher aussehen, weil Merge Commits vermieden werden.
+
+Befehl: `git rebase`
+
+### Submodul
+
+Das `lilypond-song-includes`-Repo wird in der Regel als Submodul genutzt. Das bedeutet, es ist ein eigenes (Remote-)Repository, das in ein anderes (Remote-)Repository eingebunden wird (zum Beispiel dein Liederbuch-Repo).
+
+### Versionierung
+
+Sobald an einer Working Copy gearbeitet wird protokolliert Git alle getätigten Änderungen mit. Mittels commit können die Änderungen zu dem Repository hinzugefügt werden, eine neue Version der Datei(n) befinden sich dann im Repo. Anschließend können verschiedene Versionen miteinander verglichen, Änderungen rückgängig oder zu einer früheren Version zurückgekehrt werden. Die Log-Informationen, die von Git mit aufgezeichnet werden können mit "git log" ausgegeben werden, "git status" listet die noch nicht ins Repo gespielten Änderungen der Working Copy auf.
+
+### Working Directory
+
+## How to Pull-Request

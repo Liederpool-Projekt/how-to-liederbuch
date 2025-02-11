@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.2"
+   width="126.11993mm"
+   height="14.106999mm"
+   viewBox="0 0 71.769204 8.0276618"
+   id="svg216"
+   sodipodi:docname="zusammengesetzte-rhythmen.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs220" />
+  <sodipodi:namedview
+     id="namedview218"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false" />
+  <style
+     type="text/css"
+     id="style2"><![CDATA[
+tspan { white-space: pre; }
+]]></style>
+  <g
+     id="g310">
+    <g
+       transform="translate(21.206701,3.779)"
+       id="g6">
+      <rect
+         x="0"
+         y="-2"
+         width="0.19"
+         height="4"
+         ry="0.0000"
+         fill="currentColor"
+         id="rect4" />
+    </g>
+    <g
+       transform="translate(32.908301,3.779)"
+       id="g10">
+      <rect
+         x="0"
+         y="-2"
+         width="0.19"
+         height="4"
+         ry="0.0000"
+         fill="currentColor"
+         id="rect8" />
+    </g>
+    <g
+       transform="translate(45.795701,3.779)"
+       id="g14">
+      <rect
+         x="0"
+         y="-2"
+         width="0.19"
+         height="4"
+         ry="0.0000"
+         fill="currentColor"
+         id="rect12" />
+    </g>
+    <g
+       transform="translate(55.066301,3.779)"
+       id="g18">
+      <rect
+         x="0"
+         y="-2"
+         width="0.19"
+         height="4"
+         ry="0.0000"
+         fill="currentColor"
+         id="rect16" />
+    </g>
+    <g
+       transform="translate(7.0854351e-7,5.779)"
+       id="g22">
+      <line
+         stroke-linejoin="round"
+         stroke-linecap="round"
+         stroke-width="0.1"
+         stroke="currentColor"
+         x1="0.050000001"
+         y1="0"
+         x2="55.206402"
+         y2="0"
+         id="line20" />
+    </g>
+    <g
+       transform="translate(7.0854351e-7,4.779)"
+       id="g26">
+      <line
+         stroke-linejoin="round"
+         stroke-linecap="round"
+         stroke-width="0.1"
+         stroke="currentColor"
+         x1="0.050000001"
+         y1="0"
+         x2="55.206402"
+         y2="0"
+         id="line24" />
+    </g>
+    <g
+       transform="translate(7.0854351e-7,3.779)"
+       id="g30">
+      <line
+         stroke-linejoin="round"
+         stroke-linecap="round"
+         stroke-width="0.1"
+         stroke="currentColor"
+         x1="0.050000001"
+         y1="0"
+         x2="55.206402"
+         y2="0"
+         id="line28" />
+    </g>
+    <g
+       transform="translate(7.0854351e-7,2.779)"
+       id="g34">
+      <line
+         stroke-linejoin="round"
+         stroke-linecap="round"
+         stroke-width="0.1"
+         stroke="currentColor"
+         x1="0.050000001"
+         y1="0"
+         x2="55.206402"
+         y2="0"
+         id="line32" />
+    </g>
+    <g
+       transform="translate(7.0854351e-7,1.779)"
+       id="g38">
+      <line
+         stroke-linejoin="round"
+         stroke-linecap="round"
+         stroke-width="0.1"
+         stroke="currentColor"
+         x1="0.050000001"
+         y1="0"
+         x2="55.206402"
+         y2="0"
+         id="line36" />
+    </g>
+    <g
+       transform="translate(43.795901,3.779)"
+       id="g42">
+      <rect
+         x="-0.064999998"
+         y="-2"
+         width="0.13"
+         height="3.3138001"
+         ry="0.039999999"
+         fill="currentColor"
+         id="rect40" />
+    </g>
+    <a
+       style="color:inherit"
+       xlink:href="textedit://D:/Jakob%20Krueger/Downloads/test.ly:6:10:11"
+       id="a48"
+       transform="translate(-17.071699,-7.9116)">
+      <g
+         transform="translate(59.6284,13.1906)"
+         id="g46">
+        <path
+           transform="scale(0.004,-0.004)"
+           d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+           fill="currentColor"
+           id="path44" />
+      </g>
+    </a>
+    <g
+       transform="translate(40.091701,3.779)"
+       id="g52">
+      <rect
+         x="-0.064999998"
+         y="-1.5"
+         width="0.13"
+         height="3.3138001"
+         ry="0.039999999"
+         fill="currentColor"
+         id="rect50" />
+    </g>
+    <g
+       transform="translate(40.606701,5.279)"
+       id="g56">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="M 0,0 C 0,31 25,56 56,56 87,56 112,31 112,0 112,-31 87,-56 56,-56 25,-56 0,-31 0,0 Z"
+         fill="currentColor"
+         id="path54" />
+    </g>
+    <a
+       style="color:inherit"
+       xlink:href="textedit://D:/Jakob%20Krueger/Downloads/test.ly:6:8:9"
+       id="a62"
+       transform="translate(-17.071699,-7.9116)">
+      <g
+         transform="translate(55.9242,13.6906)"
+         id="g60">
+        <path
+           transform="scale(0.004,-0.004)"
+           d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+           fill="currentColor"
+           id="path58" />
+      </g>
+    </a>
+    <a
+       style="color:inherit"
+       xlink:href="textedit://D:/Jakob%20Krueger/Downloads/test.ly:7:2:3"
+       id="a68"
+       transform="translate(-17.071699,-7.9116)">
+      <g
+         transform="translate(63.9574,12.6906)"
+         id="g66">
+        <path
+           transform="scale(0.004,-0.004)"
+           d="m 314,65 c 0,24 -21,41 -42,41 -4,0 -8,0 -12,-1 C 229,96 182,65 145,41 108,17 61,-12 41,-37 34,-45 31,-55 31,-65 c 0,-24 21,-41 42,-41 4,0 8,0 12,1 31,9 77,40 114,64 37,24 84,53 104,78 7,8 11,18 11,28 z m -52,71 c 46,0 82,-21 82,-71 0,-19 -4,-39 -10,-57 -12,-37 -32,-72 -64,-94 -53,-36 -113,-50 -187,-50 -46,0 -83,21 -83,71 0,19 5,39 11,57 12,37 31,72 63,94 53,36 114,50 188,50 z"
+           fill="currentColor"
+           id="path64" />
+      </g>
+    </a>
+    <g
+       transform="translate(33.698301,5.279)"
+       id="g72">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 0,119 c 0,8 5,15 13,18 l 46,17 v 158 c 0,10 8,19 18,19 10,0 19,-9 19,-19 V 167 l 83,31 v 158 c 0,10 9,19 19,19 10,0 18,-9 18,-19 V 211 l 32,12 c 2,1 5,1 7,1 11,0 20,-9 20,-20 v -60 c 0,-8 -5,-16 -13,-19 L 216,109 V -51 l 32,11 c 2,1 5,1 7,1 11,0 20,-9 20,-20 v -60 c 0,-8 -5,-15 -13,-18 l -46,-17 v -158 c 0,-10 -8,-19 -18,-19 -10,0 -19,9 -19,19 v 145 l -83,-31 v -158 c 0,-10 -9,-19 -19,-19 -10,0 -18,9 -18,19 v 145 l -32,-12 c -2,-1 -5,-1 -7,-1 -11,0 -20,9 -20,20 v 60 c 0,8 5,16 13,19 l 46,16 V 51 L 27,40 C 25,39 22,39 20,39 9,39 0,48 0,59 Z M 179,95 96,65 V -95 l 83,30 z"
+         fill="currentColor"
+         id="path70" />
+    </g>
+    <g
+       transform="translate(36.387501,3.779)"
+       id="g76">
+      <rect
+         x="-0.064999998"
+         y="-2"
+         width="0.13"
+         height="3.3138001"
+         ry="0.039999999"
+         fill="currentColor"
+         id="rect74" />
+    </g>
+    <g
+       transform="translate(36.902501,5.279)"
+       id="g80">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="M 0,0 C 0,31 25,56 56,56 87,56 112,31 112,0 112,-31 87,-56 56,-56 25,-56 0,-31 0,0 Z"
+         fill="currentColor"
+         id="path78" />
+    </g>
+    <g
+       transform="translate(53.102301,3.779)"
+       id="g84">
+      <rect
+         x="-0.064999998"
+         y="-2.5"
+         width="0.13"
+         height="3.3138001"
+         ry="0.039999999"
+         fill="currentColor"
+         id="rect82" />
+    </g>
+    <a
+       style="color:inherit"
+       xlink:href="textedit://D:/Jakob%20Krueger/Downloads/test.ly:7:6:7"
+       id="a90"
+       transform="translate(-17.071699,-7.9116)">
+      <g
+         transform="translate(68.9348,12.6906)"
+         id="g88">
+        <path
+           transform="scale(0.004,-0.004)"
+           d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+           fill="currentColor"
+           id="path86" />
+      </g>
+    </a>
+    <g
+       transform="translate(48.198101,3.779)"
+       id="g94">
+      <rect
+         x="-0.064999998"
+         y="-2.5"
+         width="0.13"
+         height="3.2409999"
+         ry="0.039999999"
+         fill="currentColor"
+         id="rect92" />
+    </g>
+    <g
+       transform="translate(48.713101,4.279)"
+       id="g98">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="M 0,0 C 0,31 25,56 56,56 87,56 112,31 112,0 112,-31 87,-56 56,-56 25,-56 0,-31 0,0 Z"
+         fill="currentColor"
+         id="path96" />
+    </g>
+    <g
+       transform="translate(16.685801,2.779)"
+       id="g102">
+      <polygon
+         stroke-linejoin="round"
+         stroke-linecap="round"
+         stroke-width="0.08"
+         fill="currentColor"
+         stroke="currentColor"
+         points="3.4442,-0.39 3.4442,0.01 0.04,0.2 0.04,-0.2 "
+         id="polygon100" />
+    </g>
+    <g
+       transform="translate(24.050901,4.279)"
+       id="g106">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="M 0,0 C 0,31 25,56 56,56 87,56 112,31 112,0 112,-31 87,-56 56,-56 25,-56 0,-31 0,0 Z"
+         fill="currentColor"
+         id="path104" />
+    </g>
+    <a
+       style="color:inherit"
+       xlink:href="textedit://D:/Jakob%20Krueger/Downloads/test.ly:5:2:3"
+       id="a112"
+       transform="translate(-17.071699,-7.9116)">
+      <g
+         transform="translate(39.3684,12.6906)"
+         id="g110">
+        <path
+           transform="scale(0.004,-0.004)"
+           d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+           fill="currentColor"
+           id="path108" />
+      </g>
+    </a>
+    <g
+       transform="translate(17.415801,5.279)"
+       id="g116">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 0,119 c 0,8 5,15 13,18 l 46,17 v 158 c 0,10 8,19 18,19 10,0 19,-9 19,-19 V 167 l 83,31 v 158 c 0,10 9,19 19,19 10,0 18,-9 18,-19 V 211 l 32,12 c 2,1 5,1 7,1 11,0 20,-9 20,-20 v -60 c 0,-8 -5,-16 -13,-19 L 216,109 V -51 l 32,11 c 2,1 5,1 7,1 11,0 20,-9 20,-20 v -60 c 0,-8 -5,-15 -13,-18 l -46,-17 v -158 c 0,-10 -8,-19 -18,-19 -10,0 -19,9 -19,19 v 145 l -83,-31 v -158 c 0,-10 -9,-19 -19,-19 -10,0 -18,9 -18,19 v 145 l -32,-12 c -2,-1 -5,-1 -7,-1 -11,0 -20,9 -20,20 v 60 c 0,8 5,16 13,19 l 46,16 V 51 L 27,40 C 25,39 22,39 20,39 9,39 0,48 0,59 Z M 179,95 96,65 V -95 l 83,30 z"
+         fill="currentColor"
+         id="path114" />
+    </g>
+    <g
+       transform="translate(20.105001,3.779)"
+       id="g120">
+      <rect
+         x="-0.064999998"
+         y="-1.1865"
+         width="0.13"
+         height="2.5002999"
+         ry="0.039999999"
+         fill="currentColor"
+         id="rect118" />
+    </g>
+    <a
+       style="color:inherit"
+       xlink:href="textedit://D:/Jakob%20Krueger/Downloads/test.ly:4:5:6"
+       id="a126"
+       transform="translate(-17.071699,-7.9116)">
+      <g
+         transform="translate(35.9375,13.1906)"
+         id="g124">
+        <path
+           transform="scale(0.004,-0.004)"
+           d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+           fill="currentColor"
+           id="path122" />
+      </g>
+    </a>
+    <g
+       transform="translate(16.750801,3.779)"
+       id="g130">
+      <rect
+         x="-0.064999998"
+         y="-1.0035"
+         width="0.13"
+         height="2.8173001"
+         ry="0.039999999"
+         fill="currentColor"
+         id="rect128" />
+    </g>
+    <g
+       transform="translate(5.0000007,3.779)"
+       id="g134">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 150,477 c -28,0 -57,-9 -57,-33 0,-22 35,-25 35,-47 0,-32 -25,-58 -57,-58 -32,0 -58,26 -58,58 0,64 67,103 137,103 91,0 169,-33 169,-114 0,-43 -4,-82 -42,-100 -9,-4 -14,-12 -14,-21 0,-9 5,-18 14,-22 41,-19 56,-57 56,-103 C 333,48 254,0 154,0 75,0 0,42 0,113 c 0,36 30,66 66,66 36,0 65,-30 65,-66 0,-25 -40,-28 -40,-53 0,-27 32,-37 63,-37 49,0 63,61 63,117 v 16 c 0,54 -2,94 -50,94 H 87 c -10,0 -14,8 -14,15 0,7 4,14 14,14 h 80 c 49,0 50,43 50,99 v 8 c 0,54 -18,91 -67,91 z"
+         fill="currentColor"
+         id="path132" />
+    </g>
+    <g
+       transform="translate(6.9315007,3.779)"
+       id="g138">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 125,125 c -14,0 -25,11 -25,25 v 75 H 25 c -14,0 -25,11 -25,25 0,14 11,25 25,25 h 75 v 75 c 0,14 11,25 25,25 14,0 25,-11 25,-25 v -75 h 75 c 14,0 25,-11 25,-25 0,-14 -11,-25 -25,-25 h -75 v -75 c 0,-14 -11,-25 -25,-25 z"
+         fill="currentColor"
+         id="path136" />
+    </g>
+    <g
+       transform="translate(8.5217007,3.779)"
+       id="g142">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 150,477 c -28,0 -57,-9 -57,-33 0,-22 35,-25 35,-47 0,-32 -25,-58 -57,-58 -32,0 -58,26 -58,58 0,64 67,103 137,103 91,0 169,-33 169,-114 0,-43 -4,-82 -42,-100 -9,-4 -14,-12 -14,-21 0,-9 5,-18 14,-22 41,-19 56,-57 56,-103 C 333,48 254,0 154,0 75,0 0,42 0,113 c 0,36 30,66 66,66 36,0 65,-30 65,-66 0,-25 -40,-28 -40,-53 0,-27 32,-37 63,-37 49,0 63,61 63,117 v 16 c 0,54 -2,94 -50,94 H 87 c -10,0 -14,8 -14,15 0,7 4,14 14,14 h 80 c 49,0 50,43 50,99 v 8 c 0,54 -18,91 -67,91 z"
+         fill="currentColor"
+         id="path140" />
+    </g>
+    <g
+       transform="translate(6.6925007,5.779)"
+       id="g146">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 261,287 c 25,30 44,64 44,103 0,54 -55,87 -114,87 -46,0 -73,-36 -73,-71 0,-21 10,-42 31,-54 z m 31,-18 C 346,238 372,190 372,144 372,71 306,0 183,0 89,0 0,54 0,140 c 0,50 36,87 72,123 -37,28 -55,66 -55,103 0,68 60,134 174,134 80,0 157,-39 157,-110 0,-46 -25,-86 -56,-121 z M 103,244 C 72,214 44,183 44,140 44,71 110,23 183,23 c 54,0 86,42 86,83 0,24 -10,48 -35,62 z"
+         fill="currentColor"
+         id="path144" />
+    </g>
+    <g
+       transform="translate(10.453301,4.779)"
+       id="g150">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 125,125 c -14,0 -25,11 -25,25 v 75 H 25 c -14,0 -25,11 -25,25 0,14 11,25 25,25 h 75 v 75 c 0,14 11,25 25,25 14,0 25,-11 25,-25 v -75 h 75 c 14,0 25,-11 25,-25 0,-14 -11,-25 -25,-25 h -75 v -75 c 0,-14 -11,-25 -25,-25 z"
+         fill="currentColor"
+         id="path148" />
+    </g>
+    <g
+       transform="translate(12.043401,3.779)"
+       id="g154">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 102,135 c 9,2 18,3 27,3 33,0 70,-11 105,-36 21,-15 46,-23 66,-23 21,0 39,9 44,29 2,6 6,9 11,9 6,0 12,-5 12,-12 C 367,38 277,0 229,0 193,0 158,14 133,44 120,60 102,66 85,66 55,66 26,46 23,11 22,4 17,0 12,0 6,0 0,4 0,11 c 0,174 232,166 232,344 0,59 -16,122 -67,122 -25,0 -49,-14 -49,-37 0,-27 35,-41 35,-68 0,-38 -31,-69 -69,-69 -38,0 -69,31 -69,69 0,76 72,128 152,128 95,0 183,-57 183,-145 C 348,204 198,196 102,135 Z"
+         fill="currentColor"
+         id="path152" />
+    </g>
+    <g
+       transform="translate(12.043401,5.779)"
+       id="g158">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 261,287 c 25,30 44,64 44,103 0,54 -55,87 -114,87 -46,0 -73,-36 -73,-71 0,-21 10,-42 31,-54 z m 31,-18 C 346,238 372,190 372,144 372,71 306,0 183,0 89,0 0,54 0,140 c 0,50 36,87 72,123 -37,28 -55,66 -55,103 0,68 60,134 174,134 80,0 157,-39 157,-110 0,-46 -25,-86 -56,-121 z M 103,244 C 72,214 44,183 44,140 44,71 110,23 183,23 c 54,0 86,42 86,83 0,24 -10,48 -35,62 z"
+         fill="currentColor"
+         id="path156" />
+    </g>
+    <g
+       transform="translate(0.80000071,4.779)"
+       id="g162">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 266,-635 h -6 c -108,0 -195,88 -195,197 0,58 53,103 112,103 54,0 95,-47 95,-103 0,-52 -43,-95 -95,-95 -11,0 -21,2 -31,6 26,-39 68,-65 117,-65 h 4 z m 195,432 c 68,24 113,95 113,164 0,90 -66,179 -173,190 24,-116 46,-231 60,-354 z M 74,28 c 0,-135 129,-247 264,-247 28,0 55,2 82,6 C 406,-86 383,32 357,151 278,143 233,90 233,32 c 0,-44 25,-91 81,-123 5,-5 7,-10 7,-15 0,-11 -10,-22 -22,-22 -3,0 -6,1 -9,2 -80,43 -117,115 -117,185 0,88 58,174 160,197 -14,58 -29,117 -46,175 C 180,310 74,188 74,28 Z M 335,-262 C 147,-262 2,-90 2,112 c 0,177 131,306 248,441 -19,62 -37,125 -45,190 -6,52 -7,104 -7,156 0,115 55,224 149,292 6,5 14,5 20,0 71,-84 133,-245 133,-358 0,-143 -86,-255 -180,-364 21,-68 39,-138 56,-207 4,0 9,1 13,1 155,0 256,-128 256,-261 0,-76 -33,-154 -107,-210 -22,-17 -47,-28 -73,-36 3,-35 5,-70 5,-105 0,-19 -1,-39 -2,-58 -7,-119 -88,-225 -202,-228 l 1,43 c 93,2 153,92 159,191 1,18 2,37 2,55 0,31 -1,61 -4,92 -29,-5 -58,-8 -89,-8 z m 93,1178 c 0,55 -4,79 -20,129 -99,-48 -162,-149 -162,-259 0,-74 18,-133 36,-194 80,97 146,198 146,324 z"
+         fill="currentColor"
+         id="path160" />
+    </g>
+    <a
+       style="color:inherit"
+       xlink:href="textedit://D:/Jakob%20Krueger/Downloads/test.ly:4:2:3"
+       id="a168"
+       transform="translate(-17.071699,-7.9116)">
+      <g
+         transform="translate(32.5833,13.6906)"
+         id="g166">
+        <path
+           transform="scale(0.004,-0.004)"
+           d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+           fill="currentColor"
+           id="path164" />
+      </g>
+    </a>
+    <a
+       style="color:inherit"
+       xlink:href="textedit://D:/Jakob%20Krueger/Downloads/test.ly:5:6:7"
+       id="a174"
+       transform="translate(-17.071699,-7.9116)">
+      <g
+         transform="translate(43.0726,12.6906)"
+         id="g172">
+        <path
+           transform="scale(0.004,-0.004)"
+           d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+           fill="currentColor"
+           id="path170" />
+      </g>
+    </a>
+    <a
+       style="color:inherit"
+       xlink:href="textedit://D:/Jakob%20Krueger/Downloads/test.ly:6:2:3"
+       id="a180"
+       transform="translate(-17.071699,-7.9116)">
+      <g
+         transform="translate(52.22,13.1906)"
+         id="g178">
+        <path
+           transform="scale(0.004,-0.004)"
+           d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+           fill="currentColor"
+           id="path176" />
+      </g>
+    </a>
+    <g
+       transform="translate(30.944301,3.779)"
+       id="g184">
+      <rect
+         x="-0.064999998"
+         y="-2.5"
+         width="0.13"
+         height="3.3138001"
+         ry="0.039999999"
+         fill="currentColor"
+         id="rect182" />
+    </g>
+    <a
+       style="color:inherit"
+       xlink:href="textedit://D:/Jakob%20Krueger/Downloads/test.ly:5:8:9"
+       id="a190"
+       transform="translate(-17.071699,-7.9116)">
+      <g
+         transform="translate(46.7768,12.6906)"
+         id="g188">
+        <path
+           transform="scale(0.004,-0.004)"
+           d="m 218,136 c 55,0 108,-28 108,-89 0,-71 -55,-121 -102,-149 -35,-21 -75,-34 -116,-34 -55,0 -108,28 -108,89 0,71 55,121 102,149 35,21 75,34 116,34 z"
+           fill="currentColor"
+           id="path186" />
+      </g>
+    </a>
+    <g
+       transform="translate(27.240101,3.779)"
+       id="g194">
+      <rect
+         x="-0.064999998"
+         y="-2.5"
+         width="0.13"
+         height="3.3138001"
+         ry="0.039999999"
+         fill="currentColor"
+         id="rect192" />
+    </g>
+    <g
+       transform="translate(27.755101,4.279)"
+       id="g198">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="M 0,0 C 0,31 25,56 56,56 87,56 112,31 112,0 112,-31 87,-56 56,-56 25,-56 0,-31 0,0 Z"
+         fill="currentColor"
+         id="path196" />
+    </g>
+    <g
+       transform="translate(23.535901,3.779)"
+       id="g202">
+      <rect
+         x="-0.064999998"
+         y="-2.5"
+         width="0.13"
+         height="3.3138001"
+         ry="0.039999999"
+         fill="currentColor"
+         id="rect200" />
+    </g>
+  </g>
+</svg>

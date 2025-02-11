@@ -1,0 +1,27 @@
+# Einrichtung von Frescobaldi
+
+Frescobaldi ist eine sogenannte „Integrierte Entwicklungsumgebung“ (IDE). Das bedeutet, sie schafft ein angenehmes Arbeitsumfeld, wenn du mit LilyPond arbeitest. LilyPond selbst ist nämlich quasi nur die „Sprache“ in der du Noten setzt und das Programm, womit du sie auswertest („setzt“). Frescobaldi vereint dann unter anderem einen PDF-Viewer, einen MIDI-Player und noch ein paar andere nützliche Werkzeuge.
+
+## Frescobaldi installieren
+
+1.  Gehe auf <https://frescobaldi.org/> und wähle unter `Download` die neueste Version für dein Betriebssystem. In eigentlich allen Linux-Distributionen sollte Frescobaldi zudem in der Paketverwaltung zu finden sein.
+
+2.  Du wirst auf eine Github-Seite weitergeleitet, wo du unter Assets die richtige Version auswählen kannst. Für Windows wähle `*.exe`, für Linux `*.tar.gz` und für MacOS `.dmg`.
+
+3.  Lade die Datei herunter und führe sie aus.
+
+4.  Folge dem Installationsprozess.
+
+## Beim ersten Ausführen
+
+1.  Gehe in die Einstellungen.
+
+2.  Unter Lilypond-Einstellungen musst du die korrekte Lilypond-Version einstellen. Gehe dazu auf `Hinzufügen` und wähle dann im Explorerfenster die `*.exe`-Datei aus. Dazu musst du in den Ordner gehen, in dem du den LilyPond-Ordner eben abgelegt hast (siehe oben), und die Datei `bin/lilypond.exe` auswählen.
+
+3.  Außerdem ist die Einstellung `Dokument speichern, wenn möglich` unter `Lilypond-Einstellungen` und dort `Lilypond starten` sinnvoll, damit man gleich kompilieren kann, ohne dauernd speichern zu müssen.
+
+4.  Eine weitere sinnvolle Einstellung ist unter `Allgemeine Einstellungen` im Reiter `Saving` die Einstellung `Leerzeichen am Zeilenende entfernen`. Es macht Sinn, dort einen Haken zu setzen.
+
+5.  Falls du Linux nutzt, ist es wichtig, dass du jeweils vorm Starten von Frescobaldi einen MIDI-Player startest. Was du dafür tun musst, ist in diesem [GitHub-Issue](https://github.com/frescobaldi/frescobaldi/issues/1537) erklärt.
+
+6.  Das war’s schon. Fertig!
