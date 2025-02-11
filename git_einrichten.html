@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Einrichtung von Git – How To Liederbuch</title>
+<title>git_einrichten – How To Liederbuch</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,7 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./lifehacks.html" rel="next">
 <link href="./frescobaldi_einrichten.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -42,18 +41,18 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
+  "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
+  "panel-placement": "end",
+  "type": "overlay",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
     "/",
     "s"
   ],
-  "show-item-context": false,
+  "show-item-context": true,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -72,70 +71,87 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar floating">
+<body class="nav-sidebar floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">How To Liederbuch</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Moin</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./vorbereitung.html" aria-current="page"> 
+<span class="menu-text">Einführung</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./doku.html"> 
+<span class="menu-text">Doku</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./git_einrichten.html">Einrichtung von Git</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./vorbereitung.html">Vorbereitung</a></li><li class="breadcrumb-item"><a href="./git_einrichten.html">Einrichtung von Git</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
-      </button>
     </div>
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
-    <div class="sidebar-title mb-0 py-0">
-      <a href="./">How To Liederbuch</a> 
-    </div>
-      </div>
-        <div class="mt-2 flex-shrink-0 align-items-center">
-        <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
-        </div>
-        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./vorbereitung.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Vorbereitung</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Moin.</span></a>
+  <a href="./lilypond_einrichten.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Einrichtung von LilyPond</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./vorbereitung.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Vorbereitung</span></span></a>
+  <a href="./frescobaldi_einrichten.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Einrichtung von Frescobaldi</span></a>
   </div>
 </li>
-        <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Einrichtung von LilyPond</span></span>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Einrichtung von Frescobaldi</span></span>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Einrichtung von Git</span></span>
-  </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./lifehacks.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Nützliche Lifehacks</span></span></a>
+  <a href="./git_einrichten.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Einrichtung von Git</span></a>
   </div>
 </li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
@@ -143,10 +159,12 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
+    <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#sec-tuxgit-account" id="toc-sec-tuxgit-account" class="nav-link active" data-scroll-target="#sec-tuxgit-account">Account bei tuxgit erstellen lassen</a></li>
+  <li><a href="#einrichtung-von-git" id="toc-einrichtung-von-git" class="nav-link active" data-scroll-target="#einrichtung-von-git">Einrichtung von Git</a>
+  <ul class="collapse">
+  <li><a href="#sec-tuxgit-account" id="toc-sec-tuxgit-account" class="nav-link" data-scroll-target="#sec-tuxgit-account">Account bei tuxgit erstellen lassen</a></li>
   <li><a href="#eine-git-gui-aussuchen-und-herunterladen" id="toc-eine-git-gui-aussuchen-und-herunterladen" class="nav-link" data-scroll-target="#eine-git-gui-aussuchen-und-herunterladen">Eine Git-GUI aussuchen und herunterladen</a>
   <ul class="collapse">
   <li><a href="#smartgit" id="toc-smartgit" class="nav-link" data-scroll-target="#smartgit">SmartGit</a></li>
@@ -159,31 +177,18 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#ein-neues-liederbuch-repo-mit-dem-vorlagen-repo-erstellen" id="toc-ein-neues-liederbuch-repo-mit-dem-vorlagen-repo-erstellen" class="nav-link" data-scroll-target="#ein-neues-liederbuch-repo-mit-dem-vorlagen-repo-erstellen">Ein neues Liederbuch-Repo mit dem Vorlagen-Repo erstellen</a></li>
   <li><a href="#ein-bestehendes-liederbuch-repo-klonen" id="toc-ein-bestehendes-liederbuch-repo-klonen" class="nav-link" data-scroll-target="#ein-bestehendes-liederbuch-repo-klonen">Ein bestehendes Liederbuch-Repo klonen</a></li>
   </ul></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Einrichtung von Git</h1>
-</div>
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
+<section id="einrichtung-von-git" class="level1">
+<h1>Einrichtung von Git</h1>
 <p>Hier geht es jetzt nur um eine kurze und möglichst unkomplizierte Einrichtung von Git. Du musst gar nicht alles verstehen, was im Hintergrund passiert. Das kann an späterer Stelle irgendwann auch noch kommen.</p>
 <section id="sec-tuxgit-account" class="level2">
 <h2 class="anchored" data-anchor-id="sec-tuxgit-account">Account bei tuxgit erstellen lassen</h2>
@@ -219,14 +224,14 @@ Dafür brauchst du eine gemeinnützige Organisation, mit deren E-Mail-Adresse du
 </section>
 <section id="einrichten-eines-liederbuch-repos" class="level2">
 <h2 class="anchored" data-anchor-id="einrichten-eines-liederbuch-repos">Einrichten eines Liederbuch-Repos</h2>
-<p>Da du Git vermutlich zum ersten Mal nutzt, brauchst du zuerst einen SSH-Key. Der SSH-Key ist dafür da, dass das Remote-Repo weiß, dass dein lokales Repo auch zu dir gehört. Sonst könnte ja jeder, der den SSH-Link hat (siehe dazu <a href="#fig-sshkey" class="quarto-xref">Figure&nbsp;<span>1</span></a>), Zugriff aufs Repo haben. Er ist also ein Identifikationsmittel für deinen Account. Dafür hinterlegst du den <em>public key</em> in deinem Git-Account und sagst deinem Git-Programm (SmartGit, SourceTree, TortoiseGit), wo deine Schlüssel-Datei liegt. Diese Datei ist auch nochmal extra passwortgeschützt. Sie sollte auf keinen Fall gelöscht oder verschoben werden. Die lange Erklärung kannst du <a href="https://www.rrz.uni-hamburg.de/services/hpc/grundwissen/ssh-keys.html">hier</a> nachlesen.</p>
+<p>Da du Git vermutlich zum ersten Mal nutzt, brauchst du zuerst einen SSH-Key. Der SSH-Key ist dafür da, dass das Remote-Repo weiß, dass dein lokales Repo auch zu dir gehört. Sonst könnte ja jeder, der den SSH-Link hat (siehe dazu <a href="#fig-sshkey" class="quarto-xref">Figure&nbsp;1</a>), Zugriff aufs Repo haben. Er ist also ein Identifikationsmittel für deinen Account. Dafür hinterlegst du den <em>public key</em> in deinem Git-Account und sagst deinem Git-Programm (SmartGit, SourceTree, TortoiseGit), wo deine Schlüssel-Datei liegt. Diese Datei ist auch nochmal extra passwortgeschützt. Sie sollte auf keinen Fall gelöscht oder verschoben werden. Die lange Erklärung kannst du <a href="https://www.rrz.uni-hamburg.de/services/hpc/grundwissen/ssh-keys.html">hier</a> nachlesen.</p>
 <div id="fig-sshkey" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-sshkey-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="https://anupdhakal.com/static/1ea06fda1c5fa35c6f512e321d5c8923/8b936/github-repo-ssh-link-example.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sshkey-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: Das rot markierte ist ein SSH-Link.
+Figure&nbsp;1: Das ist der SSH-Link.
 </figcaption>
 </figure>
 </div>
@@ -239,7 +244,7 @@ Figure&nbsp;1: Das rot markierte ist ein SSH-Link.
 </section>
 <section id="ein-neues-liederbuch-repo-mit-dem-vorlagen-repo-erstellen" class="level3">
 <h3 class="anchored" data-anchor-id="ein-neues-liederbuch-repo-mit-dem-vorlagen-repo-erstellen">Ein neues Liederbuch-Repo mit dem Vorlagen-Repo erstellen</h3>
-<p>Da du ja ganz neu einsteigst, hast du vermutlich noch kein eigenes Liederbuch-Repo. Deswegen erstellen wir erstmal eins. Das tolle ist: Wir haben zu genau diesem Zweck ein Vorlagen-Repo gebaut, mit dem du sofort die meisten wichtigen Sachen eingerichtet hast. Wichtig: Du brauchst <em>vorher</em> einen Account bei tuxgit (siehe <a href="#sec-tuxgit-account" class="quarto-xref"><span>Account bei tuxgit erstellen lassen</span></a>). So geht’s:</p>
+<p>Da du ja ganz neu einsteigst, hast du vermutlich noch kein eigenes Liederbuch-Repo. Deswegen erstellen wir erstmal eins. Das tolle ist: Wir haben zu genau diesem Zweck ein Vorlagen-Repo gebaut, mit dem du sofort die meisten wichtigen Sachen eingerichtet hast. Wichtig: Du brauchst <em>vorher</em> einen Account bei tuxgit (siehe <a href="#sec-tuxgit-account" class="quarto-xref">Section&nbsp;1.1</a>). So geht’s:</p>
 <ol type="1">
 <li><p>Du gehst zu unserem <a href="https://git.zahlenlabyrinth.de/boernel/lilypond-vorlagen">LilyPond-Vorlagen-Repo</a> auf unserem Git-Server.</p></li>
 <li><p>Du klickst auf <code>Dieses Template verwenden</code>.</p></li>
@@ -260,7 +265,7 @@ Je nach GUI funktioniert das unterschiedlich. Irgendwo gibt es die Option <code>
 Auch das funktioniert in jeder GUI anders. So geht es bei SmartGit:
 <ol type="1">
 <li>Im Menü Remote anwählen -&gt; Submodule -&gt; Add</li>
-<li>Dann brauchst du die SSH-Links der Submodule. Die findest du auf die bekannte Art und Weise (siehe <a href="#fig-sshkey" class="quarto-xref">Figure&nbsp;<span>1</span></a>).</li>
+<li>Dann brauchst du die SSH-Links der Submodule. Die findest du auf die bekannte Art und Weise (siehe <a href="#fig-sshkey" class="quarto-xref">Figure&nbsp;1</a>).</li>
 <li>Im nächsten Schritt wird gefragt, an welcher Stelle das Submodul eingebunden werden soll, da kannst du einfach weiterklicken.</li>
 </ol></li>
 <li>Fertig!</li>
@@ -268,6 +273,7 @@ Auch das funktioniert in jeder GUI anders. So geht es bei SmartGit:
 <p>Und jetzt kann’s richtig losgehen!</p>
 
 
+</section>
 </section>
 </section>
 
@@ -364,7 +370,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/apfelpfluecker\.github\.io\/liedertest\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -699,9 +705,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./lifehacks.html" class="pagination-link" aria-label="Nützliche Lifehacks">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Nützliche Lifehacks</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

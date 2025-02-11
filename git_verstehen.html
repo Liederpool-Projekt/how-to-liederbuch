@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>How To Liederbuch</title>
+<title>git_verstehen – How To Liederbuch</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -88,7 +88,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Moin</span></a>
   </li>  
   <li class="nav-item">
@@ -115,10 +115,32 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#moin." id="toc-moin." class="nav-link active" data-scroll-target="#moin.">Moin.</a>
+  <li><a href="#was-ist-eigentlich-git" id="toc-was-ist-eigentlich-git" class="nav-link active" data-scroll-target="#was-ist-eigentlich-git">Was ist eigentlich Git?</a>
   <ul class="collapse">
-  <li><a href="#was-können-wir-dir-bieten" id="toc-was-können-wir-dir-bieten" class="nav-link" data-scroll-target="#was-können-wir-dir-bieten">Was können wir dir bieten?</a></li>
-  <li><a href="#wer-wir-sind" id="toc-wer-wir-sind" class="nav-link" data-scroll-target="#wer-wir-sind">Wer „wir“ sind</a></li>
+  <li><a href="#spielerisch-git-lernen" id="toc-spielerisch-git-lernen" class="nav-link" data-scroll-target="#spielerisch-git-lernen">Spielerisch Git lernen</a></li>
+  <li><a href="#einrichten-des-repos" id="toc-einrichten-des-repos" class="nav-link" data-scroll-target="#einrichten-des-repos">Einrichten des Repos</a>
+  <ul class="collapse">
+  <li><a href="#nutzt-du-git-zum-ersten-mal" id="toc-nutzt-du-git-zum-ersten-mal" class="nav-link" data-scroll-target="#nutzt-du-git-zum-ersten-mal">Nutzt du Git zum ersten Mal?</a></li>
+  <li><a href="#ein-bestehendes-liederbuch-repo-klonen" id="toc-ein-bestehendes-liederbuch-repo-klonen" class="nav-link" data-scroll-target="#ein-bestehendes-liederbuch-repo-klonen">Ein bestehendes Liederbuch-Repo klonen</a></li>
+  <li><a href="#ein-neues-liederbuch-repo-mit-dem-vorlagen-repo-erstellen" id="toc-ein-neues-liederbuch-repo-mit-dem-vorlagen-repo-erstellen" class="nav-link" data-scroll-target="#ein-neues-liederbuch-repo-mit-dem-vorlagen-repo-erstellen">Ein neues Liederbuch-Repo mit dem Vorlagen-Repo erstellen</a></li>
+  </ul></li>
+  <li><a href="#grundbegriffe-im-git-alltag" id="toc-grundbegriffe-im-git-alltag" class="nav-link" data-scroll-target="#grundbegriffe-im-git-alltag">Grundbegriffe im Git-Alltag</a>
+  <ul class="collapse">
+  <li><a href="#branches" id="toc-branches" class="nav-link" data-scroll-target="#branches">Branches</a></li>
+  <li><a href="#checkout" id="toc-checkout" class="nav-link" data-scroll-target="#checkout">Checkout</a></li>
+  <li><a href="#commit" id="toc-commit" class="nav-link" data-scroll-target="#commit">Commit</a></li>
+  <li><a href="#fetch" id="toc-fetch" class="nav-link" data-scroll-target="#fetch">Fetch</a></li>
+  <li><a href="#head" id="toc-head" class="nav-link" data-scroll-target="#head">HEAD</a></li>
+  <li><a href="#merge" id="toc-merge" class="nav-link" data-scroll-target="#merge">Merge</a></li>
+  <li><a href="#pull" id="toc-pull" class="nav-link" data-scroll-target="#pull">Pull</a></li>
+  <li><a href="#push" id="toc-push" class="nav-link" data-scroll-target="#push">Push</a></li>
+  <li><a href="#repository" id="toc-repository" class="nav-link" data-scroll-target="#repository">Repository</a></li>
+  <li><a href="#rebase" id="toc-rebase" class="nav-link" data-scroll-target="#rebase">Rebase</a></li>
+  <li><a href="#submodul" id="toc-submodul" class="nav-link" data-scroll-target="#submodul">Submodul</a></li>
+  <li><a href="#versionierung" id="toc-versionierung" class="nav-link" data-scroll-target="#versionierung">Versionierung</a></li>
+  <li><a href="#working-directory" id="toc-working-directory" class="nav-link" data-scroll-target="#working-directory">Working Directory</a></li>
+  </ul></li>
+  <li><a href="#how-to-pull-request" id="toc-how-to-pull-request" class="nav-link" data-scroll-target="#how-to-pull-request">How to Pull-Request</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -129,26 +151,138 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<hr>
-<hr>
-<section id="moin." class="level1 unnumbered">
-<h1 class="unnumbered">Moin.</h1>
-<p>Schön, dass du hergefunden hast! In diesem Leitfaden zeigen wir dir, wie du mit <a href="https://lilypond.org/">LilyPond</a> und <a href="https://git-scm.com/">Git</a> Liederbücher anhand unserer Vorlagen und Skripte erstellen kannst. Wir versuchen dich dabei bestmöglich an die Hand zu nehmen, um die Hürden, die es dabei gibt, möglichst niedrig zu halten. Zu diesem Zwecke gibt es diesen Leitfaden, aber auch eine Gruppe auf Signal, in der sich alle Personen befinden, die mit unserem System Liederbücher machen.</p>
-<section id="was-können-wir-dir-bieten" class="level2">
-<h2 class="anchored" data-anchor-id="was-können-wir-dir-bieten">Was können wir dir bieten?</h2>
-<p>Eine kleine Übersicht über Vorteile, die unser System mit sich bringt. Wenn dir davon nicht alles was sagt, ist das gar nicht schlimm.</p>
+<section id="was-ist-eigentlich-git" class="level1">
+<h1>Was ist eigentlich Git?</h1>
+<p>Git ist ein Versionierungssystem, welches frei als Open-Source-Software zur Verfügung gestellt wird. Git wird für die <strong>Versionskontrolle</strong> (stetige Protokollierung von Änderungen) von Dateien eingesetzt.</p>
+<p>Vor allem im Programmierbereich dient Git dazu, die eigenen Änderungen zu überwachen, sie rückgängig zu machen. Die wesentliche Nutzung findet in sogenannten „Repositories“ (Repos) statt. Das ist quasi ein Ordner, in dem sich Dateien und andere Ordner befinden, quasi eine Art „Arbeitsordner“ oder „Arbeitsverzeichnis“. Dabei gibt es verschiedene Orte, an dem dieser Arbeitsordner liegt.</p>
+<ol type="1">
+<li>Das <strong>Remote Repo</strong> liegt auf einem Git-Server („Remote“).</li>
+<li>Das <strong>Local Repo</strong> ist das Abbild einer Version des Remote Repos.</li>
+<li>Die <strong>Working Copy</strong> (in <a href="#fig-git" class="quarto-xref">Figure&nbsp;1</a> „User“) ist die lokale Bearbeitung des Local Repos.</li>
+</ol>
+<div id="fig-git" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-git-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/git.png" id="fig-git" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-git-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1
+</figcaption>
+</figure>
+</div>
+<p>Dadurch ergeben sich am Repo für Bearbeiter*innen folgende Möglichkeiten:</p>
 <ul>
-<li><p>Du kannst Liederbücher mit Noten und ohne Noten erstellen. Du kannst außerdem entscheiden, ob du Akkorde über den Strophen haben möchtest oder nicht.</p></li>
-<li><p>Du benötigst dafür keine kostenpflichtigen Programme. Alle Programme, die wir nutzen, sind Free and Open Source Software.</p></li>
-<li><p>Du kannst davon profitieren, dass wir in unserem Liederpool schon etliche Lieder gesetzt haben.</p></li>
-<li><p>Durch unsere Struktur profitierst du von Fehlerkorrekturen anderer Liederbuchprojekte.</p></li>
-<li><p>LilyPond ist ein codebasiertes Notensatzprogramm, das bedeutet, man kann sehr gut ein Versionierungs- und Nachverfolgungssystem mit Git nutzen.</p></li>
+<li><p>Die eigene Arbeit kann einfach wieder in die zentrale Basis integriert werden.</p></li>
+<li><p>Es kann zeitgleich weiterentwickelt werden, z.B. jeder an verschiedenen Features.</p></li>
+<li><p>Die Versionierung verhindert, dass bereits getätigte Arbeiten verloren gehen bzw. überschrieben werden.</p></li>
+<li><p>Bei Bedarf kann zu früheren Versionen zurückgekehrt werden oder simultan an verschiedenen Versionen gearbeitet werden (auch „Branches“ genannt).</p></li>
 </ul>
+<section id="spielerisch-git-lernen" class="level2">
+<h2 class="anchored" data-anchor-id="spielerisch-git-lernen">Spielerisch Git lernen</h2>
+<p>Hier gibt es eine tolle Spielwiese zum Ausprobieren: <a href="https://learngitbranching.js.org/" class="uri">https://learngitbranching.js.org/</a>. Sinnvoll für uns ist mindestens die Einführung.</p>
 </section>
-<section id="wer-wir-sind" class="level2">
-<h2 class="anchored" data-anchor-id="wer-wir-sind">Wer „wir“ sind</h2>
-<p>Wir sind ein Zusammenschluss an verschiedenen Liederbuchprojekten, die alle LilyPond nutzen. Irgendwann kamen wir an den Punkt, dass es cool wäre, wenn man mehr Synergien untereinander hätte. Daraufhin haben wir das Konzept unseres Liederpools entwickelt, in dem sich nur der musikalische Inhalt eines Liedes befindet, den man dann in seinem Liederbuchprojekt spezifisch layouten kann. Das hat zwei riesige Vorteile: Einerseits kann man von dem profitieren, was andere schon gesetzt haben, und andererseits kann man von den Fehlerkorrekturen anderer profitieren.</p>
-<p>So, jetzt genug der langen Vorrede. Los geht’s!</p>
+<section id="einrichten-des-repos" class="level2">
+<h2 class="anchored" data-anchor-id="einrichten-des-repos">Einrichten des Repos</h2>
+<section id="nutzt-du-git-zum-ersten-mal" class="level3">
+<h3 class="anchored" data-anchor-id="nutzt-du-git-zum-ersten-mal">Nutzt du Git zum ersten Mal?</h3>
+<p>Wenn ja, dann solltest du dir erst einen SSH-Key besorgen.</p>
+<section id="was-ist-das" class="level4">
+<h4 class="anchored" data-anchor-id="was-ist-das">Was ist das?</h4>
+<p>Kurze Erklärung: Der SSH-Key ist dafür da, dass das Remote-Repo weiß, dass dein lokales Repo auch zu dir gehört. Sonst könnte ja jeder, der den SSH-Link hat, Zugriff aufs Repo haben. Er ist also ein Identifikationsmittel für deinen Account. Dafür hinterlegst du den <em>public key</em> in deinem Git-Account und sagst deinem Git-Programm (SmartGit, SourceTree, TortoiseGit), wo deine Schlüssel-Datei liegt. Diese Datei ist auch nochmal extra passwortgeschützt. Sie sollte auf keinen Fall gelöscht oder verschoben werden. Die lange Erklärung kannst du <a href="https://www.rrz.uni-hamburg.de/services/hpc/grundwissen/ssh-keys.html">hier</a> nachlesen.</p>
+</section>
+<section id="was-musst-du-machen" class="level4">
+<h4 class="anchored" data-anchor-id="was-musst-du-machen">Was musst du machen?</h4>
+<p>Du musst dir einen SSH-Key erstellen und das <strong>Passwort, <em>public key</em> und <em>private key</em> und Schlüsseldatei</strong> speichern/aufbewahren. Eine Anleitung findest du <a href="https://www.heise.de/tipps-tricks/SSH-Key-erstellen-so-geht-s-4400280.html?hg=1&amp;hgi=0&amp;hgf=false">hier</a>.</p>
+<p>Anschließend hinterlegst du den <em>public key</em> in deinem Git-Account (unter Einstellungen -&gt; SSH- / GPG-Schlüssel -&gt; Schlüssel hinzufügen).</p>
+<p>Beim Klonen eines Liederbuchs wirst du dann irgendwann nach deiner Schlüsseldatei gefragt (für die du dann auch das Passwort brauchst).</p>
+<p>Klingt alles sehr kompliziert - ist es auch, <strong>aber:</strong> Du musst das <strong>nur einmal</strong> machen und dann funktioniert es einfach.</p>
+</section>
+</section>
+<section id="ein-bestehendes-liederbuch-repo-klonen" class="level3">
+<h3 class="anchored" data-anchor-id="ein-bestehendes-liederbuch-repo-klonen">Ein bestehendes Liederbuch-Repo klonen</h3>
+<ol type="1">
+<li>Remote-Repo klonen Das sieht je nach GUI verschieden aus. Irgendwo gibt es die Option <code>Clone</code> und da kann dann der Link zum Remote-Repo eingeben werden. <img src="https://anupdhakal.com/static/1ea06fda1c5fa35c6f512e321d5c8923/8b936/github-repo-ssh-link-example.png" class="img-fluid"> Wichtig ist bei dem Prozess: Submodule müssen inkludiert werden. Irgendwo kann man dann den Speicherort des lokalen Repos festlegen. Es empfiehlt sich, einen Ordner zu haben, wo alle Git-Repos drin sind. Dies ist aber nicht notwendig für irgendetwas.</li>
+<li>Fertig!</li>
+</ol>
+</section>
+<section id="ein-neues-liederbuch-repo-mit-dem-vorlagen-repo-erstellen" class="level3">
+<h3 class="anchored" data-anchor-id="ein-neues-liederbuch-repo-mit-dem-vorlagen-repo-erstellen">Ein neues Liederbuch-Repo mit dem Vorlagen-Repo erstellen</h3>
+<ol type="1">
+<li><p>Du gehst auf: <a href="https://git.zahlenlabyrinth.de/boernel/lilypond-vorlagen">boernel/lilypond-vorlagen: Vorlagen zur Erstellung eines Liederbuches mit den Lilypondscripten. - lilypond-vorlagen - Tuxgit</a></p></li>
+<li><p>Du klickst auf <code>Dieses Template verwenden</code></p></li>
+<li><p>Du folgst den Schritten (Besitzer*innen, Name, … festlegen) Wichtig: Bei Template muss <code>lilypond-vorlagen</code> ausgewählt sein</p></li>
+<li><p>Dann kannst du einfach weitermachen wie bei “Ein bestehendes Liederbuch-Repo klonen”</p></li>
+</ol>
+</section>
+</section>
+<section id="grundbegriffe-im-git-alltag" class="level2">
+<h2 class="anchored" data-anchor-id="grundbegriffe-im-git-alltag">Grundbegriffe im Git-Alltag</h2>
+<p><em>alphabetisch sortiert</em></p>
+<section id="branches" class="level3">
+<h3 class="anchored" data-anchor-id="branches">Branches</h3>
+<p>Beim Einsatz von Git dienen Branches (engl.: to branch - sich verzweigen) dazu, um einen separaten Arbeitszweig zu erstellen. Dieser kann dann auch als neuer Kontext gesehen werden, in dem gearbeitet wird. So kann z.B. die Programmierung eines Sicherheits-Patches in einem eigenen Branch erfolgen (im Kontext des Patches), der bei Fertigstellung und nach dem Testen zurück in den Master-Zweig eingearbeitet wird. Das Wiedereinführen funktioniert bei uns über einen Pull Request.</p>
+<p>Befehl: <code>git branch NAME</code></p>
+</section>
+<section id="checkout" class="level3">
+<h3 class="anchored" data-anchor-id="checkout">Checkout</h3>
+<p>Das Wechseln von einem Branch in einen anderen Branch.</p>
+<p>Befehl: <code>git checkout BRANCH</code></p>
+</section>
+<section id="commit" class="level3">
+<h3 class="anchored" data-anchor-id="commit">Commit</h3>
+<p>Ein Commit in einem Git-Repository speichert eine Abbildung aller Dateien in deinem Projektverzeichnis. Es ist wie ein riesiges Kopieren und Einfügen, nur besser.</p>
+<p>Allerdings will Git die Commits so schlank wie möglich halten, also kopiert es nicht einfach stur das ganze Verzeichnis jedes Mal wenn du committest. Es kann (wenn möglich) Commits als Menge von Änderungen zusammenpacken, von einer Version des Repositorys zur nächsten.</p>
+<p>Außerdem führt Git ein Protokoll darüber, welche Commits wann gemacht wurden, und welcher auf welchen folgt. Dieses Protokoll zu haben ist eine tolle Sache für jeden, der an einem Projekt arbeitet. Commits sind sehr ressourcenschonend, und zwischen ihnen wechseln geht superschnell!</p>
+<p>Befehl: <code>git commit</code></p>
+</section>
+<section id="fetch" class="level3">
+<h3 class="anchored" data-anchor-id="fetch">Fetch</h3>
+<p>Der Befehl <code>git fetch</code> importiert Commits von einem Remote-Repository in das lokale Repo. Dabei werden die Commits des Remote-Repos aber <strong>nicht</strong> ins lokale Repo überführt (wie bei <code>git pull</code>). Fetching ist die geeignete Methode, um einzusehen, woran andere gearbeitet haben. Da auf diese Weise importierte Inhalte von Remote-Branches repräsentiert werden, haben sie absolut keinen Effekt auf die lokale Entwicklungsarbeit.</p>
+<p><em>Alternative Erklärung:</em> <code>git fetch</code> holt Änderungen aus dem Remote-Repository, aber wendet diese nicht auf den lokalen Code an.</p>
+</section>
+<section id="head" class="level3">
+<h3 class="anchored" data-anchor-id="head">HEAD</h3>
+<p><code>HEAD</code> ist ein Alias für den Commit, der gerade ausgecheckt ist – es ist im Prinzip der Commit, an den du deinen nächsten Commit hängst.</p>
+<p><code>HEAD</code> zeigt immer auf den neuesten Commit. Die meisten Git-Befehle, die den Baum verändern, fangen damit an, dass sie <code>HEAD</code> verschieben.</p>
+<p>Normalerweise zeigt <code>HEAD</code> auf einen Branch-Namen (z.B. <code>bugFix</code>). Wenn du einen Commit machst, wird <code>bugFix</code> auf diesen Commit geschoben, und <code>HEAD</code> (da es auf <code>bugFix</code> zeigt) automatisch auch.</p>
+</section>
+<section id="merge" class="level3">
+<h3 class="anchored" data-anchor-id="merge">Merge</h3>
+<p>Die einfachste Methode, mit der man Branches zusammenführen kann, ist <code>git merge</code>. Das Mergen erzeugt in git einen speziellen Commit, der zwei Vorgänger hat. Ein solcher Commit bedeutet im Prinzip “ich möchte alle Arbeit von dem Vorgänger hier und dem dort <em>und</em> allen ihren jeweiligen Vorgängern miteinander kombinieren”.</p>
+<p>Befehl: <code>git merge</code></p>
+</section>
+<section id="pull" class="level3">
+<h3 class="anchored" data-anchor-id="pull">Pull</h3>
+<p>Mit dem pull-Befehl kann man Änderungen aus einem Remote-Repository holen und mit dem lokalen Repository, also den Dateien, an denen man derzeit arbeitet, synchronisieren.</p>
+</section>
+<section id="push" class="level3">
+<h3 class="anchored" data-anchor-id="push">Push</h3>
+<p>Mit <code>git push</code> können Commits nun von einem lokalen Repository in ein Remote-Repo transferiert werden. Dieser Befehl ist das Gegenstück zu git fetch. Während beim Fetching Commits in lokale Branches importiert werden, exportiert git push Commits in Remote-Branches. Es besteht die Möglichkeit, Änderungen zu überschreiben; entsprechend sorgfältig sollte der Befehl genutzt werden.</p>
+</section>
+<section id="repository" class="level3">
+<h3 class="anchored" data-anchor-id="repository">Repository</h3>
+<p>In ein Repository bzw. einem Repo befinden sich alle Dateien inklusive derer vorangegangenen Versionen. Dadurch stehen stets alle Änderungen zur Verfügung, die von einer Datei ins Repo gespielt wurden und es kann nachvollzogen werden Wer, Wann, welche Änderungen durchgeführt hat. Das besondere an Git ist, dass jede lokale Working Directory eines Users (ein “Klon” - via “git clone”) wieder ein vollständiges, eigenes, lokales Repo darstellt. Es existieren somit mehrere Kopien der Repos, der, der einen Klon besitzt, kann daran arbeiten - inklusive kompletter History, auch offline und ohne Abhängigkeit von einem zentralen Server. Die Änderungen aus dem eigenen Repo/der Working Copy können dann auf einen Ruck oder Schritt für Schritt, wenn sie als public angesehen werden, wieder in das Remote-Repo “gepusht” werden (git push).</p>
+</section>
+<section id="rebase" class="level3">
+<h3 class="anchored" data-anchor-id="rebase">Rebase</h3>
+<p>Der zweite Weg um Inhalte aus verschiedenen Branches zu kombinieren ist<code>git rebase</code>. Rebasen nimmt im Prinzip eine Menge von Commits, “kopiert” sie und packt sie auf etwas anderes drauf.</p>
+<p>Auch wenn das erst mal komisch klingt, liegt der Vorteil von Rebase darin, dass man es benutzen kann um hübsch lineare Abfolgen von Commits zu erhalten. Das Commit-Protokoll des Repositorys wird durch Rebase eine ganze Ecke einfacher aussehen, weil Merge Commits vermieden werden.</p>
+<p>Befehl: <code>git rebase</code></p>
+</section>
+<section id="submodul" class="level3">
+<h3 class="anchored" data-anchor-id="submodul">Submodul</h3>
+<p>Das <code>lilypond-song-includes</code>-Repo wird in der Regel als Submodul genutzt. Das bedeutet, es ist ein eigenes (Remote-)Repository, das in ein anderes (Remote-)Repository eingebunden wird (zum Beispiel dein Liederbuch-Repo).</p>
+</section>
+<section id="versionierung" class="level3">
+<h3 class="anchored" data-anchor-id="versionierung">Versionierung</h3>
+<p>Sobald an einer Working Copy gearbeitet wird protokolliert Git alle getätigten Änderungen mit. Mittels commit können die Änderungen zu dem Repository hinzugefügt werden, eine neue Version der Datei(n) befinden sich dann im Repo. Anschließend können verschiedene Versionen miteinander verglichen, Änderungen rückgängig oder zu einer früheren Version zurückgekehrt werden. Die Log-Informationen, die von Git mit aufgezeichnet werden können mit “git log” ausgegeben werden, “git status” listet die noch nicht ins Repo gespielten Änderungen der Working Copy auf.</p>
+</section>
+<section id="working-directory" class="level3">
+<h3 class="anchored" data-anchor-id="working-directory">Working Directory</h3>
+</section>
+</section>
+<section id="how-to-pull-request" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-pull-request">How to Pull-Request</h2>
 
 
 </section>

@@ -1,71 +1,13 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "How To Liederbuch",
-    "section": "",
-    "text": "Moin.\nSchön, dass du hergefunden hast! In diesem Leitfaden zeigen wir dir, wie du mit LilyPond und Git Liederbücher anhand unserer Vorlagen und Skripte erstellen kannst. Wir versuchen dich dabei bestmöglich an die Hand zu nehmen, um die Hürden, die es dabei gibt, möglichst niedrig zu halten. Zu diesem Zwecke gibt es diesen Leitfaden, aber auch eine Gruppe auf Signal, in der sich alle Personen befinden, die mit unserem System Liederbücher machen.",
-    "crumbs": [
-      "Moin."
-    ]
-  },
-  {
-    "objectID": "index.html#was-können-wir-dir-bieten",
-    "href": "index.html#was-können-wir-dir-bieten",
-    "title": "How To Liederbuch",
-    "section": "Was können wir dir bieten?",
-    "text": "Was können wir dir bieten?\nEine kleine Übersicht über Vorteile, die unser System mit sich bringt. Wenn dir davon nicht alles was sagt, ist das gar nicht schlimm.\n\nDu kannst Liederbücher mit Noten und ohne Noten erstellen. Du kannst außerdem entscheiden, ob du Akkorde über den Strophen haben möchtest oder nicht.\nDu benötigst dafür keine kostenpflichtigen Programme. Alle Programme, die wir nutzen, sind Free and Open Source Software.\nDu kannst davon profitieren, dass wir in unserem Liederpool schon etliche Lieder gesetzt haben.\nDurch unsere Struktur profitierst du von Fehlerkorrekturen anderer Liederbuchprojekte.\nLilyPond ist ein codebasiertes Notensatzprogramm, das bedeutet, man kann sehr gut ein Versionierungs- und Nachverfolgungssystem mit Git nutzen.",
-    "crumbs": [
-      "Moin."
-    ]
-  },
-  {
-    "objectID": "index.html#wer-wir-sind",
-    "href": "index.html#wer-wir-sind",
-    "title": "How To Liederbuch",
-    "section": "Wer „wir“ sind",
-    "text": "Wer „wir“ sind\nWir sind ein Zusammenschluss an verschiedenen Liederbuchprojekten, die alle LilyPond nutzen. Irgendwann kamen wir an den Punkt, dass es cool wäre, wenn man mehr Synergien untereinander hätte. Daraufhin haben wir das Konzept unseres Liederpools entwickelt, in dem sich nur der musikalische Inhalt eines Liedes befindet, den man dann in seinem Liederbuchprojekt spezifisch layouten kann. Das hat zwei riesige Vorteile: Einerseits kann man von dem profitieren, was andere schon gesetzt haben, und andererseits kann man von den Fehlerkorrekturen anderer profitieren.\nSo, jetzt genug der langen Vorrede. Los geht’s!",
-    "crumbs": [
-      "Moin."
-    ]
-  },
-  {
-    "objectID": "vorbereitung.html",
-    "href": "vorbereitung.html",
-    "title": "1  Vorbereitung",
-    "section": "",
-    "text": "Zuerst richten wir alle Programme ein, die du brauchst. Du benötigst als erstes LilyPond und Frescobaldi. Dann Git und dann einen Account bei dem Git-Server von tux.\nWir erklären dir jetzt Schritt für Schritt, was du dafür tun musst.",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Vorbereitung</span>"
-    ]
-  },
-  {
-    "objectID": "lifehacks.html",
-    "href": "lifehacks.html",
-    "title": "2  Nützliche Lifehacks",
-    "section": "",
-    "text": "2.1 Frescobaldi-Lifehacks",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Nützliche Lifehacks</span>"
-    ]
-  },
-  {
-    "objectID": "lifehacks.html#frescobaldi-lifehacks",
-    "href": "lifehacks.html#frescobaldi-lifehacks",
-    "title": "2  Nützliche Lifehacks",
-    "section": "",
-    "text": "Du kannst die Silben eines Textes automatisiert trennen: Text auswählen und unter Werkzeuge/Musical Transformations/Liedtext/Trennungsstriche in Text einführen oder einfach Strg + L. Achtung! Die Funktion funktioniert leider nicht absolut fehlerfrei, deswegen definitiv nochmal Korrektur drüber lesen.\nDu kannst Noten ganz einfach transponieren, was in diesem Falle meint, dass sich der tatsächliche Code verändert: entsprechenden Code auswählen unter Werkzeuge/Musical Transformations/Tonhöhen/Transponieren. Dazu wichtig: Abschnitt auswählen und im Dokument vorher temporär \\language \"deutsch\" aufrufen.\nAuch Notenlängen Halbieren oder Verdoppeln geht sehr einfach: entsprechenden Code auswählen Werkzeuge/Musical Transformations/Rythmus/ und dann auf Notenlänge verdoppeln bzw. Notenlänge halbieren.\nEbenfalls kann eine bestimmte rhythmische Form übernommen werden: Werkzeuge/Musical Transformations/Rhythmus/.\nLange Zeilen können im Editor standardmäßig umgebrochen werden: Unter Bearbeiten/Einstellungen/Editor-Einstellungen/Einstellungen zur Ansicht -&gt; Haken setzen.\nZahlreiche LilyPond-Codeschnipsel gibt es unter Schnipsel. Das wollen wir künftig noch mehr ausbauen.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Nützliche Lifehacks</span>"
-    ]
-  },
-  {
     "objectID": "frescobaldi_einrichten.html",
     "href": "frescobaldi_einrichten.html",
     "title": "Einrichtung von Frescobaldi",
     "section": "",
-    "text": "Frescobaldi installieren",
+    "text": "Frescobaldi ist eine sogenannte „Integrierte Entwicklungsumgebung“ (IDE). Das bedeutet, sie schafft ein angenehmes Arbeitsumfeld, wenn du mit LilyPond arbeitest. LilyPond selbst ist nämlich quasi nur die „Sprache“ in der du Noten setzt und das Programm, womit du sie auswertest („setzt“). Frescobaldi vereint dann unter anderem einen PDF-Viewer, einen MIDI-Player und noch ein paar andere nützliche Werkzeuge.\n\n\n\nGehe auf https://frescobaldi.org/ und wähle unter Download die neueste Version für dein Betriebssystem. In eigentlich allen Linux-Distributionen sollte Frescobaldi zudem in der Paketverwaltung zu finden sein.\nDu wirst auf eine Github-Seite weitergeleitet, wo du unter Assets die richtige Version auswählen kannst. Für Windows wähle *.exe, für Linux *.tar.gz und für MacOS .dmg.\nLade die Datei herunter und führe sie aus.\nFolge dem Installationsprozess.\n\n\n\n\n\nGehe in die Einstellungen.\nUnter Lilypond-Einstellungen musst du die korrekte Lilypond-Version einstellen. Gehe dazu auf Hinzufügen und wähle dann im Explorerfenster die *.exe-Datei aus. Dazu musst du in den Ordner gehen, in dem du den LilyPond-Ordner eben abgelegt hast (siehe oben), und die Datei bin/lilypond.exe auswählen.\nAußerdem ist die Einstellung Dokument speichern, wenn möglich unter Lilypond-Einstellungen und dort Lilypond starten sinnvoll, damit man gleich kompilieren kann, ohne dauernd speichern zu müssen.\nEine weitere sinnvolle Einstellung ist unter Allgemeine Einstellungen im Reiter Saving die Einstellung Leerzeichen am Zeilenende entfernen. Es macht Sinn, dort einen Haken zu setzen.\nFalls du Linux nutzt, ist es wichtig, dass du jeweils vorm Starten von Frescobaldi einen MIDI-Player startest. Was du dafür tun musst, ist in diesem GitHub-Issue erklärt.\nDas war’s schon. Fertig!",
     "crumbs": [
+      "Einführung",
+      "Vorbereitung",
       "Einrichtung von Frescobaldi"
     ]
   },
@@ -76,6 +18,8 @@
     "section": "",
     "text": "Gehe auf https://frescobaldi.org/ und wähle unter Download die neueste Version für dein Betriebssystem. In eigentlich allen Linux-Distributionen sollte Frescobaldi zudem in der Paketverwaltung zu finden sein.\nDu wirst auf eine Github-Seite weitergeleitet, wo du unter Assets die richtige Version auswählen kannst. Für Windows wähle *.exe, für Linux *.tar.gz und für MacOS .dmg.\nLade die Datei herunter und führe sie aus.\nFolge dem Installationsprozess.",
     "crumbs": [
+      "Einführung",
+      "Vorbereitung",
       "Einrichtung von Frescobaldi"
     ]
   },
@@ -83,19 +27,99 @@
     "objectID": "frescobaldi_einrichten.html#beim-ersten-ausführen",
     "href": "frescobaldi_einrichten.html#beim-ersten-ausführen",
     "title": "Einrichtung von Frescobaldi",
-    "section": "Beim ersten Ausführen",
-    "text": "Beim ersten Ausführen\n\nGehe in die Einstellungen.\nUnter Lilypond-Einstellungen musst du die korrekte Lilypond-Version einstellen. Gehe dazu auf Hinzufügen und wähle dann im Explorerfenster die *.exe-Datei aus. Dazu musst du in den Ordner gehen, in dem du den LilyPond-Ordner eben abgelegt hast (siehe oben), und die Datei bin/lilypond.exe auswählen.\nAußerdem ist die Einstellung Dokument speichern, wenn möglich unter Lilypond-Einstellungen und dort Lilypond starten sinnvoll, damit man gleich kompilieren kann, ohne dauernd speichern zu müssen.\nEine weitere sinnvolle Einstellung ist unter Allgemeine Einstellungen im Reiter Saving die Einstellung Leerzeichen am Zeilenende entfernen. Es macht Sinn, dort einen Haken zu setzen.\nFalls du Linux nutzt, ist es wichtig, dass du jeweils vorm Starten von Frescobaldi einen MIDI-Player startest. Was du dafür tun musst, ist in diesem GitHub-Issue erklärt.\nDas war’s schon. Fertig!",
+    "section": "",
+    "text": "Gehe in die Einstellungen.\nUnter Lilypond-Einstellungen musst du die korrekte Lilypond-Version einstellen. Gehe dazu auf Hinzufügen und wähle dann im Explorerfenster die *.exe-Datei aus. Dazu musst du in den Ordner gehen, in dem du den LilyPond-Ordner eben abgelegt hast (siehe oben), und die Datei bin/lilypond.exe auswählen.\nAußerdem ist die Einstellung Dokument speichern, wenn möglich unter Lilypond-Einstellungen und dort Lilypond starten sinnvoll, damit man gleich kompilieren kann, ohne dauernd speichern zu müssen.\nEine weitere sinnvolle Einstellung ist unter Allgemeine Einstellungen im Reiter Saving die Einstellung Leerzeichen am Zeilenende entfernen. Es macht Sinn, dort einen Haken zu setzen.\nFalls du Linux nutzt, ist es wichtig, dass du jeweils vorm Starten von Frescobaldi einen MIDI-Player startest. Was du dafür tun musst, ist in diesem GitHub-Issue erklärt.\nDas war’s schon. Fertig!",
     "crumbs": [
+      "Einführung",
+      "Vorbereitung",
       "Einrichtung von Frescobaldi"
     ]
+  },
+  {
+    "objectID": "index.html#was-können-wir-dir-bieten",
+    "href": "index.html#was-können-wir-dir-bieten",
+    "title": "Moin.",
+    "section": "Was können wir dir bieten?",
+    "text": "Was können wir dir bieten?\nEine kleine Übersicht über Vorteile, die unser System mit sich bringt. Wenn dir davon nicht alles was sagt, ist das gar nicht schlimm.\n\nDu kannst Liederbücher mit Noten und ohne Noten erstellen. Du kannst außerdem entscheiden, ob du Akkorde über den Strophen haben möchtest oder nicht.\nDu benötigst dafür keine kostenpflichtigen Programme. Alle Programme, die wir nutzen, sind Free and Open Source Software.\nDu kannst davon profitieren, dass wir in unserem Liederpool schon etliche Lieder gesetzt haben.\nDurch unsere Struktur profitierst du von Fehlerkorrekturen anderer Liederbuchprojekte.\nLilyPond ist ein codebasiertes Notensatzprogramm, das bedeutet, man kann sehr gut ein Versionierungs- und Nachverfolgungssystem mit Git nutzen."
+  },
+  {
+    "objectID": "index.html#wer-wir-sind",
+    "href": "index.html#wer-wir-sind",
+    "title": "Moin.",
+    "section": "Wer „wir“ sind",
+    "text": "Wer „wir“ sind\nWir sind ein Zusammenschluss an verschiedenen Liederbuchprojekten, die alle LilyPond nutzen. Irgendwann kamen wir an den Punkt, dass es cool wäre, wenn man mehr Synergien untereinander hätte. Daraufhin haben wir das Konzept unseres Liederpools entwickelt, in dem sich nur der musikalische Inhalt eines Liedes befindet, den man dann in seinem Liederbuchprojekt spezifisch layouten kann. Das hat zwei riesige Vorteile: Einerseits kann man von dem profitieren, was andere schon gesetzt haben, und andererseits kann man von den Fehlerkorrekturen anderer profitieren.\nSo, jetzt genug der langen Vorrede. Los geht’s!"
+  },
+  {
+    "objectID": "lifehacks.html",
+    "href": "lifehacks.html",
+    "title": "Nützliche Lifehacks",
+    "section": "",
+    "text": "Du kannst die Silben eines Textes automatisiert trennen: Text auswählen und unter Werkzeuge/Musical Transformations/Liedtext/Trennungsstriche in Text einführen oder einfach Strg + L. Achtung! Die Funktion funktioniert leider nicht absolut fehlerfrei, deswegen definitiv nochmal Korrektur drüber lesen.\nDu kannst Noten ganz einfach transponieren, was in diesem Falle meint, dass sich der tatsächliche Code verändert: entsprechenden Code auswählen unter Werkzeuge/Musical Transformations/Tonhöhen/Transponieren. Dazu wichtig: Abschnitt auswählen und im Dokument vorher temporär \\language \"deutsch\" aufrufen.\nAuch Notenlängen Halbieren oder Verdoppeln geht sehr einfach: entsprechenden Code auswählen Werkzeuge/Musical Transformations/Rythmus/ und dann auf Notenlänge verdoppeln bzw. Notenlänge halbieren.\nEbenfalls kann eine bestimmte rhythmische Form übernommen werden: Werkzeuge/Musical Transformations/Rhythmus/.\nLange Zeilen können im Editor standardmäßig umgebrochen werden: Unter Bearbeiten/Einstellungen/Editor-Einstellungen/Einstellungen zur Ansicht -&gt; Haken setzen.\nZahlreiche LilyPond-Codeschnipsel gibt es unter Schnipsel. Das wollen wir künftig noch mehr ausbauen.",
+    "crumbs": [
+      "Doku",
+      "Nützliche Lifehacks"
+    ]
+  },
+  {
+    "objectID": "lifehacks.html#frescobaldi-lifehacks",
+    "href": "lifehacks.html#frescobaldi-lifehacks",
+    "title": "Nützliche Lifehacks",
+    "section": "",
+    "text": "Du kannst die Silben eines Textes automatisiert trennen: Text auswählen und unter Werkzeuge/Musical Transformations/Liedtext/Trennungsstriche in Text einführen oder einfach Strg + L. Achtung! Die Funktion funktioniert leider nicht absolut fehlerfrei, deswegen definitiv nochmal Korrektur drüber lesen.\nDu kannst Noten ganz einfach transponieren, was in diesem Falle meint, dass sich der tatsächliche Code verändert: entsprechenden Code auswählen unter Werkzeuge/Musical Transformations/Tonhöhen/Transponieren. Dazu wichtig: Abschnitt auswählen und im Dokument vorher temporär \\language \"deutsch\" aufrufen.\nAuch Notenlängen Halbieren oder Verdoppeln geht sehr einfach: entsprechenden Code auswählen Werkzeuge/Musical Transformations/Rythmus/ und dann auf Notenlänge verdoppeln bzw. Notenlänge halbieren.\nEbenfalls kann eine bestimmte rhythmische Form übernommen werden: Werkzeuge/Musical Transformations/Rhythmus/.\nLange Zeilen können im Editor standardmäßig umgebrochen werden: Unter Bearbeiten/Einstellungen/Editor-Einstellungen/Einstellungen zur Ansicht -&gt; Haken setzen.\nZahlreiche LilyPond-Codeschnipsel gibt es unter Schnipsel. Das wollen wir künftig noch mehr ausbauen.",
+    "crumbs": [
+      "Doku",
+      "Nützliche Lifehacks"
+    ]
+  },
+  {
+    "objectID": "git_verstehen.html",
+    "href": "git_verstehen.html",
+    "title": "Was ist eigentlich Git?",
+    "section": "",
+    "text": "Git ist ein Versionierungssystem, welches frei als Open-Source-Software zur Verfügung gestellt wird. Git wird für die Versionskontrolle (stetige Protokollierung von Änderungen) von Dateien eingesetzt.\nVor allem im Programmierbereich dient Git dazu, die eigenen Änderungen zu überwachen, sie rückgängig zu machen. Die wesentliche Nutzung findet in sogenannten „Repositories“ (Repos) statt. Das ist quasi ein Ordner, in dem sich Dateien und andere Ordner befinden, quasi eine Art „Arbeitsordner“ oder „Arbeitsverzeichnis“. Dabei gibt es verschiedene Orte, an dem dieser Arbeitsordner liegt.\n\nDas Remote Repo liegt auf einem Git-Server („Remote“).\nDas Local Repo ist das Abbild einer Version des Remote Repos.\nDie Working Copy (in Figure 1 „User“) ist die lokale Bearbeitung des Local Repos.\n\n\n\n\n\n\n\nFigure 1\n\n\n\nDadurch ergeben sich am Repo für Bearbeiter*innen folgende Möglichkeiten:\n\nDie eigene Arbeit kann einfach wieder in die zentrale Basis integriert werden.\nEs kann zeitgleich weiterentwickelt werden, z.B. jeder an verschiedenen Features.\nDie Versionierung verhindert, dass bereits getätigte Arbeiten verloren gehen bzw. überschrieben werden.\nBei Bedarf kann zu früheren Versionen zurückgekehrt werden oder simultan an verschiedenen Versionen gearbeitet werden (auch „Branches“ genannt).\n\n\n\nHier gibt es eine tolle Spielwiese zum Ausprobieren: https://learngitbranching.js.org/. Sinnvoll für uns ist mindestens die Einführung.\n\n\n\n\n\nWenn ja, dann solltest du dir erst einen SSH-Key besorgen.\n\n\nKurze Erklärung: Der SSH-Key ist dafür da, dass das Remote-Repo weiß, dass dein lokales Repo auch zu dir gehört. Sonst könnte ja jeder, der den SSH-Link hat, Zugriff aufs Repo haben. Er ist also ein Identifikationsmittel für deinen Account. Dafür hinterlegst du den public key in deinem Git-Account und sagst deinem Git-Programm (SmartGit, SourceTree, TortoiseGit), wo deine Schlüssel-Datei liegt. Diese Datei ist auch nochmal extra passwortgeschützt. Sie sollte auf keinen Fall gelöscht oder verschoben werden. Die lange Erklärung kannst du hier nachlesen.\n\n\n\nDu musst dir einen SSH-Key erstellen und das Passwort, public key und private key und Schlüsseldatei speichern/aufbewahren. Eine Anleitung findest du hier.\nAnschließend hinterlegst du den public key in deinem Git-Account (unter Einstellungen -&gt; SSH- / GPG-Schlüssel -&gt; Schlüssel hinzufügen).\nBeim Klonen eines Liederbuchs wirst du dann irgendwann nach deiner Schlüsseldatei gefragt (für die du dann auch das Passwort brauchst).\nKlingt alles sehr kompliziert - ist es auch, aber: Du musst das nur einmal machen und dann funktioniert es einfach.\n\n\n\n\n\nRemote-Repo klonen Das sieht je nach GUI verschieden aus. Irgendwo gibt es die Option Clone und da kann dann der Link zum Remote-Repo eingeben werden.  Wichtig ist bei dem Prozess: Submodule müssen inkludiert werden. Irgendwo kann man dann den Speicherort des lokalen Repos festlegen. Es empfiehlt sich, einen Ordner zu haben, wo alle Git-Repos drin sind. Dies ist aber nicht notwendig für irgendetwas.\nFertig!\n\n\n\n\n\nDu gehst auf: boernel/lilypond-vorlagen: Vorlagen zur Erstellung eines Liederbuches mit den Lilypondscripten. - lilypond-vorlagen - Tuxgit\nDu klickst auf Dieses Template verwenden\nDu folgst den Schritten (Besitzer*innen, Name, … festlegen) Wichtig: Bei Template muss lilypond-vorlagen ausgewählt sein\nDann kannst du einfach weitermachen wie bei “Ein bestehendes Liederbuch-Repo klonen”\n\n\n\n\n\nalphabetisch sortiert\n\n\nBeim Einsatz von Git dienen Branches (engl.: to branch - sich verzweigen) dazu, um einen separaten Arbeitszweig zu erstellen. Dieser kann dann auch als neuer Kontext gesehen werden, in dem gearbeitet wird. So kann z.B. die Programmierung eines Sicherheits-Patches in einem eigenen Branch erfolgen (im Kontext des Patches), der bei Fertigstellung und nach dem Testen zurück in den Master-Zweig eingearbeitet wird. Das Wiedereinführen funktioniert bei uns über einen Pull Request.\nBefehl: git branch NAME\n\n\n\nDas Wechseln von einem Branch in einen anderen Branch.\nBefehl: git checkout BRANCH\n\n\n\nEin Commit in einem Git-Repository speichert eine Abbildung aller Dateien in deinem Projektverzeichnis. Es ist wie ein riesiges Kopieren und Einfügen, nur besser.\nAllerdings will Git die Commits so schlank wie möglich halten, also kopiert es nicht einfach stur das ganze Verzeichnis jedes Mal wenn du committest. Es kann (wenn möglich) Commits als Menge von Änderungen zusammenpacken, von einer Version des Repositorys zur nächsten.\nAußerdem führt Git ein Protokoll darüber, welche Commits wann gemacht wurden, und welcher auf welchen folgt. Dieses Protokoll zu haben ist eine tolle Sache für jeden, der an einem Projekt arbeitet. Commits sind sehr ressourcenschonend, und zwischen ihnen wechseln geht superschnell!\nBefehl: git commit\n\n\n\nDer Befehl git fetch importiert Commits von einem Remote-Repository in das lokale Repo. Dabei werden die Commits des Remote-Repos aber nicht ins lokale Repo überführt (wie bei git pull). Fetching ist die geeignete Methode, um einzusehen, woran andere gearbeitet haben. Da auf diese Weise importierte Inhalte von Remote-Branches repräsentiert werden, haben sie absolut keinen Effekt auf die lokale Entwicklungsarbeit.\nAlternative Erklärung: git fetch holt Änderungen aus dem Remote-Repository, aber wendet diese nicht auf den lokalen Code an.\n\n\n\nHEAD ist ein Alias für den Commit, der gerade ausgecheckt ist – es ist im Prinzip der Commit, an den du deinen nächsten Commit hängst.\nHEAD zeigt immer auf den neuesten Commit. Die meisten Git-Befehle, die den Baum verändern, fangen damit an, dass sie HEAD verschieben.\nNormalerweise zeigt HEAD auf einen Branch-Namen (z.B. bugFix). Wenn du einen Commit machst, wird bugFix auf diesen Commit geschoben, und HEAD (da es auf bugFix zeigt) automatisch auch.\n\n\n\nDie einfachste Methode, mit der man Branches zusammenführen kann, ist git merge. Das Mergen erzeugt in git einen speziellen Commit, der zwei Vorgänger hat. Ein solcher Commit bedeutet im Prinzip “ich möchte alle Arbeit von dem Vorgänger hier und dem dort und allen ihren jeweiligen Vorgängern miteinander kombinieren”.\nBefehl: git merge\n\n\n\nMit dem pull-Befehl kann man Änderungen aus einem Remote-Repository holen und mit dem lokalen Repository, also den Dateien, an denen man derzeit arbeitet, synchronisieren.\n\n\n\nMit git push können Commits nun von einem lokalen Repository in ein Remote-Repo transferiert werden. Dieser Befehl ist das Gegenstück zu git fetch. Während beim Fetching Commits in lokale Branches importiert werden, exportiert git push Commits in Remote-Branches. Es besteht die Möglichkeit, Änderungen zu überschreiben; entsprechend sorgfältig sollte der Befehl genutzt werden.\n\n\n\nIn ein Repository bzw. einem Repo befinden sich alle Dateien inklusive derer vorangegangenen Versionen. Dadurch stehen stets alle Änderungen zur Verfügung, die von einer Datei ins Repo gespielt wurden und es kann nachvollzogen werden Wer, Wann, welche Änderungen durchgeführt hat. Das besondere an Git ist, dass jede lokale Working Directory eines Users (ein “Klon” - via “git clone”) wieder ein vollständiges, eigenes, lokales Repo darstellt. Es existieren somit mehrere Kopien der Repos, der, der einen Klon besitzt, kann daran arbeiten - inklusive kompletter History, auch offline und ohne Abhängigkeit von einem zentralen Server. Die Änderungen aus dem eigenen Repo/der Working Copy können dann auf einen Ruck oder Schritt für Schritt, wenn sie als public angesehen werden, wieder in das Remote-Repo “gepusht” werden (git push).\n\n\n\nDer zweite Weg um Inhalte aus verschiedenen Branches zu kombinieren istgit rebase. Rebasen nimmt im Prinzip eine Menge von Commits, “kopiert” sie und packt sie auf etwas anderes drauf.\nAuch wenn das erst mal komisch klingt, liegt der Vorteil von Rebase darin, dass man es benutzen kann um hübsch lineare Abfolgen von Commits zu erhalten. Das Commit-Protokoll des Repositorys wird durch Rebase eine ganze Ecke einfacher aussehen, weil Merge Commits vermieden werden.\nBefehl: git rebase\n\n\n\nDas lilypond-song-includes-Repo wird in der Regel als Submodul genutzt. Das bedeutet, es ist ein eigenes (Remote-)Repository, das in ein anderes (Remote-)Repository eingebunden wird (zum Beispiel dein Liederbuch-Repo).\n\n\n\nSobald an einer Working Copy gearbeitet wird protokolliert Git alle getätigten Änderungen mit. Mittels commit können die Änderungen zu dem Repository hinzugefügt werden, eine neue Version der Datei(n) befinden sich dann im Repo. Anschließend können verschiedene Versionen miteinander verglichen, Änderungen rückgängig oder zu einer früheren Version zurückgekehrt werden. Die Log-Informationen, die von Git mit aufgezeichnet werden können mit “git log” ausgegeben werden, “git status” listet die noch nicht ins Repo gespielten Änderungen der Working Copy auf."
+  },
+  {
+    "objectID": "git_verstehen.html#spielerisch-git-lernen",
+    "href": "git_verstehen.html#spielerisch-git-lernen",
+    "title": "Was ist eigentlich Git?",
+    "section": "",
+    "text": "Hier gibt es eine tolle Spielwiese zum Ausprobieren: https://learngitbranching.js.org/. Sinnvoll für uns ist mindestens die Einführung."
+  },
+  {
+    "objectID": "git_verstehen.html#einrichten-des-repos",
+    "href": "git_verstehen.html#einrichten-des-repos",
+    "title": "Was ist eigentlich Git?",
+    "section": "",
+    "text": "Wenn ja, dann solltest du dir erst einen SSH-Key besorgen.\n\n\nKurze Erklärung: Der SSH-Key ist dafür da, dass das Remote-Repo weiß, dass dein lokales Repo auch zu dir gehört. Sonst könnte ja jeder, der den SSH-Link hat, Zugriff aufs Repo haben. Er ist also ein Identifikationsmittel für deinen Account. Dafür hinterlegst du den public key in deinem Git-Account und sagst deinem Git-Programm (SmartGit, SourceTree, TortoiseGit), wo deine Schlüssel-Datei liegt. Diese Datei ist auch nochmal extra passwortgeschützt. Sie sollte auf keinen Fall gelöscht oder verschoben werden. Die lange Erklärung kannst du hier nachlesen.\n\n\n\nDu musst dir einen SSH-Key erstellen und das Passwort, public key und private key und Schlüsseldatei speichern/aufbewahren. Eine Anleitung findest du hier.\nAnschließend hinterlegst du den public key in deinem Git-Account (unter Einstellungen -&gt; SSH- / GPG-Schlüssel -&gt; Schlüssel hinzufügen).\nBeim Klonen eines Liederbuchs wirst du dann irgendwann nach deiner Schlüsseldatei gefragt (für die du dann auch das Passwort brauchst).\nKlingt alles sehr kompliziert - ist es auch, aber: Du musst das nur einmal machen und dann funktioniert es einfach.\n\n\n\n\n\nRemote-Repo klonen Das sieht je nach GUI verschieden aus. Irgendwo gibt es die Option Clone und da kann dann der Link zum Remote-Repo eingeben werden.  Wichtig ist bei dem Prozess: Submodule müssen inkludiert werden. Irgendwo kann man dann den Speicherort des lokalen Repos festlegen. Es empfiehlt sich, einen Ordner zu haben, wo alle Git-Repos drin sind. Dies ist aber nicht notwendig für irgendetwas.\nFertig!\n\n\n\n\n\nDu gehst auf: boernel/lilypond-vorlagen: Vorlagen zur Erstellung eines Liederbuches mit den Lilypondscripten. - lilypond-vorlagen - Tuxgit\nDu klickst auf Dieses Template verwenden\nDu folgst den Schritten (Besitzer*innen, Name, … festlegen) Wichtig: Bei Template muss lilypond-vorlagen ausgewählt sein\nDann kannst du einfach weitermachen wie bei “Ein bestehendes Liederbuch-Repo klonen”"
+  },
+  {
+    "objectID": "git_verstehen.html#grundbegriffe-im-git-alltag",
+    "href": "git_verstehen.html#grundbegriffe-im-git-alltag",
+    "title": "Was ist eigentlich Git?",
+    "section": "",
+    "text": "alphabetisch sortiert\n\n\nBeim Einsatz von Git dienen Branches (engl.: to branch - sich verzweigen) dazu, um einen separaten Arbeitszweig zu erstellen. Dieser kann dann auch als neuer Kontext gesehen werden, in dem gearbeitet wird. So kann z.B. die Programmierung eines Sicherheits-Patches in einem eigenen Branch erfolgen (im Kontext des Patches), der bei Fertigstellung und nach dem Testen zurück in den Master-Zweig eingearbeitet wird. Das Wiedereinführen funktioniert bei uns über einen Pull Request.\nBefehl: git branch NAME\n\n\n\nDas Wechseln von einem Branch in einen anderen Branch.\nBefehl: git checkout BRANCH\n\n\n\nEin Commit in einem Git-Repository speichert eine Abbildung aller Dateien in deinem Projektverzeichnis. Es ist wie ein riesiges Kopieren und Einfügen, nur besser.\nAllerdings will Git die Commits so schlank wie möglich halten, also kopiert es nicht einfach stur das ganze Verzeichnis jedes Mal wenn du committest. Es kann (wenn möglich) Commits als Menge von Änderungen zusammenpacken, von einer Version des Repositorys zur nächsten.\nAußerdem führt Git ein Protokoll darüber, welche Commits wann gemacht wurden, und welcher auf welchen folgt. Dieses Protokoll zu haben ist eine tolle Sache für jeden, der an einem Projekt arbeitet. Commits sind sehr ressourcenschonend, und zwischen ihnen wechseln geht superschnell!\nBefehl: git commit\n\n\n\nDer Befehl git fetch importiert Commits von einem Remote-Repository in das lokale Repo. Dabei werden die Commits des Remote-Repos aber nicht ins lokale Repo überführt (wie bei git pull). Fetching ist die geeignete Methode, um einzusehen, woran andere gearbeitet haben. Da auf diese Weise importierte Inhalte von Remote-Branches repräsentiert werden, haben sie absolut keinen Effekt auf die lokale Entwicklungsarbeit.\nAlternative Erklärung: git fetch holt Änderungen aus dem Remote-Repository, aber wendet diese nicht auf den lokalen Code an.\n\n\n\nHEAD ist ein Alias für den Commit, der gerade ausgecheckt ist – es ist im Prinzip der Commit, an den du deinen nächsten Commit hängst.\nHEAD zeigt immer auf den neuesten Commit. Die meisten Git-Befehle, die den Baum verändern, fangen damit an, dass sie HEAD verschieben.\nNormalerweise zeigt HEAD auf einen Branch-Namen (z.B. bugFix). Wenn du einen Commit machst, wird bugFix auf diesen Commit geschoben, und HEAD (da es auf bugFix zeigt) automatisch auch.\n\n\n\nDie einfachste Methode, mit der man Branches zusammenführen kann, ist git merge. Das Mergen erzeugt in git einen speziellen Commit, der zwei Vorgänger hat. Ein solcher Commit bedeutet im Prinzip “ich möchte alle Arbeit von dem Vorgänger hier und dem dort und allen ihren jeweiligen Vorgängern miteinander kombinieren”.\nBefehl: git merge\n\n\n\nMit dem pull-Befehl kann man Änderungen aus einem Remote-Repository holen und mit dem lokalen Repository, also den Dateien, an denen man derzeit arbeitet, synchronisieren.\n\n\n\nMit git push können Commits nun von einem lokalen Repository in ein Remote-Repo transferiert werden. Dieser Befehl ist das Gegenstück zu git fetch. Während beim Fetching Commits in lokale Branches importiert werden, exportiert git push Commits in Remote-Branches. Es besteht die Möglichkeit, Änderungen zu überschreiben; entsprechend sorgfältig sollte der Befehl genutzt werden.\n\n\n\nIn ein Repository bzw. einem Repo befinden sich alle Dateien inklusive derer vorangegangenen Versionen. Dadurch stehen stets alle Änderungen zur Verfügung, die von einer Datei ins Repo gespielt wurden und es kann nachvollzogen werden Wer, Wann, welche Änderungen durchgeführt hat. Das besondere an Git ist, dass jede lokale Working Directory eines Users (ein “Klon” - via “git clone”) wieder ein vollständiges, eigenes, lokales Repo darstellt. Es existieren somit mehrere Kopien der Repos, der, der einen Klon besitzt, kann daran arbeiten - inklusive kompletter History, auch offline und ohne Abhängigkeit von einem zentralen Server. Die Änderungen aus dem eigenen Repo/der Working Copy können dann auf einen Ruck oder Schritt für Schritt, wenn sie als public angesehen werden, wieder in das Remote-Repo “gepusht” werden (git push).\n\n\n\nDer zweite Weg um Inhalte aus verschiedenen Branches zu kombinieren istgit rebase. Rebasen nimmt im Prinzip eine Menge von Commits, “kopiert” sie und packt sie auf etwas anderes drauf.\nAuch wenn das erst mal komisch klingt, liegt der Vorteil von Rebase darin, dass man es benutzen kann um hübsch lineare Abfolgen von Commits zu erhalten. Das Commit-Protokoll des Repositorys wird durch Rebase eine ganze Ecke einfacher aussehen, weil Merge Commits vermieden werden.\nBefehl: git rebase\n\n\n\nDas lilypond-song-includes-Repo wird in der Regel als Submodul genutzt. Das bedeutet, es ist ein eigenes (Remote-)Repository, das in ein anderes (Remote-)Repository eingebunden wird (zum Beispiel dein Liederbuch-Repo).\n\n\n\nSobald an einer Working Copy gearbeitet wird protokolliert Git alle getätigten Änderungen mit. Mittels commit können die Änderungen zu dem Repository hinzugefügt werden, eine neue Version der Datei(n) befinden sich dann im Repo. Anschließend können verschiedene Versionen miteinander verglichen, Änderungen rückgängig oder zu einer früheren Version zurückgekehrt werden. Die Log-Informationen, die von Git mit aufgezeichnet werden können mit “git log” ausgegeben werden, “git status” listet die noch nicht ins Repo gespielten Änderungen der Working Copy auf."
   },
   {
     "objectID": "git_einrichten.html",
     "href": "git_einrichten.html",
     "title": "Einrichtung von Git",
     "section": "",
-    "text": "Account bei tuxgit erstellen lassen\nDu brauchst einen Account für unseren Git-Server. Aufgrund von Spam ist die Registrierung nicht öffentlich möglich, deswegen musst du dafür eine E-Mail an tux schreiben. Die Web-Adresse unseres Git-Servers ist: https://git.zahlenlabyrinth.de/.",
+    "text": "Hier geht es jetzt nur um eine kurze und möglichst unkomplizierte Einrichtung von Git. Du musst gar nicht alles verstehen, was im Hintergrund passiert. Das kann an späterer Stelle irgendwann auch noch kommen.\n\n\nDu brauchst einen Account für unseren Git-Server. Aufgrund von Spam ist die Registrierung nicht öffentlich möglich, deswegen musst du dafür eine E-Mail an tux schreiben. Die Web-Adresse unseres Git-Servers ist: https://git.zahlenlabyrinth.de/.\n\n\n\nGit ist per se erstmal ein Kommandozeilen-Programm. Das ist nicht für jede*n was – erst recht nicht, wenn man noch nicht so viel mit Coden zu tun hatte. Das ist aber gar nicht schlimm, denn es gibt zahlreiche verschiedene grafische Oberflächen für Git, die das Arbeiten sehr erleichtern können. Verbreitet bei uns sind gerade diese hier:\n\n\n\nLink\nfür Windows, MacOS, Linux\nkostet was, es gibt aber eine non-commercial Lizenz für gemeinnützige Organisationen und Bildungseinrichtungen: Apply for Non-Commercial License\nDafür brauchst du eine gemeinnützige Organisation, mit deren E-Mail-Adresse du dich dort registrieren kannst. Alternativ geht auch eine Uni-Mail-Adresse.\n\n\n\n\n\nLink\nfür Windows, MacOS\n\n\n\n\n\nLink\nfür Windows\n\nOder man nutzt es in der Konsole. Dann braucht man die Git Shell: Link.\n\n\n\n\nDa du Git vermutlich zum ersten Mal nutzt, brauchst du zuerst einen SSH-Key. Der SSH-Key ist dafür da, dass das Remote-Repo weiß, dass dein lokales Repo auch zu dir gehört. Sonst könnte ja jeder, der den SSH-Link hat (siehe dazu Figure 1), Zugriff aufs Repo haben. Er ist also ein Identifikationsmittel für deinen Account. Dafür hinterlegst du den public key in deinem Git-Account und sagst deinem Git-Programm (SmartGit, SourceTree, TortoiseGit), wo deine Schlüssel-Datei liegt. Diese Datei ist auch nochmal extra passwortgeschützt. Sie sollte auf keinen Fall gelöscht oder verschoben werden. Die lange Erklärung kannst du hier nachlesen.\n\n\n\n\n\n\nFigure 1: Das ist der SSH-Link.\n\n\n\n\n\nDu musst dir einen SSH-Key erstellen und das Passwort, public key und private key und Schlüsseldatei speichern/aufbewahren. Eine Anleitung dafür findest du hier.\nAnschließend hinterlegst du den public key in deinem Git-Account (unter Einstellungen -&gt; SSH- / GPG-Schlüssel -&gt; Schlüssel hinzufügen).\nSpäter wirst du beim „Klonen“ eines Liederbuchs irgendwann nach deiner Schlüsseldatei gefragt (für die du dann auch das Passwort brauchst). Es ist also wichtig, dass du beides gut speicherst!\nKlingt alles sehr kompliziert und das ist es auch, aber: Du musst das nur einmal machen und dann funktioniert es einfach. Wenigstens etwas.\n\n\n\nDa du ja ganz neu einsteigst, hast du vermutlich noch kein eigenes Liederbuch-Repo. Deswegen erstellen wir erstmal eins. Das tolle ist: Wir haben zu genau diesem Zweck ein Vorlagen-Repo gebaut, mit dem du sofort die meisten wichtigen Sachen eingerichtet hast. Wichtig: Du brauchst vorher einen Account bei tuxgit (siehe Section 1.1). So geht’s:\n\nDu gehst zu unserem LilyPond-Vorlagen-Repo auf unserem Git-Server.\nDu klickst auf Dieses Template verwenden.\nDu folgst den Schritten (Besitzer*innen, Name, … festlegen) Wichtig: Bei Template muss lilypond-vorlagen ausgewählt sein.\nDann kannst du einfach unten weitermachen.\n\n\n\n\nWenn du die obigen Schritte befolgt hast oder schon ein Liederbuch-Repo eingerichtet hast und dass einfach nur klonen willst, dann geht das so:\n\nRemote-Repo klonen\nJe nach GUI funktioniert das unterschiedlich. Irgendwo gibt es die Option Clone und da dann einen Dialog, in dem du unter anderem den SSH-Link des Repos eintragen kannst. Wichtig ist bei dem Prozess: Submodule müssen inkludiert werden. Irgendwo kann man dann den Speicherort des lokalen Repos festlegen. Es empfiehlt sich, einen Ordner zu haben, wo alle Git-Repos drin sind. Dies ist aber nicht notwendig für irgendetwas.\n\nSmartGit: In Smartgit navigierst du zu Repository -&gt; Clone und folgst dem Dialog. Zuerst gibst du deinen SSH-Link ein. Dann achtest du darauf, dass Submodules inkludiert werden und wählst zuletzt den Speicherort des Repos aus.\n\nAls nächstes müssen die Submodule noch richtig eingebunden werden, das geht nämlich leider nicht automatisch. Du brauchst auf jeden Fall unsere Common-Includes als Submodul. Wenn du mit unserem Liederpool arbeitest, brauchst du noch die Song-Includes als Submodul. Für jedes Submodul musst du diesen Prozess einzeln durchführen.\nAuch das funktioniert in jeder GUI anders. So geht es bei SmartGit:\n\nIm Menü Remote anwählen -&gt; Submodule -&gt; Add\nDann brauchst du die SSH-Links der Submodule. Die findest du auf die bekannte Art und Weise (siehe Figure 1).\nIm nächsten Schritt wird gefragt, an welcher Stelle das Submodul eingebunden werden soll, da kannst du einfach weiterklicken.\n\nFertig!\n\nUnd jetzt kann’s richtig losgehen!",
     "crumbs": [
+      "Einführung",
+      "Vorbereitung",
+      "Einrichtung von Git"
+    ]
+  },
+  {
+    "objectID": "git_einrichten.html#sec-tuxgit-account",
+    "href": "git_einrichten.html#sec-tuxgit-account",
+    "title": "Einrichtung von Git",
+    "section": "",
+    "text": "Du brauchst einen Account für unseren Git-Server. Aufgrund von Spam ist die Registrierung nicht öffentlich möglich, deswegen musst du dafür eine E-Mail an tux schreiben. Die Web-Adresse unseres Git-Servers ist: https://git.zahlenlabyrinth.de/.",
+    "crumbs": [
+      "Einführung",
+      "Vorbereitung",
       "Einrichtung von Git"
     ]
   },
@@ -103,9 +127,11 @@
     "objectID": "git_einrichten.html#eine-git-gui-aussuchen-und-herunterladen",
     "href": "git_einrichten.html#eine-git-gui-aussuchen-und-herunterladen",
     "title": "Einrichtung von Git",
-    "section": "Eine Git-GUI aussuchen und herunterladen",
-    "text": "Eine Git-GUI aussuchen und herunterladen\nGit ist per se erstmal ein Kommandozeilen-Programm. Das ist nicht für jede*n was – erst recht nicht, wenn man noch nicht so viel mit Coden zu tun hatte. Das ist aber gar nicht schlimm, denn es gibt zahlreiche verschiedene grafische Oberflächen für Git, die das Arbeiten sehr erleichtern können. Verbreitet bei uns sind gerade diese hier:\n\nSmartGit\n\nLink\nfür Windows, MacOS, Linux\nkostet was, es gibt aber eine non-commercial Lizenz für gemeinnützige Organisationen und Bildungseinrichtungen: Apply for Non-Commercial License\nDafür brauchst du eine gemeinnützige Organisation, mit deren E-Mail-Adresse du dich dort registrieren kannst. Alternativ geht auch eine Uni-Mail-Adresse.\n\n\n\nSourceTree\n\nLink\nfür Windows, MacOS\n\n\n\nTortoiseGit\n\nLink\nfür Windows\n\nOder man nutzt es in der Konsole. Dann braucht man die Git Shell: Link.",
+    "section": "",
+    "text": "Git ist per se erstmal ein Kommandozeilen-Programm. Das ist nicht für jede*n was – erst recht nicht, wenn man noch nicht so viel mit Coden zu tun hatte. Das ist aber gar nicht schlimm, denn es gibt zahlreiche verschiedene grafische Oberflächen für Git, die das Arbeiten sehr erleichtern können. Verbreitet bei uns sind gerade diese hier:\n\n\n\nLink\nfür Windows, MacOS, Linux\nkostet was, es gibt aber eine non-commercial Lizenz für gemeinnützige Organisationen und Bildungseinrichtungen: Apply for Non-Commercial License\nDafür brauchst du eine gemeinnützige Organisation, mit deren E-Mail-Adresse du dich dort registrieren kannst. Alternativ geht auch eine Uni-Mail-Adresse.\n\n\n\n\n\nLink\nfür Windows, MacOS\n\n\n\n\n\nLink\nfür Windows\n\nOder man nutzt es in der Konsole. Dann braucht man die Git Shell: Link.",
     "crumbs": [
+      "Einführung",
+      "Vorbereitung",
       "Einrichtung von Git"
     ]
   },
@@ -113,10 +139,22 @@
     "objectID": "git_einrichten.html#einrichten-eines-liederbuch-repos",
     "href": "git_einrichten.html#einrichten-eines-liederbuch-repos",
     "title": "Einrichtung von Git",
-    "section": "Einrichten eines Liederbuch-Repos",
-    "text": "Einrichten eines Liederbuch-Repos\nDa du Git vermutlich zum ersten Mal nutzt, brauchst du zuerst einen SSH-Key. Der SSH-Key ist dafür da, dass das Remote-Repo weiß, dass dein lokales Repo auch zu dir gehört. Sonst könnte ja jeder, der den SSH-Link hat (siehe dazu Figure 1), Zugriff aufs Repo haben. Er ist also ein Identifikationsmittel für deinen Account. Dafür hinterlegst du den public key in deinem Git-Account und sagst deinem Git-Programm (SmartGit, SourceTree, TortoiseGit), wo deine Schlüssel-Datei liegt. Diese Datei ist auch nochmal extra passwortgeschützt. Sie sollte auf keinen Fall gelöscht oder verschoben werden. Die lange Erklärung kannst du hier nachlesen.\n\n\n\n\n\n\nFigure 1: Das rot markierte ist ein SSH-Link.\n\n\n\n\nSSH-Key erstellen\nDu musst dir einen SSH-Key erstellen und das Passwort, public key und private key und Schlüsseldatei speichern/aufbewahren. Eine Anleitung dafür findest du hier.\nAnschließend hinterlegst du den public key in deinem Git-Account (unter Einstellungen -&gt; SSH- / GPG-Schlüssel -&gt; Schlüssel hinzufügen).\nSpäter wirst du beim „Klonen“ eines Liederbuchs irgendwann nach deiner Schlüsseldatei gefragt (für die du dann auch das Passwort brauchst). Es ist also wichtig, dass du beides gut speicherst!\nKlingt alles sehr kompliziert und das ist es auch, aber: Du musst das nur einmal machen und dann funktioniert es einfach. Wenigstens etwas.\n\n\nEin neues Liederbuch-Repo mit dem Vorlagen-Repo erstellen\nDa du ja ganz neu einsteigst, hast du vermutlich noch kein eigenes Liederbuch-Repo. Deswegen erstellen wir erstmal eins. Das tolle ist: Wir haben zu genau diesem Zweck ein Vorlagen-Repo gebaut, mit dem du sofort die meisten wichtigen Sachen eingerichtet hast. Wichtig: Du brauchst vorher einen Account bei tuxgit (siehe Account bei tuxgit erstellen lassen). So geht’s:\n\nDu gehst zu unserem LilyPond-Vorlagen-Repo auf unserem Git-Server.\nDu klickst auf Dieses Template verwenden.\nDu folgst den Schritten (Besitzer*innen, Name, … festlegen) Wichtig: Bei Template muss lilypond-vorlagen ausgewählt sein.\nDann kannst du einfach unten weitermachen.\n\n\n\nEin bestehendes Liederbuch-Repo klonen\nWenn du die obigen Schritte befolgt hast oder schon ein Liederbuch-Repo eingerichtet hast und dass einfach nur klonen willst, dann geht das so:\n\nRemote-Repo klonen\nJe nach GUI funktioniert das unterschiedlich. Irgendwo gibt es die Option Clone und da dann einen Dialog, in dem du unter anderem den SSH-Link des Repos eintragen kannst. Wichtig ist bei dem Prozess: Submodule müssen inkludiert werden. Irgendwo kann man dann den Speicherort des lokalen Repos festlegen. Es empfiehlt sich, einen Ordner zu haben, wo alle Git-Repos drin sind. Dies ist aber nicht notwendig für irgendetwas.\n\nSmartGit: In Smartgit navigierst du zu Repository -&gt; Clone und folgst dem Dialog. Zuerst gibst du deinen SSH-Link ein. Dann achtest du darauf, dass Submodules inkludiert werden und wählst zuletzt den Speicherort des Repos aus.\n\nAls nächstes müssen die Submodule noch richtig eingebunden werden, das geht nämlich leider nicht automatisch. Du brauchst auf jeden Fall unsere Common-Includes als Submodul. Wenn du mit unserem Liederpool arbeitest, brauchst du noch die Song-Includes als Submodul. Für jedes Submodul musst du diesen Prozess einzeln durchführen.\nAuch das funktioniert in jeder GUI anders. So geht es bei SmartGit:\n\nIm Menü Remote anwählen -&gt; Submodule -&gt; Add\nDann brauchst du die SSH-Links der Submodule. Die findest du auf die bekannte Art und Weise (siehe Figure 1).\nIm nächsten Schritt wird gefragt, an welcher Stelle das Submodul eingebunden werden soll, da kannst du einfach weiterklicken.\n\nFertig!\n\nUnd jetzt kann’s richtig losgehen!",
+    "section": "",
+    "text": "Da du Git vermutlich zum ersten Mal nutzt, brauchst du zuerst einen SSH-Key. Der SSH-Key ist dafür da, dass das Remote-Repo weiß, dass dein lokales Repo auch zu dir gehört. Sonst könnte ja jeder, der den SSH-Link hat (siehe dazu Figure 1), Zugriff aufs Repo haben. Er ist also ein Identifikationsmittel für deinen Account. Dafür hinterlegst du den public key in deinem Git-Account und sagst deinem Git-Programm (SmartGit, SourceTree, TortoiseGit), wo deine Schlüssel-Datei liegt. Diese Datei ist auch nochmal extra passwortgeschützt. Sie sollte auf keinen Fall gelöscht oder verschoben werden. Die lange Erklärung kannst du hier nachlesen.\n\n\n\n\n\n\nFigure 1: Das ist der SSH-Link.\n\n\n\n\n\nDu musst dir einen SSH-Key erstellen und das Passwort, public key und private key und Schlüsseldatei speichern/aufbewahren. Eine Anleitung dafür findest du hier.\nAnschließend hinterlegst du den public key in deinem Git-Account (unter Einstellungen -&gt; SSH- / GPG-Schlüssel -&gt; Schlüssel hinzufügen).\nSpäter wirst du beim „Klonen“ eines Liederbuchs irgendwann nach deiner Schlüsseldatei gefragt (für die du dann auch das Passwort brauchst). Es ist also wichtig, dass du beides gut speicherst!\nKlingt alles sehr kompliziert und das ist es auch, aber: Du musst das nur einmal machen und dann funktioniert es einfach. Wenigstens etwas.\n\n\n\nDa du ja ganz neu einsteigst, hast du vermutlich noch kein eigenes Liederbuch-Repo. Deswegen erstellen wir erstmal eins. Das tolle ist: Wir haben zu genau diesem Zweck ein Vorlagen-Repo gebaut, mit dem du sofort die meisten wichtigen Sachen eingerichtet hast. Wichtig: Du brauchst vorher einen Account bei tuxgit (siehe Section 1.1). So geht’s:\n\nDu gehst zu unserem LilyPond-Vorlagen-Repo auf unserem Git-Server.\nDu klickst auf Dieses Template verwenden.\nDu folgst den Schritten (Besitzer*innen, Name, … festlegen) Wichtig: Bei Template muss lilypond-vorlagen ausgewählt sein.\nDann kannst du einfach unten weitermachen.\n\n\n\n\nWenn du die obigen Schritte befolgt hast oder schon ein Liederbuch-Repo eingerichtet hast und dass einfach nur klonen willst, dann geht das so:\n\nRemote-Repo klonen\nJe nach GUI funktioniert das unterschiedlich. Irgendwo gibt es die Option Clone und da dann einen Dialog, in dem du unter anderem den SSH-Link des Repos eintragen kannst. Wichtig ist bei dem Prozess: Submodule müssen inkludiert werden. Irgendwo kann man dann den Speicherort des lokalen Repos festlegen. Es empfiehlt sich, einen Ordner zu haben, wo alle Git-Repos drin sind. Dies ist aber nicht notwendig für irgendetwas.\n\nSmartGit: In Smartgit navigierst du zu Repository -&gt; Clone und folgst dem Dialog. Zuerst gibst du deinen SSH-Link ein. Dann achtest du darauf, dass Submodules inkludiert werden und wählst zuletzt den Speicherort des Repos aus.\n\nAls nächstes müssen die Submodule noch richtig eingebunden werden, das geht nämlich leider nicht automatisch. Du brauchst auf jeden Fall unsere Common-Includes als Submodul. Wenn du mit unserem Liederpool arbeitest, brauchst du noch die Song-Includes als Submodul. Für jedes Submodul musst du diesen Prozess einzeln durchführen.\nAuch das funktioniert in jeder GUI anders. So geht es bei SmartGit:\n\nIm Menü Remote anwählen -&gt; Submodule -&gt; Add\nDann brauchst du die SSH-Links der Submodule. Die findest du auf die bekannte Art und Weise (siehe Figure 1).\nIm nächsten Schritt wird gefragt, an welcher Stelle das Submodul eingebunden werden soll, da kannst du einfach weiterklicken.\n\nFertig!\n\nUnd jetzt kann’s richtig losgehen!",
     "crumbs": [
+      "Einführung",
+      "Vorbereitung",
       "Einrichtung von Git"
+    ]
+  },
+  {
+    "objectID": "doku.html",
+    "href": "doku.html",
+    "title": "How To Liederbuch",
+    "section": "",
+    "text": "Das ist unsre Doku",
+    "crumbs": [
+      "Doku"
     ]
   },
   {
@@ -124,8 +162,10 @@
     "href": "lilypond_einrichten.html",
     "title": "Einrichtung von LilyPond",
     "section": "",
-    "text": "LilyPond installieren\nJetzt hast du LilyPond installiert. Damit es jetzt auch Spaß macht, mit LilyPond zu arbeiten, benötigst du noch Frescobaldi.",
+    "text": "LilyPond ist die Software, die wir zum Noten setzen benutzen. Als erstes müssen wir LilyPond bei dir installieren.\n\n\n\nGehe auf https://lilypond.org/ und wähle unter Downloads die neueste LilyPond-Version. Grundsätzlich ist immer die stabile Version zu bevorzugen (alle geraden Zahlen, z.B. 2.24). Unser System funktioniert aber (unter Windows) erst ab der Version 2.25.24, das ist eine Entwicklerversion (zu erkennen an der ungeraden 25).\nNun sollte der Download starten. Gehe in den Ordner und entpacke den Download. Herauskommen sollte ein Ordner namens lilypond-*, wobei * die Versionsnummer darstellt.\nFertig. Allerdings solltest du den Ordner an einen Ort legen, an dem er nicht verschoben wird. Zu empfehlen ist\n\nunter Windows: Ins Verzeichnis C und dann in den Ordner Programme (x86). Dort sind auch andere Programmordner, deswegen ergibt das dort Sinn.\nunter Linux: Zum Beispiel ins Verzeichnis home.\n\n\nJetzt hast du LilyPond installiert. Damit es jetzt auch Spaß macht, mit LilyPond zu arbeiten, benötigst du noch Frescobaldi.",
     "crumbs": [
+      "Einführung",
+      "Vorbereitung",
       "Einrichtung von LilyPond"
     ]
   },
@@ -134,9 +174,22 @@
     "href": "lilypond_einrichten.html#lilypond-installieren",
     "title": "Einrichtung von LilyPond",
     "section": "",
-    "text": "Gehe auf https://lilypond.org/ und wähle unter Downloads die neueste LilyPond-Version. Grundsätzlich ist immer die stabile Version zu bevorzugen (alle geraden Zahlen, z.B. 2.24). Unser System funktioniert aber (unter Windows) erst ab der Version 2.25.24, das ist eine Entwicklerversion (zu erkennen an der ungeraden 25).\nNun sollte der Download starten. Gehe in den Ordner und entpacke den Download. Herauskommen sollte ein Ordner namens lilypond-*, wobei * die Versionsnummer darstellt.\nFertig. Allerdings solltest du den Ordner an einen Ort legen, an dem er nicht verschoben wird. Zu empfehlen ist\n\nunter Windows: Ins Verzeichnis C und dann in den Ordner Programme (x86). Dort sind auch andere Programmordner, deswegen ergibt das dort Sinn.\nunter Linux: Zum Beispiel ins Verzeichnis home.",
+    "text": "Gehe auf https://lilypond.org/ und wähle unter Downloads die neueste LilyPond-Version. Grundsätzlich ist immer die stabile Version zu bevorzugen (alle geraden Zahlen, z.B. 2.24). Unser System funktioniert aber (unter Windows) erst ab der Version 2.25.24, das ist eine Entwicklerversion (zu erkennen an der ungeraden 25).\nNun sollte der Download starten. Gehe in den Ordner und entpacke den Download. Herauskommen sollte ein Ordner namens lilypond-*, wobei * die Versionsnummer darstellt.\nFertig. Allerdings solltest du den Ordner an einen Ort legen, an dem er nicht verschoben wird. Zu empfehlen ist\n\nunter Windows: Ins Verzeichnis C und dann in den Ordner Programme (x86). Dort sind auch andere Programmordner, deswegen ergibt das dort Sinn.\nunter Linux: Zum Beispiel ins Verzeichnis home.\n\n\nJetzt hast du LilyPond installiert. Damit es jetzt auch Spaß macht, mit LilyPond zu arbeiten, benötigst du noch Frescobaldi.",
     "crumbs": [
+      "Einführung",
+      "Vorbereitung",
       "Einrichtung von LilyPond"
+    ]
+  },
+  {
+    "objectID": "vorbereitung.html",
+    "href": "vorbereitung.html",
+    "title": "Vorbereitung",
+    "section": "",
+    "text": "Vorbereitung\nZuerst richten wir alle Programme ein, die du brauchst. Du benötigst als erstes LilyPond und Frescobaldi. Dann Git und dann einen Account bei dem Git-Server von tux.\nWir erklären dir jetzt Schritt für Schritt, was du dafür tun musst.",
+    "crumbs": [
+      "Einführung",
+      "Vorbereitung"
     ]
   }
 ]
