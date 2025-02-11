@@ -2,3 +2,11 @@
 .Rproj.user
 /_book/
 .Rhistory
+
+/site_libs/
+*.aux
+*.html
+*.pdf
+*.log
+*.tex
+*.toc
