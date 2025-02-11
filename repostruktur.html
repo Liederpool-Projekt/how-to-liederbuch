@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>git_einrichten – How To Liederbuch</title>
+<title>repostruktur – How To Liederbuch</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./liedersetzen.html" rel="next">
-<link href="./frescobaldi_einrichten.html" rel="prev">
+<link href="./liederbuecher_machen.html" rel="next">
+<link href="./beispiel_liedersetzen.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -112,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./vorbereitung.html">Vorbereitung</a></li><li class="breadcrumb-item"><a href="./git_einrichten.html">Einrichtung von Git</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./liedersetzen.html">Lieder setzen</a></li><li class="breadcrumb-item"><a href="./repostruktur.html">Struktur des Repositories</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -147,7 +147,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./git_einrichten.html" class="sidebar-item-text sidebar-link active">
+  <a href="./git_einrichten.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Einrichtung von Git</span></a>
   </div>
 </li>
@@ -170,7 +170,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./repostruktur.html" class="sidebar-item-text sidebar-link">
+  <a href="./repostruktur.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Struktur des Repositories</span></a>
   </div>
 </li>
@@ -192,22 +192,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#einrichtung-von-git" id="toc-einrichtung-von-git" class="nav-link active" data-scroll-target="#einrichtung-von-git">Einrichtung von Git</a>
-  <ul class="collapse">
-  <li><a href="#sec-tuxgit-account" id="toc-sec-tuxgit-account" class="nav-link" data-scroll-target="#sec-tuxgit-account">Account bei tuxgit erstellen lassen</a></li>
-  <li><a href="#eine-git-gui-aussuchen-und-herunterladen" id="toc-eine-git-gui-aussuchen-und-herunterladen" class="nav-link" data-scroll-target="#eine-git-gui-aussuchen-und-herunterladen">Eine Git-GUI aussuchen und herunterladen</a>
-  <ul class="collapse">
-  <li><a href="#smartgit" id="toc-smartgit" class="nav-link" data-scroll-target="#smartgit">SmartGit</a></li>
-  <li><a href="#sourcetree" id="toc-sourcetree" class="nav-link" data-scroll-target="#sourcetree">SourceTree</a></li>
-  <li><a href="#tortoisegit" id="toc-tortoisegit" class="nav-link" data-scroll-target="#tortoisegit">TortoiseGit</a></li>
-  </ul></li>
-  <li><a href="#einrichten-eines-liederbuch-repos" id="toc-einrichten-eines-liederbuch-repos" class="nav-link" data-scroll-target="#einrichten-eines-liederbuch-repos">Einrichten eines Liederbuch-Repos</a>
-  <ul class="collapse">
-  <li><a href="#ssh-key-erstellen" id="toc-ssh-key-erstellen" class="nav-link" data-scroll-target="#ssh-key-erstellen">SSH-Key erstellen</a></li>
-  <li><a href="#ein-neues-liederbuch-repo-mit-dem-vorlagen-repo-erstellen" id="toc-ein-neues-liederbuch-repo-mit-dem-vorlagen-repo-erstellen" class="nav-link" data-scroll-target="#ein-neues-liederbuch-repo-mit-dem-vorlagen-repo-erstellen">Ein neues Liederbuch-Repo mit dem Vorlagen-Repo erstellen</a></li>
-  <li><a href="#ein-bestehendes-liederbuch-repo-klonen" id="toc-ein-bestehendes-liederbuch-repo-klonen" class="nav-link" data-scroll-target="#ein-bestehendes-liederbuch-repo-klonen">Ein bestehendes Liederbuch-Repo klonen</a></li>
-  </ul></li>
-  </ul></li>
+  <li><a href="#struktur-des-repositories" id="toc-struktur-des-repositories" class="nav-link active" data-scroll-target="#struktur-des-repositories">Struktur des Repositories</a></li>
   </ul>
 </nav>
     </div>
@@ -217,94 +202,10 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="einrichtung-von-git" class="level1">
-<h1>Einrichtung von Git</h1>
-<p>Hier geht es jetzt nur um eine kurze und möglichst unkomplizierte Einrichtung von Git. Du musst gar nicht alles verstehen, was im Hintergrund passiert. Das kann an späterer Stelle irgendwann auch noch kommen.</p>
-<section id="sec-tuxgit-account" class="level2">
-<h2 class="anchored" data-anchor-id="sec-tuxgit-account">Account bei tuxgit erstellen lassen</h2>
-<p>Du brauchst einen Account für unseren Git-Server. Aufgrund von Spam ist die Registrierung nicht öffentlich möglich, deswegen musst du dafür eine E-Mail an tux schreiben. Die Web-Adresse unseres Git-Servers ist: <a href="https://git.zahlenlabyrinth.de/" class="uri">https://git.zahlenlabyrinth.de/</a>.</p>
-</section>
-<section id="eine-git-gui-aussuchen-und-herunterladen" class="level2">
-<h2 class="anchored" data-anchor-id="eine-git-gui-aussuchen-und-herunterladen">Eine Git-GUI aussuchen und herunterladen</h2>
-<p>Git ist per se erstmal ein Kommandozeilen-Programm. Das ist nicht für jede*n was – erst recht nicht, wenn man noch nicht so viel mit Coden zu tun hatte. Das ist aber gar nicht schlimm, denn es gibt zahlreiche verschiedene grafische Oberflächen für Git, die das Arbeiten sehr erleichtern können. Verbreitet bei uns sind gerade diese hier:</p>
-<section id="smartgit" class="level3">
-<h3 class="anchored" data-anchor-id="smartgit">SmartGit</h3>
-<ul>
-<li><p><a href="https://www.syntevo.com/smartgit/">Link</a></p></li>
-<li><p>für Windows, MacOS, Linux</p></li>
-<li><p>kostet was, es gibt aber eine non-commercial Lizenz für gemeinnützige Organisationen und Bildungseinrichtungen: <a href="https://www.syntevo.com/register-non-commercial/">Apply for Non-Commercial License</a><br>
-Dafür brauchst du eine gemeinnützige Organisation, mit deren E-Mail-Adresse du dich dort registrieren kannst. Alternativ geht auch eine Uni-Mail-Adresse.</p></li>
-</ul>
-</section>
-<section id="sourcetree" class="level3">
-<h3 class="anchored" data-anchor-id="sourcetree">SourceTree</h3>
-<ul>
-<li><p><a href="https://www.sourcetreeapp.com/">Link</a></p></li>
-<li><p>für Windows, MacOS</p></li>
-</ul>
-</section>
-<section id="tortoisegit" class="level3">
-<h3 class="anchored" data-anchor-id="tortoisegit">TortoiseGit</h3>
-<ul>
-<li><p><a href="https://tortoisegit.org/">Link</a></p></li>
-<li><p>für Windows</p></li>
-</ul>
-<p>Oder man nutzt es in der Konsole. Dann braucht man die Git Shell: <a href="https://git-scm.com/downloads">Link</a>.</p>
-</section>
-</section>
-<section id="einrichten-eines-liederbuch-repos" class="level2">
-<h2 class="anchored" data-anchor-id="einrichten-eines-liederbuch-repos">Einrichten eines Liederbuch-Repos</h2>
-<p>Da du Git vermutlich zum ersten Mal nutzt, brauchst du zuerst einen SSH-Key. Der SSH-Key ist dafür da, dass das Remote-Repo weiß, dass dein lokales Repo auch zu dir gehört. Sonst könnte ja jeder, der den SSH-Link hat (siehe dazu <a href="#fig-sshkey" class="quarto-xref">Figure&nbsp;1</a>), Zugriff aufs Repo haben. Er ist also ein Identifikationsmittel für deinen Account. Dafür hinterlegst du den <em>public key</em> in deinem Git-Account und sagst deinem Git-Programm (SmartGit, SourceTree, TortoiseGit), wo deine Schlüssel-Datei liegt. Diese Datei ist auch nochmal extra passwortgeschützt. Sie sollte auf keinen Fall gelöscht oder verschoben werden. Die lange Erklärung kannst du <a href="https://www.rrz.uni-hamburg.de/services/hpc/grundwissen/ssh-keys.html">hier</a> nachlesen.</p>
-<div id="fig-sshkey" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-sshkey-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="https://anupdhakal.com/static/1ea06fda1c5fa35c6f512e321d5c8923/8b936/github-repo-ssh-link-example.png" class="img-fluid figure-img">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sshkey-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: Das ist der SSH-Link.
-</figcaption>
-</figure>
-</div>
-<section id="ssh-key-erstellen" class="level3">
-<h3 class="anchored" data-anchor-id="ssh-key-erstellen">SSH-Key erstellen</h3>
-<p>Du musst dir einen SSH-Key erstellen und das <strong>Passwort, <em>public key</em> und <em>private key</em> und Schlüsseldatei</strong> speichern/aufbewahren. Eine Anleitung dafür findest du <a href="https://www.heise.de/tipps-tricks/SSH-Key-erstellen-so-geht-s-4400280.html?hg=1&amp;hgi=0&amp;hgf=false">hier</a>.</p>
-<p>Anschließend hinterlegst du den <em>public key</em> in deinem Git-Account (unter Einstellungen -&gt; SSH- / GPG-Schlüssel -&gt; Schlüssel hinzufügen).</p>
-<p>Später wirst du beim „Klonen“ eines Liederbuchs irgendwann nach deiner Schlüsseldatei gefragt (für die du dann auch das Passwort brauchst). Es ist also wichtig, dass du beides gut speicherst!</p>
-<p>Klingt alles sehr kompliziert und das ist es auch, <strong>aber:</strong> Du musst das <strong>nur einmal</strong> machen und dann funktioniert es einfach. Wenigstens etwas.</p>
-</section>
-<section id="ein-neues-liederbuch-repo-mit-dem-vorlagen-repo-erstellen" class="level3">
-<h3 class="anchored" data-anchor-id="ein-neues-liederbuch-repo-mit-dem-vorlagen-repo-erstellen">Ein neues Liederbuch-Repo mit dem Vorlagen-Repo erstellen</h3>
-<p>Da du ja ganz neu einsteigst, hast du vermutlich noch kein eigenes Liederbuch-Repo. Deswegen erstellen wir erstmal eins. Das tolle ist: Wir haben zu genau diesem Zweck ein Vorlagen-Repo gebaut, mit dem du sofort die meisten wichtigen Sachen eingerichtet hast. Wichtig: Du brauchst <em>vorher</em> einen Account bei tuxgit (siehe <a href="#sec-tuxgit-account" class="quarto-xref">Section&nbsp;1.1</a>). So geht’s:</p>
-<ol type="1">
-<li><p>Du gehst zu unserem <a href="https://git.zahlenlabyrinth.de/boernel/lilypond-vorlagen">LilyPond-Vorlagen-Repo</a> auf unserem Git-Server.</p></li>
-<li><p>Du klickst auf <code>Dieses Template verwenden</code>.</p></li>
-<li><p>Du folgst den Schritten (Besitzer*innen, Name, … festlegen) Wichtig: Bei Template muss <code>lilypond-vorlagen</code> ausgewählt sein.</p></li>
-<li><p>Dann kannst du einfach unten weitermachen.</p></li>
-</ol>
-</section>
-<section id="ein-bestehendes-liederbuch-repo-klonen" class="level3">
-<h3 class="anchored" data-anchor-id="ein-bestehendes-liederbuch-repo-klonen">Ein bestehendes Liederbuch-Repo klonen</h3>
-<p>Wenn du die obigen Schritte befolgt hast oder schon ein Liederbuch-Repo eingerichtet hast und dass einfach nur klonen willst, dann geht das so:</p>
-<ol type="1">
-<li>Remote-Repo klonen<br>
-Je nach GUI funktioniert das unterschiedlich. Irgendwo gibt es die Option <code>Clone</code> und da dann einen Dialog, in dem du unter anderem den SSH-Link des Repos eintragen kannst. Wichtig ist bei dem Prozess: Submodule müssen inkludiert werden. Irgendwo kann man dann den Speicherort des lokalen Repos festlegen. Es empfiehlt sich, einen Ordner zu haben, wo alle Git-Repos drin sind. Dies ist aber nicht notwendig für irgendetwas.
-<ul>
-<li>SmartGit: In Smartgit navigierst du zu Repository -&gt; Clone und folgst dem Dialog. Zuerst gibst du deinen SSH-Link ein. Dann achtest du darauf, dass Submodules inkludiert werden und wählst zuletzt den Speicherort des Repos aus.</li>
-</ul></li>
-<li>Als nächstes müssen die Submodule noch richtig eingebunden werden, das geht nämlich leider nicht automatisch. Du brauchst auf jeden Fall unsere <a href="https://git.zahlenlabyrinth.de/boernel/lilypond-common-includes">Common-Includes</a> als Submodul. Wenn du mit unserem Liederpool arbeitest, brauchst du noch die <a href="https://git.zahlenlabyrinth.de/boernel/lilypond-song-includes">Song-Includes</a> als Submodul. Für jedes Submodul musst du diesen Prozess einzeln durchführen.<br>
-Auch das funktioniert in jeder GUI anders. So geht es bei SmartGit:
-<ol type="1">
-<li>Im Menü Remote anwählen -&gt; Submodule -&gt; Add</li>
-<li>Dann brauchst du die SSH-Links der Submodule. Die findest du auf die bekannte Art und Weise (siehe <a href="#fig-sshkey" class="quarto-xref">Figure&nbsp;1</a>).</li>
-<li>Im nächsten Schritt wird gefragt, an welcher Stelle das Submodul eingebunden werden soll, da kannst du einfach weiterklicken.</li>
-</ol></li>
-<li>Fertig!</li>
-</ol>
-<p>Und jetzt kann’s richtig losgehen!</p>
+<section id="struktur-des-repositories" class="level1">
+<h1>Struktur des Repositories</h1>
 
 
-</section>
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -730,13 +631,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./frescobaldi_einrichten.html" class="pagination-link" aria-label="Einrichtung von Frescobaldi">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Einrichtung von Frescobaldi</span>
+      <a href="./beispiel_liedersetzen.html" class="pagination-link" aria-label="Beispiel Liedersetzen">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Beispiel Liedersetzen</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./liedersetzen.html" class="pagination-link" aria-label="Lieder setzen">
-        <span class="nav-page-text">Lieder setzen</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./liederbuecher_machen.html" class="pagination-link" aria-label="Liederbücher erstellen">
+        <span class="nav-page-text">Liederbücher erstellen</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
