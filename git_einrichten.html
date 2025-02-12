@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>git_einrichten – How To Liederbuch</title>
+<title>Einrichtung von Git – How To Liederbuch</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -170,14 +170,26 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./repostruktur.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Struktur des Repositories</span></a>
+  <a href="./branch_und_pullrequest.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Branch und Pull-Request</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./liedlayout.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Liedlayout</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./liederbuecher_machen.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Liederbücher erstellen</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./repostruktur.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Struktur des Repositories</span></a>
   </div>
 </li>
       </ul>
@@ -192,9 +204,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#einrichtung-von-git" id="toc-einrichtung-von-git" class="nav-link active" data-scroll-target="#einrichtung-von-git">Einrichtung von Git</a>
-  <ul class="collapse">
-  <li><a href="#sec-tuxgit-account" id="toc-sec-tuxgit-account" class="nav-link" data-scroll-target="#sec-tuxgit-account">Account bei tuxgit erstellen lassen</a></li>
+  <li><a href="#sec-tuxgit-account" id="toc-sec-tuxgit-account" class="nav-link active" data-scroll-target="#sec-tuxgit-account">Account bei tuxgit erstellen lassen</a></li>
   <li><a href="#eine-git-gui-aussuchen-und-herunterladen" id="toc-eine-git-gui-aussuchen-und-herunterladen" class="nav-link" data-scroll-target="#eine-git-gui-aussuchen-und-herunterladen">Eine Git-GUI aussuchen und herunterladen</a>
   <ul class="collapse">
   <li><a href="#smartgit" id="toc-smartgit" class="nav-link" data-scroll-target="#smartgit">SmartGit</a></li>
@@ -207,18 +217,31 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#ein-neues-liederbuch-repo-mit-dem-vorlagen-repo-erstellen" id="toc-ein-neues-liederbuch-repo-mit-dem-vorlagen-repo-erstellen" class="nav-link" data-scroll-target="#ein-neues-liederbuch-repo-mit-dem-vorlagen-repo-erstellen">Ein neues Liederbuch-Repo mit dem Vorlagen-Repo erstellen</a></li>
   <li><a href="#ein-bestehendes-liederbuch-repo-klonen" id="toc-ein-bestehendes-liederbuch-repo-klonen" class="nav-link" data-scroll-target="#ein-bestehendes-liederbuch-repo-klonen">Ein bestehendes Liederbuch-Repo klonen</a></li>
   </ul></li>
-  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./vorbereitung.html">Vorbereitung</a></li><li class="breadcrumb-item"><a href="./git_einrichten.html">Einrichtung von Git</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Einrichtung von Git</h1>
+</div>
 
 
 
-<section id="einrichtung-von-git" class="level1">
-<h1>Einrichtung von Git</h1>
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
 <p>Hier geht es jetzt nur um eine kurze und möglichst unkomplizierte Einrichtung von Git. Du musst gar nicht alles verstehen, was im Hintergrund passiert. Das kann an späterer Stelle irgendwann auch noch kommen.</p>
 <section id="sec-tuxgit-account" class="level2">
 <h2 class="anchored" data-anchor-id="sec-tuxgit-account">Account bei tuxgit erstellen lassen</h2>
@@ -274,7 +297,7 @@ Figure&nbsp;1: Das ist der SSH-Link.
 </section>
 <section id="ein-neues-liederbuch-repo-mit-dem-vorlagen-repo-erstellen" class="level3">
 <h3 class="anchored" data-anchor-id="ein-neues-liederbuch-repo-mit-dem-vorlagen-repo-erstellen">Ein neues Liederbuch-Repo mit dem Vorlagen-Repo erstellen</h3>
-<p>Da du ja ganz neu einsteigst, hast du vermutlich noch kein eigenes Liederbuch-Repo. Deswegen erstellen wir erstmal eins. Das tolle ist: Wir haben zu genau diesem Zweck ein Vorlagen-Repo gebaut, mit dem du sofort die meisten wichtigen Sachen eingerichtet hast. Wichtig: Du brauchst <em>vorher</em> einen Account bei tuxgit (siehe <a href="#sec-tuxgit-account" class="quarto-xref">Section&nbsp;1.1</a>). So geht’s:</p>
+<p>Da du ja ganz neu einsteigst, hast du vermutlich noch kein eigenes Liederbuch-Repo. Deswegen erstellen wir erstmal eins. Das tolle ist: Wir haben zu genau diesem Zweck ein Vorlagen-Repo gebaut, mit dem du sofort die meisten wichtigen Sachen eingerichtet hast. Wichtig: Du brauchst <em>vorher</em> einen Account bei tuxgit (siehe <a href="#sec-tuxgit-account" class="quarto-xref">Section&nbsp;1</a>). So geht’s:</p>
 <ol type="1">
 <li><p>Du gehst zu unserem <a href="https://git.zahlenlabyrinth.de/boernel/lilypond-vorlagen">LilyPond-Vorlagen-Repo</a> auf unserem Git-Server.</p></li>
 <li><p>Du klickst auf <code>Dieses Template verwenden</code>.</p></li>
@@ -303,7 +326,6 @@ Auch das funktioniert in jeder GUI anders. So geht es bei SmartGit:
 <p>Und jetzt kann’s richtig losgehen!</p>
 
 
-</section>
 </section>
 </section>
 

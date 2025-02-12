@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Einrichtung von LilyPond – How To Liederbuch</title>
+<title>Branch und Pull-Request – How To Liederbuch</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./frescobaldi_einrichten.html" rel="next">
-<link href="./vorbereitung.html" rel="prev">
+<link href="./liedlayout.html" rel="next">
+<link href="./beispiel_liedersetzen.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -112,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./vorbereitung.html">Vorbereitung</a></li><li class="breadcrumb-item"><a href="./lilypond_einrichten.html">Einrichtung von LilyPond</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./liedersetzen.html">Lieder setzen</a></li><li class="breadcrumb-item"><a href="./branch_und_pullrequest.html">Branch und Pull-Request</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -135,7 +135,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./lilypond_einrichten.html" class="sidebar-item-text sidebar-link active">
+  <a href="./lilypond_einrichten.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Einrichtung von LilyPond</span></a>
   </div>
 </li>
@@ -170,7 +170,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./branch_und_pullrequest.html" class="sidebar-item-text sidebar-link">
+  <a href="./branch_und_pullrequest.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Branch und Pull-Request</span></a>
   </div>
 </li>
@@ -204,16 +204,23 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#lilypond-installieren" id="toc-lilypond-installieren" class="nav-link active" data-scroll-target="#lilypond-installieren">LilyPond installieren</a></li>
+  <li><a href="#in-einen-branch-pushen" id="toc-in-einen-branch-pushen" class="nav-link active" data-scroll-target="#in-einen-branch-pushen">In einen Branch pushen</a>
+  <ul class="collapse">
+  <li><a href="#branch-erstellen" id="toc-branch-erstellen" class="nav-link" data-scroll-target="#branch-erstellen">Branch erstellen</a></li>
+  <li><a href="#den-neuen-branch-auschecken" id="toc-den-neuen-branch-auschecken" class="nav-link" data-scroll-target="#den-neuen-branch-auschecken">Den neuen Branch auschecken</a></li>
+  <li><a href="#lied-committen" id="toc-lied-committen" class="nav-link" data-scroll-target="#lied-committen">Lied committen</a></li>
+  <li><a href="#branch-pushen" id="toc-branch-pushen" class="nav-link" data-scroll-target="#branch-pushen">Branch pushen</a></li>
+  </ul></li>
+  <li><a href="#pull-request-erstellen" id="toc-pull-request-erstellen" class="nav-link" data-scroll-target="#pull-request-erstellen">Pull-Request erstellen</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./vorbereitung.html">Vorbereitung</a></li><li class="breadcrumb-item"><a href="./lilypond_einrichten.html">Einrichtung von LilyPond</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./liedersetzen.html">Lieder setzen</a></li><li class="breadcrumb-item"><a href="./branch_und_pullrequest.html">Branch und Pull-Request</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Einrichtung von LilyPond</h1>
+<h1 class="title">Branch und Pull-Request</h1>
 </div>
 
 
@@ -230,19 +237,53 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>LilyPond ist die Software, die wir zum Noten setzen benutzen. Als erstes müssen wir LilyPond bei dir installieren.</p>
-<section id="lilypond-installieren" class="level2">
-<h2 class="anchored" data-anchor-id="lilypond-installieren">LilyPond installieren</h2>
-<ol type="1">
-<li><p>Gehe auf <a href="https://lilypond.org/" class="uri">https://lilypond.org/</a> und wähle unter <code>Downloads</code> die neueste LilyPond-Version. Grundsätzlich ist immer die stabile Version zu bevorzugen (alle geraden Zahlen, z.B. <code>2.24</code>). Unser System funktioniert aber (unter Windows) erst ab der Version <code>2.25.24</code>, das ist eine Entwicklerversion (zu erkennen an der ungeraden <code>25</code>).</p></li>
-<li><p>Nun sollte der Download starten. Gehe in den Ordner und entpacke den Download. Herauskommen sollte ein Ordner namens <code>lilypond-*</code>, wobei <code>*</code> die Versionsnummer darstellt.</p></li>
-<li><p>Fertig. Allerdings solltest du den Ordner an einen Ort legen, an dem er nicht verschoben wird. Zu empfehlen ist</p>
-<ul>
-<li><p>unter Windows: Ins Verzeichnis C und dann in den Ordner <code>Programme (x86)</code>. Dort sind auch andere Programmordner, deswegen ergibt das dort Sinn.</p></li>
-<li><p>unter Linux: Zum Beispiel ins Verzeichnis <code>home</code>.</p></li>
-</ul></li>
-</ol>
-<p>Jetzt hast du LilyPond installiert. Damit es jetzt auch Spaß macht, mit LilyPond zu arbeiten, benötigst du noch Frescobaldi.</p>
+<p>Du hast dein erstes Lied für den Liederpool gesetzt, wie toll! Klar, das war nur ein Beispiel, und das Lied befindet sich schon im Liederpool, aber trotzdem denken wir den Prozess mal ganz zu Ende. Dann ist deine nächste Station, einen Branch im Git zu erstellen. Was Branches genau sind, erfährst du detaillierter in unsrer <a href="./doku.html">Doku</a>, hier fassen wir uns möglichst kurz.</p>
+<section id="in-einen-branch-pushen" class="level2">
+<h2 class="anchored" data-anchor-id="in-einen-branch-pushen">In einen Branch pushen</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/smartgit.png" class="img-fluid figure-img"></p>
+<figcaption>1: Das ist dein Workingtree. 2: Da siehst du dein Liederbuch-Repository</figcaption>
+</figure>
+</div>
+<section id="branch-erstellen" class="level3">
+<h3 class="anchored" data-anchor-id="branch-erstellen">Branch erstellen</h3>
+<p>Du gehst in deine Git-GUI und wählst dich ins Submodul <code>lilypond-song-includes</code>. Im Moment solltest du dich im <code>main</code>-Branch befinden. Eine Übersicht über die Branches wird dir vermutlich in irgendeiner Ecke der Benutzeroberfläche dargestellt. In SmartGit beispielsweise befindet sich diese Übersicht unten links.</p>
+<p>Jetzt musst du einen neuen lokalen Branch erstellen. Das funktioniert in jeder Git-GUI anders, deswegen lass dir gerne von einer Google-Suche oder ChatGPT oder uns helfen. In SmartGit klickst du mit einem Rechtsklick auf „Local Branches“ und wählst dann „Add Branch“. Im Dialogfenster kannst du dem Branch einen Namen geben. Benenne ihn nach dem Lied. Bitte verwende keine Leer- oder Sonderzeichen. Klicke dann auf „Add Branch“.</p>
+</section>
+<section id="den-neuen-branch-auschecken" class="level3">
+<h3 class="anchored" data-anchor-id="den-neuen-branch-auschecken">Den neuen Branch auschecken</h3>
+<p>Jetzt musst du den neuen Branch, den du gerade erstellt hast, auschecken. In SmartGit klickst du dafür einfach doppelt auf den Namen deines Branches, der nun unter „Local Branches“ aufgelistet sein sollte.</p>
+</section>
+<section id="lied-committen" class="level3">
+<h3 class="anchored" data-anchor-id="lied-committen">Lied committen</h3>
+<p>In deinem „Working Tree“ siehst du, dass du Änderungen getätigt hast – das ist das neue Lied, was du gerade gesetzt hast. Diese Änderungen musst du nun „committen“. Wie das geht, fragst du am besten Google, ChatGPT oder holst dir bei uns Hilfe. In SmartGit werden dir die Änderungen in einem Kasten auf der rechten Seite angezeigt. Klicke mit einem Rechtsklick auf die entsprechende Datei und wähle „Commit“ (alternativer Shortcut: <code>Strg + K</code>). Als Commit-Message, die nun im Dialogfenster gefordert wird, bietet sich der Name des Liedes an. Falls das Lied schon im Liederpool war, könntest du noch dahinter schreiben, was du an dem Lied verändert hast. Klicke auf „Commit“.</p>
+</section>
+<section id="branch-pushen" class="level3">
+<h3 class="anchored" data-anchor-id="branch-pushen">Branch pushen</h3>
+<p>Jetzt hast du einen Branch erstellt, hast ihn ausgecheckt und das Lied in den Branch committed. Zuletzt musst du den Branch auf das Remote-Repo pushen. Dazu gibt es einen Knopf, der vermutlich oben in einer Menüleiste zu finden ist. In SmartGit befindet er sich oben links.</p>
+</section>
+</section>
+<section id="pull-request-erstellen" class="level2">
+<h2 class="anchored" data-anchor-id="pull-request-erstellen">Pull-Request erstellen</h2>
+<p>Nun gehst du in das <a href="https://git.zahlenlabyrinth.de/boernel/lilypond-song-includes/pulls">Song-Includes-Repository</a> auf unserem Git-Server. Dort kannst du nun einen Pull-Request erstellen.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Ein <strong>Pull-Request</strong> ist die Anfrage, ob ein Branch mit dem <code>main</code>-Branch zusammengeführt wird. Das ist Teil unseres <strong>Review-Systems</strong>, das dafür sorgen soll, dass die Qualität des Bestandes nicht gefährdet wird, wenn viele Menschen auf den Liederpool zugreifen – die Gefahr des Verschlimmbesserns wäre sehr hoch. Deshalb kannst du nicht einfach auf den <code>main</code>-Branch pushen, sondern es muss ein neuer Branch (also eine Abzweigung) erstellt werden, auf die du dann pushst.</p>
+<p>Dann kannst du eine Anfrage stellen, ob deine Änderungen ok sind. Die wird dann bearbeitet, in dem mindestens eine andere Person nochmal über deine Änderungen drüberschaut. Zuletzt erfolgt dann die Zusammenführung mit dem <code>main</code>-Branch.</p>
+<p>Dieses Vier-Augen-Prinzip führt auch dazu, dass Fehler von Anfang an verhindert werden können.</p>
+</div>
+</div>
+<p>Klicke im Song-Includes-Repository auf <code>Pull-Requests</code> und dort dann auf <code>Neuer Pull-Request</code>. Jetzt wirst du nach einem Branch gefragt. Klicke auf das rechte Dropdown-Menü. Dort sind die alle verfügbaren Branches aufgelistet, sortiert nach dem letzten Push-Zeitpunkt. Dein Branch ist also vermutlich ganz oben. Wähle deinen Branch aus und klicke: <code>Neuer Pull-Request</code>.</p>
+<p>Nun solltest du dem Pull-Request einen Namen geben. Der Name des Liedes bietet sich dafür an. Außerdem solltest du die Checkliste in der Beschreibung ausfüllen. Das machst du, indem du das Leerzeichen mit einem x ersetzt: aus <code>[ ]</code> mach <code>[x]</code>. Bitte fülle die Kästchen nur aus, wenn sie auch wirklich zutreffen. Zuletzt klicke auf <code>Pull-Request erstellen</code>. Fertig!</p>
 
 
 </section>
@@ -670,13 +711,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./vorbereitung.html" class="pagination-link" aria-label="Vorbereitung">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Vorbereitung</span>
+      <a href="./beispiel_liedersetzen.html" class="pagination-link" aria-label="Beispiel Liedersetzen">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Beispiel Liedersetzen</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./frescobaldi_einrichten.html" class="pagination-link" aria-label="Einrichtung von Frescobaldi">
-        <span class="nav-page-text">Einrichtung von Frescobaldi</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./liedlayout.html" class="pagination-link" aria-label="Liedlayout">
+        <span class="nav-page-text">Liedlayout</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

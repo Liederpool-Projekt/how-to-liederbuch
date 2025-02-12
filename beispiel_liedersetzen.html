@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>beispiel_liedersetzen – How To Liederbuch</title>
+<title>Beispiel Liedersetzen – How To Liederbuch</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,7 +64,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./repostruktur.html" rel="next">
+<link href="./branch_und_pullrequest.html" rel="next">
 <link href="./liedersetzen.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -204,14 +204,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./repostruktur.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Struktur des Repositories</span></a>
+  <a href="./branch_und_pullrequest.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Branch und Pull-Request</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./liedlayout.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Liedlayout</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./liederbuecher_machen.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Liederbücher erstellen</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./repostruktur.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Struktur des Repositories</span></a>
   </div>
 </li>
       </ul>
@@ -226,8 +238,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#beispiel-liedersetzen" id="toc-beispiel-liedersetzen" class="nav-link active" data-scroll-target="#beispiel-liedersetzen">Beispiel Liedersetzen</a>
-  <ul class="collapse">
+  <li><a href="#abspeichern-der-lieddatei" id="toc-abspeichern-der-lieddatei" class="nav-link active" data-scroll-target="#abspeichern-der-lieddatei">Abspeichern der Lieddatei</a></li>
   <li><a href="#die-metadaten-zum-lied" id="toc-die-metadaten-zum-lied" class="nav-link" data-scroll-target="#die-metadaten-zum-lied">Die Metadaten zum Lied</a>
   <ul class="collapse">
   <li><a href="#geschwindigkeit" id="toc-geschwindigkeit" class="nav-link" data-scroll-target="#geschwindigkeit">Geschwindigkeit</a></li>
@@ -265,18 +276,31 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#songchords-variable" id="toc-songchords-variable" class="nav-link" data-scroll-target="#songchords-variable">songChords-Variable</a></li>
   <li><a href="#der-music-teil" id="toc-der-music-teil" class="nav-link" data-scroll-target="#der-music-teil">Der MUSIC-Teil</a></li>
   <li><a href="#der-text-teil" id="toc-der-text-teil" class="nav-link" data-scroll-target="#der-text-teil">Der TEXT-Teil</a></li>
-  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./liedersetzen.html">Lieder setzen</a></li><li class="breadcrumb-item"><a href="./beispiel_liedersetzen.html">Beispiel Liedersetzen</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Beispiel Liedersetzen</h1>
+</div>
 
 
 
-<section id="beispiel-liedersetzen" class="level1">
-<h1>Beispiel Liedersetzen</h1>
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
 <p>Damit du möglichst einfach unser System lernst, haben wir dir ein Lied rausgesucht, das wir nun zusammen setzen. Dabei gehen wir davon aus, dass du das Lied erstmal für unseren Liederpool setzt (auch wenn das Beispiel da natürlich schon drin ist). Alles weitere an späterer Stelle.</p>
 <p>Die Vorlagendatei für den Liederpool sieht so aus:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">\version</span> "<span class="st">2.25.8"</span></span>
@@ -409,9 +433,13 @@ Note
 <p>Wundere dich nicht, dass sich gar nichts verändert, gar keine Noten oder Sonstiges entstehen, wenn du in der Datei schreibst. Das ist normal, denn die werden immer nur aktualisiert, wenn du „kompilierst“, also die Datei ausführst. Das machst du, in dem du auf die Seerose in der oberen Werkzeugleiste klickst oder mit der Tastenkombination <code>Strg + M</code>.</p>
 </div>
 </div>
+<section id="abspeichern-der-lieddatei" class="level2">
+<h2 class="anchored" data-anchor-id="abspeichern-der-lieddatei">Abspeichern der Lieddatei</h2>
+<p>Als erstes speicherst du dir die Vorlagendatei neu ab. Dazu drückst du <code>Strg + Umschalt + S</code> oder wählst im Menü <code>Datei -&gt; Save -&gt; Speichern unter</code>. Dort bleibst du im selben Ordner, also im Ordner <code>liedbausteine</code> und speicherst die Datei im Schema <code>lied_anfang_(lied_titel).ly</code> ab. In unserem Falle wäre das also <code>ueber_meiner_heimat_fruehling.ly</code>. Wie du siehst, vermeiden wir Umlaute. Für ein anderes Lied, bei dem Titel und Liedanfang nicht identisch sind, sähe das dann zum Beispiel so aus: <code>im_kreis_ihrer_enkel_(drei_rote_pfiffe).ly</code>.</p>
+</section>
 <section id="die-metadaten-zum-lied" class="level2">
 <h2 class="anchored" data-anchor-id="die-metadaten-zum-lied">Die Metadaten zum Lied</h2>
-<p>Im ersten Teil findest die Metadaten zum Lied.</p>
+<p>Nun wenden wir uns dem Inhalt zu. Im ersten Teil findest die Metadaten zum Lied.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>%<span class="co">midiQuarterNoteSpeed =</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>basicSongInfo = \header<span class="kw"> {</span></span>
@@ -700,7 +728,6 @@ Note
 <p>Das muss noch gar nicht schön aussehen, denn das kommt an anderer Stelle…</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -1131,8 +1158,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./repostruktur.html" class="pagination-link" aria-label="Struktur des Repositories">
-        <span class="nav-page-text">Struktur des Repositories</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./branch_und_pullrequest.html" class="pagination-link" aria-label="Branch und Pull-Request">
+        <span class="nav-page-text">Branch und Pull-Request</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

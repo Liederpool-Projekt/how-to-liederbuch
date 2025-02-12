@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>repostruktur – How To Liederbuch</title>
+<title>Struktur des Repositories – How To Liederbuch</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./liederbuecher_machen.html" rel="next">
-<link href="./beispiel_liedersetzen.html" rel="prev">
+<link href="./liederbuecher_machen.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -170,14 +169,26 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./repostruktur.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Struktur des Repositories</span></a>
+  <a href="./branch_und_pullrequest.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Branch und Pull-Request</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./liedlayout.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Liedlayout</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./liederbuecher_machen.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Liederbücher erstellen</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./repostruktur.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Struktur des Repositories</span></a>
   </div>
 </li>
       </ul>
@@ -192,18 +203,73 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#struktur-des-repositories" id="toc-struktur-des-repositories" class="nav-link active" data-scroll-target="#struktur-des-repositories">Struktur des Repositories</a></li>
+  <li><a href="#der-lieder-ordner" id="toc-der-lieder-ordner" class="nav-link active" data-scroll-target="#der-lieder-ordner">Der <code>lieder</code>-Ordner</a></li>
+  <li><a href="#der-liederbuecher-ordner" id="toc-der-liederbuecher-ordner" class="nav-link" data-scroll-target="#der-liederbuecher-ordner">Der <code>liederbuecher</code>-Ordner</a></li>
+  <li><a href="#der-lilypond-common-includes-ordner" id="toc-der-lilypond-common-includes-ordner" class="nav-link" data-scroll-target="#der-lilypond-common-includes-ordner">Der <code>lilypond-common-includes</code>-Ordner</a></li>
+  <li><a href="#der-lilypond-custom-includes-ordner" id="toc-der-lilypond-custom-includes-ordner" class="nav-link" data-scroll-target="#der-lilypond-custom-includes-ordner">Der <code>lilypond-custom-includes</code>-Ordner</a></li>
+  <li><a href="#der-lilypond-song-includes-ordner" id="toc-der-lilypond-song-includes-ordner" class="nav-link" data-scroll-target="#der-lilypond-song-includes-ordner">Der <code>lilypond-song-includes</code>-Ordner</a></li>
+  <li><a href="#die-.gitignore-datei" id="toc-die-.gitignore-datei" class="nav-link" data-scroll-target="#die-.gitignore-datei">Die <code>.gitignore</code>-Datei</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./liedersetzen.html">Lieder setzen</a></li><li class="breadcrumb-item"><a href="./repostruktur.html">Struktur des Repositories</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Struktur des Repositories</h1>
+</div>
 
 
 
-<section id="struktur-des-repositories" class="level1">
-<h1>Struktur des Repositories</h1>
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Nun ein paar Worte zu der Struktur deines Repositories.</p>
+<section id="der-lieder-ordner" class="level2">
+<h2 class="anchored" data-anchor-id="der-lieder-ordner">Der <code>lieder</code>-Ordner</h2>
+<p>Im Ordner <code>lieder</code> befinden sich die Layout-Dateien deines Liederbuchs. Diese Dateien sind jeweils in einem Ordner, der denselben Namen hat wie die Dateien. Die identische Benennung ist sehr wichtig! Es empfiehlt sich, die Benennung von der Liederpool-Datei zu übernehmen.</p>
+<p>Im Ordner <code>lieder</code> befinden sich also Ordner, in denen die Layout-Dateien liegen. Im Ordner <code>ueber_meiner_heimat_fruehling</code> liegt also eine Datei namens <code>ueber_meiner_heimat_fruehling.ly</code>.</p>
+</section>
+<section id="der-liederbuecher-ordner" class="level2">
+<h2 class="anchored" data-anchor-id="der-liederbuecher-ordner">Der <code>liederbuecher</code>-Ordner</h2>
+<p>Der Ordner <code>liederbuecher</code> ist für deine Liederbücher da, die du anhand dieses Repos erstellst. Für jedes Liederbuch gibt es einen Ordner, in dem eine LilyPond-Datei liegt, mit der das Liederbuch erstellt wird.</p>
+</section>
+<section id="der-lilypond-common-includes-ordner" class="level2">
+<h2 class="anchored" data-anchor-id="der-lilypond-common-includes-ordner">Der <code>lilypond-common-includes</code>-Ordner</h2>
+<p>In diesem Ordner liegen die LilyPond-Skripte, mit denen unser System arbeitet. Technisch gesehen handelt es sich dabei um ein Git-Submodul, also um ein eigenes Repository, das in dein Repository eingebunden ist.</p>
+</section>
+<section id="der-lilypond-custom-includes-ordner" class="level2">
+<h2 class="anchored" data-anchor-id="der-lilypond-custom-includes-ordner">Der <code>lilypond-custom-includes</code>-Ordner</h2>
+<p>In diesem Ordner kannst du, wie der Name schon andeutet, persönliche Änderungen am Layout vornehmen.</p>
+<p>In der <code>base_config.ly</code> kannst du Änderungen, die den <code>LAYOUT</code>-Blog betreffen (das sind, grob gesagt, Layoutanpassungen bezüglich des Notensatzes), vornehmen. In der <code>categories.ly</code> kannst du die Kategorien deines Liederbuchs konfigurieren. Und in der <code>custom_style_overrides.ly</code> kannst du das Layout des Liederbuchs formatieren, also zum Beispiel die Schriftgröße, Schriftart und vieles mehr.</p>
+</section>
+<section id="der-lilypond-song-includes-ordner" class="level2">
+<h2 class="anchored" data-anchor-id="der-lilypond-song-includes-ordner">Der <code>lilypond-song-includes</code>-Ordner</h2>
+<p>In diesem Ordner findest du die Liederpool-Dateien im Ordner <code>liedbausteine</code>. Außerdem findest du unsere Autor*innendatei unter <code>data</code>. Technisch gesehen handelt es sich auch hier um ein Git-Submodul.</p>
+</section>
+<section id="die-.gitignore-datei" class="level2">
+<h2 class="anchored" data-anchor-id="die-.gitignore-datei">Die <code>.gitignore</code>-Datei</h2>
+<p>Diese Datei verhindert, dass dir bestimmte Dateien, Dateiarten, Ordner, … im Git-Workingtree als bearbeitet angezeigt werden. Das verhindert, dass PDF-Dateien ständig neu ins Remote-Repo hochgeladen werden, weil sie sich ja bei jedem Kompilieren verändern. Deswegen kann man Git in dieser Datei sagen, welche Dateien man grundsätzlich nicht hochladen möchte.</p>
+<p>Deine <code>.gitignore</code>-Datei könnte zum Beispiel so aussehen:</p>
+<pre class="gitignore"><code># ---&gt; Lilypond
+*.pdf
+*.ps
+*.midi
+*.mid
+*.log
+*.csv
+*~</code></pre>
+<p>Wenn du genauer wissen willst, was das bedeutet, dann wird das <a href="https://www.atlassian.com/de/git/tutorials/saving-changes/gitignore">hier</a> genauer erklärt.</p>
 
 
 </section>
@@ -631,14 +697,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./beispiel_liedersetzen.html" class="pagination-link" aria-label="Beispiel Liedersetzen">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Beispiel Liedersetzen</span>
+      <a href="./liederbuecher_machen.html" class="pagination-link" aria-label="Liederbücher erstellen">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Liederbücher erstellen</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./liederbuecher_machen.html" class="pagination-link" aria-label="Liederbücher erstellen">
-        <span class="nav-page-text">Liederbücher erstellen</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

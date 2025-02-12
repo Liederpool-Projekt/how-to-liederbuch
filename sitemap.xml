@@ -2,43 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://apfelpfluecker.github.io/liedertest/frescobaldi_einrichten.html</loc>
-    <lastmod>2025-02-11T09:41:40.423Z</lastmod>
+    <lastmod>2025-02-12T21:00:46.353Z</lastmod>
   </url>
   <url>
     <loc>https://apfelpfluecker.github.io/liedertest/beispiel_liedersetzen.html</loc>
-    <lastmod>2025-02-11T18:34:57.864Z</lastmod>
+    <lastmod>2025-02-12T21:21:37.901Z</lastmod>
   </url>
   <url>
-    <loc>https://apfelpfluecker.github.io/liedertest/liederbuecher_machen.html</loc>
-    <lastmod>2025-02-11T16:39:27.816Z</lastmod>
-  </url>
-  <url>
-    <loc>https://apfelpfluecker.github.io/liedertest/repostruktur.html</loc>
-    <lastmod>2025-02-11T16:39:00.342Z</lastmod>
-  </url>
-  <url>
-    <loc>https://apfelpfluecker.github.io/liedertest/lifehacks.html</loc>
-    <lastmod>2025-02-11T09:41:40.425Z</lastmod>
-  </url>
-  <url>
-    <loc>https://apfelpfluecker.github.io/liedertest/git_verstehen.html</loc>
-    <lastmod>2025-02-11T09:41:40.423Z</lastmod>
-  </url>
-  <url>
-    <loc>https://apfelpfluecker.github.io/liedertest/git_einrichten.html</loc>
-    <lastmod>2025-02-11T10:10:11.113Z</lastmod>
-  </url>
-  <url>
-    <loc>https://apfelpfluecker.github.io/liedertest/doku.html</loc>
-    <lastmod>2025-02-11T10:14:35.027Z</lastmod>
-  </url>
-  <url>
-    <loc>https://apfelpfluecker.github.io/liedertest/liedersetzen.html</loc>
-    <lastmod>2025-02-11T16:46:17.587Z</lastmod>
+    <loc>https://apfelpfluecker.github.io/liedertest/branch_und_pullrequest.html</loc>
+    <lastmod>2025-02-12T22:44:43.767Z</lastmod>
   </url>
   <url>
     <loc>https://apfelpfluecker.github.io/liedertest/lilypond_einrichten.html</loc>
-    <lastmod>2025-02-11T09:41:40.425Z</lastmod>
+    <lastmod>2025-02-12T21:02:46.981Z</lastmod>
+  </url>
+  <url>
+    <loc>https://apfelpfluecker.github.io/liedertest/liedlayout.html</loc>
+    <lastmod>2025-02-12T21:32:21.297Z</lastmod>
+  </url>
+  <url>
+    <loc>https://apfelpfluecker.github.io/liedertest/lifehacks.html</loc>
+    <lastmod>2025-02-12T21:02:26.355Z</lastmod>
+  </url>
+  <url>
+    <loc>https://apfelpfluecker.github.io/liedertest/git_verstehen.html</loc>
+    <lastmod>2025-02-12T21:01:28.470Z</lastmod>
+  </url>
+  <url>
+    <loc>https://apfelpfluecker.github.io/liedertest/git_einrichten.html</loc>
+    <lastmod>2025-02-12T21:01:08.164Z</lastmod>
+  </url>
+  <url>
+    <loc>https://apfelpfluecker.github.io/liedertest/doku.html</loc>
+    <lastmod>2025-02-12T21:00:25.624Z</lastmod>
+  </url>
+  <url>
+    <loc>https://apfelpfluecker.github.io/liedertest/liedersetzen.html</loc>
+    <lastmod>2025-02-12T21:02:07.699Z</lastmod>
+  </url>
+  <url>
+    <loc>https://apfelpfluecker.github.io/liedertest/repostruktur.html</loc>
+    <lastmod>2025-02-12T22:22:37.426Z</lastmod>
+  </url>
+  <url>
+    <loc>https://apfelpfluecker.github.io/liedertest/liederbuecher_machen.html</loc>
+    <lastmod>2025-02-12T21:01:49.342Z</lastmod>
   </url>
   <url>
     <loc>https://apfelpfluecker.github.io/liedertest/index.html</loc>
@@ -46,6 +54,6 @@
   </url>
   <url>
     <loc>https://apfelpfluecker.github.io/liedertest/vorbereitung.html</loc>
-    <lastmod>2025-02-11T09:41:40.425Z</lastmod>
+    <lastmod>2025-02-12T20:59:07.592Z</lastmod>
   </url>
 </urlset>
