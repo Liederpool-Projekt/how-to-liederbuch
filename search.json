@@ -232,7 +232,7 @@
     "href": "branch_und_pullrequest.html#in-einen-branch-pushen",
     "title": "Branch und Pull-Request",
     "section": "In einen Branch pushen",
-    "text": "In einen Branch pushen\n\n\n\n1: Das ist dein Workingtree. 2: Da siehst du dein Liederbuch-Repository\n\n\n\nBranch erstellen\nDu gehst in deine Git-GUI und wählst dich ins Submodul lilypond-song-includes. Im Moment solltest du dich im main-Branch befinden. Eine Übersicht über die Branches wird dir vermutlich in irgendeiner Ecke der Benutzeroberfläche dargestellt. In SmartGit beispielsweise befindet sich diese Übersicht unten links.\nJetzt musst du einen neuen lokalen Branch erstellen. Das funktioniert in jeder Git-GUI anders, deswegen lass dir gerne von einer Google-Suche oder ChatGPT oder uns helfen. In SmartGit klickst du mit einem Rechtsklick auf „Local Branches“ und wählst dann „Add Branch“. Im Dialogfenster kannst du dem Branch einen Namen geben. Benenne ihn nach dem Lied. Bitte verwende keine Leer- oder Sonderzeichen. Klicke dann auf „Add Branch“.\n\n\nDen neuen Branch auschecken\nJetzt musst du den neuen Branch, den du gerade erstellt hast, auschecken. In SmartGit klickst du dafür einfach doppelt auf den Namen deines Branches, der nun unter „Local Branches“ aufgelistet sein sollte.\n\n\nLied committen\nIn deinem „Working Tree“ siehst du, dass du Änderungen getätigt hast – das ist das neue Lied, was du gerade gesetzt hast. Diese Änderungen musst du nun „committen“. Wie das geht, fragst du am besten Google, ChatGPT oder holst dir bei uns Hilfe. In SmartGit werden dir die Änderungen in einem Kasten auf der rechten Seite angezeigt. Klicke mit einem Rechtsklick auf die entsprechende Datei und wähle „Commit“ (alternativer Shortcut: Strg + K). Als Commit-Message, die nun im Dialogfenster gefordert wird, bietet sich der Name des Liedes an. Falls das Lied schon im Liederpool war, könntest du noch dahinter schreiben, was du an dem Lied verändert hast. Klicke auf „Commit“.\n\n\nBranch pushen\nJetzt hast du einen Branch erstellt, hast ihn ausgecheckt und das Lied in den Branch committed. Zuletzt musst du den Branch auf das Remote-Repo pushen. Dazu gibt es einen Knopf, der vermutlich oben in einer Menüleiste zu finden ist. In SmartGit befindet er sich oben links.",
+    "text": "In einen Branch pushen\n\n\n\n1: Das ist dein Workingtree. 2: Da siehst du dein Liederbuch-Repository mit den beiden Submodulen lilypond-common-includes und lilypond-song-includes. 3: Das ist die Branch-Übersicht, da siehst du, dass du dich gerade im main-Branch befindest. 4: Hier hast du eine Übersicht aller geänderter Dateien. Wenn du diese Committen willst, wählst du einfach alle auf und klickst dann Rechtsklick und wählst Commit.\n\n\n\nBranch erstellen\nDu gehst in deine Git-GUI und wählst dich ins Submodul lilypond-song-includes. Im Moment solltest du dich im main-Branch befinden. Eine Übersicht über die Branches wird dir vermutlich in irgendeiner Ecke der Benutzeroberfläche dargestellt. In SmartGit beispielsweise befindet sich diese Übersicht unten links.\nJetzt musst du einen neuen lokalen Branch erstellen. Das funktioniert in jeder Git-GUI anders, deswegen lass dir gerne von einer Google-Suche oder ChatGPT oder uns helfen. In SmartGit klickst du mit einem Rechtsklick auf „Local Branches“ und wählst dann „Add Branch“. Im Dialogfenster kannst du dem Branch einen Namen geben. Benenne ihn nach dem Lied. Bitte verwende keine Leer- oder Sonderzeichen. Klicke dann auf „Add Branch“.\n\n\nDen neuen Branch auschecken\nJetzt musst du den neuen Branch, den du gerade erstellt hast, auschecken. In SmartGit klickst du dafür einfach doppelt auf den Namen deines Branches, der nun unter „Local Branches“ aufgelistet sein sollte.\n\n\nLied committen\nIn deinem „Working Tree“ siehst du, dass du Änderungen getätigt hast – das ist das neue Lied, was du gerade gesetzt hast. Diese Änderungen musst du nun „committen“. Wie das geht, fragst du am besten Google, ChatGPT oder holst dir bei uns Hilfe. In SmartGit werden dir die Änderungen in einem Kasten auf der rechten Seite angezeigt. Klicke mit einem Rechtsklick auf die entsprechende Datei und wähle „Commit“ (alternativer Shortcut: Strg + K). Als Commit-Message, die nun im Dialogfenster gefordert wird, bietet sich der Name des Liedes an. Falls das Lied schon im Liederpool war, könntest du noch dahinter schreiben, was du an dem Lied verändert hast. Klicke auf „Commit“.\n\n\nBranch pushen\nJetzt hast du einen Branch erstellt, hast ihn ausgecheckt und das Lied in den Branch committed. Zuletzt musst du den Branch auf das Remote-Repo pushen. Dazu gibt es einen Knopf, der vermutlich oben in einer Menüleiste zu finden ist. In SmartGit befindet er sich oben links.",
     "crumbs": [
       "Einführung",
       "Lieder setzen",
@@ -551,6 +551,66 @@
       "Einführung",
       "Lieder setzen",
       "Struktur des Repositories"
+    ]
+  },
+  {
+    "objectID": "liederbuecher_machen.html",
+    "href": "liederbuecher_machen.html",
+    "title": "Liederbücher erstellen",
+    "section": "",
+    "text": "Jetzt erstellen wir dir ein Liederbuch, wo das eine schon gesetzte und gelayoutete Lied reinkommen soll.",
+    "crumbs": [
+      "Einführung",
+      "Lieder setzen",
+      "Liederbücher erstellen"
+    ]
+  },
+  {
+    "objectID": "liederbuecher_machen.html#ordner-vorbereiten",
+    "href": "liederbuecher_machen.html#ordner-vorbereiten",
+    "title": "Liederbücher erstellen",
+    "section": "Ordner vorbereiten",
+    "text": "Ordner vorbereiten\nBenenne den Ordner beispiel_liederbuch im Ordner liederbuecher um in den Namen deines Liederbuchs. Gehe dann in den Ordner und benenne auch die LilyPond-Datei entsprechend um.\nIm Folgenden gehen wir zusammen die Beispiel-Liederbuch-Datei durch und gehen kurz auf die wichtigsten Dinge ein.",
+    "crumbs": [
+      "Einführung",
+      "Lieder setzen",
+      "Liederbücher erstellen"
+    ]
+  },
+  {
+    "objectID": "liederbuecher_machen.html#bild--und-liedpfade",
+    "href": "liederbuecher_machen.html#bild--und-liedpfade",
+    "title": "Liederbücher erstellen",
+    "section": "Bild- und Liedpfade",
+    "text": "Bild- und Liedpfade\nimagePagePath = \"categories\"\nsongPath = \"../../lieder\"\nGleich ganz am Anfang werden die Orte definiert, in denen nach Bildern, die du im Liederbuch verwendest, und nach den Liedern gesucht wird. Es macht Sinn, den songPath auf jeden Fall so zu lassen. Wenn du Kategorien nutzt, kannst du darüber nachdenken, einen eigenen Bilderordner zu nutzen. Der Ausgangspunkt des relativen Pfades ist der Ordner, in dem sich diese LilyPond-Datei befindet.",
+    "crumbs": [
+      "Einführung",
+      "Lieder setzen",
+      "Liederbücher erstellen"
+    ]
+  },
+  {
+    "objectID": "liederbuecher_machen.html#lieder-bilder-und-leerseiten-einbinden",
+    "href": "liederbuecher_machen.html#lieder-bilder-und-leerseiten-einbinden",
+    "title": "Liederbücher erstellen",
+    "section": "Lieder, Bilder und Leerseiten einbinden",
+    "text": "Lieder, Bilder und Leerseiten einbinden\nDann folgt der Teil, in dem du Lieder einbinden kannst. Die Lieder werden in der Reihenfolge inkludiert, in der sie in der Datei auftreten. Es gibt folgende Möglichkeiten:\n\n\\includeSong \"ordnername\" inkludiert ein Lied. In unserem Falle wäre das also \\includeSong \"ueber_meiner_heimat_fruehling\".\n\\imagepage #125 \"see.eps\" fügt eine Seite ein, die nur aus einem Bild besteht. Auf der Seite wird dann auch keine Seitenzahl angezeigt. Mit der Zahl hinter dem Rautezeichen wird die Größe des Bildes definiert. Das Bild muss sich im oben festgelegten Ordner befinden.\n\\blankpage fügt eine Leerseite ein.",
+    "crumbs": [
+      "Einführung",
+      "Lieder setzen",
+      "Liederbücher erstellen"
+    ]
+  },
+  {
+    "objectID": "liederbuecher_machen.html#book-part",
+    "href": "liederbuecher_machen.html#book-part",
+    "title": "Liederbücher erstellen",
+    "section": "Book-Part",
+    "text": "Book-Part\n\nDateiname\nAls erstes kannst du den Dateinamen der Liederbuch-PDF festlegen, zum Beispiel \\bookOutputName \"tusks_lied\" würde beim Kompilieren dann eine PDF mit dem Titel tusks_lied.pdf erzeugen.\n\n\nHeader / PDF-Metadaten\nIm Header kannst du einige PDF-Metadaten festlegen: Autor*innen, Titel, Thema, Schlüsselwörter.\n\\header {\n    pdfcomposer = \"Ich\"\n    pdftitle = \"tusks Lied ♫\" % Unicode is geil!\n    pdfsubject = \"Ein anspruchsvolles Liederbuch mit Noten und etwas Hintergrundinformationen zu den Liedern.\"\n    pdfkeywords = \"Liederbuch, Pfadfinder, bündisch\"\n  }\n\n\nCover-Seite\nEine Coverseite kann man auf diese Weise erstellen:\n\\bookpart {\n  %\\markup { \\epsfile #X #120 #\"images/front.eps\" }\n  %\\markup \\fill-line { \\center-column { \\vspace #1 \\pad-x #9 \\customEps #95 #\"Dateiname.dt\" \\vspace #1 } }\n  \\paper {\n    print-page-number = ##f\n    inner-margin = 0\n    outer-margin = 0\n    binding-offset = 0\n    top-margin = 0\n    bottom-margin = 0\n    last-bottom-spacing = #'((basic-distance . 0) (minimum-distance . 0) (padding . 0))\n    page-count = 1\n  }\n}\nDie beiden auskommentierten \\markup-Befehle sind zwei verschiedene Methoden, ein Titelbild einzubinden, das unter einem anzugebenden Dateipfad zu finden ist. Probier einfach aus, was da für dich besser passt.\nDie Eigenschaften im \\paper-Block setzen jeweils alle Abstände auf null und verhindern, dass eine Seitennummer ausgedrückt wird.\nWichtig: Wenn in einem \\bookpart kein \\markup oder eine \\markuplist aktiv ist, führt das auch nicht zu einer Seite im Liederbuch.\n\n\nVorwort-Seite\n% Seite\n\\bookpart {\n  \\paper { print-page-number = ##f }\n  \\markup { \\vspace #2 \\fill-line { \\null\n    \\override #'(font-name . \"Old Standard TT\") \\fontsize #0.5 \\override #'(line-width . 115) \\left-column { \\justify-string #\"\n    Hier steht lustiger Text\"\n    \" \"\n    \\fill-line { \"blublub\" }\n    }\n    \\null }\n  }\n  % muss drinbleiben, damit die Kategoriebildchen alle reingeladen und referenziert werden können:\n  \\markuplist { \\embed-category-images }\n}\nWenn du ein Vorwort erzeugen möchtest, kannst du das zum Beispiel mit diesem Bookpart machen. Passe einfach alles nach deinen Wünschen an. Mit \\override #'(font-name . \"Schriftname\") änderst du die Schriftart, mit \\fontsize die Schriftgröße. Wichtig ist, dass du irgendwo in deinem Liederbuch (in einem Bookpart) den Befehl \\markuplist { \\embed-category-images } übergibst, denn der stellt sicher, dass die Kategoriebildchen auch reingeladen werden.\n\n\nDie Lied-Ausgabe\nMit dem nächsten Befehl wird die Lied-Ausgabe bewirkt: \\songs.\n\n\nKategorienverzeichnis\n\\bookpart {\n  \\markuplist {\n    \\index-in-columns-with-title #'categories \\column {\n      \\fontsize #5 \\sans \\bold \\fill-line { \\null \"Inhaltsverzeichnis nach Kategorien\" \\null }\n      \\vspace #1\n    }\n  }\n}\nMit diesem Code kannst du ein Kategorienverzeichnis erzeugen. Die Überschrift kannst du anpassen (\"Inhaltsverzeichnis nach Kategorien\"), ebenso deren Textgröße (\\fontsize #5), Schriftfamilie (\\sans) und Formatierungen wie zum Beispiel fett (\\bold).\n\n\nAutor*innenverzeichnis\n\\bookpart {\n  \\markuplist {\n    \\index-in-columns-with-title #'authors \\column {\n      \\fontsize #5 \\sans \\bold \\fill-line { \\null \"Autorenverzeichnis\" \\null }\n      \\vspace #1\n    }\n  }\n}\nMit diesem Code erstellst du ein Autor*innenverzeichnis aller Autor*innen der in deinem Liederbuch referenzierten Autor*innen. Zu den Anpassungen der Überschrift siehe Section 4.6.\n\n\nInhaltsverzeichnis\n\\bookpart {\n   \\indexSection #\"A\" \\markup { \"A\" }\n   \\indexSection #\"B\" \\markup { \"B\" }\n   \\indexSection #\"C\" \\markup { \"C\" }\n   \\indexSection #\"D\" \\markup { \"D\" }\n   \\indexSection #\"E\" \\markup { \"E\" }\n   \\indexSection #\"F\" \\markup { \"F\" }\n   \\indexSection #\"G\" \\markup { \"G\" }\n   \\indexSection #\"H\" \\markup { \"H\" }\n   \\indexSection #\"I\" \\markup { \"I\" }\n   \\indexSection #\"J\" \\markup { \"J\" }\n   \\indexSection #\"K\" \\markup { \"K\" }\n   \\indexSection #\"L\" \\markup { \"L\" }\n   \\indexSection #\"M\" \\markup { \"M\" }\n   \\indexSection #\"N\" \\markup { \"N\" }\n   \\indexSection #\"O\" \\markup { \"O\" }\n   \\indexSection #\"P\" \\markup { \"P\" }\n   \\indexSection #\"Q\" \\markup { \"Q\" }\n   \\indexSection #\"R\" \\markup { \"R\" }\n   \\indexSection #\"S\" \\markup { \"S\" }\n   \\indexSection #\"T\" \\markup { \"T\" }\n   \\indexSection #\"U\" \\markup { \"U\" }\n   \\indexSection #\"V\" \\markup { \"V\" }\n   \\indexSection #\"W\" \\markup { \"W\" }\n   \\indexSection #\"X\" \\markup { \"X\" }\n   \\indexSection #\"Y\" \\markup { \"Y\" }\n   \\indexSection #\"Z\" \\markup { \"Z\" }\n   \\markuplist {\n    \\index-in-columns-with-title #'alphabetical \\column {\n      \\fontsize #5 \\sans \\bold \\fill-line { \\null \"Inhaltsverzeichnis\" \\null }\n      \\vspace #.5\n      \\justify {\n        Da die allermeisten Lieder unter verschiedenen Namen bekannt sind,\n        wollen wir euch ein Inhaltsverzeichnis an die Hand geben, mit dem ihr hoffentlich auf verschiedene Arten fündig werdet.\n        Die Liedtitel, die auch die Überschriften sind, findet ihr normal gedruckt.\n        Alle weiteren Alternativtitel oder Liedanfänge sind zur Unterscheidung kursiv gedruckt.\n      }\n      \\vspace #1\n    }\n    \\write-toc-csv\n  }\n}\nMit diesem Code kannst du ein Inhaltsverzeichnis erstellen. Der erste Teil (mit dem Alphabet) erstellt jeweils „Index-Sections“, also ein Abschnitt für jeden Buchstaben. Wenn ein Buchstabe in deinem Liederbuch nicht vorkommt, kannst du ihn auskommentieren, damit er nicht ausgedrückt wird. Anschließend kannst du, wie schon in Section 4.6 erwähnt, die Überschrift anpassen. Auch der ausgedrückte Text darunter ist natürlich anpassbar.",
+    "crumbs": [
+      "Einführung",
+      "Lieder setzen",
+      "Liederbücher erstellen"
     ]
   },
   {

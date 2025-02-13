@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -199,8 +233,27 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#ordner-vorbereiten" id="toc-ordner-vorbereiten" class="nav-link active" data-scroll-target="#ordner-vorbereiten">Ordner vorbereiten</a></li>
+  <li><a href="#bild--und-liedpfade" id="toc-bild--und-liedpfade" class="nav-link" data-scroll-target="#bild--und-liedpfade">Bild- und Liedpfade</a></li>
+  <li><a href="#lieder-bilder-und-leerseiten-einbinden" id="toc-lieder-bilder-und-leerseiten-einbinden" class="nav-link" data-scroll-target="#lieder-bilder-und-leerseiten-einbinden">Lieder, Bilder und Leerseiten einbinden</a></li>
+  <li><a href="#book-part" id="toc-book-part" class="nav-link" data-scroll-target="#book-part">Book-Part</a>
+  <ul class="collapse">
+  <li><a href="#dateiname" id="toc-dateiname" class="nav-link" data-scroll-target="#dateiname">Dateiname</a></li>
+  <li><a href="#header-pdf-metadaten" id="toc-header-pdf-metadaten" class="nav-link" data-scroll-target="#header-pdf-metadaten">Header / PDF-Metadaten</a></li>
+  <li><a href="#cover-seite" id="toc-cover-seite" class="nav-link" data-scroll-target="#cover-seite">Cover-Seite</a></li>
+  <li><a href="#vorwort-seite" id="toc-vorwort-seite" class="nav-link" data-scroll-target="#vorwort-seite">Vorwort-Seite</a></li>
+  <li><a href="#die-lied-ausgabe" id="toc-die-lied-ausgabe" class="nav-link" data-scroll-target="#die-lied-ausgabe">Die Lied-Ausgabe</a></li>
+  <li><a href="#sec-kategorienverzeichnis" id="toc-sec-kategorienverzeichnis" class="nav-link" data-scroll-target="#sec-kategorienverzeichnis">Kategorienverzeichnis</a></li>
+  <li><a href="#autorinnenverzeichnis" id="toc-autorinnenverzeichnis" class="nav-link" data-scroll-target="#autorinnenverzeichnis">Autor*innenverzeichnis</a></li>
+  <li><a href="#inhaltsverzeichnis" id="toc-inhaltsverzeichnis" class="nav-link" data-scroll-target="#inhaltsverzeichnis">Inhaltsverzeichnis</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -224,8 +277,159 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>Jetzt erstellen wir dir ein Liederbuch, wo das eine schon gesetzte und gelayoutete Lied reinkommen soll.</p>
+<section id="ordner-vorbereiten" class="level2">
+<h2 class="anchored" data-anchor-id="ordner-vorbereiten">Ordner vorbereiten</h2>
+<p>Benenne den Ordner <code>beispiel_liederbuch</code>&nbsp;im Ordner <code>liederbuecher</code> um in den Namen deines Liederbuchs. Gehe dann in den Ordner und benenne auch die LilyPond-Datei entsprechend um.</p>
+<p>Im Folgenden gehen wir zusammen die Beispiel-Liederbuch-Datei durch und gehen kurz auf die wichtigsten Dinge ein.</p>
+</section>
+<section id="bild--und-liedpfade" class="level2">
+<h2 class="anchored" data-anchor-id="bild--und-liedpfade">Bild- und Liedpfade</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>imagePagePath = "<span class="st">categories"</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>songPath = "<span class="st">../../lieder"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Gleich ganz am Anfang werden die Orte definiert, in denen nach Bildern, die du im Liederbuch verwendest, und nach den Liedern gesucht wird. Es macht Sinn, den <code>songPath</code> auf jeden Fall so zu lassen. Wenn du Kategorien nutzt, kannst du darüber nachdenken, einen eigenen Bilderordner zu nutzen. Der Ausgangspunkt des relativen Pfades ist der Ordner, in dem sich diese LilyPond-Datei befindet.</p>
+</section>
+<section id="lieder-bilder-und-leerseiten-einbinden" class="level2">
+<h2 class="anchored" data-anchor-id="lieder-bilder-und-leerseiten-einbinden">Lieder, Bilder und Leerseiten einbinden</h2>
+<p>Dann folgt der Teil, in dem du Lieder einbinden kannst. Die Lieder werden in der Reihenfolge inkludiert, in der sie in der Datei auftreten. Es gibt folgende Möglichkeiten:</p>
+<ul>
+<li><p><code>\includeSong "ordnername"</code> inkludiert ein Lied. In unserem Falle wäre das also <code>\includeSong "ueber_meiner_heimat_fruehling"</code>.</p></li>
+<li><p><code>\imagepage #125 "see.eps"</code> fügt eine Seite ein, die nur aus einem Bild besteht. Auf der Seite wird dann auch keine Seitenzahl angezeigt. Mit der Zahl hinter dem Rautezeichen wird die Größe des Bildes definiert. Das Bild muss sich im oben festgelegten Ordner befinden.</p></li>
+<li><p><code>\blankpage</code> fügt eine Leerseite ein.</p></li>
+</ul>
+</section>
+<section id="book-part" class="level2">
+<h2 class="anchored" data-anchor-id="book-part">Book-Part</h2>
+<section id="dateiname" class="level3">
+<h3 class="anchored" data-anchor-id="dateiname">Dateiname</h3>
+<p>Als erstes kannst du den Dateinamen der Liederbuch-PDF festlegen, zum Beispiel <code>\bookOutputName "tusks_lied"</code> würde beim Kompilieren dann eine PDF mit dem Titel <code>tusks_lied.pdf</code> erzeugen.</p>
+</section>
+<section id="header-pdf-metadaten" class="level3">
+<h3 class="anchored" data-anchor-id="header-pdf-metadaten">Header / PDF-Metadaten</h3>
+<p>Im Header kannst du einige PDF-Metadaten festlegen: Autor*innen, Titel, Thema, Schlüsselwörter.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>\header<span class="kw"> {</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    pdfcomposer = "<span class="st">Ich"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    pdftitle = "<span class="st">tusks Lied ♫"</span> %<span class="co"> Unicode is geil!</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    pdfsubject = "<span class="st">Ein anspruchsvolles Liederbuch mit Noten und etwas Hintergrundinformationen zu den Liedern."</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    pdfkeywords = "<span class="st">Liederbuch, Pfadfinder, bündisch"</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="cover-seite" class="level3">
+<h3 class="anchored" data-anchor-id="cover-seite">Cover-Seite</h3>
+<p>Eine Coverseite kann man auf diese Weise erstellen:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">\bookpart</span> <span class="kw">{</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  %<span class="co">\markup { \epsfile #X #120 #"images/front.eps" }</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  %<span class="co">\markup \fill-line { \center-column { \vspace #1 \pad-x #9 \customEps #95 #"Dateiname.dt" \vspace #1 } }</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  \paper<span class="kw"> {</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">print-page-number</span> = #<span class="dv">#f</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="dt">inner-margin</span> = 0</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="dt">outer-margin</span> = 0</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="dt">binding-offset</span> = 0</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="dt">top-margin</span> = 0</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    <span class="dt">bottom-margin</span> = 0</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    last-bottom-spacing = #<span class="fl">'((basic-distance . </span><span class="dv">0</span><span class="fl">) (minimum-distance . </span><span class="dv">0</span><span class="fl">) (padding . </span><span class="dv">0</span><span class="fl">))</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    <span class="dt">page-count</span> = 1</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Die beiden auskommentierten <code>\markup</code>-Befehle sind zwei verschiedene Methoden, ein Titelbild einzubinden, das unter einem anzugebenden Dateipfad zu finden ist. Probier einfach aus, was da für dich besser passt.</p>
+<p>Die Eigenschaften im <code>\paper</code>-Block setzen jeweils alle Abstände auf null und verhindern, dass eine Seitennummer ausgedrückt wird.</p>
+<p>Wichtig: Wenn in einem <code>\bookpart</code> kein <code>\markup</code> oder eine <code>\markuplist</code> aktiv ist, führt das auch nicht zu einer Seite im Liederbuch.</p>
+</section>
+<section id="vorwort-seite" class="level3">
+<h3 class="anchored" data-anchor-id="vorwort-seite">Vorwort-Seite</h3>
+<div class="sourceCode" id="cb4"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>%<span class="co"> Seite</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="kw">\bookpart</span> <span class="kw">{</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  \paper<span class="kw"> {</span> <span class="dt">print-page-number</span> = #<span class="dv">#f</span> <span class="kw">}</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="bn">\markup</span> <span class="kw">{</span> <span class="fu">\vspace</span> #<span class="dv">2</span> <span class="bn">\fill-line</span> <span class="kw">{</span> <span class="bn">\null</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="bn">\override</span> #<span class="fl">'(font-name . "</span><span class="st">Old Standard TT"</span><span class="fl">)</span> <span class="bn">\fontsize</span> #<span class="dv">0.5</span> <span class="bn">\override</span> #<span class="fl">'(line-width . </span><span class="dv">115</span><span class="fl">)</span> <span class="bn">\left-column</span> <span class="kw">{</span> <span class="bn">\justify-string</span> #<span class="fl">"</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="st">    Hier steht lustiger Text"</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    "<span class="st"> "</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    <span class="bn">\fill-line</span> <span class="kw">{</span> "<span class="st">blublub"</span> <span class="kw">}</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">}</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    <span class="bn">\null</span> <span class="kw">}</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  %<span class="co"> muss drinbleiben, damit die Kategoriebildchen alle reingeladen und referenziert werden können:</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\markuplist</span> <span class="kw">{</span> <span class="fu">\embed</span>-category-images <span class="kw">}</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Wenn du ein Vorwort erzeugen möchtest, kannst du das zum Beispiel mit diesem Bookpart machen. Passe einfach alles nach deinen Wünschen an. Mit <code>\override #'(font-name . "Schriftname")</code> änderst du die Schriftart, mit <code>\fontsize</code> die Schriftgröße. Wichtig ist, dass du irgendwo in deinem Liederbuch (in einem Bookpart) den Befehl <code>\markuplist { \embed-category-images }</code> übergibst, denn der stellt sicher, dass die Kategoriebildchen auch reingeladen werden.</p>
+</section>
+<section id="die-lied-ausgabe" class="level3">
+<h3 class="anchored" data-anchor-id="die-lied-ausgabe">Die Lied-Ausgabe</h3>
+<p>Mit dem nächsten Befehl wird die Lied-Ausgabe bewirkt: <code>\songs</code>.</p>
+</section>
+<section id="sec-kategorienverzeichnis" class="level3">
+<h3 class="anchored" data-anchor-id="sec-kategorienverzeichnis">Kategorienverzeichnis</h3>
+<div class="sourceCode" id="cb5"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">\bookpart</span> <span class="kw">{</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\markuplist</span> <span class="kw">{</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\index</span>-in-columns-with-title #<span class="fl">'categories</span> <span class="fu">\column</span> <span class="kw">{</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>      <span class="fu">\fontsize</span> #<span class="dv">5</span> <span class="fu">\sans</span> <span class="fu">\bold</span> <span class="fu">\fill</span>-line <span class="kw">{</span> <span class="fu">\null</span> "<span class="st">Inhaltsverzeichnis nach Kategorien"</span> <span class="fu">\null</span> <span class="kw">}</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>      <span class="fu">\vspace</span> #<span class="dv">1</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">}</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Mit diesem Code kannst du ein Kategorienverzeichnis erzeugen. Die Überschrift kannst du anpassen (<code>"Inhaltsverzeichnis nach Kategorien"</code>), ebenso deren Textgröße (<code>\fontsize #5</code>), Schriftfamilie (<code>\sans</code>) und Formatierungen wie zum Beispiel fett (<code>\bold</code>).</p>
+</section>
+<section id="autorinnenverzeichnis" class="level3">
+<h3 class="anchored" data-anchor-id="autorinnenverzeichnis">Autor*innenverzeichnis</h3>
+<div class="sourceCode" id="cb6"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">\bookpart</span> <span class="kw">{</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\markuplist</span> <span class="kw">{</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\index</span>-in-columns-with-title #<span class="fl">'authors</span> <span class="fu">\column</span> <span class="kw">{</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>      <span class="fu">\fontsize</span> #<span class="dv">5</span> <span class="fu">\sans</span> <span class="fu">\bold</span> <span class="fu">\fill</span>-line <span class="kw">{</span> <span class="fu">\null</span> "<span class="st">Autorenverzeichnis"</span> <span class="fu">\null</span> <span class="kw">}</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>      <span class="fu">\vspace</span> #<span class="dv">1</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">}</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Mit diesem Code erstellst du ein Autor*innenverzeichnis aller Autor*innen der in deinem Liederbuch referenzierten Autor*innen. Zu den Anpassungen der Überschrift siehe <a href="#sec-kategorienverzeichnis" class="quarto-xref">Section&nbsp;4.6</a>.</p>
+</section>
+<section id="inhaltsverzeichnis" class="level3">
+<h3 class="anchored" data-anchor-id="inhaltsverzeichnis">Inhaltsverzeichnis</h3>
+<div class="sourceCode" id="cb7"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">\bookpart</span> <span class="kw">{</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>   <span class="fu">\indexSection</span> #<span class="fl">"</span><span class="st">A"</span> <span class="bn">\markup</span> <span class="kw">{</span> "<span class="st">A"</span> <span class="kw">}</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>   <span class="fu">\indexSection</span> #<span class="fl">"</span><span class="st">B"</span> <span class="bn">\markup</span> <span class="kw">{</span> "<span class="st">B"</span> <span class="kw">}</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>   <span class="fu">\indexSection</span> #<span class="fl">"</span><span class="st">C"</span> <span class="bn">\markup</span> <span class="kw">{</span> "<span class="st">C"</span> <span class="kw">}</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>   <span class="fu">\indexSection</span> #<span class="fl">"</span><span class="st">D"</span> <span class="bn">\markup</span> <span class="kw">{</span> "<span class="st">D"</span> <span class="kw">}</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>   <span class="fu">\indexSection</span> #<span class="fl">"</span><span class="st">E"</span> <span class="bn">\markup</span> <span class="kw">{</span> "<span class="st">E"</span> <span class="kw">}</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>   <span class="fu">\indexSection</span> #<span class="fl">"</span><span class="st">F"</span> <span class="bn">\markup</span> <span class="kw">{</span> "<span class="st">F"</span> <span class="kw">}</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>   <span class="fu">\indexSection</span> #<span class="fl">"</span><span class="st">G"</span> <span class="bn">\markup</span> <span class="kw">{</span> "<span class="st">G"</span> <span class="kw">}</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>   <span class="fu">\indexSection</span> #<span class="fl">"</span><span class="st">H"</span> <span class="bn">\markup</span> <span class="kw">{</span> "<span class="st">H"</span> <span class="kw">}</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>   <span class="fu">\indexSection</span> #<span class="fl">"</span><span class="st">I"</span> <span class="bn">\markup</span> <span class="kw">{</span> "<span class="st">I"</span> <span class="kw">}</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>   <span class="fu">\indexSection</span> #<span class="fl">"</span><span class="st">J"</span> <span class="bn">\markup</span> <span class="kw">{</span> "<span class="st">J"</span> <span class="kw">}</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>   <span class="fu">\indexSection</span> #<span class="fl">"</span><span class="st">K"</span> <span class="bn">\markup</span> <span class="kw">{</span> "<span class="st">K"</span> <span class="kw">}</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>   <span class="fu">\indexSection</span> #<span class="fl">"</span><span class="st">L"</span> <span class="bn">\markup</span> <span class="kw">{</span> "<span class="st">L"</span> <span class="kw">}</span></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>   <span class="fu">\indexSection</span> #<span class="fl">"</span><span class="st">M"</span> <span class="bn">\markup</span> <span class="kw">{</span> "<span class="st">M"</span> <span class="kw">}</span></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>   <span class="fu">\indexSection</span> #<span class="fl">"</span><span class="st">N"</span> <span class="bn">\markup</span> <span class="kw">{</span> "<span class="st">N"</span> <span class="kw">}</span></span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>   <span class="fu">\indexSection</span> #<span class="fl">"</span><span class="st">O"</span> <span class="bn">\markup</span> <span class="kw">{</span> "<span class="st">O"</span> <span class="kw">}</span></span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>   <span class="fu">\indexSection</span> #<span class="fl">"</span><span class="st">P"</span> <span class="bn">\markup</span> <span class="kw">{</span> "<span class="st">P"</span> <span class="kw">}</span></span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>   <span class="fu">\indexSection</span> #<span class="fl">"</span><span class="st">Q"</span> <span class="bn">\markup</span> <span class="kw">{</span> "<span class="st">Q"</span> <span class="kw">}</span></span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>   <span class="fu">\indexSection</span> #<span class="fl">"</span><span class="st">R"</span> <span class="bn">\markup</span> <span class="kw">{</span> "<span class="st">R"</span> <span class="kw">}</span></span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>   <span class="fu">\indexSection</span> #<span class="fl">"</span><span class="st">S"</span> <span class="bn">\markup</span> <span class="kw">{</span> "<span class="st">S"</span> <span class="kw">}</span></span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>   <span class="fu">\indexSection</span> #<span class="fl">"</span><span class="st">T"</span> <span class="bn">\markup</span> <span class="kw">{</span> "<span class="st">T"</span> <span class="kw">}</span></span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>   <span class="fu">\indexSection</span> #<span class="fl">"</span><span class="st">U"</span> <span class="bn">\markup</span> <span class="kw">{</span> "<span class="st">U"</span> <span class="kw">}</span></span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>   <span class="fu">\indexSection</span> #<span class="fl">"</span><span class="st">V"</span> <span class="bn">\markup</span> <span class="kw">{</span> "<span class="st">V"</span> <span class="kw">}</span></span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>   <span class="fu">\indexSection</span> #<span class="fl">"</span><span class="st">W"</span> <span class="bn">\markup</span> <span class="kw">{</span> "<span class="st">W"</span> <span class="kw">}</span></span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>   <span class="fu">\indexSection</span> #<span class="fl">"</span><span class="st">X"</span> <span class="bn">\markup</span> <span class="kw">{</span> "<span class="st">X"</span> <span class="kw">}</span></span>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>   <span class="fu">\indexSection</span> #<span class="fl">"</span><span class="st">Y"</span> <span class="bn">\markup</span> <span class="kw">{</span> "<span class="st">Y"</span> <span class="kw">}</span></span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>   <span class="fu">\indexSection</span> #<span class="fl">"</span><span class="st">Z"</span> <span class="bn">\markup</span> <span class="kw">{</span> "<span class="st">Z"</span> <span class="kw">}</span></span>
+<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>   <span class="fu">\markuplist</span> <span class="kw">{</span></span>
+<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\index</span>-in-columns-with-title #<span class="fl">'alphabetical</span> <span class="fu">\column</span> <span class="kw">{</span></span>
+<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a>      <span class="fu">\fontsize</span> #<span class="dv">5</span> <span class="fu">\sans</span> <span class="fu">\bold</span> <span class="fu">\fill</span>-line <span class="kw">{</span> <span class="fu">\null</span> "<span class="st">Inhaltsverzeichnis"</span> <span class="fu">\null</span> <span class="kw">}</span></span>
+<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a>      <span class="fu">\vspace</span> #<span class="dv">.5</span></span>
+<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a>      <span class="fu">\justify</span> <span class="kw">{</span></span>
+<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a>        Da die allermeisten Lieder unter verschiedenen Namen bekannt sind,</span>
+<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a>        wollen wir euch ein Inhaltsverzeichnis an die Hand geben, mit dem ihr hoffentlich auf verschiedene Arten fündig werdet.</span>
+<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a>        Die Liedtitel, die auch die Überschriften sind, findet ihr normal gedruckt.</span>
+<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a>        Alle weiteren Alternativtitel oder Liedanfänge sind zur Unterscheidung kursiv gedruckt.</span>
+<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a>      <span class="kw">}</span></span>
+<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a>      <span class="fu">\vspace</span> #<span class="dv">1</span></span>
+<span id="cb7-39"><a href="#cb7-39" aria-hidden="true" tabindex="-1"></a>    <span class="kw">}</span></span>
+<span id="cb7-40"><a href="#cb7-40" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\write</span>-toc-csv</span>
+<span id="cb7-41"><a href="#cb7-41" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
+<span id="cb7-42"><a href="#cb7-42" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Mit diesem Code kannst du ein Inhaltsverzeichnis erstellen. Der erste Teil (mit dem Alphabet) erstellt jeweils „Index-Sections“, also ein Abschnitt für jeden Buchstaben. Wenn ein Buchstabe in deinem Liederbuch nicht vorkommt, kannst du ihn auskommentieren, damit er nicht ausgedrückt wird. Anschließend kannst du, wie schon in <a href="#sec-kategorienverzeichnis" class="quarto-xref">Section&nbsp;4.6</a> erwähnt, die Überschrift anpassen. Auch der ausgedrückte Text darunter ist natürlich anpassbar.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
