@@ -1,3 +1,180 @@
 ---
 title: "Liederbücher erstellen"
 ---
+
+Jetzt erstellen wir dir ein Liederbuch, wo das eine schon gesetzte und gelayoutete Lied reinkommen soll.
+
+## Ordner vorbereiten
+
+Benenne den Ordner `beispiel_liederbuch` im Ordner `liederbuecher` um in den Namen deines Liederbuchs. Gehe dann in den Ordner und benenne auch die LilyPond-Datei entsprechend um.
+
+Im Folgenden gehen wir zusammen die Beispiel-Liederbuch-Datei durch und gehen kurz auf die wichtigsten Dinge ein.
+
+## Bild- und Liedpfade
+
+``` lilypond
+imagePagePath = "categories"
+songPath = "../../lieder"
+```
+
+Gleich ganz am Anfang werden die Orte definiert, in denen nach Bildern, die du im Liederbuch verwendest, und nach den Liedern gesucht wird. Es macht Sinn, den `songPath` auf jeden Fall so zu lassen. Wenn du Kategorien nutzt, kannst du darüber nachdenken, einen eigenen Bilderordner zu nutzen. Der Ausgangspunkt des relativen Pfades ist der Ordner, in dem sich diese LilyPond-Datei befindet.
+
+## Lieder, Bilder und Leerseiten einbinden
+
+Dann folgt der Teil, in dem du Lieder einbinden kannst. Die Lieder werden in der Reihenfolge inkludiert, in der sie in der Datei auftreten. Es gibt folgende Möglichkeiten:
+
+-   `\includeSong "ordnername"` inkludiert ein Lied. In unserem Falle wäre das also `\includeSong "ueber_meiner_heimat_fruehling"`.
+
+-   `\imagepage #125 "see.eps"` fügt eine Seite ein, die nur aus einem Bild besteht. Auf der Seite wird dann auch keine Seitenzahl angezeigt. Mit der Zahl hinter dem Rautezeichen wird die Größe des Bildes definiert. Das Bild muss sich im oben festgelegten Ordner befinden.
+
+-   `\blankpage` fügt eine Leerseite ein.
+
+## Book-Part
+
+### Dateiname
+
+Als erstes kannst du den Dateinamen der Liederbuch-PDF festlegen, zum Beispiel `\bookOutputName "tusks_lied"` würde beim Kompilieren dann eine PDF mit dem Titel `tusks_lied.pdf` erzeugen.
+
+### Header / PDF-Metadaten
+
+Im Header kannst du einige PDF-Metadaten festlegen: Autor\*innen, Titel, Thema, Schlüsselwörter.
+
+``` lilypond
+\header {
+    pdfcomposer = "Ich"
+    pdftitle = "tusks Lied ♫" % Unicode is geil!
+    pdfsubject = "Ein anspruchsvolles Liederbuch mit Noten und etwas Hintergrundinformationen zu den Liedern."
+    pdfkeywords = "Liederbuch, Pfadfinder, bündisch"
+  }
+```
+
+### Cover-Seite
+
+Eine Coverseite kann man auf diese Weise erstellen:
+
+``` lilypond
+\bookpart {
+  %\markup { \epsfile #X #120 #"images/front.eps" }
+  %\markup \fill-line { \center-column { \vspace #1 \pad-x #9 \customEps #95 #"Dateiname.dt" \vspace #1 } }
+  \paper {
+    print-page-number = ##f
+    inner-margin = 0
+    outer-margin = 0
+    binding-offset = 0
+    top-margin = 0
+    bottom-margin = 0
+    last-bottom-spacing = #'((basic-distance . 0) (minimum-distance . 0) (padding . 0))
+    page-count = 1
+  }
+}
+```
+
+Die beiden auskommentierten `\markup`-Befehle sind zwei verschiedene Methoden, ein Titelbild einzubinden, das unter einem anzugebenden Dateipfad zu finden ist. Probier einfach aus, was da für dich besser passt.
+
+Die Eigenschaften im `\paper`-Block setzen jeweils alle Abstände auf null und verhindern, dass eine Seitennummer ausgedrückt wird.
+
+Wichtig: Wenn in einem `\bookpart` kein `\markup` oder eine `\markuplist` aktiv ist, führt das auch nicht zu einer Seite im Liederbuch.
+
+### Vorwort-Seite
+
+``` lilypond
+% Seite
+\bookpart {
+  \paper { print-page-number = ##f }
+  \markup { \vspace #2 \fill-line { \null
+    \override #'(font-name . "Old Standard TT") \fontsize #0.5 \override #'(line-width . 115) \left-column { \justify-string #"
+    Hier steht lustiger Text"
+    " "
+    \fill-line { "blublub" }
+    }
+    \null }
+  }
+  % muss drinbleiben, damit die Kategoriebildchen alle reingeladen und referenziert werden können:
+  \markuplist { \embed-category-images }
+}
+```
+
+Wenn du ein Vorwort erzeugen möchtest, kannst du das zum Beispiel mit diesem Bookpart machen. Passe einfach alles nach deinen Wünschen an. Mit `\override #'(font-name . "Schriftname")` änderst du die Schriftart, mit `\fontsize` die Schriftgröße. Wichtig ist, dass du irgendwo in deinem Liederbuch (in einem Bookpart) den Befehl `\markuplist { \embed-category-images }` übergibst, denn der stellt sicher, dass die Kategoriebildchen auch reingeladen werden.
+
+### Die Lied-Ausgabe
+
+Mit dem nächsten Befehl wird die Lied-Ausgabe bewirkt: `\songs`.
+
+### Kategorienverzeichnis  {#sec-kategorienverzeichnis}
+
+``` lilypond
+\bookpart {
+  \markuplist {
+    \index-in-columns-with-title #'categories \column {
+      \fontsize #5 \sans \bold \fill-line { \null "Inhaltsverzeichnis nach Kategorien" \null }
+      \vspace #1
+    }
+  }
+}
+```
+
+Mit diesem Code kannst du ein Kategorienverzeichnis erzeugen. Die Überschrift kannst du anpassen (`"Inhaltsverzeichnis nach Kategorien"`), ebenso deren Textgröße (`\fontsize #5`), Schriftfamilie (`\sans`) und Formatierungen wie zum Beispiel fett (`\bold`).
+
+### Autor\*innenverzeichnis
+
+``` lilypond
+\bookpart {
+  \markuplist {
+    \index-in-columns-with-title #'authors \column {
+      \fontsize #5 \sans \bold \fill-line { \null "Autorenverzeichnis" \null }
+      \vspace #1
+    }
+  }
+}
+```
+
+Mit diesem Code erstellst du ein Autor\*innenverzeichnis aller Autor\*innen der in deinem Liederbuch referenzierten Autor\*innen. Zu den Anpassungen der Überschrift siehe @sec-kategorienverzeichnis.
+
+### Inhaltsverzeichnis
+
+``` lilypond
+\bookpart {
+   \indexSection #"A" \markup { "A" }
+   \indexSection #"B" \markup { "B" }
+   \indexSection #"C" \markup { "C" }
+   \indexSection #"D" \markup { "D" }
+   \indexSection #"E" \markup { "E" }
+   \indexSection #"F" \markup { "F" }
+   \indexSection #"G" \markup { "G" }
+   \indexSection #"H" \markup { "H" }
+   \indexSection #"I" \markup { "I" }
+   \indexSection #"J" \markup { "J" }
+   \indexSection #"K" \markup { "K" }
+   \indexSection #"L" \markup { "L" }
+   \indexSection #"M" \markup { "M" }
+   \indexSection #"N" \markup { "N" }
+   \indexSection #"O" \markup { "O" }
+   \indexSection #"P" \markup { "P" }
+   \indexSection #"Q" \markup { "Q" }
+   \indexSection #"R" \markup { "R" }
+   \indexSection #"S" \markup { "S" }
+   \indexSection #"T" \markup { "T" }
+   \indexSection #"U" \markup { "U" }
+   \indexSection #"V" \markup { "V" }
+   \indexSection #"W" \markup { "W" }
+   \indexSection #"X" \markup { "X" }
+   \indexSection #"Y" \markup { "Y" }
+   \indexSection #"Z" \markup { "Z" }
+   \markuplist {
+    \index-in-columns-with-title #'alphabetical \column {
+      \fontsize #5 \sans \bold \fill-line { \null "Inhaltsverzeichnis" \null }
+      \vspace #.5
+      \justify {
+        Da die allermeisten Lieder unter verschiedenen Namen bekannt sind,
+        wollen wir euch ein Inhaltsverzeichnis an die Hand geben, mit dem ihr hoffentlich auf verschiedene Arten fündig werdet.
+        Die Liedtitel, die auch die Überschriften sind, findet ihr normal gedruckt.
+        Alle weiteren Alternativtitel oder Liedanfänge sind zur Unterscheidung kursiv gedruckt.
+      }
+      \vspace #1
+    }
+    \write-toc-csv
+  }
+}
+```
+
+Mit diesem Code kannst du ein Inhaltsverzeichnis erstellen. Der erste Teil (mit dem Alphabet) erstellt jeweils „Index-Sections“, also ein Abschnitt für jeden Buchstaben. Wenn ein Buchstabe in deinem Liederbuch nicht vorkommt, kannst du ihn auskommentieren, damit er nicht ausgedrückt wird. Anschließend kannst du, wie schon in @sec-kategorienverzeichnis erwähnt, die Überschrift anpassen. Auch der ausgedrückte Text darunter ist natürlich anpassbar.

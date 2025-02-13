@@ -7,7 +7,7 @@ Du hast dein erstes Lied für den Liederpool gesetzt, wie toll! Klar, das war nu
 
 ## In einen Branch pushen
 
-![1: Das ist dein Workingtree. 2: Da siehst du dein Liederbuch-Repository](images/smartgit.png)
+![1: Das ist dein Workingtree. 2: Da siehst du dein Liederbuch-Repository mit den beiden Submodulen `lilypond-common-includes` und `lilypond-song-includes`. 3: Das ist die Branch-Übersicht, da siehst du, dass du dich gerade im `main`-Branch befindest. 4: Hier hast du eine Übersicht aller geänderter Dateien. Wenn du diese Committen willst, wählst du einfach alle auf und klickst dann Rechtsklick und wählst Commit.](images/smartgit.png)
 
 ### Branch erstellen
 
