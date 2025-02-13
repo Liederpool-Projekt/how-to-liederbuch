@@ -1,4 +1,6 @@
-# Was ist eigentlich Git?
+---
+title: "Was ist eigentlich Git?"
+---
 
 Git ist ein Versionierungssystem, welches frei als Open-Source-Software zur Verfügung gestellt wird. Git wird für die **Versionskontrolle** (stetige Protokollierung von Änderungen) von Dateien eingesetzt.
 

@@ -1,4 +1,6 @@
-# Nützliche Lifehacks
+---
+title: "Nützliche Lifehacks"
+---
 
 ## Frescobaldi-Lifehacks
 

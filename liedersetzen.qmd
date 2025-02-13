@@ -1,0 +1,13 @@
+---
+title: "Liedersetzen"
+---
+
+Jetzt kann es losgehen mit dem Lieder setzen. Damit du möglichst einfach reinkommst, erklären wir dir gleich anhand eines Beispiels, dass du bei dir nachvollziehen kannst, wie unser System funktioniert.
+
+Vorneweg gibt es aber noch ein paar wichtige Links und Helfer:
+
+-   Hier gibt es eine [LilyPond-Einführung](https://lilypond.org/doc/v2.24/Documentation/learning/index.de.html) von den LilyPond-Entwickler\*innen. Du kannst die auch nochmal machen, aber viele grundlegenden Sachen lernst du in diesem Tutorial schon kennen.
+
+-   Hier findest du die [LilyPond-Dokumentation](https://lilypond.org/doc/v2.24/Documentation/notation/index.de.html). Das ist im Grunde der wichtigste und erste Ort, um herauszufinden, wie du musikalische Notation in LilyPond umsetzen kannst. Auch die meisten aufkommenden Probleme lassen sich schon allein mit der Doku beheben. Zusätzlich kannst du auch gerne unsere Setzer\*innen-Gruppe auf Signal dafür nutzen.
+
+So, jetzt geht’s los!

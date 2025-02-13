@@ -1,7 +1,3 @@
----
-
----
-
 # Moin. {.unnumbered}
 
 Schön, dass du hergefunden hast! In diesem Leitfaden zeigen wir dir, wie du mit [LilyPond](https://lilypond.org/) und [Git](https://git-scm.com/) Liederbücher anhand unserer Vorlagen und Skripte erstellen kannst. Wir versuchen dich dabei bestmöglich an die Hand zu nehmen, um die Hürden, die es dabei gibt, möglichst niedrig zu halten. Zu diesem Zwecke gibt es diesen Leitfaden, aber auch eine Gruppe auf Signal, in der sich alle Personen befinden, die mit unserem System Liederbücher machen.

@@ -1,0 +1,44 @@
+---
+title: "Branch und Pull-Request"
+format: html
+---
+
+Du hast dein erstes Lied für den Liederpool gesetzt, wie toll! Klar, das war nur ein Beispiel, und das Lied befindet sich schon im Liederpool, aber trotzdem denken wir den Prozess mal ganz zu Ende. Dann ist deine nächste Station, einen Branch im Git zu erstellen. Was Branches genau sind, erfährst du detaillierter in unsrer [Doku](doku.qmd), hier fassen wir uns möglichst kurz.
+
+## In einen Branch pushen
+
+![1: Das ist dein Workingtree. 2: Da siehst du dein Liederbuch-Repository](images/smartgit.png)
+
+### Branch erstellen
+
+Du gehst in deine Git-GUI und wählst dich ins Submodul `lilypond-song-includes`. Im Moment solltest du dich im `main`-Branch befinden. Eine Übersicht über die Branches wird dir vermutlich in irgendeiner Ecke der Benutzeroberfläche dargestellt. In SmartGit beispielsweise befindet sich diese Übersicht unten links.
+
+Jetzt musst du einen neuen lokalen Branch erstellen. Das funktioniert in jeder Git-GUI anders, deswegen lass dir gerne von einer Google-Suche oder ChatGPT oder uns helfen. In SmartGit klickst du mit einem Rechtsklick auf „Local Branches“ und wählst dann „Add Branch“. Im Dialogfenster kannst du dem Branch einen Namen geben. Benenne ihn nach dem Lied. Bitte verwende keine Leer- oder Sonderzeichen. Klicke dann auf „Add Branch“.
+
+### Den neuen Branch auschecken
+
+Jetzt musst du den neuen Branch, den du gerade erstellt hast, auschecken. In SmartGit klickst du dafür einfach doppelt auf den Namen deines Branches, der nun unter „Local Branches“ aufgelistet sein sollte.
+
+### Lied committen
+
+In deinem „Working Tree“ siehst du, dass du Änderungen getätigt hast – das ist das neue Lied, was du gerade gesetzt hast. Diese Änderungen musst du nun „committen“. Wie das geht, fragst du am besten Google, ChatGPT oder holst dir bei uns Hilfe. In SmartGit werden dir die Änderungen in einem Kasten auf der rechten Seite angezeigt. Klicke mit einem Rechtsklick auf die entsprechende Datei und wähle „Commit“ (alternativer Shortcut: `Strg + K`). Als Commit-Message, die nun im Dialogfenster gefordert wird, bietet sich der Name des Liedes an. Falls das Lied schon im Liederpool war, könntest du noch dahinter schreiben, was du an dem Lied verändert hast. Klicke auf „Commit“.
+
+### Branch pushen
+
+Jetzt hast du einen Branch erstellt, hast ihn ausgecheckt und das Lied in den Branch committed. Zuletzt musst du den Branch auf das Remote-Repo pushen. Dazu gibt es einen Knopf, der vermutlich oben in einer Menüleiste zu finden ist. In SmartGit befindet er sich oben links.
+
+## Pull-Request erstellen
+
+Nun gehst du in das [Song-Includes-Repository](https://git.zahlenlabyrinth.de/boernel/lilypond-song-includes/pulls) auf unserem Git-Server. Dort kannst du nun einen Pull-Request erstellen.
+
+::: callout-note
+Ein **Pull-Request** ist die Anfrage, ob ein Branch mit dem `main`-Branch zusammengeführt wird. Das ist Teil unseres **Review-Systems**, das dafür sorgen soll, dass die Qualität des Bestandes nicht gefährdet wird, wenn viele Menschen auf den Liederpool zugreifen – die Gefahr des Verschlimmbesserns wäre sehr hoch. Deshalb kannst du nicht einfach auf den `main`-Branch pushen, sondern es muss ein neuer Branch (also eine Abzweigung) erstellt werden, auf die du dann pushst.
+
+Dann kannst du eine Anfrage stellen, ob deine Änderungen ok sind. Die wird dann bearbeitet, in dem mindestens eine andere Person nochmal über deine Änderungen drüberschaut. Zuletzt erfolgt dann die Zusammenführung mit dem `main`-Branch.
+
+Dieses Vier-Augen-Prinzip führt auch dazu, dass Fehler von Anfang an verhindert werden können.
+:::
+
+Klicke im Song-Includes-Repository auf `Pull-Requests` und dort dann auf `Neuer Pull-Request`. Jetzt wirst du nach einem Branch gefragt. Klicke auf das rechte Dropdown-Menü. Dort sind die alle verfügbaren Branches aufgelistet, sortiert nach dem letzten Push-Zeitpunkt. Dein Branch ist also vermutlich ganz oben. Wähle deinen Branch aus und klicke: `Neuer Pull-Request`.
+
+Nun solltest du dem Pull-Request einen Namen geben. Der Name des Liedes bietet sich dafür an. Außerdem solltest du die Checkliste in der Beschreibung ausfüllen. Das machst du, indem du das Leerzeichen mit einem x ersetzt: aus `[ ]` mach `[x]`. Bitte fülle die Kästchen nur aus, wenn sie auch wirklich zutreffen. Zuletzt klicke auf `Pull-Request erstellen`. Fertig!

@@ -1,0 +1,139 @@
+---
+title: "Liedlayout"
+format: html
+---
+
+Jetzt hast du das Lied gesetzt und in den Liederpool eingebracht. Wie toll! Das ist der wichtigste Schritt, weil er der grundlegendste ist. Alle, die Zugriff auf den Liederpool haben, können das Lied jetzt auch verwenden.
+
+Der nächste Schritt ist, das Lied für dein spezifisches Liederbuch zu layouten. Ich kann dich schonmal beruhigen: Das geht viel leichter als das Setzen in den Liederpool, sogar richtig schnell. Und das ist auch der große Vorteil von unserem System. Die Lieder, die schon im Pool sind, machen deutlich weniger Arbeit – du profitierst also sehr von der Arbeit anderer. Aber genug der langen Vorrede. Los geht’s!
+
+## Layout-Datei erstellen
+
+``` lilypond
+\version "2.25.8"
+
+\include "../../lilypond-custom-includes/base_config.ly"
+\include "../../lilypond-song-includes/liedbausteine/"
+
+HEADER = \bookpart {
+  \header {
+    \basicSongInfo
+    %infotext = ""
+    categories = ""
+  }
+}
+
+\include "../../lilypond-common-includes/standalone_output.ly"
+```
+
+Wenn du ein Repository mithilfe unseres Vorlagenrepos erstellt hast, findest du im Ordner `lieder` einen Ordner `00_vorlage_light`. In diesem Ordner öffnest du die Datei `vorlage_light.ly`. Als erstes solltest du die Datei neu abspeichern. Dazu drücke einfach `Strg + Umschalt + S` oder alternativ im Menü `Datei -> Save -> Speichern unter`. Gehe dann in den Ordner `lieder` deines Repositories und lege einen neuen Ordner an. Benenne ihn am besten nach demselben Schema wie im Liederpool, in unserem Falle also `ueber_meiner_heimat_fruehling`. Gehe in den Ordner und speichere die Datei unter demselben Namen dort ab. Fertig.
+
+## Auf die Inhaltsdatei referenzieren
+
+Nun ist der erste Schritt, auf die Inhaltsdatei zu referenzieren, die wir eben im Liederpool erstellt haben. Dazu vervollständigst du den Pfad: `\include "../../lilypond-song-includes/liedbausteine/"`. Tippe dazu einfach nur den Beginn des Dateinamen (also des Liedtitels nach dem bekannten Schema) ein. Unter den dann erscheinenden Optionen kannst du dir bereits das passende Lied auswählen.
+
+## Layouten
+
+Jetzt geht’s ans Layout. Dazu kopierst du dir alles ab dem `MUSIC`-Teil aus der Inhaltsdatei in die Layoutdatei rüber. Das sieht bei uns dann am Ende so aus:
+
+``` lilypond
+\version "2.25.8"
+
+\include "../../lilypond-custom-includes/base_config.ly"
+\include "../../lilypond-song-includes/liedbausteine/"
+
+HEADER = \bookpart {
+  \header {
+    \basicSongInfo
+    %infotext = ""
+    categories = ""
+  }
+}
+
+MUSIC = {
+  <<
+      \songChords
+      \new ChoirStaff = "firstStaff"
+      <<        
+        \new Voice = "firstVoice" { \melodyVoice }
+        \addlyrics { \firstVerse }
+        \addlyrics { \secondVerse }
+        \addlyrics { \thirdVerse }
+        \addlyrics { \fourthVerse }
+      >>
+  >>
+}
+
+verse-breaks = {
+  s1 s \break
+  s s \break
+  s s \break
+  s s \break
+}
+
+TEXT = \markuplist {
+  \override #`(verse-break-voice . ,verse-breaks)
+  \group-verses {
+    \chordlyrics \firstVerse
+    \chordlyrics \secondVerse
+    \chordlyrics \thirdVerse
+    \chordlyrics \fourthVerse
+  }
+}
+
+\include "../../lilypond-common-includes/standalone_output.ly"
+```
+
+Jetzt kannst du schon einmal kompilieren und schauen, wie es aussieht. Der letzte Schritt ist nun der Feinschliff. Du kannst dich nun entscheiden: Möchtest du den Text direkt unter den Noten oder als Strophen mit Akkorden unterm gesamten Notensatz. Alles, was du nicht willst, kommentierst du einfach aus. Wenn du also nur die erste Strophe unter den Noten haben möchtest und den Rest unter dem Satz, sähe das so aus:
+
+``` lilypond
+\version "2.25.8"
+
+\include "../../lilypond-custom-includes/base_config.ly"
+\include "../../lilypond-song-includes/liedbausteine/"
+
+HEADER = \bookpart {
+  \header {
+    \basicSongInfo
+    %infotext = ""
+    categories = ""
+  }
+}
+
+MUSIC = {
+  <<
+      \songChords
+      \new ChoirStaff = "firstStaff"
+      <<        
+        \new Voice = "firstVoice" { \melodyVoice }
+        \addlyrics { \firstVerse }
+        %\addlyrics { \secondVerse }
+        %\addlyrics { \thirdVerse }
+        %\addlyrics { \fourthVerse }
+      >>
+  >>
+}
+
+verse-breaks = {
+  s1 s \break
+  s s \break
+  s s \break
+  s s \break
+}
+
+TEXT = \markuplist {
+  \override #`(verse-break-voice . ,verse-breaks)
+  \group-verses {
+    %\chordlyrics \firstVerse
+    \chordlyrics \secondVerse
+    \chordlyrics \thirdVerse
+    \chordlyrics \fourthVerse
+  }
+}
+
+\include "../../lilypond-common-includes/standalone_output.ly"
+```
+
+Jetzt kannst du kompilieren und schauen, ob es dir schon gefällt. Wenn du wölltest, könntest du auch noch die `verse-breaks` nach Belieben anpassen. Wie das geht, weißt du ja schon.
+
+Und fertig ist dein erstes Liederbuch-Lied!

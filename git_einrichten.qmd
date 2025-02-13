@@ -1,4 +1,6 @@
-# Einrichtung von Git
+---
+title: "Einrichtung von Git"
+---
 
 Hier geht es jetzt nur um eine kurze und möglichst unkomplizierte Einrichtung von Git. Du musst gar nicht alles verstehen, was im Hintergrund passiert. Das kann an späterer Stelle irgendwann auch noch kommen.
 

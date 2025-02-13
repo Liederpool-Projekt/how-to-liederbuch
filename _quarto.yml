@@ -35,6 +35,14 @@ website:
             - lilypond_einrichten.qmd
             - frescobaldi_einrichten.qmd
             - git_einrichten.qmd
+        - section: "Lieder setzen"
+          href: liedersetzen.qmd
+          contents: 
+            - beispiel_liedersetzen.qmd
+            - branch_und_pullrequest.qmd
+            - liedlayout.qmd
+            - liederbuecher_machen.qmd
+            - repostruktur.qmd
             
     - id: doku
       title: "Doku"
@@ -46,6 +54,7 @@ website:
           href: doku.qmd
           contents:
             - lifehacks.qmd
+            - git_verstehen.qmd
 
 bibliography: references.bib
 

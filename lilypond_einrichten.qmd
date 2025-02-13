@@ -1,8 +1,7 @@
 ---
+title: "Einrichtung von LilyPond"
 format: html
 ---
-
-# Einrichtung von LilyPond
 
 LilyPond ist die Software, die wir zum Noten setzen benutzen. Als erstes müssen wir LilyPond bei dir installieren.
 

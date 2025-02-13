@@ -1,4 +1,6 @@
-# Einrichtung von Frescobaldi
+---
+title: "Einrichtung von Frescobaldi"
+---
 
 Frescobaldi ist eine sogenannte „Integrierte Entwicklungsumgebung“ (IDE). Das bedeutet, sie schafft ein angenehmes Arbeitsumfeld, wenn du mit LilyPond arbeitest. LilyPond selbst ist nämlich quasi nur die „Sprache“ in der du Noten setzt und das Programm, womit du sie auswertest („setzt“). Frescobaldi vereint dann unter anderem einen PDF-Viewer, einen MIDI-Player und noch ein paar andere nützliche Werkzeuge.
 

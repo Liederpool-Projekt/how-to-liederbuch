@@ -1,0 +1,48 @@
+---
+title: "Struktur des Repositories"
+---
+
+Nun ein paar Worte zu der Struktur deines Repositories.
+
+## Der `lieder`-Ordner
+
+Im Ordner `lieder` befinden sich die Layout-Dateien deines Liederbuchs. Diese Dateien sind jeweils in einem Ordner, der denselben Namen hat wie die Dateien. Die identische Benennung ist sehr wichtig! Es empfiehlt sich, die Benennung von der Liederpool-Datei zu übernehmen.
+
+Im Ordner `lieder` befinden sich also Ordner, in denen die Layout-Dateien liegen. Im Ordner `ueber_meiner_heimat_fruehling` liegt also eine Datei namens `ueber_meiner_heimat_fruehling.ly`.
+
+## Der `liederbuecher`-Ordner
+
+Der Ordner `liederbuecher` ist für deine Liederbücher da, die du anhand dieses Repos erstellst. Für jedes Liederbuch gibt es einen Ordner, in dem eine LilyPond-Datei liegt, mit der das Liederbuch erstellt wird.
+
+## Der `lilypond-common-includes`-Ordner
+
+In diesem Ordner liegen die LilyPond-Skripte, mit denen unser System arbeitet. Technisch gesehen handelt es sich dabei um ein Git-Submodul, also um ein eigenes Repository, das in dein Repository eingebunden ist.
+
+## Der `lilypond-custom-includes`-Ordner
+
+In diesem Ordner kannst du, wie der Name schon andeutet, persönliche Änderungen am Layout vornehmen.
+
+In der `base_config.ly` kannst du Änderungen, die den `LAYOUT`-Blog betreffen (das sind, grob gesagt, Layoutanpassungen bezüglich des Notensatzes), vornehmen. In der `categories.ly` kannst du die Kategorien deines Liederbuchs konfigurieren. Und in der `custom_style_overrides.ly` kannst du das Layout des Liederbuchs formatieren, also zum Beispiel die Schriftgröße, Schriftart und vieles mehr.
+
+## Der `lilypond-song-includes`-Ordner
+
+In diesem Ordner findest du die Liederpool-Dateien im Ordner `liedbausteine`. Außerdem findest du unsere Autor\*innendatei unter `data`. Technisch gesehen handelt es sich auch hier um ein Git-Submodul.
+
+## Die `.gitignore`-Datei
+
+Diese Datei verhindert, dass dir bestimmte Dateien, Dateiarten, Ordner, … im Git-Workingtree als bearbeitet angezeigt werden. Das verhindert, dass PDF-Dateien ständig neu ins Remote-Repo hochgeladen werden, weil sie sich ja bei jedem Kompilieren verändern. Deswegen kann man Git in dieser Datei sagen, welche Dateien man grundsätzlich nicht hochladen möchte.
+
+Deine `.gitignore`-Datei könnte zum Beispiel so aussehen:
+
+``` gitignore
+# ---> Lilypond
+*.pdf
+*.ps
+*.midi
+*.mid
+*.log
+*.csv
+*~
+```
+
+Wenn du genauer wissen willst, was das bedeutet, dann wird das [hier](https://www.atlassian.com/de/git/tutorials/saving-changes/gitignore) genauer erklärt.

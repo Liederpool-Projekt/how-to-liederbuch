@@ -1,4 +1,6 @@
-# Vorbereitung
+---
+title: "Vorbereitung"
+---
 
 Zuerst richten wir alle Programme ein, die du brauchst. Du benötigst als erstes LilyPond und Frescobaldi. Dann Git und dann einen Account bei dem Git-Server von tux.
 
