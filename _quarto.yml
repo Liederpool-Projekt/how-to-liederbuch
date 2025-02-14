@@ -53,10 +53,19 @@ website:
         - section: "Doku"
           href: doku.qmd
           contents:
-            - lifehacks.qmd
-            - git_verstehen.qmd
+            - section: "Liedersetzen-Prozess"
+              contents:
+                - liedsatz_standards.qmd
+                - quellenlinks.qmd
+                - lifehacks.qmd
+            - section: "Review-Prozess"
+              contents:
+                - git_verstehen.qmd
+                - review.qmd
+                - markdown_tutorial.qmd
 
 bibliography: references.bib
+lang: de
 
 format:
   html:
