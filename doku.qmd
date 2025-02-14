@@ -2,4 +2,6 @@
 title: "Doku"
 ---
 
-Das ist unsre Doku
+Das ist unsere Doku für die Liederpool-spezifischen Befehle und Standards. Hier dokumentieren wir unsere Standards beim Setzen, Lösungen für „Probleme“ in der Anwendung unseres Systems und eigene definierte Befehle, die nicht Teil des Standard-LilyPond sind.
+
+Grundsätzlich hilft dir bei allen LilyPond-spezifischen Fragen oder Problemen natürlich die [LilyPond-Doku](https://lilypond.org/doc/v2.24/Documentation/notation/index).
