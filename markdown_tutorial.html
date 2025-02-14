@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Markdown Basics – How To Liederbuch</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./git_verstehen.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": true,
+  "language": {
+    "search-no-results-text": "Keine Treffer",
+    "search-matching-documents-text": "Treffer",
+    "search-copy-link-title": "Link in die Suche kopieren",
+    "search-hide-matches-text": "Zusätzliche Treffer verbergen",
+    "search-more-match-text": "weitere Treffer in diesem Dokument",
+    "search-more-matches-text": "weitere Treffer in diesem Dokument",
+    "search-clear-button-title": "Zurücksetzen",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Abbrechen",
+    "search-submit-button-title": "Abschicken",
+    "search-label": "Suchen"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">How To Liederbuch</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Suchen"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navigation umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Moin</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./vorbereitung.html"> 
+<span class="menu-text">Einführung</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./doku.html" aria-current="page"> 
+<span class="menu-text">Doku</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./doku.html">Doku</a></li><li class="breadcrumb-item"><a href="./git_verstehen.html">Review-Prozess</a></li><li class="breadcrumb-item"><a href="./markdown_tutorial.html">Markdown Basics</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./doku.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Doku</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+ <span class="menu-text">Liedersetzen-Prozess</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./liedsatz_standards.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Standards beim Liedersetzen</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./quellenlinks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Einbinden von Links als Quelle</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./lifehacks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Nützliche Lifehacks</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Review-Prozess</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./git_verstehen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Was ist eigentlich Git? 2.0</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+ <span class="menu-text">review.qmd</span>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./markdown_tutorial.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Markdown Basics</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Auf dieser Seite</h2>
+   
+  <ul>
+  <li><a href="#markdown" id="toc-markdown" class="nav-link active" data-scroll-target="#markdown">Markdown</a>
+  <ul class="collapse">
+  <li><a href="#markdown-varianten" id="toc-markdown-varianten" class="nav-link" data-scroll-target="#markdown-varianten">Markdown-Varianten</a></li>
+  <li><a href="#markdown-syntax" id="toc-markdown-syntax" class="nav-link" data-scroll-target="#markdown-syntax">Markdown-Syntax</a>
+  <ul class="collapse">
+  <li><a href="#überschriften-headings" id="toc-überschriften-headings" class="nav-link" data-scroll-target="#überschriften-headings">Überschriften / Headings</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#überschrift-1" id="toc-überschrift-1" class="nav-link" data-scroll-target="#überschrift-1">Überschrift 1</a>
+  <ul class="collapse">
+  <li><a href="#überschrift-2" id="toc-überschrift-2" class="nav-link" data-scroll-target="#überschrift-2">Überschrift 2</a>
+  <ul class="collapse">
+  <li><a href="#überschrift-3" id="toc-überschrift-3" class="nav-link" data-scroll-target="#überschrift-3">Überschrift 3</a></li>
+  <li><a href="#formatierungen-emphasis" id="toc-formatierungen-emphasis" class="nav-link" data-scroll-target="#formatierungen-emphasis">Formatierungen / Emphasis</a></li>
+  <li><a href="#listen-lists" id="toc-listen-lists" class="nav-link" data-scroll-target="#listen-lists">Listen / Lists</a></li>
+  <li><a href="#links" id="toc-links" class="nav-link" data-scroll-target="#links">Links</a></li>
+  <li><a href="#zeilenumbrüche" id="toc-zeilenumbrüche" class="nav-link" data-scroll-target="#zeilenumbrüche">Zeilenumbrüche</a></li>
+  <li><a href="#tabellen-tables" id="toc-tabellen-tables" class="nav-link" data-scroll-target="#tabellen-tables">Tabellen / Tables</a></li>
+  <li><a href="#fußnoten-footnotes" id="toc-fußnoten-footnotes" class="nav-link" data-scroll-target="#fußnoten-footnotes">Fußnoten / Footnotes</a></li>
+  <li><a href="#blockzitat-blockquote" id="toc-blockzitat-blockquote" class="nav-link" data-scroll-target="#blockzitat-blockquote">Blockzitat / Blockquote</a></li>
+  <li><a href="#code" id="toc-code" class="nav-link" data-scroll-target="#code">Code</a></li>
+  <li><a href="#sonderzeichen" id="toc-sonderzeichen" class="nav-link" data-scroll-target="#sonderzeichen">Sonderzeichen</a></li>
+  <li><a href="#horizontale-linie" id="toc-horizontale-linie" class="nav-link" data-scroll-target="#horizontale-linie">Horizontale Linie</a></li>
+  </ul></li>
+  <li><a href="#hilfe" id="toc-hilfe" class="nav-link" data-scroll-target="#hilfe">Hilfe</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./doku.html">Doku</a></li><li class="breadcrumb-item"><a href="./git_verstehen.html">Review-Prozess</a></li><li class="breadcrumb-item"><a href="./markdown_tutorial.html">Markdown Basics</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Markdown Basics</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="markdown" class="level1">
+<h1>Markdown</h1>
+<p><em>Anmerkung: CC-BY-SA; Grundlage: <a href="https://blogs.uni-bremen.de/studytools/2021/09/07/markdown-einfach-gut-schreiben/" class="uri">https://blogs.uni-bremen.de/studytools/2021/09/07/markdown-einfach-gut-schreiben/</a>, Änderungen wurden vorgenommen</em></p>
+<blockquote class="blockquote">
+<p>„Ein Tool, sie alle zu schreiben, […] selbst im Dunkeln zu tippen und ewig zu speichern…“</p>
+<p>– Der Herr der Ringe</p>
+</blockquote>
+<p>Ja, Schreiben im digitalen Zeitalter ist nicht weniger kompliziert als früher: kam es damals auf Federkiel und Tinte an, hast du heute hunderte Programme zur Auswahl. Und darfst dich ständig umgewöhnen: vieles ist nicht kompatibel miteinander und verschwindet vielleicht nach 5 Jahren im Schicksalsb… sorry – in der Versenkung. Nerv!</p>
+<p>Aber es geht auch anders!</p>
+<p>Es gibt sie: eine Methode, mit der du (fast) überall schreiben kannst und am Ende trotzdem immer ein gut formatierter Text dabei herauskommt – egal ob Chat-Nachricht, Buch oder eine Webseite. Die Lösung heißt: Markdown!</p>
+<p><em>Markdown</em> ist eine Markup-Sprache (eine sogenannte „Auszeichnungssprache“). Mit Sonderzeichen bekommen Worte, Sätze oder Absätze bestimmte Funktionen zugewiesen. Nach der Umwandlung in das endgültige Format ist der fertige Text dann auch genau so formatiert. Das Tolle daran ist: du benötigst kein spezielles Programm zum erstellen und kannst mit wenigen Zeichen einen fertig formatierten Text schreiben. Der ist schon als „roher“ Text gut lesbar – nicht erst nach dem Umwandeln. Die Basics von Markdown kannst du außerdem innerhalb weniger Minuten lernen, denn die sind wirklich intuitiv!</p>
+<p>Und wie soll das jetzt „die eine Lösung für jeden Text“ sein? Easy-Peasy: wahnsinnig viele Programme verstehen von sich aus schon Markdown!</p>
+<p><strong>Hinweis:</strong> <em>Markdown ist eine Konvention um einfache Textdateien zu schreiben. Daher brauchst du im Grunde kein besonderes Programm, um Markdown zu schreiben. Hilfreich ist es aber trotzdem, denn ein Markdown-fähiger Editor kann dir mit Farben („Syntax-Highlighting“) oder sichtbarer Formatierung die Bedeutung deiner Sonderzeichen anzeigen. Damit sieht dein Text entweder bunt und besser lesbar aus, oder gleich wie der fertige Text.</em></p>
+<p>Hier ein paar Beispiele:</p>
+<ol type="1">
+<li>Der Editor <a href="https://blogs.uni-bremen.de/studytools/2020/07/16/zettlr-der-digitale-zettelkasten/">Zettlr</a> ist ein Markdown-Editor, der fürs wissenschaftliche Schreiben konzipiert wurde. Damit kannst du alle Anforderungen umsetzen – von Fußnoten bis Quellenangaben oder Diagrammen.</li>
+<li>Das Mindmap-Programm <a href="https://blogs.uni-bremen.de/studytools/2020/05/14/kartiere-deine-gedanken-mind-maps-mit-freeplane-erstellen/">Freeplane</a> kann deine Mindmap als Markdown-Dokument ausgeben. Dafür werden alle Überschriften in der Mindmap Kapitel-Überschriften in Markdown. Schwupps, schon ist deine Mindmap ein Text!</li>
+<li>Auch im Chat-Programm <a href="https://blogs.uni-bremen.de/studytools/2020/04/02/instant-messaging-mit-rocket-chat/">Rocket.Chat</a> der Uni-Bremen kannst du mit Markdown deine Nachrichten formatieren.</li>
+<li>Das Statistik-Programm <a href="https://blogs.uni-bremen.de/studytools/2020/05/28/statistik-und-daten-analyse-mit-r-und-rstudio/">R</a> nutzt eine Markdown-Variante (R-Markdown) und kann damit deine Datenanalysen als druckfertiges Dokument erstellen – ganz ohne Office, aber mit allen Grafiken und Tabellen.</li>
+<li><a href="https://www.marktext.cc/">MarkText</a>.</li>
+</ol>
+<p>Aber damit nicht genug: Neben den vielen Online-Editoren, Programmen und Apps mit Markdown-Unterstützung lassen sich mit Markdown auch Präsentationen erstellen, Blogs gestalten oder sogar Diagramme und Mindmaps zeichnen…</p>
+<p>Markdown ist also sehr flexibel nutzbar – es kommt nur darauf an, in welches Format es später umgewandelt werden soll und welches Programm du dazu nutzen willst. Deinen Text kannst du also für immer lesbar speichern, ohne auf Kostenpflichtige Software angewiesen zu sein.</p>
+<p><strong>Fun-Fact:</strong><br>
+<em>Markdown wurde 2004 von John Gruber und Aaron Swartz erdacht. Markdown orientiert sich dabei am Stil für E-Mails und sollte vor allem eines: ganz einfach lesbar und schreibbar sein – egal ob als einfacher oder formatierter Text.</em></p>
+<section id="markdown-varianten" class="level2">
+<h2 class="anchored" data-anchor-id="markdown-varianten">Markdown-Varianten</h2>
+<p>Dank dieser schlichten Eleganz gibt es inzwischen viele unterschiedliche Varianten von Markdown für unterschiedliche Bereiche:<br>
+neben dem ursprünglichen „Markdown“ gibt es nun „Github-flavored-Markdown“ (GfM; von der gleichnamigen Coding-Plattform) und Varianten wie „R-Markdown“ für das Statistik-Programm R.<br>
+Das Projekt “<a href="https://commonmark.org/">CommonMark</a>” versucht die vielen Varianten und ihre Spezialfälle zu bündeln, um daraus einen tatsächlichen Standard zu entwickeln.<br>
+Und der Dokumentenkonverter <a href="https://pandoc.org/">Pandoc</a> wandelt fast jedes Dokumentenformat in ein anderes um… und nutzt das unglaublich umfangreiche „Pandoc-Markdown“.</p>
+<p>Wenn du mit Markdown aus deinem <em>einfachen</em> Text einen <em>schönen</em> Text zaubern möchtest, brauchst du also eine Software, die Markdown versteht und dir daraus etwas bastelt: eine HMTL-Webseite, ein E-Book, eine PDF, Office-Dokument oder Blog – für alle Bereiche gibt es unterschiedliche Software. Aber die ist erstmal gar nicht so wichtig… Wichtig ist, dass du Markdown schreiben und lesen kannst!</p>
+<p>Also, guck mal…</p>
+</section>
+<section id="markdown-syntax" class="level2">
+<h2 class="anchored" data-anchor-id="markdown-syntax">Markdown-Syntax</h2>
+<section id="überschriften-headings" class="level3">
+<h3 class="anchored" data-anchor-id="überschriften-headings">Überschriften / Headings</h3>
+<p>Eingabe:</p>
+<pre><code># Überschrift 1
+## Überschrift 2
+### Überschrift 3</code></pre>
+<p>Ausgabe:</p>
+</section>
+</section>
+</section>
+<section id="überschrift-1" class="level1">
+<h1>Überschrift 1</h1>
+<section id="überschrift-2" class="level2">
+<h2 class="anchored" data-anchor-id="überschrift-2">Überschrift 2</h2>
+<section id="überschrift-3" class="level3">
+<h3 class="anchored" data-anchor-id="überschrift-3">Überschrift 3</h3>
+<p>Bemerkung:</p>
+<p>Überschriften werden durch ein vorangestelltes Rauten-Symbol (<code>#</code>) mit einem Leerzeichen dahinter markiert. Es gibt insgesamt 6 mögliche Überschriftenebenen.</p>
+</section>
+<section id="formatierungen-emphasis" class="level3">
+<h3 class="anchored" data-anchor-id="formatierungen-emphasis">Formatierungen / Emphasis</h3>
+<p>Eingabe:</p>
+<pre><code>*italic*, _italic_
+**bold**, __bold__
+***italic and bold***, ___italic and bold___
+**combine _italic_ and bold**
+~~strikethrough~~</code></pre>
+<p>Ausgabe:</p>
+<p><em>italic</em>, <em>italic</em></p>
+<p><strong>bold</strong>, <strong>bold</strong></p>
+<p><strong><em>italic and bold</em></strong>, <strong><em>italic and bold</em></strong></p>
+<p><strong>combine <em>italic</em> and bold</strong></p>
+<p><del>strikethrough</del></p>
+<p>Bemerkung:</p>
+<p>Um einen Text kursiv zu formatieren, wird er durch einen Stern („Asterisk“), <code>*</code> oder einen Unterstrich, <code>_</code>, gerahmt. Um einen Text fett zu setzen, werden zwei Sterne bzw. zwei Unterstriche benötigt. Eine Kombination von beidem ist auch möglich. Drei Sterne/Unterstriche markieren einen fetten und kursiven Text. Durchgestrichener Text wird durch zwei Tilden (<code>~</code>) markiert.</p>
+</section>
+<section id="listen-lists" class="level3">
+<h3 class="anchored" data-anchor-id="listen-lists">Listen / Lists</h3>
+<p>Eingabe:</p>
+<pre><code>* Das ist eine Liste
+- Das ist auch eine Liste
++ Das ist ebenfalls eine Liste
+
+
+1. Das ist eine nummerierte Liste
+2. und weiter geht die Liste.</code></pre>
+<p>Ausgabe:</p>
+<ul>
+<li>Das ist eine Liste</li>
+<li>Das ist auch eine Liste</li>
+<li>Das ist ebenfalls eine Liste</li>
+</ul>
+<ol type="1">
+<li>Das ist eine nummerierte Liste</li>
+<li>und weiter geht die Liste.</li>
+</ol>
+<p>Bemerkung:</p>
+<p>Listen werden erstellt durch einen Stern <code>*</code>, ein Minus <code>-</code> oder ein Plus <code>+</code> sowie ein Leerzeichen dahinter (genauso wie bei Überschriften). Nummerierte Listen nach demselben Prinzip mit einer Zahl, einem Punkt dahinter und sowie einem Leerzeichen (<code>1.</code>).</p>
+</section>
+<section id="links" class="level3">
+<h3 class="anchored" data-anchor-id="links">Links</h3>
+<p>Eingabe:</p>
+<pre><code>[Philipps-Universität Marburg](https://www.uni-marburg.de)
+
+[Philipps-Universität Marburg](https://www.uni-marburg.de "PUM")
+
+https://www.uni-marburg.de</code></pre>
+<p>Ausgabe:</p>
+<p><a href="https://www.uni-marburg.de">Philipps-Universität Marburg</a></p>
+<p><a href="https://www.uni-marburg.de" title="PUM">Philipps-Universität Marburg</a></p>
+<p><a href="https://www.uni-marburg.de" class="uri">https://www.uni-marburg.de</a></p>
+<p>Bemerkung:</p>
+<p>Der Text des Links wird in eckige Klammern gesetzt (<code>[...]</code>), der eigentliche Link in gerundete Klammern (<code>(...)</code>). Ein Linktitel, der beim daraufgehen mit der Maus erscheint, kann in Anführungszeichen (<code>"</code>) hinter den eigentlichen Link gesetzt werden. Ist kein spezifischer Text gewollt, kann der Link einfach so in den Fließtext integriert und wird dann automatisch erkannt.</p>
+</section>
+<section id="zeilenumbrüche" class="level3">
+<h3 class="anchored" data-anchor-id="zeilenumbrüche">Zeilenumbrüche</h3>
+<p>Eingabe:</p>
+<pre><code>Zeilenumbrüche können mit einem Enter gemacht werden.
+Oder mit zwei Leerzeichen  
+Ein Absatz hingegen mit einer Leerzeile so:
+
+Das ist der nächste Absatz steht dann hier.</code></pre>
+<p>Ausgabe:</p>
+<p>Zeilenumbrüche können mit einem Enter gemacht werden. Oder mit zwei Leerzeichen<br>
+Ein Absatz hingegen mit einer Leerzeile so:</p>
+<p>Das ist der nächste Absatz steht dann hier.</p>
+<p>Bemerkung:</p>
+<ul>
+<li><h3 id="bilder-images" class="anchored">Bilder / Images</h3></li>
+</ul>
+<p>Eingabe:</p>
+<pre><code>![Beispielbild](images/git.png)</code></pre>
+<p>Ausgabe:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/git.png" class="img-fluid figure-img"></p>
+<figcaption>Bildbeschreibung</figcaption>
+</figure>
+</div>
+<p>Bemerkung:</p>
+<p>Bilder funktionieren nach demselben Prinzip wie Links. Das Bild muss sich, um korrekt geladen zu werden, in demselben Ordner wie die Markdown-Datei befinden.</p>
+<p><strong>Good to know:</strong> Bilder können in vielen Markdown-Editoren auch per Drag-and-Drop eingefügt werden.</p>
+</section>
+<section id="tabellen-tables" class="level3">
+<h3 class="anchored" data-anchor-id="tabellen-tables">Tabellen / Tables</h3>
+<p>Eingabe:</p>
+<pre><code>| Spaltenüberschrift 1 | Spaltenüberschrift 2   | Spaltenüberschrift 3 |
+| ---                  | :---:                  | ---:                 |
+| Inhalt Spalte 1      | Inhalt Spalte 2        | 1,20 €               |
+| noch was …           | und weiter             | 3,60 €               |
+| noch mehr            | bla bla                | 5,40 €               |
+
+: Tabellenüberschrift
+
+
+Spaltenüberschrift 1 | Spaltenüberschrift 2 | Spaltenüberschrift 3
+----- | :----: | -----:
+Inhalt Spalte 1 | Inhalt Spalte 2 | 1,20 €
+noch was … | und weiter | 3,60 €
+noch mehr | bla bla | 5,40 €
+
+: Tabellenüberschrift</code></pre>
+<p>Ausgabe:</p>
+<table class="caption-top table">
+<caption>Tabellenüberschrift</caption>
+<thead>
+<tr class="header">
+<th>Spaltenüberschrift 1</th>
+<th style="text-align: center;">Spaltenüberschrift 2</th>
+<th style="text-align: right;">Spaltenüberschrift 3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Inhalt Spalte 1</td>
+<td style="text-align: center;">Inhalt Spalte 2</td>
+<td style="text-align: right;">1,20 €</td>
+</tr>
+<tr class="even">
+<td>noch was …</td>
+<td style="text-align: center;">und weiter</td>
+<td style="text-align: right;">3,60 €</td>
+</tr>
+<tr class="odd">
+<td>noch mehr</td>
+<td style="text-align: center;">bla bla</td>
+<td style="text-align: right;">5,40 €</td>
+</tr>
+</tbody>
+</table>
+<table class="caption-top table">
+<caption>Tabellenüberschrift</caption>
+<thead>
+<tr class="header">
+<th>Spaltenüberschrift 1</th>
+<th style="text-align: center;">Spaltenüberschrift 2</th>
+<th style="text-align: right;">Spaltenüberschrift 3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Inhalt Spalte 1</td>
+<td style="text-align: center;">Inhalt Spalte 2</td>
+<td style="text-align: right;">1,20 €</td>
+</tr>
+<tr class="even">
+<td>noch was …</td>
+<td style="text-align: center;">und weiter</td>
+<td style="text-align: right;">3,60 €</td>
+</tr>
+<tr class="odd">
+<td>noch mehr</td>
+<td style="text-align: center;">bla bla</td>
+<td style="text-align: right;">5,40 €</td>
+</tr>
+</tbody>
+</table>
+<p>Bemerkung:</p>
+<p>Tabellen werden markiert, in dem alle Spaltengrenzen mit senkrechten Strichen (pipes) (<code>|</code>) begrenzt werden. Die äußeren Pipes sind lediglich optional und müssen nicht zwingend gesetzt werden. Auch die aufgefüllten Leerzeichen sind optional und dienen in dem Falle nur der besseren Lesbarkeit. Im zweiten Beispiel ist zu sehen, dass sich nichts verändert hat. Mit drei Minus-Zeichen (<code>---</code>) wird eine Spaltenüberschrift markiert. Mit einem Doppelpunkt vor (linskbündig), nach (rechtsbündig) oder auf beiden Seiten der Minus-Zeichen (zentriert) kann die Ausrichtung der Spalte bestimmt werden. Markdown-Tabellen kann man sich auch von Online-Seiten formatieren lassen: <a href="https://tablesgenerator.com/markdown_tables" class="uri">https://tablesgenerator.com/markdown_tables</a></p>
+<p>Tabellen sind nicht Bestandteil des Basic Markdown, allerdings in GFM (Github-flavored-Markdown) und damit können die meisten Editoren damit umgehen (auch <code>RMarkdown</code> und <code>Quarto</code>). Achtung! Tabellenüberschriften funktionieren offenbar nicht bei GFM, sondern nur bei RMarkdown/Quarto/…</p>
+</section>
+<section id="fußnoten-footnotes" class="level3">
+<h3 class="anchored" data-anchor-id="fußnoten-footnotes">Fußnoten / Footnotes</h3>
+<p>Eingabe:</p>
+<pre><code>Text^[Fußnote]</code></pre>
+<p>Ausgabe:</p>
+<p>Text<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>Bemerkung:</p>
+<p>Fußnoten werden markiert durch ein Dach (<code>^</code>). Der Text der Fußnote wird dann in eckigen Klammern gesetzt (<code>[...]</code>). Die Fußnote wird dann autmatisch in den Text integriert und auch numeriert. Fußnoten werden nicht vom Basis Markdown unterstützt, allerdings sind sie in GFM (Github-flavored-Markdown) integriert und auch in den in der Wissenschaft häufig genutzten <code>RMarkdown</code> bzw. dessen Weiterentwicklung <code>Quarto</code> sind Fußnoten möglich.</p>
+</section>
+<section id="blockzitat-blockquote" class="level3">
+<h3 class="anchored" data-anchor-id="blockzitat-blockquote">Blockzitat / Blockquote</h3>
+<p>Eingabe:</p>
+<pre><code>&gt; Das ist ein Blockzitat
+&gt;
+&gt; &gt; Das ist eine Antwort.
+&gt; &gt;
+&gt; &gt; &gt; Das ist noch eine Antwort. *Formatierungen* **funktionieren** **_auch_ hier.**</code></pre>
+<p>Ausgabe:</p>
+<blockquote class="blockquote">
+<p>Das ist ein Blockzitat</p>
+<blockquote class="blockquote">
+<p>Das ist eine Antwort.</p>
+<blockquote class="blockquote">
+<p>Das ist noch eine Antwort. <em>Formatierungen</em> <strong>funktionieren</strong> <strong><em>auch</em></strong> <strong>hier.</strong></p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>Bemerkung:</p>
+<p>Blockzitate werden markiert durch ein Größer-als-Zeichen (<code>&gt;</code>). Wichtig ist wie bei vielen Markdown-Befehlen das Leerzeichen dahinter. Weitere „Antworten“ / Zitate in Zitaten können durch zwei <code>&gt;</code> markiert werden. Auch dabei ist ein Leerzeichen zu setzen (<code>&gt; &gt;</code>). Formatierungen funktionieren auch innerhalb von Zitaten.</p>
+</section>
+<section id="code" class="level3">
+<h3 class="anchored" data-anchor-id="code">Code</h3>
+<p>Eingabe:</p>
+<pre><code>`ein einzelner Code-Schnipsel`
+
+
+``` r
+#Ein ganzer Codeblock
+    ```</code></pre>
+<p>Ausgabe:</p>
+<p><code>ein einzelner Code-Schnipsel</code></p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Ein ganzer Codeblock.</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"tidyverse"</span>)</span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Bemerkung:</p>
+<p>Code kann gerahmt von je einem <em>accent grave</em> markiert werden (<code>`</code>). Ein ganzer Code-Block über drei Accents (<code>```</code>). Viele Markdown-Editoren unterstützen auch Syntax-Highlighting. Dafür muss die jeweilige Programmiersprache hinter den ersten drei Accents benannt werden.</p>
+</section>
+<section id="sonderzeichen" class="level3">
+<h3 class="anchored" data-anchor-id="sonderzeichen">Sonderzeichen</h3>
+<p>Eingabe:</p>
+<pre><code>Student\*innen und Professor\_innen</code></pre>
+<p>Ausgabe:</p>
+<p>Student*innen und Professor_innen</p>
+<p>Bemerkung:</p>
+<p>Der Nachteil bei der Nutzung von Sonderzeichen zur Formatierung ist, dass die ihre Verwendung im Text schwieriger sein kann, wenn Markdown aus ihnen eine Formatierung liest. Gerade beim Gendern kommt dies besonders häufig vor, da das Gendersternchen und auch der Gender-Gap in Markdown für die Formatierungen <em>italic</em> und <strong>bold</strong> genutzt werden. Um dies zu verhindern kann ein Backslash (<code>\</code>) verwendet werden.<br>
+</p>
+</section>
+<section id="horizontale-linie" class="level3">
+<h3 class="anchored" data-anchor-id="horizontale-linie">Horizontale Linie</h3>
+<p>Eingabe:</p>
+<pre><code>***
+
+___
+
+---</code></pre>
+<p>Ausgabe:</p>
+<hr>
+<hr>
+<hr>
+<p>Bemerkung:</p>
+<p>Eine horizontale Linie kann über drei Asterisken (<code>***</code>), Unterstriche (<code>___</code>) oder Minus-Zeichen (<code>---</code>) erzeugt werden.</p>
+</section>
+</section>
+<section id="hilfe" class="level2">
+<h2 class="anchored" data-anchor-id="hilfe">Hilfe</h2>
+<p>Jede Menge Hilfe und Unterstützung ist im Internet zu finden. Zu empfehlen sind unter anderem:</p>
+<ul>
+<li><p>Markdown-Basics von Quarto: <a href="https://quarto.org/docs/authoring/markdown-basics.html" class="uri">https://quarto.org/docs/authoring/markdown-basics.html</a></p></li>
+<li><p>Quarto-Cheatsheet: <a href="https://www.datacamp.com/cheat-sheet/quarto-cheat-sheet-previously-known-as-r-markdown" class="uri">https://www.datacamp.com/cheat-sheet/quarto-cheat-sheet-previously-known-as-r-markdown</a></p></li>
+<li><p>RMarkdown-Tutorial von RStudio: <a href="https://rmarkdown.rstudio.com/lesson-1.html" class="uri">https://rmarkdown.rstudio.com/lesson-1.html</a></p></li>
+<li><p>RMarkdown-Cheatsheet: <a href="https://rmarkdown.rstudio.com/lesson-15.html" class="uri">https://rmarkdown.rstudio.com/lesson-15.html</a></p></li>
+<li><p><a href="https://codeberg.org/ofossum/PlaintextWriting/src/branch/main/01%20-%20wissenschaftliche%20Artikel%20mit%20Markdown%20und%20Pandoc%20schreiben.adoc">Wissenschaftliche Texte und Artikel mit Markdown schreiben</a></p></li>
+</ul>
+<p>Videos:</p>
+<ul>
+<li><p><a href="https://www.youtube.com/watch?v=FBYcVThIuFc">Wissenschaftliches Schreiben mit Quarto Markdown – eine Anleitung | Dr.&nbsp;Benjamin Schlegel</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=yalEjU8zY3Y&amp;pp=ygUbYmVzc2VyIHNjaHJlaWJlbiBtaXQgcGFuZG9j">Besser schreiben mit Pandoc und Markdown von Albert Krewinkel | NooK</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=7awIB5FO__g">Wissenschaftliches Schreiben in Markdown | Alumni des Heidelberger Life-Science Lab</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=hpAJMSS8pvs">Academic Writing in Markdown | Nicholas Cifuentes-Goodbody</a></p></li>
+</ul>
+
+
+</section>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Fußnoten</h2>
+
+<ol>
+<li id="fn1"><p>Fußnote<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Kopiert");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Kopiert");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/apfelpfluecker\.github\.io\/how-to-liederbuch\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./git_verstehen.html" class="pagination-link" aria-label="Was ist eigentlich Git? 2.0">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Was ist eigentlich Git? 2.0</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.5.57">
@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Was ist eigentlich Git? – How To Liederbuch</title>
+<title>Was ist eigentlich Git? 2.0 – How To Liederbuch</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,6 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./markdown_tutorial.html" rel="next">
 <link href="./lifehacks.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -54,17 +55,17 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": true,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "Keine Treffer",
+    "search-matching-documents-text": "Treffer",
+    "search-copy-link-title": "Link in die Suche kopieren",
+    "search-hide-matches-text": "Zusätzliche Treffer verbergen",
+    "search-more-match-text": "weitere Treffer in diesem Dokument",
+    "search-more-matches-text": "weitere Treffer in diesem Dokument",
+    "search-clear-button-title": "Zurücksetzen",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Abbrechen",
+    "search-submit-button-title": "Abschicken",
+    "search-label": "Suchen"
   }
 }</script>
 
@@ -82,8 +83,8 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">How To Liederbuch</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Suchen"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navigation umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -108,11 +109,11 @@ ul.task-list li input[type="checkbox"] {
     </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./doku.html">Doku</a></li><li class="breadcrumb-item"><a href="./git_verstehen.html">Was ist eigentlich Git?</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./doku.html">Doku</a></li><li class="breadcrumb-item"><a href="./git_verstehen.html">Review-Prozess</a></li><li class="breadcrumb-item"><a href="./git_verstehen.html">Was ist eigentlich Git? 2.0</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
   </nav>
@@ -127,23 +128,66 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="./doku.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Doku</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+ <span class="menu-text">Liedersetzen-Prozess</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./liedsatz_standards.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Standards beim Liedersetzen</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./quellenlinks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Einbinden von Links als Quelle</span></a>
+  </div>
+</li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./lifehacks.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Nützliche Lifehacks</span></a>
   </div>
 </li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Review-Prozess</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./git_verstehen.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Was ist eigentlich Git?</span></a>
+ <span class="menu-text">Was ist eigentlich Git? 2.0</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+ <span class="menu-text">review.qmd</span>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./markdown_tutorial.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Markdown Basics</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
       </ul>
   </li>
     </ul>
@@ -153,22 +197,19 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+    <h2 id="toc-title">Auf dieser Seite</h2>
    
   <ul>
   <li><a href="#spielerisch-git-lernen" id="toc-spielerisch-git-lernen" class="nav-link active" data-scroll-target="#spielerisch-git-lernen">Spielerisch Git lernen</a></li>
-  <li><a href="#einrichten-des-repos" id="toc-einrichten-des-repos" class="nav-link" data-scroll-target="#einrichten-des-repos">Einrichten des Repos</a>
-  <ul class="collapse">
-  <li><a href="#nutzt-du-git-zum-ersten-mal" id="toc-nutzt-du-git-zum-ersten-mal" class="nav-link" data-scroll-target="#nutzt-du-git-zum-ersten-mal">Nutzt du Git zum ersten Mal?</a></li>
-  <li><a href="#ein-bestehendes-liederbuch-repo-klonen" id="toc-ein-bestehendes-liederbuch-repo-klonen" class="nav-link" data-scroll-target="#ein-bestehendes-liederbuch-repo-klonen">Ein bestehendes Liederbuch-Repo klonen</a></li>
-  <li><a href="#ein-neues-liederbuch-repo-mit-dem-vorlagen-repo-erstellen" id="toc-ein-neues-liederbuch-repo-mit-dem-vorlagen-repo-erstellen" class="nav-link" data-scroll-target="#ein-neues-liederbuch-repo-mit-dem-vorlagen-repo-erstellen">Ein neues Liederbuch-Repo mit dem Vorlagen-Repo erstellen</a></li>
-  </ul></li>
+  <li><a href="#git-für-liederbücher-nutzen" id="toc-git-für-liederbücher-nutzen" class="nav-link" data-scroll-target="#git-für-liederbücher-nutzen">Git für Liederbücher nutzen</a></li>
   <li><a href="#grundbegriffe-im-git-alltag" id="toc-grundbegriffe-im-git-alltag" class="nav-link" data-scroll-target="#grundbegriffe-im-git-alltag">Grundbegriffe im Git-Alltag</a>
   <ul class="collapse">
   <li><a href="#branches" id="toc-branches" class="nav-link" data-scroll-target="#branches">Branches</a></li>
   <li><a href="#checkout" id="toc-checkout" class="nav-link" data-scroll-target="#checkout">Checkout</a></li>
+  <li><a href="#cherry-picking" id="toc-cherry-picking" class="nav-link" data-scroll-target="#cherry-picking">Cherry-Picking</a></li>
   <li><a href="#commit" id="toc-commit" class="nav-link" data-scroll-target="#commit">Commit</a></li>
   <li><a href="#fetch" id="toc-fetch" class="nav-link" data-scroll-target="#fetch">Fetch</a></li>
+  <li><a href="#force-push" id="toc-force-push" class="nav-link" data-scroll-target="#force-push">Force-Push</a></li>
   <li><a href="#head" id="toc-head" class="nav-link" data-scroll-target="#head">HEAD</a></li>
   <li><a href="#merge" id="toc-merge" class="nav-link" data-scroll-target="#merge">Merge</a></li>
   <li><a href="#pull" id="toc-pull" class="nav-link" data-scroll-target="#pull">Pull</a></li>
@@ -179,16 +220,15 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#versionierung" id="toc-versionierung" class="nav-link" data-scroll-target="#versionierung">Versionierung</a></li>
   <li><a href="#working-directory" id="toc-working-directory" class="nav-link" data-scroll-target="#working-directory">Working Directory</a></li>
   </ul></li>
-  <li><a href="#how-to-pull-request" id="toc-how-to-pull-request" class="nav-link" data-scroll-target="#how-to-pull-request">How to Pull-Request</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./doku.html">Doku</a></li><li class="breadcrumb-item"><a href="./git_verstehen.html">Was ist eigentlich Git?</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./doku.html">Doku</a></li><li class="breadcrumb-item"><a href="./git_verstehen.html">Review-Prozess</a></li><li class="breadcrumb-item"><a href="./git_verstehen.html">Was ist eigentlich Git? 2.0</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Was ist eigentlich Git?</h1>
+<h1 class="title">Was ist eigentlich Git? 2.0</h1>
 </div>
 
 
@@ -210,7 +250,7 @@ ul.task-list li input[type="checkbox"] {
 <ol type="1">
 <li>Das <strong>Remote Repo</strong> liegt auf einem Git-Server („Remote“).</li>
 <li>Das <strong>Local Repo</strong> ist das Abbild einer Version des Remote Repos.</li>
-<li>Die <strong>Working Copy</strong> (in <a href="#fig-git" class="quarto-xref">Figure&nbsp;1</a> „User“) ist die lokale Bearbeitung des Local Repos.</li>
+<li>Die <strong>Working Copy</strong> (in <a href="#fig-git" class="quarto-xref">Abbildung&nbsp;1</a> „User“) ist die lokale Bearbeitung des Local Repos.</li>
 </ol>
 <div id="fig-git" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -218,7 +258,7 @@ ul.task-list li input[type="checkbox"] {
 <img src="images/git.png" id="fig-git" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-git-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1
+Abbildung&nbsp;1
 </figcaption>
 </figure>
 </div>
@@ -233,52 +273,34 @@ Figure&nbsp;1
 <h2 class="anchored" data-anchor-id="spielerisch-git-lernen">Spielerisch Git lernen</h2>
 <p>Hier gibt es eine tolle Spielwiese zum Ausprobieren: <a href="https://learngitbranching.js.org/" class="uri">https://learngitbranching.js.org/</a>. Sinnvoll für uns ist mindestens die Einführung.</p>
 </section>
-<section id="einrichten-des-repos" class="level2">
-<h2 class="anchored" data-anchor-id="einrichten-des-repos">Einrichten des Repos</h2>
-<section id="nutzt-du-git-zum-ersten-mal" class="level3">
-<h3 class="anchored" data-anchor-id="nutzt-du-git-zum-ersten-mal">Nutzt du Git zum ersten Mal?</h3>
-<p>Wenn ja, dann solltest du dir erst einen SSH-Key besorgen.</p>
-<section id="was-ist-das" class="level4">
-<h4 class="anchored" data-anchor-id="was-ist-das">Was ist das?</h4>
-<p>Kurze Erklärung: Der SSH-Key ist dafür da, dass das Remote-Repo weiß, dass dein lokales Repo auch zu dir gehört. Sonst könnte ja jeder, der den SSH-Link hat, Zugriff aufs Repo haben. Er ist also ein Identifikationsmittel für deinen Account. Dafür hinterlegst du den <em>public key</em> in deinem Git-Account und sagst deinem Git-Programm (SmartGit, SourceTree, TortoiseGit), wo deine Schlüssel-Datei liegt. Diese Datei ist auch nochmal extra passwortgeschützt. Sie sollte auf keinen Fall gelöscht oder verschoben werden. Die lange Erklärung kannst du <a href="https://www.rrz.uni-hamburg.de/services/hpc/grundwissen/ssh-keys.html">hier</a> nachlesen.</p>
-</section>
-<section id="was-musst-du-machen" class="level4">
-<h4 class="anchored" data-anchor-id="was-musst-du-machen">Was musst du machen?</h4>
-<p>Du musst dir einen SSH-Key erstellen und das <strong>Passwort, <em>public key</em> und <em>private key</em> und Schlüsseldatei</strong> speichern/aufbewahren. Eine Anleitung findest du <a href="https://www.heise.de/tipps-tricks/SSH-Key-erstellen-so-geht-s-4400280.html?hg=1&amp;hgi=0&amp;hgf=false">hier</a>.</p>
-<p>Anschließend hinterlegst du den <em>public key</em> in deinem Git-Account (unter Einstellungen -&gt; SSH- / GPG-Schlüssel -&gt; Schlüssel hinzufügen).</p>
-<p>Beim Klonen eines Liederbuchs wirst du dann irgendwann nach deiner Schlüsseldatei gefragt (für die du dann auch das Passwort brauchst).</p>
-<p>Klingt alles sehr kompliziert - ist es auch, <strong>aber:</strong> Du musst das <strong>nur einmal</strong> machen und dann funktioniert es einfach.</p>
-</section>
-</section>
-<section id="ein-bestehendes-liederbuch-repo-klonen" class="level3">
-<h3 class="anchored" data-anchor-id="ein-bestehendes-liederbuch-repo-klonen">Ein bestehendes Liederbuch-Repo klonen</h3>
-<ol type="1">
-<li>Remote-Repo klonen Das sieht je nach GUI verschieden aus. Irgendwo gibt es die Option <code>Clone</code> und da kann dann der Link zum Remote-Repo eingeben werden. <img src="https://anupdhakal.com/static/1ea06fda1c5fa35c6f512e321d5c8923/8b936/github-repo-ssh-link-example.png" class="img-fluid"> Wichtig ist bei dem Prozess: Submodule müssen inkludiert werden. Irgendwo kann man dann den Speicherort des lokalen Repos festlegen. Es empfiehlt sich, einen Ordner zu haben, wo alle Git-Repos drin sind. Dies ist aber nicht notwendig für irgendetwas.</li>
-<li>Fertig!</li>
-</ol>
-</section>
-<section id="ein-neues-liederbuch-repo-mit-dem-vorlagen-repo-erstellen" class="level3">
-<h3 class="anchored" data-anchor-id="ein-neues-liederbuch-repo-mit-dem-vorlagen-repo-erstellen">Ein neues Liederbuch-Repo mit dem Vorlagen-Repo erstellen</h3>
-<ol type="1">
-<li><p>Du gehst auf: <a href="https://git.zahlenlabyrinth.de/boernel/lilypond-vorlagen">boernel/lilypond-vorlagen: Vorlagen zur Erstellung eines Liederbuches mit den Lilypondscripten. - lilypond-vorlagen - Tuxgit</a></p></li>
-<li><p>Du klickst auf <code>Dieses Template verwenden</code></p></li>
-<li><p>Du folgst den Schritten (Besitzer*innen, Name, … festlegen) Wichtig: Bei Template muss <code>lilypond-vorlagen</code> ausgewählt sein</p></li>
-<li><p>Dann kannst du einfach weitermachen wie bei “Ein bestehendes Liederbuch-Repo klonen”</p></li>
-</ol>
-</section>
+<section id="git-für-liederbücher-nutzen" class="level2">
+<h2 class="anchored" data-anchor-id="git-für-liederbücher-nutzen">Git für Liederbücher nutzen</h2>
+<p>Wie das geht haben wir dir im <a href="./git_einrichten.html">Anfangs-Tutorial</a> zusammengestellt.</p>
 </section>
 <section id="grundbegriffe-im-git-alltag" class="level2">
 <h2 class="anchored" data-anchor-id="grundbegriffe-im-git-alltag">Grundbegriffe im Git-Alltag</h2>
-<p><em>alphabetisch sortiert</em></p>
+<p><em>Anmerkungen: alphabetische Sortierung. Als Befehle wurden jeweils die Original-Kommandozeilenbefehle von Git angegeben, mithilfe derer du herausfinden kannst, wie das dann in deiner GUI funktioniert.</em></p>
 <section id="branches" class="level3">
 <h3 class="anchored" data-anchor-id="branches">Branches</h3>
-<p>Beim Einsatz von Git dienen Branches (engl.: to branch - sich verzweigen) dazu, um einen separaten Arbeitszweig zu erstellen. Dieser kann dann auch als neuer Kontext gesehen werden, in dem gearbeitet wird. So kann z.B. die Programmierung eines Sicherheits-Patches in einem eigenen Branch erfolgen (im Kontext des Patches), der bei Fertigstellung und nach dem Testen zurück in den Master-Zweig eingearbeitet wird. Das Wiedereinführen funktioniert bei uns über einen Pull Request.</p>
+<p>Beim Einsatz von Git dienen Branches (engl.: to branch – sich verzweigen) dazu, um einen separaten Arbeitszweig zu erstellen. Dieser kann dann auch als neuer Kontext gesehen werden, in dem gearbeitet wird. So kann z.B. die Programmierung eines Sicherheits-Patches in einem eigenen Branch erfolgen (im Kontext des Patches), der bei Fertigstellung und nach dem Testen zurück in den Master-Zweig eingearbeitet wird. Das Wiedereinführen funktioniert bei uns über einen Pull-Request.</p>
 <p>Befehl: <code>git branch NAME</code></p>
 </section>
 <section id="checkout" class="level3">
 <h3 class="anchored" data-anchor-id="checkout">Checkout</h3>
 <p>Das Wechseln von einem Branch in einen anderen Branch.</p>
 <p>Befehl: <code>git checkout BRANCH</code></p>
+</section>
+<section id="cherry-picking" class="level3">
+<h3 class="anchored" data-anchor-id="cherry-picking">Cherry-Picking</h3>
+<p>Cherry-Picking in Git ist ein Befehl, mit dem du einen bestimmten Commit (eine Änderung) aus einem Branch (Zweig) auswählen und in einen anderen Branch übertragen kannst.</p>
+<p>Stell dir vor, du hast zwei Zweige: <code>main</code> und <code>feature</code>. Wenn du eine bestimmte Änderung, die du im <code>feature</code>-Zweig gemacht hast, auch im <code>main</code>-Zweig haben möchtest, kannst du den Cherry-Pick-Befehl verwenden. Das funktioniert so:</p>
+<ol type="1">
+<li><p>Du wechselst zum Ziel-Branch (z. B. <code>main</code>).</p></li>
+<li><p>Du führst den Befehl <code>git cherry-pick &lt;commit-hash&gt;</code> aus, wobei <code>&lt;commit-hash&gt;</code> die ID des Commits ist, den du übernehmen möchtest.</p>
+<p>In einer GUI kannst du vermutlich einfach auf den Commit mit Rechtsklick klicken und solltest dann eine Option <code>Cherry-Pick</code> haben.</p></li>
+</ol>
+<p>Git nimmt dann nur diese spezifische Änderung und fügt sie in den aktuellen Branch ein, ohne die anderen Änderungen im <code>feature</code>-Zweig zu übernehmen.</p>
+<p>Das ist nützlich, wenn du nur bestimmte Features oder Bugfixes übernehmen möchtest, ohne alles andere mit zu übernehmen. Für uns ist Cherry-Picking hilfreich, wenn du ein Liederbuch machst, aber nicht alle Pull-Requests der neuen Lieder schon gereviewed wurden. Dann kannst du einen eigenen Branch fürs Liederbuch erstellen und einfach die Commits, die dir fehlen in deinen Liederbuch-Branch cherry-picken.</p>
 </section>
 <section id="commit" class="level3">
 <h3 class="anchored" data-anchor-id="commit">Commit</h3>
@@ -291,6 +313,32 @@ Figure&nbsp;1
 <h3 class="anchored" data-anchor-id="fetch">Fetch</h3>
 <p>Der Befehl <code>git fetch</code> importiert Commits von einem Remote-Repository in das lokale Repo. Dabei werden die Commits des Remote-Repos aber <strong>nicht</strong> ins lokale Repo überführt (wie bei <code>git pull</code>). Fetching ist die geeignete Methode, um einzusehen, woran andere gearbeitet haben. Da auf diese Weise importierte Inhalte von Remote-Branches repräsentiert werden, haben sie absolut keinen Effekt auf die lokale Entwicklungsarbeit.</p>
 <p><em>Alternative Erklärung:</em> <code>git fetch</code> holt Änderungen aus dem Remote-Repository, aber wendet diese nicht auf den lokalen Code an.</p>
+</section>
+<section id="force-push" class="level3">
+<h3 class="anchored" data-anchor-id="force-push">Force-Push</h3>
+<p>Ein Force-Push in Git ist ein Befehl, der es dir ermöglicht, Änderungen an einem Remote-Branch (einem Branch auf einem Server) zu senden, selbst wenn diese Änderungen nicht mit dem aktuellen Stand des Remote-Branches übereinstimmen.</p>
+<p>Normalerweise überprüft Git, ob dein lokaler Branch (dein Arbeitszweig) und der Remote-Branch synchron sind, bevor du Änderungen hochlädst. Wenn sie nicht übereinstimmen, gibt Git eine Fehlermeldung aus, um zu verhindern, dass du möglicherweise wichtige Änderungen überschreibst.</p>
+<p>Mit <code>git push --force</code> (oder <code>git push -f</code>) sagst du Git, dass du die aktuellen Änderungen im Remote-Branch überschreiben möchtest, egal was dort steht.</p>
+<p>Das kann nützlich sein, wenn du zum Beispiel:</p>
+<ul>
+<li><p>Fehler in einem Commit korrigiert hast und die Historie neu schreiben möchtest.</p></li>
+<li><p>Commits zurückgesetzt oder gelöscht hast und die Änderungen trotzdem hochladen möchtest.</p></li>
+</ul>
+<p><strong>Achtung:</strong> Force-Push kann gefährlich sein, weil es die Historie des Remote-Branches verändert und möglicherweise die Arbeit anderer Entwickler überschreibt. Daher sollte man es mit Vorsicht verwenden und sicherstellen, dass man weiß, was man tut.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warnung
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Force-Pushing nutzen wir beispielsweise, wenn du Fehler in einem Lied korrigierst, das sich im Review-Stadium befindet. Dafür möchten wir nicht mehrere Commits haben. Mach dir dabei bewusst, dass du die Änderungen überschreibst – es sollte also sicher sein, dass durch deine Änderungen nichts wichtiges verloren geht. Wenn du dir nicht sicher bist, ob deine Änderungen auf Zustimmung stoßen, mach einen extra Commit und frag nach. Die Commits können dann in einem zweiten Schritt zusammengeführt werden.</p>
+</div>
+</div>
+<p>Befehl: <code>git push --force</code></p>
 </section>
 <section id="head" class="level3">
 <h3 class="anchored" data-anchor-id="head">HEAD</h3>
@@ -309,15 +357,15 @@ Figure&nbsp;1
 </section>
 <section id="push" class="level3">
 <h3 class="anchored" data-anchor-id="push">Push</h3>
-<p>Mit <code>git push</code> können Commits nun von einem lokalen Repository in ein Remote-Repo transferiert werden. Dieser Befehl ist das Gegenstück zu git fetch. Während beim Fetching Commits in lokale Branches importiert werden, exportiert git push Commits in Remote-Branches. Es besteht die Möglichkeit, Änderungen zu überschreiben; entsprechend sorgfältig sollte der Befehl genutzt werden.</p>
+<p>Mit <code>git push</code> können Commits nun von einem lokalen Repository in ein Remote-Repo transferiert werden. Dieser Befehl ist das Gegenstück zu <code>git fetch</code>. Während beim Fetching Commits in lokale Branches importiert werden, exportiert <code>git push</code> Commits in Remote-Branches. Es besteht die Möglichkeit, Änderungen zu überschreiben; entsprechend sorgfältig sollte der Befehl genutzt werden.</p>
 </section>
 <section id="repository" class="level3">
 <h3 class="anchored" data-anchor-id="repository">Repository</h3>
-<p>In ein Repository bzw. einem Repo befinden sich alle Dateien inklusive derer vorangegangenen Versionen. Dadurch stehen stets alle Änderungen zur Verfügung, die von einer Datei ins Repo gespielt wurden und es kann nachvollzogen werden Wer, Wann, welche Änderungen durchgeführt hat. Das besondere an Git ist, dass jede lokale Working Directory eines Users (ein “Klon” - via “git clone”) wieder ein vollständiges, eigenes, lokales Repo darstellt. Es existieren somit mehrere Kopien der Repos, der, der einen Klon besitzt, kann daran arbeiten - inklusive kompletter History, auch offline und ohne Abhängigkeit von einem zentralen Server. Die Änderungen aus dem eigenen Repo/der Working Copy können dann auf einen Ruck oder Schritt für Schritt, wenn sie als public angesehen werden, wieder in das Remote-Repo “gepusht” werden (git push).</p>
+<p>In ein Repository bzw. einem Repo befinden sich alle Dateien inklusive derer vorangegangenen Versionen. Dadurch stehen stets alle Änderungen zur Verfügung, die von einer Datei ins Repo gespielt wurden und es kann nachvollzogen werden wer, wann, welche Änderungen durchgeführt hat. Das besondere an Git ist, dass jede lokale Working Directory eines Users (ein „Klon“ - via <code>git clone</code>) wieder ein vollständiges, eigenes, lokales Repo darstellt. Es existieren somit mehrere Kopien der Repos, der, der einen Klon besitzt, kann daran arbeiten – inklusive kompletter History, auch offline und ohne Abhängigkeit von einem zentralen Server. Die Änderungen aus dem eigenen Repo / der Working Copy können dann auf einen Ruck oder Schritt für Schritt, wenn sie als public angesehen werden, wieder in das Remote-Repo „gepusht“ werden (<code>git push</code>).</p>
 </section>
 <section id="rebase" class="level3">
 <h3 class="anchored" data-anchor-id="rebase">Rebase</h3>
-<p>Der zweite Weg um Inhalte aus verschiedenen Branches zu kombinieren ist<code>git rebase</code>. Rebasen nimmt im Prinzip eine Menge von Commits, “kopiert” sie und packt sie auf etwas anderes drauf.</p>
+<p>Der zweite Weg um Inhalte aus verschiedenen Branches zu kombinieren ist<code>git rebase</code>. Rebasen nimmt im Prinzip eine Menge von Commits, „kopiert“ sie und packt sie auf etwas anderes drauf.</p>
 <p>Auch wenn das erst mal komisch klingt, liegt der Vorteil von Rebase darin, dass man es benutzen kann um hübsch lineare Abfolgen von Commits zu erhalten. Das Commit-Protokoll des Repositorys wird durch Rebase eine ganze Ecke einfacher aussehen, weil Merge Commits vermieden werden.</p>
 <p>Befehl: <code>git rebase</code></p>
 </section>
@@ -327,16 +375,13 @@ Figure&nbsp;1
 </section>
 <section id="versionierung" class="level3">
 <h3 class="anchored" data-anchor-id="versionierung">Versionierung</h3>
-<p>Sobald an einer Working Copy gearbeitet wird protokolliert Git alle getätigten Änderungen mit. Mittels commit können die Änderungen zu dem Repository hinzugefügt werden, eine neue Version der Datei(n) befinden sich dann im Repo. Anschließend können verschiedene Versionen miteinander verglichen, Änderungen rückgängig oder zu einer früheren Version zurückgekehrt werden. Die Log-Informationen, die von Git mit aufgezeichnet werden können mit “git log” ausgegeben werden, “git status” listet die noch nicht ins Repo gespielten Änderungen der Working Copy auf.</p>
+<p>Sobald an einer Working Copy gearbeitet wird protokolliert Git alle getätigten Änderungen mit. Mittels commit können die Änderungen zu dem Repository hinzugefügt werden, eine neue Version der Datei(n) befinden sich dann im Repo. Anschließend können verschiedene Versionen miteinander verglichen, Änderungen rückgängig oder zu einer früheren Version zurückgekehrt werden. Die Log-Informationen, die von Git mit aufgezeichnet werden können mit <code>git log</code> ausgegeben werden, <code>git status</code> listet die noch nicht ins Repo gespielten Änderungen der Working Copy auf.</p>
 </section>
 <section id="working-directory" class="level3">
 <h3 class="anchored" data-anchor-id="working-directory">Working Directory</h3>
-</section>
-</section>
-<section id="how-to-pull-request" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-pull-request">How to Pull-Request</h2>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -383,12 +428,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
+    button.setAttribute("title", "Kopiert");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
+      button.setAttribute("data-bs-title", "Kopiert");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",
@@ -432,7 +477,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/apfelpfluecker\.github\.io\/liedertest\/");
+      var filterRegex = new RegExp("https:\/\/apfelpfluecker\.github\.io\/how-to-liederbuch\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -767,6 +812,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
+      <a href="./markdown_tutorial.html" class="pagination-link" aria-label="Markdown Basics">
+        <span class="nav-page-text">Markdown Basics</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
   </div>
 </nav>
 </div> <!-- /content -->

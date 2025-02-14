@@ -1,59 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://apfelpfluecker.github.io/liedertest/frescobaldi_einrichten.html</loc>
-    <lastmod>2025-02-12T21:00:46.353Z</lastmod>
+    <loc>https://apfelpfluecker.github.io/how-to-liederbuch/frescobaldi_einrichten.html</loc>
+    <lastmod>2025-02-14T11:41:59.699Z</lastmod>
   </url>
   <url>
-    <loc>https://apfelpfluecker.github.io/liedertest/beispiel_liedersetzen.html</loc>
-    <lastmod>2025-02-12T21:21:37.901Z</lastmod>
+    <loc>https://apfelpfluecker.github.io/how-to-liederbuch/review.html</loc>
+    <lastmod>2025-02-14T11:41:59.716Z</lastmod>
   </url>
   <url>
-    <loc>https://apfelpfluecker.github.io/liedertest/branch_und_pullrequest.html</loc>
-    <lastmod>2025-02-13T22:07:20.606Z</lastmod>
+    <loc>https://apfelpfluecker.github.io/how-to-liederbuch/beispiel_liedersetzen.html</loc>
+    <lastmod>2025-02-14T11:41:59.698Z</lastmod>
   </url>
   <url>
-    <loc>https://apfelpfluecker.github.io/liedertest/lilypond_einrichten.html</loc>
-    <lastmod>2025-02-12T21:02:46.981Z</lastmod>
+    <loc>https://apfelpfluecker.github.io/how-to-liederbuch/branch_und_pullrequest.html</loc>
+    <lastmod>2025-02-14T11:41:59.699Z</lastmod>
   </url>
   <url>
-    <loc>https://apfelpfluecker.github.io/liedertest/liedlayout.html</loc>
-    <lastmod>2025-02-12T21:32:21.297Z</lastmod>
+    <loc>https://apfelpfluecker.github.io/how-to-liederbuch/quellenlinks.html</loc>
+    <lastmod>2025-02-14T11:41:59.716Z</lastmod>
   </url>
   <url>
-    <loc>https://apfelpfluecker.github.io/liedertest/lifehacks.html</loc>
-    <lastmod>2025-02-12T21:02:26.355Z</lastmod>
+    <loc>https://apfelpfluecker.github.io/how-to-liederbuch/repostruktur.html</loc>
+    <lastmod>2025-02-14T11:41:59.716Z</lastmod>
   </url>
   <url>
-    <loc>https://apfelpfluecker.github.io/liedertest/git_verstehen.html</loc>
-    <lastmod>2025-02-12T21:01:28.470Z</lastmod>
+    <loc>https://apfelpfluecker.github.io/how-to-liederbuch/liedsatz_standards.html</loc>
+    <lastmod>2025-02-14T11:41:59.715Z</lastmod>
   </url>
   <url>
-    <loc>https://apfelpfluecker.github.io/liedertest/git_einrichten.html</loc>
-    <lastmod>2025-02-12T21:01:08.164Z</lastmod>
+    <loc>https://apfelpfluecker.github.io/how-to-liederbuch/lifehacks.html</loc>
+    <lastmod>2025-02-14T11:41:59.715Z</lastmod>
   </url>
   <url>
-    <loc>https://apfelpfluecker.github.io/liedertest/doku.html</loc>
-    <lastmod>2025-02-12T21:00:25.624Z</lastmod>
+    <loc>https://apfelpfluecker.github.io/how-to-liederbuch/git_verstehen.html</loc>
+    <lastmod>2025-02-14T11:41:59.700Z</lastmod>
   </url>
   <url>
-    <loc>https://apfelpfluecker.github.io/liedertest/liedersetzen.html</loc>
-    <lastmod>2025-02-12T21:02:07.699Z</lastmod>
+    <loc>https://apfelpfluecker.github.io/how-to-liederbuch/git_einrichten.html</loc>
+    <lastmod>2025-02-14T11:41:59.699Z</lastmod>
   </url>
   <url>
-    <loc>https://apfelpfluecker.github.io/liedertest/repostruktur.html</loc>
-    <lastmod>2025-02-12T22:22:37.426Z</lastmod>
+    <loc>https://apfelpfluecker.github.io/how-to-liederbuch/doku.html</loc>
+    <lastmod>2025-02-14T11:41:59.699Z</lastmod>
   </url>
   <url>
-    <loc>https://apfelpfluecker.github.io/liedertest/liederbuecher_machen.html</loc>
-    <lastmod>2025-02-13T22:41:01.857Z</lastmod>
+    <loc>https://apfelpfluecker.github.io/how-to-liederbuch/liedersetzen.html</loc>
+    <lastmod>2025-02-14T11:41:59.715Z</lastmod>
   </url>
   <url>
-    <loc>https://apfelpfluecker.github.io/liedertest/index.html</loc>
-    <lastmod>2025-02-11T16:31:44.163Z</lastmod>
+    <loc>https://apfelpfluecker.github.io/how-to-liederbuch/liedlayout.html</loc>
+    <lastmod>2025-02-14T11:41:59.715Z</lastmod>
   </url>
   <url>
-    <loc>https://apfelpfluecker.github.io/liedertest/vorbereitung.html</loc>
-    <lastmod>2025-02-12T20:59:07.592Z</lastmod>
+    <loc>https://apfelpfluecker.github.io/how-to-liederbuch/lilypond_einrichten.html</loc>
+    <lastmod>2025-02-14T11:41:59.716Z</lastmod>
+  </url>
+  <url>
+    <loc>https://apfelpfluecker.github.io/how-to-liederbuch/liederbuecher_machen.html</loc>
+    <lastmod>2025-02-14T11:41:59.715Z</lastmod>
+  </url>
+  <url>
+    <loc>https://apfelpfluecker.github.io/how-to-liederbuch/index.html</loc>
+    <lastmod>2025-02-14T11:41:59.715Z</lastmod>
+  </url>
+  <url>
+    <loc>https://apfelpfluecker.github.io/how-to-liederbuch/markdown_tutorial.html</loc>
+    <lastmod>2025-02-14T11:41:59.716Z</lastmod>
+  </url>
+  <url>
+    <loc>https://apfelpfluecker.github.io/how-to-liederbuch/vorbereitung.html</loc>
+    <lastmod>2025-02-14T11:41:59.717Z</lastmod>
   </url>
 </urlset>

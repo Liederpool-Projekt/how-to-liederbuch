@@ -1,1 +1,1 @@
-Sitemap: https://apfelpfluecker.github.io/liedertest/sitemap.xml
+Sitemap: https://apfelpfluecker.github.io/how-to-liederbuch/sitemap.xml
