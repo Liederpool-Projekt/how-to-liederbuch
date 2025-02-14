@@ -1,0 +1,255 @@
+---
+title: "Standards beim Liedersetzen"
+format: html
+---
+
+*Hier werden Entscheidungen dokumentiert, die mit dem Liedersetzen in Zusammenhang stehen. Die Sortierung erfolgt innerhalb der Teilbereiche alphabetisch.*
+
+# Datei
+
+## Benennung
+
+Die Dateinamen-Benennung folgt dem Prinzip: `lied_anfang_(lied_name)`. Bitte beachte unbedingt die Kleinschreibung!!!
+
+Ein Beispiel aus der Praxis: `hast_du_den_staubigen_(der_meilenorden)`
+
+# Text
+
+## Apostrophe
+
+Wir halten uns bei Apostrophen grundsätzlich an den Duden: <https://www.duden.de/sprachwissen/rechtschreibregeln/apostroph#D13>
+
+Das bedeutet: Wir setzen Apostrophe nur, wenn es wirklich nötig ist (= die Lesbarkeit fördert). Das stellt die Lesbarkeit in den Mittelpunkt und bedeutet eine einheitliche Linie, an die man sich gut halten kann.
+
+Beispiele fürs Setzen:
+
+> (vgl. D13) Schlaf nun selig und süß, schau im Traum ’s Paradies.
+>
+> zusamm’n, richt’ge
+>
+> Ob der Onkel, der ihn fährt vielleicht ’ne Tante ist, ...
+
+Beispiele fürs Nicht-Setzen (jeweils kursiv):
+
+> Ich *wär* gern bei den Soldaten, schösse man da mit Tomaten. (vgl. D13 2)
+>
+> Als wir endlich groß genug *warn*, nahmen wir *unsre* *Schuh.* (vgl. D13 1;1;3)
+>
+> Haben wir den *goldnen* Daumen längst *verlorn*? (D13 1;1)
+>
+> Auf den Leitplanken stehen die Geschichten *drauf*. (D14 2)
+>
+> Da flog sie, oh Pardon, auf dem Besenstiel davon, *gradeaus* *übers* Haus, dreimal *rum* und hoch hinaus. (D13 1; D14 1;2)
+>
+> Bis dass die ganze Nachbarschaft *Aufhörn* schrie. (D13 2)
+>
+> Wir haben dich schon aus der Ferne *gesehn*. (D13 2)
+>
+> Eines Nachts *geschiehts* im trüben Lampenlicht (D14 4)
+
+## Rechtschreibung
+
+Grundsätzlich setzen wir immer nach neuer deutscher Rechtschreibung. Es gibt aber auch (sehr wenige) Ausnahmen (siehe Büdel S. 327).
+
+Der Leitspruch lautet: Bei inhaltlichen Aspekten setzen wir möglichst genau (zum Beispiel Zeichensetzung), bei Aspekten, die keine inhaltlichen Auswirkungen haben (Rechtschreibung, Apostrophen), setzen wir nach einheitlichen und aktuellen Standards.
+
+## Textveränderungen zum Original
+
+Je nach Ausmaß sollen Textveränderungen über Tags optional auswählbar sein (wenn es sich z.B. um einzelne Wörter handelt) bzw. in eine neue Variable geschrieben werden (wenn zum Beispiel ein Großteil oder der gesamte Text verschieden ist).
+
+## Title Case bei englischsprachigen Liedern
+
+Wir nutzen den APA Style. Siehe [Wikipedia](https://en.wikipedia.org/wiki/Title_case#APA_Style).
+
+## Typografisch korrekte Zeichen
+
+Uns ist die typografisch korrekte Zeichensetzung wichtig. Ein Apostroph sieht beispielsweise so aus `’` und nicht so `'`.
+
+Gedankenstriche und „Bis-Striche“ sind Halbgeviertstriche `–`, keine `-`.
+
+Anführungszeichen sehen so `„` und so `“` aus, nicht so `"`.
+
+# Notensatz
+
+## Balken
+
+Bei der Balkensetzung achten wir möglichst darauf, keine manuelle Balkensetzung zu machen, da sonst die Flexibilität verloren geht. Grundsätzlich kann man LilyPond sagen, in welchen Taktarten welche Balken wie zusammengefasst werden oder nicht.
+
+Unter einem Balken wird beispielsweise zusammengefasst, was auf einen Grundschlag kommt. Das kann, wie gesagt, LilyPond global gesagt bekommen. Deswegen setzen wir im Liederpool **nicht** so, wie im Beispiel für 4/4-Takt:
+
+```         
+\relative c' {
+  \time 4/4
+  e8 [e8] e8 [e8] e16 [e16 e16 e16] e8 [e16 e16]
+}
+```
+
+Ausgabe:
+
+![](/images/balken.svg)
+
+## Harmoniestimmen
+
+Harmoniestimmen (2./3./4. Stimmen) schreiben wir grundsätzlich in eigene Variablen (`firstVoice`, `secondVoice` etc.), damit Liederbuch-Teams sich entscheiden können, ob sie sie nutzen wollen oder nicht.
+
+Wenn es nur eine Harmoniestimme, also eine zweite Stimme gibt, dann kann dafür im `MUSIC`-Teil der Befehl `\secondVoiceStyle` genutzt werden. Die Standarddarstellung dafür ist, dass die Noten der zweiten Stimme grau werden. Das kann aber liederbuchspezifisch angepasst werden oder der Befehl einfach in der Layout-Datei entfernt werden.
+
+> Beispiel Im Burgenland:
+>
+> ``` lilypond
+> MUSIC = {
+>   \new Staff 
+>   <<
+>     \new Voice = "firstVoice" { \global \voiceTwo \firstVoice }
+>     \addlyrics { \firstVerse }
+>     \new Voice = "secondVoice" { \global \voiceOne \secondVoiceStyle \secondVoice }
+>   >>
+> }
+> ```
+
+Ausgabe:
+
+![](images/secondvoicestyle.svg)
+
+## Optionale Akkorde
+
+Optionale Akkorde sollen getaggt werden, damit sie ausgeschaltet werden können.
+
+## Punktierte Pausen
+
+Pausen werden im klassischen Notensatz nicht (wie bei Noten) mit Punkten geschrieben. Deswegen und aus Gründen der besseren Lesbarkeit vermeiden wir nach Möglichkeit punktierte Pausen.
+
+In Dreiertakten (6/8-Takt, 3/4-Takt) beispielsweise sind punktierte Pausen aber in Ordnung, da sie die Lesbarkeit erhöhen.
+
+> Beispiele keine punktierte Pausen:
+>
+> ```         
+> \relative c' {
+>   \time 4/4
+>   r2 r4 c8 d |
+>   r4 r8 c d e f g |
+> }
+> ```
+
+Ausgabe:
+
+![](/images/punktierte-pausen.svg)
+
+> Beispiele punktierte Pausen:
+>
+> ```         
+> \language "deutsch"
+> \relative c' {
+>   \time 6/8
+>   r4. r4. |
+>   r4. r8 c d |
+>   c8 d e r8 r16 c c8 % Das gilt natürlich nur, wenn es der Lesbarkeit explizit dient...
+>
+>   \time 3/4
+>   r2. |
+>   r2. |
+>   a4 h c |
+>   d2.
+> }
+> ```
+
+Ausgabe:
+
+![](/images/punktierte-pausen-2.svg)
+
+## Rhythmusorientierte Taktaufteilung
+
+Die Betonung des Taktes sollte (je nach Taktart) immer erkennbar sein.
+
+> Beispiel:
+>
+> ```         
+> \relative c' {
+>   \time 6/8
+>   a4.~ 8 cis e |
+>   a4 a8~ 8 cis4
+>
+>   % aber:
+>   \time 3/4
+>   a2 cis8 e |
+>   a4 a cis
+> }
+> ```
+
+Ausgabe:
+
+![](/images/mitte-des-taktes.svg)
+
+Takte, die zusammengesetzte Rhythmen haben, notieren wir auch so – sie können aber in den einzelnen Liederbüchern über das Überschreiben der `global`-Variable auch in einfachen Takten wie 4/4-Takten notiert werden. Unter [diesem Link](https://lilypond.org/doc/v2.23/Documentation/notation/displaying-rhythms#polymetric-notation) finden sich die Infos dazu in der Doku.
+
+> Beispiel Nordwind:
+>
+> ```         
+> \relative c' {
+>   \compoundMeter #'((3 3 8) (2 8))
+>   \partial4
+>   e8 fis |
+>   g4. g g4 |
+>   fis4. e fis4 |
+>   g2. g4 |
+> }
+> ```
+
+Ausgabe:
+
+![](/images/zusammengesetzte-rhythmen.svg)
+
+Weitere Informationen: <https://www.theorie-musik.de/grundlagen/taktarten/>
+
+## Takte
+
+In LilyPond gibt es eine Taktüberprüfung mittels der Pipe (`|`), die genutzt werden kann, aber nicht muss. Darüber hinaus setzen wir Takte immer in eine neue Zeile, das heißt, in jede Zeile kommt immer ein Takt. Das hat den Hintergrund, dass man die Änderungen im Diff in Git besser nachverfolgen kann. Beispiel:
+
+``` lilypond
+\relative c' {
+  \time 3/4
+  a2 r4
+  a a a
+  \time 6/8
+  a8 a a r4.
+  r r
+}
+```
+
+## Wiederholungen
+
+Wenn möglich und sinnvoll, wählen wir eine einfache Notation, auch wenn die musikalisch nicht immer korrekt ist. Das bedeutet, die Wiederholung findet unter Umständen mitten im Takt statt und die Lyrics der Wiederholung stehen ebenfalls unterm Auftakt (siehe Beispiel). Das soll weniger musikalisch Gebildeten das Lesen erleichtern.
+
+Wichtig ist uns, dass der Takt am Ende voll ist (also letzter Takt + Auftakt ergibt einen ganzen Takt) und dass die Noten nicht mit einem Takt, der nur eine Pause enthält, enden (nach solchen In-Takt-Wiederholungen).
+
+Wenn Zwischenspiele und andere musikalisch anspruchsvollere Dinge hinzukommen und generell immer bei Instrumentalnotation, wollen wir musikalisch möglichst korrekt notieren, um Verwirrungen bei Instrumentalist\*innen zu vermeiden..
+
+Verschiedene Varianten zu supporten, ist leider schwierig und erhöht die Komplexität.
+
+> Beispiel Ade zur guten Nacht:
+>
+> ``` lilypond
+> firstVerse = \lyricmode {
+>   Ich stünd da am He -- cken -- zaun
+>   nur um nach dir aus -- zu -- schaun
+>   und um dich zu wer -- ben.
+> }
+>
+> firstVoice = \relative c'' {
+>   \partial2
+>   r4
+>   \repeat volta 2 {
+>     a4
+>     fis2 a4 d
+>     h h8 (a) g4 g
+>     e2 g4 h
+>     a a8 (g) fis4 a
+>     a g8 fis g4 (a)
+>     fis2 r4
+>   }
+> }
+> ```
+
+Ausgabe:
+
+![](images/wiederholung-im-takt.svg)
