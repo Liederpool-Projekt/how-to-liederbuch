@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Einrichtung von LilyPond – How To Liederbuch</title>
+<title>Layout – How To Liederbuch</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -30,8 +64,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./frescobaldi_einrichten.html" rel="next">
-<link href="./vorbereitung.html" rel="prev">
+<link href="./quellenlinks.html" rel="next">
+<link href="./musikalischer_inhalt.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -96,11 +130,11 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Moin</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./vorbereitung.html" aria-current="page"> 
+    <a class="nav-link" href="./vorbereitung.html"> 
 <span class="menu-text">Einführung</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./doku.html"> 
+    <a class="nav-link active" href="./doku.html" aria-current="page"> 
 <span class="menu-text">Doku</span></a>
   </li>  
 </ul>
@@ -120,7 +154,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./vorbereitung.html">Vorbereitung</a></li><li class="breadcrumb-item"><a href="./lilypond_einrichten.html">Einrichtung von LilyPond</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./doku.html">Doku</a></li><li class="breadcrumb-item"><a href="./liedsatz_standards.html">Liedersetzen-Prozess</a></li><li class="breadcrumb-item"><a href="./layout.html">Layout</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -134,72 +168,89 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./vorbereitung.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Vorbereitung</span></a>
+            <a href="./doku.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Doku</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./lilypond_einrichten.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Einrichtung von LilyPond</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./frescobaldi_einrichten.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Einrichtung von Frescobaldi</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./git_einrichten.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Einrichtung von Git</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
+          <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./liedersetzen.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lieder setzen</span></a>
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Liedersetzen-Prozess</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./beispiel_liedersetzen.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Beispiel Liedersetzen</span></a>
+  <a href="./liedsatz_standards.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Standards beim Liedersetzen</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./branch_und_pullrequest.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Branch und Pull-Request</span></a>
+  <a href="./metadaten.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Metadaten</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./liedlayout.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Liedlayout</span></a>
+  <a href="./musikalischer_inhalt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Musikalischer Inhalt</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./liederbuecher_machen.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Liederbücher erstellen</span></a>
+  <a href="./layout.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Layout</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./repostruktur.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Struktur des Repositories</span></a>
+  <a href="./quellenlinks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Einbinden von Links als Quelle</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./lifehacks.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Nützliche Lifehacks</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+ <span class="menu-text">Review-Prozess</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./git_verstehen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Was ist eigentlich Git? 2.0</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./review.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Review</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./markdown_tutorial.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Markdown Basics</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
       </ul>
   </li>
     </ul>
@@ -212,16 +263,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Auf dieser Seite</h2>
    
   <ul>
-  <li><a href="#lilypond-installieren" id="toc-lilypond-installieren" class="nav-link active" data-scroll-target="#lilypond-installieren">LilyPond installieren</a></li>
+  <li><a href="#sec-zeilenumbrueche" id="toc-sec-zeilenumbrueche" class="nav-link active" data-scroll-target="#sec-zeilenumbrueche">Zeilenumbrüche in den Strophen</a></li>
+  <li><a href="#sec-romanstanza" id="toc-sec-romanstanza" class="nav-link" data-scroll-target="#sec-romanstanza">Römische Ziffern</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./vorbereitung.html">Vorbereitung</a></li><li class="breadcrumb-item"><a href="./lilypond_einrichten.html">Einrichtung von LilyPond</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./doku.html">Doku</a></li><li class="breadcrumb-item"><a href="./liedsatz_standards.html">Liedersetzen-Prozess</a></li><li class="breadcrumb-item"><a href="./layout.html">Layout</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Einrichtung von LilyPond</h1>
+<h1 class="title">Layout</h1>
 </div>
 
 
@@ -238,19 +290,56 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>LilyPond ist die Software, die wir zum Noten setzen benutzen. Als erstes müssen wir LilyPond bei dir installieren.</p>
-<section id="lilypond-installieren" class="level2">
-<h2 class="anchored" data-anchor-id="lilypond-installieren">LilyPond installieren</h2>
-<ol type="1">
-<li><p>Gehe auf <a href="https://lilypond.org/" class="uri">https://lilypond.org/</a> und wähle unter <code>Downloads</code> die neueste LilyPond-Version. Grundsätzlich ist immer die stabile Version zu bevorzugen (alle geraden Zahlen, z.B. <code>2.24</code>). Unser System funktioniert aber (unter Windows) erst ab der Version <code>2.25.24</code>, das ist eine Entwicklerversion (zu erkennen an der ungeraden <code>25</code>).</p></li>
-<li><p>Nun sollte der Download starten. Gehe in den Ordner und entpacke den Download. Herauskommen sollte ein Ordner namens <code>lilypond-*</code>, wobei <code>*</code> die Versionsnummer darstellt.</p></li>
-<li><p>Fertig. Allerdings solltest du den Ordner an einen Ort legen, an dem er nicht verschoben wird. Zu empfehlen ist</p>
-<ul>
-<li><p>unter Windows: Ins Verzeichnis C und dann in den Ordner <code>Programme (x86)</code>. Dort sind auch andere Programmordner, deswegen ergibt das dort Sinn.</p></li>
-<li><p>unter Linux: Zum Beispiel ins Verzeichnis <code>home</code>.</p></li>
-</ul></li>
-</ol>
-<p>Jetzt hast du LilyPond installiert. Damit es jetzt auch Spaß macht, mit LilyPond zu arbeiten, benötigst du noch Frescobaldi.</p>
+<p>In diesem Abschnitt der Doku zeigen wir Lösungen für Probleme oder Herausforderungen, die sich aus der Arbeit mit unserem System ergeben. Vieles davon wurde von tux entwickelt und befindet sich in den <code>lilypond-common-includes</code>, bei manchen Themen verweisen wir auch einfach nur auf die LilyPond-Doku. Dieser Teil ist fokussiert auf die Layout-Fragen.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hinweis
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Anmerkung: Die Codebeispiele sind teilweise vereinfacht und verkürzt, um die Probleme und Lösungen möglichst einfach zu erklären. Sie sind damit nicht zwangsläufig eins zu eins übertragbar und anwendbar (und finden sich teils nicht eins zu eins im Liederpool wieder).</p>
+</div>
+</div>
+<section id="sec-zeilenumbrueche" class="level2">
+<h2 class="anchored" data-anchor-id="sec-zeilenumbrueche">Zeilenumbrüche in den Strophen</h2>
+<p>Problem: Verschiedene Liederbücher haben verschiedene Formate, weswegen es keinen idealen Zeilenumbruch für alle Liederbücher gibt.</p>
+<p>Lösung: Versumbrüche werden in der Variable <code>verse-breaks</code> anhand von (unsichtbaren) Pausen (<code>s</code>)und <code>\break</code>-Befehlen bewirkt. Diese Variable wird dann mittels <code>\override</code>-Befehl vor den entsprechenden Versen im <code>TEXT</code>-Part eingebunden. Beispiel: <code>\override #`(verse-break-voice . ,verse-breaks)</code>. <code>verse-break-voice</code> erstellt eine (unsichtbare) Stimme mit den Umbrüchen aus <code>verse-breaks</code> und wird auch für den Fall gesetzt, dass es Strophen und einen Refrain gibt. In dem Falle wird das <code>\override</code> immer vor den unterschiedlichen Strophen neu gesetzt (Achtung: <code>\override</code> gilt immer nur für das folgende Element, zum Beispiel ein Vers oder ein <code>\group-verses</code>-Ausdruck).</p>
+<p>Codebeispiel, bei dem Refrain und Strophe auf eine Seite (und damit in ein <code>\group-verses</code>) gedruckt werden:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>verse-<span class="fu">breaks</span> = <span class="kw">{</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  s<span class="dt">2.*4</span> <span class="fu">\break</span> %<span class="co">s2.*4 bedeutet, dass s2. 4 mal wiederholt wird</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  s<span class="dt">2.*4</span> <span class="fu">\break</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  s<span class="dt">2.*4</span> <span class="fu">\break</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>ref-<span class="fu">breaks</span> = <span class="kw">{</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  s<span class="dt">2.*2</span> <span class="fu">\break</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  s<span class="dt">2.*2</span> <span class="fu">\break</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>TEXT = <span class="fu">\markuplist</span> <span class="kw">{</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  <span class="kw">\override</span> #<span class="fl">`(verse-break-voice . ,verse-breaks)</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\group</span>-verses <span class="kw">{</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\chordlyrics</span> <span class="fu">\firstVerse</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\chordlyrics</span> <span class="fu">\secondVerse</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    <span class="kw">\override</span> #<span class="fl">`(verse-break-voice . ,ref-breaks)</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\chordlyrics</span> <span class="fu">\refLyrics</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\chordlyrics</span> <span class="fu">\thirdVerse</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="sec-romanstanza" class="level2">
+<h2 class="anchored" data-anchor-id="sec-romanstanza">Römische Ziffern</h2>
+<p>Römische Ziffern (<code>I</code>, <code>II</code> etc.), um zum Beispiel Übersetzungen mit einem anderen System zu nummerieren als den Originaltext, können erreicht werden, in dem vor den Ausdruck <code>#(stanza 1)</code> die Funktion <code>\romanStanza</code> aufgerufen wird.</p>
+<p>Beispiel:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>TEXT = <span class="fu">\markuplist</span> <span class="kw">{</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\group</span>-verses <span class="kw">{</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\chordlyrics</span> <span class="kw">{</span> <span class="fu">\romanStanza</span> <span class="fu">\firstVerse</span> <span class="kw">}</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 </section>
@@ -822,13 +911,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./vorbereitung.html" class="pagination-link" aria-label="Vorbereitung">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Vorbereitung</span>
+      <a href="./musikalischer_inhalt.html" class="pagination-link" aria-label="Musikalischer Inhalt">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Musikalischer Inhalt</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./frescobaldi_einrichten.html" class="pagination-link" aria-label="Einrichtung von Frescobaldi">
-        <span class="nav-page-text">Einrichtung von Frescobaldi</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./quellenlinks.html" class="pagination-link" aria-label="Einbinden von Links als Quelle">
+        <span class="nav-page-text">Einbinden von Links als Quelle</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
