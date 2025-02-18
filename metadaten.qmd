@@ -1,0 +1,115 @@
+---
+title: "Metadaten"
+format: html
+---
+
+Metadaten
+
+## Autor\*innenangaben
+
+Autor\*inneninformationen werden im neuen System aus einer YAML-Datei gezogen. Das bedeutet, in der Lilyponddatei wird lediglich auf eine ID einer Autorin verwiesen, deren Informationen in der YAML-Datei unter dieser ID zu finden sind.
+
+### Abruf in der Lilyponddatei
+
+Die ID der beiden Autor\*innen heißt in diesem Fall `Autor1` beziehungsweise `Autor2`.
+
+``` lilypond
+basicSongInfo = \header {
+  title = "Liedtitel"
+  alttitle = "Liedanfang"
+  authors = #'(
+    ("Autor1" text)
+    ("Autor2" melody))
+  year_text = "2024"
+  year_melody = "2024"
+  infotext = "Infotext"
+}
+```
+
+### Aufbau der YAML-Datei
+
+Die YAML ist wie folgt aufgebaut und alphabetisch sortiert. Die ID für eine\*n Autor\*in sollte, wenn vorhanden und eindeutig, dem Fahrtennamen entsprechen. Wenn nicht vorhanden oder uneindeutig dem bürgerlichen Namen nach dem Schema `VornameNachname`. Das hat keine technischen Gründe, sondern soll nur die Arbeit erleichtern. Wenn es einheitlich ist, muss man vielleicht nicht jedes Mal in der YAML-Datei nachschauen, wie nochmal die ID von Autor\*in XYZ war.
+
+``` yaml
+Autor1:
+  name: Vorname Nachname
+  trail_name: Autor1
+  birth_year: "1950"
+  organization: Bund der Autoren
+Autor2:
+  name: Name Surname
+  trail_name: Autor2
+  death_year: "2050"
+  organization: Autorenbund
+```
+
+### Mögliche Optionen beim Abruf
+
+Da es zahlreiche Wünsche etc. bei der Autor\*innenschaft von Liedern gibt, ist das System möglichst umfassend gestaltet. Der grundsätzliche Aufbau ist, dass in Klammern immer die ID benannt wird sowie die Eigenschaften, die diese ID hat (zum Beispiel die Worte geschrieben, die zweite Stimme usw.). Folgende Möglichkeiten gibt es:
+
+-   `text`: Die Person hat am Text mitgeschrieben.
+
+-   `melody`: Die Person hat an der Melodie mitgeschrieben.
+
+-   `composition`: Die Person hat am Satz mitgeschrieben.
+
+-   `(verse 1)`: Die Person hat an der ersten Strophe mitgeschrieben.
+
+    -   `(verse 1) (verse 2)`: Die Person hat an der ersten und zweiten Strophe mitgeschrieben.
+
+-   `(voice 2)`: Die Person hat an der zweiten Stimme mitgeschrieben.
+
+    -   `(voice 2) (voice 3)`: Die Person hat an der zweiten und dritten Stimme mitgeschrieben.
+
+-   `interlude`: Die Person hat am Zwischenspiel mitgeschrieben.
+
+-   `bridge`: Die Person hat an der Bridge mitgeschrieben.
+
+-   `translation`: Die Person hat an der Übersetzung mitgeschrieben.
+
+-   `(meloverse 1`): Die Person hat an der ersten Melodiestrophe mitgeschrieben (damit ist die Melodie der ersten Strophe gemeint).
+
+    -   `(meloverse 1) (meloverse 2)`: Die Person hat an der ersten und zweiten Melodiestrophe mitgeschrieben (damit ist die Melodie der ersten Strophe gemeint).
+
+Das sind alle *möglichen* Beispiele, die durchaus schon größtenteils einmal benötigt wurden. Allerdings ist offensichtlich, dass diese Möglichkeitsvielfalt keinesfalls immer *sinnvoll* ist.
+
+Für alle diese Möglichkeiten finden sich Anwendungsbeispiele im Repository `lilypond-vorlagen`, dort im Ordner `Lieder` (Datei `authors-sandbox.ly`) ([Link](https://git.zahlenlabyrinth.de/boernel/lilypond-vorlagen/src/branch/main/lieder/authors_sandbox/authors_sandbox.ly)). Da kann man sich gut austoben. So sieht das dann aus:
+
+``` yaml
+dude:
+  birth_year: '1950'
+  name: Krasser Dude
+  organization: Bund der krassen Dudes
+  trail_name: dud
+kumpel:
+  death_year: '2050'
+  name: Krasser Kumpel
+  organization: Bund der krassen Kumpels
+  trail_name: dudekumpel
+kumpelerbe:
+  inherits: kumpel
+  organization: Bund der crazy Kumpels
+nocheiner:
+  death_year: '2050'
+  name: Jemand anderes
+  
+```
+
+![Output:](images/autor-innen.svg)
+
+### Sonderfall „Inherits“
+
+Es kann vorkommen, dass Autor\*innen ihre Bundzugehörigkeit ändern oder bestimmte Lieder für eine Band geschrieben haben, allerdings andere nicht. Dann wäre es unpraktisch, dass als Organisation beispielsweise trotzdem „Schlagsaite“ dort steht, obwohl das Lied mit Schlagsaite nichts zu tun hat (außer, dass der Autor bei Schlagsaite spielt). Die Lösung für dieses Problem lautet Inherits. Das Prinzip ist, dass eine neue ID erstellt wird, die die Eigenschaften einer bestimmten ID erbt. Diese Eigenschaften können dann aber überschrieben werden. Im Lied muss man dann auf diese neue ID verweisen. Das sieht zum Beispiel so aus:
+
+``` yaml
+kumpel:
+  name: Krasser Kumpel
+  trail_name: kumpel
+  death_year: "2050"
+  organization: Bund der krassen Kumpels
+kumpelerbe:
+  inherits: kumpel
+  organization: Bund der crazy Kumpels
+```
+
+Zur Erklärung: `kumpelerbe` übernimmt die Eigenschaften von `kumpel`, danach wird die Organisation überschrieben auf einen anderen Bund.

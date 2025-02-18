@@ -1,0 +1,396 @@
+---
+title: "Musikalischer Inhalt"
+format: html
+---
+
+In diesem Abschnitt der Doku zeigen wir Lösungen für Probleme oder Herausforderungen, die sich aus der Arbeit mit unserem System ergeben. Vieles davon wurde von tux entwickelt und befindet sich in den `lilypond-common-includes`, bei manchen Themen verweisen wir auch einfach nur auf die LilyPond-Doku. Dieser Teil ist fokussiert auf Fragen bezüglich der Notation und dem Liedtext.
+
+::: callout-note
+Anmerkung: Die Codebeispiele sind teilweise vereinfacht und verkürzt, um die Probleme und Lösungen möglichst einfach zu erklären. Sie sind damit nicht zwangsläufig eins zu eins übertragbar und anwendbar (und finden sich teils nicht eins zu eins im Liederpool wieder).
+:::
+
+## Wiederholungen in den Strophen
+
+Problem: Wiederholungszeichen (`𝄆` und `𝄇` ) im Text sollen nur in den Strophen, nicht aber unter den Noten stehen. Trotzdem wollen wir denselben Text für beides verwenden.
+
+Lösung: Vor den wiederholten Teil im Text `\repStartWithTag` und vor der letzten Silbe (nach den `--` !) `\repStophWithTag`.
+
+Zur Erklärung: Es handelt sich faktisch um eine Stanza, die aber immer *vor* Silben gesetzt werden muss (sie kann aber auch rechts von Silben ausgerichtet werden). Diese Stanza wird nur bei einem bestimmten Tag ausgegeben, der `repeats` heißt. Mehr zu Tags findest du in der [Lilypond-Doku](https://lilypond.org/doc/v2.25/Documentation/notation/using-tags.de.html). Standardmäßig wird der Tag ausgegeben, soll das nicht der Fall sein (wie zum Beispiel unter den Noten), muss innerhalb des `MUSIC`-Teils der Befehl `\removeWithTag #'repeats` inkludiert werden.
+
+Codebeispiel (aus: Ade zur guten Nacht):
+
+``` lilypond
+thirdVerse = \lyricmode {
+  %…
+  \repStartWithTag
+  Wie man -- chen _ Glo -- cken -- schlag,
+  da Herz bei _ Her -- zen lag,
+  das hast du ver -- ges -- \repStopWithTag sen.
+}
+
+%…
+
+MUSIC = {
+  \removeWithTag #'repeats
+  <<
+      \songChords
+      \new ChoirStaff = "firstStaff"
+      <<
+        \new Voice = "firstVoice" { \melodyVoice }
+        \addlyrics { \firstVerse }
+        \addlyrics { \secondVerse }
+        \addlyrics { \thirdVerse }
+        \addlyrics { \fourthVerse }
+      >>
+  >>
+}
+```
+
+![In den Strophen sieht das dann zum Beispiel so aus:](images/wiederholungszeichen.svg)
+
+## Melismata (mehrere Noten zu einer Silbe)
+
+Problem: In manchen Strophen gibt es an einer Stelle ein Melisma und in der nächsten Strophe an derselben Stelle nicht. Dadurch verschiebt sich der Text.
+
+Lösung: Nutzen von `\set ignoreMelismata = ##t` nach Bedarf. Siehe dazu auch in der [LilyPond-Doku](https://lilypond.org/doc/v2.25/Documentation/notation/multiple-notes-to-one-syllable).
+
+Codebeispiel:
+
+``` lilypond
+%firstVerse mit Melismata:
+firstVerse = \lyricmode {
+  #(stanza 1)
+  A -- de zur gu -- ten Nacht!
+  Jetzt wird der Schluss ge -- macht,
+  dass ich muss schei -- den.
+  \repStartWithTag
+  Im Som -- mer, da wächst der Klee, im Win -- ter da schneit’s den Schnee,
+  da kom -- me ich wie -- \repStopWithTag der.
+}
+
+%secondVerse ohne Melismata
+secondVerse = \lyricmode {
+  #(stanza 2)
+  Es trau -- ern Berg und Tal,
+  wo ich viel tau -- send -- mal
+  bin drü -- ber gan -- gen.
+  \set ignoreMelismata = ##t %ab hier werden Melismata ignoriert
+  \repStartWithTag
+  Das hat dei -- ne Schön -- heit ge -- macht,
+  die hat mich zum Lie -- ben ge -- bracht
+  \unset ignoreMelismata %und hier wieder nicht mehr
+  mit gro -- ßem Ver -- lan -- \repStopWithTag gen.
+}
+```
+
+![So sieht dann der Output der ersten beiden Verse aus:](images/melismata.svg)
+
+## Mehrere Silben zu einer Note
+
+Siehe [Lilypond-Doku](https://lilypond.org/doc/v2.24/Documentation/notation/common-notation-for-vocal-music#multiple-syllables-to-one-note).
+
+## Silbentrennung bei Volta-Klammern
+
+Problem: Es kommt vor, dass in Liedern die Melodie der Strophe wiederholt wird. Wenn man dabei eine Wiederholung mit Volta-Klammern notiert und ein Wort in die Wiederholung „hineinragt“, dann skipt man die folgenden Notenwerte, was aber dazu führt, dass unter der gesamten Klammer eins Lyric-Hyphens (Bindestriche zwischen den Silben) gesetzt werden.
+
+Lösung: Mit `\once \hide \LyricHyphen` werden alle Hyphens der nächsten Silbe unterdrückt. Stattdessen wird mit `\rightHyphen` bzw. `\leftHyphen` ein manueller Hyphen gesetzt (die Funktion ist in den `common-includes` definiert). Die `\skip4`-Befehle werden ggf. über eine dafür gesetzte Variable definiert (im unteren Beispiel `voltaSkipsLyrics`). Da die Hyphens im Text (also den „Strophen“) nicht zu sehen sein sollen, werden sie mittels eines Tags gesetzt, der `volta` heißt. Mehr zu Tags in der [Lilypond-Doku](https://lilypond.org/doc/v2.25/Documentation/notation/using-tags.de.html).
+
+Codebeispiel:
+
+``` lilypond
+voltaSkipsLyrics = \lyricmode {
+  \repeat unfold 10 { \skip4 }
+}
+
+firstVerseB = \lyricmode {
+  Hab es selbst so ge -- wählt, nie die Jah -- re \tag #'volta { \once \hide LyricHyphen \rightHyphen } ge -- \tag #'volta { \voltaSkipsLyrics \leftHyphen } zählt,
+  nie nach ges -- tern und mor -- gen ge -- fragt.
+}
+```
+
+::: {#fig-hyphens layout-ncol="2"}
+![So soll das nicht aussehen.](images/incorrect_hyphens.svg)
+
+![So sieht das ganze dann „schön“ aus:](images/correct_hyphens.svg)
+
+Links das Problem, rechts die Lösung.
+:::
+
+## Umgang mit Wiederholungen bei gleichbleibendem Text
+
+Problem: Gibt es Volta-Klammern bei Liedern, in denen der Text des wiederholten Teils gleich ist, zum Beispiel, weil es nach der Klammer anders weitergeht, kommt es vor, dass man in die Lyrics zum Beispiel schreiben müsste: `Und je -- der Kerl, der mit uns war, hat für im -- mer sich zu uns ge -- sellt. Und sellt.`. Das ist natürlich unpraktisch für die Übernahme in die Strophen, weil man das `sellt. Und` ja nicht in den Strophen haben möchte.
+
+Lösung: Auch hier kommen wieder Tags zum Einsatz und zwar wie folgt. Es wird ein neuer Tag `repeat` definiert, der alles in einschließt, was für die Volta-Wiederholungen notwendig ist. Für die Strophen werden dann extra-Variablen definiert, in denen dieser Tag ausgeschaltet wird. Wichtig: Der Tag muss sich natürlich auch in der Melodie und den Akkorden wiederfinden.
+
+Codebeispiel:
+
+``` lilypond
+firstVerseWithRepeat = \lyricmode {
+  #(stanza 1)
+  Wir sind ei -- ne klei -- ne ver -- lo -- re -- ne Schar,
+  wir ste -- hen für uns auf der Welt.
+  \repStartWithTag Und je -- der Kerl, der mit uns war,
+  hat für im -- mer sich zu uns ge -- \tag #'repeat { sellt. Und } \repStopWithTag sellt.
+}
+
+firstVerse = \lyricmode {
+  \removeWithTag #'repeat \firstVerseWithRepeat
+}
+
+firstVoice = \relative c' {
+  \partial4
+  fis4
+  g8 e4 fis8 g e4 g8
+  fis g4 fis8 e4 d4
+  g8 g4 g8 a d4 c8
+  h2. h4
+  \repeat volta 2 {
+    c4 c c c
+    h8 h4 (a8) g4 g8 a
+    h8 h4 h8 a h4 a8
+  }
+  \alternative {
+    % Tag bedenken
+    \tag #'repeat { g2. h4 }
+    { g1 }
+  }
+}
+
+verseChords = \chordmode {
+  \partial4
+  s4 e1:m h2:7 e4:m d:7
+  g2 d:7 g1
+  \repeat volta 2 {
+    c1 g g2 d:7
+  }Bock
+  \alternative {
+    %Tag bedenken
+    \tag #'repeat { g1 }
+    { g1 }
+  }
+}
+
+% im MUSIC-Teil wird der Tag dann wieder aktiviert
+MUSIC = {
+  \keepWithTag #'repeat
+  <<
+      \songChords
+      \new ChoirStaff = "firstStaff"
+      <<
+        \new Voice = "firstVoice" { \melodyVoice }
+        \addlyrics { \firstVerseWithRepeat }
+        \addlyrics { \secondVerseWithRepeat }
+        \addlyrics { \thirdVerseWithRepeat }
+      >>
+  >>
+}
+
+% Für die Strophen wollen wir keine Volta-Wiederholung
+verse-chords = \chords { \removeWithTag #'repeat \verseChords }
+```
+
+## Umgang mit Wiederholungen bei „neuem“ Text
+
+Problem: Volta-Klammern (Wiederholungsklammern), bei denen nicht derselbe Text wiederholt wird, sollten in den Strophen aufgelöst werden, damit der Text hintereinander (und nicht wie in den Noten untereinander) steht.
+
+Lösung: Dafür nutzen wir den Befehl `\unfoldRepeats`, der in den `verse-chords` und `verse-voice` gesetzt werden muss und dann per `\override` auf die Strophen angewendet werden kann (Achtung: `\override` gilt immer nur für das folgende Element, zum Beispiel ein Vers oder ein `\group-verses`-Ausdruck). Außerdem müssen die Verse aufgeteilt werden in verschiedene Teile.
+
+Codebeispiel:
+
+``` lilypond
+firstVerseA = \lyricmode {
+  #(stanza 1)
+  Er -- ste Wie -- der -- ho -- lung,
+}
+
+firstVerseB = \lyricmode {
+  zwei -- te Wie -- der -- ho -- lung.
+}
+
+firstVerseC = \lyricmode {
+  Wei -- ter geht’s
+}
+
+firstVerse = { \firstVerseA \firstVerseB \firsVerseC }
+
+verse-chords = \chords { \unfoldRepeats \verseChords }
+verse-voice = { \unfoldRepeats \firstVoice }
+verse-breaks = { 
+  s4 s2*3 s4 \break
+  s4 s2*3 s4 \break
+  s4 s2*3 s4 \break
+}
+
+TEXT = \markuplist {
+  \override #`(verse-chords . ,verse-chords)
+  \override #`(verse-reference-voice . ,verse-voice)
+  \override #`(verse-break-voice . ,verse-breaks)
+  \group-verses {
+    \chordlyrics \firstVerse
+  }
+}
+```
+
+## Strophen mit unterschiedlichen Noten- oder Silbenverteilung oder Rhythmus
+
+Problem:
+
+-   Gerade bei neueren Liedern kommt es häufig vor, dass sie unterschiedliche Rhythmen (zum Beispiel Auftakte) in den Strophen haben. Da der Text an Noten ausgerichtet wird, kommt es somit zu einem Problem, wenn in der 1. Strophe beispielsweise kein Auftakt vorhanden ist, in der 2. Strophe jedoch schon, kann der Versanfang der 2. Strophe nicht an Noten ausgerichtet werden, da diese in der Melodie (der 1. Strophe) gar nicht vorkommen.
+
+-   Das Notenbild / der Notensatz der 1. Strophe soll aber nicht unnötig aufgebläht werden durch Auftaktkonstruktionen (und es gibt natürlich auch noch wesentlich komplexere Konflikte), da dadurch die Lesbarkeit erschwert wird und das Notenbild mehr Verwirrung als Klarheit schaffen würde.
+
+Lösung:
+
+-   Nutzung von einer Funktion, die Tags nutzt: `\alt` (siehe Codebeispiel). Die Idee ist, dass es eine einfache Notation gibt (üblicherweise die der 1. Strophe) und eine komplexere, an der alle Verse ausgerichtet werden können. Die `\alt`-Funktion wird im `\relative`-Teil wie folgt angewendet: `\alt { A } { B }`. A steht für die einfache Notation, B für die komplexe.
+
+-   Nun gibt es wiederum das Problem, dass der Text in den unterschiedlichen Notationen an unterschiedlichen Stellen geskipt werden muss. Dafür gibt es die Lösung über die Funktion `\multiVerseSkips X`. Das `X` ist dabei zu ersetzen mit der Anzahl der zu skipenden Noten. `X` muss mindestens den Wert `1` haben.
+
+-   Im `MUSIC`-Teil muss der Tag nun auch angegeben werden. Zum Codebeispiel: Im `music`-Teil muss nichts angepasst werden, stattdessen kann man nun im `MUSIC`-Teil angeben, ob man die multiVerse-Ansicht oder die firstVerse-Ansicht angezeigt werden möchte. Das jeweils andere kann auskommentiert werden.
+
+Codebeispiel:
+
+``` lilypond
+firstVerse = \lyricmode {
+  #(stanza 1)
+  \multiVerseSkips 4 Komm zu mir, leg dich ins Laub
+  \\multiVerseSkips 1 und \\multiVerseSkips 1 hör, was die Wur -- zeln er -- zäh -- len.
+  Je -- \\multiVerseSkips 1 des \\multiVerseSkips 1 Blatt zer -- fällt ein -- mal zu Staub
+  \\multiVerseSkips 2 und je -- der Baum wird auch wie -- der zu Er -- de.
+  Doch je -- des En -- de ist ein An -- fang
+  und vol -- ler Kreis -- läu -- fe sind Zeit und Raum.
+  Al -- les ver -- geht, doch nichts geht ver -- lo -- ren,
+  al -- les ist Wirk -- lich -- keit und al -- les ist Traum.
+}
+
+% Verwendung von alt
+firstVoice = \relative c' {
+  \alt {} { \partial2 a8 a d8 f8 }
+  a4. a8 a4
+  g4 a g
+  e2.
+  \alt { r2 d4 } { r4 r8 d d d }
+  e4. e8 e4
+  d4 e d
+  c4 a2
+}
+
+% Einbindung in music/MUSIC
+music = {
+  <<
+      \songChords
+      \new ChoirStaff = "firstStaff"
+      <<
+        \new Voice = "firstVoice" { \melodyVoice }
+        \addlyrics { \firstVerse }
+        \addlyrics { \tag #'multiVerse \secondVerse }
+        \addlyrics { \tag #'multiVerse \thirdVerse }
+        \addlyrics { \tag #'multiVerse \fourthVerse }
+        \addlyrics { \tag #'multiVerse \fifthVerse }
+      >>
+  >>
+}
+
+MUSIC = {
+  \keepWithTag #'multiVerse
+  %\keepWithTag #'firstVerse
+  \music
+}
+```
+
+::: {#fig-wurzeln layout-ncol="2"}
+![Die `\firstVerse`-Ansicht:](images/firstverse.svg)
+
+![Die `\multiVerse`-Ansicht:](images/multiverse.svg)
+
+Das sind die beiden möglichen resultierenden Ansichten.
+:::
+
+## Zeilenumbrüche in den Strophen
+
+Siehe [Layout-Teil der Doku](layout.qmd#zeilenumbrueche).
+
+## (Leichte) Textvariationen
+
+Problem: Es gibt teilweise leichte Textvariationen bei einzelnen Wörtern.
+
+Lösung: Auch da helfen uns wieder die Tags ([Lilypond-Doku](https://lilypond.org/doc/v2.25/Documentation/notation/using-tags.de.html)). Je nach Belieben kann dann entweder die eine Variante aktiviert werden oder die andere.
+
+### Innerhalb einer Variante
+
+Beim Regenbogenlied gibt es beispielsweise eine Unterscheidung im Artikel zwischen dem ersten und zweitem Refrain. Die Lösung dafür ist, einfach beides einzubauen und dann das jeweils nicht benötigte auszuschalten. Das hat den Vorteil, dass wir trotzdem dieselbe Textbasis verwenden können.
+
+Codebeispiel:
+
+``` lilypond
+refLyrics = \lyricmode {
+  \ref
+  \repStartWithTag Ü -- ber uns \tag #'first { ein } \tag #'second { der } Re -- gen -- bo -- gen,
+  zeigt uns den Weg in sei -- nem Licht,
+  die Wol -- ken sind schon fort -- ge -- zo -- gen,
+  ver -- weh -- ren uns die Son -- ne \repStopWithTag nicht.
+}
+
+refLyricsFirst = \lyricmode { \removeWithTag #'second \refLyrics }
+refLyricsSecond = \lyricmode { \removeWithTag #'first \refLyrics }
+```
+
+### Verschiedene Varianten
+
+Anders verhält es sich, wenn wir ein Lied haben, bei dem es verschiedene Varianten gibt. Mitunter kann es hilfreich sein, einen kürzeren Befehl zu haben, wenn beide Varianten sich an vielen Stellen unterscheiden. Das kann folgendermaßen gelöst werden:
+
+``` lilypond
+variant =
+#(define-music-function (parser location a b) (ly:music? ly:music?) 
+  #{ \tag #'bock { #a } \tag #'codex { #b } #})
+```
+
+Wenn mehr als zwei Varianten benötigt werden, kann der Befehl problemlos erweitert werden, indem weitere Elemente hinzugefügt werden:
+
+`#(define-music-function (parser location a b c d) (ly:music? ly:music? ly:music? ly:music?)  #{ \tag #'bock { #a } \tag #'codex { #b } \tag #'buedel { #c } \tag #'boernel { #d } #})`.
+
+Der Tag-Abruf erfolgt dann zum Beispiel so:
+
+``` lilypond
+firstVerse = \lyricmode {
+  #(stanza 1)
+  Das ist der ers -- te \variant { Vers } { Verse } { Teil } { Ab -- schnitt }.
+}
+```
+
+Dabei ist die oben definierte Reihenfolge entscheidend! Der jeweils gewünschte Tag muss dann unbedingt im `MUSIC`-Teil zugewiesen werden. Dabei sollte im `MUSIC`-Teil ebenfalls erkennbar sein, wie viele und welche Varianten es überhaupt gibt, zum Beispiel durch auskommentierte Alternativvarianten:
+
+``` lilypond
+MUSIC = {
+  \keepWithTag #'bock
+  %\keepWithTag #'codex
+  %\keepWithTag #'buedel
+  %\keepWithTag #'boernel
+  <<
+      \songChords
+      \new ChoirStaff = "firstStaff"
+      <<
+        \new Voice = "firstVoice" { \melodyVoice }
+        \addlyrics { \firstVerse }
+      >>
+  >>
+}
+```
+
+## Swing-Style
+
+Den Swing-Style kann man mittels der Funktion `\swingMusic` erwirken. Das setzt den *folgenden* musikalischen Ausdruck im Swing-Style. `\swingMusic` kann beispielsweise in die `\melodyVoice` gepackt werden (dann geschweifte Klammern nicht vergessen). Die Midi-Ausgabe erfolgt dann sogleich rhythmisch korrekt.
+
+Der Swing-Style kann mithilfe der Funktion `\swingOff` wieder ausgestellt werden. Das ist im unteren Beispiel zwar für die Midi-Ausgabe gar nicht nötig, allerdings printed `\swingOff` auch das entsprechende Zeichen, dass kein Swing-Style mehr gespielt werden soll. Andernfalls wüsste man anhand des Liedblattes nicht, dass der Swing-Style aufhört.
+
+``` lilypond
+melodyVoice = {
+  \global
+  \swingMusic { \firstVoice \interludeVoice }
+  \swingOff \refVoice
+  \bar "|."
+}
+```
+
+## Römische Ziffern
+
+Siehe [Layout-Doku](layout.qmd#sec-romanstanza).

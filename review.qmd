@@ -5,7 +5,7 @@ format: html
 
 ## Ziel
 
-Ziel unseres Review-Prozesses ist hauptsächlich die Sicherstellung der Einhaltung unserer [Standards](./standards.md) sowie die Erhaltung der Qualität des Liederpools. Es wäre toll, jedes neu hinzugekommene Lied inhaltlich (auf musikalische Korrektheit des Satzes) zu prüfen, allerdings ist das sehr zeitaufwendig und manchmal auch gar nicht möglich (wenn zum Beispiel nur eine Person das Lied kennt).
+Ziel unseres Review-Prozesses ist hauptsächlich die Sicherstellung der Einhaltung unserer [Standards](liedsatz_standards.qmd) sowie die Erhaltung der Qualität des Liederpools. Es wäre toll, jedes neu hinzugekommene Lied inhaltlich (auf musikalische Korrektheit des Satzes) zu prüfen, allerdings ist das sehr zeitaufwendig und manchmal auch gar nicht möglich (wenn zum Beispiel nur eine Person das Lied kennt).
 
 ## Überblick
 
@@ -22,7 +22,7 @@ Im Folgenden findest du eine Kurzschrittfolge über den Reviewprozess und eine a
 
 1.  Zu mergenden Branch auschecken
 2.  Läuft die Kompilierung ohne Fehler durch?
-3.  Sind die [Standards](./standards.md) befolgt worden? Stimmen die Autor\*innenangaben?
+3.  Sind die [Standards](liedsatz_standards.qmd) befolgt worden? Stimmen die Autor\*innenangaben?
     1.  Falls ja: Pull-Request genehmigen und mergen
     2.  Falls nein: Korrekturen anfragen
 4.  Am Ende rebasen, genehmigen und fast-forwarden. Fertsch.

@@ -11,8 +11,9 @@ website:
   bread-crumbs: true
   search:
     show-item-context: true
+  reader-mode: true
   navbar: 
-    background: light
+    background: primary
     #logo: ""
     title: "How To Liederbuch"
     left:
@@ -56,6 +57,9 @@ website:
             - section: "Liedersetzen-Prozess"
               contents:
                 - liedsatz_standards.qmd
+                - metadaten.qmd
+                - musikalischer_inhalt.qmd
+                - layout.qmd
                 - quellenlinks.qmd
                 - lifehacks.qmd
             - section: "Review-Prozess"
@@ -66,12 +70,14 @@ website:
 
 bibliography: references.bib
 lang: de
+fig-cap-location: top
 
 format:
   html:
     toc: true
     theme: 
-      light: cosmo
+      light: sandstone
+      dark: darkly
     code-copy: true
     code-overflow: wrap
     grid:

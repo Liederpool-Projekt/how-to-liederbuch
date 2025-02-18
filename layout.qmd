@@ -1,0 +1,56 @@
+---
+title: "Layout"
+format: html
+---
+
+In diesem Abschnitt der Doku zeigen wir Lösungen für Probleme oder Herausforderungen, die sich aus der Arbeit mit unserem System ergeben. Vieles davon wurde von tux entwickelt und befindet sich in den `lilypond-common-includes`, bei manchen Themen verweisen wir auch einfach nur auf die LilyPond-Doku. Dieser Teil ist fokussiert auf die Layout-Fragen.
+
+::: callout-note
+Anmerkung: Die Codebeispiele sind teilweise vereinfacht und verkürzt, um die Probleme und Lösungen möglichst einfach zu erklären. Sie sind damit nicht zwangsläufig eins zu eins übertragbar und anwendbar (und finden sich teils nicht eins zu eins im Liederpool wieder).
+:::
+
+## Zeilenumbrüche in den Strophen  {#sec-zeilenumbrueche}
+
+Problem: Verschiedene Liederbücher haben verschiedene Formate, weswegen es keinen idealen Zeilenumbruch für alle Liederbücher gibt.
+
+Lösung: Versumbrüche werden in der Variable `verse-breaks` anhand von (unsichtbaren) Pausen (`s`)und `\break`-Befehlen bewirkt. Diese Variable wird dann mittels `\override`-Befehl vor den entsprechenden Versen im `TEXT`-Part eingebunden. Beispiel: `` \override #`(verse-break-voice . ,verse-breaks) ``. `verse-break-voice` erstellt eine (unsichtbare) Stimme mit den Umbrüchen aus `verse-breaks` und wird auch für den Fall gesetzt, dass es Strophen und einen Refrain gibt. In dem Falle wird das `\override` immer vor den unterschiedlichen Strophen neu gesetzt (Achtung: `\override` gilt immer nur für das folgende Element, zum Beispiel ein Vers oder ein `\group-verses`-Ausdruck).
+
+Codebeispiel, bei dem Refrain und Strophe auf eine Seite (und damit in ein `\group-verses`) gedruckt werden:
+
+``` lilypond
+verse-breaks = {
+  s2.*4 \break %s2.*4 bedeutet, dass s2. 4 mal wiederholt wird
+  s2.*4 \break
+  s2.*4 \break
+}
+
+ref-breaks = {
+  s2.*2 \break
+  s2.*2 \break
+}
+
+TEXT = \markuplist {
+  \override #`(verse-break-voice . ,verse-breaks)
+  \group-verses {
+    \chordlyrics \firstVerse
+    \chordlyrics \secondVerse
+    \override #`(verse-break-voice . ,ref-breaks)
+    \chordlyrics \refLyrics
+    \chordlyrics \thirdVerse
+  }
+}
+```
+
+## Römische Ziffern  {#sec-romanstanza}
+
+Römische Ziffern (`I`, `II` etc.), um zum Beispiel Übersetzungen mit einem anderen System zu nummerieren als den Originaltext, können erreicht werden, in dem vor den Ausdruck `#(stanza 1)` die Funktion `\romanStanza` aufgerufen wird.
+
+Beispiel:
+
+``` lilypond
+TEXT = \markuplist {
+  \group-verses {
+    \chordlyrics { \romanStanza \firstVerse }
+  }
+}
+```
