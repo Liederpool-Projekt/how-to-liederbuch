@@ -59,7 +59,8 @@ website:
                 - liedsatz_standards.qmd
                 - metadaten.qmd
                 - musikalischer_inhalt.qmd
-                - layout.qmd
+                - liedlayout_doku.qmd
+                - liederbuch_layout.qmd
                 - quellenlinks.qmd
                 - lifehacks.qmd
             - section: "Review-Prozess"

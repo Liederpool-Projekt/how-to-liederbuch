@@ -3,7 +3,7 @@ title: "Metadaten"
 format: html
 ---
 
-Metadaten
+Metadaten, auch Translations und so
 
 ## Autor\*innenangaben
 
