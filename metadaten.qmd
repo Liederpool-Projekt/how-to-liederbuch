@@ -3,7 +3,19 @@ title: "Metadaten"
 format: html
 ---
 
-Metadaten, auch Translations und so
+Metadaten werden grundsätzlich in der Variable `basicSongInfo` gespeichert. Alle untenstehenden Ausführungen beziehen sich auf den Inhalt dieser Variable.
+
+## Titel
+
+Der Titel wird in der Liederpool-Datei mit der Variable `title = ""` angegeben, wobei innerhalb der Anführungszeichen der Titel steht. Als Titel sollte immer der „Originaltitel“ genutzt werden. Dieser kann in der Layout-Datei, sofern gewünscht, einfach überschrieben werden.
+
+## Liedanfang
+
+Der Liedanfang wird mit `starttext = ""` angegeben, wobei innerhalb der Anführungszeichen der Anfang des Liedes steht. Ist der Liedanfang gleich dem Titel, muss er nicht nochmal neu angegeben werden.
+
+## Alternative Titel
+
+Alternative Titel können mittels der Variable `alttitle = ""` angegeben werden, wobei innerhalb der Anführungszeichen der Alternativtitel benannt wird. Es kann auch mehrere alternative Titel geben, dafür kann einfach eine weitere Variable mit der Bezeichnung `altalttitle` genutzt werden. Bei weiteren Titeln dann `altaltalttitle` und so weiter. Es sind bis zu drei Alternativtitel vorgesehen, bei Bedarf könnte man die aber auch noch erweitern.
 
 ## Autor\*innenangaben
 
@@ -113,3 +125,5 @@ kumpelerbe:
 ```
 
 Zur Erklärung: `kumpelerbe` übernimmt die Eigenschaften von `kumpel`, danach wird die Organisation überschrieben auf einen anderen Bund.
+
+## 
