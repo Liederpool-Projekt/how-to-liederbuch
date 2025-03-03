@@ -15,7 +15,7 @@ Der Liedanfang wird mit `starttext = ""` angegeben, wobei innerhalb der Anführu
 
 ## Alternative Titel
 
-Alternative Titel können mittels der Variable `alttitle = ""` angegeben werden, wobei innerhalb der Anführungszeichen der Alternativtitel benannt wird. Es kann auch mehrere alternative Titel geben, dafür kann einfach eine weitere Variable mit der Bezeichnung `altalttitle` genutzt werden. Bei weiteren Titeln dann `altaltalttitle` und so weiter. Es sind bis zu drei Alternativtitel vorgesehen, bei Bedarf könnte man die aber auch noch erweitern.
+Alternative Titel können mittels der Variable `alttitle = #'("")` angegeben werden, wobei innerhalb der Anführungszeichen der Alternativtitel benannt wird. Wenn es mehrere Alternativtitel gibt einfach in Anführungszeichen daneben, zum Beispiel: `alttitle = #'("Alttitle A" "Alttitle B" "Alttitle C")`.
 
 ## Autor\*innenangaben
 
@@ -109,6 +109,10 @@ nocheiner:
 
 ![Output:](images/autor-innen.svg)
 
+::: callout-note
+Wenn der\*die Verfasser\*in unbekannt ist, wird dies folgendermaßen kenntlich gemacht: `("" melody text)`. In diesem Falle kann kein Eintrag in der YAML gefunden werden, deswegen wird für die Optionen Melodie und Text „unbekannt“ ausgegeben.
+:::
+
 ### Sonderfall „Inherits“
 
 Es kann vorkommen, dass Autor\*innen ihre Bundzugehörigkeit ändern oder bestimmte Lieder für eine Band geschrieben haben, allerdings andere nicht. Dann wäre es unpraktisch, dass als Organisation beispielsweise trotzdem „Schlagsaite“ dort steht, obwohl das Lied mit Schlagsaite nichts zu tun hat (außer, dass der Autor bei Schlagsaite spielt). Die Lösung für dieses Problem lautet Inherits. Das Prinzip ist, dass eine neue ID erstellt wird, die die Eigenschaften einer bestimmten ID erbt. Diese Eigenschaften können dann aber überschrieben werden. Im Lied muss man dann auf diese neue ID verweisen. Das sieht zum Beispiel so aus:
@@ -126,4 +130,24 @@ kumpelerbe:
 
 Zur Erklärung: `kumpelerbe` übernimmt die Eigenschaften von `kumpel`, danach wird die Organisation überschrieben auf einen anderen Bund.
 
-## 
+## Textjahr
+
+Über die Variable `year_text = "YYYY"` erfassen wir, wann der Text geschrieben bzw. veröffentlicht wurde. Dabei sollte in die Anführungszeichen nur das Jahr geschrieben werden, wenn genauere Daten vorhanden sind, gerne dahinter auskommentiert. Also zum Beispiel: `year_text = "2004" % 01.01.2004`.
+
+## Melodiejahr
+
+Über die Variable `year_melody = "YYYY"` erfassen wir, wann die Melodie geschrieben bzw. veröffentlicht wurde. Dabei sollte in die Anführungszeichen nur das Jahr geschrieben werden, wenn genauere Daten vorhanden sind, gerne dahinter auskommentiert. Also zum Beispiel: `year_melody = "2004" % 01.01.2004`.
+
+## Infotext
+
+In die Variable `infotext = ""` können Informationen zur Entstehungsgeschichte, von oder über den\*die Autor\*in etc. notiert werden (gerne mit Quellen!). Das darf gerne so ausführlich wie möglich geschehen, damit jedes Liederbuch-Team das ggf. auf dieser Grundlage für sich anpassen kann.
+
+## Übersetzung
+
+Übersetzungen von nicht-deutschsprachigen Texten, können über die Variable `translation = ""` erfasst werden. In der Ausgabe erzeugt dies im Infoteil (wo auch Autor\*innen und die Songinfo landen) eine Zeile, die mit „Übersetzung: “ beginnt.
+
+## Aussprache
+
+## Quellen
+
+Für uns ist es sehr wichtig zu wissen, wo unsere Notationen herkommen und auf welche Quellen wir uns stützen. Deswegen ist es obligatorisch, diese beim Setzen eines Liedes immer anzugeben. Beim Verweis auf Internetlinks, sollte die Seite in der Regel über das Internet Archive archiviert werden. Wie das geht, steht [hier](quellenlinks.qmd). Beim Verweis auf Liederbücher sollte die YAML-Datei `sources.yml` im `data`-Ordner des Liederpool-Repos genutzt werden, um auf die jeweilige ID zu verweisen. Damit sollen Liederbücher gut identifizierbar sein. Seitenangaben sind auch gerne gesehen. Wenn du selbst den Satz notiert hast, schreib deinen Namen dazu, zum Beispiel: „Satz von žuk“. Auch die Information, ob der Satz mit den Autor\*innen abgestimmt wurde, ist relevant und somit anzugeben.
