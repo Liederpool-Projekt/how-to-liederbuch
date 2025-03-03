@@ -204,8 +204,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./layout.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Layout</span></a>
+  <a href="./liedlayout_doku.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lied-Layout</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./liederbuch_layout.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Liederbuch-Layout</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -263,13 +269,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Auf dieser Seite</h2>
    
   <ul>
-  <li><a href="#autorinnenangaben" id="toc-autorinnenangaben" class="nav-link active" data-scroll-target="#autorinnenangaben">Autor*innenangaben</a>
+  <li><a href="#titel" id="toc-titel" class="nav-link active" data-scroll-target="#titel">Titel</a></li>
+  <li><a href="#liedanfang" id="toc-liedanfang" class="nav-link" data-scroll-target="#liedanfang">Liedanfang</a></li>
+  <li><a href="#alternative-titel" id="toc-alternative-titel" class="nav-link" data-scroll-target="#alternative-titel">Alternative Titel</a></li>
+  <li><a href="#autorinnenangaben" id="toc-autorinnenangaben" class="nav-link" data-scroll-target="#autorinnenangaben">Autor*innenangaben</a>
   <ul class="collapse">
   <li><a href="#abruf-in-der-lilyponddatei" id="toc-abruf-in-der-lilyponddatei" class="nav-link" data-scroll-target="#abruf-in-der-lilyponddatei">Abruf in der Lilyponddatei</a></li>
   <li><a href="#aufbau-der-yaml-datei" id="toc-aufbau-der-yaml-datei" class="nav-link" data-scroll-target="#aufbau-der-yaml-datei">Aufbau der YAML-Datei</a></li>
   <li><a href="#mögliche-optionen-beim-abruf" id="toc-mögliche-optionen-beim-abruf" class="nav-link" data-scroll-target="#mögliche-optionen-beim-abruf">Mögliche Optionen beim Abruf</a></li>
   <li><a href="#sonderfall-inherits" id="toc-sonderfall-inherits" class="nav-link" data-scroll-target="#sonderfall-inherits">Sonderfall „Inherits“</a></li>
   </ul></li>
+  <li><a href="#textjahr" id="toc-textjahr" class="nav-link" data-scroll-target="#textjahr">Textjahr</a></li>
+  <li><a href="#melodiejahr" id="toc-melodiejahr" class="nav-link" data-scroll-target="#melodiejahr">Melodiejahr</a></li>
+  <li><a href="#infotext" id="toc-infotext" class="nav-link" data-scroll-target="#infotext">Infotext</a></li>
+  <li><a href="#übersetzung" id="toc-übersetzung" class="nav-link" data-scroll-target="#übersetzung">Übersetzung</a></li>
+  <li><a href="#aussprache" id="toc-aussprache" class="nav-link" data-scroll-target="#aussprache">Aussprache</a></li>
+  <li><a href="#quellen" id="toc-quellen" class="nav-link" data-scroll-target="#quellen">Quellen</a></li>
   </ul>
 </nav>
     </div>
@@ -295,7 +310,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Metadaten</p>
+<p>Metadaten werden grundsätzlich in der Variable <code>basicSongInfo</code> gespeichert. Alle untenstehenden Ausführungen beziehen sich auf den Inhalt dieser Variable.</p>
+<section id="titel" class="level2">
+<h2 class="anchored" data-anchor-id="titel">Titel</h2>
+<p>Der Titel wird in der Liederpool-Datei mit der Variable <code>title = ""</code>&nbsp;angegeben, wobei innerhalb der Anführungszeichen der Titel steht. Als Titel sollte immer der „Originaltitel“ genutzt werden. Dieser kann in der Layout-Datei, sofern gewünscht, einfach überschrieben werden.</p>
+</section>
+<section id="liedanfang" class="level2">
+<h2 class="anchored" data-anchor-id="liedanfang">Liedanfang</h2>
+<p>Der Liedanfang wird mit <code>starttext = ""</code> angegeben, wobei innerhalb der Anführungszeichen der Anfang des Liedes steht. Ist der Liedanfang gleich dem Titel, muss er nicht nochmal neu angegeben werden.</p>
+</section>
+<section id="alternative-titel" class="level2">
+<h2 class="anchored" data-anchor-id="alternative-titel">Alternative Titel</h2>
+<p>Alternative Titel können mittels der Variable <code>alttitle = #'("")</code> angegeben werden, wobei innerhalb der Anführungszeichen der Alternativtitel benannt wird. Wenn es mehrere Alternativtitel gibt einfach in Anführungszeichen daneben, zum Beispiel: <code>alttitle = #'("Alttitle A" "Alttitle B" "Alttitle C")</code>.</p>
+</section>
 <section id="autorinnenangaben" class="level2">
 <h2 class="anchored" data-anchor-id="autorinnenangaben">Autor*innenangaben</h2>
 <p>Autor*inneninformationen werden im neuen System aus einer YAML-Datei gezogen. Das bedeutet, in der Lilyponddatei wird lediglich auf eine ID einer Autorin verwiesen, deren Informationen in der YAML-Datei unter dieser ID zu finden sind.</p>
@@ -375,6 +402,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><img src="images/autor-innen.svg" class="img-fluid figure-img"></p>
 </figure>
 </div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hinweis
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Wenn der*die Verfasser*in unbekannt ist, wird dies folgendermaßen kenntlich gemacht: <code>("" melody text)</code>. In diesem Falle kann kein Eintrag in der YAML gefunden werden, deswegen wird für die Optionen Melodie und Text „unbekannt“ ausgegeben.</p>
+</div>
+</div>
 </section>
 <section id="sonderfall-inherits" class="level3">
 <h3 class="anchored" data-anchor-id="sonderfall-inherits">Sonderfall „Inherits“</h3>
@@ -388,9 +428,32 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">inherits</span><span class="kw">:</span><span class="at"> kumpel</span></span>
 <span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">organization</span><span class="kw">:</span><span class="at"> Bund der crazy Kumpels</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Zur Erklärung: <code>kumpelerbe</code> übernimmt die Eigenschaften von <code>kumpel</code>, danach wird die Organisation überschrieben auf einen anderen Bund.</p>
-
-
 </section>
+</section>
+<section id="textjahr" class="level2">
+<h2 class="anchored" data-anchor-id="textjahr">Textjahr</h2>
+<p>Über die Variable <code>year_text = "YYYY"</code> erfassen wir, wann der Text geschrieben bzw. veröffentlicht wurde. Dabei sollte in die Anführungszeichen nur das Jahr geschrieben werden, wenn genauere Daten vorhanden sind, gerne dahinter auskommentiert. Also zum Beispiel: <code>year_text = "2004" % 01.01.2004</code>.</p>
+</section>
+<section id="melodiejahr" class="level2">
+<h2 class="anchored" data-anchor-id="melodiejahr">Melodiejahr</h2>
+<p>Über die Variable <code>year_melody = "YYYY"</code> erfassen wir, wann die Melodie geschrieben bzw. veröffentlicht wurde. Dabei sollte in die Anführungszeichen nur das Jahr geschrieben werden, wenn genauere Daten vorhanden sind, gerne dahinter auskommentiert. Also zum Beispiel: <code>year_melody = "2004" % 01.01.2004</code>.</p>
+</section>
+<section id="infotext" class="level2">
+<h2 class="anchored" data-anchor-id="infotext">Infotext</h2>
+<p>In die Variable <code>infotext = ""</code> können Informationen zur Entstehungsgeschichte, von oder über den*die Autor*in etc. notiert werden (gerne mit Quellen!). Das darf gerne so ausführlich wie möglich geschehen, damit jedes Liederbuch-Team das ggf. auf dieser Grundlage für sich anpassen kann.</p>
+</section>
+<section id="übersetzung" class="level2">
+<h2 class="anchored" data-anchor-id="übersetzung">Übersetzung</h2>
+<p>Übersetzungen von nicht-deutschsprachigen Texten, können über die Variable <code>translation = ""</code> erfasst werden. In der Ausgabe erzeugt dies im Infoteil (wo auch Autor*innen und die Songinfo landen) eine Zeile, die mit „Übersetzung: “ beginnt.</p>
+</section>
+<section id="aussprache" class="level2">
+<h2 class="anchored" data-anchor-id="aussprache">Aussprache</h2>
+</section>
+<section id="quellen" class="level2">
+<h2 class="anchored" data-anchor-id="quellen">Quellen</h2>
+<p>Für uns ist es sehr wichtig zu wissen, wo unsere Notationen herkommen und auf welche Quellen wir uns stützen. Deswegen ist es obligatorisch, diese beim Setzen eines Liedes immer anzugeben. Beim Verweis auf Internetlinks, sollte die Seite in der Regel über das Internet Archive archiviert werden. Wie das geht, steht <a href="./quellenlinks.html">hier</a>. Beim Verweis auf Liederbücher sollte die YAML-Datei <code>sources.yml</code> im <code>data</code>-Ordner des Liederpool-Repos genutzt werden, um auf die jeweilige ID zu verweisen. Damit sollen Liederbücher gut identifizierbar sein. Seitenangaben sind auch gerne gesehen. Wenn du selbst den Satz notiert hast, schreib deinen Namen dazu, zum Beispiel: „Satz von žuk“. Auch die Information, ob der Satz mit den Autor*innen abgestimmt wurde, ist relevant und somit anzugeben.</p>
+
+
 </section>
 
 </main> <!-- /main -->

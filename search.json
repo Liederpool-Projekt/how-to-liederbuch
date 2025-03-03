@@ -213,480 +213,51 @@
     ]
   },
   {
-    "objectID": "repostruktur.html",
-    "href": "repostruktur.html",
-    "title": "Struktur des Repositories",
+    "objectID": "liedlayout.html",
+    "href": "liedlayout.html",
+    "title": "Liedlayout",
     "section": "",
-    "text": "Nun ein paar Worte zu der Struktur deines Repositories.",
+    "text": "Jetzt hast du das Lied gesetzt und in den Liederpool eingebracht. Wie toll! Das ist der wichtigste Schritt, weil er der grundlegendste ist. Alle, die Zugriff auf den Liederpool haben, können das Lied jetzt auch verwenden.\nDer nächste Schritt ist, das Lied für dein spezifisches Liederbuch zu layouten. Ich kann dich schonmal beruhigen: Das geht viel leichter als das Setzen in den Liederpool, sogar richtig schnell. Und das ist auch der große Vorteil von unserem System. Die Lieder, die schon im Pool sind, machen deutlich weniger Arbeit – du profitierst also sehr von der Arbeit anderer. Aber genug der langen Vorrede. Los geht’s!",
     "crumbs": [
       "Einführung",
       "Lieder setzen",
-      "Struktur des Repositories"
+      "Liedlayout"
     ]
   },
   {
-    "objectID": "repostruktur.html#der-lieder-ordner",
-    "href": "repostruktur.html#der-lieder-ordner",
-    "title": "Struktur des Repositories",
-    "section": "Der lieder-Ordner",
-    "text": "Der lieder-Ordner\nIm Ordner lieder befinden sich die Layout-Dateien deines Liederbuchs. Diese Dateien sind jeweils in einem Ordner, der denselben Namen hat wie die Dateien. Die identische Benennung ist sehr wichtig! Es empfiehlt sich, die Benennung von der Liederpool-Datei zu übernehmen.\nIm Ordner lieder befinden sich also Ordner, in denen die Layout-Dateien liegen. Im Ordner ueber_meiner_heimat_fruehling liegt also eine Datei namens ueber_meiner_heimat_fruehling.ly.",
+    "objectID": "liedlayout.html#layout-datei-erstellen",
+    "href": "liedlayout.html#layout-datei-erstellen",
+    "title": "Liedlayout",
+    "section": "Layout-Datei erstellen",
+    "text": "Layout-Datei erstellen\n\\version \"2.25.8\"\n\n\\include \"../../lilypond-custom-includes/base_config.ly\"\n\\include \"../../lilypond-song-includes/liedbausteine/\"\n\nHEADER = \\bookpart {\n  \\header {\n    \\basicSongInfo\n    %infotext = \"\"\n    categories = \"\"\n  }\n}\n\n\\include \"../../lilypond-common-includes/standalone_output.ly\"\nWenn du ein Repository mithilfe unseres Vorlagenrepos erstellt hast, findest du im Ordner lieder einen Ordner 00_vorlage_light. In diesem Ordner öffnest du die Datei vorlage_light.ly. Als erstes solltest du die Datei neu abspeichern. Dazu drücke einfach Strg + Umschalt + S oder alternativ im Menü Datei -&gt; Save -&gt; Speichern unter. Gehe dann in den Ordner lieder deines Repositories und lege einen neuen Ordner an. Benenne ihn am besten nach demselben Schema wie im Liederpool, in unserem Falle also ueber_meiner_heimat_fruehling. Gehe in den Ordner und speichere die Datei unter demselben Namen dort ab. Fertig.",
     "crumbs": [
       "Einführung",
       "Lieder setzen",
-      "Struktur des Repositories"
+      "Liedlayout"
     ]
   },
   {
-    "objectID": "repostruktur.html#der-liederbuecher-ordner",
-    "href": "repostruktur.html#der-liederbuecher-ordner",
-    "title": "Struktur des Repositories",
-    "section": "Der liederbuecher-Ordner",
-    "text": "Der liederbuecher-Ordner\nDer Ordner liederbuecher ist für deine Liederbücher da, die du anhand dieses Repos erstellst. Für jedes Liederbuch gibt es einen Ordner, in dem eine LilyPond-Datei liegt, mit der das Liederbuch erstellt wird.",
+    "objectID": "liedlayout.html#auf-die-inhaltsdatei-referenzieren",
+    "href": "liedlayout.html#auf-die-inhaltsdatei-referenzieren",
+    "title": "Liedlayout",
+    "section": "Auf die Inhaltsdatei referenzieren",
+    "text": "Auf die Inhaltsdatei referenzieren\nNun ist der erste Schritt, auf die Inhaltsdatei zu referenzieren, die wir eben im Liederpool erstellt haben. Dazu vervollständigst du den Pfad: \\include \"../../lilypond-song-includes/liedbausteine/\". Tippe dazu einfach nur den Beginn des Dateinamen (also des Liedtitels nach dem bekannten Schema) ein. Unter den dann erscheinenden Optionen kannst du dir bereits das passende Lied auswählen.",
     "crumbs": [
       "Einführung",
       "Lieder setzen",
-      "Struktur des Repositories"
+      "Liedlayout"
     ]
   },
   {
-    "objectID": "repostruktur.html#der-lilypond-common-includes-ordner",
-    "href": "repostruktur.html#der-lilypond-common-includes-ordner",
-    "title": "Struktur des Repositories",
-    "section": "Der lilypond-common-includes-Ordner",
-    "text": "Der lilypond-common-includes-Ordner\nIn diesem Ordner liegen die LilyPond-Skripte, mit denen unser System arbeitet. Technisch gesehen handelt es sich dabei um ein Git-Submodul, also um ein eigenes Repository, das in dein Repository eingebunden ist.",
+    "objectID": "liedlayout.html#layouten",
+    "href": "liedlayout.html#layouten",
+    "title": "Liedlayout",
+    "section": "Layouten",
+    "text": "Layouten\nJetzt geht’s ans Layout. Dazu kopierst du dir alles ab dem MUSIC-Teil aus der Inhaltsdatei in die Layoutdatei rüber. Das sieht bei uns dann am Ende so aus:\n\\version \"2.25.8\"\n\n\\include \"../../lilypond-custom-includes/base_config.ly\"\n\\include \"../../lilypond-song-includes/liedbausteine/\"\n\nHEADER = \\bookpart {\n  \\header {\n    \\basicSongInfo\n    %infotext = \"\"\n    categories = \"\"\n  }\n}\n\nMUSIC = {\n  &lt;&lt;\n      \\songChords\n      \\new ChoirStaff = \"firstStaff\"\n      &lt;&lt;        \n        \\new Voice = \"firstVoice\" { \\melodyVoice }\n        \\addlyrics { \\firstVerse }\n        \\addlyrics { \\secondVerse }\n        \\addlyrics { \\thirdVerse }\n        \\addlyrics { \\fourthVerse }\n      &gt;&gt;\n  &gt;&gt;\n}\n\nverse-breaks = {\n  s1 s \\break\n  s s \\break\n  s s \\break\n  s s \\break\n}\n\nTEXT = \\markuplist {\n  \\override #`(verse-break-voice . ,verse-breaks)\n  \\group-verses {\n    \\chordlyrics \\firstVerse\n    \\chordlyrics \\secondVerse\n    \\chordlyrics \\thirdVerse\n    \\chordlyrics \\fourthVerse\n  }\n}\n\n\\include \"../../lilypond-common-includes/standalone_output.ly\"\nJetzt kannst du schon einmal kompilieren und schauen, wie es aussieht. Der letzte Schritt ist nun der Feinschliff. Du kannst dich nun entscheiden: Möchtest du den Text direkt unter den Noten oder als Strophen mit Akkorden unterm gesamten Notensatz. Alles, was du nicht willst, kommentierst du einfach aus. Wenn du also nur die erste Strophe unter den Noten haben möchtest und den Rest unter dem Satz, sähe das so aus:\n\\version \"2.25.8\"\n\n\\include \"../../lilypond-custom-includes/base_config.ly\"\n\\include \"../../lilypond-song-includes/liedbausteine/\"\n\nHEADER = \\bookpart {\n  \\header {\n    \\basicSongInfo\n    %infotext = \"\"\n    categories = \"\"\n  }\n}\n\nMUSIC = {\n  &lt;&lt;\n      \\songChords\n      \\new ChoirStaff = \"firstStaff\"\n      &lt;&lt;        \n        \\new Voice = \"firstVoice\" { \\melodyVoice }\n        \\addlyrics { \\firstVerse }\n        %\\addlyrics { \\secondVerse }\n        %\\addlyrics { \\thirdVerse }\n        %\\addlyrics { \\fourthVerse }\n      &gt;&gt;\n  &gt;&gt;\n}\n\nverse-breaks = {\n  s1 s \\break\n  s s \\break\n  s s \\break\n  s s \\break\n}\n\nTEXT = \\markuplist {\n  \\override #`(verse-break-voice . ,verse-breaks)\n  \\group-verses {\n    %\\chordlyrics \\firstVerse\n    \\chordlyrics \\secondVerse\n    \\chordlyrics \\thirdVerse\n    \\chordlyrics \\fourthVerse\n  }\n}\n\n\\include \"../../lilypond-common-includes/standalone_output.ly\"\nJetzt kannst du kompilieren und schauen, ob es dir schon gefällt. Wenn du wölltest, könntest du auch noch die verse-breaks nach Belieben anpassen. Wie das geht, weißt du ja schon.\nUnd fertig ist dein erstes Liederbuch-Lied!",
     "crumbs": [
       "Einführung",
       "Lieder setzen",
-      "Struktur des Repositories"
-    ]
-  },
-  {
-    "objectID": "repostruktur.html#der-lilypond-custom-includes-ordner",
-    "href": "repostruktur.html#der-lilypond-custom-includes-ordner",
-    "title": "Struktur des Repositories",
-    "section": "Der lilypond-custom-includes-Ordner",
-    "text": "Der lilypond-custom-includes-Ordner\nIn diesem Ordner kannst du, wie der Name schon andeutet, persönliche Änderungen am Layout vornehmen.\nIn der base_config.ly kannst du Änderungen, die den LAYOUT-Blog betreffen (das sind, grob gesagt, Layoutanpassungen bezüglich des Notensatzes), vornehmen. In der categories.ly kannst du die Kategorien deines Liederbuchs konfigurieren. Und in der custom_style_overrides.ly kannst du das Layout des Liederbuchs formatieren, also zum Beispiel die Schriftgröße, Schriftart und vieles mehr.",
-    "crumbs": [
-      "Einführung",
-      "Lieder setzen",
-      "Struktur des Repositories"
-    ]
-  },
-  {
-    "objectID": "repostruktur.html#der-lilypond-song-includes-ordner",
-    "href": "repostruktur.html#der-lilypond-song-includes-ordner",
-    "title": "Struktur des Repositories",
-    "section": "Der lilypond-song-includes-Ordner",
-    "text": "Der lilypond-song-includes-Ordner\nIn diesem Ordner findest du die Liederpool-Dateien im Ordner liedbausteine. Außerdem findest du unsere Autor*innendatei unter data. Technisch gesehen handelt es sich auch hier um ein Git-Submodul.",
-    "crumbs": [
-      "Einführung",
-      "Lieder setzen",
-      "Struktur des Repositories"
-    ]
-  },
-  {
-    "objectID": "repostruktur.html#die-.gitignore-datei",
-    "href": "repostruktur.html#die-.gitignore-datei",
-    "title": "Struktur des Repositories",
-    "section": "Die .gitignore-Datei",
-    "text": "Die .gitignore-Datei\nDiese Datei verhindert, dass dir bestimmte Dateien, Dateiarten, Ordner, … im Git-Workingtree als bearbeitet angezeigt werden. Das verhindert, dass PDF-Dateien ständig neu ins Remote-Repo hochgeladen werden, weil sie sich ja bei jedem Kompilieren verändern. Deswegen kann man Git in dieser Datei sagen, welche Dateien man grundsätzlich nicht hochladen möchte.\nDeine .gitignore-Datei könnte zum Beispiel so aussehen:\n# ---&gt; Lilypond\n*.pdf\n*.ps\n*.midi\n*.mid\n*.log\n*.csv\n*~\nWenn du genauer wissen willst, was das bedeutet, dann wird das hier genauer erklärt.",
-    "crumbs": [
-      "Einführung",
-      "Lieder setzen",
-      "Struktur des Repositories"
-    ]
-  },
-  {
-    "objectID": "metadaten.html",
-    "href": "metadaten.html",
-    "title": "Metadaten",
-    "section": "",
-    "text": "Metadaten",
-    "crumbs": [
-      "Doku",
-      "Liedersetzen-Prozess",
-      "Metadaten"
-    ]
-  },
-  {
-    "objectID": "metadaten.html#autorinnenangaben",
-    "href": "metadaten.html#autorinnenangaben",
-    "title": "Metadaten",
-    "section": "Autor*innenangaben",
-    "text": "Autor*innenangaben\nAutor*inneninformationen werden im neuen System aus einer YAML-Datei gezogen. Das bedeutet, in der Lilyponddatei wird lediglich auf eine ID einer Autorin verwiesen, deren Informationen in der YAML-Datei unter dieser ID zu finden sind.\n\nAbruf in der Lilyponddatei\nDie ID der beiden Autor*innen heißt in diesem Fall Autor1 beziehungsweise Autor2.\nbasicSongInfo = \\header {\n  title = \"Liedtitel\"\n  alttitle = \"Liedanfang\"\n  authors = #'(\n    (\"Autor1\" text)\n    (\"Autor2\" melody))\n  year_text = \"2024\"\n  year_melody = \"2024\"\n  infotext = \"Infotext\"\n}\n\n\nAufbau der YAML-Datei\nDie YAML ist wie folgt aufgebaut und alphabetisch sortiert. Die ID für eine*n Autor*in sollte, wenn vorhanden und eindeutig, dem Fahrtennamen entsprechen. Wenn nicht vorhanden oder uneindeutig dem bürgerlichen Namen nach dem Schema VornameNachname. Das hat keine technischen Gründe, sondern soll nur die Arbeit erleichtern. Wenn es einheitlich ist, muss man vielleicht nicht jedes Mal in der YAML-Datei nachschauen, wie nochmal die ID von Autor*in XYZ war.\nAutor1:\n  name: Vorname Nachname\n  trail_name: Autor1\n  birth_year: \"1950\"\n  organization: Bund der Autoren\nAutor2:\n  name: Name Surname\n  trail_name: Autor2\n  death_year: \"2050\"\n  organization: Autorenbund\n\n\nMögliche Optionen beim Abruf\nDa es zahlreiche Wünsche etc. bei der Autor*innenschaft von Liedern gibt, ist das System möglichst umfassend gestaltet. Der grundsätzliche Aufbau ist, dass in Klammern immer die ID benannt wird sowie die Eigenschaften, die diese ID hat (zum Beispiel die Worte geschrieben, die zweite Stimme usw.). Folgende Möglichkeiten gibt es:\n\ntext: Die Person hat am Text mitgeschrieben.\nmelody: Die Person hat an der Melodie mitgeschrieben.\ncomposition: Die Person hat am Satz mitgeschrieben.\n(verse 1): Die Person hat an der ersten Strophe mitgeschrieben.\n\n(verse 1) (verse 2): Die Person hat an der ersten und zweiten Strophe mitgeschrieben.\n\n(voice 2): Die Person hat an der zweiten Stimme mitgeschrieben.\n\n(voice 2) (voice 3): Die Person hat an der zweiten und dritten Stimme mitgeschrieben.\n\ninterlude: Die Person hat am Zwischenspiel mitgeschrieben.\nbridge: Die Person hat an der Bridge mitgeschrieben.\ntranslation: Die Person hat an der Übersetzung mitgeschrieben.\n(meloverse 1): Die Person hat an der ersten Melodiestrophe mitgeschrieben (damit ist die Melodie der ersten Strophe gemeint).\n\n(meloverse 1) (meloverse 2): Die Person hat an der ersten und zweiten Melodiestrophe mitgeschrieben (damit ist die Melodie der ersten Strophe gemeint).\n\n\nDas sind alle möglichen Beispiele, die durchaus schon größtenteils einmal benötigt wurden. Allerdings ist offensichtlich, dass diese Möglichkeitsvielfalt keinesfalls immer sinnvoll ist.\nFür alle diese Möglichkeiten finden sich Anwendungsbeispiele im Repository lilypond-vorlagen, dort im Ordner Lieder (Datei authors-sandbox.ly) (Link). Da kann man sich gut austoben. So sieht das dann aus:\ndude:\n  birth_year: '1950'\n  name: Krasser Dude\n  organization: Bund der krassen Dudes\n  trail_name: dud\nkumpel:\n  death_year: '2050'\n  name: Krasser Kumpel\n  organization: Bund der krassen Kumpels\n  trail_name: dudekumpel\nkumpelerbe:\n  inherits: kumpel\n  organization: Bund der crazy Kumpels\nnocheiner:\n  death_year: '2050'\n  name: Jemand anderes\n  \n\n\nOutput:\n\n\n\n\n\nSonderfall „Inherits“\nEs kann vorkommen, dass Autor*innen ihre Bundzugehörigkeit ändern oder bestimmte Lieder für eine Band geschrieben haben, allerdings andere nicht. Dann wäre es unpraktisch, dass als Organisation beispielsweise trotzdem „Schlagsaite“ dort steht, obwohl das Lied mit Schlagsaite nichts zu tun hat (außer, dass der Autor bei Schlagsaite spielt). Die Lösung für dieses Problem lautet Inherits. Das Prinzip ist, dass eine neue ID erstellt wird, die die Eigenschaften einer bestimmten ID erbt. Diese Eigenschaften können dann aber überschrieben werden. Im Lied muss man dann auf diese neue ID verweisen. Das sieht zum Beispiel so aus:\nkumpel:\n  name: Krasser Kumpel\n  trail_name: kumpel\n  death_year: \"2050\"\n  organization: Bund der krassen Kumpels\nkumpelerbe:\n  inherits: kumpel\n  organization: Bund der crazy Kumpels\nZur Erklärung: kumpelerbe übernimmt die Eigenschaften von kumpel, danach wird die Organisation überschrieben auf einen anderen Bund.",
-    "crumbs": [
-      "Doku",
-      "Liedersetzen-Prozess",
-      "Metadaten"
-    ]
-  },
-  {
-    "objectID": "liedersetzen.html",
-    "href": "liedersetzen.html",
-    "title": "Liedersetzen",
-    "section": "",
-    "text": "Jetzt kann es losgehen mit dem Lieder setzen. Damit du möglichst einfach reinkommst, erklären wir dir gleich anhand eines Beispiels, dass du bei dir nachvollziehen kannst, wie unser System funktioniert.\nVorneweg gibt es aber noch ein paar wichtige Links und Helfer:\n\nHier gibt es eine LilyPond-Einführung von den LilyPond-Entwickler*innen. Du kannst die auch nochmal machen, aber viele grundlegenden Sachen lernst du in diesem Tutorial schon kennen.\nHier findest du die LilyPond-Dokumentation. Das ist im Grunde der wichtigste und erste Ort, um herauszufinden, wie du musikalische Notation in LilyPond umsetzen kannst. Auch die meisten aufkommenden Probleme lassen sich schon allein mit der Doku beheben. Zusätzlich kannst du auch gerne unsere Setzer*innen-Gruppe auf Signal dafür nutzen.\n\nSo, jetzt geht’s los!",
-    "crumbs": [
-      "Einführung",
-      "Lieder setzen"
-    ]
-  },
-  {
-    "objectID": "doku.html",
-    "href": "doku.html",
-    "title": "Doku",
-    "section": "",
-    "text": "Das ist unsere Doku für die Liederpool-spezifischen Befehle und Standards. Hier dokumentieren wir unsere Standards beim Setzen, Lösungen für „Probleme“ in der Anwendung unseres Systems und eigene definierte Befehle, die nicht Teil des Standard-LilyPond sind.\nGrundsätzlich hilft dir bei allen LilyPond-spezifischen Fragen oder Problemen natürlich die LilyPond-Doku.",
-    "crumbs": [
-      "Doku"
-    ]
-  },
-  {
-    "objectID": "git_verstehen.html",
-    "href": "git_verstehen.html",
-    "title": "Was ist eigentlich Git? 2.0",
-    "section": "",
-    "text": "Git ist ein Versionierungssystem, welches frei als Open-Source-Software zur Verfügung gestellt wird. Git wird für die Versionskontrolle (stetige Protokollierung von Änderungen) von Dateien eingesetzt.\nVor allem im Programmierbereich dient Git dazu, die eigenen Änderungen zu überwachen, sie rückgängig zu machen. Die wesentliche Nutzung findet in sogenannten „Repositories“ (Repos) statt. Das ist quasi ein Ordner, in dem sich Dateien und andere Ordner befinden, quasi eine Art „Arbeitsordner“ oder „Arbeitsverzeichnis“. Dabei gibt es verschiedene Orte, an dem dieser Arbeitsordner liegt.\nDadurch ergeben sich am Repo für Bearbeiter*innen folgende Möglichkeiten:",
-    "crumbs": [
-      "Doku",
-      "Review-Prozess",
-      "Was ist eigentlich Git? 2.0"
-    ]
-  },
-  {
-    "objectID": "git_verstehen.html#spielerisch-git-lernen",
-    "href": "git_verstehen.html#spielerisch-git-lernen",
-    "title": "Was ist eigentlich Git? 2.0",
-    "section": "Spielerisch Git lernen",
-    "text": "Spielerisch Git lernen\nHier gibt es eine tolle Spielwiese zum Ausprobieren: https://learngitbranching.js.org/. Sinnvoll für uns ist mindestens die Einführung.",
-    "crumbs": [
-      "Doku",
-      "Review-Prozess",
-      "Was ist eigentlich Git? 2.0"
-    ]
-  },
-  {
-    "objectID": "git_verstehen.html#git-für-liederbücher-nutzen",
-    "href": "git_verstehen.html#git-für-liederbücher-nutzen",
-    "title": "Was ist eigentlich Git? 2.0",
-    "section": "Git für Liederbücher nutzen",
-    "text": "Git für Liederbücher nutzen\nWie das geht haben wir dir im Anfangs-Tutorial zusammengestellt.",
-    "crumbs": [
-      "Doku",
-      "Review-Prozess",
-      "Was ist eigentlich Git? 2.0"
-    ]
-  },
-  {
-    "objectID": "git_verstehen.html#grundbegriffe-im-git-alltag",
-    "href": "git_verstehen.html#grundbegriffe-im-git-alltag",
-    "title": "Was ist eigentlich Git? 2.0",
-    "section": "Grundbegriffe im Git-Alltag",
-    "text": "Grundbegriffe im Git-Alltag\nAnmerkungen: alphabetische Sortierung. Als Befehle wurden jeweils die Original-Kommandozeilenbefehle von Git angegeben, mithilfe derer du herausfinden kannst, wie das dann in deiner GUI funktioniert.\n\nBranches\nBeim Einsatz von Git dienen Branches (engl.: to branch – sich verzweigen) dazu, um einen separaten Arbeitszweig zu erstellen. Dieser kann dann auch als neuer Kontext gesehen werden, in dem gearbeitet wird. So kann z.B. die Programmierung eines Sicherheits-Patches in einem eigenen Branch erfolgen (im Kontext des Patches), der bei Fertigstellung und nach dem Testen zurück in den Master-Zweig eingearbeitet wird. Das Wiedereinführen funktioniert bei uns über einen Pull-Request.\nBefehl: git branch NAME\n\n\nCheckout\nDas Wechseln von einem Branch in einen anderen Branch.\nBefehl: git checkout BRANCH\n\n\nCherry-Picking\nCherry-Picking in Git ist ein Befehl, mit dem du einen bestimmten Commit (eine Änderung) aus einem Branch (Zweig) auswählen und in einen anderen Branch übertragen kannst.\nStell dir vor, du hast zwei Zweige: main und feature. Wenn du eine bestimmte Änderung, die du im feature-Zweig gemacht hast, auch im main-Zweig haben möchtest, kannst du den Cherry-Pick-Befehl verwenden. Das funktioniert so:\n\nDu wechselst zum Ziel-Branch (z. B. main).\nDu führst den Befehl git cherry-pick &lt;commit-hash&gt; aus, wobei &lt;commit-hash&gt; die ID des Commits ist, den du übernehmen möchtest.\nIn einer GUI kannst du vermutlich einfach auf den Commit mit Rechtsklick klicken und solltest dann eine Option Cherry-Pick haben.\n\nGit nimmt dann nur diese spezifische Änderung und fügt sie in den aktuellen Branch ein, ohne die anderen Änderungen im feature-Zweig zu übernehmen.\nDas ist nützlich, wenn du nur bestimmte Features oder Bugfixes übernehmen möchtest, ohne alles andere mit zu übernehmen. Für uns ist Cherry-Picking hilfreich, wenn du ein Liederbuch machst, aber nicht alle Pull-Requests der neuen Lieder schon gereviewed wurden. Dann kannst du einen eigenen Branch fürs Liederbuch erstellen und einfach die Commits, die dir fehlen in deinen Liederbuch-Branch cherry-picken.\n\n\nCommit\nEin Commit in einem Git-Repository speichert eine Abbildung aller Dateien in deinem Projektverzeichnis. Es ist wie ein riesiges Kopieren und Einfügen, nur besser.\nAllerdings will Git die Commits so schlank wie möglich halten, also kopiert es nicht einfach stur das ganze Verzeichnis jedes Mal wenn du committest. Es kann (wenn möglich) Commits als Menge von Änderungen zusammenpacken, von einer Version des Repositorys zur nächsten.\nAußerdem führt Git ein Protokoll darüber, welche Commits wann gemacht wurden, und welcher auf welchen folgt. Dieses Protokoll zu haben ist eine tolle Sache für jeden, der an einem Projekt arbeitet. Commits sind sehr ressourcenschonend, und zwischen ihnen wechseln geht superschnell!\nBefehl: git commit\n\n\nFetch\nDer Befehl git fetch importiert Commits von einem Remote-Repository in das lokale Repo. Dabei werden die Commits des Remote-Repos aber nicht ins lokale Repo überführt (wie bei git pull). Fetching ist die geeignete Methode, um einzusehen, woran andere gearbeitet haben. Da auf diese Weise importierte Inhalte von Remote-Branches repräsentiert werden, haben sie absolut keinen Effekt auf die lokale Entwicklungsarbeit.\nAlternative Erklärung: git fetch holt Änderungen aus dem Remote-Repository, aber wendet diese nicht auf den lokalen Code an.\n\n\nForce-Push\nEin Force-Push in Git ist ein Befehl, der es dir ermöglicht, Änderungen an einem Remote-Branch (einem Branch auf einem Server) zu senden, selbst wenn diese Änderungen nicht mit dem aktuellen Stand des Remote-Branches übereinstimmen.\nNormalerweise überprüft Git, ob dein lokaler Branch (dein Arbeitszweig) und der Remote-Branch synchron sind, bevor du Änderungen hochlädst. Wenn sie nicht übereinstimmen, gibt Git eine Fehlermeldung aus, um zu verhindern, dass du möglicherweise wichtige Änderungen überschreibst.\nMit git push --force (oder git push -f) sagst du Git, dass du die aktuellen Änderungen im Remote-Branch überschreiben möchtest, egal was dort steht.\nDas kann nützlich sein, wenn du zum Beispiel:\n\nFehler in einem Commit korrigiert hast und die Historie neu schreiben möchtest.\nCommits zurückgesetzt oder gelöscht hast und die Änderungen trotzdem hochladen möchtest.\n\nAchtung: Force-Push kann gefährlich sein, weil es die Historie des Remote-Branches verändert und möglicherweise die Arbeit anderer Entwickler überschreibt. Daher sollte man es mit Vorsicht verwenden und sicherstellen, dass man weiß, was man tut.\n\n\n\n\n\n\nWarnung\n\n\n\nForce-Pushing nutzen wir beispielsweise, wenn du Fehler in einem Lied korrigierst, das sich im Review-Stadium befindet. Dafür möchten wir nicht mehrere Commits haben. Mach dir dabei bewusst, dass du die Änderungen überschreibst – es sollte also sicher sein, dass durch deine Änderungen nichts wichtiges verloren geht. Wenn du dir nicht sicher bist, ob deine Änderungen auf Zustimmung stoßen, mach einen extra Commit und frag nach. Die Commits können dann in einem zweiten Schritt zusammengeführt werden.\n\n\nBefehl: git push --force\n\n\nHEAD\nHEAD ist ein Alias für den Commit, der gerade ausgecheckt ist – es ist im Prinzip der Commit, an den du deinen nächsten Commit hängst.\nHEAD zeigt immer auf den neuesten Commit. Die meisten Git-Befehle, die den Baum verändern, fangen damit an, dass sie HEAD verschieben.\nNormalerweise zeigt HEAD auf einen Branch-Namen (z.B. bugFix). Wenn du einen Commit machst, wird bugFix auf diesen Commit geschoben, und HEAD (da es auf bugFix zeigt) automatisch auch.\n\n\nMerge\nDie einfachste Methode, mit der man Branches zusammenführen kann, ist git merge. Das Mergen erzeugt in git einen speziellen Commit, der zwei Vorgänger hat. Ein solcher Commit bedeutet im Prinzip “ich möchte alle Arbeit von dem Vorgänger hier und dem dort und allen ihren jeweiligen Vorgängern miteinander kombinieren”.\nBefehl: git merge\n\n\nPull\nMit dem pull-Befehl kann man Änderungen aus einem Remote-Repository holen und mit dem lokalen Repository, also den Dateien, an denen man derzeit arbeitet, synchronisieren.\n\n\nPush\nMit git push können Commits nun von einem lokalen Repository in ein Remote-Repo transferiert werden. Dieser Befehl ist das Gegenstück zu git fetch. Während beim Fetching Commits in lokale Branches importiert werden, exportiert git push Commits in Remote-Branches. Es besteht die Möglichkeit, Änderungen zu überschreiben; entsprechend sorgfältig sollte der Befehl genutzt werden.\n\n\nRepository\nIn ein Repository bzw. einem Repo befinden sich alle Dateien inklusive derer vorangegangenen Versionen. Dadurch stehen stets alle Änderungen zur Verfügung, die von einer Datei ins Repo gespielt wurden und es kann nachvollzogen werden wer, wann, welche Änderungen durchgeführt hat. Das besondere an Git ist, dass jede lokale Working Directory eines Users (ein „Klon“ - via git clone) wieder ein vollständiges, eigenes, lokales Repo darstellt. Es existieren somit mehrere Kopien der Repos, der, der einen Klon besitzt, kann daran arbeiten – inklusive kompletter History, auch offline und ohne Abhängigkeit von einem zentralen Server. Die Änderungen aus dem eigenen Repo / der Working Copy können dann auf einen Ruck oder Schritt für Schritt, wenn sie als public angesehen werden, wieder in das Remote-Repo „gepusht“ werden (git push).\n\n\nRebase\nDer zweite Weg um Inhalte aus verschiedenen Branches zu kombinieren istgit rebase. Rebasen nimmt im Prinzip eine Menge von Commits, „kopiert“ sie und packt sie auf etwas anderes drauf.\nAuch wenn das erst mal komisch klingt, liegt der Vorteil von Rebase darin, dass man es benutzen kann um hübsch lineare Abfolgen von Commits zu erhalten. Das Commit-Protokoll des Repositorys wird durch Rebase eine ganze Ecke einfacher aussehen, weil Merge Commits vermieden werden.\nBefehl: git rebase\n\n\nSubmodul\nDas lilypond-song-includes-Repo wird in der Regel als Submodul genutzt. Das bedeutet, es ist ein eigenes (Remote-)Repository, das in ein anderes (Remote-)Repository eingebunden wird (zum Beispiel dein Liederbuch-Repo).\n\n\nVersionierung\nSobald an einer Working Copy gearbeitet wird protokolliert Git alle getätigten Änderungen mit. Mittels commit können die Änderungen zu dem Repository hinzugefügt werden, eine neue Version der Datei(n) befinden sich dann im Repo. Anschließend können verschiedene Versionen miteinander verglichen, Änderungen rückgängig oder zu einer früheren Version zurückgekehrt werden. Die Log-Informationen, die von Git mit aufgezeichnet werden können mit git log ausgegeben werden, git status listet die noch nicht ins Repo gespielten Änderungen der Working Copy auf.\n\n\nWorking Directory",
-    "crumbs": [
-      "Doku",
-      "Review-Prozess",
-      "Was ist eigentlich Git? 2.0"
-    ]
-  },
-  {
-    "objectID": "review.html",
-    "href": "review.html",
-    "title": "Review",
-    "section": "",
-    "text": "Ziel unseres Review-Prozesses ist hauptsächlich die Sicherstellung der Einhaltung unserer Standards sowie die Erhaltung der Qualität des Liederpools. Es wäre toll, jedes neu hinzugekommene Lied inhaltlich (auf musikalische Korrektheit des Satzes) zu prüfen, allerdings ist das sehr zeitaufwendig und manchmal auch gar nicht möglich (wenn zum Beispiel nur eine Person das Lied kennt).",
-    "crumbs": [
-      "Doku",
-      "Review-Prozess",
-      "Review"
-    ]
-  },
-  {
-    "objectID": "review.html#ziel",
-    "href": "review.html#ziel",
-    "title": "Review",
-    "section": "",
-    "text": "Ziel unseres Review-Prozesses ist hauptsächlich die Sicherstellung der Einhaltung unserer Standards sowie die Erhaltung der Qualität des Liederpools. Es wäre toll, jedes neu hinzugekommene Lied inhaltlich (auf musikalische Korrektheit des Satzes) zu prüfen, allerdings ist das sehr zeitaufwendig und manchmal auch gar nicht möglich (wenn zum Beispiel nur eine Person das Lied kennt).",
-    "crumbs": [
-      "Doku",
-      "Review-Prozess",
-      "Review"
-    ]
-  },
-  {
-    "objectID": "review.html#überblick",
-    "href": "review.html#überblick",
-    "title": "Review",
-    "section": "Überblick",
-    "text": "Überblick\nIm Folgenden findest du eine Kurzschrittfolge über den Reviewprozess und eine ausführliche Schrittfolge für Einsteiger*innen.",
-    "crumbs": [
-      "Doku",
-      "Review-Prozess",
-      "Review"
-    ]
-  },
-  {
-    "objectID": "review.html#kurz-und-knapp-schritte-zum-beitragen-neuer-lieder",
-    "href": "review.html#kurz-und-knapp-schritte-zum-beitragen-neuer-lieder",
-    "title": "Review",
-    "section": "Kurz und knapp: Schritte zum Beitragen neuer Lieder",
-    "text": "Kurz und knapp: Schritte zum Beitragen neuer Lieder\n\nNeue Lieder setzen und auf einem neuen Branch in den Liederpool pushen\nReview-Schritte (siehe unten) selbst durchgehen\nPull-Request für den Merge vom neuen Branch auf den main-Branch anlegen\nIn einer Review-Session oder durch einzelne Personen wird der Pull-Request dann geprüft und letztlich in den main-Branch gemerged.",
-    "crumbs": [
-      "Doku",
-      "Review-Prozess",
-      "Review"
-    ]
-  },
-  {
-    "objectID": "review.html#kurz-und-knapp-review-schritte",
-    "href": "review.html#kurz-und-knapp-review-schritte",
-    "title": "Review",
-    "section": "Kurz und knapp: Review-Schritte",
-    "text": "Kurz und knapp: Review-Schritte\n\nZu mergenden Branch auschecken\nLäuft die Kompilierung ohne Fehler durch?\nSind die Standards befolgt worden? Stimmen die Autor*innenangaben?\n\nFalls ja: Pull-Request genehmigen und mergen\nFalls nein: Korrekturen anfragen\n\nAm Ende rebasen, genehmigen und fast-forwarden. Fertsch.",
-    "crumbs": [
-      "Doku",
-      "Review-Prozess",
-      "Review"
-    ]
-  },
-  {
-    "objectID": "review.html#ausführliche-anleitung-neue-lieder-einfügen",
-    "href": "review.html#ausführliche-anleitung-neue-lieder-einfügen",
-    "title": "Review",
-    "section": "Ausführliche Anleitung: neue Lieder einfügen",
-    "text": "Ausführliche Anleitung: neue Lieder einfügen\nDies ist eine Einführung in unser Review-System. Damit das ganze möglichst praxisnah erklärt wird, machen wir ein Beispiel. Nehmen wir an, du hast das Lied „Sturm und Drang“ gesetzt und willst es dem Liederpool hinzufügen. In dieser Anleitung gehen wir jetzt alle Schritte durch, die es braucht, bis das Lied vollständig im Liederpool angekommen ist. Bei Fragen oder Irritationen meld dich gerne bei uns!\nBevor du dich mit Pull Requests beschäftigst, solltest du Lilypond eingerichtet, Git eingerichtet und wichtige Infos zu unseren Standards gelesen haben.\nAnmerkung vorweg: Alle beschriebenen Schritte funktionieren in jeder Git-GUI etwas anders. Das ist nervig, aber leider nicht zu ändern. Deswegen orientiere dich an den zugrundeliegenden Git-Befehlen und suche im Zweifel in der Doku deiner GUI, wie man den Git-Befehl in deinem Programm ausführt. Eine andere Möglichkeit ist, das du aus deinem Programm eine Konsole (oder Git Bash) öffnest und es darüber machst.\n\n1. Schritt: Ein neuer Branch\nDu hast das Lied “Sturm und Drang” gemäß unseren Standards gesetzt. Jetzt soll das Lied in einen neuen Branch gepusht werden.\n\nErstell einen neuen Branch im Submodul lilypond-song-includes. Der Git-Befehl dafür lautet git branch branchname, wobei du branchname mit dem Namen des neuen Branches ersetzen musst. In unserem Falle zum Beispiel sturmunddrang. Der Name ist nicht unglaublich wichtig, aber er sollte der Übersicht halber etwas mit deinen geplanten Änderungen zu tun haben und nicht zu allgemein sein (also nicht: „neues Lied“).\nCheck in diesen Branch aus, das heißt: Wechsle den Branch vom main-Branch in den neu erstellten Branch. Falls du dich nicht im main-Branch befindest, checke unbedingt vorher in den main-Branch aus. Der Git-Befehl dafür lautet git checkout sturmunddrang.\nCommitte deine Änderungen, in unserem Beispiel also das neue Lied. Der Git-Befehl dafür lautet git -m commit \"neues Lied: Sturm und Drang\". Bitte fass in einem Commit immer nur zusammenhängende Änderungen zusammen. Wenn du beispielsweise Korrekturen in den Docs und in den Liedbausteinen vornimmst, mach dafür zwei Commits. Außerdem häng eine Commit-Message (dafür steht das -m) an, in der du kurz beschreibst, was du geändert hast. Jetzt sind deine Änderungen lokal in einen neuen Branch commitet.\nPushe den neuen Branch. Das funktioniert mit dem Git-Befehl git push. Wichtig: Du musst dich dafür in deinem neuen Branch befinden. Jetzt befinden sich deine Änderungen remote in einem neuen Branch namens sturmunddrang.\n\n\n\n2. Schritt: Der Pull-Request\nUnser Liederpool befindet sich im main-Branch. Aus diesem Grund ist dieser Branch geschützt, man kann also nicht einfach auf ihn pushen. Dann wäre ein Review nämlich nicht systematisch möglich. Stattdessen findet nun folgender Prozess statt: Eine Änderung wird in einen eigenen Branch gepusht, der Branch wird überprüft (reviewed) und dann in main integriert. Dafür sind nun folgende Schritte notwendig:\n\nErstelle einen neuen Pull-Request. Dafür musst du auf unserem Git-Server auf die Seite Pull Requests gehen. Dann klickst du auf den prominenten Button Neuer Pull-Request.\nWähle den Branch, von dem gepullt wird. Das Ziel ist dabei immer boernel:main. Bei pullen von solltest du deinen Branch auswählen, in unserem Beispiel also boernel:sturmunddrang.\nJetzt siehst du alle Commits, die sich in deinem Branch befinden. Außerdem siehst du eine Übersicht mit allen exakten getätigten Änderungen. Überprüfe noch einmal, ob alles dabei ist, dann klick im nächsten Schritt auf Neuer Pull-Request.\nJetzt kannst du dem Pull-Request noch Kommentare hinzufügen. Bearbeite, wenn gewünscht, den Titel und setze Haken im Kommentarfeld. Bei der Liste handelt es sich um eine Vorlage, die standardmäßig immer dabei ist. Bitte überprüfe alle Punkte. Im Idealfall sind alle Punkte erfüllt, dann kannst du sie abhaken. Wenn du dir nicht sicher bist, lass sie lieber offen. Einen Haken setzt du, indem du ein x in die Klammern anstatt des Leerzeichens setzt. Für unser Beispiel sähe es beispielsweise so aus:\nSind alle Punkte erfüllt?\n\n- [x] Das Lied läuft mit Lilypond durch und produziert keine Fehler\n- [x] Lied wurde mindestens einmal komplett durchgespielt und durchgesungen\n- [ ] Quellen sind angegeben\n- [x] Standards wurden eingehalten\nWenn du außerdem Hinweise oder Bemerkungen zu deinem Pull-Request hast, kannst du diese hier ebenfalls unterbringen.\nZum Schluss musst du nur noch auf Pull-Request erstellen klicken, dann bist du fertig. Wenn dein PR (=Pull-Request) bereit für den Review ist, dann kannst du im Menü rechts unter dem Punkt Reviewer das Team „Setzer“ auswählen, dann werden alle benachrichtigt, die mit dem Liederpool arbeiten, dass es einen zu reviewenden PR gibt. Außerdem kannst du auch in die Signal-Gruppe schreiben.\n\n\n\n3. Schritt: Der Review\nNun kann es sein, dass es Änderungswünsche an deinem Commit gibt, weil es doch noch zusätzliche Informationen gibt, die darin fehlen, oder weil jemand einen Tippfehler gefunden hat. Das siehst du übrigens im Bereich deines Pull-Requests. Die Änderung funktioniert folgendermaßen:\n\nDu gehst in deiner Git-GUI in den Branch, um den es im PR geht.\nDu möchtest den Commit bearbeiten, in dem eine Änderung gewünscht wurde. Das geht über den Befehl git commit --amend, wenn es der letzte Commit ist. In deiner Git-GUI gibt es vermutlich die Möglichkeit, einen Commit zu bearbeiten („amend“). Folge den Anweisungen.\nDer letzte Schritt ist, die neuen Änderungen zu pushen. Achtung! Du musst force-pushen, weil du die Änderungen auf dem Server ja überschreiben möchtest. Du überschreibst also Dinge auf dem Server, die danach weg sind! Der Git-Befehl lautet git push --force.\nFertig. Sind alle Änderungen genehmigt, kannst du – falls notwendig den Branch durch Rebase aktualisieren (Achtung! Dazu musst du erst die korrekte Methode auswählen. Bitte nutze nicht Mergen zum Aktualisieren). Zuletzt kannst du den Button Rebasen und dann fast-forwarden klicken, wenn dieser blau ist. Der Branch wird dann automatisch in den main-Branch überführt und anschließend gelöscht.",
-    "crumbs": [
-      "Doku",
-      "Review-Prozess",
-      "Review"
-    ]
-  },
-  {
-    "objectID": "review.html#ausführliche-anleitung-pull-requests-reviewen",
-    "href": "review.html#ausführliche-anleitung-pull-requests-reviewen",
-    "title": "Review",
-    "section": "Ausführliche Anleitung: Pull-Requests reviewen",
-    "text": "Ausführliche Anleitung: Pull-Requests reviewen\n\nSchritt 1: Die Pull-Request-Oberfläche\nUnter https://git.zahlenlabyrinth.de/boernel/lilypond-song-includes/pulls findest du alle aktuellen Pull-Requests (PRs). Wenn du in den PR gehst, den du reviewen willst, siehst du drei Reiter: Diskussion, Commits und Geänderte Dateien.\n\nDiskussion: Hier findest du eine Art “Kommentarspalte” zum PR. Offene Fragen, Kommentare und Diskussionen können hier gestellt/geführt werden. Außerdem werde im Diskussionsfeed Änderungen am PR festgehalten. In der Menüspalte rechts hast du einige Optionen: Du kannst Reviewer anfragen (entweder eine ganze Gruppe oder auch einzelne Personen), Label hinzufügen (das nutzen wir Stand jetzt noch nicht), Zuständigkeiten verteilen und weiteres. Das meiste nutzen wir allerdings nicht – höchstens „Reviewer anfragen“ ist wichtig.\nCommits: Hier hast du einen Überblick über die Commits, die zum Pull-Request gehören.\nGeänderte Dateien: Hier hast du einen Überblick über alle geänderte Dateien des PRs. Wenn du Änderungswünsche hast, kannst du dies in Referenz auf die entsprechende Code-Zeile direkt tun. Das wird im Folgenden noch erklärt.\n\n\n\nSchritt 2: Überprüfen\n\nCheck in den Branch aus, dessen Pull-Request (PR) du reviewen willst, das heißt: Wechsle den Branch von deinem aktuellen Branch in den zu reviewenden Branch. Der Git-Befehl dafür lautet git checkout sturmunddrang.\nTeste die geänderten Dateien. Mit anderen Worten: Kompiliere die Lieder einmal durch und führe eine Sicht- und Hörprüfung (mit der MIDI) durch. Wenn du das Lied kennst, kannst du es auch durchsingen.\nÜberprüfe die Lieder hinsichtlich der Einhaltung der Standards und der Korrektheit der Autor*innenangaben. Achte auch darauf, ob die Zeichensetzung plausibel aussieht.\nWenn du einen Fehler findest, kannst du ihn entweder selbst ändern (siehe dazu vorheriges Kapitel, Abschnitt „Review“) oder eine Änderung anfragen. Wie das geht, erfährst du jetzt:\n\nGehe in den Reiter Geänderte Dateien\nGehe in die Datei, in der du etwas ändern willst.\nSuche die Code-Zeile, in der du etwas ändern willst. Gehe mit der Maus über die Zeile und klicke auf das grüne Plus am Rand.\nBeschreibe deine Änderung so, dass sie für andere verständlich ist.\nWiederhole die obigen Punkte für alle gewünschten Änderungen.\nZuletzt klicke oben rechts auf die Schaltfläche Überprüfen und dann auf Änderung anfragen.\n\nWenn alles geklärt ist, kannst du den PR freigeben. Das machst du im Reiter Geänderte Dateien und dann oben rechts mit der Schaltfläche Überprüfen. Wenn du auf Genehmigen klickst, wurde der PR freigegeben.",
-    "crumbs": [
-      "Doku",
-      "Review-Prozess",
-      "Review"
-    ]
-  },
-  {
-    "objectID": "git_einrichten.html",
-    "href": "git_einrichten.html",
-    "title": "Einrichtung von Git",
-    "section": "",
-    "text": "Hier geht es jetzt nur um eine kurze und möglichst unkomplizierte Einrichtung von Git. Du musst gar nicht alles verstehen, was im Hintergrund passiert. Das kann an späterer Stelle irgendwann auch noch kommen.",
-    "crumbs": [
-      "Einführung",
-      "Vorbereitung",
-      "Einrichtung von Git"
-    ]
-  },
-  {
-    "objectID": "git_einrichten.html#sec-tuxgit-account",
-    "href": "git_einrichten.html#sec-tuxgit-account",
-    "title": "Einrichtung von Git",
-    "section": "Account bei tuxgit erstellen lassen",
-    "text": "Account bei tuxgit erstellen lassen\nDu brauchst einen Account für unseren Git-Server. Aufgrund von Spam ist die Registrierung nicht öffentlich möglich, deswegen musst du dafür eine E-Mail an tux schreiben. Die Web-Adresse unseres Git-Servers ist: https://git.zahlenlabyrinth.de/.",
-    "crumbs": [
-      "Einführung",
-      "Vorbereitung",
-      "Einrichtung von Git"
-    ]
-  },
-  {
-    "objectID": "git_einrichten.html#eine-git-gui-aussuchen-und-herunterladen",
-    "href": "git_einrichten.html#eine-git-gui-aussuchen-und-herunterladen",
-    "title": "Einrichtung von Git",
-    "section": "Eine Git-GUI aussuchen und herunterladen",
-    "text": "Eine Git-GUI aussuchen und herunterladen\nGit ist per se erstmal ein Kommandozeilen-Programm. Das ist nicht für jede*n was – erst recht nicht, wenn man noch nicht so viel mit Coden zu tun hatte. Das ist aber gar nicht schlimm, denn es gibt zahlreiche verschiedene grafische Oberflächen für Git, die das Arbeiten sehr erleichtern können. Verbreitet bei uns sind gerade diese hier:\n\nSmartGit\n\nLink\nfür Windows, MacOS, Linux\nkostet was, es gibt aber eine non-commercial Lizenz für gemeinnützige Organisationen und Bildungseinrichtungen: Apply for Non-Commercial License\nDafür brauchst du eine gemeinnützige Organisation, mit deren E-Mail-Adresse du dich dort registrieren kannst. Alternativ geht auch eine Uni-Mail-Adresse.\n\n\n\nSourceTree\n\nLink\nfür Windows, MacOS\n\n\n\nTortoiseGit\n\nLink\nfür Windows\n\nOder man nutzt es in der Konsole. Dann braucht man die Git Shell: Link.",
-    "crumbs": [
-      "Einführung",
-      "Vorbereitung",
-      "Einrichtung von Git"
-    ]
-  },
-  {
-    "objectID": "git_einrichten.html#einrichten-eines-liederbuch-repos",
-    "href": "git_einrichten.html#einrichten-eines-liederbuch-repos",
-    "title": "Einrichtung von Git",
-    "section": "Einrichten eines Liederbuch-Repos",
-    "text": "Einrichten eines Liederbuch-Repos\nDa du Git vermutlich zum ersten Mal nutzt, brauchst du zuerst einen SSH-Key. Der SSH-Key ist dafür da, dass das Remote-Repo weiß, dass dein lokales Repo auch zu dir gehört. Sonst könnte ja jeder, der den SSH-Link hat (siehe dazu Abbildung 1), Zugriff aufs Repo haben. Er ist also ein Identifikationsmittel für deinen Account. Dafür hinterlegst du den public key in deinem Git-Account und sagst deinem Git-Programm (SmartGit, SourceTree, TortoiseGit), wo deine Schlüssel-Datei liegt. Diese Datei ist auch nochmal extra passwortgeschützt. Sie sollte auf keinen Fall gelöscht oder verschoben werden. Die lange Erklärung kannst du hier nachlesen.\n\n\n\nAbbildung 1: Das ist der SSH-Link.\n\n\n\n\n\n\n\nSSH-Key erstellen\nDu musst dir einen SSH-Key erstellen und das Passwort, public key und private key und Schlüsseldatei speichern/aufbewahren. Eine Anleitung dafür findest du hier.\nAnschließend hinterlegst du den public key in deinem Git-Account (unter Einstellungen -&gt; SSH- / GPG-Schlüssel -&gt; Schlüssel hinzufügen).\nSpäter wirst du beim „Klonen“ eines Liederbuchs irgendwann nach deiner Schlüsseldatei gefragt (für die du dann auch das Passwort brauchst). Es ist also wichtig, dass du beides gut speicherst!\nKlingt alles sehr kompliziert und das ist es auch, aber: Du musst das nur einmal machen und dann funktioniert es einfach. Wenigstens etwas.\n\n\nEin neues Liederbuch-Repo mit dem Vorlagen-Repo erstellen\nDa du ja ganz neu einsteigst, hast du vermutlich noch kein eigenes Liederbuch-Repo. Deswegen erstellen wir erstmal eins. Das tolle ist: Wir haben zu genau diesem Zweck ein Vorlagen-Repo gebaut, mit dem du sofort die meisten wichtigen Sachen eingerichtet hast. Wichtig: Du brauchst vorher einen Account bei tuxgit (siehe Kapitel 1). So geht’s:\n\nDu gehst zu unserem LilyPond-Vorlagen-Repo auf unserem Git-Server.\nDu klickst auf Dieses Template verwenden.\nDu folgst den Schritten (Besitzer*innen, Name, … festlegen) Wichtig: Bei Template muss lilypond-vorlagen ausgewählt sein.\nDann kannst du einfach unten weitermachen.\n\n\n\nEin bestehendes Liederbuch-Repo klonen\nWenn du die obigen Schritte befolgt hast oder schon ein Liederbuch-Repo eingerichtet hast und dass einfach nur klonen willst, dann geht das so:\n\nRemote-Repo klonen\nJe nach GUI funktioniert das unterschiedlich. Irgendwo gibt es die Option Clone und da dann einen Dialog, in dem du unter anderem den SSH-Link des Repos eintragen kannst. Wichtig ist bei dem Prozess: Submodule müssen inkludiert werden. Irgendwo kann man dann den Speicherort des lokalen Repos festlegen. Es empfiehlt sich, einen Ordner zu haben, wo alle Git-Repos drin sind. Dies ist aber nicht notwendig für irgendetwas.\n\nSmartGit: In Smartgit navigierst du zu Repository -&gt; Clone und folgst dem Dialog. Zuerst gibst du deinen SSH-Link ein. Dann achtest du darauf, dass Submodules inkludiert werden und wählst zuletzt den Speicherort des Repos aus.\n\nAls nächstes müssen die Submodule noch richtig eingebunden werden, das geht nämlich leider nicht automatisch. Du brauchst auf jeden Fall unsere Common-Includes als Submodul. Wenn du mit unserem Liederpool arbeitest, brauchst du noch die Song-Includes als Submodul. Für jedes Submodul musst du diesen Prozess einzeln durchführen.\nAuch das funktioniert in jeder GUI anders. So geht es bei SmartGit:\n\nIm Menü Remote anwählen -&gt; Submodule -&gt; Add\nDann brauchst du die SSH-Links der Submodule. Die findest du auf die bekannte Art und Weise (siehe Abbildung 1).\nIm nächsten Schritt wird gefragt, an welcher Stelle das Submodul eingebunden werden soll, da kannst du einfach weiterklicken.\n\nFertig!\n\nUnd jetzt kann’s richtig losgehen!",
-    "crumbs": [
-      "Einführung",
-      "Vorbereitung",
-      "Einrichtung von Git"
-    ]
-  },
-  {
-    "objectID": "musikalischer_inhalt.html",
-    "href": "musikalischer_inhalt.html",
-    "title": "Musikalischer Inhalt",
-    "section": "",
-    "text": "In diesem Abschnitt der Doku zeigen wir Lösungen für Probleme oder Herausforderungen, die sich aus der Arbeit mit unserem System ergeben. Vieles davon wurde von tux entwickelt und befindet sich in den lilypond-common-includes, bei manchen Themen verweisen wir auch einfach nur auf die LilyPond-Doku. Dieser Teil ist fokussiert auf Fragen bezüglich der Notation und dem Liedtext.",
-    "crumbs": [
-      "Doku",
-      "Liedersetzen-Prozess",
-      "Musikalischer Inhalt"
-    ]
-  },
-  {
-    "objectID": "musikalischer_inhalt.html#wiederholungen-in-den-strophen",
-    "href": "musikalischer_inhalt.html#wiederholungen-in-den-strophen",
-    "title": "Musikalischer Inhalt",
-    "section": "Wiederholungen in den Strophen",
-    "text": "Wiederholungen in den Strophen\nProblem: Wiederholungszeichen (𝄆 und 𝄇 ) im Text sollen nur in den Strophen, nicht aber unter den Noten stehen. Trotzdem wollen wir denselben Text für beides verwenden.\nLösung: Vor den wiederholten Teil im Text \\repStartWithTag und vor der letzten Silbe (nach den -- !) \\repStophWithTag.\nZur Erklärung: Es handelt sich faktisch um eine Stanza, die aber immer vor Silben gesetzt werden muss (sie kann aber auch rechts von Silben ausgerichtet werden). Diese Stanza wird nur bei einem bestimmten Tag ausgegeben, der repeats heißt. Mehr zu Tags findest du in der Lilypond-Doku. Standardmäßig wird der Tag ausgegeben, soll das nicht der Fall sein (wie zum Beispiel unter den Noten), muss innerhalb des MUSIC-Teils der Befehl \\removeWithTag #'repeats inkludiert werden.\nCodebeispiel (aus: Ade zur guten Nacht):\nthirdVerse = \\lyricmode {\n  %…\n  \\repStartWithTag\n  Wie man -- chen _ Glo -- cken -- schlag,\n  da Herz bei _ Her -- zen lag,\n  das hast du ver -- ges -- \\repStopWithTag sen.\n}\n\n%…\n\nMUSIC = {\n  \\removeWithTag #'repeats\n  &lt;&lt;\n      \\songChords\n      \\new ChoirStaff = \"firstStaff\"\n      &lt;&lt;\n        \\new Voice = \"firstVoice\" { \\melodyVoice }\n        \\addlyrics { \\firstVerse }\n        \\addlyrics { \\secondVerse }\n        \\addlyrics { \\thirdVerse }\n        \\addlyrics { \\fourthVerse }\n      &gt;&gt;\n  &gt;&gt;\n}\n\n\nIn den Strophen sieht das dann zum Beispiel so aus:",
-    "crumbs": [
-      "Doku",
-      "Liedersetzen-Prozess",
-      "Musikalischer Inhalt"
-    ]
-  },
-  {
-    "objectID": "musikalischer_inhalt.html#melismata-mehrere-noten-zu-einer-silbe",
-    "href": "musikalischer_inhalt.html#melismata-mehrere-noten-zu-einer-silbe",
-    "title": "Musikalischer Inhalt",
-    "section": "Melismata (mehrere Noten zu einer Silbe)",
-    "text": "Melismata (mehrere Noten zu einer Silbe)\nProblem: In manchen Strophen gibt es an einer Stelle ein Melisma und in der nächsten Strophe an derselben Stelle nicht. Dadurch verschiebt sich der Text.\nLösung: Nutzen von \\set ignoreMelismata = ##t nach Bedarf. Siehe dazu auch in der LilyPond-Doku.\nCodebeispiel:\n%firstVerse mit Melismata:\nfirstVerse = \\lyricmode {\n  #(stanza 1)\n  A -- de zur gu -- ten Nacht!\n  Jetzt wird der Schluss ge -- macht,\n  dass ich muss schei -- den.\n  \\repStartWithTag\n  Im Som -- mer, da wächst der Klee, im Win -- ter da schneit’s den Schnee,\n  da kom -- me ich wie -- \\repStopWithTag der.\n}\n\n%secondVerse ohne Melismata\nsecondVerse = \\lyricmode {\n  #(stanza 2)\n  Es trau -- ern Berg und Tal,\n  wo ich viel tau -- send -- mal\n  bin drü -- ber gan -- gen.\n  \\set ignoreMelismata = ##t %ab hier werden Melismata ignoriert\n  \\repStartWithTag\n  Das hat dei -- ne Schön -- heit ge -- macht,\n  die hat mich zum Lie -- ben ge -- bracht\n  \\unset ignoreMelismata %und hier wieder nicht mehr\n  mit gro -- ßem Ver -- lan -- \\repStopWithTag gen.\n}\n\n\nSo sieht dann der Output der ersten beiden Verse aus:",
-    "crumbs": [
-      "Doku",
-      "Liedersetzen-Prozess",
-      "Musikalischer Inhalt"
-    ]
-  },
-  {
-    "objectID": "musikalischer_inhalt.html#mehrere-silben-zu-einer-note",
-    "href": "musikalischer_inhalt.html#mehrere-silben-zu-einer-note",
-    "title": "Musikalischer Inhalt",
-    "section": "Mehrere Silben zu einer Note",
-    "text": "Mehrere Silben zu einer Note\nSiehe Lilypond-Doku.",
-    "crumbs": [
-      "Doku",
-      "Liedersetzen-Prozess",
-      "Musikalischer Inhalt"
-    ]
-  },
-  {
-    "objectID": "musikalischer_inhalt.html#silbentrennung-bei-volta-klammern",
-    "href": "musikalischer_inhalt.html#silbentrennung-bei-volta-klammern",
-    "title": "Musikalischer Inhalt",
-    "section": "Silbentrennung bei Volta-Klammern",
-    "text": "Silbentrennung bei Volta-Klammern\nProblem: Es kommt vor, dass in Liedern die Melodie der Strophe wiederholt wird. Wenn man dabei eine Wiederholung mit Volta-Klammern notiert und ein Wort in die Wiederholung „hineinragt“, dann skipt man die folgenden Notenwerte, was aber dazu führt, dass unter der gesamten Klammer eins Lyric-Hyphens (Bindestriche zwischen den Silben) gesetzt werden.\nLösung: Mit \\once \\hide \\LyricHyphen werden alle Hyphens der nächsten Silbe unterdrückt. Stattdessen wird mit \\rightHyphen bzw. \\leftHyphen ein manueller Hyphen gesetzt (die Funktion ist in den common-includes definiert). Die \\skip4-Befehle werden ggf. über eine dafür gesetzte Variable definiert (im unteren Beispiel voltaSkipsLyrics). Da die Hyphens im Text (also den „Strophen“) nicht zu sehen sein sollen, werden sie mittels eines Tags gesetzt, der volta heißt. Mehr zu Tags in der Lilypond-Doku.\nCodebeispiel:\nvoltaSkipsLyrics = \\lyricmode {\n  \\repeat unfold 10 { \\skip4 }\n}\n\nfirstVerseB = \\lyricmode {\n  Hab es selbst so ge -- wählt, nie die Jah -- re \\tag #'volta { \\once \\hide LyricHyphen \\rightHyphen } ge -- \\tag #'volta { \\voltaSkipsLyrics \\leftHyphen } zählt,\n  nie nach ges -- tern und mor -- gen ge -- fragt.\n}\n\n\n\nAbbildung 1: Links das Problem, rechts die Lösung.\n\n\n\n\n\n\nSo soll das nicht aussehen.\n\n\n\n\n\n\n\nSo sieht das ganze dann „schön“ aus:",
-    "crumbs": [
-      "Doku",
-      "Liedersetzen-Prozess",
-      "Musikalischer Inhalt"
-    ]
-  },
-  {
-    "objectID": "musikalischer_inhalt.html#umgang-mit-wiederholungen-bei-gleichbleibendem-text",
-    "href": "musikalischer_inhalt.html#umgang-mit-wiederholungen-bei-gleichbleibendem-text",
-    "title": "Musikalischer Inhalt",
-    "section": "Umgang mit Wiederholungen bei gleichbleibendem Text",
-    "text": "Umgang mit Wiederholungen bei gleichbleibendem Text\nProblem: Gibt es Volta-Klammern bei Liedern, in denen der Text des wiederholten Teils gleich ist, zum Beispiel, weil es nach der Klammer anders weitergeht, kommt es vor, dass man in die Lyrics zum Beispiel schreiben müsste: Und je -- der Kerl, der mit uns war, hat für im -- mer sich zu uns ge -- sellt. Und sellt.. Das ist natürlich unpraktisch für die Übernahme in die Strophen, weil man das sellt. Und ja nicht in den Strophen haben möchte.\nLösung: Auch hier kommen wieder Tags zum Einsatz und zwar wie folgt. Es wird ein neuer Tag repeat definiert, der alles in einschließt, was für die Volta-Wiederholungen notwendig ist. Für die Strophen werden dann extra-Variablen definiert, in denen dieser Tag ausgeschaltet wird. Wichtig: Der Tag muss sich natürlich auch in der Melodie und den Akkorden wiederfinden.\nCodebeispiel:\nfirstVerseWithRepeat = \\lyricmode {\n  #(stanza 1)\n  Wir sind ei -- ne klei -- ne ver -- lo -- re -- ne Schar,\n  wir ste -- hen für uns auf der Welt.\n  \\repStartWithTag Und je -- der Kerl, der mit uns war,\n  hat für im -- mer sich zu uns ge -- \\tag #'repeat { sellt. Und } \\repStopWithTag sellt.\n}\n\nfirstVerse = \\lyricmode {\n  \\removeWithTag #'repeat \\firstVerseWithRepeat\n}\n\nfirstVoice = \\relative c' {\n  \\partial4\n  fis4\n  g8 e4 fis8 g e4 g8\n  fis g4 fis8 e4 d4\n  g8 g4 g8 a d4 c8\n  h2. h4\n  \\repeat volta 2 {\n    c4 c c c\n    h8 h4 (a8) g4 g8 a\n    h8 h4 h8 a h4 a8\n  }\n  \\alternative {\n    % Tag bedenken\n    \\tag #'repeat { g2. h4 }\n    { g1 }\n  }\n}\n\nverseChords = \\chordmode {\n  \\partial4\n  s4 e1:m h2:7 e4:m d:7\n  g2 d:7 g1\n  \\repeat volta 2 {\n    c1 g g2 d:7\n  }Bock\n  \\alternative {\n    %Tag bedenken\n    \\tag #'repeat { g1 }\n    { g1 }\n  }\n}\n\n% im MUSIC-Teil wird der Tag dann wieder aktiviert\nMUSIC = {\n  \\keepWithTag #'repeat\n  &lt;&lt;\n      \\songChords\n      \\new ChoirStaff = \"firstStaff\"\n      &lt;&lt;\n        \\new Voice = \"firstVoice\" { \\melodyVoice }\n        \\addlyrics { \\firstVerseWithRepeat }\n        \\addlyrics { \\secondVerseWithRepeat }\n        \\addlyrics { \\thirdVerseWithRepeat }\n      &gt;&gt;\n  &gt;&gt;\n}\n\n% Für die Strophen wollen wir keine Volta-Wiederholung\nverse-chords = \\chords { \\removeWithTag #'repeat \\verseChords }",
-    "crumbs": [
-      "Doku",
-      "Liedersetzen-Prozess",
-      "Musikalischer Inhalt"
-    ]
-  },
-  {
-    "objectID": "musikalischer_inhalt.html#umgang-mit-wiederholungen-bei-neuem-text",
-    "href": "musikalischer_inhalt.html#umgang-mit-wiederholungen-bei-neuem-text",
-    "title": "Musikalischer Inhalt",
-    "section": "Umgang mit Wiederholungen bei „neuem“ Text",
-    "text": "Umgang mit Wiederholungen bei „neuem“ Text\nProblem: Volta-Klammern (Wiederholungsklammern), bei denen nicht derselbe Text wiederholt wird, sollten in den Strophen aufgelöst werden, damit der Text hintereinander (und nicht wie in den Noten untereinander) steht.\nLösung: Dafür nutzen wir den Befehl \\unfoldRepeats, der in den verse-chords und verse-voice gesetzt werden muss und dann per \\override auf die Strophen angewendet werden kann (Achtung: \\override gilt immer nur für das folgende Element, zum Beispiel ein Vers oder ein \\group-verses-Ausdruck). Außerdem müssen die Verse aufgeteilt werden in verschiedene Teile.\nCodebeispiel:\nfirstVerseA = \\lyricmode {\n  #(stanza 1)\n  Er -- ste Wie -- der -- ho -- lung,\n}\n\nfirstVerseB = \\lyricmode {\n  zwei -- te Wie -- der -- ho -- lung.\n}\n\nfirstVerseC = \\lyricmode {\n  Wei -- ter geht’s\n}\n\nfirstVerse = { \\firstVerseA \\firstVerseB \\firsVerseC }\n\nverse-chords = \\chords { \\unfoldRepeats \\verseChords }\nverse-voice = { \\unfoldRepeats \\firstVoice }\nverse-breaks = { \n  s4 s2*3 s4 \\break\n  s4 s2*3 s4 \\break\n  s4 s2*3 s4 \\break\n}\n\nTEXT = \\markuplist {\n  \\override #`(verse-chords . ,verse-chords)\n  \\override #`(verse-reference-voice . ,verse-voice)\n  \\override #`(verse-break-voice . ,verse-breaks)\n  \\group-verses {\n    \\chordlyrics \\firstVerse\n  }\n}",
-    "crumbs": [
-      "Doku",
-      "Liedersetzen-Prozess",
-      "Musikalischer Inhalt"
-    ]
-  },
-  {
-    "objectID": "musikalischer_inhalt.html#strophen-mit-unterschiedlichen-noten--oder-silbenverteilung-oder-rhythmus",
-    "href": "musikalischer_inhalt.html#strophen-mit-unterschiedlichen-noten--oder-silbenverteilung-oder-rhythmus",
-    "title": "Musikalischer Inhalt",
-    "section": "Strophen mit unterschiedlichen Noten- oder Silbenverteilung oder Rhythmus",
-    "text": "Strophen mit unterschiedlichen Noten- oder Silbenverteilung oder Rhythmus\nProblem:\n\nGerade bei neueren Liedern kommt es häufig vor, dass sie unterschiedliche Rhythmen (zum Beispiel Auftakte) in den Strophen haben. Da der Text an Noten ausgerichtet wird, kommt es somit zu einem Problem, wenn in der 1. Strophe beispielsweise kein Auftakt vorhanden ist, in der 2. Strophe jedoch schon, kann der Versanfang der 2. Strophe nicht an Noten ausgerichtet werden, da diese in der Melodie (der 1. Strophe) gar nicht vorkommen.\nDas Notenbild / der Notensatz der 1. Strophe soll aber nicht unnötig aufgebläht werden durch Auftaktkonstruktionen (und es gibt natürlich auch noch wesentlich komplexere Konflikte), da dadurch die Lesbarkeit erschwert wird und das Notenbild mehr Verwirrung als Klarheit schaffen würde.\n\nLösung:\n\nNutzung von einer Funktion, die Tags nutzt: \\alt (siehe Codebeispiel). Die Idee ist, dass es eine einfache Notation gibt (üblicherweise die der 1. Strophe) und eine komplexere, an der alle Verse ausgerichtet werden können. Die \\alt-Funktion wird im \\relative-Teil wie folgt angewendet: \\alt { A } { B }. A steht für die einfache Notation, B für die komplexe.\nNun gibt es wiederum das Problem, dass der Text in den unterschiedlichen Notationen an unterschiedlichen Stellen geskipt werden muss. Dafür gibt es die Lösung über die Funktion \\multiVerseSkips X. Das X ist dabei zu ersetzen mit der Anzahl der zu skipenden Noten. X muss mindestens den Wert 1 haben.\nIm MUSIC-Teil muss der Tag nun auch angegeben werden. Zum Codebeispiel: Im music-Teil muss nichts angepasst werden, stattdessen kann man nun im MUSIC-Teil angeben, ob man die multiVerse-Ansicht oder die firstVerse-Ansicht angezeigt werden möchte. Das jeweils andere kann auskommentiert werden.\n\nCodebeispiel:\nfirstVerse = \\lyricmode {\n  #(stanza 1)\n  \\multiVerseSkips 4 Komm zu mir, leg dich ins Laub\n  \\\\multiVerseSkips 1 und \\\\multiVerseSkips 1 hör, was die Wur -- zeln er -- zäh -- len.\n  Je -- \\\\multiVerseSkips 1 des \\\\multiVerseSkips 1 Blatt zer -- fällt ein -- mal zu Staub\n  \\\\multiVerseSkips 2 und je -- der Baum wird auch wie -- der zu Er -- de.\n  Doch je -- des En -- de ist ein An -- fang\n  und vol -- ler Kreis -- läu -- fe sind Zeit und Raum.\n  Al -- les ver -- geht, doch nichts geht ver -- lo -- ren,\n  al -- les ist Wirk -- lich -- keit und al -- les ist Traum.\n}\n\n% Verwendung von alt\nfirstVoice = \\relative c' {\n  \\alt {} { \\partial2 a8 a d8 f8 }\n  a4. a8 a4\n  g4 a g\n  e2.\n  \\alt { r2 d4 } { r4 r8 d d d }\n  e4. e8 e4\n  d4 e d\n  c4 a2\n}\n\n% Einbindung in music/MUSIC\nmusic = {\n  &lt;&lt;\n      \\songChords\n      \\new ChoirStaff = \"firstStaff\"\n      &lt;&lt;\n        \\new Voice = \"firstVoice\" { \\melodyVoice }\n        \\addlyrics { \\firstVerse }\n        \\addlyrics { \\tag #'multiVerse \\secondVerse }\n        \\addlyrics { \\tag #'multiVerse \\thirdVerse }\n        \\addlyrics { \\tag #'multiVerse \\fourthVerse }\n        \\addlyrics { \\tag #'multiVerse \\fifthVerse }\n      &gt;&gt;\n  &gt;&gt;\n}\n\nMUSIC = {\n  \\keepWithTag #'multiVerse\n  %\\keepWithTag #'firstVerse\n  \\music\n}\n\n\n\nAbbildung 2: Das sind die beiden möglichen resultierenden Ansichten.\n\n\n\n\n\n\nDie \\firstVerse-Ansicht:\n\n\n\n\n\n\n\nDie \\multiVerse-Ansicht:",
-    "crumbs": [
-      "Doku",
-      "Liedersetzen-Prozess",
-      "Musikalischer Inhalt"
-    ]
-  },
-  {
-    "objectID": "musikalischer_inhalt.html#zeilenumbrüche-in-den-strophen",
-    "href": "musikalischer_inhalt.html#zeilenumbrüche-in-den-strophen",
-    "title": "Musikalischer Inhalt",
-    "section": "Zeilenumbrüche in den Strophen",
-    "text": "Zeilenumbrüche in den Strophen\nSiehe Layout-Teil der Doku.",
-    "crumbs": [
-      "Doku",
-      "Liedersetzen-Prozess",
-      "Musikalischer Inhalt"
-    ]
-  },
-  {
-    "objectID": "musikalischer_inhalt.html#leichte-textvariationen",
-    "href": "musikalischer_inhalt.html#leichte-textvariationen",
-    "title": "Musikalischer Inhalt",
-    "section": "(Leichte) Textvariationen",
-    "text": "(Leichte) Textvariationen\nProblem: Es gibt teilweise leichte Textvariationen bei einzelnen Wörtern.\nLösung: Auch da helfen uns wieder die Tags (Lilypond-Doku). Je nach Belieben kann dann entweder die eine Variante aktiviert werden oder die andere.\n\nInnerhalb einer Variante\nBeim Regenbogenlied gibt es beispielsweise eine Unterscheidung im Artikel zwischen dem ersten und zweitem Refrain. Die Lösung dafür ist, einfach beides einzubauen und dann das jeweils nicht benötigte auszuschalten. Das hat den Vorteil, dass wir trotzdem dieselbe Textbasis verwenden können.\nCodebeispiel:\nrefLyrics = \\lyricmode {\n  \\ref\n  \\repStartWithTag Ü -- ber uns \\tag #'first { ein } \\tag #'second { der } Re -- gen -- bo -- gen,\n  zeigt uns den Weg in sei -- nem Licht,\n  die Wol -- ken sind schon fort -- ge -- zo -- gen,\n  ver -- weh -- ren uns die Son -- ne \\repStopWithTag nicht.\n}\n\nrefLyricsFirst = \\lyricmode { \\removeWithTag #'second \\refLyrics }\nrefLyricsSecond = \\lyricmode { \\removeWithTag #'first \\refLyrics }\n\n\nVerschiedene Varianten\nAnders verhält es sich, wenn wir ein Lied haben, bei dem es verschiedene Varianten gibt. Mitunter kann es hilfreich sein, einen kürzeren Befehl zu haben, wenn beide Varianten sich an vielen Stellen unterscheiden. Das kann folgendermaßen gelöst werden:\nvariant =\n#(define-music-function (parser location a b) (ly:music? ly:music?) \n  #{ \\tag #'bock { #a } \\tag #'codex { #b } #})\nWenn mehr als zwei Varianten benötigt werden, kann der Befehl problemlos erweitert werden, indem weitere Elemente hinzugefügt werden:\n#(define-music-function (parser location a b c d) (ly:music? ly:music? ly:music? ly:music?)  #{ \\tag #'bock { #a } \\tag #'codex { #b } \\tag #'buedel { #c } \\tag #'boernel { #d } #}).\nDer Tag-Abruf erfolgt dann zum Beispiel so:\nfirstVerse = \\lyricmode {\n  #(stanza 1)\n  Das ist der ers -- te \\variant { Vers } { Verse } { Teil } { Ab -- schnitt }.\n}\nDabei ist die oben definierte Reihenfolge entscheidend! Der jeweils gewünschte Tag muss dann unbedingt im MUSIC-Teil zugewiesen werden. Dabei sollte im MUSIC-Teil ebenfalls erkennbar sein, wie viele und welche Varianten es überhaupt gibt, zum Beispiel durch auskommentierte Alternativvarianten:\nMUSIC = {\n  \\keepWithTag #'bock\n  %\\keepWithTag #'codex\n  %\\keepWithTag #'buedel\n  %\\keepWithTag #'boernel\n  &lt;&lt;\n      \\songChords\n      \\new ChoirStaff = \"firstStaff\"\n      &lt;&lt;\n        \\new Voice = \"firstVoice\" { \\melodyVoice }\n        \\addlyrics { \\firstVerse }\n      &gt;&gt;\n  &gt;&gt;\n}",
-    "crumbs": [
-      "Doku",
-      "Liedersetzen-Prozess",
-      "Musikalischer Inhalt"
-    ]
-  },
-  {
-    "objectID": "musikalischer_inhalt.html#swing-style",
-    "href": "musikalischer_inhalt.html#swing-style",
-    "title": "Musikalischer Inhalt",
-    "section": "Swing-Style",
-    "text": "Swing-Style\nDen Swing-Style kann man mittels der Funktion \\swingMusic erwirken. Das setzt den folgenden musikalischen Ausdruck im Swing-Style. \\swingMusic kann beispielsweise in die \\melodyVoice gepackt werden (dann geschweifte Klammern nicht vergessen). Die Midi-Ausgabe erfolgt dann sogleich rhythmisch korrekt.\nDer Swing-Style kann mithilfe der Funktion \\swingOff wieder ausgestellt werden. Das ist im unteren Beispiel zwar für die Midi-Ausgabe gar nicht nötig, allerdings printed \\swingOff auch das entsprechende Zeichen, dass kein Swing-Style mehr gespielt werden soll. Andernfalls wüsste man anhand des Liedblattes nicht, dass der Swing-Style aufhört.\nmelodyVoice = {\n  \\global\n  \\swingMusic { \\firstVoice \\interludeVoice }\n  \\swingOff \\refVoice\n  \\bar \"|.\"\n}",
-    "crumbs": [
-      "Doku",
-      "Liedersetzen-Prozess",
-      "Musikalischer Inhalt"
-    ]
-  },
-  {
-    "objectID": "musikalischer_inhalt.html#römische-ziffern",
-    "href": "musikalischer_inhalt.html#römische-ziffern",
-    "title": "Musikalischer Inhalt",
-    "section": "Römische Ziffern",
-    "text": "Römische Ziffern\nSiehe Layout-Doku.",
-    "crumbs": [
-      "Doku",
-      "Liedersetzen-Prozess",
-      "Musikalischer Inhalt"
-    ]
-  },
-  {
-    "objectID": "lifehacks.html",
-    "href": "lifehacks.html",
-    "title": "Nützliche Lifehacks",
-    "section": "",
-    "text": "Du kannst die Silben eines Textes automatisiert trennen: Text auswählen und unter Werkzeuge/Musical Transformations/Liedtext/Trennungsstriche in Text einführen oder einfach Strg + L. Achtung! Die Funktion funktioniert leider nicht absolut fehlerfrei, deswegen definitiv nochmal Korrektur drüber lesen.\nDu kannst Noten ganz einfach transponieren, was in diesem Falle meint, dass sich der tatsächliche Code verändert: entsprechenden Code auswählen unter Werkzeuge/Musical Transformations/Tonhöhen/Transponieren. Dazu wichtig: Abschnitt auswählen und im Dokument vorher temporär \\language \"deutsch\" aufrufen.\nAuch Notenlängen Halbieren oder Verdoppeln geht sehr einfach: entsprechenden Code auswählen Werkzeuge/Musical Transformations/Rythmus/ und dann auf Notenlänge verdoppeln bzw. Notenlänge halbieren.\nEbenfalls kann eine bestimmte rhythmische Form übernommen werden: Werkzeuge/Musical Transformations/Rhythmus/.\nLange Zeilen können im Editor standardmäßig umgebrochen werden: Unter Bearbeiten/Einstellungen/Editor-Einstellungen/Einstellungen zur Ansicht -&gt; Haken setzen.\nZahlreiche LilyPond-Codeschnipsel gibt es unter Schnipsel. Das wollen wir künftig noch mehr ausbauen.",
-    "crumbs": [
-      "Doku",
-      "Liedersetzen-Prozess",
-      "Nützliche Lifehacks"
-    ]
-  },
-  {
-    "objectID": "lifehacks.html#frescobaldi-lifehacks",
-    "href": "lifehacks.html#frescobaldi-lifehacks",
-    "title": "Nützliche Lifehacks",
-    "section": "",
-    "text": "Du kannst die Silben eines Textes automatisiert trennen: Text auswählen und unter Werkzeuge/Musical Transformations/Liedtext/Trennungsstriche in Text einführen oder einfach Strg + L. Achtung! Die Funktion funktioniert leider nicht absolut fehlerfrei, deswegen definitiv nochmal Korrektur drüber lesen.\nDu kannst Noten ganz einfach transponieren, was in diesem Falle meint, dass sich der tatsächliche Code verändert: entsprechenden Code auswählen unter Werkzeuge/Musical Transformations/Tonhöhen/Transponieren. Dazu wichtig: Abschnitt auswählen und im Dokument vorher temporär \\language \"deutsch\" aufrufen.\nAuch Notenlängen Halbieren oder Verdoppeln geht sehr einfach: entsprechenden Code auswählen Werkzeuge/Musical Transformations/Rythmus/ und dann auf Notenlänge verdoppeln bzw. Notenlänge halbieren.\nEbenfalls kann eine bestimmte rhythmische Form übernommen werden: Werkzeuge/Musical Transformations/Rhythmus/.\nLange Zeilen können im Editor standardmäßig umgebrochen werden: Unter Bearbeiten/Einstellungen/Editor-Einstellungen/Einstellungen zur Ansicht -&gt; Haken setzen.\nZahlreiche LilyPond-Codeschnipsel gibt es unter Schnipsel. Das wollen wir künftig noch mehr ausbauen.",
-    "crumbs": [
-      "Doku",
-      "Liedersetzen-Prozess",
-      "Nützliche Lifehacks"
+      "Liedlayout"
     ]
   },
   {
@@ -858,87 +429,696 @@
     ]
   },
   {
-    "objectID": "liedlayout.html",
-    "href": "liedlayout.html",
-    "title": "Liedlayout",
+    "objectID": "lifehacks.html",
+    "href": "lifehacks.html",
+    "title": "Nützliche Lifehacks",
     "section": "",
-    "text": "Jetzt hast du das Lied gesetzt und in den Liederpool eingebracht. Wie toll! Das ist der wichtigste Schritt, weil er der grundlegendste ist. Alle, die Zugriff auf den Liederpool haben, können das Lied jetzt auch verwenden.\nDer nächste Schritt ist, das Lied für dein spezifisches Liederbuch zu layouten. Ich kann dich schonmal beruhigen: Das geht viel leichter als das Setzen in den Liederpool, sogar richtig schnell. Und das ist auch der große Vorteil von unserem System. Die Lieder, die schon im Pool sind, machen deutlich weniger Arbeit – du profitierst also sehr von der Arbeit anderer. Aber genug der langen Vorrede. Los geht’s!",
+    "text": "Du kannst die Silben eines Textes automatisiert trennen: Text auswählen und unter Werkzeuge/Musical Transformations/Liedtext/Trennungsstriche in Text einführen oder einfach Strg + L. Achtung! Die Funktion funktioniert leider nicht absolut fehlerfrei, deswegen definitiv nochmal Korrektur drüber lesen.\nDu kannst Noten ganz einfach transponieren, was in diesem Falle meint, dass sich der tatsächliche Code verändert: entsprechenden Code auswählen unter Werkzeuge/Musical Transformations/Tonhöhen/Transponieren. Dazu wichtig: Abschnitt auswählen und im Dokument vorher temporär \\language \"deutsch\" aufrufen.\nAuch Notenlängen Halbieren oder Verdoppeln geht sehr einfach: entsprechenden Code auswählen Werkzeuge/Musical Transformations/Rythmus/ und dann auf Notenlänge verdoppeln bzw. Notenlänge halbieren.\nEbenfalls kann eine bestimmte rhythmische Form übernommen werden: Werkzeuge/Musical Transformations/Rhythmus/.\nLange Zeilen können im Editor standardmäßig umgebrochen werden: Unter Bearbeiten/Einstellungen/Editor-Einstellungen/Einstellungen zur Ansicht -&gt; Haken setzen.\nZahlreiche LilyPond-Codeschnipsel gibt es unter Schnipsel. Das wollen wir künftig noch mehr ausbauen.",
     "crumbs": [
-      "Einführung",
-      "Lieder setzen",
-      "Liedlayout"
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Nützliche Lifehacks"
     ]
   },
   {
-    "objectID": "liedlayout.html#layout-datei-erstellen",
-    "href": "liedlayout.html#layout-datei-erstellen",
-    "title": "Liedlayout",
-    "section": "Layout-Datei erstellen",
-    "text": "Layout-Datei erstellen\n\\version \"2.25.8\"\n\n\\include \"../../lilypond-custom-includes/base_config.ly\"\n\\include \"../../lilypond-song-includes/liedbausteine/\"\n\nHEADER = \\bookpart {\n  \\header {\n    \\basicSongInfo\n    %infotext = \"\"\n    categories = \"\"\n  }\n}\n\n\\include \"../../lilypond-common-includes/standalone_output.ly\"\nWenn du ein Repository mithilfe unseres Vorlagenrepos erstellt hast, findest du im Ordner lieder einen Ordner 00_vorlage_light. In diesem Ordner öffnest du die Datei vorlage_light.ly. Als erstes solltest du die Datei neu abspeichern. Dazu drücke einfach Strg + Umschalt + S oder alternativ im Menü Datei -&gt; Save -&gt; Speichern unter. Gehe dann in den Ordner lieder deines Repositories und lege einen neuen Ordner an. Benenne ihn am besten nach demselben Schema wie im Liederpool, in unserem Falle also ueber_meiner_heimat_fruehling. Gehe in den Ordner und speichere die Datei unter demselben Namen dort ab. Fertig.",
+    "objectID": "lifehacks.html#frescobaldi-lifehacks",
+    "href": "lifehacks.html#frescobaldi-lifehacks",
+    "title": "Nützliche Lifehacks",
+    "section": "",
+    "text": "Du kannst die Silben eines Textes automatisiert trennen: Text auswählen und unter Werkzeuge/Musical Transformations/Liedtext/Trennungsstriche in Text einführen oder einfach Strg + L. Achtung! Die Funktion funktioniert leider nicht absolut fehlerfrei, deswegen definitiv nochmal Korrektur drüber lesen.\nDu kannst Noten ganz einfach transponieren, was in diesem Falle meint, dass sich der tatsächliche Code verändert: entsprechenden Code auswählen unter Werkzeuge/Musical Transformations/Tonhöhen/Transponieren. Dazu wichtig: Abschnitt auswählen und im Dokument vorher temporär \\language \"deutsch\" aufrufen.\nAuch Notenlängen Halbieren oder Verdoppeln geht sehr einfach: entsprechenden Code auswählen Werkzeuge/Musical Transformations/Rythmus/ und dann auf Notenlänge verdoppeln bzw. Notenlänge halbieren.\nEbenfalls kann eine bestimmte rhythmische Form übernommen werden: Werkzeuge/Musical Transformations/Rhythmus/.\nLange Zeilen können im Editor standardmäßig umgebrochen werden: Unter Bearbeiten/Einstellungen/Editor-Einstellungen/Einstellungen zur Ansicht -&gt; Haken setzen.\nZahlreiche LilyPond-Codeschnipsel gibt es unter Schnipsel. Das wollen wir künftig noch mehr ausbauen.",
     "crumbs": [
-      "Einführung",
-      "Lieder setzen",
-      "Liedlayout"
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Nützliche Lifehacks"
     ]
   },
   {
-    "objectID": "liedlayout.html#auf-die-inhaltsdatei-referenzieren",
-    "href": "liedlayout.html#auf-die-inhaltsdatei-referenzieren",
-    "title": "Liedlayout",
-    "section": "Auf die Inhaltsdatei referenzieren",
-    "text": "Auf die Inhaltsdatei referenzieren\nNun ist der erste Schritt, auf die Inhaltsdatei zu referenzieren, die wir eben im Liederpool erstellt haben. Dazu vervollständigst du den Pfad: \\include \"../../lilypond-song-includes/liedbausteine/\". Tippe dazu einfach nur den Beginn des Dateinamen (also des Liedtitels nach dem bekannten Schema) ein. Unter den dann erscheinenden Optionen kannst du dir bereits das passende Lied auswählen.",
+    "objectID": "musikalischer_inhalt.html",
+    "href": "musikalischer_inhalt.html",
+    "title": "Musikalischer Inhalt",
+    "section": "",
+    "text": "In diesem Abschnitt der Doku zeigen wir Lösungen für Probleme oder Herausforderungen, die sich aus der Arbeit mit unserem System ergeben. Vieles davon wurde von tux entwickelt und befindet sich in den lilypond-common-includes, bei manchen Themen verweisen wir auch einfach nur auf die LilyPond-Doku. Dieser Teil ist fokussiert auf Fragen bezüglich der Notation und dem Liedtext.",
     "crumbs": [
-      "Einführung",
-      "Lieder setzen",
-      "Liedlayout"
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Musikalischer Inhalt"
     ]
   },
   {
-    "objectID": "liedlayout.html#layouten",
-    "href": "liedlayout.html#layouten",
-    "title": "Liedlayout",
-    "section": "Layouten",
-    "text": "Layouten\nJetzt geht’s ans Layout. Dazu kopierst du dir alles ab dem MUSIC-Teil aus der Inhaltsdatei in die Layoutdatei rüber. Das sieht bei uns dann am Ende so aus:\n\\version \"2.25.8\"\n\n\\include \"../../lilypond-custom-includes/base_config.ly\"\n\\include \"../../lilypond-song-includes/liedbausteine/\"\n\nHEADER = \\bookpart {\n  \\header {\n    \\basicSongInfo\n    %infotext = \"\"\n    categories = \"\"\n  }\n}\n\nMUSIC = {\n  &lt;&lt;\n      \\songChords\n      \\new ChoirStaff = \"firstStaff\"\n      &lt;&lt;        \n        \\new Voice = \"firstVoice\" { \\melodyVoice }\n        \\addlyrics { \\firstVerse }\n        \\addlyrics { \\secondVerse }\n        \\addlyrics { \\thirdVerse }\n        \\addlyrics { \\fourthVerse }\n      &gt;&gt;\n  &gt;&gt;\n}\n\nverse-breaks = {\n  s1 s \\break\n  s s \\break\n  s s \\break\n  s s \\break\n}\n\nTEXT = \\markuplist {\n  \\override #`(verse-break-voice . ,verse-breaks)\n  \\group-verses {\n    \\chordlyrics \\firstVerse\n    \\chordlyrics \\secondVerse\n    \\chordlyrics \\thirdVerse\n    \\chordlyrics \\fourthVerse\n  }\n}\n\n\\include \"../../lilypond-common-includes/standalone_output.ly\"\nJetzt kannst du schon einmal kompilieren und schauen, wie es aussieht. Der letzte Schritt ist nun der Feinschliff. Du kannst dich nun entscheiden: Möchtest du den Text direkt unter den Noten oder als Strophen mit Akkorden unterm gesamten Notensatz. Alles, was du nicht willst, kommentierst du einfach aus. Wenn du also nur die erste Strophe unter den Noten haben möchtest und den Rest unter dem Satz, sähe das so aus:\n\\version \"2.25.8\"\n\n\\include \"../../lilypond-custom-includes/base_config.ly\"\n\\include \"../../lilypond-song-includes/liedbausteine/\"\n\nHEADER = \\bookpart {\n  \\header {\n    \\basicSongInfo\n    %infotext = \"\"\n    categories = \"\"\n  }\n}\n\nMUSIC = {\n  &lt;&lt;\n      \\songChords\n      \\new ChoirStaff = \"firstStaff\"\n      &lt;&lt;        \n        \\new Voice = \"firstVoice\" { \\melodyVoice }\n        \\addlyrics { \\firstVerse }\n        %\\addlyrics { \\secondVerse }\n        %\\addlyrics { \\thirdVerse }\n        %\\addlyrics { \\fourthVerse }\n      &gt;&gt;\n  &gt;&gt;\n}\n\nverse-breaks = {\n  s1 s \\break\n  s s \\break\n  s s \\break\n  s s \\break\n}\n\nTEXT = \\markuplist {\n  \\override #`(verse-break-voice . ,verse-breaks)\n  \\group-verses {\n    %\\chordlyrics \\firstVerse\n    \\chordlyrics \\secondVerse\n    \\chordlyrics \\thirdVerse\n    \\chordlyrics \\fourthVerse\n  }\n}\n\n\\include \"../../lilypond-common-includes/standalone_output.ly\"\nJetzt kannst du kompilieren und schauen, ob es dir schon gefällt. Wenn du wölltest, könntest du auch noch die verse-breaks nach Belieben anpassen. Wie das geht, weißt du ja schon.\nUnd fertig ist dein erstes Liederbuch-Lied!",
+    "objectID": "musikalischer_inhalt.html#wiederholungen-in-den-strophen",
+    "href": "musikalischer_inhalt.html#wiederholungen-in-den-strophen",
+    "title": "Musikalischer Inhalt",
+    "section": "Wiederholungen in den Strophen",
+    "text": "Wiederholungen in den Strophen\nProblem: Wiederholungszeichen (𝄆 und 𝄇 ) im Text sollen nur in den Strophen, nicht aber unter den Noten stehen. Trotzdem wollen wir denselben Text für beides verwenden.\nLösung: Vor den wiederholten Teil im Text \\repStartWithTag und vor der letzten Silbe (nach den -- !) \\repStophWithTag.\nZur Erklärung: Es handelt sich faktisch um eine Stanza, die aber immer vor Silben gesetzt werden muss (sie kann aber auch rechts von Silben ausgerichtet werden). Diese Stanza wird nur bei einem bestimmten Tag ausgegeben, der repeats heißt. Mehr zu Tags findest du in der Lilypond-Doku. Standardmäßig wird der Tag ausgegeben, soll das nicht der Fall sein (wie zum Beispiel unter den Noten), muss innerhalb des MUSIC-Teils der Befehl \\removeWithTag #'repeats inkludiert werden.\nCodebeispiel (aus: Ade zur guten Nacht):\nthirdVerse = \\lyricmode {\n  %…\n  \\repStartWithTag\n  Wie man -- chen _ Glo -- cken -- schlag,\n  da Herz bei _ Her -- zen lag,\n  das hast du ver -- ges -- \\repStopWithTag sen.\n}\n\n%…\n\nMUSIC = {\n  \\removeWithTag #'repeats\n  &lt;&lt;\n      \\songChords\n      \\new ChoirStaff = \"firstStaff\"\n      &lt;&lt;\n        \\new Voice = \"firstVoice\" { \\melodyVoice }\n        \\addlyrics { \\firstVerse }\n        \\addlyrics { \\secondVerse }\n        \\addlyrics { \\thirdVerse }\n        \\addlyrics { \\fourthVerse }\n      &gt;&gt;\n  &gt;&gt;\n}\n\n\nIn den Strophen sieht das dann zum Beispiel so aus:",
     "crumbs": [
-      "Einführung",
-      "Lieder setzen",
-      "Liedlayout"
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Musikalischer Inhalt"
     ]
   },
   {
-    "objectID": "layout.html",
-    "href": "layout.html",
-    "title": "Layout",
+    "objectID": "musikalischer_inhalt.html#melismata-mehrere-noten-zu-einer-silbe",
+    "href": "musikalischer_inhalt.html#melismata-mehrere-noten-zu-einer-silbe",
+    "title": "Musikalischer Inhalt",
+    "section": "Melismata (mehrere Noten zu einer Silbe)",
+    "text": "Melismata (mehrere Noten zu einer Silbe)\nProblem: In manchen Strophen gibt es an einer Stelle ein Melisma und in der nächsten Strophe an derselben Stelle nicht. Dadurch verschiebt sich der Text.\nLösung: Nutzen von \\set ignoreMelismata = ##t nach Bedarf. Siehe dazu auch in der LilyPond-Doku.\nCodebeispiel:\n%firstVerse mit Melismata:\nfirstVerse = \\lyricmode {\n  #(stanza 1)\n  A -- de zur gu -- ten Nacht!\n  Jetzt wird der Schluss ge -- macht,\n  dass ich muss schei -- den.\n  \\repStartWithTag\n  Im Som -- mer, da wächst der Klee, im Win -- ter da schneit’s den Schnee,\n  da kom -- me ich wie -- \\repStopWithTag der.\n}\n\n%secondVerse ohne Melismata\nsecondVerse = \\lyricmode {\n  #(stanza 2)\n  Es trau -- ern Berg und Tal,\n  wo ich viel tau -- send -- mal\n  bin drü -- ber gan -- gen.\n  \\set ignoreMelismata = ##t %ab hier werden Melismata ignoriert\n  \\repStartWithTag\n  Das hat dei -- ne Schön -- heit ge -- macht,\n  die hat mich zum Lie -- ben ge -- bracht\n  \\unset ignoreMelismata %und hier wieder nicht mehr\n  mit gro -- ßem Ver -- lan -- \\repStopWithTag gen.\n}\n\n\nSo sieht dann der Output der ersten beiden Verse aus:",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Musikalischer Inhalt"
+    ]
+  },
+  {
+    "objectID": "musikalischer_inhalt.html#mehrere-silben-zu-einer-note",
+    "href": "musikalischer_inhalt.html#mehrere-silben-zu-einer-note",
+    "title": "Musikalischer Inhalt",
+    "section": "Mehrere Silben zu einer Note",
+    "text": "Mehrere Silben zu einer Note\nSiehe Lilypond-Doku.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Musikalischer Inhalt"
+    ]
+  },
+  {
+    "objectID": "musikalischer_inhalt.html#silbentrennung-bei-volta-klammern",
+    "href": "musikalischer_inhalt.html#silbentrennung-bei-volta-klammern",
+    "title": "Musikalischer Inhalt",
+    "section": "Silbentrennung bei Volta-Klammern",
+    "text": "Silbentrennung bei Volta-Klammern\nProblem: Es kommt vor, dass in Liedern die Melodie der Strophe wiederholt wird. Wenn man dabei eine Wiederholung mit Volta-Klammern notiert und ein Wort in die Wiederholung „hineinragt“, dann skipt man die folgenden Notenwerte, was aber dazu führt, dass unter der gesamten Klammer eins Lyric-Hyphens (Bindestriche zwischen den Silben) gesetzt werden.\nLösung: Mit \\once \\hide \\LyricHyphen werden alle Hyphens der nächsten Silbe unterdrückt. Stattdessen wird mit \\rightHyphen bzw. \\leftHyphen ein manueller Hyphen gesetzt (die Funktion ist in den common-includes definiert). Die \\skip4-Befehle werden ggf. über eine dafür gesetzte Variable definiert (im unteren Beispiel voltaSkipsLyrics). Da die Hyphens im Text (also den „Strophen“) nicht zu sehen sein sollen, werden sie mittels eines Tags gesetzt, der volta heißt. Mehr zu Tags in der Lilypond-Doku.\nCodebeispiel:\nvoltaSkipsLyrics = \\lyricmode {\n  \\repeat unfold 10 { \\skip4 }\n}\n\nfirstVerseB = \\lyricmode {\n  Hab es selbst so ge -- wählt, nie die Jah -- re \\tag #'volta { \\once \\hide LyricHyphen \\rightHyphen } ge -- \\tag #'volta { \\voltaSkipsLyrics \\leftHyphen } zählt,\n  nie nach ges -- tern und mor -- gen ge -- fragt.\n}\n\n\n\nAbbildung 1: Links das Problem, rechts die Lösung.\n\n\n\n\n\n\nSo soll das nicht aussehen.\n\n\n\n\n\n\n\nSo sieht das ganze dann „schön“ aus:",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Musikalischer Inhalt"
+    ]
+  },
+  {
+    "objectID": "musikalischer_inhalt.html#umgang-mit-wiederholungen-bei-gleichbleibendem-text",
+    "href": "musikalischer_inhalt.html#umgang-mit-wiederholungen-bei-gleichbleibendem-text",
+    "title": "Musikalischer Inhalt",
+    "section": "Umgang mit Wiederholungen bei gleichbleibendem Text",
+    "text": "Umgang mit Wiederholungen bei gleichbleibendem Text\nProblem: Gibt es Volta-Klammern bei Liedern, in denen der Text des wiederholten Teils gleich ist, zum Beispiel, weil es nach der Klammer anders weitergeht, kommt es vor, dass man in die Lyrics zum Beispiel schreiben müsste: Und je -- der Kerl, der mit uns war, hat für im -- mer sich zu uns ge -- sellt. Und sellt.. Das ist natürlich unpraktisch für die Übernahme in die Strophen, weil man das sellt. Und ja nicht in den Strophen haben möchte.\nLösung: Auch hier kommen wieder Tags zum Einsatz und zwar wie folgt. Es wird ein neuer Tag repeat definiert, der alles in einschließt, was für die Volta-Wiederholungen notwendig ist. Für die Strophen werden dann extra-Variablen definiert, in denen dieser Tag ausgeschaltet wird. Wichtig: Der Tag muss sich natürlich auch in der Melodie und den Akkorden wiederfinden.\nCodebeispiel:\nfirstVerseWithRepeat = \\lyricmode {\n  #(stanza 1)\n  Wir sind ei -- ne klei -- ne ver -- lo -- re -- ne Schar,\n  wir ste -- hen für uns auf der Welt.\n  \\repStartWithTag Und je -- der Kerl, der mit uns war,\n  hat für im -- mer sich zu uns ge -- \\tag #'repeat { sellt. Und } \\repStopWithTag sellt.\n}\n\nfirstVerse = \\lyricmode {\n  \\removeWithTag #'repeat \\firstVerseWithRepeat\n}\n\nfirstVoice = \\relative c' {\n  \\partial4\n  fis4\n  g8 e4 fis8 g e4 g8\n  fis g4 fis8 e4 d4\n  g8 g4 g8 a d4 c8\n  h2. h4\n  \\repeat volta 2 {\n    c4 c c c\n    h8 h4 (a8) g4 g8 a\n    h8 h4 h8 a h4 a8\n  }\n  \\alternative {\n    % Tag bedenken\n    \\tag #'repeat { g2. h4 }\n    { g1 }\n  }\n}\n\nverseChords = \\chordmode {\n  \\partial4\n  s4 e1:m h2:7 e4:m d:7\n  g2 d:7 g1\n  \\repeat volta 2 {\n    c1 g g2 d:7\n  }Bock\n  \\alternative {\n    %Tag bedenken\n    \\tag #'repeat { g1 }\n    { g1 }\n  }\n}\n\n% im MUSIC-Teil wird der Tag dann wieder aktiviert\nMUSIC = {\n  \\keepWithTag #'repeat\n  &lt;&lt;\n      \\songChords\n      \\new ChoirStaff = \"firstStaff\"\n      &lt;&lt;\n        \\new Voice = \"firstVoice\" { \\melodyVoice }\n        \\addlyrics { \\firstVerseWithRepeat }\n        \\addlyrics { \\secondVerseWithRepeat }\n        \\addlyrics { \\thirdVerseWithRepeat }\n      &gt;&gt;\n  &gt;&gt;\n}\n\n% Für die Strophen wollen wir keine Volta-Wiederholung\nverse-chords = \\chords { \\removeWithTag #'repeat \\verseChords }",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Musikalischer Inhalt"
+    ]
+  },
+  {
+    "objectID": "musikalischer_inhalt.html#umgang-mit-wiederholungen-bei-neuem-text",
+    "href": "musikalischer_inhalt.html#umgang-mit-wiederholungen-bei-neuem-text",
+    "title": "Musikalischer Inhalt",
+    "section": "Umgang mit Wiederholungen bei „neuem“ Text",
+    "text": "Umgang mit Wiederholungen bei „neuem“ Text\nProblem: Volta-Klammern (Wiederholungsklammern), bei denen nicht derselbe Text wiederholt wird, sollten in den Strophen aufgelöst werden, damit der Text hintereinander (und nicht wie in den Noten untereinander) steht.\nLösung: Dafür nutzen wir den Befehl \\unfoldRepeats, der in den verse-chords und verse-voice gesetzt werden muss und dann per \\override auf die Strophen angewendet werden kann (Achtung: \\override gilt immer nur für das folgende Element, zum Beispiel ein Vers oder ein \\group-verses-Ausdruck). Außerdem müssen die Verse aufgeteilt werden in verschiedene Teile.\nCodebeispiel:\nfirstVerseA = \\lyricmode {\n  #(stanza 1)\n  Er -- ste Wie -- der -- ho -- lung,\n}\n\nfirstVerseB = \\lyricmode {\n  zwei -- te Wie -- der -- ho -- lung.\n}\n\nfirstVerseC = \\lyricmode {\n  Wei -- ter geht’s\n}\n\nfirstVerse = { \\firstVerseA \\firstVerseB \\firsVerseC }\n\nverse-chords = \\chords { \\unfoldRepeats \\verseChords }\nverse-voice = { \\unfoldRepeats \\firstVoice }\nverse-breaks = { \n  s4 s2*3 s4 \\break\n  s4 s2*3 s4 \\break\n  s4 s2*3 s4 \\break\n}\n\nTEXT = \\markuplist {\n  \\override #`(verse-chords . ,verse-chords)\n  \\override #`(verse-reference-voice . ,verse-voice)\n  \\override #`(verse-break-voice . ,verse-breaks)\n  \\group-verses {\n    \\chordlyrics \\firstVerse\n  }\n}",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Musikalischer Inhalt"
+    ]
+  },
+  {
+    "objectID": "musikalischer_inhalt.html#strophen-mit-unterschiedlichen-noten--oder-silbenverteilung-oder-rhythmus",
+    "href": "musikalischer_inhalt.html#strophen-mit-unterschiedlichen-noten--oder-silbenverteilung-oder-rhythmus",
+    "title": "Musikalischer Inhalt",
+    "section": "Strophen mit unterschiedlichen Noten- oder Silbenverteilung oder Rhythmus",
+    "text": "Strophen mit unterschiedlichen Noten- oder Silbenverteilung oder Rhythmus\nProblem:\n\nGerade bei neueren Liedern kommt es häufig vor, dass sie unterschiedliche Rhythmen (zum Beispiel Auftakte) in den Strophen haben. Da der Text an Noten ausgerichtet wird, kommt es somit zu einem Problem, wenn in der 1. Strophe beispielsweise kein Auftakt vorhanden ist, in der 2. Strophe jedoch schon, kann der Versanfang der 2. Strophe nicht an Noten ausgerichtet werden, da diese in der Melodie (der 1. Strophe) gar nicht vorkommen.\nDas Notenbild / der Notensatz der 1. Strophe soll aber nicht unnötig aufgebläht werden durch Auftaktkonstruktionen (und es gibt natürlich auch noch wesentlich komplexere Konflikte), da dadurch die Lesbarkeit erschwert wird und das Notenbild mehr Verwirrung als Klarheit schaffen würde.\n\nLösung:\n\nNutzung von einer Funktion, die Tags nutzt: \\alt (siehe Codebeispiel). Die Idee ist, dass es eine einfache Notation gibt (üblicherweise die der 1. Strophe) und eine komplexere, an der alle Verse ausgerichtet werden können. Die \\alt-Funktion wird im \\relative-Teil wie folgt angewendet: \\alt { A } { B }. A steht für die einfache Notation, B für die komplexe.\nNun gibt es wiederum das Problem, dass der Text in den unterschiedlichen Notationen an unterschiedlichen Stellen geskipt werden muss. Dafür gibt es die Lösung über die Funktion \\multiVerseSkips X. Das X ist dabei zu ersetzen mit der Anzahl der zu skipenden Noten. X muss mindestens den Wert 1 haben.\nIm MUSIC-Teil muss der Tag nun auch angegeben werden. Zum Codebeispiel: Im music-Teil muss nichts angepasst werden, stattdessen kann man nun im MUSIC-Teil angeben, ob man die multiVerse-Ansicht oder die firstVerse-Ansicht angezeigt werden möchte. Das jeweils andere kann auskommentiert werden.\n\nCodebeispiel:\nfirstVerse = \\lyricmode {\n  #(stanza 1)\n  \\multiVerseSkips 4 Komm zu mir, leg dich ins Laub\n  \\\\multiVerseSkips 1 und \\\\multiVerseSkips 1 hör, was die Wur -- zeln er -- zäh -- len.\n  Je -- \\\\multiVerseSkips 1 des \\\\multiVerseSkips 1 Blatt zer -- fällt ein -- mal zu Staub\n  \\\\multiVerseSkips 2 und je -- der Baum wird auch wie -- der zu Er -- de.\n  Doch je -- des En -- de ist ein An -- fang\n  und vol -- ler Kreis -- läu -- fe sind Zeit und Raum.\n  Al -- les ver -- geht, doch nichts geht ver -- lo -- ren,\n  al -- les ist Wirk -- lich -- keit und al -- les ist Traum.\n}\n\n% Verwendung von alt\nfirstVoice = \\relative c' {\n  \\alt {} { \\partial2 a8 a d8 f8 }\n  a4. a8 a4\n  g4 a g\n  e2.\n  \\alt { r2 d4 } { r4 r8 d d d }\n  e4. e8 e4\n  d4 e d\n  c4 a2\n}\n\n% Einbindung in music/MUSIC\nmusic = {\n  &lt;&lt;\n      \\songChords\n      \\new ChoirStaff = \"firstStaff\"\n      &lt;&lt;\n        \\new Voice = \"firstVoice\" { \\melodyVoice }\n        \\addlyrics { \\firstVerse }\n        \\addlyrics { \\tag #'multiVerse \\secondVerse }\n        \\addlyrics { \\tag #'multiVerse \\thirdVerse }\n        \\addlyrics { \\tag #'multiVerse \\fourthVerse }\n        \\addlyrics { \\tag #'multiVerse \\fifthVerse }\n      &gt;&gt;\n  &gt;&gt;\n}\n\nMUSIC = {\n  \\keepWithTag #'multiVerse\n  %\\keepWithTag #'firstVerse\n  \\music\n}\n\n\n\nAbbildung 2: Das sind die beiden möglichen resultierenden Ansichten.\n\n\n\n\n\n\nDie \\firstVerse-Ansicht:\n\n\n\n\n\n\n\nDie \\multiVerse-Ansicht:",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Musikalischer Inhalt"
+    ]
+  },
+  {
+    "objectID": "musikalischer_inhalt.html#zeilenumbrüche-in-den-strophen",
+    "href": "musikalischer_inhalt.html#zeilenumbrüche-in-den-strophen",
+    "title": "Musikalischer Inhalt",
+    "section": "Zeilenumbrüche in den Strophen",
+    "text": "Zeilenumbrüche in den Strophen\nSiehe Layout-Teil der Doku.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Musikalischer Inhalt"
+    ]
+  },
+  {
+    "objectID": "musikalischer_inhalt.html#leichte-textvariationen",
+    "href": "musikalischer_inhalt.html#leichte-textvariationen",
+    "title": "Musikalischer Inhalt",
+    "section": "(Leichte) Textvariationen",
+    "text": "(Leichte) Textvariationen\nProblem: Es gibt teilweise leichte Textvariationen bei einzelnen Wörtern.\nLösung: Auch da helfen uns wieder die Tags (Lilypond-Doku). Je nach Belieben kann dann entweder die eine Variante aktiviert werden oder die andere.\n\nInnerhalb einer Variante\nBeim Regenbogenlied gibt es beispielsweise eine Unterscheidung im Artikel zwischen dem ersten und zweitem Refrain. Die Lösung dafür ist, einfach beides einzubauen und dann das jeweils nicht benötigte auszuschalten. Das hat den Vorteil, dass wir trotzdem dieselbe Textbasis verwenden können.\nCodebeispiel:\nrefLyrics = \\lyricmode {\n  \\ref\n  \\repStartWithTag Ü -- ber uns \\tag #'first { ein } \\tag #'second { der } Re -- gen -- bo -- gen,\n  zeigt uns den Weg in sei -- nem Licht,\n  die Wol -- ken sind schon fort -- ge -- zo -- gen,\n  ver -- weh -- ren uns die Son -- ne \\repStopWithTag nicht.\n}\n\nrefLyricsFirst = \\lyricmode { \\removeWithTag #'second \\refLyrics }\nrefLyricsSecond = \\lyricmode { \\removeWithTag #'first \\refLyrics }\n\n\nVerschiedene Varianten\nAnders verhält es sich, wenn wir ein Lied haben, bei dem es verschiedene Varianten gibt. Mitunter kann es hilfreich sein, einen kürzeren Befehl zu haben, wenn beide Varianten sich an vielen Stellen unterscheiden. Das kann folgendermaßen gelöst werden:\nvariant =\n#(define-music-function (parser location a b) (ly:music? ly:music?) \n  #{ \\tag #'bock { #a } \\tag #'codex { #b } #})\nWenn mehr als zwei Varianten benötigt werden, kann der Befehl problemlos erweitert werden, indem weitere Elemente hinzugefügt werden:\n#(define-music-function (parser location a b c d) (ly:music? ly:music? ly:music? ly:music?)  #{ \\tag #'bock { #a } \\tag #'codex { #b } \\tag #'buedel { #c } \\tag #'boernel { #d } #}).\nDer Tag-Abruf erfolgt dann zum Beispiel so:\nfirstVerse = \\lyricmode {\n  #(stanza 1)\n  Das ist der ers -- te \\variant { Vers } { Verse } { Teil } { Ab -- schnitt }.\n}\nDabei ist die oben definierte Reihenfolge entscheidend! Der jeweils gewünschte Tag muss dann unbedingt im MUSIC-Teil zugewiesen werden. Dabei sollte im MUSIC-Teil ebenfalls erkennbar sein, wie viele und welche Varianten es überhaupt gibt, zum Beispiel durch auskommentierte Alternativvarianten:\nMUSIC = {\n  \\keepWithTag #'bock\n  %\\keepWithTag #'codex\n  %\\keepWithTag #'buedel\n  %\\keepWithTag #'boernel\n  &lt;&lt;\n      \\songChords\n      \\new ChoirStaff = \"firstStaff\"\n      &lt;&lt;\n        \\new Voice = \"firstVoice\" { \\melodyVoice }\n        \\addlyrics { \\firstVerse }\n      &gt;&gt;\n  &gt;&gt;\n}",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Musikalischer Inhalt"
+    ]
+  },
+  {
+    "objectID": "musikalischer_inhalt.html#swing-style",
+    "href": "musikalischer_inhalt.html#swing-style",
+    "title": "Musikalischer Inhalt",
+    "section": "Swing-Style",
+    "text": "Swing-Style\nDen Swing-Style kann man mittels der Funktion \\swingMusic erwirken. Das setzt den folgenden musikalischen Ausdruck im Swing-Style. \\swingMusic kann beispielsweise in die \\melodyVoice gepackt werden (dann geschweifte Klammern nicht vergessen). Die Midi-Ausgabe erfolgt dann sogleich rhythmisch korrekt.\nDer Swing-Style kann mithilfe der Funktion \\swingOff wieder ausgestellt werden. Das ist im unteren Beispiel zwar für die Midi-Ausgabe gar nicht nötig, allerdings printed \\swingOff auch das entsprechende Zeichen, dass kein Swing-Style mehr gespielt werden soll. Andernfalls wüsste man anhand des Liedblattes nicht, dass der Swing-Style aufhört.\nmelodyVoice = {\n  \\global\n  \\swingMusic { \\firstVoice \\interludeVoice }\n  \\swingOff \\refVoice\n  \\bar \"|.\"\n}",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Musikalischer Inhalt"
+    ]
+  },
+  {
+    "objectID": "musikalischer_inhalt.html#römische-ziffern",
+    "href": "musikalischer_inhalt.html#römische-ziffern",
+    "title": "Musikalischer Inhalt",
+    "section": "Römische Ziffern",
+    "text": "Römische Ziffern\nSiehe Layout-Doku.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Musikalischer Inhalt"
+    ]
+  },
+  {
+    "objectID": "git_verstehen.html",
+    "href": "git_verstehen.html",
+    "title": "Was ist eigentlich Git? 2.0",
+    "section": "",
+    "text": "Git ist ein Versionierungssystem, welches frei als Open-Source-Software zur Verfügung gestellt wird. Git wird für die Versionskontrolle (stetige Protokollierung von Änderungen) von Dateien eingesetzt.\nVor allem im Programmierbereich dient Git dazu, die eigenen Änderungen zu überwachen, sie rückgängig zu machen. Die wesentliche Nutzung findet in sogenannten „Repositories“ (Repos) statt. Das ist quasi ein Ordner, in dem sich Dateien und andere Ordner befinden, quasi eine Art „Arbeitsordner“ oder „Arbeitsverzeichnis“. Dabei gibt es verschiedene Orte, an dem dieser Arbeitsordner liegt.\nDadurch ergeben sich am Repo für Bearbeiter*innen folgende Möglichkeiten:",
+    "crumbs": [
+      "Doku",
+      "Review-Prozess",
+      "Was ist eigentlich Git? 2.0"
+    ]
+  },
+  {
+    "objectID": "git_verstehen.html#spielerisch-git-lernen",
+    "href": "git_verstehen.html#spielerisch-git-lernen",
+    "title": "Was ist eigentlich Git? 2.0",
+    "section": "Spielerisch Git lernen",
+    "text": "Spielerisch Git lernen\nHier gibt es eine tolle Spielwiese zum Ausprobieren: https://learngitbranching.js.org/. Sinnvoll für uns ist mindestens die Einführung.",
+    "crumbs": [
+      "Doku",
+      "Review-Prozess",
+      "Was ist eigentlich Git? 2.0"
+    ]
+  },
+  {
+    "objectID": "git_verstehen.html#git-für-liederbücher-nutzen",
+    "href": "git_verstehen.html#git-für-liederbücher-nutzen",
+    "title": "Was ist eigentlich Git? 2.0",
+    "section": "Git für Liederbücher nutzen",
+    "text": "Git für Liederbücher nutzen\nWie das geht haben wir dir im Anfangs-Tutorial zusammengestellt.",
+    "crumbs": [
+      "Doku",
+      "Review-Prozess",
+      "Was ist eigentlich Git? 2.0"
+    ]
+  },
+  {
+    "objectID": "git_verstehen.html#grundbegriffe-im-git-alltag",
+    "href": "git_verstehen.html#grundbegriffe-im-git-alltag",
+    "title": "Was ist eigentlich Git? 2.0",
+    "section": "Grundbegriffe im Git-Alltag",
+    "text": "Grundbegriffe im Git-Alltag\nAnmerkungen: alphabetische Sortierung. Als Befehle wurden jeweils die Original-Kommandozeilenbefehle von Git angegeben, mithilfe derer du herausfinden kannst, wie das dann in deiner GUI funktioniert.\n\nBranches\nBeim Einsatz von Git dienen Branches (engl.: to branch – sich verzweigen) dazu, um einen separaten Arbeitszweig zu erstellen. Dieser kann dann auch als neuer Kontext gesehen werden, in dem gearbeitet wird. So kann z.B. die Programmierung eines Sicherheits-Patches in einem eigenen Branch erfolgen (im Kontext des Patches), der bei Fertigstellung und nach dem Testen zurück in den Master-Zweig eingearbeitet wird. Das Wiedereinführen funktioniert bei uns über einen Pull-Request.\nBefehl: git branch NAME\n\n\nCheckout\nDas Wechseln von einem Branch in einen anderen Branch.\nBefehl: git checkout BRANCH\n\n\nCherry-Picking\nCherry-Picking in Git ist ein Befehl, mit dem du einen bestimmten Commit (eine Änderung) aus einem Branch (Zweig) auswählen und in einen anderen Branch übertragen kannst.\nStell dir vor, du hast zwei Zweige: main und feature. Wenn du eine bestimmte Änderung, die du im feature-Zweig gemacht hast, auch im main-Zweig haben möchtest, kannst du den Cherry-Pick-Befehl verwenden. Das funktioniert so:\n\nDu wechselst zum Ziel-Branch (z. B. main).\nDu führst den Befehl git cherry-pick &lt;commit-hash&gt; aus, wobei &lt;commit-hash&gt; die ID des Commits ist, den du übernehmen möchtest.\nIn einer GUI kannst du vermutlich einfach auf den Commit mit Rechtsklick klicken und solltest dann eine Option Cherry-Pick haben.\n\nGit nimmt dann nur diese spezifische Änderung und fügt sie in den aktuellen Branch ein, ohne die anderen Änderungen im feature-Zweig zu übernehmen.\nDas ist nützlich, wenn du nur bestimmte Features oder Bugfixes übernehmen möchtest, ohne alles andere mit zu übernehmen. Für uns ist Cherry-Picking hilfreich, wenn du ein Liederbuch machst, aber nicht alle Pull-Requests der neuen Lieder schon gereviewed wurden. Dann kannst du einen eigenen Branch fürs Liederbuch erstellen und einfach die Commits, die dir fehlen in deinen Liederbuch-Branch cherry-picken.\n\n\nCommit\nEin Commit in einem Git-Repository speichert eine Abbildung aller Dateien in deinem Projektverzeichnis. Es ist wie ein riesiges Kopieren und Einfügen, nur besser.\nAllerdings will Git die Commits so schlank wie möglich halten, also kopiert es nicht einfach stur das ganze Verzeichnis jedes Mal wenn du committest. Es kann (wenn möglich) Commits als Menge von Änderungen zusammenpacken, von einer Version des Repositorys zur nächsten.\nAußerdem führt Git ein Protokoll darüber, welche Commits wann gemacht wurden, und welcher auf welchen folgt. Dieses Protokoll zu haben ist eine tolle Sache für jeden, der an einem Projekt arbeitet. Commits sind sehr ressourcenschonend, und zwischen ihnen wechseln geht superschnell!\nBefehl: git commit\n\n\nFetch\nDer Befehl git fetch importiert Commits von einem Remote-Repository in das lokale Repo. Dabei werden die Commits des Remote-Repos aber nicht ins lokale Repo überführt (wie bei git pull). Fetching ist die geeignete Methode, um einzusehen, woran andere gearbeitet haben. Da auf diese Weise importierte Inhalte von Remote-Branches repräsentiert werden, haben sie absolut keinen Effekt auf die lokale Entwicklungsarbeit.\nAlternative Erklärung: git fetch holt Änderungen aus dem Remote-Repository, aber wendet diese nicht auf den lokalen Code an.\n\n\nForce-Push\nEin Force-Push in Git ist ein Befehl, der es dir ermöglicht, Änderungen an einem Remote-Branch (einem Branch auf einem Server) zu senden, selbst wenn diese Änderungen nicht mit dem aktuellen Stand des Remote-Branches übereinstimmen.\nNormalerweise überprüft Git, ob dein lokaler Branch (dein Arbeitszweig) und der Remote-Branch synchron sind, bevor du Änderungen hochlädst. Wenn sie nicht übereinstimmen, gibt Git eine Fehlermeldung aus, um zu verhindern, dass du möglicherweise wichtige Änderungen überschreibst.\nMit git push --force (oder git push -f) sagst du Git, dass du die aktuellen Änderungen im Remote-Branch überschreiben möchtest, egal was dort steht.\nDas kann nützlich sein, wenn du zum Beispiel:\n\nFehler in einem Commit korrigiert hast und die Historie neu schreiben möchtest.\nCommits zurückgesetzt oder gelöscht hast und die Änderungen trotzdem hochladen möchtest.\n\nAchtung: Force-Push kann gefährlich sein, weil es die Historie des Remote-Branches verändert und möglicherweise die Arbeit anderer Entwickler überschreibt. Daher sollte man es mit Vorsicht verwenden und sicherstellen, dass man weiß, was man tut.\n\n\n\n\n\n\nWarnung\n\n\n\nForce-Pushing nutzen wir beispielsweise, wenn du Fehler in einem Lied korrigierst, das sich im Review-Stadium befindet. Dafür möchten wir nicht mehrere Commits haben. Mach dir dabei bewusst, dass du die Änderungen überschreibst – es sollte also sicher sein, dass durch deine Änderungen nichts wichtiges verloren geht. Wenn du dir nicht sicher bist, ob deine Änderungen auf Zustimmung stoßen, mach einen extra Commit und frag nach. Die Commits können dann in einem zweiten Schritt zusammengeführt werden.\n\n\nBefehl: git push --force\n\n\nHEAD\nHEAD ist ein Alias für den Commit, der gerade ausgecheckt ist – es ist im Prinzip der Commit, an den du deinen nächsten Commit hängst.\nHEAD zeigt immer auf den neuesten Commit. Die meisten Git-Befehle, die den Baum verändern, fangen damit an, dass sie HEAD verschieben.\nNormalerweise zeigt HEAD auf einen Branch-Namen (z.B. bugFix). Wenn du einen Commit machst, wird bugFix auf diesen Commit geschoben, und HEAD (da es auf bugFix zeigt) automatisch auch.\n\n\nMerge\nDie einfachste Methode, mit der man Branches zusammenführen kann, ist git merge. Das Mergen erzeugt in git einen speziellen Commit, der zwei Vorgänger hat. Ein solcher Commit bedeutet im Prinzip “ich möchte alle Arbeit von dem Vorgänger hier und dem dort und allen ihren jeweiligen Vorgängern miteinander kombinieren”.\nBefehl: git merge\n\n\nPull\nMit dem pull-Befehl kann man Änderungen aus einem Remote-Repository holen und mit dem lokalen Repository, also den Dateien, an denen man derzeit arbeitet, synchronisieren.\n\n\nPush\nMit git push können Commits nun von einem lokalen Repository in ein Remote-Repo transferiert werden. Dieser Befehl ist das Gegenstück zu git fetch. Während beim Fetching Commits in lokale Branches importiert werden, exportiert git push Commits in Remote-Branches. Es besteht die Möglichkeit, Änderungen zu überschreiben; entsprechend sorgfältig sollte der Befehl genutzt werden.\n\n\nRepository\nIn ein Repository bzw. einem Repo befinden sich alle Dateien inklusive derer vorangegangenen Versionen. Dadurch stehen stets alle Änderungen zur Verfügung, die von einer Datei ins Repo gespielt wurden und es kann nachvollzogen werden wer, wann, welche Änderungen durchgeführt hat. Das besondere an Git ist, dass jede lokale Working Directory eines Users (ein „Klon“ - via git clone) wieder ein vollständiges, eigenes, lokales Repo darstellt. Es existieren somit mehrere Kopien der Repos, der, der einen Klon besitzt, kann daran arbeiten – inklusive kompletter History, auch offline und ohne Abhängigkeit von einem zentralen Server. Die Änderungen aus dem eigenen Repo / der Working Copy können dann auf einen Ruck oder Schritt für Schritt, wenn sie als public angesehen werden, wieder in das Remote-Repo „gepusht“ werden (git push).\n\n\nRebase\nDer zweite Weg um Inhalte aus verschiedenen Branches zu kombinieren istgit rebase. Rebasen nimmt im Prinzip eine Menge von Commits, „kopiert“ sie und packt sie auf etwas anderes drauf.\nAuch wenn das erst mal komisch klingt, liegt der Vorteil von Rebase darin, dass man es benutzen kann um hübsch lineare Abfolgen von Commits zu erhalten. Das Commit-Protokoll des Repositorys wird durch Rebase eine ganze Ecke einfacher aussehen, weil Merge Commits vermieden werden.\nBefehl: git rebase\n\n\nSubmodul\nDas lilypond-song-includes-Repo wird in der Regel als Submodul genutzt. Das bedeutet, es ist ein eigenes (Remote-)Repository, das in ein anderes (Remote-)Repository eingebunden wird (zum Beispiel dein Liederbuch-Repo).\n\n\nVersionierung\nSobald an einer Working Copy gearbeitet wird protokolliert Git alle getätigten Änderungen mit. Mittels commit können die Änderungen zu dem Repository hinzugefügt werden, eine neue Version der Datei(n) befinden sich dann im Repo. Anschließend können verschiedene Versionen miteinander verglichen, Änderungen rückgängig oder zu einer früheren Version zurückgekehrt werden. Die Log-Informationen, die von Git mit aufgezeichnet werden können mit git log ausgegeben werden, git status listet die noch nicht ins Repo gespielten Änderungen der Working Copy auf.\n\n\nWorking Directory",
+    "crumbs": [
+      "Doku",
+      "Review-Prozess",
+      "Was ist eigentlich Git? 2.0"
+    ]
+  },
+  {
+    "objectID": "git_einrichten.html",
+    "href": "git_einrichten.html",
+    "title": "Einrichtung von Git",
+    "section": "",
+    "text": "Hier geht es jetzt nur um eine kurze und möglichst unkomplizierte Einrichtung von Git. Du musst gar nicht alles verstehen, was im Hintergrund passiert. Das kann an späterer Stelle irgendwann auch noch kommen.",
+    "crumbs": [
+      "Einführung",
+      "Vorbereitung",
+      "Einrichtung von Git"
+    ]
+  },
+  {
+    "objectID": "git_einrichten.html#sec-tuxgit-account",
+    "href": "git_einrichten.html#sec-tuxgit-account",
+    "title": "Einrichtung von Git",
+    "section": "Account bei tuxgit erstellen lassen",
+    "text": "Account bei tuxgit erstellen lassen\nDu brauchst einen Account für unseren Git-Server. Aufgrund von Spam ist die Registrierung nicht öffentlich möglich, deswegen musst du dafür eine E-Mail an tux schreiben. Die Web-Adresse unseres Git-Servers ist: https://git.zahlenlabyrinth.de/.",
+    "crumbs": [
+      "Einführung",
+      "Vorbereitung",
+      "Einrichtung von Git"
+    ]
+  },
+  {
+    "objectID": "git_einrichten.html#eine-git-gui-aussuchen-und-herunterladen",
+    "href": "git_einrichten.html#eine-git-gui-aussuchen-und-herunterladen",
+    "title": "Einrichtung von Git",
+    "section": "Eine Git-GUI aussuchen und herunterladen",
+    "text": "Eine Git-GUI aussuchen und herunterladen\nGit ist per se erstmal ein Kommandozeilen-Programm. Das ist nicht für jede*n was – erst recht nicht, wenn man noch nicht so viel mit Coden zu tun hatte. Das ist aber gar nicht schlimm, denn es gibt zahlreiche verschiedene grafische Oberflächen für Git, die das Arbeiten sehr erleichtern können. Verbreitet bei uns sind gerade diese hier:\n\nSmartGit\n\nLink\nfür Windows, MacOS, Linux\nkostet was, es gibt aber eine non-commercial Lizenz für gemeinnützige Organisationen und Bildungseinrichtungen: Apply for Non-Commercial License\nDafür brauchst du eine gemeinnützige Organisation, mit deren E-Mail-Adresse du dich dort registrieren kannst. Alternativ geht auch eine Uni-Mail-Adresse.\n\n\n\nSourceTree\n\nLink\nfür Windows, MacOS\n\n\n\nTortoiseGit\n\nLink\nfür Windows\n\nOder man nutzt es in der Konsole. Dann braucht man die Git Shell: Link.",
+    "crumbs": [
+      "Einführung",
+      "Vorbereitung",
+      "Einrichtung von Git"
+    ]
+  },
+  {
+    "objectID": "git_einrichten.html#einrichten-eines-liederbuch-repos",
+    "href": "git_einrichten.html#einrichten-eines-liederbuch-repos",
+    "title": "Einrichtung von Git",
+    "section": "Einrichten eines Liederbuch-Repos",
+    "text": "Einrichten eines Liederbuch-Repos\nDa du Git vermutlich zum ersten Mal nutzt, brauchst du zuerst einen SSH-Key. Der SSH-Key ist dafür da, dass das Remote-Repo weiß, dass dein lokales Repo auch zu dir gehört. Sonst könnte ja jeder, der den SSH-Link hat (siehe dazu Abbildung 1), Zugriff aufs Repo haben. Er ist also ein Identifikationsmittel für deinen Account. Dafür hinterlegst du den public key in deinem Git-Account und sagst deinem Git-Programm (SmartGit, SourceTree, TortoiseGit), wo deine Schlüssel-Datei liegt. Diese Datei ist auch nochmal extra passwortgeschützt. Sie sollte auf keinen Fall gelöscht oder verschoben werden. Die lange Erklärung kannst du hier nachlesen.\n\n\n\nAbbildung 1: Das ist der SSH-Link.\n\n\n\n\n\n\n\nSSH-Key erstellen\nDu musst dir einen SSH-Key erstellen und das Passwort, public key und private key und Schlüsseldatei speichern/aufbewahren. Eine Anleitung dafür findest du hier.\nAnschließend hinterlegst du den public key in deinem Git-Account (unter Einstellungen -&gt; SSH- / GPG-Schlüssel -&gt; Schlüssel hinzufügen).\nSpäter wirst du beim „Klonen“ eines Liederbuchs irgendwann nach deiner Schlüsseldatei gefragt (für die du dann auch das Passwort brauchst). Es ist also wichtig, dass du beides gut speicherst!\nKlingt alles sehr kompliziert und das ist es auch, aber: Du musst das nur einmal machen und dann funktioniert es einfach. Wenigstens etwas.\n\n\nEin neues Liederbuch-Repo mit dem Vorlagen-Repo erstellen\nDa du ja ganz neu einsteigst, hast du vermutlich noch kein eigenes Liederbuch-Repo. Deswegen erstellen wir erstmal eins. Das tolle ist: Wir haben zu genau diesem Zweck ein Vorlagen-Repo gebaut, mit dem du sofort die meisten wichtigen Sachen eingerichtet hast. Wichtig: Du brauchst vorher einen Account bei tuxgit (siehe Kapitel 1). So geht’s:\n\nDu gehst zu unserem LilyPond-Vorlagen-Repo auf unserem Git-Server.\nDu klickst auf Dieses Template verwenden.\nDu folgst den Schritten (Besitzer*innen, Name, … festlegen) Wichtig: Bei Template muss lilypond-vorlagen ausgewählt sein.\nDann kannst du einfach unten weitermachen.\n\n\n\nEin bestehendes Liederbuch-Repo klonen\nWenn du die obigen Schritte befolgt hast oder schon ein Liederbuch-Repo eingerichtet hast und dass einfach nur klonen willst, dann geht das so:\n\nRemote-Repo klonen\nJe nach GUI funktioniert das unterschiedlich. Irgendwo gibt es die Option Clone und da dann einen Dialog, in dem du unter anderem den SSH-Link des Repos eintragen kannst. Wichtig ist bei dem Prozess: Submodule müssen inkludiert werden. Irgendwo kann man dann den Speicherort des lokalen Repos festlegen. Es empfiehlt sich, einen Ordner zu haben, wo alle Git-Repos drin sind. Dies ist aber nicht notwendig für irgendetwas.\n\nSmartGit: In Smartgit navigierst du zu Repository -&gt; Clone und folgst dem Dialog. Zuerst gibst du deinen SSH-Link ein. Dann achtest du darauf, dass Submodules inkludiert werden und wählst zuletzt den Speicherort des Repos aus.\n\nAls nächstes müssen die Submodule noch richtig eingebunden werden, das geht nämlich leider nicht automatisch. Du brauchst auf jeden Fall unsere Common-Includes als Submodul. Wenn du mit unserem Liederpool arbeitest, brauchst du noch die Song-Includes als Submodul. Für jedes Submodul musst du diesen Prozess einzeln durchführen.\nAuch das funktioniert in jeder GUI anders. So geht es bei SmartGit:\n\nIm Menü Remote anwählen -&gt; Submodule -&gt; Add\nDann brauchst du die SSH-Links der Submodule. Die findest du auf die bekannte Art und Weise (siehe Abbildung 1).\nIm nächsten Schritt wird gefragt, an welcher Stelle das Submodul eingebunden werden soll, da kannst du einfach weiterklicken.\n\nFertig!\n\nUnd jetzt kann’s richtig losgehen!",
+    "crumbs": [
+      "Einführung",
+      "Vorbereitung",
+      "Einrichtung von Git"
+    ]
+  },
+  {
+    "objectID": "review.html",
+    "href": "review.html",
+    "title": "Review",
+    "section": "",
+    "text": "Ziel unseres Review-Prozesses ist hauptsächlich die Sicherstellung der Einhaltung unserer Standards sowie die Erhaltung der Qualität des Liederpools. Es wäre toll, jedes neu hinzugekommene Lied inhaltlich (auf musikalische Korrektheit des Satzes) zu prüfen, allerdings ist das sehr zeitaufwendig und manchmal auch gar nicht möglich (wenn zum Beispiel nur eine Person das Lied kennt).",
+    "crumbs": [
+      "Doku",
+      "Review-Prozess",
+      "Review"
+    ]
+  },
+  {
+    "objectID": "review.html#ziel",
+    "href": "review.html#ziel",
+    "title": "Review",
+    "section": "",
+    "text": "Ziel unseres Review-Prozesses ist hauptsächlich die Sicherstellung der Einhaltung unserer Standards sowie die Erhaltung der Qualität des Liederpools. Es wäre toll, jedes neu hinzugekommene Lied inhaltlich (auf musikalische Korrektheit des Satzes) zu prüfen, allerdings ist das sehr zeitaufwendig und manchmal auch gar nicht möglich (wenn zum Beispiel nur eine Person das Lied kennt).",
+    "crumbs": [
+      "Doku",
+      "Review-Prozess",
+      "Review"
+    ]
+  },
+  {
+    "objectID": "review.html#überblick",
+    "href": "review.html#überblick",
+    "title": "Review",
+    "section": "Überblick",
+    "text": "Überblick\nIm Folgenden findest du eine Kurzschrittfolge über den Reviewprozess und eine ausführliche Schrittfolge für Einsteiger*innen.",
+    "crumbs": [
+      "Doku",
+      "Review-Prozess",
+      "Review"
+    ]
+  },
+  {
+    "objectID": "review.html#kurz-und-knapp-schritte-zum-beitragen-neuer-lieder",
+    "href": "review.html#kurz-und-knapp-schritte-zum-beitragen-neuer-lieder",
+    "title": "Review",
+    "section": "Kurz und knapp: Schritte zum Beitragen neuer Lieder",
+    "text": "Kurz und knapp: Schritte zum Beitragen neuer Lieder\n\nNeue Lieder setzen und auf einem neuen Branch in den Liederpool pushen\nReview-Schritte (siehe unten) selbst durchgehen\nPull-Request für den Merge vom neuen Branch auf den main-Branch anlegen\nIn einer Review-Session oder durch einzelne Personen wird der Pull-Request dann geprüft und letztlich in den main-Branch gemerged.",
+    "crumbs": [
+      "Doku",
+      "Review-Prozess",
+      "Review"
+    ]
+  },
+  {
+    "objectID": "review.html#kurz-und-knapp-review-schritte",
+    "href": "review.html#kurz-und-knapp-review-schritte",
+    "title": "Review",
+    "section": "Kurz und knapp: Review-Schritte",
+    "text": "Kurz und knapp: Review-Schritte\n\nZu mergenden Branch auschecken\nLäuft die Kompilierung ohne Fehler durch?\nSind die Standards befolgt worden? Stimmen die Autor*innenangaben?\n\nFalls ja: Pull-Request genehmigen und mergen\nFalls nein: Korrekturen anfragen\n\nAm Ende rebasen, genehmigen und fast-forwarden. Fertsch.",
+    "crumbs": [
+      "Doku",
+      "Review-Prozess",
+      "Review"
+    ]
+  },
+  {
+    "objectID": "review.html#ausführliche-anleitung-neue-lieder-einfügen",
+    "href": "review.html#ausführliche-anleitung-neue-lieder-einfügen",
+    "title": "Review",
+    "section": "Ausführliche Anleitung: neue Lieder einfügen",
+    "text": "Ausführliche Anleitung: neue Lieder einfügen\nDies ist eine Einführung in unser Review-System. Damit das ganze möglichst praxisnah erklärt wird, machen wir ein Beispiel. Nehmen wir an, du hast das Lied „Sturm und Drang“ gesetzt und willst es dem Liederpool hinzufügen. In dieser Anleitung gehen wir jetzt alle Schritte durch, die es braucht, bis das Lied vollständig im Liederpool angekommen ist. Bei Fragen oder Irritationen meld dich gerne bei uns!\nBevor du dich mit Pull Requests beschäftigst, solltest du Lilypond eingerichtet, Git eingerichtet und wichtige Infos zu unseren Standards gelesen haben.\nAnmerkung vorweg: Alle beschriebenen Schritte funktionieren in jeder Git-GUI etwas anders. Das ist nervig, aber leider nicht zu ändern. Deswegen orientiere dich an den zugrundeliegenden Git-Befehlen und suche im Zweifel in der Doku deiner GUI, wie man den Git-Befehl in deinem Programm ausführt. Eine andere Möglichkeit ist, das du aus deinem Programm eine Konsole (oder Git Bash) öffnest und es darüber machst.\n\n1. Schritt: Ein neuer Branch\nDu hast das Lied “Sturm und Drang” gemäß unseren Standards gesetzt. Jetzt soll das Lied in einen neuen Branch gepusht werden.\n\nErstell einen neuen Branch im Submodul lilypond-song-includes. Der Git-Befehl dafür lautet git branch branchname, wobei du branchname mit dem Namen des neuen Branches ersetzen musst. In unserem Falle zum Beispiel sturmunddrang. Der Name ist nicht unglaublich wichtig, aber er sollte der Übersicht halber etwas mit deinen geplanten Änderungen zu tun haben und nicht zu allgemein sein (also nicht: „neues Lied“).\nCheck in diesen Branch aus, das heißt: Wechsle den Branch vom main-Branch in den neu erstellten Branch. Falls du dich nicht im main-Branch befindest, checke unbedingt vorher in den main-Branch aus. Der Git-Befehl dafür lautet git checkout sturmunddrang.\nCommitte deine Änderungen, in unserem Beispiel also das neue Lied. Der Git-Befehl dafür lautet git -m commit \"neues Lied: Sturm und Drang\". Bitte fass in einem Commit immer nur zusammenhängende Änderungen zusammen. Wenn du beispielsweise Korrekturen in den Docs und in den Liedbausteinen vornimmst, mach dafür zwei Commits. Außerdem häng eine Commit-Message (dafür steht das -m) an, in der du kurz beschreibst, was du geändert hast. Jetzt sind deine Änderungen lokal in einen neuen Branch commitet.\nPushe den neuen Branch. Das funktioniert mit dem Git-Befehl git push. Wichtig: Du musst dich dafür in deinem neuen Branch befinden. Jetzt befinden sich deine Änderungen remote in einem neuen Branch namens sturmunddrang.\n\n\n\n2. Schritt: Der Pull-Request\nUnser Liederpool befindet sich im main-Branch. Aus diesem Grund ist dieser Branch geschützt, man kann also nicht einfach auf ihn pushen. Dann wäre ein Review nämlich nicht systematisch möglich. Stattdessen findet nun folgender Prozess statt: Eine Änderung wird in einen eigenen Branch gepusht, der Branch wird überprüft (reviewed) und dann in main integriert. Dafür sind nun folgende Schritte notwendig:\n\nErstelle einen neuen Pull-Request. Dafür musst du auf unserem Git-Server auf die Seite Pull Requests gehen. Dann klickst du auf den prominenten Button Neuer Pull-Request.\nWähle den Branch, von dem gepullt wird. Das Ziel ist dabei immer boernel:main. Bei pullen von solltest du deinen Branch auswählen, in unserem Beispiel also boernel:sturmunddrang.\nJetzt siehst du alle Commits, die sich in deinem Branch befinden. Außerdem siehst du eine Übersicht mit allen exakten getätigten Änderungen. Überprüfe noch einmal, ob alles dabei ist, dann klick im nächsten Schritt auf Neuer Pull-Request.\nJetzt kannst du dem Pull-Request noch Kommentare hinzufügen. Bearbeite, wenn gewünscht, den Titel und setze Haken im Kommentarfeld. Bei der Liste handelt es sich um eine Vorlage, die standardmäßig immer dabei ist. Bitte überprüfe alle Punkte. Im Idealfall sind alle Punkte erfüllt, dann kannst du sie abhaken. Wenn du dir nicht sicher bist, lass sie lieber offen. Einen Haken setzt du, indem du ein x in die Klammern anstatt des Leerzeichens setzt. Für unser Beispiel sähe es beispielsweise so aus:\nSind alle Punkte erfüllt?\n\n- [x] Das Lied läuft mit Lilypond durch und produziert keine Fehler\n- [x] Lied wurde mindestens einmal komplett durchgespielt und durchgesungen\n- [ ] Quellen sind angegeben\n- [x] Standards wurden eingehalten\nWenn du außerdem Hinweise oder Bemerkungen zu deinem Pull-Request hast, kannst du diese hier ebenfalls unterbringen.\nZum Schluss musst du nur noch auf Pull-Request erstellen klicken, dann bist du fertig. Wenn dein PR (=Pull-Request) bereit für den Review ist, dann kannst du im Menü rechts unter dem Punkt Reviewer das Team „Setzer“ auswählen, dann werden alle benachrichtigt, die mit dem Liederpool arbeiten, dass es einen zu reviewenden PR gibt. Außerdem kannst du auch in die Signal-Gruppe schreiben.\n\n\n\n3. Schritt: Der Review\nNun kann es sein, dass es Änderungswünsche an deinem Commit gibt, weil es doch noch zusätzliche Informationen gibt, die darin fehlen, oder weil jemand einen Tippfehler gefunden hat. Das siehst du übrigens im Bereich deines Pull-Requests. Die Änderung funktioniert folgendermaßen:\n\nDu gehst in deiner Git-GUI in den Branch, um den es im PR geht.\nDu möchtest den Commit bearbeiten, in dem eine Änderung gewünscht wurde. Das geht über den Befehl git commit --amend, wenn es der letzte Commit ist. In deiner Git-GUI gibt es vermutlich die Möglichkeit, einen Commit zu bearbeiten („amend“). Folge den Anweisungen.\nDer letzte Schritt ist, die neuen Änderungen zu pushen. Achtung! Du musst force-pushen, weil du die Änderungen auf dem Server ja überschreiben möchtest. Du überschreibst also Dinge auf dem Server, die danach weg sind! Der Git-Befehl lautet git push --force.\nFertig. Sind alle Änderungen genehmigt, kannst du – falls notwendig den Branch durch Rebase aktualisieren (Achtung! Dazu musst du erst die korrekte Methode auswählen. Bitte nutze nicht Mergen zum Aktualisieren). Zuletzt kannst du den Button Rebasen und dann fast-forwarden klicken, wenn dieser blau ist. Der Branch wird dann automatisch in den main-Branch überführt und anschließend gelöscht.",
+    "crumbs": [
+      "Doku",
+      "Review-Prozess",
+      "Review"
+    ]
+  },
+  {
+    "objectID": "review.html#ausführliche-anleitung-pull-requests-reviewen",
+    "href": "review.html#ausführliche-anleitung-pull-requests-reviewen",
+    "title": "Review",
+    "section": "Ausführliche Anleitung: Pull-Requests reviewen",
+    "text": "Ausführliche Anleitung: Pull-Requests reviewen\n\nSchritt 1: Die Pull-Request-Oberfläche\nUnter https://git.zahlenlabyrinth.de/boernel/lilypond-song-includes/pulls findest du alle aktuellen Pull-Requests (PRs). Wenn du in den PR gehst, den du reviewen willst, siehst du drei Reiter: Diskussion, Commits und Geänderte Dateien.\n\nDiskussion: Hier findest du eine Art “Kommentarspalte” zum PR. Offene Fragen, Kommentare und Diskussionen können hier gestellt/geführt werden. Außerdem werde im Diskussionsfeed Änderungen am PR festgehalten. In der Menüspalte rechts hast du einige Optionen: Du kannst Reviewer anfragen (entweder eine ganze Gruppe oder auch einzelne Personen), Label hinzufügen (das nutzen wir Stand jetzt noch nicht), Zuständigkeiten verteilen und weiteres. Das meiste nutzen wir allerdings nicht – höchstens „Reviewer anfragen“ ist wichtig.\nCommits: Hier hast du einen Überblick über die Commits, die zum Pull-Request gehören.\nGeänderte Dateien: Hier hast du einen Überblick über alle geänderte Dateien des PRs. Wenn du Änderungswünsche hast, kannst du dies in Referenz auf die entsprechende Code-Zeile direkt tun. Das wird im Folgenden noch erklärt.\n\n\n\nSchritt 2: Überprüfen\n\nCheck in den Branch aus, dessen Pull-Request (PR) du reviewen willst, das heißt: Wechsle den Branch von deinem aktuellen Branch in den zu reviewenden Branch. Der Git-Befehl dafür lautet git checkout sturmunddrang.\nTeste die geänderten Dateien. Mit anderen Worten: Kompiliere die Lieder einmal durch und führe eine Sicht- und Hörprüfung (mit der MIDI) durch. Wenn du das Lied kennst, kannst du es auch durchsingen.\nÜberprüfe die Lieder hinsichtlich der Einhaltung der Standards und der Korrektheit der Autor*innenangaben. Achte auch darauf, ob die Zeichensetzung plausibel aussieht.\nWenn du einen Fehler findest, kannst du ihn entweder selbst ändern (siehe dazu vorheriges Kapitel, Abschnitt „Review“) oder eine Änderung anfragen. Wie das geht, erfährst du jetzt:\n\nGehe in den Reiter Geänderte Dateien\nGehe in die Datei, in der du etwas ändern willst.\nSuche die Code-Zeile, in der du etwas ändern willst. Gehe mit der Maus über die Zeile und klicke auf das grüne Plus am Rand.\nBeschreibe deine Änderung so, dass sie für andere verständlich ist.\nWiederhole die obigen Punkte für alle gewünschten Änderungen.\nZuletzt klicke oben rechts auf die Schaltfläche Überprüfen und dann auf Änderung anfragen.\n\nWenn alles geklärt ist, kannst du den PR freigeben. Das machst du im Reiter Geänderte Dateien und dann oben rechts mit der Schaltfläche Überprüfen. Wenn du auf Genehmigen klickst, wurde der PR freigegeben.",
+    "crumbs": [
+      "Doku",
+      "Review-Prozess",
+      "Review"
+    ]
+  },
+  {
+    "objectID": "liedlayout_doku.html",
+    "href": "liedlayout_doku.html",
+    "title": "Lied-Layout",
     "section": "",
     "text": "In diesem Abschnitt der Doku zeigen wir Lösungen für Probleme oder Herausforderungen, die sich aus der Arbeit mit unserem System ergeben. Vieles davon wurde von tux entwickelt und befindet sich in den lilypond-common-includes, bei manchen Themen verweisen wir auch einfach nur auf die LilyPond-Doku. Dieser Teil ist fokussiert auf die Layout-Fragen.",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",
-      "Layout"
+      "Lied-Layout"
     ]
   },
   {
-    "objectID": "layout.html#sec-zeilenumbrueche",
-    "href": "layout.html#sec-zeilenumbrueche",
-    "title": "Layout",
-    "section": "Zeilenumbrüche in den Strophen",
-    "text": "Zeilenumbrüche in den Strophen\nProblem: Verschiedene Liederbücher haben verschiedene Formate, weswegen es keinen idealen Zeilenumbruch für alle Liederbücher gibt.\nLösung: Versumbrüche werden in der Variable verse-breaks anhand von (unsichtbaren) Pausen (s)und \\break-Befehlen bewirkt. Diese Variable wird dann mittels \\override-Befehl vor den entsprechenden Versen im TEXT-Part eingebunden. Beispiel: \\override #`(verse-break-voice . ,verse-breaks). verse-break-voice erstellt eine (unsichtbare) Stimme mit den Umbrüchen aus verse-breaks und wird auch für den Fall gesetzt, dass es Strophen und einen Refrain gibt. In dem Falle wird das \\override immer vor den unterschiedlichen Strophen neu gesetzt (Achtung: \\override gilt immer nur für das folgende Element, zum Beispiel ein Vers oder ein \\group-verses-Ausdruck).\nCodebeispiel, bei dem Refrain und Strophe auf eine Seite (und damit in ein \\group-verses) gedruckt werden:\nverse-breaks = {\n  s2.*4 \\break %s2.*4 bedeutet, dass s2. 4 mal wiederholt wird\n  s2.*4 \\break\n  s2.*4 \\break\n}\n\nref-breaks = {\n  s2.*2 \\break\n  s2.*2 \\break\n}\n\nTEXT = \\markuplist {\n  \\override #`(verse-break-voice . ,verse-breaks)\n  \\group-verses {\n    \\chordlyrics \\firstVerse\n    \\chordlyrics \\secondVerse\n    \\override #`(verse-break-voice . ,ref-breaks)\n    \\chordlyrics \\refLyrics\n    \\chordlyrics \\thirdVerse\n  }\n}",
+    "objectID": "liedlayout_doku.html#transponieren",
+    "href": "liedlayout_doku.html#transponieren",
+    "title": "Lied-Layout",
+    "section": "Transponieren",
+    "text": "Transponieren\nViele Lieder sind in verschiedenen Tonarten verbreitet. Im Liederpool sollte sich grundsätzlich an die Originaltonart gehalten werden. Wenn die Tonart in einem Liederbuch angepasst werden soll, funktioniert dies mit dem Befehl \\transposeGlobal x y. Mit x und y wird dabei der Tonsprung bezeichnet. Es bietet sich an, dafür die Tonarten zu nutzen, tatsächlich ist aber lediglich der Abstand entscheidend. Der Befehl kann einfach irgendwo in der Datei aufgerufen werden, am besten nicht innerhalb anderer Teile/Variablen.\nBeispiel: Wir wollen ein Lied statt in Fis-Dur in C-Dur setzen. Dann schreiben wir: \\transposeGlobal fis c,. In diesem Falle müssen wir vermutlich die Tonhöhe anpassen, da der Sprung sehr groß ist. Das funktioniert wie in LilyPond gewohnt mit , bzw. '.",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",
-      "Layout"
+      "Lied-Layout"
     ]
   },
   {
-    "objectID": "layout.html#sec-romanstanza",
-    "href": "layout.html#sec-romanstanza",
-    "title": "Layout",
+    "objectID": "liedlayout_doku.html#sec-romanstanza",
+    "href": "liedlayout_doku.html#sec-romanstanza",
+    "title": "Lied-Layout",
     "section": "Römische Ziffern",
     "text": "Römische Ziffern\nRömische Ziffern (I, II etc.), um zum Beispiel Übersetzungen mit einem anderen System zu nummerieren als den Originaltext, können erreicht werden, in dem vor den Ausdruck #(stanza 1) die Funktion \\romanStanza aufgerufen wird.\nBeispiel:\nTEXT = \\markuplist {\n  \\group-verses {\n    \\chordlyrics { \\romanStanza \\firstVerse }\n  }\n}",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",
-      "Layout"
+      "Lied-Layout"
+    ]
+  },
+  {
+    "objectID": "liedlayout_doku.html#sec-zeilenumbrueche",
+    "href": "liedlayout_doku.html#sec-zeilenumbrueche",
+    "title": "Lied-Layout",
+    "section": "Zeilenumbrüche in den Strophen",
+    "text": "Zeilenumbrüche in den Strophen\nProblem: Verschiedene Liederbücher haben verschiedene Formate, weswegen es keinen idealen Zeilenumbruch für alle Liederbücher gibt.\nLösung: Versumbrüche werden in der Variable verse-breaks anhand von (unsichtbaren) Pausen (s)und \\break-Befehlen bewirkt. Diese Variable wird dann mittels \\override-Befehl vor den entsprechenden Versen im TEXT-Part eingebunden. Beispiel: \\override #`(verse-break-voice . ,verse-breaks). verse-break-voice erstellt eine (unsichtbare) Stimme mit den Umbrüchen aus verse-breaks und wird auch für den Fall gesetzt, dass es Strophen und einen Refrain gibt. In dem Falle wird das \\override immer vor den unterschiedlichen Strophen neu gesetzt (Achtung: \\override gilt immer nur für das folgende Element, zum Beispiel ein Vers oder ein \\group-verses-Ausdruck).\nCodebeispiel, bei dem Refrain und Strophe auf eine Seite (und damit in ein \\group-verses) gedruckt werden:\nverse-breaks = {\n  s2.*4 \\break %s2.*4 bedeutet, dass s2. 4 mal wiederholt wird\n  s2.*4 \\break\n  s2.*4 \\break\n}\n\nref-breaks = {\n  s2.*2 \\break\n  s2.*2 \\break\n}\n\nTEXT = \\markuplist {\n  \\override #`(verse-break-voice . ,verse-breaks)\n  \\group-verses {\n    \\chordlyrics \\firstVerse\n    \\chordlyrics \\secondVerse\n    \\override #`(verse-break-voice . ,ref-breaks)\n    \\chordlyrics \\refLyrics\n    \\chordlyrics \\thirdVerse\n  }\n}",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Lied-Layout"
+    ]
+  },
+  {
+    "objectID": "liedlayout_doku.html#ausgabe-größe",
+    "href": "liedlayout_doku.html#ausgabe-größe",
+    "title": "Lied-Layout",
+    "section": "Ausgabe-Größe",
+    "text": "Ausgabe-Größe\nUm Platz zu sparen, kann es hilfreich sein, die Größe des Staffs (wozu effektiv fast alle Ausgabe-Elemente gehören: Noten, Lyrics, Akkorde und somit auch die Strophen) abweichend von den globalen Liederbucheinstellungen anzupassen. Das erfolgt mit der Ergänzung des LAYOUT-Blocks:\nLAYOUT = \\layout {\n  \\LAYOUT\n  size = 15 %hier die gewünschte Größe anpassen\n}\nDas ergänzt den in den Skripten bereits existierenden LAYOUT-Block um die Staff-Size, die effektiv mit dem Scheme-Befehl #(layout-set-staff-size 13.8) überschrieben wird. Aus technischen Gründen funktioniert der nicht immer zuverlässig, weshalb es den oben genannten Befehl für diesen Zweck gibt.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Lied-Layout"
+    ]
+  },
+  {
+    "objectID": "liedlayout_doku.html#der-paper-block",
+    "href": "liedlayout_doku.html#der-paper-block",
+    "title": "Lied-Layout",
+    "section": "Der \\paper-Block",
+    "text": "Der \\paper-Block\nIm \\paper-Block können etliche Schrauben am Layout gedreht werden. Dabei nutzen wir ausschließlich schon vorhandene LilyPond-Funktionen und verweisen an dieser Stelle jeweils auf die offizielle LilyPond-Doku.\nDer \\paper-Block ist Teil des HEADER’s und wird an die folgende Stelle in der Layout-Datei eingefügt:\nHEADER = \\bookpart {\n  \\paper {\n    %hier kommt alles rein, was in den Paper-Block gehört\n  }\n  \\header {\n    \\basicSongInfo\n    %infotext = \"\"\n  }\n}\n\nSeitenanzahl eines Liedes bestimmen\nWenn ein Lied auf eine Seite gequetscht werden soll, geht das mit dem Befehl page-count = #1, wobei die Nummer hinter dem #-Zeichen jeweils für die Anzahl der Seiten steht. Mehr dazu in der LilyPond-Doku.\n\n\nAbstand zwischen Titel und Noten\nDer Abstand zwischen Titel und Noten wird mit markup-system-spacing.padding = 4 definiert. Mehr dazu in der LilyPond-Doku.\n\n\nAbstand zwischen Seitenrand und oberstem Notensystem\nDas kann hilfreich sein, um zum Beispiel Noten auf der zweiten Seite weiter unten anfangen zu lassen. Wenn etwas anderes dort steht (z.B. Titel oder Text), greift das nicht. Der Befehl lautet: top-system-spacing.padding = 6. Mehr dazu in der LilyPond-Doku.\n\n\nAbstand zwischen den Systemen\nDer Abstand zwischen den Notensystemen kann mittels system-system-spacing.padding = 1 angepasst werden. Mehr dazu in der LilyPond-Doku.\n\n\nKeine Seitennummer\nWenn die Seitennummer nicht geprintet werden soll, kann der Befehl print-page-number = ##f verwendet werden. Mehr dazu in der LilyPond-Doku.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Lied-Layout"
+    ]
+  },
+  {
+    "objectID": "liedlayout_doku.html#größe-des-bildtitels",
+    "href": "liedlayout_doku.html#größe-des-bildtitels",
+    "title": "Lied-Layout",
+    "section": "Größe des Bildtitels",
+    "text": "Größe des Bildtitels\nWenn ein Lied anstatt eines Schrifttitels ein Bildtitel hat (also eine eps-Datei, die im Layout-Ordner liegt), dann kann die Größe dieser eps-Datei mittels der Variable titlesize = 11 angepasst werden, die in den Header eingefügt werden muss, also:\nHEADER = \\bookpart {\n  \\header {\n    \\basicSongInfo\n    titlesize = 11 %hier die Zahl anpassen\n  }\n}",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Lied-Layout"
+    ]
+  },
+  {
+    "objectID": "liedlayout_doku.html#abstand-des-titels-zum-oberen-seitenrand",
+    "href": "liedlayout_doku.html#abstand-des-titels-zum-oberen-seitenrand",
+    "title": "Lied-Layout",
+    "section": "Abstand des Titels zum oberen Seitenrand",
+    "text": "Abstand des Titels zum oberen Seitenrand\nDer Abstand des Titels (egal ob Bild oder Schrift) zum oberen Seitenrand kann mittels der Variable titletopspace = 2 eingestellt werden, die ebenfalls in den Header muss:\nHEADER = \\bookpart {\n  \\header {\n    \\basicSongInfo\n    titletopspace = 2 %hier die Zahl anpassen\n  }\n}",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Lied-Layout"
+    ]
+  },
+  {
+    "objectID": "liederbuch_layout.html",
+    "href": "liederbuch_layout.html",
+    "title": "Liederbuch-Layout",
+    "section": "",
+    "text": "Datei custom-includes",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Liederbuch-Layout"
+    ]
+  },
+  {
+    "objectID": "doku.html",
+    "href": "doku.html",
+    "title": "Doku",
+    "section": "",
+    "text": "Das ist unsere Doku für die Liederpool-spezifischen Befehle und Standards. Hier dokumentieren wir unsere Standards beim Setzen, Lösungen für „Probleme“ in der Anwendung unseres Systems und eigene definierte Befehle, die nicht Teil des Standard-LilyPond sind.\nGrundsätzlich hilft dir bei allen LilyPond-spezifischen Fragen oder Problemen natürlich die LilyPond-Doku.",
+    "crumbs": [
+      "Doku"
+    ]
+  },
+  {
+    "objectID": "liedersetzen.html",
+    "href": "liedersetzen.html",
+    "title": "Liedersetzen",
+    "section": "",
+    "text": "Jetzt kann es losgehen mit dem Lieder setzen. Damit du möglichst einfach reinkommst, erklären wir dir gleich anhand eines Beispiels, dass du bei dir nachvollziehen kannst, wie unser System funktioniert.\nVorneweg gibt es aber noch ein paar wichtige Links und Helfer:\n\nHier gibt es eine LilyPond-Einführung von den LilyPond-Entwickler*innen. Du kannst die auch nochmal machen, aber viele grundlegenden Sachen lernst du in diesem Tutorial schon kennen.\nHier findest du die LilyPond-Dokumentation. Das ist im Grunde der wichtigste und erste Ort, um herauszufinden, wie du musikalische Notation in LilyPond umsetzen kannst. Auch die meisten aufkommenden Probleme lassen sich schon allein mit der Doku beheben. Zusätzlich kannst du auch gerne unsere Setzer*innen-Gruppe auf Signal dafür nutzen.\n\nSo, jetzt geht’s los!",
+    "crumbs": [
+      "Einführung",
+      "Lieder setzen"
+    ]
+  },
+  {
+    "objectID": "metadaten.html",
+    "href": "metadaten.html",
+    "title": "Metadaten",
+    "section": "",
+    "text": "Metadaten werden grundsätzlich in der Variable basicSongInfo gespeichert. Alle untenstehenden Ausführungen beziehen sich auf den Inhalt dieser Variable.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Metadaten"
+    ]
+  },
+  {
+    "objectID": "metadaten.html#titel",
+    "href": "metadaten.html#titel",
+    "title": "Metadaten",
+    "section": "Titel",
+    "text": "Titel\nDer Titel wird in der Liederpool-Datei mit der Variable title = \"\" angegeben, wobei innerhalb der Anführungszeichen der Titel steht. Als Titel sollte immer der „Originaltitel“ genutzt werden. Dieser kann in der Layout-Datei, sofern gewünscht, einfach überschrieben werden.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Metadaten"
+    ]
+  },
+  {
+    "objectID": "metadaten.html#liedanfang",
+    "href": "metadaten.html#liedanfang",
+    "title": "Metadaten",
+    "section": "Liedanfang",
+    "text": "Liedanfang\nDer Liedanfang wird mit starttext = \"\" angegeben, wobei innerhalb der Anführungszeichen der Anfang des Liedes steht. Ist der Liedanfang gleich dem Titel, muss er nicht nochmal neu angegeben werden.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Metadaten"
+    ]
+  },
+  {
+    "objectID": "metadaten.html#alternative-titel",
+    "href": "metadaten.html#alternative-titel",
+    "title": "Metadaten",
+    "section": "Alternative Titel",
+    "text": "Alternative Titel\nAlternative Titel können mittels der Variable alttitle = #'(\"\") angegeben werden, wobei innerhalb der Anführungszeichen der Alternativtitel benannt wird. Wenn es mehrere Alternativtitel gibt einfach in Anführungszeichen daneben, zum Beispiel: alttitle = #'(\"Alttitle A\" \"Alttitle B\" \"Alttitle C\").",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Metadaten"
+    ]
+  },
+  {
+    "objectID": "metadaten.html#autorinnenangaben",
+    "href": "metadaten.html#autorinnenangaben",
+    "title": "Metadaten",
+    "section": "Autor*innenangaben",
+    "text": "Autor*innenangaben\nAutor*inneninformationen werden im neuen System aus einer YAML-Datei gezogen. Das bedeutet, in der Lilyponddatei wird lediglich auf eine ID einer Autorin verwiesen, deren Informationen in der YAML-Datei unter dieser ID zu finden sind.\n\nAbruf in der Lilyponddatei\nDie ID der beiden Autor*innen heißt in diesem Fall Autor1 beziehungsweise Autor2.\nbasicSongInfo = \\header {\n  title = \"Liedtitel\"\n  alttitle = \"Liedanfang\"\n  authors = #'(\n    (\"Autor1\" text)\n    (\"Autor2\" melody))\n  year_text = \"2024\"\n  year_melody = \"2024\"\n  infotext = \"Infotext\"\n}\n\n\nAufbau der YAML-Datei\nDie YAML ist wie folgt aufgebaut und alphabetisch sortiert. Die ID für eine*n Autor*in sollte, wenn vorhanden und eindeutig, dem Fahrtennamen entsprechen. Wenn nicht vorhanden oder uneindeutig dem bürgerlichen Namen nach dem Schema VornameNachname. Das hat keine technischen Gründe, sondern soll nur die Arbeit erleichtern. Wenn es einheitlich ist, muss man vielleicht nicht jedes Mal in der YAML-Datei nachschauen, wie nochmal die ID von Autor*in XYZ war.\nAutor1:\n  name: Vorname Nachname\n  trail_name: Autor1\n  birth_year: \"1950\"\n  organization: Bund der Autoren\nAutor2:\n  name: Name Surname\n  trail_name: Autor2\n  death_year: \"2050\"\n  organization: Autorenbund\n\n\nMögliche Optionen beim Abruf\nDa es zahlreiche Wünsche etc. bei der Autor*innenschaft von Liedern gibt, ist das System möglichst umfassend gestaltet. Der grundsätzliche Aufbau ist, dass in Klammern immer die ID benannt wird sowie die Eigenschaften, die diese ID hat (zum Beispiel die Worte geschrieben, die zweite Stimme usw.). Folgende Möglichkeiten gibt es:\n\ntext: Die Person hat am Text mitgeschrieben.\nmelody: Die Person hat an der Melodie mitgeschrieben.\ncomposition: Die Person hat am Satz mitgeschrieben.\n(verse 1): Die Person hat an der ersten Strophe mitgeschrieben.\n\n(verse 1) (verse 2): Die Person hat an der ersten und zweiten Strophe mitgeschrieben.\n\n(voice 2): Die Person hat an der zweiten Stimme mitgeschrieben.\n\n(voice 2) (voice 3): Die Person hat an der zweiten und dritten Stimme mitgeschrieben.\n\ninterlude: Die Person hat am Zwischenspiel mitgeschrieben.\nbridge: Die Person hat an der Bridge mitgeschrieben.\ntranslation: Die Person hat an der Übersetzung mitgeschrieben.\n(meloverse 1): Die Person hat an der ersten Melodiestrophe mitgeschrieben (damit ist die Melodie der ersten Strophe gemeint).\n\n(meloverse 1) (meloverse 2): Die Person hat an der ersten und zweiten Melodiestrophe mitgeschrieben (damit ist die Melodie der ersten Strophe gemeint).\n\n\nDas sind alle möglichen Beispiele, die durchaus schon größtenteils einmal benötigt wurden. Allerdings ist offensichtlich, dass diese Möglichkeitsvielfalt keinesfalls immer sinnvoll ist.\nFür alle diese Möglichkeiten finden sich Anwendungsbeispiele im Repository lilypond-vorlagen, dort im Ordner Lieder (Datei authors-sandbox.ly) (Link). Da kann man sich gut austoben. So sieht das dann aus:\ndude:\n  birth_year: '1950'\n  name: Krasser Dude\n  organization: Bund der krassen Dudes\n  trail_name: dud\nkumpel:\n  death_year: '2050'\n  name: Krasser Kumpel\n  organization: Bund der krassen Kumpels\n  trail_name: dudekumpel\nkumpelerbe:\n  inherits: kumpel\n  organization: Bund der crazy Kumpels\nnocheiner:\n  death_year: '2050'\n  name: Jemand anderes\n  \n\n\nOutput:\n\n\n\n\n\n\n\n\n\nHinweis\n\n\n\nWenn der*die Verfasser*in unbekannt ist, wird dies folgendermaßen kenntlich gemacht: (\"\" melody text). In diesem Falle kann kein Eintrag in der YAML gefunden werden, deswegen wird für die Optionen Melodie und Text „unbekannt“ ausgegeben.\n\n\n\n\nSonderfall „Inherits“\nEs kann vorkommen, dass Autor*innen ihre Bundzugehörigkeit ändern oder bestimmte Lieder für eine Band geschrieben haben, allerdings andere nicht. Dann wäre es unpraktisch, dass als Organisation beispielsweise trotzdem „Schlagsaite“ dort steht, obwohl das Lied mit Schlagsaite nichts zu tun hat (außer, dass der Autor bei Schlagsaite spielt). Die Lösung für dieses Problem lautet Inherits. Das Prinzip ist, dass eine neue ID erstellt wird, die die Eigenschaften einer bestimmten ID erbt. Diese Eigenschaften können dann aber überschrieben werden. Im Lied muss man dann auf diese neue ID verweisen. Das sieht zum Beispiel so aus:\nkumpel:\n  name: Krasser Kumpel\n  trail_name: kumpel\n  death_year: \"2050\"\n  organization: Bund der krassen Kumpels\nkumpelerbe:\n  inherits: kumpel\n  organization: Bund der crazy Kumpels\nZur Erklärung: kumpelerbe übernimmt die Eigenschaften von kumpel, danach wird die Organisation überschrieben auf einen anderen Bund.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Metadaten"
+    ]
+  },
+  {
+    "objectID": "metadaten.html#textjahr",
+    "href": "metadaten.html#textjahr",
+    "title": "Metadaten",
+    "section": "Textjahr",
+    "text": "Textjahr\nÜber die Variable year_text = \"YYYY\" erfassen wir, wann der Text geschrieben bzw. veröffentlicht wurde. Dabei sollte in die Anführungszeichen nur das Jahr geschrieben werden, wenn genauere Daten vorhanden sind, gerne dahinter auskommentiert. Also zum Beispiel: year_text = \"2004\" % 01.01.2004.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Metadaten"
+    ]
+  },
+  {
+    "objectID": "metadaten.html#melodiejahr",
+    "href": "metadaten.html#melodiejahr",
+    "title": "Metadaten",
+    "section": "Melodiejahr",
+    "text": "Melodiejahr\nÜber die Variable year_melody = \"YYYY\" erfassen wir, wann die Melodie geschrieben bzw. veröffentlicht wurde. Dabei sollte in die Anführungszeichen nur das Jahr geschrieben werden, wenn genauere Daten vorhanden sind, gerne dahinter auskommentiert. Also zum Beispiel: year_melody = \"2004\" % 01.01.2004.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Metadaten"
+    ]
+  },
+  {
+    "objectID": "metadaten.html#infotext",
+    "href": "metadaten.html#infotext",
+    "title": "Metadaten",
+    "section": "Infotext",
+    "text": "Infotext\nIn die Variable infotext = \"\" können Informationen zur Entstehungsgeschichte, von oder über den*die Autor*in etc. notiert werden (gerne mit Quellen!). Das darf gerne so ausführlich wie möglich geschehen, damit jedes Liederbuch-Team das ggf. auf dieser Grundlage für sich anpassen kann.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Metadaten"
+    ]
+  },
+  {
+    "objectID": "metadaten.html#übersetzung",
+    "href": "metadaten.html#übersetzung",
+    "title": "Metadaten",
+    "section": "Übersetzung",
+    "text": "Übersetzung\nÜbersetzungen von nicht-deutschsprachigen Texten, können über die Variable translation = \"\" erfasst werden. In der Ausgabe erzeugt dies im Infoteil (wo auch Autor*innen und die Songinfo landen) eine Zeile, die mit „Übersetzung: “ beginnt.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Metadaten"
+    ]
+  },
+  {
+    "objectID": "metadaten.html#aussprache",
+    "href": "metadaten.html#aussprache",
+    "title": "Metadaten",
+    "section": "Aussprache",
+    "text": "Aussprache",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Metadaten"
+    ]
+  },
+  {
+    "objectID": "metadaten.html#quellen",
+    "href": "metadaten.html#quellen",
+    "title": "Metadaten",
+    "section": "Quellen",
+    "text": "Quellen\nFür uns ist es sehr wichtig zu wissen, wo unsere Notationen herkommen und auf welche Quellen wir uns stützen. Deswegen ist es obligatorisch, diese beim Setzen eines Liedes immer anzugeben. Beim Verweis auf Internetlinks, sollte die Seite in der Regel über das Internet Archive archiviert werden. Wie das geht, steht hier. Beim Verweis auf Liederbücher sollte die YAML-Datei sources.yml im data-Ordner des Liederpool-Repos genutzt werden, um auf die jeweilige ID zu verweisen. Damit sollen Liederbücher gut identifizierbar sein. Seitenangaben sind auch gerne gesehen. Wenn du selbst den Satz notiert hast, schreib deinen Namen dazu, zum Beispiel: „Satz von žuk“. Auch die Information, ob der Satz mit den Autor*innen abgestimmt wurde, ist relevant und somit anzugeben.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Metadaten"
+    ]
+  },
+  {
+    "objectID": "repostruktur.html",
+    "href": "repostruktur.html",
+    "title": "Struktur des Repositories",
+    "section": "",
+    "text": "Nun ein paar Worte zu der Struktur deines Repositories.",
+    "crumbs": [
+      "Einführung",
+      "Lieder setzen",
+      "Struktur des Repositories"
+    ]
+  },
+  {
+    "objectID": "repostruktur.html#der-lieder-ordner",
+    "href": "repostruktur.html#der-lieder-ordner",
+    "title": "Struktur des Repositories",
+    "section": "Der lieder-Ordner",
+    "text": "Der lieder-Ordner\nIm Ordner lieder befinden sich die Layout-Dateien deines Liederbuchs. Diese Dateien sind jeweils in einem Ordner, der denselben Namen hat wie die Dateien. Die identische Benennung ist sehr wichtig! Es empfiehlt sich, die Benennung von der Liederpool-Datei zu übernehmen.\nIm Ordner lieder befinden sich also Ordner, in denen die Layout-Dateien liegen. Im Ordner ueber_meiner_heimat_fruehling liegt also eine Datei namens ueber_meiner_heimat_fruehling.ly.",
+    "crumbs": [
+      "Einführung",
+      "Lieder setzen",
+      "Struktur des Repositories"
+    ]
+  },
+  {
+    "objectID": "repostruktur.html#der-liederbuecher-ordner",
+    "href": "repostruktur.html#der-liederbuecher-ordner",
+    "title": "Struktur des Repositories",
+    "section": "Der liederbuecher-Ordner",
+    "text": "Der liederbuecher-Ordner\nDer Ordner liederbuecher ist für deine Liederbücher da, die du anhand dieses Repos erstellst. Für jedes Liederbuch gibt es einen Ordner, in dem eine LilyPond-Datei liegt, mit der das Liederbuch erstellt wird.",
+    "crumbs": [
+      "Einführung",
+      "Lieder setzen",
+      "Struktur des Repositories"
+    ]
+  },
+  {
+    "objectID": "repostruktur.html#der-lilypond-common-includes-ordner",
+    "href": "repostruktur.html#der-lilypond-common-includes-ordner",
+    "title": "Struktur des Repositories",
+    "section": "Der lilypond-common-includes-Ordner",
+    "text": "Der lilypond-common-includes-Ordner\nIn diesem Ordner liegen die LilyPond-Skripte, mit denen unser System arbeitet. Technisch gesehen handelt es sich dabei um ein Git-Submodul, also um ein eigenes Repository, das in dein Repository eingebunden ist.",
+    "crumbs": [
+      "Einführung",
+      "Lieder setzen",
+      "Struktur des Repositories"
+    ]
+  },
+  {
+    "objectID": "repostruktur.html#der-lilypond-custom-includes-ordner",
+    "href": "repostruktur.html#der-lilypond-custom-includes-ordner",
+    "title": "Struktur des Repositories",
+    "section": "Der lilypond-custom-includes-Ordner",
+    "text": "Der lilypond-custom-includes-Ordner\nIn diesem Ordner kannst du, wie der Name schon andeutet, persönliche Änderungen am Layout vornehmen.\nIn der base_config.ly kannst du Änderungen, die den LAYOUT-Blog betreffen (das sind, grob gesagt, Layoutanpassungen bezüglich des Notensatzes), vornehmen. In der categories.ly kannst du die Kategorien deines Liederbuchs konfigurieren. Und in der custom_style_overrides.ly kannst du das Layout des Liederbuchs formatieren, also zum Beispiel die Schriftgröße, Schriftart und vieles mehr.",
+    "crumbs": [
+      "Einführung",
+      "Lieder setzen",
+      "Struktur des Repositories"
+    ]
+  },
+  {
+    "objectID": "repostruktur.html#der-lilypond-song-includes-ordner",
+    "href": "repostruktur.html#der-lilypond-song-includes-ordner",
+    "title": "Struktur des Repositories",
+    "section": "Der lilypond-song-includes-Ordner",
+    "text": "Der lilypond-song-includes-Ordner\nIn diesem Ordner findest du die Liederpool-Dateien im Ordner liedbausteine. Außerdem findest du unsere Autor*innendatei unter data. Technisch gesehen handelt es sich auch hier um ein Git-Submodul.",
+    "crumbs": [
+      "Einführung",
+      "Lieder setzen",
+      "Struktur des Repositories"
+    ]
+  },
+  {
+    "objectID": "repostruktur.html#die-.gitignore-datei",
+    "href": "repostruktur.html#die-.gitignore-datei",
+    "title": "Struktur des Repositories",
+    "section": "Die .gitignore-Datei",
+    "text": "Die .gitignore-Datei\nDiese Datei verhindert, dass dir bestimmte Dateien, Dateiarten, Ordner, … im Git-Workingtree als bearbeitet angezeigt werden. Das verhindert, dass PDF-Dateien ständig neu ins Remote-Repo hochgeladen werden, weil sie sich ja bei jedem Kompilieren verändern. Deswegen kann man Git in dieser Datei sagen, welche Dateien man grundsätzlich nicht hochladen möchte.\nDeine .gitignore-Datei könnte zum Beispiel so aussehen:\n# ---&gt; Lilypond\n*.pdf\n*.ps\n*.midi\n*.mid\n*.log\n*.csv\n*~\nWenn du genauer wissen willst, was das bedeutet, dann wird das hier genauer erklärt.",
+    "crumbs": [
+      "Einführung",
+      "Lieder setzen",
+      "Struktur des Repositories"
     ]
   },
   {
