@@ -4,3 +4,47 @@ format: html
 ---
 
 Datei custom-includes
+
+## Kategorien
+
+Mithilfe unserer Skripte ist es möglich, Lieder Kategorien zuzuordnen und sie optional mit Kategoriebildchen zu versehen. Auch ein Kategorienverzeichnist ist möglich (siehe [Einführung](liederbuecher_machen.qmd#sec-kategorienverzeichnis)). So funktioniert es:
+
+### Kategorien erstellen
+
+Als erstes solltest du Kategorien in der Datei `lilypond-custom-includes/categories.ly` definieren. Die Datei sieht so aus:
+
+``` lilypond
+#(define category-names '(
+  (see "See und\nPiraten")
+  ;(categoriekey "Titel der Kategorie")
+  ))
+
+%% Path to Category images
+#(define-public (category-image-path category)
+   (string-append "../../liederbuecher/beispiel_liederbuch/categories/"
+         category ".eps"))
+```
+
+Das gehen wir jetzt Zeile für Zeile durch. In der ersten Zeile wird die Scheme[^1]-Funktion definiert, das ist erstmal uninteressant. Ab der zweiten Zeile werden dann alle Kategorien und ihre Titel definiert. Das Schema wird im auskommentierten Teil beschrieben[^2]: Erst kommt die ID der Kategorie und danach in Anführungszeichen der Titel. Auf die ID wird in der Lied-Layout-Datei referenziert. Der Titel ist der, der dann im Kategorienverzeichnis benutzt wird. Im obigen Beispiel ist also `see` die ID und `"See und/nPiraten"` der Titel. Das `/n` bewirkt übrigens einen Zeilenumbruch.
+
+[^1]: Scheme ist die Programmiersprache, in der LilyPond geschrieben ist.
+
+[^2]: Bei Scheme wird mit dem Semikolon (`;`) auskommentiert.
+
+Im zweiten Teil wird der Pfad zu den Kategoriebildchen definiert. Der sollte auf jeden Fall angepasst werden und auf einen Ordner in deinem Liederbuch-Ordner verweisen. Die Dateinamen müssen dabei der ID entsprechen und das EPS-Format haben.
+
+### Liedern Kategorien zuweisen
+
+In der Layout-Datei der Lieder können im zweiten Schritt dann Kategorien den Liedern zugewiesen werden, in dem in der `categories`-Variable alle betreffenden IDs durch Leerzeichen getrennt aufgeschrieben werden. Das könnte dann so aussehen:
+
+``` lilypond
+HEADER = \bookpart {
+  \header {
+    \basicSongInfo
+    %infotext = ""
+    categories = "see abend andacht"
+  }
+}
+```
+
+Das Lied würde also den Kategorien mit den IDs `see`, `abend` und `andacht` zugewiesen werden.
