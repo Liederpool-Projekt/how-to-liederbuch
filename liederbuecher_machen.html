@@ -349,17 +349,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode" id="cb4"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>%<span class="co"> Seite</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="kw">\bookpart</span> <span class="kw">{</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  \paper<span class="kw"> {</span> <span class="dt">print-page-number</span> = #<span class="dv">#f</span> <span class="kw">}</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="bn">\markup</span> <span class="kw">{</span> <span class="fu">\vspace</span> #<span class="dv">2</span> <span class="bn">\fill-line</span> <span class="kw">{</span> <span class="bn">\null</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="bn">\override</span> #<span class="fl">'(font-name . "</span><span class="st">Old Standard TT"</span><span class="fl">)</span> <span class="bn">\fontsize</span> #<span class="dv">0.5</span> <span class="bn">\override</span> #<span class="fl">'(line-width . </span><span class="dv">115</span><span class="fl">)</span> <span class="bn">\left-column</span> <span class="kw">{</span> <span class="bn">\justify-string</span> #<span class="fl">"</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="st">    Hier steht lustiger Text"</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    "<span class="st"> "</span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    <span class="bn">\fill-line</span> <span class="kw">{</span> "<span class="st">blublub"</span> <span class="kw">}</span></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">}</span></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    <span class="bn">\null</span> <span class="kw">}</span></span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  %<span class="co"> muss drinbleiben, damit die Kategoriebildchen alle reingeladen und referenziert werden können:</span></span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\markuplist</span> <span class="kw">{</span> <span class="fu">\embed</span>-category-images <span class="kw">}</span></span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="bn">\markup</span> <span class="kw">{</span> </span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\title-to-pdf-toc</span> "<span class="st">Vorwort"</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\vspace</span> #<span class="dv">2</span> <span class="bn">\fill-line</span> <span class="kw">{</span> <span class="bn">\null</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    <span class="bn">\override</span> #<span class="fl">'(font-name . "</span><span class="st">Old Standard TT"</span><span class="fl">)</span> <span class="bn">\fontsize</span> #<span class="dv">0.5</span> <span class="bn">\override</span> #<span class="fl">'(line-width . </span><span class="dv">115</span><span class="fl">)</span> <span class="bn">\left-column</span> <span class="kw">{</span> <span class="bn">\justify-string</span> #<span class="fl">"</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="st">    Hier steht lustiger Text"</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    "<span class="st"> "</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    <span class="bn">\fill-line</span> <span class="kw">{</span> "<span class="st">blublub"</span> <span class="kw">}</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>    <span class="kw">}</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>    <span class="bn">\null</span> <span class="kw">}</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>  %<span class="co"> muss drinbleiben, damit die Kategoriebildchen alle reingeladen und referenziert werden können:</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\markuplist</span> <span class="kw">{</span> <span class="fu">\embed</span>-category-images <span class="kw">}</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Wenn du ein Vorwort erzeugen möchtest, kannst du das zum Beispiel mit diesem Bookpart machen. Passe einfach alles nach deinen Wünschen an. Mit <code>\override #'(font-name . "Schriftname")</code> änderst du die Schriftart, mit <code>\fontsize</code> die Schriftgröße. Wichtig ist, dass du irgendwo in deinem Liederbuch (in einem Bookpart) den Befehl <code>\markuplist { \embed-category-images }</code> übergibst, denn der stellt sicher, dass die Kategoriebildchen auch reingeladen werden.</p>
 </section>
 <section id="die-lied-ausgabe" class="level3">
@@ -371,11 +373,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode" id="cb5"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">\bookpart</span> <span class="kw">{</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\markuplist</span> <span class="kw">{</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\index</span>-in-columns-with-title #<span class="fl">'categories</span> <span class="fu">\column</span> <span class="kw">{</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>      <span class="fu">\fontsize</span> #<span class="dv">5</span> <span class="fu">\sans</span> <span class="fu">\bold</span> <span class="fu">\fill</span>-line <span class="kw">{</span> <span class="fu">\null</span> "<span class="st">Inhaltsverzeichnis nach Kategorien"</span> <span class="fu">\null</span> <span class="kw">}</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>      <span class="fu">\vspace</span> #<span class="dv">1</span></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">}</span></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>      <span class="fu">\title</span>-to-pdf-toc "<span class="st">Kategorienverzeichnis"</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>      <span class="fu">\fontsize</span> #<span class="dv">5</span> <span class="fu">\sans</span> <span class="fu">\bold</span> <span class="fu">\fill</span>-line <span class="kw">{</span> <span class="fu">\null</span> "<span class="st">Inhaltsverzeichnis nach Kategorien"</span> <span class="fu">\null</span> <span class="kw">}</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>      <span class="fu">\vspace</span> #<span class="dv">1</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">}</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Mit diesem Code kannst du ein Kategorienverzeichnis erzeugen. Die Überschrift kannst du anpassen (<code>"Inhaltsverzeichnis nach Kategorien"</code>), ebenso deren Textgröße (<code>\fontsize #5</code>), Schriftfamilie (<code>\sans</code>) und Formatierungen wie zum Beispiel fett (<code>\bold</code>).</p>
 </section>
 <section id="autorinnenverzeichnis" class="level3">
@@ -383,11 +386,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode" id="cb6"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">\bookpart</span> <span class="kw">{</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\markuplist</span> <span class="kw">{</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\index</span>-in-columns-with-title #<span class="fl">'authors</span> <span class="fu">\column</span> <span class="kw">{</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>      <span class="fu">\fontsize</span> #<span class="dv">5</span> <span class="fu">\sans</span> <span class="fu">\bold</span> <span class="fu">\fill</span>-line <span class="kw">{</span> <span class="fu">\null</span> "<span class="st">Autorenverzeichnis"</span> <span class="fu">\null</span> <span class="kw">}</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>      <span class="fu">\vspace</span> #<span class="dv">1</span></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">}</span></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>      <span class="fu">\title</span>-to-pdf-toc "<span class="st">Autor*innenverzeichnis"</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>      <span class="fu">\fontsize</span> #<span class="dv">5</span> <span class="fu">\sans</span> <span class="fu">\bold</span> <span class="fu">\fill</span>-line <span class="kw">{</span> <span class="fu">\null</span> "<span class="st">Autorenverzeichnis"</span> <span class="fu">\null</span> <span class="kw">}</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>      <span class="fu">\vspace</span> #<span class="dv">1</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">}</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Mit diesem Code erstellst du ein Autor*innenverzeichnis aller Autor*innen der in deinem Liederbuch referenzierten Autor*innen. Zu den Anpassungen der Überschrift siehe <a href="#sec-kategorienverzeichnis" class="quarto-xref">Kapitel&nbsp;4.6</a>.</p>
 </section>
 <section id="inhaltsverzeichnis" class="level3">
@@ -421,19 +425,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>   <span class="fu">\indexSection</span> #<span class="fl">"</span><span class="st">Z"</span> <span class="bn">\markup</span> <span class="kw">{</span> "<span class="st">Z"</span> <span class="kw">}</span></span>
 <span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>   <span class="fu">\markuplist</span> <span class="kw">{</span></span>
 <span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\index</span>-in-columns-with-title #<span class="fl">'alphabetical</span> <span class="fu">\column</span> <span class="kw">{</span></span>
-<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a>      <span class="fu">\fontsize</span> #<span class="dv">5</span> <span class="fu">\sans</span> <span class="fu">\bold</span> <span class="fu">\fill</span>-line <span class="kw">{</span> <span class="fu">\null</span> "<span class="st">Inhaltsverzeichnis"</span> <span class="fu">\null</span> <span class="kw">}</span></span>
-<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a>      <span class="fu">\vspace</span> #<span class="dv">.5</span></span>
-<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a>      <span class="fu">\justify</span> <span class="kw">{</span></span>
-<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a>        Da die allermeisten Lieder unter verschiedenen Namen bekannt sind,</span>
-<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a>        wollen wir euch ein Inhaltsverzeichnis an die Hand geben, mit dem ihr hoffentlich auf verschiedene Arten fündig werdet.</span>
-<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a>        Die Liedtitel, die auch die Überschriften sind, findet ihr normal gedruckt.</span>
-<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a>        Alle weiteren Alternativtitel oder Liedanfänge sind zur Unterscheidung kursiv gedruckt.</span>
-<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a>      <span class="kw">}</span></span>
-<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a>      <span class="fu">\vspace</span> #<span class="dv">1</span></span>
-<span id="cb7-39"><a href="#cb7-39" aria-hidden="true" tabindex="-1"></a>    <span class="kw">}</span></span>
-<span id="cb7-40"><a href="#cb7-40" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\write</span>-toc-csv</span>
-<span id="cb7-41"><a href="#cb7-41" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
-<span id="cb7-42"><a href="#cb7-42" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a>      <span class="fu">\title</span>-to-pdf-toc "<span class="st">Inhaltsverzeichnis"</span></span>
+<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a>      <span class="fu">\fontsize</span> #<span class="dv">5</span> <span class="fu">\sans</span> <span class="fu">\bold</span> <span class="fu">\fill</span>-line <span class="kw">{</span> <span class="fu">\null</span> "<span class="st">Inhaltsverzeichnis"</span> <span class="fu">\null</span> <span class="kw">}</span></span>
+<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a>      <span class="fu">\vspace</span> #<span class="dv">.5</span></span>
+<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a>      <span class="fu">\justify</span> <span class="kw">{</span></span>
+<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a>        Da die allermeisten Lieder unter verschiedenen Namen bekannt sind,</span>
+<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a>        wollen wir euch ein Inhaltsverzeichnis an die Hand geben, mit dem ihr hoffentlich auf verschiedene Arten fündig werdet.</span>
+<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a>        Die Liedtitel, die auch die Überschriften sind, findet ihr normal gedruckt.</span>
+<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a>        Alle weiteren Alternativtitel oder Liedanfänge sind zur Unterscheidung kursiv gedruckt.</span>
+<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a>      <span class="kw">}</span></span>
+<span id="cb7-39"><a href="#cb7-39" aria-hidden="true" tabindex="-1"></a>      <span class="fu">\vspace</span> #<span class="dv">1</span></span>
+<span id="cb7-40"><a href="#cb7-40" aria-hidden="true" tabindex="-1"></a>    <span class="kw">}</span></span>
+<span id="cb7-41"><a href="#cb7-41" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\write</span>-toc-csv</span>
+<span id="cb7-42"><a href="#cb7-42" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
+<span id="cb7-43"><a href="#cb7-43" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Mit diesem Code kannst du ein Inhaltsverzeichnis erstellen. Der erste Teil (mit dem Alphabet) erstellt jeweils „Index-Sections“, also ein Abschnitt für jeden Buchstaben. Wenn ein Buchstabe in deinem Liederbuch nicht vorkommt, kannst du ihn auskommentieren, damit er nicht ausgedrückt wird. Anschließend kannst du, wie schon in <a href="#sec-kategorienverzeichnis" class="quarto-xref">Kapitel&nbsp;4.6</a> erwähnt, die Überschrift anpassen. Auch der ausgedrückte Text darunter ist natürlich anpassbar.</p>
 
 
