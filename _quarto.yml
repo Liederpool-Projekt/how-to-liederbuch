@@ -5,7 +5,7 @@ website:
   title: "How To Liederbuch"
   #author: ""
   #image: ""
-  #favicon: ""
+  favicon: "images/logo_buebuebue.svg"
   #site-url: ""
   page-navigation: true
   bread-crumbs: true
@@ -77,8 +77,12 @@ format:
   html:
     toc: true
     theme: 
-      light: sandstone
-      dark: darkly
+      light:
+        - sandstone
+        - theme.scss
+      dark:
+        - darkly
+        - theme.scss
     code-copy: true
     code-overflow: wrap
     grid:

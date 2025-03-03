@@ -1,0 +1,58 @@
+/*-- scss:defaults --*/
+// Hintergrundfarbe der Navbar
+$navbar-bg: #93867f; // Deine Wunschfarbe (z.B. dunkelblau)
+
+/*-- scss:rules --*/
+.navbar {
+  background-color: $navbar-bg !important; // Navbar-Hintergrundfarbe
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #7c0d1a !important; // Schriftfarbe der Navbar-Links
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #7c0d1a !important; // Hover-Schriftfarbe
+}
+
+/* Titel der Website (Navbar-Brand) */
+.navbar .navbar-brand {
+  color: #7c0d1a !important; // Gleiche Farbe wie die Links
+}
+
+.navbar .navbar-brand:hover {
+  color: #7c0d1a !important; // Hover-Farbe
+}
+
+/*-- scss:defaults --*/
+$navbar-link-color: #7c0d1a; /* Setzt die Farbe der Navbar-Links */
+$navbar-link-hover-color: #7c0d1a; /* Setzt die Hover-Farbe der Navbar-Links */
+
+/*-- scss:rules --*/
+.navbar .nav-link {
+  color: $navbar-link-color !important; /* Setzt die Farbe der Links in der Navbar */
+}
+
+.navbar .nav-link:hover {
+  color: $navbar-link-hover-color !important; /* Setzt die Hover-Farbe der Links in der Navbar */
+}
+
+a {
+  color: $navbar-link-color !important; /* Setzt die Link-Farbe auf der gesamten Seite */
+}
+
+a:hover {
+  color: $navbar-link-hover-color !important; /* Setzt die Hover-Farbe für Links */
+}
+
+/*-- scss:rules --*/
+/* ToC-Links */
+.toc a {
+  color: $navbar-link-color !important; /* Setzt die Farbe der ToC-Links */
+}
+
+.toc a:hover {
+  color: $navbar-link-hover-color !important; /* Setzt die Hover-Farbe der ToC-Links */
+}
+
+
