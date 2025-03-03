@@ -81,7 +81,9 @@ Wichtig: Wenn in einem `\bookpart` kein `\markup` oder eine `\markuplist` aktiv 
 % Seite
 \bookpart {
   \paper { print-page-number = ##f }
-  \markup { \vspace #2 \fill-line { \null
+  \markup { 
+    \title-to-pdf-toc "Vorwort"
+    \vspace #2 \fill-line { \null
     \override #'(font-name . "Old Standard TT") \fontsize #0.5 \override #'(line-width . 115) \left-column { \justify-string #"
     Hier steht lustiger Text"
     " "
@@ -100,12 +102,13 @@ Wenn du ein Vorwort erzeugen möchtest, kannst du das zum Beispiel mit diesem Bo
 
 Mit dem nächsten Befehl wird die Lied-Ausgabe bewirkt: `\songs`.
 
-### Kategorienverzeichnis  {#sec-kategorienverzeichnis}
+### Kategorienverzeichnis {#sec-kategorienverzeichnis}
 
 ``` lilypond
 \bookpart {
   \markuplist {
     \index-in-columns-with-title #'categories \column {
+      \title-to-pdf-toc "Kategorienverzeichnis"
       \fontsize #5 \sans \bold \fill-line { \null "Inhaltsverzeichnis nach Kategorien" \null }
       \vspace #1
     }
@@ -121,6 +124,7 @@ Mit diesem Code kannst du ein Kategorienverzeichnis erzeugen. Die Überschrift k
 \bookpart {
   \markuplist {
     \index-in-columns-with-title #'authors \column {
+      \title-to-pdf-toc "Autor*innenverzeichnis"
       \fontsize #5 \sans \bold \fill-line { \null "Autorenverzeichnis" \null }
       \vspace #1
     }
@@ -162,6 +166,7 @@ Mit diesem Code erstellst du ein Autor\*innenverzeichnis aller Autor\*innen der 
    \indexSection #"Z" \markup { "Z" }
    \markuplist {
     \index-in-columns-with-title #'alphabetical \column {
+      \title-to-pdf-toc "Inhaltsverzeichnis"
       \fontsize #5 \sans \bold \fill-line { \null "Inhaltsverzeichnis" \null }
       \vspace #.5
       \justify {
@@ -178,3 +183,4 @@ Mit diesem Code erstellst du ein Autor\*innenverzeichnis aller Autor\*innen der 
 ```
 
 Mit diesem Code kannst du ein Inhaltsverzeichnis erstellen. Der erste Teil (mit dem Alphabet) erstellt jeweils „Index-Sections“, also ein Abschnitt für jeden Buchstaben. Wenn ein Buchstabe in deinem Liederbuch nicht vorkommt, kannst du ihn auskommentieren, damit er nicht ausgedrückt wird. Anschließend kannst du, wie schon in @sec-kategorienverzeichnis erwähnt, die Überschrift anpassen. Auch der ausgedrückte Text darunter ist natürlich anpassbar.
+
