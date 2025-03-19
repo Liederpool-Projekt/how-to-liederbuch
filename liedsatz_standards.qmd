@@ -77,7 +77,7 @@ Bei der Balkensetzung achten wir möglichst darauf, keine manuelle Balkensetzung
 
 Unter einem Balken wird beispielsweise zusammengefasst, was auf einen Grundschlag kommt. Das kann, wie gesagt, LilyPond global gesagt bekommen. Deswegen setzen wir im Liederpool **nicht** so, wie im Beispiel für 4/4-Takt:
 
-```         
+``` lilypond
 \relative c' {
   \time 4/4
   e8 [e8] e8 [e8] e16 [e16 e16 e16] e8 [e16 e16]
@@ -123,7 +123,7 @@ In Dreiertakten (6/8-Takt, 3/4-Takt) beispielsweise sind punktierte Pausen aber 
 
 > Beispiele keine punktierte Pausen:
 >
-> ```         
+> ``` lilypond
 > \relative c' {
 >   \time 4/4
 >   r2 r4 c8 d |
@@ -137,7 +137,7 @@ Ausgabe:
 
 > Beispiele punktierte Pausen:
 >
-> ```         
+> ``` lilypond
 > \language "deutsch"
 > \relative c' {
 >   \time 6/8
@@ -163,7 +163,7 @@ Die Betonung des Taktes sollte (je nach Taktart) immer erkennbar sein.
 
 > Beispiel:
 >
-> ```         
+> ``` lilypond
 > \relative c' {
 >   \time 6/8
 >   a4.~ 8 cis e |
@@ -184,7 +184,7 @@ Takte, die zusammengesetzte Rhythmen haben, notieren wir auch so – sie können
 
 > Beispiel Nordwind:
 >
-> ```         
+> ``` lilypond
 > \relative c' {
 >   \compoundMeter #'((3 3 8) (2 8))
 >   \partial4
@@ -253,3 +253,7 @@ Verschiedene Varianten zu supporten, ist leider schwierig und erhöht die Komple
 Ausgabe:
 
 ![](images/wiederholung-im-takt.svg)
+
+## Kanoneinsätze
+
+Kanoneinsätze sollen wie [hier](musikalischer_inhalt.qmd#sec-kanon) beschrieben kursiv und mit römischen Ziffern markiert werden.
