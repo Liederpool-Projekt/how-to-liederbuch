@@ -429,6 +429,18 @@
     ]
   },
   {
+    "objectID": "liedsatz_standards.html#kanoneinsätze",
+    "href": "liedsatz_standards.html#kanoneinsätze",
+    "title": "Standards beim Liedersetzen",
+    "section": "Kanoneinsätze",
+    "text": "Kanoneinsätze\nKanoneinsätze sollen wie hier beschrieben kursiv und mit römischen Ziffern markiert werden.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Standards beim Liedersetzen"
+    ]
+  },
+  {
     "objectID": "lifehacks.html",
     "href": "lifehacks.html",
     "title": "Nützliche Lifehacks",
@@ -585,11 +597,35 @@
     ]
   },
   {
+    "objectID": "musikalischer_inhalt.html#sec-kanon",
+    "href": "musikalischer_inhalt.html#sec-kanon",
+    "title": "Musikalischer Inhalt",
+    "section": "Markierungen für beispielsweise Kanoneinsätze",
+    "text": "Markierungen für beispielsweise Kanoneinsätze\nMarkierungen wie beispielsweise eine römische Ziffer für den Einsatz einer Kanonstimme sollten auf folgendem Wege eingetragen werden (Beispiel für dreistimmigen Kanon):\neins = { \\tag #'einsaetze { \\tweak self-alignment-X #LEFT \\mark \\markup { \\italic \"I.\" } } }\nzwei = { \\tag #'einsaetze { \\tweak self-alignment-X #LEFT \\mark \\markup { \\italic \"II.\" } } }\ndrei = { \\tag #'einsaetze { \\tweak self-alignment-X #LEFT \\mark \\markup { \\italic \"III.\" } } }\nWas passiert da und wo gibt es ggf. etwas anzupassen? Der Variablenname kommt als erstes. Dahinter folgt ein Tag, der hier einsaetze heißt, damit die Markierungen unten in den Strophen ausgeschaltet werden können. Anschließend folgen einige Platzierungsbefehle und dann ein \\markup-Befehl: \\markup { \\italic \"I.\" }. In der Regel sollten Markierungen wie diese immer kursiv geschrieben sein. Bei Kanoneinsätzen sollen römische Ziffern genutzt werden. Die Markierungen können aber natürlich auch in der Layout-Datei überschrieben werden.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Musikalischer Inhalt"
+    ]
+  },
+  {
     "objectID": "musikalischer_inhalt.html#römische-ziffern",
     "href": "musikalischer_inhalt.html#römische-ziffern",
     "title": "Musikalischer Inhalt",
     "section": "Römische Ziffern",
     "text": "Römische Ziffern\nSiehe Layout-Doku.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Musikalischer Inhalt"
+    ]
+  },
+  {
+    "objectID": "musikalischer_inhalt.html#balkensetzung",
+    "href": "musikalischer_inhalt.html#balkensetzung",
+    "title": "Musikalischer Inhalt",
+    "section": "Balkensetzung",
+    "text": "Balkensetzung\nBei der Balkensetzung sind unbedingt unsere Standards zu beachten. Wie man in LilyPond die Balkensetzung beeinflusst, steht in der LilyPond-Doku.",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",

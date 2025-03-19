@@ -291,6 +291,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#rhythmusorientierte-taktaufteilung" id="toc-rhythmusorientierte-taktaufteilung" class="nav-link" data-scroll-target="#rhythmusorientierte-taktaufteilung">Rhythmusorientierte Taktaufteilung</a></li>
   <li><a href="#takte" id="toc-takte" class="nav-link" data-scroll-target="#takte">Takte</a></li>
   <li><a href="#wiederholungen" id="toc-wiederholungen" class="nav-link" data-scroll-target="#wiederholungen">Wiederholungen</a></li>
+  <li><a href="#kanoneinsätze" id="toc-kanoneinsätze" class="nav-link" data-scroll-target="#kanoneinsätze">Kanoneinsätze</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -376,10 +377,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="balken">Balken</h2>
 <p>Bei der Balkensetzung achten wir möglichst darauf, keine manuelle Balkensetzung zu machen, da sonst die Flexibilität verloren geht. Grundsätzlich kann man LilyPond sagen, in welchen Taktarten welche Balken wie zusammengefasst werden oder nicht.</p>
 <p>Unter einem Balken wird beispielsweise zusammengefasst, was auf einen Grundschlag kommt. Das kann, wie gesagt, LilyPond global gesagt bekommen. Deswegen setzen wir im Liederpool <strong>nicht</strong> so, wie im Beispiel für 4/4-Takt:</p>
-<pre><code>\relative c' {
-  \time 4/4
-  e8 [e8] e8 [e8] e16 [e16 e16 e16] e8 [e16 e16]
-}</code></pre>
+<div class="sourceCode" id="cb1"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">\relative c'</span> <span class="kw">{</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\time 4/4</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  e<span class="dt">8</span> <span class="dt">[</span>e<span class="dt">8]</span> e<span class="dt">8</span> <span class="dt">[</span>e<span class="dt">8]</span> e<span class="dt">16</span> <span class="dt">[</span>e<span class="dt">16</span> e<span class="dt">16</span> e<span class="dt">16]</span> e<span class="dt">8</span> <span class="dt">[</span>e<span class="dt">16</span> e<span class="dt">16]</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Ausgabe:</p>
 <p><img src="./images/balken.svg" class="img-fluid"></p>
 </section>
@@ -411,29 +412,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>In Dreiertakten (6/8-Takt, 3/4-Takt) beispielsweise sind punktierte Pausen aber in Ordnung, da sie die Lesbarkeit erhöhen.</p>
 <blockquote class="blockquote">
 <p>Beispiele keine punktierte Pausen:</p>
-<pre><code>\relative c' {
-  \time 4/4
-  r2 r4 c8 d |
-  r4 r8 c d e f g |
-}</code></pre>
+<div class="sourceCode" id="cb3"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">\relative c'</span> <span class="kw">{</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\time 4/4</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  r<span class="dt">2</span> r<span class="dt">4</span> c<span class="dt">8</span> d <span class="dv">|</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  r<span class="dt">4</span> r<span class="dt">8</span> c d e f g <span class="dv">|</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </blockquote>
 <p>Ausgabe:</p>
 <p><img src="./images/punktierte-pausen.svg" class="img-fluid"></p>
 <blockquote class="blockquote">
 <p>Beispiele punktierte Pausen:</p>
-<pre><code>\language "deutsch"
-\relative c' {
-  \time 6/8
-  r4. r4. |
-  r4. r8 c d |
-  c8 d e r8 r16 c c8 % Das gilt natürlich nur, wenn es der Lesbarkeit explizit dient...
-
-  \time 3/4
-  r2. |
-  r2. |
-  a4 h c |
-  d2.
-}</code></pre>
+<div class="sourceCode" id="cb4"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">\language</span> "<span class="st">deutsch"</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">\relative c'</span> <span class="kw">{</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\time 6/8</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  r<span class="dt">4.</span> r<span class="dt">4.</span> <span class="dv">|</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  r<span class="dt">4.</span> r<span class="dt">8</span> c d <span class="dv">|</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  c<span class="dt">8</span> d e r<span class="dt">8</span> r<span class="dt">16</span> c c<span class="dt">8</span> %<span class="co"> Das gilt natürlich nur, wenn es der Lesbarkeit explizit dient...</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\time 3/4</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  r<span class="dt">2.</span> <span class="dv">|</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  r<span class="dt">2.</span> <span class="dv">|</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  a<span class="dt">4</span> h c <span class="dv">|</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  d<span class="dt">2.</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </blockquote>
 <p>Ausgabe:</p>
 <p><img src="./images/punktierte-pausen-2.svg" class="img-fluid"></p>
@@ -443,30 +444,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Die Betonung des Taktes sollte (je nach Taktart) immer erkennbar sein.</p>
 <blockquote class="blockquote">
 <p>Beispiel:</p>
-<pre><code>\relative c' {
-  \time 6/8
-  a4.~ 8 cis e |
-  a4 a8~ 8 cis4
-
-  % aber:
-  \time 3/4
-  a2 cis8 e |
-  a4 a cis
-}</code></pre>
+<div class="sourceCode" id="cb5"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">\relative c'</span> <span class="kw">{</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\time 6/8</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  a<span class="dt">4.</span><span class="ch">~</span> 8 cis e <span class="dv">|</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  a<span class="dt">4</span> a<span class="dt">8</span><span class="ch">~</span> 8 cis<span class="dt">4</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  %<span class="co"> aber:</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\time 3/4</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  a<span class="dt">2</span> cis<span class="dt">8</span> e <span class="dv">|</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  a<span class="dt">4</span> a cis</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </blockquote>
 <p>Ausgabe:</p>
 <p><img src="./images/mitte-des-taktes.svg" class="img-fluid"></p>
 <p>Takte, die zusammengesetzte Rhythmen haben, notieren wir auch so – sie können aber in den einzelnen Liederbüchern über das Überschreiben der <code>global</code>-Variable auch in einfachen Takten wie 4/4-Takten notiert werden. Unter <a href="https://lilypond.org/doc/v2.23/Documentation/notation/displaying-rhythms#polymetric-notation">diesem Link</a> finden sich die Infos dazu in der Doku.</p>
 <blockquote class="blockquote">
 <p>Beispiel Nordwind:</p>
-<pre><code>\relative c' {
-  \compoundMeter #'((3 3 8) (2 8))
-  \partial4
-  e8 fis |
-  g4. g g4 |
-  fis4. e fis4 |
-  g2. g4 |
-}</code></pre>
+<div class="sourceCode" id="cb6"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">\relative c'</span> <span class="kw">{</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\compoundMeter</span> #<span class="fl">'((</span><span class="dv">3</span><span class="fl"> </span><span class="dv">3</span><span class="fl"> </span><span class="dv">8</span><span class="fl">) (</span><span class="dv">2</span><span class="fl"> </span><span class="dv">8</span><span class="fl">))</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\partial4</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  e<span class="dt">8</span> fis <span class="dv">|</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  g<span class="dt">4.</span> g g<span class="dt">4</span> <span class="dv">|</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  fis<span class="dt">4.</span> e fis<span class="dt">4</span> <span class="dv">|</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  g<span class="dt">2.</span> g<span class="dt">4</span> <span class="dv">|</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </blockquote>
 <p>Ausgabe:</p>
 <p><img src="./images/zusammengesetzte-rhythmen.svg" class="img-fluid"></p>
@@ -514,6 +515,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </blockquote>
 <p>Ausgabe:</p>
 <p><img src="images/wiederholung-im-takt.svg" class="img-fluid"></p>
+</section>
+<section id="kanoneinsätze" class="level2">
+<h2 class="anchored" data-anchor-id="kanoneinsätze">Kanoneinsätze</h2>
+<p>Kanoneinsätze sollen wie <a href="./musikalischer_inhalt.html#sec-kanon">hier</a> beschrieben kursiv und mit römischen Ziffern markiert werden.</p>
 
 
 </section>
