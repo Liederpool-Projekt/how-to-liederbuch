@@ -270,7 +270,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Auf dieser Seite</h2>
    
   <ul>
-  <li><a href="#kategorien" id="toc-kategorien" class="nav-link active" data-scroll-target="#kategorien">Kategorien</a>
+  <li><a href="#einstellungen-überschreiben" id="toc-einstellungen-überschreiben" class="nav-link active" data-scroll-target="#einstellungen-überschreiben">Einstellungen überschreiben</a></li>
+  <li><a href="#generelle-layout-einstellungen" id="toc-generelle-layout-einstellungen" class="nav-link" data-scroll-target="#generelle-layout-einstellungen">Generelle Layout-Einstellungen</a></li>
+  <li><a href="#anpassung-der-akkordsymbole" id="toc-anpassung-der-akkordsymbole" class="nav-link" data-scroll-target="#anpassung-der-akkordsymbole">Anpassung der Akkordsymbole</a></li>
+  <li><a href="#kategorien" id="toc-kategorien" class="nav-link" data-scroll-target="#kategorien">Kategorien</a>
   <ul class="collapse">
   <li><a href="#kategorien-erstellen" id="toc-kategorien-erstellen" class="nav-link" data-scroll-target="#kategorien-erstellen">Kategorien erstellen</a></li>
   <li><a href="#liedern-kategorien-zuweisen" id="toc-liedern-kategorien-zuweisen" class="nav-link" data-scroll-target="#liedern-kategorien-zuweisen">Liedern Kategorien zuweisen</a></li>
@@ -300,35 +303,110 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Datei custom-includes</p>
+<p>In diesem Teil der Doku geht es um die Layout-Konfigurationen, die in aller Regel für ein gesamtes Liederbuch gelten sollen, also zum Beispiel die Schriftart der Akkorde, der Lyrics, der Überschriften, Seitenränder, Kategorien und vieles mehr. Generell sind diese Konfigurationen im Ordner <code>lilypond-custom-includes</code> zu machen.</p>
+<section id="einstellungen-überschreiben" class="level2">
+<h2 class="anchored" data-anchor-id="einstellungen-überschreiben">Einstellungen überschreiben</h2>
+<p>In der Datei <code>lilypond-custom-includes/base_config.ly</code> können unter anderem LilyPond-Einstellungen, die in den <code>lilypond-common-includes</code> definiert wurden, überschrieben werden, zum Beispiel die Einstellungen zu Versetzungszeichen oder Balkensetzungen.</p>
+</section>
+<section id="generelle-layout-einstellungen" class="level2">
+<h2 class="anchored" data-anchor-id="generelle-layout-einstellungen">Generelle Layout-Einstellungen</h2>
+<p>Die allermeisten liederbuchspezifischen Einstellungen, die man vermutlich verändern will, finden sich in der Datei <code>lilypond-common-includes/default_style.ly</code>. Die dortigen Einstellungen können angepasst werden, indem die entsprechenden Parameter in die Datei <code>lilypond-custom-includes/custom_style_overrides.ly</code> kopiert werden und die Werte entsprechend verändert werden. Sofern nicht anders angegeben, müssen numerische Werte übergeben werden. Folgende Parameter gibt es:</p>
+<ul>
+<li><p><code>songFormatAndSize</code> definiert das Format, zum Beispiel <code>a5</code> oder <code>b6</code>.</p></li>
+<li><p><code>songMargin</code> definiert den Seitenabstand.</p></li>
+<li><p><code>songInfoFontSize</code> definiert die Schriftgröße der Songinfo.</p></li>
+<li><p><code>songInfoLineWidthFraction</code> definiert die Breite der Songinfo.</p></li>
+<li><p><code>songTitleSize</code> definiert die Schriftgröße des Titels.</p></li>
+<li><p><code>songTitleFont</code> definiert die Schriftart des Titels. Der Name der Schriftart wird als String, also in Anführungszeichen übergeben.</p></li>
+<li><p><code>songChordFont</code> definiert die Schriftart der Akkorde. Der Name der Schriftart wird als String, also in Anführungszeichen übergeben.</p></li>
+<li><p><code>songLyricFont</code> definiert die Schriftart der Lyrics (Strophen). Der Name der Schriftart wird als String, also in Anführungszeichen übergeben.</p></li>
+<li><p><code>songChordFontSeries</code>. Hier kann eingestellt werden, ob die Akkorde normal (<code>#'normal</code>) oder fett (<code>#'bold</code>) dargestellt werden sollen.</p></li>
+<li><p><code>songTextChordAlignment</code> ist nur für das „alte“ System notwendig, wenn also keine Noten im Spiel sind. Mit <code>#'left</code> werden die Akkorde dann über den Silben links ausgerichtet, mit <code>#'center</code> werden sie über der jeweiligen Silbe zentriert.</p></li>
+<li><p><code>songScoreChordFontSize</code> definiert die Größe der Akkordzeichen in den Noten.</p></li>
+<li><p><code>songTextChordFontSize</code> definiert die Größe der Akkordzeichen in den Strophen. Es empfiehlt sich, beide Variablen gleichzusetzen.</p></li>
+<li><p><code>songTextChordDistance</code> definiert den Abstand zwischen den Akkordzeichen in den Strophen zu den zugehörigen Lyrics (nur neues System).</p></li>
+<li><p><code>songTextLineHeigth</code> definiert den Abstand zwischen den Lyric-Zeilen. Da die Akkorde sich jeweils an den Lyrics orientieren, werden die bei Anpassung des Werts mit verschoben.</p></li>
+<li><p><code>songTocColumns</code> definiert die Anzahl der Spalten, die im Inhaltsverzeichnis genutzt werden sollen.</p></li>
+<li><p><code>globalSize</code> definiert die Größe des Notensatzes.</p></li>
+<li><p><code>lyricSize</code> definiert die Größe der Lyrics.</p></li>
+<li><p><code>stanzaFormat</code> definiert das Format für die Nummerierung der Strophen. Standardformat ist <code>"~a."</code>. <code>~a</code> ist hierbei ein Platzhalter für die Strophennummer. Hier kann also definiert werden, ob als Ausgabe beispielsweise <code>1.</code>, <code>1.:</code> oder <code>1)</code> gewünscht ist.</p></li>
+<li><p><code>romanStanzaFormat</code> definiert das Format für die römische Nummerierung der Strophen, also der Alternativnummerierung, die zum Beispiel für fremdsprachige Strophen genutzt werden kann. Das Prinzip ist dasselbe wie beim <code>stanzaFormat</code>.</p></li>
+<li><p><code>refString</code> definiert, welche Stanza beim <code>\ref</code>-Befehl übergeben werden soll.</p></li>
+<li><p><code>refStringWithNumbers</code> definiert das Format von nummerierten Refrains nach demselben Schema wie beim <code>stanzaFormat</code>.</p></li>
+<li><p><code>repStart</code> definiert den Befehl <code>\repStart</code> für das alte System, um typographisch korrekte Wiederholungszeichen zu setzen.</p></li>
+<li><p><code>repStop</code> siehe <code>repStart</code>.</p></li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hinweis
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Es empfiehlt sich, dass die Schriftart ebenfalls im Repo gespeichert wird, da nicht auf jedem Computer dieselben Schriftarten installiert sind.</p>
+</div>
+</div>
+<p>Der Default-Style sieht so aus:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>songFormatAndSize = "<span class="st">a5"</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>songMargin = 5</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>songInfoFontSize = 0</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>songInfoLineWidthFraction = 0.9</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>songTitleSize = 6</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>songTitleFont = "<span class="st">Liberation Sans"</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>songChordFont = "<span class="st">Liberation Sans"</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>songLyricFont = "<span class="st">Liberation Sans"</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>songChordFontSeries = #<span class="fl">'bold</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>songTextChordAlignment = #<span class="fl">'left</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>songScoreChordFontSize = 2</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>songTextChordFontSize = <span class="fu">\songScoreChordFontSize</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>songTextChordDistance = 2.8</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>songTextLineHeigth = 5.8</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>songTocColumns = 3</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>globalSize = 15</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>lyricSize = 1.6</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>stanzaFormat = "<span class="st">~a."</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>romanStanzaFormat = "<span class="st">~@r."</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>refString = "<span class="st">Ref.:"</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>refStringWithNumbers = "<span class="st">Ref. ~a:"</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>%<span class="co"> hübsche Wiederholungszeichen für den Liedtext</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>repStart = "<span class="st">𝄆"</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>repStop = "<span class="st">𝄇"</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="anpassung-der-akkordsymbole" class="level2">
+<h2 class="anchored" data-anchor-id="anpassung-der-akkordsymbole">Anpassung der Akkordsymbole</h2>
+<p>Auch die bestimmte Darstellung, spezieller Akkordsymbole kann in den <code>custom_style_overrides.ly</code> angepasst werden.</p>
+</section>
 <section id="kategorien" class="level2">
 <h2 class="anchored" data-anchor-id="kategorien">Kategorien</h2>
 <p>Mithilfe unserer Skripte ist es möglich, Lieder Kategorien zuzuordnen und sie optional mit Kategoriebildchen zu versehen. Auch ein Kategorienverzeichnist ist möglich (siehe <a href="./liederbuecher_machen.html#sec-kategorienverzeichnis">Einführung</a>). So funktioniert es:</p>
 <section id="kategorien-erstellen" class="level3">
 <h3 class="anchored" data-anchor-id="kategorien-erstellen">Kategorien erstellen</h3>
 <p>Als erstes solltest du Kategorien in der Datei <code>lilypond-custom-includes/categories.ly</code> definieren. Die Datei sieht so aus:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>#<span class="fl">(define category-names '(</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fl">  (see "</span><span class="st">See und\nPiraten"</span><span class="fl">)</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fl">  ;</span><span class="co">(categoriekey "Titel der Kategorie")</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fl">  ))</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>%<span class="co">% Path to Category images</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>#<span class="fl">(define-public (category-image-path category)</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fl">   (string-append "</span><span class="st">../../liederbuecher/beispiel_liederbuch/categories/"</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fl">         category "</span><span class="st">.eps"</span><span class="fl">))</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>#<span class="fl">(define category-names '(</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fl">  (see "</span><span class="st">See und\nPiraten"</span><span class="fl">)</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fl">  ;</span><span class="co">(categoriekey "Titel der Kategorie")</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fl">  ))</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>%<span class="co">% Path to Category images</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>#<span class="fl">(define-public (category-image-path category)</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fl">   (string-append "</span><span class="st">../../liederbuecher/beispiel_liederbuch/categories/"</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="fl">         category "</span><span class="st">.eps"</span><span class="fl">))</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Das gehen wir jetzt Zeile für Zeile durch. In der ersten Zeile wird die Scheme<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>-Funktion definiert, das ist erstmal uninteressant. Ab der zweiten Zeile werden dann alle Kategorien und ihre Titel definiert. Das Schema wird im auskommentierten Teil beschrieben<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>: Erst kommt die ID der Kategorie und danach in Anführungszeichen der Titel. Auf die ID wird in der Lied-Layout-Datei referenziert. Der Titel ist der, der dann im Kategorienverzeichnis benutzt wird. Im obigen Beispiel ist also <code>see</code> die ID und <code>"See und/nPiraten"</code> der Titel. Das <code>/n</code> bewirkt übrigens einen Zeilenumbruch.</p>
 <p>Im zweiten Teil wird der Pfad zu den Kategoriebildchen definiert. Der sollte auf jeden Fall angepasst werden und auf einen Ordner in deinem Liederbuch-Ordner verweisen. Die Dateinamen müssen dabei der ID entsprechen und das EPS-Format haben.</p>
 </section>
 <section id="liedern-kategorien-zuweisen" class="level3">
 <h3 class="anchored" data-anchor-id="liedern-kategorien-zuweisen">Liedern Kategorien zuweisen</h3>
 <p>In der Layout-Datei der Lieder können im zweiten Schritt dann Kategorien den Liedern zugewiesen werden, in dem in der <code>categories</code>-Variable alle betreffenden IDs durch Leerzeichen getrennt aufgeschrieben werden. Das könnte dann so aussehen:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>HEADER = <span class="kw">\bookpart</span> <span class="kw">{</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  \header<span class="kw"> {</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\basicSongInfo</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    %<span class="co">infotext = ""</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    categories = "<span class="st">see abend andacht"</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>HEADER = <span class="kw">\bookpart</span> <span class="kw">{</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  \header<span class="kw"> {</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\basicSongInfo</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    %<span class="co">infotext = ""</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    categories = "<span class="st">see abend andacht"</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Das Lied würde also den Kategorien mit den IDs <code>see</code>, <code>abend</code> und <code>andacht</code> zugewiesen werden.</p>
 
 

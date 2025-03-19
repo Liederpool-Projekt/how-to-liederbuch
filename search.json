@@ -877,7 +877,43 @@
     "href": "liederbuch_layout.html",
     "title": "Liederbuch-Layout",
     "section": "",
-    "text": "Datei custom-includes",
+    "text": "In diesem Teil der Doku geht es um die Layout-Konfigurationen, die in aller Regel für ein gesamtes Liederbuch gelten sollen, also zum Beispiel die Schriftart der Akkorde, der Lyrics, der Überschriften, Seitenränder, Kategorien und vieles mehr. Generell sind diese Konfigurationen im Ordner lilypond-custom-includes zu machen.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Liederbuch-Layout"
+    ]
+  },
+  {
+    "objectID": "liederbuch_layout.html#einstellungen-überschreiben",
+    "href": "liederbuch_layout.html#einstellungen-überschreiben",
+    "title": "Liederbuch-Layout",
+    "section": "Einstellungen überschreiben",
+    "text": "Einstellungen überschreiben\nIn der Datei lilypond-custom-includes/base_config.ly können unter anderem LilyPond-Einstellungen, die in den lilypond-common-includes definiert wurden, überschrieben werden, zum Beispiel die Einstellungen zu Versetzungszeichen oder Balkensetzungen.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Liederbuch-Layout"
+    ]
+  },
+  {
+    "objectID": "liederbuch_layout.html#generelle-layout-einstellungen",
+    "href": "liederbuch_layout.html#generelle-layout-einstellungen",
+    "title": "Liederbuch-Layout",
+    "section": "Generelle Layout-Einstellungen",
+    "text": "Generelle Layout-Einstellungen\nDie allermeisten liederbuchspezifischen Einstellungen, die man vermutlich verändern will, finden sich in der Datei lilypond-common-includes/default_style.ly. Die dortigen Einstellungen können angepasst werden, indem die entsprechenden Parameter in die Datei lilypond-custom-includes/custom_style_overrides.ly kopiert werden und die Werte entsprechend verändert werden. Sofern nicht anders angegeben, müssen numerische Werte übergeben werden. Folgende Parameter gibt es:\n\nsongFormatAndSize definiert das Format, zum Beispiel a5 oder b6.\nsongMargin definiert den Seitenabstand.\nsongInfoFontSize definiert die Schriftgröße der Songinfo.\nsongInfoLineWidthFraction definiert die Breite der Songinfo.\nsongTitleSize definiert die Schriftgröße des Titels.\nsongTitleFont definiert die Schriftart des Titels. Der Name der Schriftart wird als String, also in Anführungszeichen übergeben.\nsongChordFont definiert die Schriftart der Akkorde. Der Name der Schriftart wird als String, also in Anführungszeichen übergeben.\nsongLyricFont definiert die Schriftart der Lyrics (Strophen). Der Name der Schriftart wird als String, also in Anführungszeichen übergeben.\nsongChordFontSeries. Hier kann eingestellt werden, ob die Akkorde normal (#'normal) oder fett (#'bold) dargestellt werden sollen.\nsongTextChordAlignment ist nur für das „alte“ System notwendig, wenn also keine Noten im Spiel sind. Mit #'left werden die Akkorde dann über den Silben links ausgerichtet, mit #'center werden sie über der jeweiligen Silbe zentriert.\nsongScoreChordFontSize definiert die Größe der Akkordzeichen in den Noten.\nsongTextChordFontSize definiert die Größe der Akkordzeichen in den Strophen. Es empfiehlt sich, beide Variablen gleichzusetzen.\nsongTextChordDistance definiert den Abstand zwischen den Akkordzeichen in den Strophen zu den zugehörigen Lyrics (nur neues System).\nsongTextLineHeigth definiert den Abstand zwischen den Lyric-Zeilen. Da die Akkorde sich jeweils an den Lyrics orientieren, werden die bei Anpassung des Werts mit verschoben.\nsongTocColumns definiert die Anzahl der Spalten, die im Inhaltsverzeichnis genutzt werden sollen.\nglobalSize definiert die Größe des Notensatzes.\nlyricSize definiert die Größe der Lyrics.\nstanzaFormat definiert das Format für die Nummerierung der Strophen. Standardformat ist \"~a.\". ~a ist hierbei ein Platzhalter für die Strophennummer. Hier kann also definiert werden, ob als Ausgabe beispielsweise 1., 1.: oder 1) gewünscht ist.\nromanStanzaFormat definiert das Format für die römische Nummerierung der Strophen, also der Alternativnummerierung, die zum Beispiel für fremdsprachige Strophen genutzt werden kann. Das Prinzip ist dasselbe wie beim stanzaFormat.\nrefString definiert, welche Stanza beim \\ref-Befehl übergeben werden soll.\nrefStringWithNumbers definiert das Format von nummerierten Refrains nach demselben Schema wie beim stanzaFormat.\nrepStart definiert den Befehl \\repStart für das alte System, um typographisch korrekte Wiederholungszeichen zu setzen.\nrepStop siehe repStart.\n\n\n\n\n\n\n\nHinweis\n\n\n\nEs empfiehlt sich, dass die Schriftart ebenfalls im Repo gespeichert wird, da nicht auf jedem Computer dieselben Schriftarten installiert sind.\n\n\nDer Default-Style sieht so aus:\nsongFormatAndSize = \"a5\"\nsongMargin = 5\nsongInfoFontSize = 0\nsongInfoLineWidthFraction = 0.9\nsongTitleSize = 6\nsongTitleFont = \"Liberation Sans\"\nsongChordFont = \"Liberation Sans\"\nsongLyricFont = \"Liberation Sans\"\nsongChordFontSeries = #'bold\nsongTextChordAlignment = #'left\nsongScoreChordFontSize = 2\nsongTextChordFontSize = \\songScoreChordFontSize\nsongTextChordDistance = 2.8\nsongTextLineHeigth = 5.8\nsongTocColumns = 3\nglobalSize = 15\nlyricSize = 1.6\nstanzaFormat = \"~a.\"\nromanStanzaFormat = \"~@r.\"\nrefString = \"Ref.:\"\nrefStringWithNumbers = \"Ref. ~a:\"\n% hübsche Wiederholungszeichen für den Liedtext\nrepStart = \"𝄆\"\nrepStop = \"𝄇\"",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Liederbuch-Layout"
+    ]
+  },
+  {
+    "objectID": "liederbuch_layout.html#anpassung-der-akkordsymbole",
+    "href": "liederbuch_layout.html#anpassung-der-akkordsymbole",
+    "title": "Liederbuch-Layout",
+    "section": "Anpassung der Akkordsymbole",
+    "text": "Anpassung der Akkordsymbole\nAuch die bestimmte Darstellung, spezieller Akkordsymbole kann in den custom_style_overrides.ly angepasst werden.",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",
