@@ -391,6 +391,26 @@ melodyVoice = {
 }
 ```
 
+## Markierungen für beispielsweise Kanoneinsätze  {#sec-kanon}
+
+Markierungen wie beispielsweise eine römische Ziffer für den Einsatz einer Kanonstimme sollten auf folgendem Wege eingetragen werden (Beispiel für dreistimmigen Kanon):
+
+``` lilypond
+eins = { \tag #'einsaetze { \tweak self-alignment-X #LEFT \mark \markup { \italic "I." } } }
+zwei = { \tag #'einsaetze { \tweak self-alignment-X #LEFT \mark \markup { \italic "II." } } }
+drei = { \tag #'einsaetze { \tweak self-alignment-X #LEFT \mark \markup { \italic "III." } } }
+```
+
+Was passiert da und wo gibt es ggf. etwas anzupassen? Der Variablenname kommt als erstes. Dahinter folgt ein Tag, der hier `einsaetze` heißt, damit die Markierungen unten in den Strophen ausgeschaltet werden können. Anschließend folgen einige Platzierungsbefehle und dann ein `\markup`-Befehl: `\markup { \italic "I." }`. In der Regel sollten Markierungen wie diese immer kursiv geschrieben sein. Bei Kanoneinsätzen sollen römische Ziffern genutzt werden. Die Markierungen können aber natürlich auch in der Layout-Datei überschrieben werden.
+
+## Optionale Akkorde
+
+Optionale Akkorde können eingeklammert werden anhand der Funktion `\klamm { d4:7 }`.
+
 ## Römische Ziffern
 
 Siehe [Layout-Doku](layout.qmd#sec-romanstanza).
+
+## Balkensetzung
+
+Bei der Balkensetzung sind unbedingt [unsere Standards](liedsatz_standards.qmd) zu beachten. Wie man in LilyPond die Balkensetzung beeinflusst, steht in der [LilyPond-Doku](https://lilypond.org/doc/v2.25/Documentation/notation/setting-automatic-beam-behavior).
