@@ -285,6 +285,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </ul></li>
   <li><a href="#swing-style" id="toc-swing-style" class="nav-link" data-scroll-target="#swing-style">Swing-Style</a></li>
   <li><a href="#sec-kanon" id="toc-sec-kanon" class="nav-link" data-scroll-target="#sec-kanon">Markierungen für beispielsweise Kanoneinsätze</a></li>
+  <li><a href="#optionale-akkorde" id="toc-optionale-akkorde" class="nav-link" data-scroll-target="#optionale-akkorde">Optionale Akkorde</a></li>
   <li><a href="#römische-ziffern" id="toc-römische-ziffern" class="nav-link" data-scroll-target="#römische-ziffern">Römische Ziffern</a></li>
   <li><a href="#balkensetzung" id="toc-balkensetzung" class="nav-link" data-scroll-target="#balkensetzung">Balkensetzung</a></li>
   </ul>
@@ -707,6 +708,10 @@ Abbildung&nbsp;2: Das sind die beiden möglichen resultierenden Ansichten.
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">zwei</span> = <span class="kw">{</span> <span class="fu">\tag</span> #<span class="fl">'einsaetze</span> <span class="kw">{</span> <span class="fu">\tweak</span> self-alignment-X #<span class="fl">LEFT</span> <span class="fu">\mark</span> <span class="bn">\markup</span> <span class="kw">{</span> <span class="bn">\italic</span> "<span class="st">II."</span> <span class="kw">}</span> <span class="kw">}</span> <span class="kw">}</span></span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="fu">drei</span> = <span class="kw">{</span> <span class="fu">\tag</span> #<span class="fl">'einsaetze</span> <span class="kw">{</span> <span class="fu">\tweak</span> self-alignment-X #<span class="fl">LEFT</span> <span class="fu">\mark</span> <span class="bn">\markup</span> <span class="kw">{</span> <span class="bn">\italic</span> "<span class="st">III."</span> <span class="kw">}</span> <span class="kw">}</span> <span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Was passiert da und wo gibt es ggf. etwas anzupassen? Der Variablenname kommt als erstes. Dahinter folgt ein Tag, der hier <code>einsaetze</code> heißt, damit die Markierungen unten in den Strophen ausgeschaltet werden können. Anschließend folgen einige Platzierungsbefehle und dann ein <code>\markup</code>-Befehl: <code>\markup { \italic "I." }</code>. In der Regel sollten Markierungen wie diese immer kursiv geschrieben sein. Bei Kanoneinsätzen sollen römische Ziffern genutzt werden. Die Markierungen können aber natürlich auch in der Layout-Datei überschrieben werden.</p>
+</section>
+<section id="optionale-akkorde" class="level2">
+<h2 class="anchored" data-anchor-id="optionale-akkorde">Optionale Akkorde</h2>
+<p>Optionale Akkorde können eingeklammert werden anhand der Funktion <code>\klamm { d4:7 }</code>.</p>
 </section>
 <section id="römische-ziffern" class="level2">
 <h2 class="anchored" data-anchor-id="römische-ziffern">Römische Ziffern</h2>
