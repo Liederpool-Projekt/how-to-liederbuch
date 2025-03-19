@@ -3,7 +3,98 @@ title: "Liederbuch-Layout"
 format: html
 ---
 
-Datei custom-includes
+In diesem Teil der Doku geht es um die Layout-Konfigurationen, die in aller Regel für ein gesamtes Liederbuch gelten sollen, also zum Beispiel die Schriftart der Akkorde, der Lyrics, der Überschriften, Seitenränder, Kategorien und vieles mehr. Generell sind diese Konfigurationen im Ordner `lilypond-custom-includes` zu machen.
+
+## Einstellungen überschreiben
+
+In der Datei `lilypond-custom-includes/base_config.ly` können unter anderem LilyPond-Einstellungen, die in den `lilypond-common-includes` definiert wurden, überschrieben werden, zum Beispiel die Einstellungen zu Versetzungszeichen oder Balkensetzungen.
+
+## Generelle Layout-Einstellungen
+
+Die allermeisten liederbuchspezifischen Einstellungen, die man vermutlich verändern will, finden sich in der Datei `lilypond-common-includes/default_style.ly`. Die dortigen Einstellungen können angepasst werden, indem die entsprechenden Parameter in die Datei `lilypond-custom-includes/custom_style_overrides.ly` kopiert werden und die Werte entsprechend verändert werden. Sofern nicht anders angegeben, müssen numerische Werte übergeben werden. Folgende Parameter gibt es:
+
+-   `songFormatAndSize` definiert das Format, zum Beispiel `a5` oder `b6`.
+
+-   `songMargin` definiert den Seitenabstand.
+
+-   `songInfoFontSize` definiert die Schriftgröße der Songinfo.
+
+-   `songInfoLineWidthFraction` definiert die Breite der Songinfo.
+
+-   `songTitleSize` definiert die Schriftgröße des Titels.
+
+-   `songTitleFont` definiert die Schriftart des Titels. Der Name der Schriftart wird als String, also in Anführungszeichen übergeben.
+
+-   `songChordFont` definiert die Schriftart der Akkorde. Der Name der Schriftart wird als String, also in Anführungszeichen übergeben.
+
+-   `songLyricFont` definiert die Schriftart der Lyrics (Strophen). Der Name der Schriftart wird als String, also in Anführungszeichen übergeben.
+
+-   `songChordFontSeries`. Hier kann eingestellt werden, ob die Akkorde normal (`#'normal`) oder fett (`#'bold`) dargestellt werden sollen.
+
+-   `songTextChordAlignment` ist nur für das „alte“ System notwendig, wenn also keine Noten im Spiel sind. Mit `#'left` werden die Akkorde dann über den Silben links ausgerichtet, mit `#'center` werden sie über der jeweiligen Silbe zentriert.
+
+-   `songScoreChordFontSize` definiert die Größe der Akkordzeichen in den Noten.
+
+-   `songTextChordFontSize` definiert die Größe der Akkordzeichen in den Strophen. Es empfiehlt sich, beide Variablen gleichzusetzen.
+
+-   `songTextChordDistance` definiert den Abstand zwischen den Akkordzeichen in den Strophen zu den zugehörigen Lyrics (nur neues System).
+
+-   `songTextLineHeigth` definiert den Abstand zwischen den Lyric-Zeilen. Da die Akkorde sich jeweils an den Lyrics orientieren, werden die bei Anpassung des Werts mit verschoben.
+
+-   `songTocColumns` definiert die Anzahl der Spalten, die im Inhaltsverzeichnis genutzt werden sollen.
+
+-   `globalSize` definiert die Größe des Notensatzes.
+
+-   `lyricSize` definiert die Größe der Lyrics.
+
+-   `stanzaFormat` definiert das Format für die Nummerierung der Strophen. Standardformat ist `"~a."`. `~a` ist hierbei ein Platzhalter für die Strophennummer. Hier kann also definiert werden, ob als Ausgabe beispielsweise `1.`, `1.:` oder `1)` gewünscht ist.
+
+-   `romanStanzaFormat` definiert das Format für die römische Nummerierung der Strophen, also der Alternativnummerierung, die zum Beispiel für fremdsprachige Strophen genutzt werden kann. Das Prinzip ist dasselbe wie beim `stanzaFormat`.
+
+-   `refString` definiert, welche Stanza beim `\ref`-Befehl übergeben werden soll.
+
+-   `refStringWithNumbers` definiert das Format von nummerierten Refrains nach demselben Schema wie beim `stanzaFormat`.
+
+-   `repStart` definiert den Befehl `\repStart` für das alte System, um typographisch korrekte Wiederholungszeichen zu setzen.
+
+-   `repStop` siehe `repStart`.
+
+::: callout-note
+Es empfiehlt sich, dass die Schriftart ebenfalls im Repo gespeichert wird, da nicht auf jedem Computer dieselben Schriftarten installiert sind.
+:::
+
+Der Default-Style sieht so aus:
+
+``` lilypond
+songFormatAndSize = "a5"
+songMargin = 5
+songInfoFontSize = 0
+songInfoLineWidthFraction = 0.9
+songTitleSize = 6
+songTitleFont = "Liberation Sans"
+songChordFont = "Liberation Sans"
+songLyricFont = "Liberation Sans"
+songChordFontSeries = #'bold
+songTextChordAlignment = #'left
+songScoreChordFontSize = 2
+songTextChordFontSize = \songScoreChordFontSize
+songTextChordDistance = 2.8
+songTextLineHeigth = 5.8
+songTocColumns = 3
+globalSize = 15
+lyricSize = 1.6
+stanzaFormat = "~a."
+romanStanzaFormat = "~@r."
+refString = "Ref.:"
+refStringWithNumbers = "Ref. ~a:"
+% hübsche Wiederholungszeichen für den Liedtext
+repStart = "𝄆"
+repStop = "𝄇"
+```
+
+## Anpassung der Akkordsymbole
+
+Auch die bestimmte Darstellung, spezieller Akkordsymbole kann in den `custom_style_overrides.ly` angepasst werden.
 
 ## Kategorien
 

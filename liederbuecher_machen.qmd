@@ -183,4 +183,3 @@ Mit diesem Code erstellst du ein Autor\*innenverzeichnis aller Autor\*innen der 
 ```
 
 Mit diesem Code kannst du ein Inhaltsverzeichnis erstellen. Der erste Teil (mit dem Alphabet) erstellt jeweils „Index-Sections“, also ein Abschnitt für jeden Buchstaben. Wenn ein Buchstabe in deinem Liederbuch nicht vorkommt, kannst du ihn auskommentieren, damit er nicht ausgedrückt wird. Anschließend kannst du, wie schon in @sec-kategorienverzeichnis erwähnt, die Überschrift anpassen. Auch der ausgedrückte Text darunter ist natürlich anpassbar.
-
