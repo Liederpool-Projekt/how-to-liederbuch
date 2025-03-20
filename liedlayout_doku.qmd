@@ -37,7 +37,32 @@ TEXT = \markuplist {
 
 Problem: Verschiedene Liederbücher haben verschiedene Formate, weswegen es keinen idealen Zeilenumbruch für alle Liederbücher gibt.
 
-Lösung: Versumbrüche werden in der Variable `verse-breaks` anhand von (unsichtbaren) Pausen (`s`)und `\break`-Befehlen bewirkt. Diese Variable wird dann mittels `\override`-Befehl vor den entsprechenden Versen im `TEXT`-Part eingebunden. Beispiel: `` \override #`(verse-break-voice . ,verse-breaks) ``. `verse-break-voice` erstellt eine (unsichtbare) Stimme mit den Umbrüchen aus `verse-breaks` und wird auch für den Fall gesetzt, dass es Strophen und einen Refrain gibt. In dem Falle wird das `\override` immer vor den unterschiedlichen Strophen neu gesetzt (Achtung: `\override` gilt immer nur für das folgende Element, zum Beispiel ein Vers oder ein `\group-verses`-Ausdruck).
+Lösung: Versumbrüche werden in der Variable `verse-breaks` anhand von (unsichtbaren) Pausen (`s`)und `\break`-Befehlen bewirkt. Diese Variable wird dann mittels `\override`-Befehl vor den entsprechenden Versen im `TEXT`-Part eingebunden. Beispiel: `` \override #`(verse-break-voice . ,verse-breaks) ``. `verse-break-voice` erstellt eine (unsichtbare) Stimme mit den Umbrüchen aus `verse-breaks` und wird auch für den Fall gesetzt, dass es Strophen und einen Refrain gibt. In dem Falle wird das `\override` immer vor den unterschiedlichen Strophen neu gesetzt.
+
+::: callout-warning
+Achtung: `\override` gilt immer nur für das folgende Element, zum Beispiel ein Vers oder ein `\group-verses`-Ausdruck.
+
+Für mehrere Ausdrücke kann stattdessen `\override-lines` genutzt werden. Das könnte mit dem unten stehenden Beispiel dann so aussehen:
+
+``` lilypond
+TEXT = \markuplist {
+  \override-lines #`(verse-break-voice . ,verse-breaks)
+  {
+  \group-verses {
+    \chordlyrics \firstVerse
+    \chordlyrics \secondVerse
+    \override #`(verse-break-voice . ,ref-breaks)
+    \chordlyrics \refLyrics
+  }
+  \group-verses {
+    \chordlyrics \thirdVerse
+  }
+  }
+}
+```
+
+Das zu Beginn gesetzte Override gilt nun auch für die unteren Group-Verses.
+:::
 
 Codebeispiel, bei dem Refrain und Strophe auf eine Seite (und damit in ein `\group-verses`) gedruckt werden:
 
@@ -65,9 +90,90 @@ TEXT = \markuplist {
 }
 ```
 
+## Strophentext kleiner machen
+
+Der Strophentext im alten (!) System kann mit dem Befehl `\fontsize #-1` verkleinert werden. Der Befehl kommt an den Anfang des Markup-Blocks.
+
+Im neuen System verändert sich die Textgröße analog zur Score-Größe (siehe @sec-size).
+
+``` lilypond
+TEXT = \markuplist {
+  \fontsize #-1
+  \group-verses {
+    %…
+  }
+}
+```
+
+## Abstand zwischen Strophen
+
+Zwischen Strophen oder auch gruppierten Strophen und ganz generell in Markup kann ein Abstand zwischen zwei Objekten mittels des Befehls `\vspace #0` erzeugt werden, wobei die Zahl beliebig groß oder klein (auch negativ) gesetzt werden kann.
+
+## Abstand zwischen Strophen innerhalb der Group-Verse-Umgebung
+
+Innerhalb eines `\group-verses` kann der Abstand zwischen den Strophen einheitlich mit dem Befehl `\override #'(verse-vspace . 0.8)` modifiziert werden. Der Standardwert beträgt `1`. Werte können auch negativ sein. Der Override-Befehl wird vor die Group-Verses-Umgebung geschrieben.
+
+``` lilypond
+TEXT = \markuplist {
+  \override #'(verse-vspace . 0.8)
+  \group-verses {
+    %…
+  }
+}
+```
+
+## Zeilenabstand (Abstand innerhalb der Strophen)
+
+Der Zeilenabstand, also der Abstand der Verse innerhalb der Strophen zueinander, kann mit dem Befehl `\override #'(intraverse-vspace . 0.3)` beeinflusst werden. Der Standardwert beträgt `0`. Werte können auch negativ sein. Der Befehl muss vor die Group-Verses-Umgebung geschrieben werden.
+
+``` lilypond
+TEXT = \markuplist {
+  \override #'(intraverse-vspace . 0.3)
+  \group-verses {
+    %…
+  }
+}
+```
+
+## Spalten
+
+Die Strophen können auch in Spalten gruppiert werden. Das funktioniert mit dem Befehl `\override #'(verse-cols . 2)`. Die Zahl gibt die Anzahl der Spalten an. Die Anordnung erfolgt von oben nach unten und dann in der nächsten Spalte wieder von oben nach unten. Mit dem Befehl `\override #'(verse-ordering-horizontal . #t)` kann dieses Verhalten beeinflusst werden. Der Befehl `\override #'(verse-hspace . -5)` ermöglicht die Veränderung des Abstands zwischen den Spalten.
+
+``` lilypond
+TEXT = \markuplist {
+  \override #'(verse-cols . 3) % 3 Spalten
+  \override #'(verse-ordering-horizontal . #t) % Verse horizontal fortlaufend anordnen
+  \override #'(verse-hspace . -5) % Abstand zwischen Spalten geringer machen
+  \group-verses {
+    %…
+  }
+}
+```
+
+# Layout von Inline-Scores
+
+Inline-Scores sind Notensätze (Scores), die innerhalb der TEXT-Umgebung genutzt werden, also zum Beispiel eine Bridge oder auch eine Coda.
+
+## Abstand der Notenzeilen
+
+Der Abstand der Notenzeilen von Inline-Scores kann angepasst werden mit dem Befehl `\override #'(baseline-skip . 1)`.
+
+``` lilypond
+TEXT = \markuplist {
+  \group-verses {
+    \override #'(baseline-skip . 1)
+    \score {
+      \inline-score
+      \BRIDGE
+      \layout { \generalLayout}
+    }
+  }
+}
+```
+
 # Seitenlayout
 
-## Ausgabe-Größe
+## Ausgabe-Größe {#sec-size}
 
 Um Platz zu sparen, kann es hilfreich sein, die Größe des Staffs (wozu effektiv fast alle Ausgabe-Elemente gehören: Noten, Lyrics, Akkorde und somit auch die Strophen) abweichend von den globalen Liederbucheinstellungen anzupassen. Das erfolgt mit der Ergänzung des `LAYOUT`-Blocks:
 
@@ -143,3 +249,13 @@ HEADER = \bookpart {
   }
 }
 ```
+
+# Illustrationen
+
+Illustrationen bekommen im einfachsten Fall eine ganze `imagepage`. Das wird in der Liederbuchdatei bearbeitet. Wenn eine Illustration auf ein „Liedblatt“ drauf kommt, wird dies in der Layout-Datei des Liedes organisiert. Das Bild muss für diesen Fall im Ordner des Liedes gespeichert sein und idealerweise als EPS-Datei vorliegen (im Zweifel hilft Inkscape).
+
+Objekte wie Illustrationen an die gewünschte Stelle zu verschieben, kann etwas frickelig sein, aber funktioniert mit verschiedenen Methoden.
+
+## Verschieben von Objekten
+
+Die Funktion `\translate #'(x . y)` verschiebt das nächste, was geprinted wird, nicht an die eigentliche Stelle, sondern verschiebt es um die Koordinaten `x` und `y` (jeweils numerische Werte). Ausprobieren hilft.
