@@ -391,7 +391,7 @@ melodyVoice = {
 }
 ```
 
-## Markierungen für beispielsweise Kanoneinsätze  {#sec-kanon}
+## Markierungen für beispielsweise Kanoneinsätze {#sec-kanon}
 
 Markierungen wie beispielsweise eine römische Ziffer für den Einsatz einer Kanonstimme sollten auf folgendem Wege eingetragen werden (Beispiel für dreistimmigen Kanon):
 
@@ -406,6 +406,21 @@ Was passiert da und wo gibt es ggf. etwas anzupassen? Der Variablenname kommt al
 ## Optionale Akkorde
 
 Optionale Akkorde können eingeklammert werden anhand der Funktion `\klamm { d4:7 }`.
+
+## Benutzerdefinierte Akkordnamen
+
+Akkordzeichen können unter Umständen deutlich komplizierter sein als beispielsweise `a:7`. Die in den meisten Fällen verwendete Schreibweise für Akkorde wie `a a:m a:7 a:sus4` etc. ist nur eine Kurzschreibform. Grundsätzlich ist jeder denkbare Akkord in LilyPond abbildbar, sofern man weiß, wie man ihn abbilden möchte. Die dafür erforderlichen Informationen finden sich in der [LilyPond-Doku](https://lilypond.org/doc/v2.23/Documentation/notation/displaying-chords.de.html#customizing-chord-names).
+
+In der Datei `lilypond-custom-includes/custom_style_overrides.ly` können die Akkorde dann benutzerdefiniert und global angepasst werden, zum Beispiel:
+
+``` lilypond
+customChordPrintings = {
+  <h dis' fis' e''>-\markup { \small "add11" }
+  <a cis' gis' h'>-\markup { \small "maj9" }
+}
+```
+
+Der obige Code macht aus der Eingabe `h:1.3.5.11` ein Hadd11. Hilfreich können gegebenenfalls die Markup-Befehle `\small` für eine kleinere Schrift und `\super` für Hochstellung sein.
 
 ## Römische Ziffern
 
