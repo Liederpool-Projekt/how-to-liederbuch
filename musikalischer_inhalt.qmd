@@ -422,6 +422,18 @@ customChordPrintings = {
 
 Der obige Code macht aus der Eingabe `h:1.3.5.11` ein Hadd11. Hilfreich können gegebenenfalls die Markup-Befehle `\small` für eine kleinere Schrift und `\super` für Hochstellung sein.
 
+## Akkordtabulatur
+
+Für manche speziellen Akkorde ist es nützlich für Gitarrenspieler\*innen, eine Tabulatur des Akkords direkt auf der Seite des Liedes zu haben. Das geht so:
+
+``` lilypond
+TEXT = \markuplist {
+  \fret-chord #"x;x;o;2;3;2;" #"d"
+}
+```
+
+Im ersten String bekommt jede Gitarrensaite eine Zuweisung (`x` für nicht gespielt, `o` für leer oder Zahl für den Bund), gefolgt von einem Semikolon. Im zweiten String wird die LilyPond-Akkordbezeichnung gefordert. Bei komplizierteren Akkorden hat man dann vermutlich eher etwas wie `h:1.3.5.11` (für Hadd11) stehen als `d` (für D-Dur).
+
 ## Römische Ziffern
 
 Siehe [Layout-Doku](layout.qmd#sec-romanstanza).
