@@ -20,4 +20,32 @@ Eine kleine Übersicht über Vorteile, die unser System mit sich bringt. Wenn di
 
 Wir sind ein Zusammenschluss an verschiedenen Liederbuchprojekten, die alle LilyPond nutzen. Irgendwann kamen wir an den Punkt, dass es cool wäre, wenn man mehr Synergien untereinander hätte. Daraufhin haben wir das Konzept unseres Liederpools entwickelt, in dem sich nur der musikalische Inhalt eines Liedes befindet, den man dann in seinem Liederbuchprojekt spezifisch layouten kann. Das hat zwei riesige Vorteile: Einerseits kann man von dem profitieren, was andere schon gesetzt haben, und andererseits kann man von den Fehlerkorrekturen anderer profitieren.
 
+## Kleiner Überblick darüber, was du auf dieser Website alles findest
+
+Diese Website besteht aus grob zwei Teilen:
+
+-   Einem How-To-Liederbuch, das dir bei der Einrichtung von LilyPond, Frescobaldi und Git hilft. Außerdem wird darin erklärt, wie du dein erstes Lied setzt, wie du es in unseren Pool einbringen kannst und natürlich, wie du ein eigenes Liederbuch anfertigst.
+
+-   Einer möglichst vollständigen Dokumentation unseres Systems, einschließlich der selbstgeschriebenen Skripte. Das umfasst:
+
+    -   Standards für den Liedersatz
+
+    -   Doku von Metadaten-Angaben
+
+    -   Doku von musikalischem Inhalt
+
+    -   Doku vom Lied-Layouten
+
+    -   Doku vom Liederbuch-Layouten
+
+    -   Wie Links als Quelle in die Metadaten eingebunden werden sollen
+
+    -   Nützliche Lifehacks
+
+    -   Eine ausführlichere Einführung in Git
+
+    -   Doku unseres Review-Prozesses
+
+    -   Einführung in Markdown (in Markdown bzw. Quarto ist diese Website geschrieben)
+
 So, jetzt genug der langen Vorrede. Los geht’s!
