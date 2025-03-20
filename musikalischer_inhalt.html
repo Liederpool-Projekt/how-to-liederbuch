@@ -286,6 +286,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#swing-style" id="toc-swing-style" class="nav-link" data-scroll-target="#swing-style">Swing-Style</a></li>
   <li><a href="#sec-kanon" id="toc-sec-kanon" class="nav-link" data-scroll-target="#sec-kanon">Markierungen für beispielsweise Kanoneinsätze</a></li>
   <li><a href="#optionale-akkorde" id="toc-optionale-akkorde" class="nav-link" data-scroll-target="#optionale-akkorde">Optionale Akkorde</a></li>
+  <li><a href="#benutzerdefinierte-akkordnamen" id="toc-benutzerdefinierte-akkordnamen" class="nav-link" data-scroll-target="#benutzerdefinierte-akkordnamen">Benutzerdefinierte Akkordnamen</a></li>
+  <li><a href="#akkordtabulatur" id="toc-akkordtabulatur" class="nav-link" data-scroll-target="#akkordtabulatur">Akkordtabulatur</a></li>
   <li><a href="#römische-ziffern" id="toc-römische-ziffern" class="nav-link" data-scroll-target="#römische-ziffern">Römische Ziffern</a></li>
   <li><a href="#balkensetzung" id="toc-balkensetzung" class="nav-link" data-scroll-target="#balkensetzung">Balkensetzung</a></li>
   </ul>
@@ -712,6 +714,24 @@ Abbildung&nbsp;2: Das sind die beiden möglichen resultierenden Ansichten.
 <section id="optionale-akkorde" class="level2">
 <h2 class="anchored" data-anchor-id="optionale-akkorde">Optionale Akkorde</h2>
 <p>Optionale Akkorde können eingeklammert werden anhand der Funktion <code>\klamm { d4:7 }</code>.</p>
+</section>
+<section id="benutzerdefinierte-akkordnamen" class="level2">
+<h2 class="anchored" data-anchor-id="benutzerdefinierte-akkordnamen">Benutzerdefinierte Akkordnamen</h2>
+<p>Akkordzeichen können unter Umständen deutlich komplizierter sein als beispielsweise <code>a:7</code>. Die in den meisten Fällen verwendete Schreibweise für Akkorde wie <code>a a:m a:7 a:sus4</code> etc. ist nur eine Kurzschreibform. Grundsätzlich ist jeder denkbare Akkord in LilyPond abbildbar, sofern man weiß, wie man ihn abbilden möchte. Die dafür erforderlichen Informationen finden sich in der <a href="https://lilypond.org/doc/v2.23/Documentation/notation/displaying-chords.de.html#customizing-chord-names">LilyPond-Doku</a>.</p>
+<p>In der Datei <code>lilypond-custom-includes/custom_style_overrides.ly</code> können die Akkorde dann benutzerdefiniert und global angepasst werden, zum Beispiel:</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>customChordPrintings = <span class="kw">{</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span>h dis' fis' e''&gt;-<span class="bn">\markup</span> <span class="kw">{</span> <span class="bn">\small</span> "<span class="st">add11"</span> <span class="kw">}</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span>a cis' gis' h'&gt;-<span class="bn">\markup</span> <span class="kw">{</span> <span class="bn">\small</span> "<span class="st">maj9"</span> <span class="kw">}</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Der obige Code macht aus der Eingabe <code>h:1.3.5.11</code> ein Hadd11. Hilfreich können gegebenenfalls die Markup-Befehle <code>\small</code>&nbsp;für eine kleinere Schrift und <code>\super</code> für Hochstellung sein.</p>
+</section>
+<section id="akkordtabulatur" class="level2">
+<h2 class="anchored" data-anchor-id="akkordtabulatur">Akkordtabulatur</h2>
+<p>Für manche speziellen Akkorde ist es nützlich für Gitarrenspieler*innen, eine Tabulatur des Akkords direkt auf der Seite des Liedes zu haben. Das geht so:</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>TEXT = <span class="fu">\markuplist</span> <span class="kw">{</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\fret</span>-chord #<span class="fl">"</span><span class="st">x;x;o;2;3;2;"</span> #<span class="fl">"</span><span class="st">d"</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Im ersten String bekommt jede Gitarrensaite eine Zuweisung (<code>x</code> für nicht gespielt, <code>o</code> für leer oder Zahl für den Bund), gefolgt von einem Semikolon. Im zweiten String wird die LilyPond-Akkordbezeichnung gefordert. Bei komplizierteren Akkorden hat man dann vermutlich eher etwas wie <code>h:1.3.5.11</code> (für Hadd11) stehen als <code>d</code> (für D-Dur).</p>
 </section>
 <section id="römische-ziffern" class="level2">
 <h2 class="anchored" data-anchor-id="römische-ziffern">Römische Ziffern</h2>

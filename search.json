@@ -112,7 +112,7 @@
     "href": "index.html",
     "title": "Moin.",
     "section": "",
-    "text": "Schön, dass du hergefunden hast! In diesem Leitfaden zeigen wir dir, wie du mit LilyPond und Git Liederbücher anhand unserer Vorlagen und Skripte erstellen kannst. Wir versuchen dich dabei bestmöglich an die Hand zu nehmen, um die Hürden, die es dabei gibt, möglichst niedrig zu halten. Zu diesem Zwecke gibt es diesen Leitfaden, aber auch eine Gruppe auf Signal, in der sich alle Personen befinden, die mit unserem System Liederbücher machen.\n\n\nEine kleine Übersicht über Vorteile, die unser System mit sich bringt. Wenn dir davon nicht alles was sagt, ist das gar nicht schlimm.\n\nDu kannst Liederbücher mit Noten und ohne Noten erstellen. Du kannst außerdem entscheiden, ob du Akkorde über den Strophen haben möchtest oder nicht.\nDu benötigst dafür keine kostenpflichtigen Programme. Alle Programme, die wir nutzen, sind Free and Open Source Software.\nDu kannst davon profitieren, dass wir in unserem Liederpool schon etliche Lieder gesetzt haben.\nDurch unsere Struktur profitierst du von Fehlerkorrekturen anderer Liederbuchprojekte.\nLilyPond ist ein codebasiertes Notensatzprogramm, das bedeutet, man kann sehr gut ein Versionierungs- und Nachverfolgungssystem mit Git nutzen.\n\n\n\n\nWir sind ein Zusammenschluss an verschiedenen Liederbuchprojekten, die alle LilyPond nutzen. Irgendwann kamen wir an den Punkt, dass es cool wäre, wenn man mehr Synergien untereinander hätte. Daraufhin haben wir das Konzept unseres Liederpools entwickelt, in dem sich nur der musikalische Inhalt eines Liedes befindet, den man dann in seinem Liederbuchprojekt spezifisch layouten kann. Das hat zwei riesige Vorteile: Einerseits kann man von dem profitieren, was andere schon gesetzt haben, und andererseits kann man von den Fehlerkorrekturen anderer profitieren.\nSo, jetzt genug der langen Vorrede. Los geht’s!"
+    "text": "Schön, dass du hergefunden hast! In diesem Leitfaden zeigen wir dir, wie du mit LilyPond und Git Liederbücher anhand unserer Vorlagen und Skripte erstellen kannst. Wir versuchen dich dabei bestmöglich an die Hand zu nehmen, um die Hürden, die es dabei gibt, möglichst niedrig zu halten. Zu diesem Zwecke gibt es diesen Leitfaden, aber auch eine Gruppe auf Signal, in der sich alle Personen befinden, die mit unserem System Liederbücher machen.\n\n\nEine kleine Übersicht über Vorteile, die unser System mit sich bringt. Wenn dir davon nicht alles was sagt, ist das gar nicht schlimm.\n\nDu kannst Liederbücher mit Noten und ohne Noten erstellen. Du kannst außerdem entscheiden, ob du Akkorde über den Strophen haben möchtest oder nicht.\nDu benötigst dafür keine kostenpflichtigen Programme. Alle Programme, die wir nutzen, sind Free and Open Source Software.\nDu kannst davon profitieren, dass wir in unserem Liederpool schon etliche Lieder gesetzt haben.\nDurch unsere Struktur profitierst du von Fehlerkorrekturen anderer Liederbuchprojekte.\nLilyPond ist ein codebasiertes Notensatzprogramm, das bedeutet, man kann sehr gut ein Versionierungs- und Nachverfolgungssystem mit Git nutzen.\n\n\n\n\nWir sind ein Zusammenschluss an verschiedenen Liederbuchprojekten, die alle LilyPond nutzen. Irgendwann kamen wir an den Punkt, dass es cool wäre, wenn man mehr Synergien untereinander hätte. Daraufhin haben wir das Konzept unseres Liederpools entwickelt, in dem sich nur der musikalische Inhalt eines Liedes befindet, den man dann in seinem Liederbuchprojekt spezifisch layouten kann. Das hat zwei riesige Vorteile: Einerseits kann man von dem profitieren, was andere schon gesetzt haben, und andererseits kann man von den Fehlerkorrekturen anderer profitieren.\n\n\n\nDiese Website besteht aus grob zwei Teilen:\n\nEinem How-To-Liederbuch, das dir bei der Einrichtung von LilyPond, Frescobaldi und Git hilft. Außerdem wird darin erklärt, wie du dein erstes Lied setzt, wie du es in unseren Pool einbringen kannst und natürlich, wie du ein eigenes Liederbuch anfertigst.\nEiner möglichst vollständigen Dokumentation unseres Systems, einschließlich der selbstgeschriebenen Skripte. Das umfasst:\n\nStandards für den Liedersatz\nDoku von Metadaten-Angaben\nDoku von musikalischem Inhalt\nDoku vom Lied-Layouten\nDoku vom Liederbuch-Layouten\nWie Links als Quelle in die Metadaten eingebunden werden sollen\nNützliche Lifehacks\nEine ausführlichere Einführung in Git\nDoku unseres Review-Prozesses\nEinführung in Markdown (in Markdown bzw. Quarto ist diese Website geschrieben)\n\n\nSo, jetzt genug der langen Vorrede. Los geht’s!"
   },
   {
     "objectID": "index.html#was-können-wir-dir-bieten",
@@ -126,7 +126,14 @@
     "href": "index.html#wer-wir-sind",
     "title": "Moin.",
     "section": "",
-    "text": "Wir sind ein Zusammenschluss an verschiedenen Liederbuchprojekten, die alle LilyPond nutzen. Irgendwann kamen wir an den Punkt, dass es cool wäre, wenn man mehr Synergien untereinander hätte. Daraufhin haben wir das Konzept unseres Liederpools entwickelt, in dem sich nur der musikalische Inhalt eines Liedes befindet, den man dann in seinem Liederbuchprojekt spezifisch layouten kann. Das hat zwei riesige Vorteile: Einerseits kann man von dem profitieren, was andere schon gesetzt haben, und andererseits kann man von den Fehlerkorrekturen anderer profitieren.\nSo, jetzt genug der langen Vorrede. Los geht’s!"
+    "text": "Wir sind ein Zusammenschluss an verschiedenen Liederbuchprojekten, die alle LilyPond nutzen. Irgendwann kamen wir an den Punkt, dass es cool wäre, wenn man mehr Synergien untereinander hätte. Daraufhin haben wir das Konzept unseres Liederpools entwickelt, in dem sich nur der musikalische Inhalt eines Liedes befindet, den man dann in seinem Liederbuchprojekt spezifisch layouten kann. Das hat zwei riesige Vorteile: Einerseits kann man von dem profitieren, was andere schon gesetzt haben, und andererseits kann man von den Fehlerkorrekturen anderer profitieren."
+  },
+  {
+    "objectID": "index.html#kleiner-überblick-darüber-was-du-auf-dieser-website-alles-findest",
+    "href": "index.html#kleiner-überblick-darüber-was-du-auf-dieser-website-alles-findest",
+    "title": "Moin.",
+    "section": "",
+    "text": "Diese Website besteht aus grob zwei Teilen:\n\nEinem How-To-Liederbuch, das dir bei der Einrichtung von LilyPond, Frescobaldi und Git hilft. Außerdem wird darin erklärt, wie du dein erstes Lied setzt, wie du es in unseren Pool einbringen kannst und natürlich, wie du ein eigenes Liederbuch anfertigst.\nEiner möglichst vollständigen Dokumentation unseres Systems, einschließlich der selbstgeschriebenen Skripte. Das umfasst:\n\nStandards für den Liedersatz\nDoku von Metadaten-Angaben\nDoku von musikalischem Inhalt\nDoku vom Lied-Layouten\nDoku vom Liederbuch-Layouten\nWie Links als Quelle in die Metadaten eingebunden werden sollen\nNützliche Lifehacks\nEine ausführlichere Einführung in Git\nDoku unseres Review-Prozesses\nEinführung in Markdown (in Markdown bzw. Quarto ist diese Website geschrieben)\n\n\nSo, jetzt genug der langen Vorrede. Los geht’s!"
   },
   {
     "objectID": "liederbuecher_machen.html",
@@ -621,6 +628,30 @@
     ]
   },
   {
+    "objectID": "musikalischer_inhalt.html#benutzerdefinierte-akkordnamen",
+    "href": "musikalischer_inhalt.html#benutzerdefinierte-akkordnamen",
+    "title": "Musikalischer Inhalt",
+    "section": "Benutzerdefinierte Akkordnamen",
+    "text": "Benutzerdefinierte Akkordnamen\nAkkordzeichen können unter Umständen deutlich komplizierter sein als beispielsweise a:7. Die in den meisten Fällen verwendete Schreibweise für Akkorde wie a a:m a:7 a:sus4 etc. ist nur eine Kurzschreibform. Grundsätzlich ist jeder denkbare Akkord in LilyPond abbildbar, sofern man weiß, wie man ihn abbilden möchte. Die dafür erforderlichen Informationen finden sich in der LilyPond-Doku.\nIn der Datei lilypond-custom-includes/custom_style_overrides.ly können die Akkorde dann benutzerdefiniert und global angepasst werden, zum Beispiel:\ncustomChordPrintings = {\n  &lt;h dis' fis' e''&gt;-\\markup { \\small \"add11\" }\n  &lt;a cis' gis' h'&gt;-\\markup { \\small \"maj9\" }\n}\nDer obige Code macht aus der Eingabe h:1.3.5.11 ein Hadd11. Hilfreich können gegebenenfalls die Markup-Befehle \\small für eine kleinere Schrift und \\super für Hochstellung sein.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Musikalischer Inhalt"
+    ]
+  },
+  {
+    "objectID": "musikalischer_inhalt.html#akkordtabulatur",
+    "href": "musikalischer_inhalt.html#akkordtabulatur",
+    "title": "Musikalischer Inhalt",
+    "section": "Akkordtabulatur",
+    "text": "Akkordtabulatur\nFür manche speziellen Akkorde ist es nützlich für Gitarrenspieler*innen, eine Tabulatur des Akkords direkt auf der Seite des Liedes zu haben. Das geht so:\nTEXT = \\markuplist {\n  \\fret-chord #\"x;x;o;2;3;2;\" #\"d\"\n}\nIm ersten String bekommt jede Gitarrensaite eine Zuweisung (x für nicht gespielt, o für leer oder Zahl für den Bund), gefolgt von einem Semikolon. Im zweiten String wird die LilyPond-Akkordbezeichnung gefordert. Bei komplizierteren Akkorden hat man dann vermutlich eher etwas wie h:1.3.5.11 (für Hadd11) stehen als d (für D-Dur).",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Musikalischer Inhalt"
+    ]
+  },
+  {
     "objectID": "musikalischer_inhalt.html#römische-ziffern",
     "href": "musikalischer_inhalt.html#römische-ziffern",
     "title": "Musikalischer Inhalt",
@@ -865,7 +896,7 @@
     "href": "liedlayout_doku.html#sec-zeilenumbrueche",
     "title": "Lied-Layout",
     "section": "Zeilenumbrüche in den Strophen",
-    "text": "Zeilenumbrüche in den Strophen\nProblem: Verschiedene Liederbücher haben verschiedene Formate, weswegen es keinen idealen Zeilenumbruch für alle Liederbücher gibt.\nLösung: Versumbrüche werden in der Variable verse-breaks anhand von (unsichtbaren) Pausen (s)und \\break-Befehlen bewirkt. Diese Variable wird dann mittels \\override-Befehl vor den entsprechenden Versen im TEXT-Part eingebunden. Beispiel: \\override #`(verse-break-voice . ,verse-breaks). verse-break-voice erstellt eine (unsichtbare) Stimme mit den Umbrüchen aus verse-breaks und wird auch für den Fall gesetzt, dass es Strophen und einen Refrain gibt. In dem Falle wird das \\override immer vor den unterschiedlichen Strophen neu gesetzt (Achtung: \\override gilt immer nur für das folgende Element, zum Beispiel ein Vers oder ein \\group-verses-Ausdruck).\nCodebeispiel, bei dem Refrain und Strophe auf eine Seite (und damit in ein \\group-verses) gedruckt werden:\nverse-breaks = {\n  s2.*4 \\break %s2.*4 bedeutet, dass s2. 4 mal wiederholt wird\n  s2.*4 \\break\n  s2.*4 \\break\n}\n\nref-breaks = {\n  s2.*2 \\break\n  s2.*2 \\break\n}\n\nTEXT = \\markuplist {\n  \\override #`(verse-break-voice . ,verse-breaks)\n  \\group-verses {\n    \\chordlyrics \\firstVerse\n    \\chordlyrics \\secondVerse\n    \\override #`(verse-break-voice . ,ref-breaks)\n    \\chordlyrics \\refLyrics\n    \\chordlyrics \\thirdVerse\n  }\n}",
+    "text": "Zeilenumbrüche in den Strophen\nProblem: Verschiedene Liederbücher haben verschiedene Formate, weswegen es keinen idealen Zeilenumbruch für alle Liederbücher gibt.\nLösung: Versumbrüche werden in der Variable verse-breaks anhand von (unsichtbaren) Pausen (s)und \\break-Befehlen bewirkt. Diese Variable wird dann mittels \\override-Befehl vor den entsprechenden Versen im TEXT-Part eingebunden. Beispiel: \\override #`(verse-break-voice . ,verse-breaks). verse-break-voice erstellt eine (unsichtbare) Stimme mit den Umbrüchen aus verse-breaks und wird auch für den Fall gesetzt, dass es Strophen und einen Refrain gibt. In dem Falle wird das \\override immer vor den unterschiedlichen Strophen neu gesetzt.\n\n\n\n\n\n\nWarnung\n\n\n\nAchtung: \\override gilt immer nur für das folgende Element, zum Beispiel ein Vers oder ein \\group-verses-Ausdruck.\nFür mehrere Ausdrücke kann stattdessen \\override-lines genutzt werden. Das könnte mit dem unten stehenden Beispiel dann so aussehen:\nTEXT = \\markuplist {\n  \\override-lines #`(verse-break-voice . ,verse-breaks)\n  {\n  \\group-verses {\n    \\chordlyrics \\firstVerse\n    \\chordlyrics \\secondVerse\n    \\override #`(verse-break-voice . ,ref-breaks)\n    \\chordlyrics \\refLyrics\n  }\n  \\group-verses {\n    \\chordlyrics \\thirdVerse\n  }\n  }\n}\nDas zu Beginn gesetzte Override gilt nun auch für die unteren Group-Verses.\n\n\nCodebeispiel, bei dem Refrain und Strophe auf eine Seite (und damit in ein \\group-verses) gedruckt werden:\nverse-breaks = {\n  s2.*4 \\break %s2.*4 bedeutet, dass s2. 4 mal wiederholt wird\n  s2.*4 \\break\n  s2.*4 \\break\n}\n\nref-breaks = {\n  s2.*2 \\break\n  s2.*2 \\break\n}\n\nTEXT = \\markuplist {\n  \\override #`(verse-break-voice . ,verse-breaks)\n  \\group-verses {\n    \\chordlyrics \\firstVerse\n    \\chordlyrics \\secondVerse\n    \\override #`(verse-break-voice . ,ref-breaks)\n    \\chordlyrics \\refLyrics\n    \\chordlyrics \\thirdVerse\n  }\n}",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",
@@ -873,8 +904,80 @@
     ]
   },
   {
-    "objectID": "liedlayout_doku.html#ausgabe-größe",
-    "href": "liedlayout_doku.html#ausgabe-größe",
+    "objectID": "liedlayout_doku.html#strophentext-kleiner-machen",
+    "href": "liedlayout_doku.html#strophentext-kleiner-machen",
+    "title": "Lied-Layout",
+    "section": "Strophentext kleiner machen",
+    "text": "Strophentext kleiner machen\nDer Strophentext im alten (!) System kann mit dem Befehl \\fontsize #-1 verkleinert werden. Der Befehl kommt an den Anfang des Markup-Blocks.\nIm neuen System verändert sich die Textgröße analog zur Score-Größe (siehe Kapitel 4.1).\nTEXT = \\markuplist {\n  \\fontsize #-1\n  \\group-verses {\n    %…\n  }\n}",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Lied-Layout"
+    ]
+  },
+  {
+    "objectID": "liedlayout_doku.html#abstand-zwischen-strophen",
+    "href": "liedlayout_doku.html#abstand-zwischen-strophen",
+    "title": "Lied-Layout",
+    "section": "Abstand zwischen Strophen",
+    "text": "Abstand zwischen Strophen\nZwischen Strophen oder auch gruppierten Strophen und ganz generell in Markup kann ein Abstand zwischen zwei Objekten mittels des Befehls \\vspace #0 erzeugt werden, wobei die Zahl beliebig groß oder klein (auch negativ) gesetzt werden kann.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Lied-Layout"
+    ]
+  },
+  {
+    "objectID": "liedlayout_doku.html#abstand-zwischen-strophen-innerhalb-der-group-verse-umgebung",
+    "href": "liedlayout_doku.html#abstand-zwischen-strophen-innerhalb-der-group-verse-umgebung",
+    "title": "Lied-Layout",
+    "section": "Abstand zwischen Strophen innerhalb der Group-Verse-Umgebung",
+    "text": "Abstand zwischen Strophen innerhalb der Group-Verse-Umgebung\nInnerhalb eines \\group-verses kann der Abstand zwischen den Strophen einheitlich mit dem Befehl \\override #'(verse-vspace . 0.8) modifiziert werden. Der Standardwert beträgt 1. Werte können auch negativ sein. Der Override-Befehl wird vor die Group-Verses-Umgebung geschrieben.\nTEXT = \\markuplist {\n  \\override #'(verse-vspace . 0.8)\n  \\group-verses {\n    %…\n  }\n}",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Lied-Layout"
+    ]
+  },
+  {
+    "objectID": "liedlayout_doku.html#zeilenabstand-abstand-innerhalb-der-strophen",
+    "href": "liedlayout_doku.html#zeilenabstand-abstand-innerhalb-der-strophen",
+    "title": "Lied-Layout",
+    "section": "Zeilenabstand (Abstand innerhalb der Strophen)",
+    "text": "Zeilenabstand (Abstand innerhalb der Strophen)\nDer Zeilenabstand, also der Abstand der Verse innerhalb der Strophen zueinander, kann mit dem Befehl \\override #'(intraverse-vspace . 0.3) beeinflusst werden. Der Standardwert beträgt 0. Werte können auch negativ sein. Der Befehl muss vor die Group-Verses-Umgebung geschrieben werden.\nTEXT = \\markuplist {\n  \\override #'(intraverse-vspace . 0.3)\n  \\group-verses {\n    %…\n  }\n}",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Lied-Layout"
+    ]
+  },
+  {
+    "objectID": "liedlayout_doku.html#spalten",
+    "href": "liedlayout_doku.html#spalten",
+    "title": "Lied-Layout",
+    "section": "Spalten",
+    "text": "Spalten\nDie Strophen können auch in Spalten gruppiert werden. Das funktioniert mit dem Befehl \\override #'(verse-cols . 2). Die Zahl gibt die Anzahl der Spalten an. Die Anordnung erfolgt von oben nach unten und dann in der nächsten Spalte wieder von oben nach unten. Mit dem Befehl \\override #'(verse-ordering-horizontal . #t) kann dieses Verhalten beeinflusst werden. Der Befehl \\override #'(verse-hspace . -5) ermöglicht die Veränderung des Abstands zwischen den Spalten.\nTEXT = \\markuplist {\n  \\override #'(verse-cols . 3) % 3 Spalten\n  \\override #'(verse-ordering-horizontal . #t) % Verse horizontal fortlaufend anordnen\n  \\override #'(verse-hspace . -5) % Abstand zwischen Spalten geringer machen\n  \\group-verses {\n    %…\n  }\n}",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Lied-Layout"
+    ]
+  },
+  {
+    "objectID": "liedlayout_doku.html#abstand-der-notenzeilen",
+    "href": "liedlayout_doku.html#abstand-der-notenzeilen",
+    "title": "Lied-Layout",
+    "section": "Abstand der Notenzeilen",
+    "text": "Abstand der Notenzeilen\nDer Abstand der Notenzeilen von Inline-Scores kann angepasst werden mit dem Befehl \\override #'(baseline-skip . 1).\nTEXT = \\markuplist {\n  \\group-verses {\n    \\override #'(baseline-skip . 1)\n    \\score {\n      \\inline-score\n      \\BRIDGE\n      \\layout { \\generalLayout}\n    }\n  }\n}",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Lied-Layout"
+    ]
+  },
+  {
+    "objectID": "liedlayout_doku.html#sec-size",
+    "href": "liedlayout_doku.html#sec-size",
     "title": "Lied-Layout",
     "section": "Ausgabe-Größe",
     "text": "Ausgabe-Größe\nUm Platz zu sparen, kann es hilfreich sein, die Größe des Staffs (wozu effektiv fast alle Ausgabe-Elemente gehören: Noten, Lyrics, Akkorde und somit auch die Strophen) abweichend von den globalen Liederbucheinstellungen anzupassen. Das erfolgt mit der Ergänzung des LAYOUT-Blocks:\nLAYOUT = \\layout {\n  \\LAYOUT\n  size = 15 %hier die gewünschte Größe anpassen\n}\nDas ergänzt den in den Skripten bereits existierenden LAYOUT-Block um die Staff-Size, die effektiv mit dem Scheme-Befehl #(layout-set-staff-size 13.8) überschrieben wird. Aus technischen Gründen funktioniert der nicht immer zuverlässig, weshalb es den oben genannten Befehl für diesen Zweck gibt.",
@@ -914,6 +1017,18 @@
     "title": "Lied-Layout",
     "section": "Abstand des Titels zum oberen Seitenrand",
     "text": "Abstand des Titels zum oberen Seitenrand\nDer Abstand des Titels (egal ob Bild oder Schrift) zum oberen Seitenrand kann mittels der Variable titletopspace = 2 eingestellt werden, die ebenfalls in den Header muss:\nHEADER = \\bookpart {\n  \\header {\n    \\basicSongInfo\n    titletopspace = 2 %hier die Zahl anpassen\n  }\n}",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Lied-Layout"
+    ]
+  },
+  {
+    "objectID": "liedlayout_doku.html#verschieben-von-objekten",
+    "href": "liedlayout_doku.html#verschieben-von-objekten",
+    "title": "Lied-Layout",
+    "section": "Verschieben von Objekten",
+    "text": "Verschieben von Objekten\nDie Funktion \\translate #'(x . y) verschiebt das nächste, was geprinted wird, nicht an die eigentliche Stelle, sondern verschiebt es um die Koordinaten x und y (jeweils numerische Werte). Ausprobieren hilft.",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",
