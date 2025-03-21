@@ -287,7 +287,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#balken" id="toc-balken" class="nav-link" data-scroll-target="#balken">Balken</a></li>
   <li><a href="#harmoniestimmen" id="toc-harmoniestimmen" class="nav-link" data-scroll-target="#harmoniestimmen">Harmoniestimmen</a></li>
   <li><a href="#optionale-akkorde" id="toc-optionale-akkorde" class="nav-link" data-scroll-target="#optionale-akkorde">Optionale Akkorde</a></li>
-  <li><a href="#punktierte-pausen" id="toc-punktierte-pausen" class="nav-link" data-scroll-target="#punktierte-pausen">Punktierte Pausen</a></li>
   <li><a href="#rhythmusorientierte-taktaufteilung" id="toc-rhythmusorientierte-taktaufteilung" class="nav-link" data-scroll-target="#rhythmusorientierte-taktaufteilung">Rhythmusorientierte Taktaufteilung</a></li>
   <li><a href="#takte" id="toc-takte" class="nav-link" data-scroll-target="#takte">Takte</a></li>
   <li><a href="#wiederholungen" id="toc-wiederholungen" class="nav-link" data-scroll-target="#wiederholungen">Wiederholungen</a></li>
@@ -406,68 +405,43 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="optionale-akkorde">Optionale Akkorde</h2>
 <p>Optionale Akkorde sollen getaggt werden, damit sie ausgeschaltet werden können.</p>
 </section>
-<section id="punktierte-pausen" class="level2">
-<h2 class="anchored" data-anchor-id="punktierte-pausen">Punktierte Pausen</h2>
-<p>Pausen werden im klassischen Notensatz nicht (wie bei Noten) mit Punkten geschrieben. Deswegen und aus Gründen der besseren Lesbarkeit vermeiden wir nach Möglichkeit punktierte Pausen.</p>
-<p>In Dreiertakten (6/8-Takt, 3/4-Takt) beispielsweise sind punktierte Pausen aber in Ordnung, da sie die Lesbarkeit erhöhen.</p>
-<blockquote class="blockquote">
-<p>Beispiele keine punktierte Pausen:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">\relative c'</span> <span class="kw">{</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\time 4/4</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  r<span class="dt">2</span> r<span class="dt">4</span> c<span class="dt">8</span> d <span class="dv">|</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  r<span class="dt">4</span> r<span class="dt">8</span> c d e f g <span class="dv">|</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</blockquote>
-<p>Ausgabe:</p>
-<p><img src="./images/punktierte-pausen.svg" class="img-fluid"></p>
-<blockquote class="blockquote">
-<p>Beispiele punktierte Pausen:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">\language</span> "<span class="st">deutsch"</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">\relative c'</span> <span class="kw">{</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\time 6/8</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  r<span class="dt">4.</span> r<span class="dt">4.</span> <span class="dv">|</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  r<span class="dt">4.</span> r<span class="dt">8</span> c d <span class="dv">|</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  c<span class="dt">8</span> d e r<span class="dt">8</span> r<span class="dt">16</span> c c<span class="dt">8</span> %<span class="co"> Das gilt natürlich nur, wenn es der Lesbarkeit explizit dient...</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\time 3/4</span></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  r<span class="dt">2.</span> <span class="dv">|</span></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  r<span class="dt">2.</span> <span class="dv">|</span></span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  a<span class="dt">4</span> h c <span class="dv">|</span></span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  d<span class="dt">2.</span></span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</blockquote>
-<p>Ausgabe:</p>
-<p><img src="./images/punktierte-pausen-2.svg" class="img-fluid"></p>
-</section>
 <section id="rhythmusorientierte-taktaufteilung" class="level2">
 <h2 class="anchored" data-anchor-id="rhythmusorientierte-taktaufteilung">Rhythmusorientierte Taktaufteilung</h2>
-<p>Die Betonung des Taktes sollte (je nach Taktart) immer erkennbar sein.</p>
+<p>Die Hauptzählzeiten des Taktes sollten immer erkennbar sein.</p>
+<ul>
+<li><p>4/4-Takt: 1 und 3</p></li>
+<li><p>3/4-Takt: 1</p></li>
+<li><p>2/2-Takt: 1</p></li>
+<li><p>6/8-Takt: 1 und 4</p></li>
+<li><p>6/4-Takt: 1 und 4</p></li>
+<li><p>zusammengesetzte Taktarten entsprechend der Zusammensetzungen (siehe unten)</p></li>
+</ul>
 <blockquote class="blockquote">
 <p>Beispiel:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">\relative c'</span> <span class="kw">{</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\time 6/8</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  a<span class="dt">4.</span><span class="ch">~</span> 8 cis e <span class="dv">|</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  a<span class="dt">4</span> a<span class="dt">8</span><span class="ch">~</span> 8 cis<span class="dt">4</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  %<span class="co"> aber:</span></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\time 3/4</span></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  a<span class="dt">2</span> cis<span class="dt">8</span> e <span class="dv">|</span></span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  a<span class="dt">4</span> a cis</span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">\relative c'</span> <span class="kw">{</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\time 6/8</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  a<span class="dt">4.</span><span class="ch">~</span> 8 cis e <span class="dv">|</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  a<span class="dt">4</span> a<span class="dt">8</span><span class="ch">~</span> 8 cis<span class="dt">4</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  %<span class="co"> aber:</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\time 3/4</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  a<span class="dt">2</span> cis<span class="dt">8</span> e <span class="dv">|</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  a<span class="dt">4</span> a cis</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </blockquote>
 <p>Ausgabe:</p>
 <p><img src="./images/mitte-des-taktes.svg" class="img-fluid"></p>
 <p>Takte, die zusammengesetzte Rhythmen haben, notieren wir auch so – sie können aber in den einzelnen Liederbüchern über das Überschreiben der <code>global</code>-Variable auch in einfachen Takten wie 4/4-Takten notiert werden. Unter <a href="https://lilypond.org/doc/v2.23/Documentation/notation/displaying-rhythms#polymetric-notation">diesem Link</a> finden sich die Infos dazu in der Doku.</p>
 <blockquote class="blockquote">
 <p>Beispiel Nordwind:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">\relative c'</span> <span class="kw">{</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\compoundMeter</span> #<span class="fl">'((</span><span class="dv">3</span><span class="fl"> </span><span class="dv">3</span><span class="fl"> </span><span class="dv">8</span><span class="fl">) (</span><span class="dv">2</span><span class="fl"> </span><span class="dv">8</span><span class="fl">))</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\partial4</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  e<span class="dt">8</span> fis <span class="dv">|</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  g<span class="dt">4.</span> g g<span class="dt">4</span> <span class="dv">|</span></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  fis<span class="dt">4.</span> e fis<span class="dt">4</span> <span class="dv">|</span></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  g<span class="dt">2.</span> g<span class="dt">4</span> <span class="dv">|</span></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">\relative c'</span> <span class="kw">{</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\compoundMeter</span> #<span class="fl">'((</span><span class="dv">3</span><span class="fl"> </span><span class="dv">3</span><span class="fl"> </span><span class="dv">8</span><span class="fl">) (</span><span class="dv">2</span><span class="fl"> </span><span class="dv">8</span><span class="fl">))</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\partial4</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  e<span class="dt">8</span> fis <span class="dv">|</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  g<span class="dt">4.</span> g g<span class="dt">4</span> <span class="dv">|</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  fis<span class="dt">4.</span> e fis<span class="dt">4</span> <span class="dv">|</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  g<span class="dt">2.</span> g<span class="dt">4</span> <span class="dv">|</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </blockquote>
 <p>Ausgabe:</p>
 <p><img src="./images/zusammengesetzte-rhythmen.svg" class="img-fluid"></p>
@@ -476,14 +450,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="takte" class="level2">
 <h2 class="anchored" data-anchor-id="takte">Takte</h2>
 <p>In LilyPond gibt es eine Taktüberprüfung mittels der Pipe (<code>|</code>), die genutzt werden kann, aber nicht muss. Darüber hinaus setzen wir Takte immer in eine neue Zeile, das heißt, in jede Zeile kommt immer ein Takt. Das hat den Hintergrund, dass man die Änderungen im Diff in Git besser nachverfolgen kann. Beispiel:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">\relative c'</span> <span class="kw">{</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\time 3/4</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  a<span class="dt">2</span> r<span class="dt">4</span></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  a a a</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\time 6/8</span></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  a<span class="dt">8</span> a a r<span class="dt">4.</span></span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>  r r</span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">\relative c'</span> <span class="kw">{</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\time 3/4</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  a<span class="dt">2</span> r<span class="dt">4</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  a a a</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\time 6/8</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  a<span class="dt">8</span> a a r<span class="dt">4.</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  r r</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="wiederholungen" class="level2">
 <h2 class="anchored" data-anchor-id="wiederholungen">Wiederholungen</h2>
@@ -493,25 +467,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Verschiedene Varianten zu supporten, ist leider schwierig und erhöht die Komplexität.</p>
 <blockquote class="blockquote">
 <p>Beispiel Ade zur guten Nacht:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>firstVerse = \lyricmode<span class="kw"> {</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  Ich stünd da am He <span class="kw">--</span> cken <span class="kw">--</span> zaun</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  nur um nach dir aus <span class="kw">--</span> zu <span class="kw">--</span> schaun</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  und um dich zu wer <span class="kw">--</span> ben.</span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>firstVoice = <span class="fu">\relative c''</span> <span class="kw">{</span></span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\partial2</span></span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>  r<span class="dt">4</span></span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\repeat volta 2</span> <span class="kw">{</span></span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>    a<span class="dt">4</span></span>
-<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>    fis<span class="dt">2</span> a<span class="dt">4</span> d</span>
-<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>    h h<span class="dt">8</span> <span class="ch">(</span>a<span class="ch">)</span> g<span class="dt">4</span> g</span>
-<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>    e<span class="dt">2</span> g<span class="dt">4</span> h</span>
-<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>    a a<span class="dt">8</span> <span class="ch">(</span>g<span class="ch">)</span> fis<span class="dt">4</span> a</span>
-<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>    a g<span class="dt">8</span> fis g<span class="dt">4</span> <span class="ch">(</span>a<span class="ch">)</span></span>
-<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>    fis<span class="dt">2</span> r<span class="dt">4</span></span>
-<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
-<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>firstVerse = \lyricmode<span class="kw"> {</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  Ich stünd da am He <span class="kw">--</span> cken <span class="kw">--</span> zaun</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  nur um nach dir aus <span class="kw">--</span> zu <span class="kw">--</span> schaun</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  und um dich zu wer <span class="kw">--</span> ben.</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>firstVoice = <span class="fu">\relative c''</span> <span class="kw">{</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\partial2</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  r<span class="dt">4</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\repeat volta 2</span> <span class="kw">{</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    a<span class="dt">4</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>    fis<span class="dt">2</span> a<span class="dt">4</span> d</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>    h h<span class="dt">8</span> <span class="ch">(</span>a<span class="ch">)</span> g<span class="dt">4</span> g</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>    e<span class="dt">2</span> g<span class="dt">4</span> h</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>    a a<span class="dt">8</span> <span class="ch">(</span>g<span class="ch">)</span> fis<span class="dt">4</span> a</span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>    a g<span class="dt">8</span> fis g<span class="dt">4</span> <span class="ch">(</span>a<span class="ch">)</span></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>    fis<span class="dt">2</span> r<span class="dt">4</span></span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </blockquote>
 <p>Ausgabe:</p>
 <p><img src="images/wiederholung-im-takt.svg" class="img-fluid"></p>

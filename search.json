@@ -388,23 +388,11 @@
     ]
   },
   {
-    "objectID": "liedsatz_standards.html#punktierte-pausen",
-    "href": "liedsatz_standards.html#punktierte-pausen",
-    "title": "Standards beim Liedersetzen",
-    "section": "Punktierte Pausen",
-    "text": "Punktierte Pausen\nPausen werden im klassischen Notensatz nicht (wie bei Noten) mit Punkten geschrieben. Deswegen und aus Gründen der besseren Lesbarkeit vermeiden wir nach Möglichkeit punktierte Pausen.\nIn Dreiertakten (6/8-Takt, 3/4-Takt) beispielsweise sind punktierte Pausen aber in Ordnung, da sie die Lesbarkeit erhöhen.\n\nBeispiele keine punktierte Pausen:\n\\relative c' {\n  \\time 4/4\n  r2 r4 c8 d |\n  r4 r8 c d e f g |\n}\n\nAusgabe:\n\n\nBeispiele punktierte Pausen:\n\\language \"deutsch\"\n\\relative c' {\n  \\time 6/8\n  r4. r4. |\n  r4. r8 c d |\n  c8 d e r8 r16 c c8 % Das gilt natürlich nur, wenn es der Lesbarkeit explizit dient...\n\n  \\time 3/4\n  r2. |\n  r2. |\n  a4 h c |\n  d2.\n}\n\nAusgabe:",
-    "crumbs": [
-      "Doku",
-      "Liedersetzen-Prozess",
-      "Standards beim Liedersetzen"
-    ]
-  },
-  {
     "objectID": "liedsatz_standards.html#rhythmusorientierte-taktaufteilung",
     "href": "liedsatz_standards.html#rhythmusorientierte-taktaufteilung",
     "title": "Standards beim Liedersetzen",
     "section": "Rhythmusorientierte Taktaufteilung",
-    "text": "Rhythmusorientierte Taktaufteilung\nDie Betonung des Taktes sollte (je nach Taktart) immer erkennbar sein.\n\nBeispiel:\n\\relative c' {\n  \\time 6/8\n  a4.~ 8 cis e |\n  a4 a8~ 8 cis4\n\n  % aber:\n  \\time 3/4\n  a2 cis8 e |\n  a4 a cis\n}\n\nAusgabe:\n\nTakte, die zusammengesetzte Rhythmen haben, notieren wir auch so – sie können aber in den einzelnen Liederbüchern über das Überschreiben der global-Variable auch in einfachen Takten wie 4/4-Takten notiert werden. Unter diesem Link finden sich die Infos dazu in der Doku.\n\nBeispiel Nordwind:\n\\relative c' {\n  \\compoundMeter #'((3 3 8) (2 8))\n  \\partial4\n  e8 fis |\n  g4. g g4 |\n  fis4. e fis4 |\n  g2. g4 |\n}\n\nAusgabe:\n\nWeitere Informationen: https://www.theorie-musik.de/grundlagen/taktarten/",
+    "text": "Rhythmusorientierte Taktaufteilung\nDie Hauptzählzeiten des Taktes sollten immer erkennbar sein.\n\n4/4-Takt: 1 und 3\n3/4-Takt: 1\n2/2-Takt: 1\n6/8-Takt: 1 und 4\n6/4-Takt: 1 und 4\nzusammengesetzte Taktarten entsprechend der Zusammensetzungen (siehe unten)\n\n\nBeispiel:\n\\relative c' {\n  \\time 6/8\n  a4.~ 8 cis e |\n  a4 a8~ 8 cis4\n\n  % aber:\n  \\time 3/4\n  a2 cis8 e |\n  a4 a cis\n}\n\nAusgabe:\n\nTakte, die zusammengesetzte Rhythmen haben, notieren wir auch so – sie können aber in den einzelnen Liederbüchern über das Überschreiben der global-Variable auch in einfachen Takten wie 4/4-Takten notiert werden. Unter diesem Link finden sich die Infos dazu in der Doku.\n\nBeispiel Nordwind:\n\\relative c' {\n  \\compoundMeter #'((3 3 8) (2 8))\n  \\partial4\n  e8 fis |\n  g4. g g4 |\n  fis4. e fis4 |\n  g2. g4 |\n}\n\nAusgabe:\n\nWeitere Informationen: https://www.theorie-musik.de/grundlagen/taktarten/",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",
