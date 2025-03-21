@@ -388,6 +388,18 @@
     ]
   },
   {
+    "objectID": "liedsatz_standards.html#ganztaktpausen",
+    "href": "liedsatz_standards.html#ganztaktpausen",
+    "title": "Standards beim Liedersetzen",
+    "section": "Ganztaktpausen",
+    "text": "Ganztaktpausen\nWenn ein Takt vollständig pausiert wird, sollten Ganztaktpausen genutzt werden (Lilypond-Befehl: R), die sind genau dafür da. Der Unterschied zu normalen Pausen besteht darin dass sie in der Taktmitte zentriert werde und immer aussehen wie ganze Pausen (außer in bestimmten Takten). Siehe auch https://www.mu-sig.de/Theorie/Notation/Notation07.htm Ausnahme: Wenn erkenntlich gemacht werden muss, wann Akkordwechsel erfolgen.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Standards beim Liedersetzen"
+    ]
+  },
+  {
     "objectID": "liedsatz_standards.html#rhythmusorientierte-taktaufteilung",
     "href": "liedsatz_standards.html#rhythmusorientierte-taktaufteilung",
     "title": "Standards beim Liedersetzen",
