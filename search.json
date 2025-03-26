@@ -594,8 +594,8 @@
     ]
   },
   {
-    "objectID": "liedlayout_doku.html#abstand-der-akkorde-voneinander",
-    "href": "liedlayout_doku.html#abstand-der-akkorde-voneinander",
+    "objectID": "liedlayout_doku.html#sec-abstand-akkorde",
+    "href": "liedlayout_doku.html#sec-abstand-akkorde",
     "title": "Lied-Layout",
     "section": "Abstand der Akkorde voneinander",
     "text": "Abstand der Akkorde voneinander\nBei vielen aufeinanderfolgenden Akkorden (zum Beispiel in Zwischenspielen) kann es vorkommen, dass es schöner aussähe, wenn diese mehr Abstand zueinander hätten. Das geht mit dem folgenden Befehl, der in der Layout-Datei in die \\chords { }-Umgebung eingebaut werden muss.\n\\override ChordName.extra-spacing-width = #'(-0.5 . 0.5)\nDurch die Anpassung der übergebenen Werte verändert sich dann der Abstand der Akkorde zueinander entsprechend.",
@@ -606,8 +606,8 @@
     ]
   },
   {
-    "objectID": "liedlayout_doku.html#strophennummern-überschreiben",
-    "href": "liedlayout_doku.html#strophennummern-überschreiben",
+    "objectID": "liedlayout_doku.html#sec-strophennummern-ueberschreiben",
+    "href": "liedlayout_doku.html#sec-strophennummern-ueberschreiben",
     "title": "Lied-Layout",
     "section": "Strophennummern überschreiben",
     "text": "Strophennummern überschreiben\nEs kann vorkommen, dass man bestimmte Strophen nicht in seinem Liederbuch abdrucken will oder eine andere Reihenfolge der Strophen bevorzugt. Für diesen Fall kann die Strophennummer einfach überschrieben werden mit dem Befehl\n\\override-stanza #3\n\n%alternative\n\n#(override-stanza 3)\nDer Befehl muss vor die entsprechende Lyrics-Variable abgerufen werden.",

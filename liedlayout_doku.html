@@ -288,8 +288,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#transponieren" id="toc-transponieren" class="nav-link" data-scroll-target="#transponieren">Transponieren</a></li>
   <li><a href="#sec-romanstanza" id="toc-sec-romanstanza" class="nav-link" data-scroll-target="#sec-romanstanza">Römische Ziffern</a></li>
-  <li><a href="#abstand-der-akkorde-voneinander" id="toc-abstand-der-akkorde-voneinander" class="nav-link" data-scroll-target="#abstand-der-akkorde-voneinander">Abstand der Akkorde voneinander</a></li>
-  <li><a href="#strophennummern-überschreiben" id="toc-strophennummern-überschreiben" class="nav-link" data-scroll-target="#strophennummern-überschreiben">Strophennummern überschreiben</a></li>
+  <li><a href="#sec-abstand-akkorde" id="toc-sec-abstand-akkorde" class="nav-link" data-scroll-target="#sec-abstand-akkorde">Abstand der Akkorde voneinander</a></li>
+  <li><a href="#sec-strophennummern-ueberschreiben" id="toc-sec-strophennummern-ueberschreiben" class="nav-link" data-scroll-target="#sec-strophennummern-ueberschreiben">Strophennummern überschreiben</a></li>
   </ul></li>
   <li><a href="#layout-der-strophen" id="toc-layout-der-strophen" class="nav-link" data-scroll-target="#layout-der-strophen">Layout der Strophen</a>
   <ul class="collapse">
@@ -319,7 +319,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#größe-des-bildtitels" id="toc-größe-des-bildtitels" class="nav-link" data-scroll-target="#größe-des-bildtitels">Größe des Bildtitels</a></li>
   <li><a href="#abstand-des-titels-zum-oberen-seitenrand" id="toc-abstand-des-titels-zum-oberen-seitenrand" class="nav-link" data-scroll-target="#abstand-des-titels-zum-oberen-seitenrand">Abstand des Titels zum oberen Seitenrand</a></li>
   </ul></li>
-  <li><a href="#illustrationen" id="toc-illustrationen" class="nav-link" data-scroll-target="#illustrationen">Illustrationen</a>
+  <li><a href="#sec-illustrationen" id="toc-sec-illustrationen" class="nav-link" data-scroll-target="#sec-illustrationen">Illustrationen</a>
   <ul class="collapse">
   <li><a href="#verschieben-von-objekten" id="toc-verschieben-von-objekten" class="nav-link" data-scroll-target="#verschieben-von-objekten">Verschieben von Objekten</a></li>
   </ul></li>
@@ -379,14 +379,14 @@ Hinweis
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="abstand-der-akkorde-voneinander" class="level2">
-<h2 class="anchored" data-anchor-id="abstand-der-akkorde-voneinander">Abstand der Akkorde voneinander</h2>
+<section id="sec-abstand-akkorde" class="level2">
+<h2 class="anchored" data-anchor-id="sec-abstand-akkorde">Abstand der Akkorde voneinander</h2>
 <p>Bei vielen aufeinanderfolgenden Akkorden (zum Beispiel in Zwischenspielen) kann es vorkommen, dass es schöner aussähe, wenn diese mehr Abstand zueinander hätten. Das geht mit dem folgenden Befehl, der in der Layout-Datei in die <code>\chords { }</code>-Umgebung eingebaut werden muss.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">\override</span> <span class="dt">ChordName</span>.extra-spacing-<span class="fu">width</span> = #<span class="fl">'(</span><span class="dv">-0.5</span><span class="fl"> . </span><span class="dv">0.5</span><span class="fl">)</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Durch die Anpassung der übergebenen Werte verändert sich dann der Abstand der Akkorde zueinander entsprechend.</p>
 </section>
-<section id="strophennummern-überschreiben" class="level2">
-<h2 class="anchored" data-anchor-id="strophennummern-überschreiben">Strophennummern überschreiben</h2>
+<section id="sec-strophennummern-ueberschreiben" class="level2">
+<h2 class="anchored" data-anchor-id="sec-strophennummern-ueberschreiben">Strophennummern überschreiben</h2>
 <p>Es kann vorkommen, dass man bestimmte Strophen nicht in seinem Liederbuch abdrucken will oder eine andere Reihenfolge der Strophen bevorzugt. Für diesen Fall kann die Strophennummer einfach überschrieben werden mit dem Befehl</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">\override</span>-stanza #<span class="dv">3</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -604,7 +604,7 @@ Warnung
 <span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 </section>
-<section id="illustrationen" class="level1">
+<section id="sec-illustrationen" class="level1">
 <h1>Illustrationen</h1>
 <p>Illustrationen bekommen im einfachsten Fall eine ganze <code>imagepage</code>. Das wird in der Liederbuchdatei bearbeitet. Wenn eine Illustration auf ein „Liedblatt“ drauf kommt, wird dies in der Layout-Datei des Liedes organisiert. Das Bild muss für diesen Fall im Ordner des Liedes gespeichert sein und idealerweise als EPS-Datei vorliegen (im Zweifel hilft Inkscape).</p>
 <p>Objekte wie Illustrationen an die gewünschte Stelle zu verschieben, kann etwas frickelig sein, aber funktioniert mit verschiedenen Methoden.</p>
