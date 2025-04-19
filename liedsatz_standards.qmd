@@ -63,11 +63,21 @@ Wir nutzen den APA Style. Siehe [Wikipedia](https://en.wikipedia.org/wiki/Title_
 
 ## Typografisch korrekte Zeichen
 
-Uns ist die typografisch korrekte Zeichensetzung wichtig. Ein Apostroph sieht beispielsweise so aus `’` und nicht so `'`.
+Uns ist die typografisch korrekte Zeichensetzung wichtig. Ein Apostroph sieht beispielsweise so aus `’` und nicht so `'`. Das gilt – so der Kenntnisstand – auch für Englisch und Französisch.
 
 Gedankenstriche und „Bis-Striche“ sind Halbgeviertstriche `–`, keine `-`.
 
 Anführungszeichen sehen so `„` und so `“` aus, nicht so `"`.
+
+## Nummerierung von Refrains  {#sec-refnum-standards}
+
+Mitunter kommt es vor, dass ein Lied mehrere Refrains hat. Dann ist es sinnvoll, diese zu nummerieren, damit klar wird, wann welcher Refrain gesungen wird. Es gibt grob zwei Fälle:
+
+-   Es gibt mehrere Strophen, nach jeder Strophe kommt der Refrain und der letzte Refrain weicht ab. In diesem Fall muss nur der letzte Refrain gekennzeichnet sein.
+
+-   Es gibt immer oder meistens verschiedene Refrains. Dann empfiehlt es sich, für jeden Refrain alle Optionen entsprechend zu kennzeichnen.
+
+Die Logik hinter der Refrain-Kennzeichnung bezieht sich immer auf die Strophe, nach der der Refrain gesungen wird. Der Code `\ref #'(4 5)` bedeutet also, dass der Refrain jeweils nach der 4. und 5. Strophe gesungen wird. Der Standardausdruck dafür wäre: „Ref. 4, 5:“ und kann natürlich für jedes Liederbuch spezifisch angepasst werden. Siehe auch: [Refrainnummerierung](musikalischer_inhalt.qmd#sec-refnum).
 
 # Notensatz
 
