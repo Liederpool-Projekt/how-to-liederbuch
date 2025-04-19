@@ -1,0 +1,11 @@
+---
+title: "Upate vom 26.03.2025"
+date: 2025-03-26
+categories: [Update]
+format: html
+description: ""
+---
+
+Leider gibt es aktuell Probleme mit der Nutzung des Python-Parsers bei Windows, der für das Autor\*innensystem essenziell ist. Hintergrund ist vermutlich, dass ab der LilyPond-Version 2.25.11 die Guile-Version von 2.2 auf 3.0 geändert wurde. Warum sich genau das benötigte Modul nicht laden lässt, ist unklar. Ein Issue bei den LilyPond-Entwickler\*innen ist bereits eingerichtet und wir hoffen, dass sich das bald klärt.
+
+Bei der Nutzung von LilyPond 2.25.10 kommt es aktuell zu anderen Fehlermeldungen, da die Skripte momentan nicht abwärtskompatibel sind. Wenn das Problem länger andauert, werden wir die Skripte eventuell anpassen, um Kompatibilität herzustellen und die problemlose Arbeit auch unter Windows zu ermöglichen.

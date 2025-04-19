@@ -1,0 +1,15 @@
+---
+title: "Doku-Changelog vom 26.03.2025"
+date: 2025-03-26
+categories: [Doku]
+format: html
+description: ""
+---
+
+Es gibt neue Bestandteile der Doku:
+
+-   [Markup-Befehle (LilyPond-Doku) wurden verlinkt](../liedlayout_doku.qmd#sec-illustrationen)
+
+-   „[Strophennummern überschreiben](../liedlayout_doku.qmd#sec-strophennummern-ueberschreiben)“
+
+-   „[Abstand der Akkorde voneinander](../liedlayout_doku.qmd#sec-abstand-akkorde)“

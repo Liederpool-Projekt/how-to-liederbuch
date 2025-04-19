@@ -3,8 +3,8 @@ project:
   resources: CNAME
 
 website:
-  title: "How To Liederbuch"
-  #author: ""
+  title: "How To Liederbuch – Das Liederpool-Projekt"
+  description: "Wir sind das Liederpool-Projekt und wir machen Liederbücher. Auf dieser Website wollen wir eine möglichst vollständige Dokumentation unseres Systems sowie Tutorials und How-To’s bereitstellen, um den Einstieg und die Arbeit mit unserem System zu erleichtern."
   #image: ""
   favicon: "images/logo_buebuebue.svg"
   #site-url: ""
@@ -15,8 +15,8 @@ website:
   reader-mode: true
   navbar: 
     background: primary
-    #logo: ""
-    title: "How To Liederbuch"
+    logo: "images/logo_buebuebue.svg"
+    title: "How To Liederbuch – Das Liederpool-Projekt"
     left:
       - text: "Moin"
         href: index.qmd
@@ -24,6 +24,8 @@ website:
         href: vorbereitung.qmd
       - text: "Doku"
         href: doku.qmd
+      - text: "Changelog"
+        href: changelog.qmd
   sidebar: 
     - id: vorbereitung
       title: "Vorbereitung"
@@ -69,6 +71,16 @@ website:
                 - git_verstehen.qmd
                 - review.qmd
                 - markdown_tutorial.qmd
+  open-graph:
+    site-name: "How-To Liederbuch – Das Liederpool-Projekt"
+    locale: de_DE
+  announcement: 
+    #icon: exclamation-triangle-fill # Warning
+    icon: check-square-fill #success
+    dismissable: false
+    content: "Die Probleme unter Windows 10/11 sind nun behoben. Allerdings ist es nun erforderlich, ebenfalls „PyYAML“ zu installieren. In Kürze wird es dazu Anleitungen geben."
+    type: success
+    position: below-navbar
 
 bibliography: references.bib
 lang: de
