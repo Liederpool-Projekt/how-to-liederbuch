@@ -1,0 +1,16 @@
+---
+title: "Doku-Changelog und wichtige Updates"
+format: html
+listing:
+  contents: changelog
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: true
+  filter-ui: true
+page-layout: full
+---
+
+::: callout-note
+Auf dieser Seite halten wir Änderungen an der Doku sowie wichtige Mitteilungen fest, die die Arbeit mit unserem System betreffen.
+:::
