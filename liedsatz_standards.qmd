@@ -115,51 +115,25 @@ Ausgabe:
 
 Optionale Akkorde sollen getaggt werden, damit sie ausgeschaltet werden können.
 
-## Punktierte Pausen
+## Ganztaktpausen
 
-Pausen werden im klassischen Notensatz nicht (wie bei Noten) mit Punkten geschrieben. Deswegen und aus Gründen der besseren Lesbarkeit vermeiden wir nach Möglichkeit punktierte Pausen.
-
-In Dreiertakten (6/8-Takt, 3/4-Takt) beispielsweise sind punktierte Pausen aber in Ordnung, da sie die Lesbarkeit erhöhen.
-
-> Beispiele keine punktierte Pausen:
->
-> ``` lilypond
-> \relative c' {
->   \time 4/4
->   r2 r4 c8 d |
->   r4 r8 c d e f g |
-> }
-> ```
-
-Ausgabe:
-
-![](/images/punktierte-pausen.svg)
-
-> Beispiele punktierte Pausen:
->
-> ``` lilypond
-> \language "deutsch"
-> \relative c' {
->   \time 6/8
->   r4. r4. |
->   r4. r8 c d |
->   c8 d e r8 r16 c c8 % Das gilt natürlich nur, wenn es der Lesbarkeit explizit dient...
->
->   \time 3/4
->   r2. |
->   r2. |
->   a4 h c |
->   d2.
-> }
-> ```
-
-Ausgabe:
-
-![](/images/punktierte-pausen-2.svg)
+Wenn ein Takt vollständig pausiert wird, sollten Ganztaktpausen genutzt werden (Lilypond-Befehl: `R`), die sind genau dafür da. Der Unterschied zu normalen Pausen besteht darin dass sie in der Taktmitte zentriert werde und immer aussehen wie ganze Pausen (außer in bestimmten Takten). Siehe auch <https://www.mu-sig.de/Theorie/Notation/Notation07.htm> Ausnahme: Wenn erkenntlich gemacht werden muss, wann Akkordwechsel erfolgen.
 
 ## Rhythmusorientierte Taktaufteilung
 
-Die Betonung des Taktes sollte (je nach Taktart) immer erkennbar sein.
+Die Hauptzählzeiten des Taktes sollten immer erkennbar sein.
+
+-   4/4-Takt: 1 und 3
+
+-   3/4-Takt: 1
+
+-   2/2-Takt: 1
+
+-   6/8-Takt: 1 und 4
+
+-   6/4-Takt: 1 und 4
+
+-   zusammengesetzte Taktarten entsprechend der Zusammensetzungen (siehe unten)
 
 > Beispiel:
 >
