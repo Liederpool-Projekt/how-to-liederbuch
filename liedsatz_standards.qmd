@@ -245,3 +245,7 @@ Kanoneinsätze sollen wie [hier](musikalischer_inhalt.qmd#sec-kanon) beschrieben
 ## Akkorde  {#sec-akkorde}
 
 Wir wollen Akkorde gerne so genau wie möglich erfassen. Wenn es in LilyPond keine „Kurzform“ wie zum Beispiel `c`, `c:maj7` oder `c/g` gibt, wollen wir deshalb die Akkorde in LilyPond-Akkordschreibweise erfassen. Das ermöglicht es, die Akkorde auf Liederbuchebene so zu benennen, wie es gewünscht ist. Dabei kann es durchaus sein, dass die Standardausgabe von LilyPond nicht der gewünschten Ausgabe entspricht. Diese kann allerdings gut angepasst werden. Siehe [Anpassung der Akkordsymbole](liederbuch_layout.qmd#sec-akkordsymbole-anpassen).
+
+## Taktüberprüfung  {#sec-barcheck}
+
+Damit Fehler gut und schnell nachverfolgt werden können, nutzen wir die Taktüberprüfung in LilyPond. Siehe [LilyPond-Doku](https://lilypond.org/doc/v2.24/Documentation/learning/bar-lines-and-bar-checks#bar-checks).

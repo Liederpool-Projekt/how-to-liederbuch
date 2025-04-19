@@ -270,13 +270,13 @@ fourthVerse = \lyricmode {
 
 Da, wo jetzt noch `Ly -- rics` steht, muss natürlich der Liedtext hin.
 
-## firstVoice-Variable
+## firstVoice-Variable  {#sec-firstVoice}
 
-Jetzt geht’s ans Eingemachte, nämlich die Noten! Da, wo jetzt noch das c steht, schreibst du die Noten des Liedes rein – für jeden Takt eine Zeile. Das sieht für den ersten Takt so aus:
+Jetzt geht’s ans Eingemachte, nämlich die Noten! Da, wo jetzt noch das c steht, schreibst du die Noten des Liedes rein – für jeden Takt eine Zeile und am Ende kommt eine Pipe / ein Senkrechtstrich (`|`), der zu einer Taktüberprüfung führt. Das sieht für den ersten Takt so aus:
 
 ``` lilypond
 firstVoice = \relative c' {
-  f4 a c a
+  f4 a c a |
 }
 ```
 
@@ -288,8 +288,8 @@ Die Kleinbuchstaben sind jeweils die deutschen Notenbezeichnungen. Die darauffol
 
 ``` lilypond
 firstVoice = \relative c' {
-  f4 a c a
-  g8 (a) g (f) e4 c
+  f4 a c a |
+  g8 (a) g (f) e4 c |
 }
 ```
 
@@ -299,12 +299,12 @@ Schauen wir uns den zweiten Takt an, stellen wir fest, dass da auch Klammern dri
 
 ``` lilypond
 firstVoice = \relative c' {
-  f4 a c a
-  g8 (a) g (f) e4 c
-  f a c a
-  g a8 (b) a4 g
-  d f a f
-  e8 (f) e (d) e4 <e a,>
+  f4 a c a |
+  g8 (a) g (f) e4 c |
+  f a c a |
+  g a8 (b) a4 g |
+  d f a f |
+  e8 (f) e (d) e4 <e a,> |
 }
 ```
 
@@ -316,14 +316,14 @@ Tonhöhen anzugeben, ist meist gar nicht notwendig, da LilyPond von den nahelieg
 
 ``` lilypond
 firstVoice = \relative c' {
-  f4 a c a
-  g8 (a) g (f) e4 c
-  f a c a
-  g a8 (b) a4 g
-  d f a f
-  e8 (f) e (d) e4 <e a,>
-  d8 (e) f (g) a4 a8 (f)
-  d2 d4 r
+  f4 a c a |
+  g8 (a) g (f) e4 c |
+  f a c a |
+  g a8 (b) a4 g |
+  d f a f |
+  e8 (f) e (d) e4 <e a,> |
+  d8 (e) f (g) a4 a8 (f) |
+  d2 d4 r |
 }
 ```
 
