@@ -400,6 +400,18 @@ MUSIC = {
 }
 ```
 
+## Strophennummerierung  {#sec-strophennummerierung}
+
+Die Strophennummerierung erfolgt nach folgendem Schema: `#(sanza 1)` für 1. Strophe, `#(stanza 2)` für zweite Strophe etc. Das genaue Aussehen kann natürlich global auch angepasst werden.
+
+## Refrainnummerierung  {#sec-refnum}
+
+Ein einfacher Refrain wird gesetzt durch den Befehl `\ref`. Gibt es mehrere Refrains kann die Strophe spezifiziert werden, nach der der Refrain gesungen wird: `\ref #'(5)` für die 5. Strophe oder `\ref #'(3 4)` für die 3. und 4. Strophe. Wie zu sehen ist, können auch mehrere Strophennummern übergeben werden.
+
+::: callout-important
+Bitte beachte unbedingt unsere [Standards](liedsatz_standards.qmd#sec-refnum-standards) zur Refrainsetzung!
+:::
+
 ## Swing-Style
 
 Den Swing-Style kann man mittels der Funktion `\swingMusic` erwirken. Das setzt den *folgenden* musikalischen Ausdruck im Swing-Style. `\swingMusic` kann beispielsweise in die `\melodyVoice` gepackt werden (dann geschweifte Klammern nicht vergessen). Die Midi-Ausgabe erfolgt dann sogleich rhythmisch korrekt.
