@@ -171,8 +171,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         </a>
     </div>
   </nav>
-  <div id="quarto-announcement" data-announcement-id="5a4b76cd891759815febbf4bdafd974e" class="alert alert-success hidden"><i class="bi bi-check-square-fill quarto-announcement-icon"></i><div class="quarto-announcement-content">
-<p>Die Probleme unter Windows 10/11 sind nun behoben. Allerdings ist es nun erforderlich, ebenfalls „PyYAML“ zu installieren. In Kürze wird es dazu Anleitungen geben.</p>
+  <div id="quarto-announcement" data-announcement-id="5a9023b00438b8f739094ca72edfd8fe" class="alert alert-info hidden"><i class="bi bi-info-circle-fill quarto-announcement-icon"></i><div class="quarto-announcement-content">
+<p>Wir haben die Dokumentation aktualisiert. Alles neue erfährst du im Changelog.</p>
 </div></div>
 </header>
 <!-- content -->
@@ -227,6 +227,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <div class="sidebar-item-container"> 
   <a href="./liederbuch_layout.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Liederbuch-Layout</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./quellen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quellen</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -295,6 +301,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#textveränderungen-zum-original" id="toc-textveränderungen-zum-original" class="nav-link" data-scroll-target="#textveränderungen-zum-original">Textveränderungen zum Original</a></li>
   <li><a href="#title-case-bei-englischsprachigen-liedern" id="toc-title-case-bei-englischsprachigen-liedern" class="nav-link" data-scroll-target="#title-case-bei-englischsprachigen-liedern">Title Case bei englischsprachigen Liedern</a></li>
   <li><a href="#typografisch-korrekte-zeichen" id="toc-typografisch-korrekte-zeichen" class="nav-link" data-scroll-target="#typografisch-korrekte-zeichen">Typografisch korrekte Zeichen</a></li>
+  <li><a href="#sec-refnum-standards" id="toc-sec-refnum-standards" class="nav-link" data-scroll-target="#sec-refnum-standards">Nummerierung von Refrains</a></li>
   </ul></li>
   <li><a href="#notensatz" id="toc-notensatz" class="nav-link" data-scroll-target="#notensatz">Notensatz</a>
   <ul class="collapse">
@@ -306,6 +313,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#takte" id="toc-takte" class="nav-link" data-scroll-target="#takte">Takte</a></li>
   <li><a href="#wiederholungen" id="toc-wiederholungen" class="nav-link" data-scroll-target="#wiederholungen">Wiederholungen</a></li>
   <li><a href="#kanoneinsätze" id="toc-kanoneinsätze" class="nav-link" data-scroll-target="#kanoneinsätze">Kanoneinsätze</a></li>
+  <li><a href="#sec-akkorde" id="toc-sec-akkorde" class="nav-link" data-scroll-target="#sec-akkorde">Akkorde</a></li>
+  <li><a href="#sec-barcheck" id="toc-sec-barcheck" class="nav-link" data-scroll-target="#sec-barcheck">Taktüberprüfung</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -380,9 +389,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="typografisch-korrekte-zeichen" class="level2">
 <h2 class="anchored" data-anchor-id="typografisch-korrekte-zeichen">Typografisch korrekte Zeichen</h2>
-<p>Uns ist die typografisch korrekte Zeichensetzung wichtig. Ein Apostroph sieht beispielsweise so aus <code>’</code> und nicht so <code>'</code>.</p>
+<p>Uns ist die typografisch korrekte Zeichensetzung wichtig. Ein Apostroph sieht beispielsweise so aus <code>’</code> und nicht so <code>'</code>. Das gilt – so der Kenntnisstand – auch für Englisch und Französisch.</p>
 <p>Gedankenstriche und „Bis-Striche“ sind Halbgeviertstriche <code>–</code>, keine <code>-</code>.</p>
 <p>Anführungszeichen sehen so <code>„</code> und so <code>“</code> aus, nicht so <code>"</code>.</p>
+</section>
+<section id="sec-refnum-standards" class="level2">
+<h2 class="anchored" data-anchor-id="sec-refnum-standards">Nummerierung von Refrains</h2>
+<p>Mitunter kommt es vor, dass ein Lied mehrere Refrains hat. Dann ist es sinnvoll, diese zu nummerieren, damit klar wird, wann welcher Refrain gesungen wird. Es gibt grob zwei Fälle:</p>
+<ul>
+<li><p>Es gibt mehrere Strophen, nach jeder Strophe kommt der Refrain und der letzte Refrain weicht ab. In diesem Fall muss nur der letzte Refrain gekennzeichnet sein.</p></li>
+<li><p>Es gibt immer oder meistens verschiedene Refrains. Dann empfiehlt es sich, für jeden Refrain alle Optionen entsprechend zu kennzeichnen.</p></li>
+</ul>
+<p>Die Logik hinter der Refrain-Kennzeichnung bezieht sich immer auf die Strophe, nach der der Refrain gesungen wird. Der Code <code>\ref #'(4 5)</code> bedeutet also, dass der Refrain jeweils nach der 4. und 5. Strophe gesungen wird. Der Standardausdruck dafür wäre: „Ref. 4, 5:“ und kann natürlich für jedes Liederbuch spezifisch angepasst werden. Siehe auch: <a href="./musikalischer_inhalt.html#sec-refnum">Refrainnummerierung</a>.</p>
 </section>
 </section>
 <section id="notensatz" class="level1">
@@ -512,6 +530,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="kanoneinsätze" class="level2">
 <h2 class="anchored" data-anchor-id="kanoneinsätze">Kanoneinsätze</h2>
 <p>Kanoneinsätze sollen wie <a href="./musikalischer_inhalt.html#sec-kanon">hier</a> beschrieben kursiv und mit römischen Ziffern markiert werden.</p>
+</section>
+<section id="sec-akkorde" class="level2">
+<h2 class="anchored" data-anchor-id="sec-akkorde">Akkorde</h2>
+<p>Wir wollen Akkorde gerne so genau wie möglich erfassen. Wenn es in LilyPond keine „Kurzform“ wie zum Beispiel <code>c</code>, <code>c:maj7</code> oder <code>c/g</code> gibt, wollen wir deshalb die Akkorde in LilyPond-Akkordschreibweise erfassen. Das ermöglicht es, die Akkorde auf Liederbuchebene so zu benennen, wie es gewünscht ist. Dabei kann es durchaus sein, dass die Standardausgabe von LilyPond nicht der gewünschten Ausgabe entspricht. Diese kann allerdings gut angepasst werden. Siehe <a href="./liederbuch_layout.html#sec-akkordsymbole-anpassen">Anpassung der Akkordsymbole</a>.</p>
+</section>
+<section id="sec-barcheck" class="level2">
+<h2 class="anchored" data-anchor-id="sec-barcheck">Taktüberprüfung</h2>
+<p>Damit Fehler gut und schnell nachverfolgt werden können, nutzen wir die Taktüberprüfung in LilyPond. Siehe <a href="https://lilypond.org/doc/v2.24/Documentation/learning/bar-lines-and-bar-checks#bar-checks">LilyPond-Doku</a>.</p>
 
 
 </section>

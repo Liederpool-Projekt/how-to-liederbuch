@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>How To Liederbuch – Das Liederpool-Projekt</title>
+<title>Installation von PyYAML (nur Windows) – How To Liederbuch – Das Liederpool-Projekt</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./liedersetzen.html" rel="next">
+<link href="./git_einrichten.html" rel="prev">
 <link href="./images/logo_buebuebue.svg" rel="icon" type="image/svg+xml">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -71,13 +73,13 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta property="og:title" content="How To Liederbuch – Das Liederpool-Projekt">
+<meta property="og:title" content="Installation von PyYAML (nur Windows) – How To Liederbuch – Das Liederpool-Projekt">
 <meta property="og:description" content="Wir sind das Liederpool-Projekt und wir machen Liederbücher. Auf dieser Website wollen wir eine möglichst vollständige Dokumentation unseres Systems sowie Tutorials und How-To’s bereitstellen, um den Einstieg und die Arbeit mit unserem System zu erleichtern.">
 <meta property="og:site_name" content="How-To Liederbuch – Das Liederpool-Projekt">
 <meta property="og:locale" content="de_DE">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -98,11 +100,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Moin</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./vorbereitung.html"> 
+    <a class="nav-link active" href="./vorbereitung.html" aria-current="page"> 
 <span class="menu-text">Einführung</span></a>
   </li>  
   <li class="nav-item">
@@ -125,6 +127,16 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./vorbereitung.html">Vorbereitung</a></li><li class="breadcrumb-item"><a href="./pyyaml.html">Installation von PyYAML (nur Windows)</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
   <div id="quarto-announcement" data-announcement-id="5a9023b00438b8f739094ca72edfd8fe" class="alert alert-info hidden"><i class="bi bi-info-circle-fill quarto-announcement-icon"></i><div class="quarto-announcement-content">
 <p>Wir haben die Dokumentation aktualisiert. Alles neue erfährst du im Changelog.</p>
 </div></div>
@@ -132,82 +144,118 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Auf dieser Seite</h2>
-   
-  <ul>
-  <li><a href="#moin." id="toc-moin." class="nav-link active" data-scroll-target="#moin.">Moin.</a>
-  <ul class="collapse">
-  <li><a href="#was-können-wir-dir-bieten" id="toc-was-können-wir-dir-bieten" class="nav-link" data-scroll-target="#was-können-wir-dir-bieten">Was können wir dir bieten?</a></li>
-  <li><a href="#wer-wir-sind" id="toc-wer-wir-sind" class="nav-link" data-scroll-target="#wer-wir-sind">Wer „wir“ sind</a></li>
-  <li><a href="#kleiner-überblick-darüber-was-du-auf-dieser-website-alles-findest" id="toc-kleiner-überblick-darüber-was-du-auf-dieser-website-alles-findest" class="nav-link" data-scroll-target="#kleiner-überblick-darüber-was-du-auf-dieser-website-alles-findest">Kleiner Überblick darüber, was du auf dieser Website alles findest</a></li>
-  </ul></li>
-  </ul>
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./vorbereitung.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Vorbereitung</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./lilypond_einrichten.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Einrichtung von LilyPond</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./frescobaldi_einrichten.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Einrichtung von Frescobaldi</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./git_einrichten.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Einrichtung von Git</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./pyyaml.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Installation von PyYAML (nur Windows)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./liedersetzen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lieder setzen</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./beispiel_liedersetzen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Beispiel Liedersetzen</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./branch_und_pullrequest.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Branch und Pull-Request</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./liedlayout.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Liedlayout</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./liederbuecher_machen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Liederbücher erstellen</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./repostruktur.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Struktur des Repositories</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
 </nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./vorbereitung.html">Vorbereitung</a></li><li class="breadcrumb-item"><a href="./pyyaml.html">Installation von PyYAML (nur Windows)</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Installation von PyYAML (nur Windows)</h1>
+</div>
 
 
 
-<section id="moin." class="level1 unnumbered">
-<h1 class="unnumbered">Moin.</h1>
-<p>Schön, dass du hergefunden hast! In diesem Leitfaden zeigen wir dir, wie du mit <a href="https://lilypond.org/">LilyPond</a> und <a href="https://git-scm.com/">Git</a> Liederbücher anhand unserer Vorlagen und Skripte erstellen kannst. Wir versuchen dich dabei bestmöglich an die Hand zu nehmen, um die Hürden, die es dabei gibt, möglichst niedrig zu halten. Zu diesem Zwecke gibt es diesen Leitfaden, aber auch eine Gruppe auf Signal, in der sich alle Personen befinden, die mit unserem System Liederbücher machen.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Hinweis
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Mit unserem System arbeiten beispielsweise das <a href="https://boernel.sachsen.pfadfinden.de/">Börnel</a>- und das <a href="https://bockbuecher.de/liederbock">Liederbock</a>-Team.</p>
-</div>
-</div>
-<section id="was-können-wir-dir-bieten" class="level2">
-<h2 class="anchored" data-anchor-id="was-können-wir-dir-bieten">Was können wir dir bieten?</h2>
-<p>Eine kleine Übersicht über Vorteile, die unser System mit sich bringt. Wenn dir davon nicht alles was sagt, ist das gar nicht schlimm.</p>
-<ul>
-<li><p>Du kannst Liederbücher mit Noten und ohne Noten erstellen. Du kannst außerdem entscheiden, ob du Akkorde über den Strophen haben möchtest oder nicht.</p></li>
-<li><p>Du benötigst dafür keine kostenpflichtigen Programme. Alle Programme, die wir nutzen, sind Free and Open Source Software.</p></li>
-<li><p>Du kannst davon profitieren, dass wir in unserem Liederpool schon etliche Lieder gesetzt haben.</p></li>
-<li><p>Durch unsere Struktur profitierst du von Fehlerkorrekturen anderer Liederbuchprojekte.</p></li>
-<li><p>LilyPond ist ein codebasiertes Notensatzprogramm, das bedeutet, man kann sehr gut ein Versionierungs- und Nachverfolgungssystem mit Git nutzen.</p></li>
-</ul>
-</section>
-<section id="wer-wir-sind" class="level2">
-<h2 class="anchored" data-anchor-id="wer-wir-sind">Wer „wir“ sind</h2>
-<p>Wir sind ein Zusammenschluss an verschiedenen Liederbuchprojekten, die alle LilyPond nutzen. Irgendwann kamen wir an den Punkt, dass es cool wäre, wenn man mehr Synergien untereinander hätte. Daraufhin haben wir das Konzept unseres Liederpools entwickelt, in dem sich nur der musikalische Inhalt eines Liedes befindet, den man dann in seinem Liederbuchprojekt spezifisch layouten kann. Das hat zwei riesige Vorteile: Einerseits kann man von dem profitieren, was andere schon gesetzt haben, und andererseits kann man von den Fehlerkorrekturen anderer profitieren.</p>
-</section>
-<section id="kleiner-überblick-darüber-was-du-auf-dieser-website-alles-findest" class="level2">
-<h2 class="anchored" data-anchor-id="kleiner-überblick-darüber-was-du-auf-dieser-website-alles-findest">Kleiner Überblick darüber, was du auf dieser Website alles findest</h2>
-<p>Diese Website besteht aus grob zwei Teilen:</p>
-<ul>
-<li><p>Einem How-To-Liederbuch, das dir bei der Einrichtung von LilyPond, Frescobaldi und Git hilft. Außerdem wird darin erklärt, wie du dein erstes Lied setzt, wie du es in unseren Pool einbringen kannst und natürlich, wie du ein eigenes Liederbuch anfertigst.</p></li>
-<li><p>Einer möglichst vollständigen Dokumentation unseres Systems, einschließlich der selbstgeschriebenen Skripte. Das umfasst:</p>
-<ul>
-<li><p>Standards für den Liedersatz</p></li>
-<li><p>Doku von Metadaten-Angaben</p></li>
-<li><p>Doku von musikalischem Inhalt</p></li>
-<li><p>Doku vom Lied-Layouten</p></li>
-<li><p>Doku vom Liederbuch-Layouten</p></li>
-<li><p>Wie Links als Quelle in die Metadaten eingebunden werden sollen</p></li>
-<li><p>Nützliche Lifehacks</p></li>
-<li><p>Eine ausführlichere Einführung in Git</p></li>
-<li><p>Doku unseres Review-Prozesses</p></li>
-<li><p>Einführung in Markdown (in Markdown bzw. Quarto ist diese Website geschrieben)</p></li>
-</ul></li>
-</ul>
-<p>So, jetzt genug der langen Vorrede. Los geht’s!</p>
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
 
 
-</section>
-</section>
+</header>
+
+
+<p>Zuletzt wird unter Windows noch die Installation von PyYAML benötigt. Wie das geht, wird <a href="https://www.geeksforgeeks.org/how-to-install-pyyaml-on-windows/?ref=ml_lbp">hier</a> beschrieben.</p>
+
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -774,6 +822,18 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./git_einrichten.html" class="pagination-link" aria-label="Einrichtung von Git">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Einrichtung von Git</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./liedersetzen.html" class="pagination-link" aria-label="Lieder setzen">
+        <span class="nav-page-text">Lieder setzen</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 
 

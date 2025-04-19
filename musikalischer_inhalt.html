@@ -171,8 +171,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         </a>
     </div>
   </nav>
-  <div id="quarto-announcement" data-announcement-id="5a4b76cd891759815febbf4bdafd974e" class="alert alert-success hidden"><i class="bi bi-check-square-fill quarto-announcement-icon"></i><div class="quarto-announcement-content">
-<p>Die Probleme unter Windows 10/11 sind nun behoben. Allerdings ist es nun erforderlich, ebenfalls „PyYAML“ zu installieren. In Kürze wird es dazu Anleitungen geben.</p>
+  <div id="quarto-announcement" data-announcement-id="5a9023b00438b8f739094ca72edfd8fe" class="alert alert-info hidden"><i class="bi bi-info-circle-fill quarto-announcement-icon"></i><div class="quarto-announcement-content">
+<p>Wir haben die Dokumentation aktualisiert. Alles neue erfährst du im Changelog.</p>
 </div></div>
 </header>
 <!-- content -->
@@ -227,6 +227,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <div class="sidebar-item-container"> 
   <a href="./liederbuch_layout.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Liederbuch-Layout</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./quellen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quellen</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -287,7 +293,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#wiederholungen-in-den-strophen" id="toc-wiederholungen-in-den-strophen" class="nav-link active" data-scroll-target="#wiederholungen-in-den-strophen">Wiederholungen in den Strophen</a></li>
   <li><a href="#melismata-mehrere-noten-zu-einer-silbe" id="toc-melismata-mehrere-noten-zu-einer-silbe" class="nav-link" data-scroll-target="#melismata-mehrere-noten-zu-einer-silbe">Melismata (mehrere Noten zu einer Silbe)</a></li>
   <li><a href="#mehrere-silben-zu-einer-note" id="toc-mehrere-silben-zu-einer-note" class="nav-link" data-scroll-target="#mehrere-silben-zu-einer-note">Mehrere Silben zu einer Note</a></li>
-  <li><a href="#silbentrennung-bei-volta-klammern" id="toc-silbentrennung-bei-volta-klammern" class="nav-link" data-scroll-target="#silbentrennung-bei-volta-klammern">Silbentrennung bei Volta-Klammern</a></li>
+  <li><a href="#sec-silbentrennung-volta-klammern" id="toc-sec-silbentrennung-volta-klammern" class="nav-link" data-scroll-target="#sec-silbentrennung-volta-klammern">Silbentrennung bei Volta-Klammern</a></li>
   <li><a href="#umgang-mit-wiederholungen-bei-gleichbleibendem-text" id="toc-umgang-mit-wiederholungen-bei-gleichbleibendem-text" class="nav-link" data-scroll-target="#umgang-mit-wiederholungen-bei-gleichbleibendem-text">Umgang mit Wiederholungen bei gleichbleibendem Text</a></li>
   <li><a href="#umgang-mit-wiederholungen-bei-neuem-text" id="toc-umgang-mit-wiederholungen-bei-neuem-text" class="nav-link" data-scroll-target="#umgang-mit-wiederholungen-bei-neuem-text">Umgang mit Wiederholungen bei „neuem“ Text</a></li>
   <li><a href="#strophen-mit-unterschiedlichen-noten--oder-silbenverteilung-oder-rhythmus" id="toc-strophen-mit-unterschiedlichen-noten--oder-silbenverteilung-oder-rhythmus" class="nav-link" data-scroll-target="#strophen-mit-unterschiedlichen-noten--oder-silbenverteilung-oder-rhythmus">Strophen mit unterschiedlichen Noten- oder Silbenverteilung oder Rhythmus</a></li>
@@ -297,13 +303,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#innerhalb-einer-variante" id="toc-innerhalb-einer-variante" class="nav-link" data-scroll-target="#innerhalb-einer-variante">Innerhalb einer Variante</a></li>
   <li><a href="#verschiedene-varianten" id="toc-verschiedene-varianten" class="nav-link" data-scroll-target="#verschiedene-varianten">Verschiedene Varianten</a></li>
   </ul></li>
+  <li><a href="#sec-strophennummerierung" id="toc-sec-strophennummerierung" class="nav-link" data-scroll-target="#sec-strophennummerierung">Strophennummerierung</a></li>
+  <li><a href="#sec-refnum" id="toc-sec-refnum" class="nav-link" data-scroll-target="#sec-refnum">Refrainnummerierung</a></li>
   <li><a href="#swing-style" id="toc-swing-style" class="nav-link" data-scroll-target="#swing-style">Swing-Style</a></li>
   <li><a href="#sec-kanon" id="toc-sec-kanon" class="nav-link" data-scroll-target="#sec-kanon">Markierungen für beispielsweise Kanoneinsätze</a></li>
   <li><a href="#optionale-akkorde" id="toc-optionale-akkorde" class="nav-link" data-scroll-target="#optionale-akkorde">Optionale Akkorde</a></li>
+  <li><a href="#sec-altchords" id="toc-sec-altchords" class="nav-link" data-scroll-target="#sec-altchords">Alternative Akkorde</a></li>
   <li><a href="#benutzerdefinierte-akkordnamen" id="toc-benutzerdefinierte-akkordnamen" class="nav-link" data-scroll-target="#benutzerdefinierte-akkordnamen">Benutzerdefinierte Akkordnamen</a></li>
   <li><a href="#akkordtabulatur" id="toc-akkordtabulatur" class="nav-link" data-scroll-target="#akkordtabulatur">Akkordtabulatur</a></li>
+  <li><a href="#akkordabstände" id="toc-akkordabstände" class="nav-link" data-scroll-target="#akkordabstände">Akkordabstände</a></li>
   <li><a href="#römische-ziffern" id="toc-römische-ziffern" class="nav-link" data-scroll-target="#römische-ziffern">Römische Ziffern</a></li>
   <li><a href="#balkensetzung" id="toc-balkensetzung" class="nav-link" data-scroll-target="#balkensetzung">Balkensetzung</a></li>
+  <li><a href="#sec-textpausen" id="toc-sec-textpausen" class="nav-link" data-scroll-target="#sec-textpausen">Textpausen</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
   </ul>
 </nav>
     </div>
@@ -420,8 +432,8 @@ Hinweis
 <h2 class="anchored" data-anchor-id="mehrere-silben-zu-einer-note">Mehrere Silben zu einer Note</h2>
 <p>Siehe <a href="https://lilypond.org/doc/v2.24/Documentation/notation/common-notation-for-vocal-music#multiple-syllables-to-one-note">Lilypond-Doku</a>.</p>
 </section>
-<section id="silbentrennung-bei-volta-klammern" class="level2">
-<h2 class="anchored" data-anchor-id="silbentrennung-bei-volta-klammern">Silbentrennung bei Volta-Klammern</h2>
+<section id="sec-silbentrennung-volta-klammern" class="level2">
+<h2 class="anchored" data-anchor-id="sec-silbentrennung-volta-klammern">Silbentrennung bei Volta-Klammern</h2>
 <p>Problem: Es kommt vor, dass in Liedern die Melodie der Strophe wiederholt wird. Wenn man dabei eine Wiederholung mit Volta-Klammern notiert und ein Wort in die Wiederholung „hineinragt“, dann skipt man die folgenden Notenwerte, was aber dazu führt, dass unter der gesamten Klammer eins Lyric-Hyphens (Bindestriche zwischen den Silben) gesetzt werden.</p>
 <p>Lösung: Mit <code>\once \hide \LyricHyphen</code> werden alle Hyphens der nächsten Silbe unterdrückt. Stattdessen wird mit <code>\rightHyphen</code> bzw. <code>\leftHyphen</code> ein manueller Hyphen gesetzt (die Funktion ist in den <code>common-includes</code> definiert). Die <code>\skip4</code>-Befehle werden ggf. über eine dafür gesetzte Variable definiert (im unteren Beispiel <code>voltaSkipsLyrics</code>). Da die Hyphens im Text (also den „Strophen“) nicht zu sehen sein sollen, werden sie mittels eines Tags gesetzt, der <code>volta</code> heißt. Mehr zu Tags in der <a href="https://lilypond.org/doc/v2.25/Documentation/notation/using-tags.de.html">Lilypond-Doku</a>.</p>
 <p>Codebeispiel:</p>
@@ -460,111 +472,137 @@ Abbildung&nbsp;1: Links das Problem, rechts die Lösung.
 </div>
 </figure>
 </div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warnung
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Achtung! Die manuell gesetzten Hyphens werden dann auch in den Strophen gesetzt. Deswegen müssen diese unbedingt so eingesetzt werden, dass man sie in den Strophen entfernen kann. Zum Beispiel mit einem Tag <code>hyphen</code>. Beispiel aus „Eh die Sonne über Berg und Tal“:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>refLyricsB = \lyricmode<span class="kw"> {</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  %<span class="co">…</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  ob ü <span class="kw">--</span> ber uns die Stür <span class="kw">--</span> me gehn, wir sind <span class="fu">\tag</span> #<span class="fl">'hyphen</span> <span class="kw">{</span> <span class="kw">\once</span> <span class="fu">\hide</span> LyricHyphen <span class="fu">\rightHyphen</span> <span class="kw">}</span> be <span class="kw">--</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>refLyricsC = \lyricmode<span class="kw"> {</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\tag</span> #<span class="fl">'hyphen</span> <span class="kw">{</span> <span class="fu">\skip</span><span class="dt">4</span> <span class="fu">\leftHyphen</span> <span class="kw">}</span> reit.</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Die manuell gesetzten Hyphens würden nun auch in den Strophen ausgedrückt werden. Diese Bindestriche wollen wir da aber natürlich nicht haben, deswegen müssen wir das unter den Strophen „wegtaggen“ (Beispiel ist vereinfacht):</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>TEXT = <span class="fu">\markuplist</span> <span class="kw">{</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\group</span>-verses <span class="kw">{</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\chordlyrics</span> <span class="kw">{</span> <span class="fu">\removeWithTag</span> #<span class="fl">'hyphen</span> <span class="fu">\refLyrics</span> <span class="kw">}</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
 </section>
 <section id="umgang-mit-wiederholungen-bei-gleichbleibendem-text" class="level2">
 <h2 class="anchored" data-anchor-id="umgang-mit-wiederholungen-bei-gleichbleibendem-text">Umgang mit Wiederholungen bei gleichbleibendem Text</h2>
 <p>Problem: Gibt es Volta-Klammern bei Liedern, in denen der Text des wiederholten Teils gleich ist, zum Beispiel, weil es nach der Klammer anders weitergeht, kommt es vor, dass man in die Lyrics zum Beispiel schreiben müsste: <code>Und je -- der Kerl, der mit uns war, hat für im -- mer sich zu uns ge -- sellt. Und sellt.</code>. Das ist natürlich unpraktisch für die Übernahme in die Strophen, weil man das <code>sellt. Und</code> ja nicht in den Strophen haben möchte.</p>
 <p>Lösung: Auch hier kommen wieder Tags zum Einsatz und zwar wie folgt. Es wird ein neuer Tag <code>repeat</code> definiert, der alles in einschließt, was für die Volta-Wiederholungen notwendig ist. Für die Strophen werden dann extra-Variablen definiert, in denen dieser Tag ausgeschaltet wird. Wichtig: Der Tag muss sich natürlich auch in der Melodie und den Akkorden wiederfinden.</p>
 <p>Codebeispiel:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>firstVerseWithRepeat = \lyricmode<span class="kw"> {</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  #<span class="fl">(stanza </span><span class="dv">1</span><span class="fl">)</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  Wir sind ei <span class="kw">--</span> ne klei <span class="kw">--</span> ne ver <span class="kw">--</span> lo <span class="kw">--</span> re <span class="kw">--</span> ne Schar,</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  wir ste <span class="kw">--</span> hen für uns auf der Welt.</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\repStartWithTag</span> Und je <span class="kw">--</span> der Kerl, der mit uns war,</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  hat für im <span class="kw">--</span> mer sich zu uns ge <span class="kw">--</span> <span class="fu">\tag</span> #<span class="fl">'repeat</span> <span class="kw">{</span> sellt. Und <span class="kw">}</span> <span class="fu">\repStopWithTag</span> sellt.</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>firstVerse = \lyricmode<span class="kw"> {</span></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\removeWithTag</span> #<span class="fl">'repeat</span> <span class="fu">\firstVerseWithRepeat</span></span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>firstVoice = <span class="fu">\relative c'</span> <span class="kw">{</span></span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\partial4</span></span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>  fis<span class="dt">4</span></span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>  g<span class="dt">8</span> e<span class="dt">4</span> fis<span class="dt">8</span> g e<span class="dt">4</span> g<span class="dt">8</span></span>
-<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>  fis g<span class="dt">4</span> fis<span class="dt">8</span> e<span class="dt">4</span> d<span class="dt">4</span></span>
-<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>  g<span class="dt">8</span> g<span class="dt">4</span> g<span class="dt">8</span> a d<span class="dt">4</span> c<span class="dt">8</span></span>
-<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>  h<span class="dt">2.</span> h<span class="dt">4</span></span>
-<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\repeat volta 2</span> <span class="kw">{</span></span>
-<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>    c<span class="dt">4</span> c c c</span>
-<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>    h<span class="dt">8</span> h<span class="dt">4</span> <span class="ch">(</span>a<span class="dt">8</span><span class="ch">)</span> g<span class="dt">4</span> g<span class="dt">8</span> a</span>
-<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>    h<span class="dt">8</span> h<span class="dt">4</span> h<span class="dt">8</span> a h<span class="dt">4</span> a<span class="dt">8</span></span>
-<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
-<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\alternative</span> <span class="kw">{</span></span>
-<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>    %<span class="co"> Tag bedenken</span></span>
-<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\tag</span> #<span class="fl">'repeat</span> <span class="kw">{</span> g<span class="dt">2.</span> h<span class="dt">4</span> <span class="kw">}</span></span>
-<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>    <span class="kw">{</span> g<span class="dt">1</span> <span class="kw">}</span></span>
-<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
-<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span>
-<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a>verseChords = \chordmode<span class="kw"> {</span></span>
-<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\partial4</span></span>
-<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>  s<span class="dt">4</span> e<span class="dt">1</span>:m h<span class="dt">2</span>:7 e<span class="dt">4</span>:m d:7</span>
-<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>  g<span class="dt">2</span> d:7 g<span class="dt">1</span></span>
-<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\repeat volta 2</span> <span class="kw">{</span></span>
-<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a>    c<span class="dt">1</span> g g<span class="dt">2</span> d:7</span>
-<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span>Bock</span>
-<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\alternative</span> <span class="kw">{</span></span>
-<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a>    %<span class="co">Tag bedenken</span></span>
-<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\tag</span> #<span class="fl">'repeat</span> <span class="kw">{</span> g<span class="dt">1</span> <span class="kw">}</span></span>
-<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a>    <span class="kw">{</span> g<span class="dt">1</span> <span class="kw">}</span></span>
-<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
-<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span>
-<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-46"><a href="#cb4-46" aria-hidden="true" tabindex="-1"></a>%<span class="co"> im MUSIC-Teil wird der Tag dann wieder aktiviert</span></span>
-<span id="cb4-47"><a href="#cb4-47" aria-hidden="true" tabindex="-1"></a>MUSIC = <span class="kw">{</span></span>
-<span id="cb4-48"><a href="#cb4-48" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\keepWithTag</span> #<span class="fl">'repeat</span></span>
-<span id="cb4-49"><a href="#cb4-49" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;&lt;</span></span>
-<span id="cb4-50"><a href="#cb4-50" aria-hidden="true" tabindex="-1"></a>      <span class="fu">\songChords</span></span>
-<span id="cb4-51"><a href="#cb4-51" aria-hidden="true" tabindex="-1"></a>      <span class="kw">\new</span> <span class="dt">ChoirStaff</span> = "<span class="st">firstStaff"</span></span>
-<span id="cb4-52"><a href="#cb4-52" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;&lt;</span></span>
-<span id="cb4-53"><a href="#cb4-53" aria-hidden="true" tabindex="-1"></a>        <span class="kw">\new</span> <span class="dt">Voice</span> = "<span class="st">firstVoice"</span> <span class="kw">{</span> <span class="fu">\melodyVoice</span> <span class="kw">}</span></span>
-<span id="cb4-54"><a href="#cb4-54" aria-hidden="true" tabindex="-1"></a>        \addlyrics<span class="kw"> {</span> <span class="fu">\firstVerseWithRepeat</span> <span class="kw">}</span></span>
-<span id="cb4-55"><a href="#cb4-55" aria-hidden="true" tabindex="-1"></a>        \addlyrics<span class="kw"> {</span> <span class="fu">\secondVerseWithRepeat</span> <span class="kw">}</span></span>
-<span id="cb4-56"><a href="#cb4-56" aria-hidden="true" tabindex="-1"></a>        \addlyrics<span class="kw"> {</span> <span class="fu">\thirdVerseWithRepeat</span> <span class="kw">}</span></span>
-<span id="cb4-57"><a href="#cb4-57" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&gt;&gt;</span></span>
-<span id="cb4-58"><a href="#cb4-58" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&gt;&gt;</span></span>
-<span id="cb4-59"><a href="#cb4-59" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span>
-<span id="cb4-60"><a href="#cb4-60" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-61"><a href="#cb4-61" aria-hidden="true" tabindex="-1"></a>%<span class="co"> Für die Strophen wollen wir keine Volta-Wiederholung</span></span>
-<span id="cb4-62"><a href="#cb4-62" aria-hidden="true" tabindex="-1"></a>verse-<span class="fu">chords</span> = \chords<span class="kw"> {</span> <span class="fu">\removeWithTag</span> #<span class="fl">'repeat</span> <span class="fu">\verseChords</span> <span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>firstVerseWithRepeat = \lyricmode<span class="kw"> {</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  #<span class="fl">(stanza </span><span class="dv">1</span><span class="fl">)</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  Wir sind ei <span class="kw">--</span> ne klei <span class="kw">--</span> ne ver <span class="kw">--</span> lo <span class="kw">--</span> re <span class="kw">--</span> ne Schar,</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  wir ste <span class="kw">--</span> hen für uns auf der Welt.</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\repStartWithTag</span> Und je <span class="kw">--</span> der Kerl, der mit uns war,</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  hat für im <span class="kw">--</span> mer sich zu uns ge <span class="kw">--</span> <span class="fu">\tag</span> #<span class="fl">'repeat</span> <span class="kw">{</span> sellt. Und <span class="kw">}</span> <span class="fu">\repStopWithTag</span> sellt.</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>firstVerse = \lyricmode<span class="kw"> {</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\removeWithTag</span> #<span class="fl">'repeat</span> <span class="fu">\firstVerseWithRepeat</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>firstVoice = <span class="fu">\relative c'</span> <span class="kw">{</span></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\partial4</span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>  fis<span class="dt">4</span></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>  g<span class="dt">8</span> e<span class="dt">4</span> fis<span class="dt">8</span> g e<span class="dt">4</span> g<span class="dt">8</span></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>  fis g<span class="dt">4</span> fis<span class="dt">8</span> e<span class="dt">4</span> d<span class="dt">4</span></span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>  g<span class="dt">8</span> g<span class="dt">4</span> g<span class="dt">8</span> a d<span class="dt">4</span> c<span class="dt">8</span></span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>  h<span class="dt">2.</span> h<span class="dt">4</span></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\repeat volta 2</span> <span class="kw">{</span></span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>    c<span class="dt">4</span> c c c</span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>    h<span class="dt">8</span> h<span class="dt">4</span> <span class="ch">(</span>a<span class="dt">8</span><span class="ch">)</span> g<span class="dt">4</span> g<span class="dt">8</span> a</span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>    h<span class="dt">8</span> h<span class="dt">4</span> h<span class="dt">8</span> a h<span class="dt">4</span> a<span class="dt">8</span></span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\alternative</span> <span class="kw">{</span></span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>    %<span class="co"> Tag bedenken</span></span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\tag</span> #<span class="fl">'repeat</span> <span class="kw">{</span> g<span class="dt">2.</span> h<span class="dt">4</span> <span class="kw">}</span></span>
+<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a>    <span class="kw">{</span> g<span class="dt">1</span> <span class="kw">}</span></span>
+<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
+<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span>
+<span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a>verseChords = \chordmode<span class="kw"> {</span></span>
+<span id="cb6-33"><a href="#cb6-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\partial4</span></span>
+<span id="cb6-34"><a href="#cb6-34" aria-hidden="true" tabindex="-1"></a>  s<span class="dt">4</span> e<span class="dt">1</span>:m h<span class="dt">2</span>:7 e<span class="dt">4</span>:m d:7</span>
+<span id="cb6-35"><a href="#cb6-35" aria-hidden="true" tabindex="-1"></a>  g<span class="dt">2</span> d:7 g<span class="dt">1</span></span>
+<span id="cb6-36"><a href="#cb6-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\repeat volta 2</span> <span class="kw">{</span></span>
+<span id="cb6-37"><a href="#cb6-37" aria-hidden="true" tabindex="-1"></a>    c<span class="dt">1</span> g g<span class="dt">2</span> d:7</span>
+<span id="cb6-38"><a href="#cb6-38" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span>Bock</span>
+<span id="cb6-39"><a href="#cb6-39" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\alternative</span> <span class="kw">{</span></span>
+<span id="cb6-40"><a href="#cb6-40" aria-hidden="true" tabindex="-1"></a>    %<span class="co">Tag bedenken</span></span>
+<span id="cb6-41"><a href="#cb6-41" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\tag</span> #<span class="fl">'repeat</span> <span class="kw">{</span> g<span class="dt">1</span> <span class="kw">}</span></span>
+<span id="cb6-42"><a href="#cb6-42" aria-hidden="true" tabindex="-1"></a>    <span class="kw">{</span> g<span class="dt">1</span> <span class="kw">}</span></span>
+<span id="cb6-43"><a href="#cb6-43" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
+<span id="cb6-44"><a href="#cb6-44" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span>
+<span id="cb6-45"><a href="#cb6-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-46"><a href="#cb6-46" aria-hidden="true" tabindex="-1"></a>%<span class="co"> im MUSIC-Teil wird der Tag dann wieder aktiviert</span></span>
+<span id="cb6-47"><a href="#cb6-47" aria-hidden="true" tabindex="-1"></a>MUSIC = <span class="kw">{</span></span>
+<span id="cb6-48"><a href="#cb6-48" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\keepWithTag</span> #<span class="fl">'repeat</span></span>
+<span id="cb6-49"><a href="#cb6-49" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;&lt;</span></span>
+<span id="cb6-50"><a href="#cb6-50" aria-hidden="true" tabindex="-1"></a>      <span class="fu">\songChords</span></span>
+<span id="cb6-51"><a href="#cb6-51" aria-hidden="true" tabindex="-1"></a>      <span class="kw">\new</span> <span class="dt">ChoirStaff</span> = "<span class="st">firstStaff"</span></span>
+<span id="cb6-52"><a href="#cb6-52" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;&lt;</span></span>
+<span id="cb6-53"><a href="#cb6-53" aria-hidden="true" tabindex="-1"></a>        <span class="kw">\new</span> <span class="dt">Voice</span> = "<span class="st">firstVoice"</span> <span class="kw">{</span> <span class="fu">\melodyVoice</span> <span class="kw">}</span></span>
+<span id="cb6-54"><a href="#cb6-54" aria-hidden="true" tabindex="-1"></a>        \addlyrics<span class="kw"> {</span> <span class="fu">\firstVerseWithRepeat</span> <span class="kw">}</span></span>
+<span id="cb6-55"><a href="#cb6-55" aria-hidden="true" tabindex="-1"></a>        \addlyrics<span class="kw"> {</span> <span class="fu">\secondVerseWithRepeat</span> <span class="kw">}</span></span>
+<span id="cb6-56"><a href="#cb6-56" aria-hidden="true" tabindex="-1"></a>        \addlyrics<span class="kw"> {</span> <span class="fu">\thirdVerseWithRepeat</span> <span class="kw">}</span></span>
+<span id="cb6-57"><a href="#cb6-57" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&gt;&gt;</span></span>
+<span id="cb6-58"><a href="#cb6-58" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&gt;&gt;</span></span>
+<span id="cb6-59"><a href="#cb6-59" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span>
+<span id="cb6-60"><a href="#cb6-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-61"><a href="#cb6-61" aria-hidden="true" tabindex="-1"></a>%<span class="co"> Für die Strophen wollen wir keine Volta-Wiederholung</span></span>
+<span id="cb6-62"><a href="#cb6-62" aria-hidden="true" tabindex="-1"></a>verse-<span class="fu">chords</span> = \chords<span class="kw"> {</span> <span class="fu">\removeWithTag</span> #<span class="fl">'repeat</span> <span class="fu">\verseChords</span> <span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="umgang-mit-wiederholungen-bei-neuem-text" class="level2">
 <h2 class="anchored" data-anchor-id="umgang-mit-wiederholungen-bei-neuem-text">Umgang mit Wiederholungen bei „neuem“ Text</h2>
 <p>Problem: Volta-Klammern (Wiederholungsklammern), bei denen nicht derselbe Text wiederholt wird, sollten in den Strophen aufgelöst werden, damit der Text hintereinander (und nicht wie in den Noten untereinander) steht.</p>
 <p>Lösung: Dafür nutzen wir den Befehl <code>\unfoldRepeats</code>, der in den <code>verse-chords</code> und <code>verse-voice</code> gesetzt werden muss und dann per <code>\override</code> auf die Strophen angewendet werden kann (Achtung: <code>\override</code> gilt immer nur für das folgende Element, zum Beispiel ein Vers oder ein <code>\group-verses</code>-Ausdruck). Außerdem müssen die Verse aufgeteilt werden in verschiedene Teile.</p>
 <p>Codebeispiel:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>firstVerseA = \lyricmode<span class="kw"> {</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  #<span class="fl">(stanza </span><span class="dv">1</span><span class="fl">)</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  Er <span class="kw">--</span> ste Wie <span class="kw">--</span> der <span class="kw">--</span> ho <span class="kw">--</span> lung,</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>firstVerseB = \lyricmode<span class="kw"> {</span></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  zwei <span class="kw">--</span> te Wie <span class="kw">--</span> der <span class="kw">--</span> ho <span class="kw">--</span> lung.</span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>firstVerseC = \lyricmode<span class="kw"> {</span></span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>  Wei <span class="kw">--</span> ter geht’s</span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>firstVerse = <span class="kw">{</span> <span class="fu">\firstVerseA</span> <span class="fu">\firstVerseB</span> <span class="fu">\firsVerseC</span> <span class="kw">}</span></span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>verse-<span class="fu">chords</span> = \chords<span class="kw"> {</span> <span class="fu">\unfoldRepeats</span> <span class="fu">\verseChords</span> <span class="kw">}</span></span>
-<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>verse-<span class="fu">voice</span> = <span class="kw">{</span> <span class="fu">\unfoldRepeats</span> <span class="fu">\firstVoice</span> <span class="kw">}</span></span>
-<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>verse-<span class="fu">breaks</span> = <span class="kw">{</span> </span>
-<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>  s<span class="dt">4</span> s<span class="dt">2*3</span> s<span class="dt">4</span> <span class="fu">\break</span></span>
-<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>  s<span class="dt">4</span> s<span class="dt">2*3</span> s<span class="dt">4</span> <span class="fu">\break</span></span>
-<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>  s<span class="dt">4</span> s<span class="dt">2*3</span> s<span class="dt">4</span> <span class="fu">\break</span></span>
-<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span>
-<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>TEXT = <span class="fu">\markuplist</span> <span class="kw">{</span></span>
-<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>  <span class="kw">\override</span> #<span class="fl">`(verse-chords . ,verse-chords)</span></span>
-<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>  <span class="kw">\override</span> #<span class="fl">`(verse-reference-voice . ,verse-voice)</span></span>
-<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a>  <span class="kw">\override</span> #<span class="fl">`(verse-break-voice . ,verse-breaks)</span></span>
-<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\group</span>-verses <span class="kw">{</span></span>
-<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\chordlyrics</span> <span class="fu">\firstVerse</span></span>
-<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
-<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>firstVerseA = \lyricmode<span class="kw"> {</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  #<span class="fl">(stanza </span><span class="dv">1</span><span class="fl">)</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  Er <span class="kw">--</span> ste Wie <span class="kw">--</span> der <span class="kw">--</span> ho <span class="kw">--</span> lung,</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>firstVerseB = \lyricmode<span class="kw"> {</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>  zwei <span class="kw">--</span> te Wie <span class="kw">--</span> der <span class="kw">--</span> ho <span class="kw">--</span> lung.</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>firstVerseC = \lyricmode<span class="kw"> {</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>  Wei <span class="kw">--</span> ter geht’s</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>firstVerse = <span class="kw">{</span> <span class="fu">\firstVerseA</span> <span class="fu">\firstVerseB</span> <span class="fu">\firsVerseC</span> <span class="kw">}</span></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>verse-<span class="fu">chords</span> = \chords<span class="kw"> {</span> <span class="fu">\unfoldRepeats</span> <span class="fu">\verseChords</span> <span class="kw">}</span></span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>verse-<span class="fu">voice</span> = <span class="kw">{</span> <span class="fu">\unfoldRepeats</span> <span class="fu">\firstVoice</span> <span class="kw">}</span></span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>verse-<span class="fu">breaks</span> = <span class="kw">{</span> </span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>  s<span class="dt">4</span> s<span class="dt">2*3</span> s<span class="dt">4</span> <span class="fu">\break</span></span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>  s<span class="dt">4</span> s<span class="dt">2*3</span> s<span class="dt">4</span> <span class="fu">\break</span></span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>  s<span class="dt">4</span> s<span class="dt">2*3</span> s<span class="dt">4</span> <span class="fu">\break</span></span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>TEXT = <span class="fu">\markuplist</span> <span class="kw">{</span></span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>  <span class="kw">\override</span> #<span class="fl">`(verse-chords . ,verse-chords)</span></span>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>  <span class="kw">\override</span> #<span class="fl">`(verse-reference-voice . ,verse-voice)</span></span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>  <span class="kw">\override</span> #<span class="fl">`(verse-break-voice . ,verse-breaks)</span></span>
+<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\group</span>-verses <span class="kw">{</span></span>
+<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\chordlyrics</span> <span class="fu">\firstVerse</span></span>
+<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
+<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="strophen-mit-unterschiedlichen-noten--oder-silbenverteilung-oder-rhythmus" class="level2">
 <h2 class="anchored" data-anchor-id="strophen-mit-unterschiedlichen-noten--oder-silbenverteilung-oder-rhythmus">Strophen mit unterschiedlichen Noten- oder Silbenverteilung oder Rhythmus</h2>
@@ -580,51 +618,51 @@ Abbildung&nbsp;1: Links das Problem, rechts die Lösung.
 <li><p>Im <code>MUSIC</code>-Teil muss der Tag nun auch angegeben werden. Zum Codebeispiel: Im <code>music</code>-Teil muss nichts angepasst werden, stattdessen kann man nun im <code>MUSIC</code>-Teil angeben, ob man die multiVerse-Ansicht oder die firstVerse-Ansicht angezeigt werden möchte. Das jeweils andere kann auskommentiert werden.</p></li>
 </ul>
 <p>Codebeispiel:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>firstVerse = \lyricmode<span class="kw"> {</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  #<span class="fl">(stanza </span><span class="dv">1</span><span class="fl">)</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\multiVerseSkips</span> <span class="dt">4</span> Komm zu mir, leg dich ins Laub</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">\\</span>multiVerseSkips <span class="dt">1</span> und <span class="kw">\\</span>multiVerseSkips <span class="dt">1</span> hör, was die Wur <span class="kw">--</span> zeln er <span class="kw">--</span> zäh <span class="kw">--</span> len.</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  Je <span class="kw">--</span> <span class="kw">\\</span>multiVerseSkips <span class="dt">1</span> des <span class="kw">\\</span>multiVerseSkips <span class="dt">1</span> Blatt zer <span class="kw">--</span> fällt ein <span class="kw">--</span> mal zu Staub</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">\\</span>multiVerseSkips <span class="dt">2</span> und je <span class="kw">--</span> der Baum wird auch wie <span class="kw">--</span> der zu Er <span class="kw">--</span> de.</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  Doch je <span class="kw">--</span> des En <span class="kw">--</span> de ist ein An <span class="kw">--</span> fang</span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  und vol <span class="kw">--</span> ler Kreis <span class="kw">--</span> läu <span class="kw">--</span> fe sind Zeit und Raum.</span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  Al <span class="kw">--</span> les ver <span class="kw">--</span> geht, doch nichts geht ver <span class="kw">--</span> lo <span class="kw">--</span> ren,</span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>  al <span class="kw">--</span> les ist Wirk <span class="kw">--</span> lich <span class="kw">--</span> keit und al <span class="kw">--</span> les ist Traum.</span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>%<span class="co"> Verwendung von alt</span></span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>firstVoice = <span class="fu">\relative c'</span> <span class="kw">{</span></span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\alt</span> <span class="kw">{}</span> <span class="kw">{</span> <span class="fu">\partial2</span> a<span class="dt">8</span> a d<span class="dt">8</span> f<span class="dt">8</span> <span class="kw">}</span></span>
-<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>  a<span class="dt">4.</span> a<span class="dt">8</span> a<span class="dt">4</span></span>
-<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>  g<span class="dt">4</span> a g</span>
-<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>  e<span class="dt">2.</span></span>
-<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\alt</span> <span class="kw">{</span> r<span class="dt">2</span> d<span class="dt">4</span> <span class="kw">}</span> <span class="kw">{</span> r<span class="dt">4</span> r<span class="dt">8</span> d d d <span class="kw">}</span></span>
-<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>  e<span class="dt">4.</span> e<span class="dt">8</span> e<span class="dt">4</span></span>
-<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>  d<span class="dt">4</span> e d</span>
-<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>  c<span class="dt">4</span> a<span class="dt">2</span></span>
-<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span>
-<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>%<span class="co"> Einbindung in music/MUSIC</span></span>
-<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a><span class="fu">music</span> = <span class="kw">{</span></span>
-<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;&lt;</span></span>
-<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a>      <span class="fu">\songChords</span></span>
-<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a>      <span class="kw">\new</span> <span class="dt">ChoirStaff</span> = "<span class="st">firstStaff"</span></span>
-<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;&lt;</span></span>
-<span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a>        <span class="kw">\new</span> <span class="dt">Voice</span> = "<span class="st">firstVoice"</span> <span class="kw">{</span> <span class="fu">\melodyVoice</span> <span class="kw">}</span></span>
-<span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a>        \addlyrics<span class="kw"> {</span> <span class="fu">\firstVerse</span> <span class="kw">}</span></span>
-<span id="cb6-33"><a href="#cb6-33" aria-hidden="true" tabindex="-1"></a>        \addlyrics<span class="kw"> {</span> <span class="fu">\tag</span> #<span class="fl">'multiVerse</span> <span class="fu">\secondVerse</span> <span class="kw">}</span></span>
-<span id="cb6-34"><a href="#cb6-34" aria-hidden="true" tabindex="-1"></a>        \addlyrics<span class="kw"> {</span> <span class="fu">\tag</span> #<span class="fl">'multiVerse</span> <span class="fu">\thirdVerse</span> <span class="kw">}</span></span>
-<span id="cb6-35"><a href="#cb6-35" aria-hidden="true" tabindex="-1"></a>        \addlyrics<span class="kw"> {</span> <span class="fu">\tag</span> #<span class="fl">'multiVerse</span> <span class="fu">\fourthVerse</span> <span class="kw">}</span></span>
-<span id="cb6-36"><a href="#cb6-36" aria-hidden="true" tabindex="-1"></a>        \addlyrics<span class="kw"> {</span> <span class="fu">\tag</span> #<span class="fl">'multiVerse</span> <span class="fu">\fifthVerse</span> <span class="kw">}</span></span>
-<span id="cb6-37"><a href="#cb6-37" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&gt;&gt;</span></span>
-<span id="cb6-38"><a href="#cb6-38" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&gt;&gt;</span></span>
-<span id="cb6-39"><a href="#cb6-39" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span>
-<span id="cb6-40"><a href="#cb6-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-41"><a href="#cb6-41" aria-hidden="true" tabindex="-1"></a>MUSIC = <span class="kw">{</span></span>
-<span id="cb6-42"><a href="#cb6-42" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\keepWithTag</span> #<span class="fl">'multiVerse</span></span>
-<span id="cb6-43"><a href="#cb6-43" aria-hidden="true" tabindex="-1"></a>  %<span class="co">\keepWithTag #'firstVerse</span></span>
-<span id="cb6-44"><a href="#cb6-44" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\music</span></span>
-<span id="cb6-45"><a href="#cb6-45" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>firstVerse = \lyricmode<span class="kw"> {</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  #<span class="fl">(stanza </span><span class="dv">1</span><span class="fl">)</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\multiVerseSkips</span> <span class="dt">4</span> Komm zu mir, leg dich ins Laub</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">\\</span>multiVerseSkips <span class="dt">1</span> und <span class="kw">\\</span>multiVerseSkips <span class="dt">1</span> hör, was die Wur <span class="kw">--</span> zeln er <span class="kw">--</span> zäh <span class="kw">--</span> len.</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  Je <span class="kw">--</span> <span class="kw">\\</span>multiVerseSkips <span class="dt">1</span> des <span class="kw">\\</span>multiVerseSkips <span class="dt">1</span> Blatt zer <span class="kw">--</span> fällt ein <span class="kw">--</span> mal zu Staub</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">\\</span>multiVerseSkips <span class="dt">2</span> und je <span class="kw">--</span> der Baum wird auch wie <span class="kw">--</span> der zu Er <span class="kw">--</span> de.</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  Doch je <span class="kw">--</span> des En <span class="kw">--</span> de ist ein An <span class="kw">--</span> fang</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  und vol <span class="kw">--</span> ler Kreis <span class="kw">--</span> läu <span class="kw">--</span> fe sind Zeit und Raum.</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>  Al <span class="kw">--</span> les ver <span class="kw">--</span> geht, doch nichts geht ver <span class="kw">--</span> lo <span class="kw">--</span> ren,</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>  al <span class="kw">--</span> les ist Wirk <span class="kw">--</span> lich <span class="kw">--</span> keit und al <span class="kw">--</span> les ist Traum.</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>%<span class="co"> Verwendung von alt</span></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>firstVoice = <span class="fu">\relative c'</span> <span class="kw">{</span></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\alt</span> <span class="kw">{}</span> <span class="kw">{</span> <span class="fu">\partial2</span> a<span class="dt">8</span> a d<span class="dt">8</span> f<span class="dt">8</span> <span class="kw">}</span></span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>  a<span class="dt">4.</span> a<span class="dt">8</span> a<span class="dt">4</span></span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>  g<span class="dt">4</span> a g</span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>  e<span class="dt">2.</span></span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\alt</span> <span class="kw">{</span> r<span class="dt">2</span> d<span class="dt">4</span> <span class="kw">}</span> <span class="kw">{</span> r<span class="dt">4</span> r<span class="dt">8</span> d d d <span class="kw">}</span></span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>  e<span class="dt">4.</span> e<span class="dt">8</span> e<span class="dt">4</span></span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>  d<span class="dt">4</span> e d</span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>  c<span class="dt">4</span> a<span class="dt">2</span></span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>%<span class="co"> Einbindung in music/MUSIC</span></span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a><span class="fu">music</span> = <span class="kw">{</span></span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;&lt;</span></span>
+<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a>      <span class="fu">\songChords</span></span>
+<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a>      <span class="kw">\new</span> <span class="dt">ChoirStaff</span> = "<span class="st">firstStaff"</span></span>
+<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;&lt;</span></span>
+<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a>        <span class="kw">\new</span> <span class="dt">Voice</span> = "<span class="st">firstVoice"</span> <span class="kw">{</span> <span class="fu">\melodyVoice</span> <span class="kw">}</span></span>
+<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a>        \addlyrics<span class="kw"> {</span> <span class="fu">\firstVerse</span> <span class="kw">}</span></span>
+<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a>        \addlyrics<span class="kw"> {</span> <span class="fu">\tag</span> #<span class="fl">'multiVerse</span> <span class="fu">\secondVerse</span> <span class="kw">}</span></span>
+<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a>        \addlyrics<span class="kw"> {</span> <span class="fu">\tag</span> #<span class="fl">'multiVerse</span> <span class="fu">\thirdVerse</span> <span class="kw">}</span></span>
+<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a>        \addlyrics<span class="kw"> {</span> <span class="fu">\tag</span> #<span class="fl">'multiVerse</span> <span class="fu">\fourthVerse</span> <span class="kw">}</span></span>
+<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a>        \addlyrics<span class="kw"> {</span> <span class="fu">\tag</span> #<span class="fl">'multiVerse</span> <span class="fu">\fifthVerse</span> <span class="kw">}</span></span>
+<span id="cb8-37"><a href="#cb8-37" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&gt;&gt;</span></span>
+<span id="cb8-38"><a href="#cb8-38" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&gt;&gt;</span></span>
+<span id="cb8-39"><a href="#cb8-39" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span>
+<span id="cb8-40"><a href="#cb8-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-41"><a href="#cb8-41" aria-hidden="true" tabindex="-1"></a>MUSIC = <span class="kw">{</span></span>
+<span id="cb8-42"><a href="#cb8-42" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\keepWithTag</span> #<span class="fl">'multiVerse</span></span>
+<span id="cb8-43"><a href="#cb8-43" aria-hidden="true" tabindex="-1"></a>  %<span class="co">\keepWithTag #'firstVerse</span></span>
+<span id="cb8-44"><a href="#cb8-44" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\music</span></span>
+<span id="cb8-45"><a href="#cb8-45" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div id="fig-wurzeln" class="quarto-layout-panel">
 <figure class="quarto-float quarto-float-fig figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-wurzeln-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -665,87 +703,132 @@ Abbildung&nbsp;2: Das sind die beiden möglichen resultierenden Ansichten.
 <h3 class="anchored" data-anchor-id="innerhalb-einer-variante">Innerhalb einer Variante</h3>
 <p>Beim Regenbogenlied gibt es beispielsweise eine Unterscheidung im Artikel zwischen dem ersten und zweitem Refrain. Die Lösung dafür ist, einfach beides einzubauen und dann das jeweils nicht benötigte auszuschalten. Das hat den Vorteil, dass wir trotzdem dieselbe Textbasis verwenden können.</p>
 <p>Codebeispiel:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>refLyrics = \lyricmode<span class="kw"> {</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\ref</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\repStartWithTag</span> Ü <span class="kw">--</span> ber uns <span class="fu">\tag</span> #<span class="fl">'first</span> <span class="kw">{</span> ein <span class="kw">}</span> <span class="fu">\tag</span> #<span class="fl">'second</span> <span class="kw">{</span> der <span class="kw">}</span> Re <span class="kw">--</span> gen <span class="kw">--</span> bo <span class="kw">--</span> gen,</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  zeigt uns den Weg in sei <span class="kw">--</span> nem Licht,</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  die Wol <span class="kw">--</span> ken sind schon fort <span class="kw">--</span> ge <span class="kw">--</span> zo <span class="kw">--</span> gen,</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  ver <span class="kw">--</span> weh <span class="kw">--</span> ren uns die Son <span class="kw">--</span> ne <span class="fu">\repStopWithTag</span> nicht.</span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>refLyricsFirst = \lyricmode<span class="kw"> {</span> <span class="fu">\removeWithTag</span> #<span class="fl">'second</span> <span class="fu">\refLyrics</span> <span class="kw">}</span></span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>refLyricsSecond = \lyricmode<span class="kw"> {</span> <span class="fu">\removeWithTag</span> #<span class="fl">'first</span> <span class="fu">\refLyrics</span> <span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>refLyrics = \lyricmode<span class="kw"> {</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\ref</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\repStartWithTag</span> Ü <span class="kw">--</span> ber uns <span class="fu">\tag</span> #<span class="fl">'first</span> <span class="kw">{</span> ein <span class="kw">}</span> <span class="fu">\tag</span> #<span class="fl">'second</span> <span class="kw">{</span> der <span class="kw">}</span> Re <span class="kw">--</span> gen <span class="kw">--</span> bo <span class="kw">--</span> gen,</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  zeigt uns den Weg in sei <span class="kw">--</span> nem Licht,</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  die Wol <span class="kw">--</span> ken sind schon fort <span class="kw">--</span> ge <span class="kw">--</span> zo <span class="kw">--</span> gen,</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  ver <span class="kw">--</span> weh <span class="kw">--</span> ren uns die Son <span class="kw">--</span> ne <span class="fu">\repStopWithTag</span> nicht.</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>refLyricsFirst = \lyricmode<span class="kw"> {</span> <span class="fu">\removeWithTag</span> #<span class="fl">'second</span> <span class="fu">\refLyrics</span> <span class="kw">}</span></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>refLyricsSecond = \lyricmode<span class="kw"> {</span> <span class="fu">\removeWithTag</span> #<span class="fl">'first</span> <span class="fu">\refLyrics</span> <span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="verschiedene-varianten" class="level3">
 <h3 class="anchored" data-anchor-id="verschiedene-varianten">Verschiedene Varianten</h3>
 <p>Anders verhält es sich, wenn wir ein Lied haben, bei dem es verschiedene Varianten gibt. Mitunter kann es hilfreich sein, einen kürzeren Befehl zu haben, wenn beide Varianten sich an vielen Stellen unterscheiden. Das kann folgendermaßen gelöst werden:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">variant</span> =</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>#<span class="fl">(define-music-function (parser location a b) (ly:music? ly:music?) </span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fl">  #{</span> <span class="fu">\tag</span> #<span class="fl">'bock</span> <span class="kw">{</span> #<span class="fl">a</span> <span class="kw">}</span> <span class="fu">\tag</span> #<span class="fl">'codex</span> <span class="kw">{</span> #<span class="fl">b</span> <span class="kw">}</span> <span class="fl">#})</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">variant</span> =</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>#<span class="fl">(define-music-function (parser location a b) (ly:music? ly:music?) </span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="fl">  #{</span> <span class="fu">\tag</span> #<span class="fl">'bock</span> <span class="kw">{</span> #<span class="fl">a</span> <span class="kw">}</span> <span class="fu">\tag</span> #<span class="fl">'codex</span> <span class="kw">{</span> #<span class="fl">b</span> <span class="kw">}</span> <span class="fl">#})</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Wenn mehr als zwei Varianten benötigt werden, kann der Befehl problemlos erweitert werden, indem weitere Elemente hinzugefügt werden:</p>
 <p><code>#(define-music-function (parser location a b c d) (ly:music? ly:music? ly:music? ly:music?)  #{ \tag #'bock { #a } \tag #'codex { #b } \tag #'buedel { #c } \tag #'boernel { #d } #})</code>.</p>
 <p>Der Tag-Abruf erfolgt dann zum Beispiel so:</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>firstVerse = \lyricmode<span class="kw"> {</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  #<span class="fl">(stanza </span><span class="dv">1</span><span class="fl">)</span></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  Das ist der ers <span class="kw">--</span> te <span class="fu">\variant</span> <span class="kw">{</span> Vers <span class="kw">}</span> <span class="kw">{</span> Verse <span class="kw">}</span> <span class="kw">{</span> Teil <span class="kw">}</span> <span class="kw">{</span> Ab <span class="kw">--</span> schnitt <span class="kw">}</span>.</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>firstVerse = \lyricmode<span class="kw"> {</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  #<span class="fl">(stanza </span><span class="dv">1</span><span class="fl">)</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  Das ist der ers <span class="kw">--</span> te <span class="fu">\variant</span> <span class="kw">{</span> Vers <span class="kw">}</span> <span class="kw">{</span> Verse <span class="kw">}</span> <span class="kw">{</span> Teil <span class="kw">}</span> <span class="kw">{</span> Ab <span class="kw">--</span> schnitt <span class="kw">}</span>.</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Dabei ist die oben definierte Reihenfolge entscheidend! Der jeweils gewünschte Tag muss dann unbedingt im <code>MUSIC</code>-Teil zugewiesen werden. Dabei sollte im <code>MUSIC</code>-Teil ebenfalls erkennbar sein, wie viele und welche Varianten es überhaupt gibt, zum Beispiel durch auskommentierte Alternativvarianten:</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>MUSIC = <span class="kw">{</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\keepWithTag</span> #<span class="fl">'bock</span></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  %<span class="co">\keepWithTag #'codex</span></span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  %<span class="co">\keepWithTag #'buedel</span></span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>  %<span class="co">\keepWithTag #'boernel</span></span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;&lt;</span></span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>      <span class="fu">\songChords</span></span>
-<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>      <span class="kw">\new</span> <span class="dt">ChoirStaff</span> = "<span class="st">firstStaff"</span></span>
-<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;&lt;</span></span>
-<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>        <span class="kw">\new</span> <span class="dt">Voice</span> = "<span class="st">firstVoice"</span> <span class="kw">{</span> <span class="fu">\melodyVoice</span> <span class="kw">}</span></span>
-<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>        \addlyrics<span class="kw"> {</span> <span class="fu">\firstVerse</span> <span class="kw">}</span></span>
-<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&gt;&gt;</span></span>
-<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&gt;&gt;</span></span>
-<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>MUSIC = <span class="kw">{</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\keepWithTag</span> #<span class="fl">'bock</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  %<span class="co">\keepWithTag #'codex</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>  %<span class="co">\keepWithTag #'buedel</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>  %<span class="co">\keepWithTag #'boernel</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;&lt;</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>      <span class="fu">\songChords</span></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>      <span class="kw">\new</span> <span class="dt">ChoirStaff</span> = "<span class="st">firstStaff"</span></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;&lt;</span></span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>        <span class="kw">\new</span> <span class="dt">Voice</span> = "<span class="st">firstVoice"</span> <span class="kw">{</span> <span class="fu">\melodyVoice</span> <span class="kw">}</span></span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>        \addlyrics<span class="kw"> {</span> <span class="fu">\firstVerse</span> <span class="kw">}</span></span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&gt;&gt;</span></span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&gt;&gt;</span></span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
+</section>
+<section id="sec-strophennummerierung" class="level2">
+<h2 class="anchored" data-anchor-id="sec-strophennummerierung">Strophennummerierung</h2>
+<p>Die Strophennummerierung erfolgt nach folgendem Schema: <code>#(sanza 1)</code> für 1. Strophe, <code>#(stanza 2)</code> für zweite Strophe etc. Das genaue Aussehen kann natürlich global auch angepasst werden.</p>
+</section>
+<section id="sec-refnum" class="level2">
+<h2 class="anchored" data-anchor-id="sec-refnum">Refrainnummerierung</h2>
+<p>Ein einfacher Refrain wird gesetzt durch den Befehl <code>\ref</code>. Gibt es mehrere Refrains kann die Strophe spezifiziert werden, nach der der Refrain gesungen wird: <code>\ref #'(5)</code> für die 5. Strophe oder <code>\ref #'(3 4)</code> für die 3. und 4. Strophe. Wie zu sehen ist, können auch mehrere Strophennummern übergeben werden.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Wichtig
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Bitte beachte unbedingt unsere <a href="./liedsatz_standards.html#sec-refnum-standards">Standards</a> zur Refrainsetzung!</p>
+</div>
+</div>
 </section>
 <section id="swing-style" class="level2">
 <h2 class="anchored" data-anchor-id="swing-style">Swing-Style</h2>
 <p>Den Swing-Style kann man mittels der Funktion <code>\swingMusic</code> erwirken. Das setzt den <em>folgenden</em> musikalischen Ausdruck im Swing-Style. <code>\swingMusic</code> kann beispielsweise in die <code>\melodyVoice</code> gepackt werden (dann geschweifte Klammern nicht vergessen). Die Midi-Ausgabe erfolgt dann sogleich rhythmisch korrekt.</p>
 <p>Der Swing-Style kann mithilfe der Funktion <code>\swingOff</code> wieder ausgestellt werden. Das ist im unteren Beispiel zwar für die Midi-Ausgabe gar nicht nötig, allerdings printed <code>\swingOff</code> auch das entsprechende Zeichen, dass kein Swing-Style mehr gespielt werden soll. Andernfalls wüsste man anhand des Liedblattes nicht, dass der Swing-Style aufhört.</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>melodyVoice = <span class="kw">{</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\global</span></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\swingMusic</span> <span class="kw">{</span> <span class="fu">\firstVoice</span> <span class="fu">\interludeVoice</span> <span class="kw">}</span></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\swingOff</span> <span class="fu">\refVoice</span></span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\bar</span> "<span class="st">|."</span></span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>melodyVoice = <span class="kw">{</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\global</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\swingMusic</span> <span class="kw">{</span> <span class="fu">\firstVoice</span> <span class="fu">\interludeVoice</span> <span class="kw">}</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\swingOff</span> <span class="fu">\refVoice</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\bar</span> "<span class="st">|."</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="sec-kanon" class="level2">
 <h2 class="anchored" data-anchor-id="sec-kanon">Markierungen für beispielsweise Kanoneinsätze</h2>
 <p>Markierungen wie beispielsweise eine römische Ziffer für den Einsatz einer Kanonstimme sollten auf folgendem Wege eingetragen werden (Beispiel für dreistimmigen Kanon):</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">eins</span> = <span class="kw">{</span> <span class="fu">\tag</span> #<span class="fl">'einsaetze</span> <span class="kw">{</span> <span class="fu">\tweak</span> self-alignment-X #<span class="fl">LEFT</span> <span class="fu">\mark</span> <span class="bn">\markup</span> <span class="kw">{</span> <span class="bn">\italic</span> "<span class="st">I."</span> <span class="kw">}</span> <span class="kw">}</span> <span class="kw">}</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">zwei</span> = <span class="kw">{</span> <span class="fu">\tag</span> #<span class="fl">'einsaetze</span> <span class="kw">{</span> <span class="fu">\tweak</span> self-alignment-X #<span class="fl">LEFT</span> <span class="fu">\mark</span> <span class="bn">\markup</span> <span class="kw">{</span> <span class="bn">\italic</span> "<span class="st">II."</span> <span class="kw">}</span> <span class="kw">}</span> <span class="kw">}</span></span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="fu">drei</span> = <span class="kw">{</span> <span class="fu">\tag</span> #<span class="fl">'einsaetze</span> <span class="kw">{</span> <span class="fu">\tweak</span> self-alignment-X #<span class="fl">LEFT</span> <span class="fu">\mark</span> <span class="bn">\markup</span> <span class="kw">{</span> <span class="bn">\italic</span> "<span class="st">III."</span> <span class="kw">}</span> <span class="kw">}</span> <span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">eins</span> = <span class="kw">{</span> <span class="fu">\tag</span> #<span class="fl">'einsaetze</span> <span class="kw">{</span> <span class="fu">\tweak</span> self-alignment-X #<span class="fl">LEFT</span> <span class="fu">\mark</span> <span class="bn">\markup</span> <span class="kw">{</span> <span class="bn">\italic</span> "<span class="st">I."</span> <span class="kw">}</span> <span class="kw">}</span> <span class="kw">}</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="fu">zwei</span> = <span class="kw">{</span> <span class="fu">\tag</span> #<span class="fl">'einsaetze</span> <span class="kw">{</span> <span class="fu">\tweak</span> self-alignment-X #<span class="fl">LEFT</span> <span class="fu">\mark</span> <span class="bn">\markup</span> <span class="kw">{</span> <span class="bn">\italic</span> "<span class="st">II."</span> <span class="kw">}</span> <span class="kw">}</span> <span class="kw">}</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="fu">drei</span> = <span class="kw">{</span> <span class="fu">\tag</span> #<span class="fl">'einsaetze</span> <span class="kw">{</span> <span class="fu">\tweak</span> self-alignment-X #<span class="fl">LEFT</span> <span class="fu">\mark</span> <span class="bn">\markup</span> <span class="kw">{</span> <span class="bn">\italic</span> "<span class="st">III."</span> <span class="kw">}</span> <span class="kw">}</span> <span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Was passiert da und wo gibt es ggf. etwas anzupassen? Der Variablenname kommt als erstes. Dahinter folgt ein Tag, der hier <code>einsaetze</code> heißt, damit die Markierungen unten in den Strophen ausgeschaltet werden können. Anschließend folgen einige Platzierungsbefehle und dann ein <code>\markup</code>-Befehl: <code>\markup { \italic "I." }</code>. In der Regel sollten Markierungen wie diese immer kursiv geschrieben sein. Bei Kanoneinsätzen sollen römische Ziffern genutzt werden. Die Markierungen können aber natürlich auch in der Layout-Datei überschrieben werden.</p>
 </section>
 <section id="optionale-akkorde" class="level2">
 <h2 class="anchored" data-anchor-id="optionale-akkorde">Optionale Akkorde</h2>
 <p>Optionale Akkorde können eingeklammert werden anhand der Funktion <code>\klamm { d4:7 }</code>.</p>
 </section>
+<section id="sec-altchords" class="level2">
+<h2 class="anchored" data-anchor-id="sec-altchords">Alternative Akkorde</h2>
+<p>Alternative Akkorde können mit der Funktion <code>\altChord</code> gesetzt werden. Die Funktion nimmt den nachfolgenden Akkord und behandelt ihn als „normalen“ Akkord (mit Länge, Midi-Ausgabe etc.). Außerdem wird ein zweiter nachfolgender Akkord verlangt, der in Klammern ausgedrückt wird. Dieser Akkord wird allerdings nicht musikalisch beachtet, er kommt weder im Midi vor, noch spielt die Dauer des Akkordes eine Rolle. Ein Beispiel:</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>verseChords = \chordmode<span class="kw"> {</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\altChord</span> b<span class="dt">2</span> g:m c<span class="dt">2</span> f d:m</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Damit unterscheidet sich die Funktion von der Funktion <code>\klamm</code>, da bei dieser ein Akkord einfach nur geklammert wird, während bei <code>\altChord</code> der Akkord zwar auch geklammert wird, musikalisch aber gar keine Rolle spielt.</p>
+<p>Das kann beispielsweise genutzt werden, um einen Text, der wiederholt wird mit unterschiedlichen Akkorden, in der Strophe oder in den Noten nicht doppelt schreiben zu müssen. Zum Beispiel beim Lied „Der Tramper“. Code:</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>verseChords = \chordmode<span class="kw"> {</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  %<span class="co">…</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\repeat volta 2</span> <span class="kw">{</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\altChord</span> b<span class="dt">2</span> g<span class="dt">2</span>:m c<span class="dt">2</span> f d:m</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>    b a:7</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\alternative</span> <span class="kw">{</span></span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\tag</span> #<span class="fl">'repeat</span> <span class="kw">{</span> d:m d:7 <span class="kw">}</span></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">{</span> d<span class="dt">2</span>:m <span class="ch">~</span> <span class="fu">\tag</span> #<span class="fl">'repeat</span> <span class="kw">{</span> d<span class="dt">4.</span>:m <span class="kw">}</span> <span class="fu">\tag</span> #<span class="fl">'klamm</span> <span class="kw">{</span> <span class="fu">\klamm</span> d<span class="dt">4.</span>:7 <span class="kw">}</span> <span class="kw">}</span></span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
 <section id="benutzerdefinierte-akkordnamen" class="level2">
 <h2 class="anchored" data-anchor-id="benutzerdefinierte-akkordnamen">Benutzerdefinierte Akkordnamen</h2>
 <p>Akkordzeichen können unter Umständen deutlich komplizierter sein als beispielsweise <code>a:7</code>. Die in den meisten Fällen verwendete Schreibweise für Akkorde wie <code>a a:m a:7 a:sus4</code> etc. ist nur eine Kurzschreibform. Grundsätzlich ist jeder denkbare Akkord in LilyPond abbildbar, sofern man weiß, wie man ihn abbilden möchte. Die dafür erforderlichen Informationen finden sich in der <a href="https://lilypond.org/doc/v2.23/Documentation/notation/displaying-chords.de.html#customizing-chord-names">LilyPond-Doku</a>.</p>
 <p>In der Datei <code>lilypond-custom-includes/custom_style_overrides.ly</code> können die Akkorde dann benutzerdefiniert und global angepasst werden, zum Beispiel:</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>customChordPrintings = <span class="kw">{</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span>h dis' fis' e''&gt;-<span class="bn">\markup</span> <span class="kw">{</span> <span class="bn">\small</span> "<span class="st">add11"</span> <span class="kw">}</span></span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span>a cis' gis' h'&gt;-<span class="bn">\markup</span> <span class="kw">{</span> <span class="bn">\small</span> "<span class="st">maj9"</span> <span class="kw">}</span></span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>customChordPrintings = <span class="kw">{</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span>h dis' fis' e''&gt;-<span class="bn">\markup</span> <span class="kw">{</span> <span class="bn">\small</span> "<span class="st">add11"</span> <span class="kw">}</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span>a cis' gis' h'&gt;-<span class="bn">\markup</span> <span class="kw">{</span> <span class="bn">\small</span> "<span class="st">maj9"</span> <span class="kw">}</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Der obige Code macht aus der Eingabe <code>h:1.3.5.11</code> ein Hadd11. Hilfreich können gegebenenfalls die Markup-Befehle <code>\small</code>&nbsp;für eine kleinere Schrift und <code>\super</code> für Hochstellung sein.</p>
 </section>
 <section id="akkordtabulatur" class="level2">
 <h2 class="anchored" data-anchor-id="akkordtabulatur">Akkordtabulatur</h2>
 <p>Für manche speziellen Akkorde ist es nützlich für Gitarrenspieler*innen, eine Tabulatur des Akkords direkt auf der Seite des Liedes zu haben. Das geht so:</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>TEXT = <span class="fu">\markuplist</span> <span class="kw">{</span></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\fret</span>-chord #<span class="fl">"</span><span class="st">x;x;o;2;3;2;"</span> #<span class="fl">"</span><span class="st">d"</span></span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>TEXT = <span class="fu">\markuplist</span> <span class="kw">{</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\fret</span>-chord #<span class="fl">"</span><span class="st">x;x;o;2;3;2;"</span> #<span class="fl">"</span><span class="st">d"</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Im ersten String bekommt jede Gitarrensaite eine Zuweisung (<code>x</code> für nicht gespielt, <code>o</code> für leer oder Zahl für den Bund), gefolgt von einem Semikolon. Im zweiten String wird die LilyPond-Akkordbezeichnung gefordert. Bei komplizierteren Akkorden hat man dann vermutlich eher etwas wie <code>h:1.3.5.11</code> (für Hadd11) stehen als <code>d</code> (für D-Dur).</p>
+</section>
+<section id="akkordabstände" class="level2">
+<h2 class="anchored" data-anchor-id="akkordabstände">Akkordabstände</h2>
+<p>Siehe <a href="./liedlayout_doku.html#sec-abstand-akkorde">Layout-Doku</a>.</p>
 </section>
 <section id="römische-ziffern" class="level2">
 <h2 class="anchored" data-anchor-id="römische-ziffern">Römische Ziffern</h2>
@@ -754,6 +837,22 @@ Abbildung&nbsp;2: Das sind die beiden möglichen resultierenden Ansichten.
 <section id="balkensetzung" class="level2">
 <h2 class="anchored" data-anchor-id="balkensetzung">Balkensetzung</h2>
 <p>Bei der Balkensetzung sind unbedingt <a href="./liedsatz_standards.html">unsere Standards</a> zu beachten. Wie man in LilyPond die Balkensetzung beeinflusst, steht in der <a href="https://lilypond.org/doc/v2.25/Documentation/notation/setting-automatic-beam-behavior">LilyPond-Doku</a>.</p>
+</section>
+<section id="sec-textpausen" class="level2">
+<h2 class="anchored" data-anchor-id="sec-textpausen">Textpausen</h2>
+<p>In bestimmten Fällen kann es gewünscht sein, dass eine In-Text-Pause gesetzt werden soll, also eine musikalische Pause im Text. Das geht mit dem Befehl <code>\textRest</code>. Die Pause nimmt ein Zeichen ein und sollte immer getaggt werden, damit sie im Zweifel auch ausgeschaltet werden kann. Beispiel:</p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>firstVerse = \lyricmode<span class="kw"> {</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>  Das ist ein <span class="fu">\tag</span> #<span class="fl">'textrest</span> <span class="kw">{</span> <span class="fu">\textRest</span> <span class="kw">}</span> <span class="fu">\tag</span> #<span class="fl">'skip</span> Bei <span class="kw">--</span> spiel</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Mit einem <code>\removeWithTag</code> kann die Textpause dann entfernt werden und mit <code>\pushToTag</code> kann an die Stelle vor dem nächsten Wort, die im obigen Beispiel mit dem Tag <code>skip</code> markiert wurde, ein <code>\skip4</code>-Befehl eingefügt werden:</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>TEXT = <span class="fu">\markuplist</span> <span class="kw">{</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\group</span>-verses <span class="kw">{</span></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\chordlyrics</span> <span class="kw">{</span> <span class="fu">\pushToTag</span> #<span class="fl">'skip</span> <span class="kw">{</span> <span class="fu">\skip</span><span class="dt">4</span> <span class="kw">}</span> <span class="fu">\removeWithTag</span> #<span class="fl">'textrest</span> <span class="fu">\firstVerse</span> <span class="kw">}</span></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section"></h2>
 
 
 </section>

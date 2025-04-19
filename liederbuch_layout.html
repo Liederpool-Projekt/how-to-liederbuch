@@ -64,7 +64,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./quellenlinks.html" rel="next">
+<link href="./quellen.html" rel="next">
 <link href="./liedlayout_doku.html" rel="prev">
 <link href="./images/logo_buebuebue.svg" rel="icon" type="image/svg+xml">
 <script src="site_libs/quarto-html/quarto.js"></script>
@@ -171,8 +171,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         </a>
     </div>
   </nav>
-  <div id="quarto-announcement" data-announcement-id="5a4b76cd891759815febbf4bdafd974e" class="alert alert-success hidden"><i class="bi bi-check-square-fill quarto-announcement-icon"></i><div class="quarto-announcement-content">
-<p>Die Probleme unter Windows 10/11 sind nun behoben. Allerdings ist es nun erforderlich, ebenfalls „PyYAML“ zu installieren. In Kürze wird es dazu Anleitungen geben.</p>
+  <div id="quarto-announcement" data-announcement-id="5a9023b00438b8f739094ca72edfd8fe" class="alert alert-info hidden"><i class="bi bi-info-circle-fill quarto-announcement-icon"></i><div class="quarto-announcement-content">
+<p>Wir haben die Dokumentation aktualisiert. Alles neue erfährst du im Changelog.</p>
 </div></div>
 </header>
 <!-- content -->
@@ -227,6 +227,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <div class="sidebar-item-container"> 
   <a href="./liederbuch_layout.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Liederbuch-Layout</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./quellen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Quellen</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -286,12 +292,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#einstellungen-überschreiben" id="toc-einstellungen-überschreiben" class="nav-link active" data-scroll-target="#einstellungen-überschreiben">Einstellungen überschreiben</a></li>
   <li><a href="#generelle-layout-einstellungen" id="toc-generelle-layout-einstellungen" class="nav-link" data-scroll-target="#generelle-layout-einstellungen">Generelle Layout-Einstellungen</a></li>
-  <li><a href="#anpassung-der-akkordsymbole" id="toc-anpassung-der-akkordsymbole" class="nav-link" data-scroll-target="#anpassung-der-akkordsymbole">Anpassung der Akkordsymbole</a></li>
+  <li><a href="#sec-akkordsymbole-anpassen" id="toc-sec-akkordsymbole-anpassen" class="nav-link" data-scroll-target="#sec-akkordsymbole-anpassen">Anpassung der Akkordsymbole</a></li>
   <li><a href="#kategorien" id="toc-kategorien" class="nav-link" data-scroll-target="#kategorien">Kategorien</a>
   <ul class="collapse">
   <li><a href="#kategorien-erstellen" id="toc-kategorien-erstellen" class="nav-link" data-scroll-target="#kategorien-erstellen">Kategorien erstellen</a></li>
   <li><a href="#liedern-kategorien-zuweisen" id="toc-liedern-kategorien-zuweisen" class="nav-link" data-scroll-target="#liedern-kategorien-zuweisen">Liedern Kategorien zuweisen</a></li>
   </ul></li>
+  <li><a href="#sec-seitennummerierung" id="toc-sec-seitennummerierung" class="nav-link" data-scroll-target="#sec-seitennummerierung">Seitennummerierung beeinflussen</a></li>
+  <li><a href="#sec-seitennummerierungausblenden" id="toc-sec-seitennummerierungausblenden" class="nav-link" data-scroll-target="#sec-seitennummerierungausblenden">Seitennummerierung ausblenden</a></li>
   </ul>
 </nav>
     </div>
@@ -389,9 +397,9 @@ Hinweis
 <span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>repStart = "<span class="st">𝄆"</span></span>
 <span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>repStop = "<span class="st">𝄇"</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="anpassung-der-akkordsymbole" class="level2">
-<h2 class="anchored" data-anchor-id="anpassung-der-akkordsymbole">Anpassung der Akkordsymbole</h2>
-<p>Auch die bestimmte Darstellung, spezieller Akkordsymbole kann in den <code>custom_style_overrides.ly</code> angepasst werden.</p>
+<section id="sec-akkordsymbole-anpassen" class="level2">
+<h2 class="anchored" data-anchor-id="sec-akkordsymbole-anpassen">Anpassung der Akkordsymbole</h2>
+<p>Auch die bestimmte Darstellung, spezieller Akkordsymbole kann in den <code>custom_style_overrides.ly</code> angepasst werden. Siehe dazu mehr in der <a href="https://lilypond.org/doc/v2.24/Documentation/notation/displaying-chords.de.html#customizing-chord-names">LilyPond-Doku</a>.</p>
 </section>
 <section id="kategorien" class="level2">
 <h2 class="anchored" data-anchor-id="kategorien">Kategorien</h2>
@@ -422,9 +430,47 @@ Hinweis
 <span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
 <span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Das Lied würde also den Kategorien mit den IDs <code>see</code>, <code>abend</code> und <code>andacht</code> zugewiesen werden.</p>
-
-
 </section>
+</section>
+<section id="sec-seitennummerierung" class="level2">
+<h2 class="anchored" data-anchor-id="sec-seitennummerierung">Seitennummerierung beeinflussen</h2>
+<p>Die Seitennummerierung bei Liederbüchern folgt der grundsätzlichen Logik, dass gerade Seiten immer links sind und ungerade Seiten immer rechts. Die erste Seite ist grundsätzlich immer die Seite 0. Das führt unter Umständen zu folgendem Problem:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Links</th>
+<th>Rechts</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0 (Deckblatt)</td>
+<td>1 (Leerseite Einband, eigentlich links)</td>
+</tr>
+<tr class="even">
+<td>2 (erstes Lied, eigentlich rechts)</td>
+<td>3 …</td>
+</tr>
+</tbody>
+</table>
+<p>Wie zu sehen, sollte das Deckblatt in diesem Fall (der vermutlich der Regelfall ist) eigentlich die Seite 1 haben. Die Lösung ist, dass im Paper-Block der Book-Umgebung in der Liederbuchdatei die Ziffer der ersten Seite definiert wird (diese folgt dann nach wie vor der oben genannten Logik):</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">\book</span> <span class="kw">{</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  \paper<span class="kw"> {</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">first-page-number</span> = #<span class="dv">1</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  %<span class="co">…</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="sec-seitennummerierungausblenden" class="level2">
+<h2 class="anchored" data-anchor-id="sec-seitennummerierungausblenden">Seitennummerierung ausblenden</h2>
+<p>Soll die Seitennummerierung ausgeblendet werden, kann dafür folgender Befehl in der Bookpart-Umgebung verwendet werden:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">\bookpart</span> <span class="kw">{</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  \paper<span class="kw"> {</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">print-page-number</span> = #<span class="dv">#f</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+
 </section>
 
 
@@ -1006,8 +1052,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./quellenlinks.html" class="pagination-link" aria-label="Einbinden von Links als Quelle">
-        <span class="nav-page-text">Einbinden von Links als Quelle</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./quellen.html" class="pagination-link" aria-label="Quellen">
+        <span class="nav-page-text">Quellen</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

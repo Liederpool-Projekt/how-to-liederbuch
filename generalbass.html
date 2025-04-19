@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>How To Liederbuch – Das Liederpool-Projekt</title>
+<title>Akkordnotation mit Generalbass – ein Leitfaden – How To Liederbuch – Das Liederpool-Projekt</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -71,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta property="og:title" content="How To Liederbuch – Das Liederpool-Projekt">
+<meta property="og:title" content="Akkordnotation mit Generalbass – ein Leitfaden – How To Liederbuch – Das Liederpool-Projekt">
 <meta property="og:description" content="Wir sind das Liederpool-Projekt und wir machen Liederbücher. Auf dieser Website wollen wir eine möglichst vollständige Dokumentation unseres Systems sowie Tutorials und How-To’s bereitstellen, um den Einstieg und die Arbeit mit unserem System zu erleichtern.">
 <meta property="og:site_name" content="How-To Liederbuch – Das Liederpool-Projekt">
 <meta property="og:locale" content="de_DE">
@@ -98,7 +98,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Moin</span></a>
   </li>  
   <li class="nav-item">
@@ -133,81 +133,35 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Auf dieser Seite</h2>
-   
-  <ul>
-  <li><a href="#moin." id="toc-moin." class="nav-link active" data-scroll-target="#moin.">Moin.</a>
-  <ul class="collapse">
-  <li><a href="#was-können-wir-dir-bieten" id="toc-was-können-wir-dir-bieten" class="nav-link" data-scroll-target="#was-können-wir-dir-bieten">Was können wir dir bieten?</a></li>
-  <li><a href="#wer-wir-sind" id="toc-wer-wir-sind" class="nav-link" data-scroll-target="#wer-wir-sind">Wer „wir“ sind</a></li>
-  <li><a href="#kleiner-überblick-darüber-was-du-auf-dieser-website-alles-findest" id="toc-kleiner-überblick-darüber-was-du-auf-dieser-website-alles-findest" class="nav-link" data-scroll-target="#kleiner-überblick-darüber-was-du-auf-dieser-website-alles-findest">Kleiner Überblick darüber, was du auf dieser Website alles findest</a></li>
-  </ul></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Akkordnotation mit Generalbass – ein Leitfaden</h1>
+</div>
 
 
 
-<section id="moin." class="level1 unnumbered">
-<h1 class="unnumbered">Moin.</h1>
-<p>Schön, dass du hergefunden hast! In diesem Leitfaden zeigen wir dir, wie du mit <a href="https://lilypond.org/">LilyPond</a> und <a href="https://git-scm.com/">Git</a> Liederbücher anhand unserer Vorlagen und Skripte erstellen kannst. Wir versuchen dich dabei bestmöglich an die Hand zu nehmen, um die Hürden, die es dabei gibt, möglichst niedrig zu halten. Zu diesem Zwecke gibt es diesen Leitfaden, aber auch eine Gruppe auf Signal, in der sich alle Personen befinden, die mit unserem System Liederbücher machen.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Hinweis
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Mit unserem System arbeiten beispielsweise das <a href="https://boernel.sachsen.pfadfinden.de/">Börnel</a>- und das <a href="https://bockbuecher.de/liederbock">Liederbock</a>-Team.</p>
-</div>
-</div>
-<section id="was-können-wir-dir-bieten" class="level2">
-<h2 class="anchored" data-anchor-id="was-können-wir-dir-bieten">Was können wir dir bieten?</h2>
-<p>Eine kleine Übersicht über Vorteile, die unser System mit sich bringt. Wenn dir davon nicht alles was sagt, ist das gar nicht schlimm.</p>
-<ul>
-<li><p>Du kannst Liederbücher mit Noten und ohne Noten erstellen. Du kannst außerdem entscheiden, ob du Akkorde über den Strophen haben möchtest oder nicht.</p></li>
-<li><p>Du benötigst dafür keine kostenpflichtigen Programme. Alle Programme, die wir nutzen, sind Free and Open Source Software.</p></li>
-<li><p>Du kannst davon profitieren, dass wir in unserem Liederpool schon etliche Lieder gesetzt haben.</p></li>
-<li><p>Durch unsere Struktur profitierst du von Fehlerkorrekturen anderer Liederbuchprojekte.</p></li>
-<li><p>LilyPond ist ein codebasiertes Notensatzprogramm, das bedeutet, man kann sehr gut ein Versionierungs- und Nachverfolgungssystem mit Git nutzen.</p></li>
-</ul>
-</section>
-<section id="wer-wir-sind" class="level2">
-<h2 class="anchored" data-anchor-id="wer-wir-sind">Wer „wir“ sind</h2>
-<p>Wir sind ein Zusammenschluss an verschiedenen Liederbuchprojekten, die alle LilyPond nutzen. Irgendwann kamen wir an den Punkt, dass es cool wäre, wenn man mehr Synergien untereinander hätte. Daraufhin haben wir das Konzept unseres Liederpools entwickelt, in dem sich nur der musikalische Inhalt eines Liedes befindet, den man dann in seinem Liederbuchprojekt spezifisch layouten kann. Das hat zwei riesige Vorteile: Einerseits kann man von dem profitieren, was andere schon gesetzt haben, und andererseits kann man von den Fehlerkorrekturen anderer profitieren.</p>
-</section>
-<section id="kleiner-überblick-darüber-was-du-auf-dieser-website-alles-findest" class="level2">
-<h2 class="anchored" data-anchor-id="kleiner-überblick-darüber-was-du-auf-dieser-website-alles-findest">Kleiner Überblick darüber, was du auf dieser Website alles findest</h2>
-<p>Diese Website besteht aus grob zwei Teilen:</p>
-<ul>
-<li><p>Einem How-To-Liederbuch, das dir bei der Einrichtung von LilyPond, Frescobaldi und Git hilft. Außerdem wird darin erklärt, wie du dein erstes Lied setzt, wie du es in unseren Pool einbringen kannst und natürlich, wie du ein eigenes Liederbuch anfertigst.</p></li>
-<li><p>Einer möglichst vollständigen Dokumentation unseres Systems, einschließlich der selbstgeschriebenen Skripte. Das umfasst:</p>
-<ul>
-<li><p>Standards für den Liedersatz</p></li>
-<li><p>Doku von Metadaten-Angaben</p></li>
-<li><p>Doku von musikalischem Inhalt</p></li>
-<li><p>Doku vom Lied-Layouten</p></li>
-<li><p>Doku vom Liederbuch-Layouten</p></li>
-<li><p>Wie Links als Quelle in die Metadaten eingebunden werden sollen</p></li>
-<li><p>Nützliche Lifehacks</p></li>
-<li><p>Eine ausführlichere Einführung in Git</p></li>
-<li><p>Doku unseres Review-Prozesses</p></li>
-<li><p>Einführung in Markdown (in Markdown bzw. Quarto ist diese Website geschrieben)</p></li>
-</ul></li>
-</ul>
-<p>So, jetzt genug der langen Vorrede. Los geht’s!</p>
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
 
 
-</section>
-</section>
+</header>
+
+
+<p>In manchen Liederbüchern (vor allem von olka) wird für die Akkordnotation die Generalbassnotation verwendet. Diese stammt aus der Barockmusik und ist heutzutage alles andere als intuitiv. Wir wollen keine Generalbassnotation notieren, sondern stattdessen moderne Akkordsymbole wie sie geläufig sind. Deswegen gibt es hier eine Erklärung, wie die Generalbassnotation in heutige Akkordsymbole umgewandelt werden kann.</p>
+<p>…bald!</p>
+
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -220,334 +220,624 @@
     ]
   },
   {
-    "objectID": "liedlayout.html",
-    "href": "liedlayout.html",
-    "title": "Liedlayout",
+    "objectID": "quellen.html",
+    "href": "quellen.html",
+    "title": "Quellen",
     "section": "",
-    "text": "Jetzt hast du das Lied gesetzt und in den Liederpool eingebracht. Wie toll! Das ist der wichtigste Schritt, weil er der grundlegendste ist. Alle, die Zugriff auf den Liederpool haben, können das Lied jetzt auch verwenden.\nDer nächste Schritt ist, das Lied für dein spezifisches Liederbuch zu layouten. Ich kann dich schonmal beruhigen: Das geht viel leichter als das Setzen in den Liederpool, sogar richtig schnell. Und das ist auch der große Vorteil von unserem System. Die Lieder, die schon im Pool sind, machen deutlich weniger Arbeit – du profitierst also sehr von der Arbeit anderer. Aber genug der langen Vorrede. Los geht’s!",
+    "text": "Uns ist eine Dokumentation der Originalfassung eines Liedes wichtig. Nicht, weil wir meinen, dass das die einzig richtige Version wäre, sondern um die Möglichkeit zu geben, auch die Originale sich anzuschauen und in Liederbüchern zu verwenden. Dafür betreiben wir Quellenrecherche in alten und neuen Liederbüchern. Es ist nicht immer einfach zu sagen, ob ein Liederbuch eine eher verlässliche Quelle ist. Als Einschätzungshilfe, insbesondere für „Originalquellen“ sammeln wir hier relevante Informationen über aus unserer Sicht gut verwendbare bzw. sehr gebräuchliche Liederbücher.",
     "crumbs": [
-      "Einführung",
-      "Lieder setzen",
-      "Liedlayout"
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Quellen"
     ]
   },
   {
-    "objectID": "liedlayout.html#layout-datei-erstellen",
-    "href": "liedlayout.html#layout-datei-erstellen",
-    "title": "Liedlayout",
-    "section": "Layout-Datei erstellen",
-    "text": "Layout-Datei erstellen\n\\version \"2.25.8\"\n\n\\include \"../../lilypond-custom-includes/base_config.ly\"\n\\include \"../../lilypond-song-includes/liedbausteine/\"\n\nHEADER = \\bookpart {\n  \\header {\n    \\basicSongInfo\n    %infotext = \"\"\n    categories = \"\"\n  }\n}\n\n\\include \"../../lilypond-common-includes/standalone_output.ly\"\nWenn du ein Repository mithilfe unseres Vorlagenrepos erstellt hast, findest du im Ordner lieder einen Ordner 00_vorlage_light. In diesem Ordner öffnest du die Datei vorlage_light.ly. Als erstes solltest du die Datei neu abspeichern. Dazu drücke einfach Strg + Umschalt + S oder alternativ im Menü Datei -&gt; Save -&gt; Speichern unter. Gehe dann in den Ordner lieder deines Repositories und lege einen neuen Ordner an. Benenne ihn am besten nach demselben Schema wie im Liederpool, in unserem Falle also ueber_meiner_heimat_fruehling. Gehe in den Ordner und speichere die Datei unter demselben Namen dort ab. Fertig.",
+    "objectID": "quellen.html#der-turm-a-b-der-schräge-turm",
+    "href": "quellen.html#der-turm-a-b-der-schräge-turm",
+    "title": "Quellen",
+    "section": "Der Turm A / B / Der schräge Turm",
+    "text": "Der Turm A / B / Der schräge Turm\nDer Turm ist eigentlich eine Liederbuchreihe, die von helm im Voggenreiter-Verlag herausgegeben wurde. Die Versionen von Liedern unterscheiden sich öfter vom Original, sind aber oft auch sehr verbreitet. Der Turm ist sehr prägend für das jugendbewegte Liedgut gewesen.",
     "crumbs": [
-      "Einführung",
-      "Lieder setzen",
-      "Liedlayout"
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Quellen"
     ]
   },
   {
-    "objectID": "liedlayout.html#auf-die-inhaltsdatei-referenzieren",
-    "href": "liedlayout.html#auf-die-inhaltsdatei-referenzieren",
-    "title": "Liedlayout",
-    "section": "Auf die Inhaltsdatei referenzieren",
-    "text": "Auf die Inhaltsdatei referenzieren\nNun ist der erste Schritt, auf die Inhaltsdatei zu referenzieren, die wir eben im Liederpool erstellt haben. Dazu vervollständigst du den Pfad: \\include \"../../lilypond-song-includes/liedbausteine/\". Tippe dazu einfach nur den Beginn des Dateinamen (also des Liedtitels nach dem bekannten Schema) ein. Unter den dann erscheinenden Optionen kannst du dir bereits das passende Lied auswählen.",
+    "objectID": "quellen.html#die-silberspringe",
+    "href": "quellen.html#die-silberspringe",
+    "title": "Quellen",
+    "section": "Die Silberspringe",
+    "text": "Die Silberspringe\n…sind zwar immer eine Originalquelle für Lieder aus dem Zugvogel, allerdings lassen die Qualität der Notensätze zu wünschen übrig. Einerseits werden die Lieder vom ZV und den Autor*innen teilweise selbst anders gesungen, andererseits gibt es auch hin und wieder Notationsfehler oder Vereinfachungen, die wir grundsätzlich natürlich nicht übernehmen wollen.",
     "crumbs": [
-      "Einführung",
-      "Lieder setzen",
-      "Liedlayout"
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Quellen"
     ]
   },
   {
-    "objectID": "liedlayout.html#layouten",
-    "href": "liedlayout.html#layouten",
-    "title": "Liedlayout",
-    "section": "Layouten",
-    "text": "Layouten\nJetzt geht’s ans Layout. Dazu kopierst du dir alles ab dem MUSIC-Teil aus der Inhaltsdatei in die Layoutdatei rüber. Das sieht bei uns dann am Ende so aus:\n\\version \"2.25.8\"\n\n\\include \"../../lilypond-custom-includes/base_config.ly\"\n\\include \"../../lilypond-song-includes/liedbausteine/\"\n\nHEADER = \\bookpart {\n  \\header {\n    \\basicSongInfo\n    %infotext = \"\"\n    categories = \"\"\n  }\n}\n\nMUSIC = {\n  &lt;&lt;\n      \\songChords\n      \\new ChoirStaff = \"firstStaff\"\n      &lt;&lt;        \n        \\new Voice = \"firstVoice\" { \\melodyVoice }\n        \\addlyrics { \\firstVerse }\n        \\addlyrics { \\secondVerse }\n        \\addlyrics { \\thirdVerse }\n        \\addlyrics { \\fourthVerse }\n      &gt;&gt;\n  &gt;&gt;\n}\n\nverse-breaks = {\n  s1 s \\break\n  s s \\break\n  s s \\break\n  s s \\break\n}\n\nTEXT = \\markuplist {\n  \\override #`(verse-break-voice . ,verse-breaks)\n  \\group-verses {\n    \\chordlyrics \\firstVerse\n    \\chordlyrics \\secondVerse\n    \\chordlyrics \\thirdVerse\n    \\chordlyrics \\fourthVerse\n  }\n}\n\n\\include \"../../lilypond-common-includes/standalone_output.ly\"\nJetzt kannst du schon einmal kompilieren und schauen, wie es aussieht. Der letzte Schritt ist nun der Feinschliff. Du kannst dich nun entscheiden: Möchtest du den Text direkt unter den Noten oder als Strophen mit Akkorden unterm gesamten Notensatz. Alles, was du nicht willst, kommentierst du einfach aus. Wenn du also nur die erste Strophe unter den Noten haben möchtest und den Rest unter dem Satz, sähe das so aus:\n\\version \"2.25.8\"\n\n\\include \"../../lilypond-custom-includes/base_config.ly\"\n\\include \"../../lilypond-song-includes/liedbausteine/\"\n\nHEADER = \\bookpart {\n  \\header {\n    \\basicSongInfo\n    %infotext = \"\"\n    categories = \"\"\n  }\n}\n\nMUSIC = {\n  &lt;&lt;\n      \\songChords\n      \\new ChoirStaff = \"firstStaff\"\n      &lt;&lt;        \n        \\new Voice = \"firstVoice\" { \\melodyVoice }\n        \\addlyrics { \\firstVerse }\n        %\\addlyrics { \\secondVerse }\n        %\\addlyrics { \\thirdVerse }\n        %\\addlyrics { \\fourthVerse }\n      &gt;&gt;\n  &gt;&gt;\n}\n\nverse-breaks = {\n  s1 s \\break\n  s s \\break\n  s s \\break\n  s s \\break\n}\n\nTEXT = \\markuplist {\n  \\override #`(verse-break-voice . ,verse-breaks)\n  \\group-verses {\n    %\\chordlyrics \\firstVerse\n    \\chordlyrics \\secondVerse\n    \\chordlyrics \\thirdVerse\n    \\chordlyrics \\fourthVerse\n  }\n}\n\n\\include \"../../lilypond-common-includes/standalone_output.ly\"\nJetzt kannst du kompilieren und schauen, ob es dir schon gefällt. Wenn du wölltest, könntest du auch noch die verse-breaks nach Belieben anpassen. Wie das geht, weißt du ja schon.\nUnd fertig ist dein erstes Liederbuch-Lied!",
+    "objectID": "quellen.html#der-liedertrödler",
+    "href": "quellen.html#der-liedertrödler",
+    "title": "Quellen",
+    "section": "Der Liedertrödler",
+    "text": "Der Liedertrödler\n…ist das zweite olka-Liederbuch aus dem Verlag der Jugendbewegung und ist somit Originalquelle. Die Akkordnotation ist etwas speziell mit Generalbass. Bitte beachtet unsere Seite dazu!",
     "crumbs": [
-      "Einführung",
-      "Lieder setzen",
-      "Liedlayout"
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Quellen"
     ]
   },
   {
-    "objectID": "liedsatz_standards.html",
-    "href": "liedsatz_standards.html",
-    "title": "Standards beim Liedersetzen",
+    "objectID": "quellen.html#olkas-lieder",
+    "href": "quellen.html#olkas-lieder",
+    "title": "Quellen",
+    "section": "olkas Lieder",
+    "text": "olkas Lieder\n…ist das erste olka-Liederbuch aus dem Verlag der Jugendbewegung und ist somit Originalquelle. Die Akkordnotation ist etwas speziell mit Generalbass. Bitte beachtet unsere Seite dazu!",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Quellen"
+    ]
+  },
+  {
+    "objectID": "quellen.html#querfeldein-ein--und-zweistimmige-fahrtenlieder-mit-gitarre-ad-lib.",
+    "href": "quellen.html#querfeldein-ein--und-zweistimmige-fahrtenlieder-mit-gitarre-ad-lib.",
+    "title": "Quellen",
+    "section": "Querfeldein – Ein- und Zweistimmige Fahrtenlieder mit Gitarre ad lib.",
+    "text": "Querfeldein – Ein- und Zweistimmige Fahrtenlieder mit Gitarre ad lib.\n…wurde von alf (Alfred Zschiesche) höchstselbst herausgegeben und gilt somit für Lieder von alf als Originalquelle.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Quellen"
+    ]
+  },
+  {
+    "objectID": "quellen.html#klingende-fahrt-ein-liederbuch-für-gesang-und-gitarre",
+    "href": "quellen.html#klingende-fahrt-ein-liederbuch-für-gesang-und-gitarre",
+    "title": "Quellen",
+    "section": "Klingende Fahrt – Ein Liederbuch für Gesang und Gitarre",
+    "text": "Klingende Fahrt – Ein Liederbuch für Gesang und Gitarre\n…wurde von alf (Alfred Zschiesche) höchstselbst herausgegeben (1960) und gilt somit für Lieder von alf als Originalquelle.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Quellen"
+    ]
+  },
+  {
+    "objectID": "quellen.html#das-klampfenlied-ein-fahrtenliederbuch-für-gesang-und-gitarre",
+    "href": "quellen.html#das-klampfenlied-ein-fahrtenliederbuch-für-gesang-und-gitarre",
+    "title": "Quellen",
+    "section": "Das Klampfenlied – Ein Fahrtenliederbuch für Gesang und Gitarre",
+    "text": "Das Klampfenlied – Ein Fahrtenliederbuch für Gesang und Gitarre\n…wurde von alf (Alfred Zschiesche) höchstselbst herausgegeben (1958) und gilt somit für Lieder von alf als Originalquelle.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Quellen"
+    ]
+  },
+  {
+    "objectID": "quellen.html#sing-mir-morena-lieder-zur-gitarre-aus-spanien-südfrankreich-litauen-dalmatien",
+    "href": "quellen.html#sing-mir-morena-lieder-zur-gitarre-aus-spanien-südfrankreich-litauen-dalmatien",
+    "title": "Quellen",
+    "section": "Sing mir, Morena – Lieder zur Gitarre aus Spanien, Südfrankreich, Litauen, Dalmatien",
+    "text": "Sing mir, Morena – Lieder zur Gitarre aus Spanien, Südfrankreich, Litauen, Dalmatien\n…wurde von alf (Alfred Zschiesche) höchstselbst herausgegeben (1964) und gilt somit für Lieder von alf als Originalquelle.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Quellen"
+    ]
+  },
+  {
+    "objectID": "quellen.html#lieder-der-eisbrechermannschaft",
+    "href": "quellen.html#lieder-der-eisbrechermannschaft",
+    "title": "Quellen",
+    "section": "Lieder der Eisbrechermannschaft",
+    "text": "Lieder der Eisbrechermannschaft\n…wurde 1933 von tusk (Eberhard Koebel) herausgegeben und dient für einige Lieder als Originalquelle, die aus der dj.1.11 stammen.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Quellen"
+    ]
+  },
+  {
+    "objectID": "quellen.html#tejos-lieder",
+    "href": "quellen.html#tejos-lieder",
+    "title": "Quellen",
+    "section": "tejos Lieder",
+    "text": "tejos Lieder\n…erschienen im Verlag der Jugendbewegung. Gilt als Originalquelle.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Quellen"
+    ]
+  },
+  {
+    "objectID": "quellen.html#unterm-nordstern.-lieder-von-turi",
+    "href": "quellen.html#unterm-nordstern.-lieder-von-turi",
+    "title": "Quellen",
+    "section": "Unterm Nordstern. Lieder von turi",
+    "text": "Unterm Nordstern. Lieder von turi\n…erschienen im Verlag der Jugendbewegung. Gilt als Originalquelle.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Quellen"
+    ]
+  },
+  {
+    "objectID": "quellen.html#carmina-nerothana-werner-helwig",
+    "href": "quellen.html#carmina-nerothana-werner-helwig",
+    "title": "Quellen",
+    "section": "Carmina Nerothana (Werner Helwig)",
+    "text": "Carmina Nerothana (Werner Helwig)\n…erschienen im Verlag der Jugendbewegung. Gilt als Originalquelle.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Quellen"
+    ]
+  },
+  {
+    "objectID": "quellen.html#liedblätter-deutscher-jugend-liederbuchreihe",
+    "href": "quellen.html#liedblätter-deutscher-jugend-liederbuchreihe",
+    "title": "Quellen",
+    "section": "Liedblätter Deutscher Jugend (Liederbuchreihe)",
+    "text": "Liedblätter Deutscher Jugend (Liederbuchreihe)\nDie LDJ wurden herausgegeben vom Verlag der Jugendbewegung und wurden in der Regel in enger Zusammenarbeit mit den Autor*innen erstellt. Deswegen gelten sie als Originalquelle.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Quellen"
+    ]
+  },
+  {
+    "objectID": "quellen.html#codex-patomomomensis",
+    "href": "quellen.html#codex-patomomomensis",
+    "title": "Quellen",
+    "section": "Codex Patomomomensis",
+    "text": "Codex Patomomomensis\n…ist ein sehr umfangreich recherchiertes Liederbuch, das sich auch auf die Suche nach Originalquellen gemacht hat. Von daher genießt der Codex bei uns einen exzellenten Ruf. Zum Inhaltsverzeichnis geht’s hier und da findet sich auch die Errata-Liste, die grundsätzlich immer hinzugezogen werden sollte.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Quellen"
+    ]
+  },
+  {
+    "objectID": "metadaten.html",
+    "href": "metadaten.html",
+    "title": "Metadaten",
     "section": "",
-    "text": "Hier werden Entscheidungen dokumentiert, die mit dem Liedersetzen in Zusammenhang stehen. Die Sortierung erfolgt innerhalb der Teilbereiche alphabetisch.",
+    "text": "Metadaten werden grundsätzlich in der Variable basicSongInfo gespeichert. Alle untenstehenden Ausführungen beziehen sich auf den Inhalt dieser Variable.",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",
-      "Standards beim Liedersetzen"
+      "Metadaten"
     ]
   },
   {
-    "objectID": "liedsatz_standards.html#benennung",
-    "href": "liedsatz_standards.html#benennung",
-    "title": "Standards beim Liedersetzen",
-    "section": "Benennung",
-    "text": "Benennung\nDie Dateinamen-Benennung folgt dem Prinzip: lied_anfang_(lied_name). Bitte beachte unbedingt die Kleinschreibung!!!\nEin Beispiel aus der Praxis: hast_du_den_staubigen_(der_meilenorden)",
+    "objectID": "metadaten.html#titel",
+    "href": "metadaten.html#titel",
+    "title": "Metadaten",
+    "section": "Titel",
+    "text": "Titel\nDer Titel wird in der Liederpool-Datei mit der Variable title = \"\" angegeben, wobei innerhalb der Anführungszeichen der Titel steht. Als Titel sollte immer der „Originaltitel“ genutzt werden. Dieser kann in der Layout-Datei, sofern gewünscht, einfach überschrieben werden.",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",
-      "Standards beim Liedersetzen"
+      "Metadaten"
     ]
   },
   {
-    "objectID": "liedsatz_standards.html#apostrophe",
-    "href": "liedsatz_standards.html#apostrophe",
-    "title": "Standards beim Liedersetzen",
-    "section": "Apostrophe",
-    "text": "Apostrophe\nWir halten uns bei Apostrophen grundsätzlich an den Duden: https://www.duden.de/sprachwissen/rechtschreibregeln/apostroph#D13\nDas bedeutet: Wir setzen Apostrophe nur, wenn es wirklich nötig ist (= die Lesbarkeit fördert). Das stellt die Lesbarkeit in den Mittelpunkt und bedeutet eine einheitliche Linie, an die man sich gut halten kann.\nBeispiele fürs Setzen:\n\n(vgl. D13) Schlaf nun selig und süß, schau im Traum ’s Paradies.\nzusamm’n, richt’ge\nOb der Onkel, der ihn fährt vielleicht ’ne Tante ist, …\n\nBeispiele fürs Nicht-Setzen (jeweils kursiv):\n\nIch wär gern bei den Soldaten, schösse man da mit Tomaten. (vgl. D13 2)\nAls wir endlich groß genug warn, nahmen wir unsre Schuh. (vgl. D13 1;1;3)\nHaben wir den goldnen Daumen längst verlorn? (D13 1;1)\nAuf den Leitplanken stehen die Geschichten drauf. (D14 2)\nDa flog sie, oh Pardon, auf dem Besenstiel davon, gradeaus übers Haus, dreimal rum und hoch hinaus. (D13 1; D14 1;2)\nBis dass die ganze Nachbarschaft Aufhörn schrie. (D13 2)\nWir haben dich schon aus der Ferne gesehn. (D13 2)\nEines Nachts geschiehts im trüben Lampenlicht (D14 4)",
+    "objectID": "metadaten.html#liedanfang",
+    "href": "metadaten.html#liedanfang",
+    "title": "Metadaten",
+    "section": "Liedanfang",
+    "text": "Liedanfang\nDer Liedanfang wird mit starttext = \"\" angegeben, wobei innerhalb der Anführungszeichen der Anfang des Liedes steht. Ist der Liedanfang gleich dem Titel, muss er nicht nochmal neu angegeben werden.",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",
-      "Standards beim Liedersetzen"
+      "Metadaten"
     ]
   },
   {
-    "objectID": "liedsatz_standards.html#rechtschreibung",
-    "href": "liedsatz_standards.html#rechtschreibung",
-    "title": "Standards beim Liedersetzen",
-    "section": "Rechtschreibung",
-    "text": "Rechtschreibung\nGrundsätzlich setzen wir immer nach neuer deutscher Rechtschreibung. Es gibt aber auch (sehr wenige) Ausnahmen (siehe Büdel S. 327).\nDer Leitspruch lautet: Bei inhaltlichen Aspekten setzen wir möglichst genau (zum Beispiel Zeichensetzung), bei Aspekten, die keine inhaltlichen Auswirkungen haben (Rechtschreibung, Apostrophen), setzen wir nach einheitlichen und aktuellen Standards.",
+    "objectID": "metadaten.html#alternative-titel",
+    "href": "metadaten.html#alternative-titel",
+    "title": "Metadaten",
+    "section": "Alternative Titel",
+    "text": "Alternative Titel\nAlternative Titel können mittels der Variable alttitle = #'(\"\") angegeben werden, wobei innerhalb der Anführungszeichen der Alternativtitel benannt wird. Wenn es mehrere Alternativtitel gibt einfach in Anführungszeichen daneben, zum Beispiel: alttitle = #'(\"Alttitle A\" \"Alttitle B\" \"Alttitle C\").",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",
-      "Standards beim Liedersetzen"
+      "Metadaten"
     ]
   },
   {
-    "objectID": "liedsatz_standards.html#textveränderungen-zum-original",
-    "href": "liedsatz_standards.html#textveränderungen-zum-original",
-    "title": "Standards beim Liedersetzen",
-    "section": "Textveränderungen zum Original",
-    "text": "Textveränderungen zum Original\nJe nach Ausmaß sollen Textveränderungen über Tags optional auswählbar sein (wenn es sich z.B. um einzelne Wörter handelt) bzw. in eine neue Variable geschrieben werden (wenn zum Beispiel ein Großteil oder der gesamte Text verschieden ist).",
+    "objectID": "metadaten.html#autorinnenangaben",
+    "href": "metadaten.html#autorinnenangaben",
+    "title": "Metadaten",
+    "section": "Autor*innenangaben",
+    "text": "Autor*innenangaben\nAutor*inneninformationen werden im neuen System aus einer YAML-Datei gezogen. Das bedeutet, in der Lilyponddatei wird lediglich auf eine ID einer Autorin verwiesen, deren Informationen in der YAML-Datei unter dieser ID zu finden sind.\n\nAbruf in der Lilyponddatei\nDie ID der beiden Autor*innen heißt in diesem Fall Autor1 beziehungsweise Autor2.\nbasicSongInfo = \\header {\n  title = \"Liedtitel\"\n  alttitle = \"Liedanfang\"\n  authors = #'(\n    (\"Autor1\" text)\n    (\"Autor2\" melody))\n  year_text = \"2024\"\n  year_melody = \"2024\"\n  infotext = \"Infotext\"\n}\n\n\nAufbau der YAML-Datei\nDie YAML ist wie folgt aufgebaut und alphabetisch sortiert. Die ID für eine*n Autor*in sollte, wenn vorhanden und eindeutig, dem Fahrtennamen entsprechen. Wenn nicht vorhanden oder uneindeutig dem bürgerlichen Namen nach dem Schema VornameNachname. Das hat keine technischen Gründe, sondern soll nur die Arbeit erleichtern. Wenn es einheitlich ist, muss man vielleicht nicht jedes Mal in der YAML-Datei nachschauen, wie nochmal die ID von Autor*in XYZ war.\nAutor1:\n  name: Vorname Nachname\n  trail_name: Autor1\n  birth_year: \"1950\"\n  organization: Bund der Autoren\nAutor2:\n  name: Name Surname\n  trail_name: Autor2\n  death_year: \"2050\"\n  organization: Autorenbund\n\n\nMögliche Optionen beim Abruf\nDa es zahlreiche Wünsche etc. bei der Autor*innenschaft von Liedern gibt, ist das System möglichst umfassend gestaltet. Der grundsätzliche Aufbau ist, dass in Klammern immer die ID benannt wird sowie die Eigenschaften, die diese ID hat (zum Beispiel die Worte geschrieben, die zweite Stimme usw.). Folgende Möglichkeiten gibt es:\n\ntext: Die Person hat am Text mitgeschrieben.\nmelody: Die Person hat an der Melodie mitgeschrieben.\ncomposition: Die Person hat am Satz mitgeschrieben.\n(verse 1): Die Person hat an der ersten Strophe mitgeschrieben.\n\n(verse 1) (verse 2): Die Person hat an der ersten und zweiten Strophe mitgeschrieben.\n\n(voice 2): Die Person hat an der zweiten Stimme mitgeschrieben.\n\n(voice 2) (voice 3): Die Person hat an der zweiten und dritten Stimme mitgeschrieben.\n\ninterlude: Die Person hat am Zwischenspiel mitgeschrieben.\nbridge: Die Person hat an der Bridge mitgeschrieben.\ntranslation: Die Person hat an der Übersetzung mitgeschrieben.\n(meloverse 1): Die Person hat an der ersten Melodiestrophe mitgeschrieben (damit ist die Melodie der ersten Strophe gemeint).\n\n(meloverse 1) (meloverse 2): Die Person hat an der ersten und zweiten Melodiestrophe mitgeschrieben (damit ist die Melodie der ersten Strophe gemeint).\n\n\nDas sind alle möglichen Beispiele, die durchaus schon größtenteils einmal benötigt wurden. Allerdings ist offensichtlich, dass diese Möglichkeitsvielfalt keinesfalls immer sinnvoll ist.\nFür alle diese Möglichkeiten finden sich Anwendungsbeispiele im Repository lilypond-vorlagen, dort im Ordner Lieder (Datei authors-sandbox.ly) (Link). Da kann man sich gut austoben. So sieht das dann aus:\ndude:\n  birth_year: '1950'\n  name: Krasser Dude\n  organization: Bund der krassen Dudes\n  trail_name: dud\nkumpel:\n  death_year: '2050'\n  name: Krasser Kumpel\n  organization: Bund der krassen Kumpels\n  trail_name: dudekumpel\nkumpelerbe:\n  inherits: kumpel\n  organization: Bund der crazy Kumpels\nnocheiner:\n  death_year: '2050'\n  name: Jemand anderes\n  \n\n\nOutput:\n\n\n\n\n\n\n\n\n\nHinweis\n\n\n\nWenn der*die Verfasser*in unbekannt ist, wird dies folgendermaßen kenntlich gemacht: (\"\" melody text). In diesem Falle kann kein Eintrag in der YAML gefunden werden, deswegen wird für die Optionen Melodie und Text „unbekannt“ ausgegeben.\n\n\n\n\nSonderfall „Inherits“\nEs kann vorkommen, dass Autor*innen ihre Bundzugehörigkeit ändern oder bestimmte Lieder für eine Band geschrieben haben, allerdings andere nicht. Dann wäre es unpraktisch, dass als Organisation beispielsweise trotzdem „Schlagsaite“ dort steht, obwohl das Lied mit Schlagsaite nichts zu tun hat (außer, dass der Autor bei Schlagsaite spielt). Die Lösung für dieses Problem lautet Inherits. Das Prinzip ist, dass eine neue ID erstellt wird, die die Eigenschaften einer bestimmten ID erbt. Diese Eigenschaften können dann aber überschrieben werden. Im Lied muss man dann auf diese neue ID verweisen. Das sieht zum Beispiel so aus:\nkumpel:\n  name: Krasser Kumpel\n  trail_name: kumpel\n  death_year: \"2050\"\n  organization: Bund der krassen Kumpels\nkumpelerbe:\n  inherits: kumpel\n  organization: Bund der crazy Kumpels\nZur Erklärung: kumpelerbe übernimmt die Eigenschaften von kumpel, danach wird die Organisation überschrieben auf einen anderen Bund.",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",
-      "Standards beim Liedersetzen"
+      "Metadaten"
     ]
   },
   {
-    "objectID": "liedsatz_standards.html#title-case-bei-englischsprachigen-liedern",
-    "href": "liedsatz_standards.html#title-case-bei-englischsprachigen-liedern",
-    "title": "Standards beim Liedersetzen",
-    "section": "Title Case bei englischsprachigen Liedern",
-    "text": "Title Case bei englischsprachigen Liedern\nWir nutzen den APA Style. Siehe Wikipedia.",
+    "objectID": "metadaten.html#textjahr",
+    "href": "metadaten.html#textjahr",
+    "title": "Metadaten",
+    "section": "Textjahr",
+    "text": "Textjahr\nÜber die Variable year_text = \"YYYY\" erfassen wir, wann der Text geschrieben bzw. veröffentlicht wurde. Dabei kann gerne so genau wie möglich vorgegangen werden, also zum Beispiel: year_text = \"``01.01.2004``\".",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",
-      "Standards beim Liedersetzen"
+      "Metadaten"
     ]
   },
   {
-    "objectID": "liedsatz_standards.html#typografisch-korrekte-zeichen",
-    "href": "liedsatz_standards.html#typografisch-korrekte-zeichen",
-    "title": "Standards beim Liedersetzen",
-    "section": "Typografisch korrekte Zeichen",
-    "text": "Typografisch korrekte Zeichen\nUns ist die typografisch korrekte Zeichensetzung wichtig. Ein Apostroph sieht beispielsweise so aus ’ und nicht so '.\nGedankenstriche und „Bis-Striche“ sind Halbgeviertstriche –, keine -.\nAnführungszeichen sehen so „ und so “ aus, nicht so \".",
+    "objectID": "metadaten.html#melodiejahr",
+    "href": "metadaten.html#melodiejahr",
+    "title": "Metadaten",
+    "section": "Melodiejahr",
+    "text": "Melodiejahr\nÜber die Variable year_melody = \"YYYY\" erfassen wir, wann die Melodie geschrieben bzw. veröffentlicht wurde. Dabei kann gerne so genau wie möglich vorgegangen werden, also zum Beispiel: year_melody = \"Oktober 2004\".",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",
-      "Standards beim Liedersetzen"
+      "Metadaten"
     ]
   },
   {
-    "objectID": "liedsatz_standards.html#balken",
-    "href": "liedsatz_standards.html#balken",
-    "title": "Standards beim Liedersetzen",
-    "section": "Balken",
-    "text": "Balken\nBei der Balkensetzung achten wir möglichst darauf, keine manuelle Balkensetzung zu machen, da sonst die Flexibilität verloren geht. Grundsätzlich kann man LilyPond sagen, in welchen Taktarten welche Balken wie zusammengefasst werden oder nicht.\nUnter einem Balken wird beispielsweise zusammengefasst, was auf einen Grundschlag kommt. Das kann, wie gesagt, LilyPond global gesagt bekommen. Deswegen setzen wir im Liederpool nicht so, wie im Beispiel für 4/4-Takt:\n\\relative c' {\n  \\time 4/4\n  e8 [e8] e8 [e8] e16 [e16 e16 e16] e8 [e16 e16]\n}\nAusgabe:",
+    "objectID": "metadaten.html#sec-year-composition",
+    "href": "metadaten.html#sec-year-composition",
+    "title": "Metadaten",
+    "section": "Satzjahr",
+    "text": "Satzjahr\nÜber die Variable year_composition = \"YYYY\" erfassen wir, wann die Melodie geschrieben bzw. veröffentlicht wurde. Dabei kann gerne so genau und detailreich wie möglich vorgegangen werden, also zum Beispiel: year_melody = \"Frühjahr 2004\".",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",
-      "Standards beim Liedersetzen"
+      "Metadaten"
     ]
   },
   {
-    "objectID": "liedsatz_standards.html#harmoniestimmen",
-    "href": "liedsatz_standards.html#harmoniestimmen",
-    "title": "Standards beim Liedersetzen",
-    "section": "Harmoniestimmen",
-    "text": "Harmoniestimmen\nHarmoniestimmen (2./3./4. Stimmen) schreiben wir grundsätzlich in eigene Variablen (firstVoice, secondVoice etc.), damit Liederbuch-Teams sich entscheiden können, ob sie sie nutzen wollen oder nicht.\nWenn es nur eine Harmoniestimme, also eine zweite Stimme gibt, dann kann dafür im MUSIC-Teil der Befehl \\secondVoiceStyle genutzt werden. Die Standarddarstellung dafür ist, dass die Noten der zweiten Stimme grau werden. Das kann aber liederbuchspezifisch angepasst werden oder der Befehl einfach in der Layout-Datei entfernt werden.\n\nBeispiel Im Burgenland:\nMUSIC = {\n  \\new Staff \n  &lt;&lt;\n    \\new Voice = \"firstVoice\" { \\global \\voiceTwo \\firstVoice }\n    \\addlyrics { \\firstVerse }\n    \\new Voice = \"secondVoice\" { \\global \\voiceOne \\secondVoiceStyle \\secondVoice }\n  &gt;&gt;\n}\n\nAusgabe:",
+    "objectID": "metadaten.html#infotext",
+    "href": "metadaten.html#infotext",
+    "title": "Metadaten",
+    "section": "Infotext",
+    "text": "Infotext\nIn die Variable infotext = \"\" können Informationen zur Entstehungsgeschichte, von oder über den*die Autor*in etc. notiert werden (gerne mit Quellen!). Das darf gerne so ausführlich wie möglich geschehen, damit jedes Liederbuch-Team das ggf. auf dieser Grundlage für sich anpassen kann.",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",
-      "Standards beim Liedersetzen"
+      "Metadaten"
     ]
   },
   {
-    "objectID": "liedsatz_standards.html#optionale-akkorde",
-    "href": "liedsatz_standards.html#optionale-akkorde",
-    "title": "Standards beim Liedersetzen",
+    "objectID": "metadaten.html#übersetzung",
+    "href": "metadaten.html#übersetzung",
+    "title": "Metadaten",
+    "section": "Übersetzung",
+    "text": "Übersetzung\nÜbersetzungen von nicht-deutschsprachigen Texten, können über die Variable translation = \"\" erfasst werden. In der Ausgabe erzeugt dies im Infoteil (wo auch Autor*innen und die Songinfo landen) eine Zeile, die mit „Übersetzung: “ beginnt.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Metadaten"
+    ]
+  },
+  {
+    "objectID": "metadaten.html#aussprache",
+    "href": "metadaten.html#aussprache",
+    "title": "Metadaten",
+    "section": "Aussprache",
+    "text": "Aussprache",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Metadaten"
+    ]
+  },
+  {
+    "objectID": "metadaten.html#quellen",
+    "href": "metadaten.html#quellen",
+    "title": "Metadaten",
+    "section": "Quellen",
+    "text": "Quellen\nFür uns ist es sehr wichtig zu wissen, wo unsere Notationen herkommen und auf welche Quellen wir uns stützen. Deswegen ist es obligatorisch, diese beim Setzen eines Liedes immer anzugeben. Beim Verweis auf Internetlinks, sollte die Seite in der Regel über das Internet Archive archiviert werden. Wie das geht, steht hier. Beim Verweis auf Liederbücher sollte die YAML-Datei sources.yml im data-Ordner des Liederpool-Repos genutzt werden, um auf die jeweilige ID zu verweisen. Damit sollen Liederbücher gut identifizierbar sein. Seitenangaben sind auch gerne gesehen. Wenn du selbst den Satz notiert hast, schreib deinen Namen dazu, zum Beispiel: „Satz von žuk“. Auch die Information, ob der Satz mit den Autor*innen abgestimmt wurde, ist relevant und somit anzugeben.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Metadaten"
+    ]
+  },
+  {
+    "objectID": "liedersetzen.html",
+    "href": "liedersetzen.html",
+    "title": "Liedersetzen",
+    "section": "",
+    "text": "Jetzt kann es losgehen mit dem Lieder setzen. Damit du möglichst einfach reinkommst, erklären wir dir gleich anhand eines Beispiels, dass du bei dir nachvollziehen kannst, wie unser System funktioniert.\nVorneweg gibt es aber noch ein paar wichtige Links und Helfer:\n\nHier gibt es eine LilyPond-Einführung von den LilyPond-Entwickler*innen. Du kannst die auch nochmal machen, aber viele grundlegenden Sachen lernst du in diesem Tutorial schon kennen.\nHier findest du die LilyPond-Dokumentation. Das ist im Grunde der wichtigste und erste Ort, um herauszufinden, wie du musikalische Notation in LilyPond umsetzen kannst. Auch die meisten aufkommenden Probleme lassen sich schon allein mit der Doku beheben. Zusätzlich kannst du auch gerne unsere Setzer*innen-Gruppe auf Signal dafür nutzen.\n\nSo, jetzt geht’s los!",
+    "crumbs": [
+      "Einführung",
+      "Lieder setzen"
+    ]
+  },
+  {
+    "objectID": "doku.html",
+    "href": "doku.html",
+    "title": "Doku",
+    "section": "",
+    "text": "Das ist unsere Doku für die Liederpool-spezifischen Befehle und Standards. Hier dokumentieren wir unsere Standards beim Setzen, Lösungen für „Probleme“ in der Anwendung unseres Systems und eigene definierte Befehle, die nicht Teil des Standard-LilyPond sind.\nGrundsätzlich hilft dir bei allen LilyPond-spezifischen Fragen oder Problemen natürlich die LilyPond-Doku.",
+    "crumbs": [
+      "Doku"
+    ]
+  },
+  {
+    "objectID": "musikalischer_inhalt.html",
+    "href": "musikalischer_inhalt.html",
+    "title": "Musikalischer Inhalt",
+    "section": "",
+    "text": "In diesem Abschnitt der Doku zeigen wir Lösungen für Probleme oder Herausforderungen, die sich aus der Arbeit mit unserem System ergeben. Vieles davon wurde von tux entwickelt und befindet sich in den lilypond-common-includes, bei manchen Themen verweisen wir auch einfach nur auf die LilyPond-Doku. Dieser Teil ist fokussiert auf Fragen bezüglich der Notation und dem Liedtext.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Musikalischer Inhalt"
+    ]
+  },
+  {
+    "objectID": "musikalischer_inhalt.html#wiederholungen-in-den-strophen",
+    "href": "musikalischer_inhalt.html#wiederholungen-in-den-strophen",
+    "title": "Musikalischer Inhalt",
+    "section": "Wiederholungen in den Strophen",
+    "text": "Wiederholungen in den Strophen\nProblem: Wiederholungszeichen (𝄆 und 𝄇 ) im Text sollen nur in den Strophen, nicht aber unter den Noten stehen. Trotzdem wollen wir denselben Text für beides verwenden.\nLösung: Vor den wiederholten Teil im Text \\repStartWithTag und vor der letzten Silbe (nach den -- !) \\repStophWithTag.\nZur Erklärung: Es handelt sich faktisch um eine Stanza, die aber immer vor Silben gesetzt werden muss (sie kann aber auch rechts von Silben ausgerichtet werden). Diese Stanza wird nur bei einem bestimmten Tag ausgegeben, der repeats heißt. Mehr zu Tags findest du in der Lilypond-Doku. Standardmäßig wird der Tag ausgegeben, soll das nicht der Fall sein (wie zum Beispiel unter den Noten), muss innerhalb des MUSIC-Teils der Befehl \\removeWithTag #'repeats inkludiert werden.\nCodebeispiel (aus: Ade zur guten Nacht):\nthirdVerse = \\lyricmode {\n  %…\n  \\repStartWithTag\n  Wie man -- chen _ Glo -- cken -- schlag,\n  da Herz bei _ Her -- zen lag,\n  das hast du ver -- ges -- \\repStopWithTag sen.\n}\n\n%…\n\nMUSIC = {\n  \\removeWithTag #'repeats\n  &lt;&lt;\n      \\songChords\n      \\new ChoirStaff = \"firstStaff\"\n      &lt;&lt;\n        \\new Voice = \"firstVoice\" { \\melodyVoice }\n        \\addlyrics { \\firstVerse }\n        \\addlyrics { \\secondVerse }\n        \\addlyrics { \\thirdVerse }\n        \\addlyrics { \\fourthVerse }\n      &gt;&gt;\n  &gt;&gt;\n}\n\n\nIn den Strophen sieht das dann zum Beispiel so aus:",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Musikalischer Inhalt"
+    ]
+  },
+  {
+    "objectID": "musikalischer_inhalt.html#melismata-mehrere-noten-zu-einer-silbe",
+    "href": "musikalischer_inhalt.html#melismata-mehrere-noten-zu-einer-silbe",
+    "title": "Musikalischer Inhalt",
+    "section": "Melismata (mehrere Noten zu einer Silbe)",
+    "text": "Melismata (mehrere Noten zu einer Silbe)\nProblem: In manchen Strophen gibt es an einer Stelle ein Melisma und in der nächsten Strophe an derselben Stelle nicht. Dadurch verschiebt sich der Text.\nLösung: Nutzen von \\set ignoreMelismata = ##t nach Bedarf. Siehe dazu auch in der LilyPond-Doku.\nCodebeispiel:\n%firstVerse mit Melismata:\nfirstVerse = \\lyricmode {\n  #(stanza 1)\n  A -- de zur gu -- ten Nacht!\n  Jetzt wird der Schluss ge -- macht,\n  dass ich muss schei -- den.\n  \\repStartWithTag\n  Im Som -- mer, da wächst der Klee, im Win -- ter da schneit’s den Schnee,\n  da kom -- me ich wie -- \\repStopWithTag der.\n}\n\n%secondVerse ohne Melismata\nsecondVerse = \\lyricmode {\n  #(stanza 2)\n  Es trau -- ern Berg und Tal,\n  wo ich viel tau -- send -- mal\n  bin drü -- ber gan -- gen.\n  \\set ignoreMelismata = ##t %ab hier werden Melismata ignoriert\n  \\repStartWithTag\n  Das hat dei -- ne Schön -- heit ge -- macht,\n  die hat mich zum Lie -- ben ge -- bracht\n  \\unset ignoreMelismata %und hier wieder nicht mehr\n  mit gro -- ßem Ver -- lan -- \\repStopWithTag gen.\n}\n\n\nSo sieht dann der Output der ersten beiden Verse aus:",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Musikalischer Inhalt"
+    ]
+  },
+  {
+    "objectID": "musikalischer_inhalt.html#mehrere-silben-zu-einer-note",
+    "href": "musikalischer_inhalt.html#mehrere-silben-zu-einer-note",
+    "title": "Musikalischer Inhalt",
+    "section": "Mehrere Silben zu einer Note",
+    "text": "Mehrere Silben zu einer Note\nSiehe Lilypond-Doku.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Musikalischer Inhalt"
+    ]
+  },
+  {
+    "objectID": "musikalischer_inhalt.html#sec-silbentrennung-volta-klammern",
+    "href": "musikalischer_inhalt.html#sec-silbentrennung-volta-klammern",
+    "title": "Musikalischer Inhalt",
+    "section": "Silbentrennung bei Volta-Klammern",
+    "text": "Silbentrennung bei Volta-Klammern\nProblem: Es kommt vor, dass in Liedern die Melodie der Strophe wiederholt wird. Wenn man dabei eine Wiederholung mit Volta-Klammern notiert und ein Wort in die Wiederholung „hineinragt“, dann skipt man die folgenden Notenwerte, was aber dazu führt, dass unter der gesamten Klammer eins Lyric-Hyphens (Bindestriche zwischen den Silben) gesetzt werden.\nLösung: Mit \\once \\hide \\LyricHyphen werden alle Hyphens der nächsten Silbe unterdrückt. Stattdessen wird mit \\rightHyphen bzw. \\leftHyphen ein manueller Hyphen gesetzt (die Funktion ist in den common-includes definiert). Die \\skip4-Befehle werden ggf. über eine dafür gesetzte Variable definiert (im unteren Beispiel voltaSkipsLyrics). Da die Hyphens im Text (also den „Strophen“) nicht zu sehen sein sollen, werden sie mittels eines Tags gesetzt, der volta heißt. Mehr zu Tags in der Lilypond-Doku.\nCodebeispiel:\nvoltaSkipsLyrics = \\lyricmode {\n  \\repeat unfold 10 { \\skip4 }\n}\n\nfirstVerseB = \\lyricmode {\n  Hab es selbst so ge -- wählt, nie die Jah -- re \\tag #'volta { \\once \\hide LyricHyphen \\rightHyphen } ge -- \\tag #'volta { \\voltaSkipsLyrics \\leftHyphen } zählt,\n  nie nach ges -- tern und mor -- gen ge -- fragt.\n}\n\n\n\nAbbildung 1: Links das Problem, rechts die Lösung.\n\n\n\n\n\n\nSo soll das nicht aussehen.\n\n\n\n\n\n\n\nSo sieht das ganze dann „schön“ aus:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWarnung\n\n\n\nAchtung! Die manuell gesetzten Hyphens werden dann auch in den Strophen gesetzt. Deswegen müssen diese unbedingt so eingesetzt werden, dass man sie in den Strophen entfernen kann. Zum Beispiel mit einem Tag hyphen. Beispiel aus „Eh die Sonne über Berg und Tal“:\nrefLyricsB = \\lyricmode {\n  %…\n  ob ü -- ber uns die Stür -- me gehn, wir sind \\tag #'hyphen { \\once \\hide LyricHyphen \\rightHyphen } be --\n}\nrefLyricsC = \\lyricmode {\n  \\tag #'hyphen { \\skip4 \\leftHyphen } reit.\n}\nDie manuell gesetzten Hyphens würden nun auch in den Strophen ausgedrückt werden. Diese Bindestriche wollen wir da aber natürlich nicht haben, deswegen müssen wir das unter den Strophen „wegtaggen“ (Beispiel ist vereinfacht):\nTEXT = \\markuplist {\n  \\group-verses {\n    \\chordlyrics { \\removeWithTag #'hyphen \\refLyrics }\n  }\n}",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Musikalischer Inhalt"
+    ]
+  },
+  {
+    "objectID": "musikalischer_inhalt.html#umgang-mit-wiederholungen-bei-gleichbleibendem-text",
+    "href": "musikalischer_inhalt.html#umgang-mit-wiederholungen-bei-gleichbleibendem-text",
+    "title": "Musikalischer Inhalt",
+    "section": "Umgang mit Wiederholungen bei gleichbleibendem Text",
+    "text": "Umgang mit Wiederholungen bei gleichbleibendem Text\nProblem: Gibt es Volta-Klammern bei Liedern, in denen der Text des wiederholten Teils gleich ist, zum Beispiel, weil es nach der Klammer anders weitergeht, kommt es vor, dass man in die Lyrics zum Beispiel schreiben müsste: Und je -- der Kerl, der mit uns war, hat für im -- mer sich zu uns ge -- sellt. Und sellt.. Das ist natürlich unpraktisch für die Übernahme in die Strophen, weil man das sellt. Und ja nicht in den Strophen haben möchte.\nLösung: Auch hier kommen wieder Tags zum Einsatz und zwar wie folgt. Es wird ein neuer Tag repeat definiert, der alles in einschließt, was für die Volta-Wiederholungen notwendig ist. Für die Strophen werden dann extra-Variablen definiert, in denen dieser Tag ausgeschaltet wird. Wichtig: Der Tag muss sich natürlich auch in der Melodie und den Akkorden wiederfinden.\nCodebeispiel:\nfirstVerseWithRepeat = \\lyricmode {\n  #(stanza 1)\n  Wir sind ei -- ne klei -- ne ver -- lo -- re -- ne Schar,\n  wir ste -- hen für uns auf der Welt.\n  \\repStartWithTag Und je -- der Kerl, der mit uns war,\n  hat für im -- mer sich zu uns ge -- \\tag #'repeat { sellt. Und } \\repStopWithTag sellt.\n}\n\nfirstVerse = \\lyricmode {\n  \\removeWithTag #'repeat \\firstVerseWithRepeat\n}\n\nfirstVoice = \\relative c' {\n  \\partial4\n  fis4\n  g8 e4 fis8 g e4 g8\n  fis g4 fis8 e4 d4\n  g8 g4 g8 a d4 c8\n  h2. h4\n  \\repeat volta 2 {\n    c4 c c c\n    h8 h4 (a8) g4 g8 a\n    h8 h4 h8 a h4 a8\n  }\n  \\alternative {\n    % Tag bedenken\n    \\tag #'repeat { g2. h4 }\n    { g1 }\n  }\n}\n\nverseChords = \\chordmode {\n  \\partial4\n  s4 e1:m h2:7 e4:m d:7\n  g2 d:7 g1\n  \\repeat volta 2 {\n    c1 g g2 d:7\n  }Bock\n  \\alternative {\n    %Tag bedenken\n    \\tag #'repeat { g1 }\n    { g1 }\n  }\n}\n\n% im MUSIC-Teil wird der Tag dann wieder aktiviert\nMUSIC = {\n  \\keepWithTag #'repeat\n  &lt;&lt;\n      \\songChords\n      \\new ChoirStaff = \"firstStaff\"\n      &lt;&lt;\n        \\new Voice = \"firstVoice\" { \\melodyVoice }\n        \\addlyrics { \\firstVerseWithRepeat }\n        \\addlyrics { \\secondVerseWithRepeat }\n        \\addlyrics { \\thirdVerseWithRepeat }\n      &gt;&gt;\n  &gt;&gt;\n}\n\n% Für die Strophen wollen wir keine Volta-Wiederholung\nverse-chords = \\chords { \\removeWithTag #'repeat \\verseChords }",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Musikalischer Inhalt"
+    ]
+  },
+  {
+    "objectID": "musikalischer_inhalt.html#umgang-mit-wiederholungen-bei-neuem-text",
+    "href": "musikalischer_inhalt.html#umgang-mit-wiederholungen-bei-neuem-text",
+    "title": "Musikalischer Inhalt",
+    "section": "Umgang mit Wiederholungen bei „neuem“ Text",
+    "text": "Umgang mit Wiederholungen bei „neuem“ Text\nProblem: Volta-Klammern (Wiederholungsklammern), bei denen nicht derselbe Text wiederholt wird, sollten in den Strophen aufgelöst werden, damit der Text hintereinander (und nicht wie in den Noten untereinander) steht.\nLösung: Dafür nutzen wir den Befehl \\unfoldRepeats, der in den verse-chords und verse-voice gesetzt werden muss und dann per \\override auf die Strophen angewendet werden kann (Achtung: \\override gilt immer nur für das folgende Element, zum Beispiel ein Vers oder ein \\group-verses-Ausdruck). Außerdem müssen die Verse aufgeteilt werden in verschiedene Teile.\nCodebeispiel:\nfirstVerseA = \\lyricmode {\n  #(stanza 1)\n  Er -- ste Wie -- der -- ho -- lung,\n}\n\nfirstVerseB = \\lyricmode {\n  zwei -- te Wie -- der -- ho -- lung.\n}\n\nfirstVerseC = \\lyricmode {\n  Wei -- ter geht’s\n}\n\nfirstVerse = { \\firstVerseA \\firstVerseB \\firsVerseC }\n\nverse-chords = \\chords { \\unfoldRepeats \\verseChords }\nverse-voice = { \\unfoldRepeats \\firstVoice }\nverse-breaks = { \n  s4 s2*3 s4 \\break\n  s4 s2*3 s4 \\break\n  s4 s2*3 s4 \\break\n}\n\nTEXT = \\markuplist {\n  \\override #`(verse-chords . ,verse-chords)\n  \\override #`(verse-reference-voice . ,verse-voice)\n  \\override #`(verse-break-voice . ,verse-breaks)\n  \\group-verses {\n    \\chordlyrics \\firstVerse\n  }\n}",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Musikalischer Inhalt"
+    ]
+  },
+  {
+    "objectID": "musikalischer_inhalt.html#strophen-mit-unterschiedlichen-noten--oder-silbenverteilung-oder-rhythmus",
+    "href": "musikalischer_inhalt.html#strophen-mit-unterschiedlichen-noten--oder-silbenverteilung-oder-rhythmus",
+    "title": "Musikalischer Inhalt",
+    "section": "Strophen mit unterschiedlichen Noten- oder Silbenverteilung oder Rhythmus",
+    "text": "Strophen mit unterschiedlichen Noten- oder Silbenverteilung oder Rhythmus\nProblem:\n\nGerade bei neueren Liedern kommt es häufig vor, dass sie unterschiedliche Rhythmen (zum Beispiel Auftakte) in den Strophen haben. Da der Text an Noten ausgerichtet wird, kommt es somit zu einem Problem, wenn in der 1. Strophe beispielsweise kein Auftakt vorhanden ist, in der 2. Strophe jedoch schon, kann der Versanfang der 2. Strophe nicht an Noten ausgerichtet werden, da diese in der Melodie (der 1. Strophe) gar nicht vorkommen.\nDas Notenbild / der Notensatz der 1. Strophe soll aber nicht unnötig aufgebläht werden durch Auftaktkonstruktionen (und es gibt natürlich auch noch wesentlich komplexere Konflikte), da dadurch die Lesbarkeit erschwert wird und das Notenbild mehr Verwirrung als Klarheit schaffen würde.\n\nLösung:\n\nNutzung von einer Funktion, die Tags nutzt: \\alt (siehe Codebeispiel). Die Idee ist, dass es eine einfache Notation gibt (üblicherweise die der 1. Strophe) und eine komplexere, an der alle Verse ausgerichtet werden können. Die \\alt-Funktion wird im \\relative-Teil wie folgt angewendet: \\alt { A } { B }. A steht für die einfache Notation, B für die komplexe.\nNun gibt es wiederum das Problem, dass der Text in den unterschiedlichen Notationen an unterschiedlichen Stellen geskipt werden muss. Dafür gibt es die Lösung über die Funktion \\multiVerseSkips X. Das X ist dabei zu ersetzen mit der Anzahl der zu skipenden Noten. X muss mindestens den Wert 1 haben.\nIm MUSIC-Teil muss der Tag nun auch angegeben werden. Zum Codebeispiel: Im music-Teil muss nichts angepasst werden, stattdessen kann man nun im MUSIC-Teil angeben, ob man die multiVerse-Ansicht oder die firstVerse-Ansicht angezeigt werden möchte. Das jeweils andere kann auskommentiert werden.\n\nCodebeispiel:\nfirstVerse = \\lyricmode {\n  #(stanza 1)\n  \\multiVerseSkips 4 Komm zu mir, leg dich ins Laub\n  \\\\multiVerseSkips 1 und \\\\multiVerseSkips 1 hör, was die Wur -- zeln er -- zäh -- len.\n  Je -- \\\\multiVerseSkips 1 des \\\\multiVerseSkips 1 Blatt zer -- fällt ein -- mal zu Staub\n  \\\\multiVerseSkips 2 und je -- der Baum wird auch wie -- der zu Er -- de.\n  Doch je -- des En -- de ist ein An -- fang\n  und vol -- ler Kreis -- läu -- fe sind Zeit und Raum.\n  Al -- les ver -- geht, doch nichts geht ver -- lo -- ren,\n  al -- les ist Wirk -- lich -- keit und al -- les ist Traum.\n}\n\n% Verwendung von alt\nfirstVoice = \\relative c' {\n  \\alt {} { \\partial2 a8 a d8 f8 }\n  a4. a8 a4\n  g4 a g\n  e2.\n  \\alt { r2 d4 } { r4 r8 d d d }\n  e4. e8 e4\n  d4 e d\n  c4 a2\n}\n\n% Einbindung in music/MUSIC\nmusic = {\n  &lt;&lt;\n      \\songChords\n      \\new ChoirStaff = \"firstStaff\"\n      &lt;&lt;\n        \\new Voice = \"firstVoice\" { \\melodyVoice }\n        \\addlyrics { \\firstVerse }\n        \\addlyrics { \\tag #'multiVerse \\secondVerse }\n        \\addlyrics { \\tag #'multiVerse \\thirdVerse }\n        \\addlyrics { \\tag #'multiVerse \\fourthVerse }\n        \\addlyrics { \\tag #'multiVerse \\fifthVerse }\n      &gt;&gt;\n  &gt;&gt;\n}\n\nMUSIC = {\n  \\keepWithTag #'multiVerse\n  %\\keepWithTag #'firstVerse\n  \\music\n}\n\n\n\nAbbildung 2: Das sind die beiden möglichen resultierenden Ansichten.\n\n\n\n\n\n\nDie \\firstVerse-Ansicht:\n\n\n\n\n\n\n\nDie \\multiVerse-Ansicht:",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Musikalischer Inhalt"
+    ]
+  },
+  {
+    "objectID": "musikalischer_inhalt.html#zeilenumbrüche-in-den-strophen",
+    "href": "musikalischer_inhalt.html#zeilenumbrüche-in-den-strophen",
+    "title": "Musikalischer Inhalt",
+    "section": "Zeilenumbrüche in den Strophen",
+    "text": "Zeilenumbrüche in den Strophen\nSiehe Layout-Teil der Doku.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Musikalischer Inhalt"
+    ]
+  },
+  {
+    "objectID": "musikalischer_inhalt.html#leichte-textvariationen",
+    "href": "musikalischer_inhalt.html#leichte-textvariationen",
+    "title": "Musikalischer Inhalt",
+    "section": "(Leichte) Textvariationen",
+    "text": "(Leichte) Textvariationen\nProblem: Es gibt teilweise leichte Textvariationen bei einzelnen Wörtern.\nLösung: Auch da helfen uns wieder die Tags (Lilypond-Doku). Je nach Belieben kann dann entweder die eine Variante aktiviert werden oder die andere.\n\nInnerhalb einer Variante\nBeim Regenbogenlied gibt es beispielsweise eine Unterscheidung im Artikel zwischen dem ersten und zweitem Refrain. Die Lösung dafür ist, einfach beides einzubauen und dann das jeweils nicht benötigte auszuschalten. Das hat den Vorteil, dass wir trotzdem dieselbe Textbasis verwenden können.\nCodebeispiel:\nrefLyrics = \\lyricmode {\n  \\ref\n  \\repStartWithTag Ü -- ber uns \\tag #'first { ein } \\tag #'second { der } Re -- gen -- bo -- gen,\n  zeigt uns den Weg in sei -- nem Licht,\n  die Wol -- ken sind schon fort -- ge -- zo -- gen,\n  ver -- weh -- ren uns die Son -- ne \\repStopWithTag nicht.\n}\n\nrefLyricsFirst = \\lyricmode { \\removeWithTag #'second \\refLyrics }\nrefLyricsSecond = \\lyricmode { \\removeWithTag #'first \\refLyrics }\n\n\nVerschiedene Varianten\nAnders verhält es sich, wenn wir ein Lied haben, bei dem es verschiedene Varianten gibt. Mitunter kann es hilfreich sein, einen kürzeren Befehl zu haben, wenn beide Varianten sich an vielen Stellen unterscheiden. Das kann folgendermaßen gelöst werden:\nvariant =\n#(define-music-function (parser location a b) (ly:music? ly:music?) \n  #{ \\tag #'bock { #a } \\tag #'codex { #b } #})\nWenn mehr als zwei Varianten benötigt werden, kann der Befehl problemlos erweitert werden, indem weitere Elemente hinzugefügt werden:\n#(define-music-function (parser location a b c d) (ly:music? ly:music? ly:music? ly:music?)  #{ \\tag #'bock { #a } \\tag #'codex { #b } \\tag #'buedel { #c } \\tag #'boernel { #d } #}).\nDer Tag-Abruf erfolgt dann zum Beispiel so:\nfirstVerse = \\lyricmode {\n  #(stanza 1)\n  Das ist der ers -- te \\variant { Vers } { Verse } { Teil } { Ab -- schnitt }.\n}\nDabei ist die oben definierte Reihenfolge entscheidend! Der jeweils gewünschte Tag muss dann unbedingt im MUSIC-Teil zugewiesen werden. Dabei sollte im MUSIC-Teil ebenfalls erkennbar sein, wie viele und welche Varianten es überhaupt gibt, zum Beispiel durch auskommentierte Alternativvarianten:\nMUSIC = {\n  \\keepWithTag #'bock\n  %\\keepWithTag #'codex\n  %\\keepWithTag #'buedel\n  %\\keepWithTag #'boernel\n  &lt;&lt;\n      \\songChords\n      \\new ChoirStaff = \"firstStaff\"\n      &lt;&lt;\n        \\new Voice = \"firstVoice\" { \\melodyVoice }\n        \\addlyrics { \\firstVerse }\n      &gt;&gt;\n  &gt;&gt;\n}",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Musikalischer Inhalt"
+    ]
+  },
+  {
+    "objectID": "musikalischer_inhalt.html#sec-strophennummerierung",
+    "href": "musikalischer_inhalt.html#sec-strophennummerierung",
+    "title": "Musikalischer Inhalt",
+    "section": "Strophennummerierung",
+    "text": "Strophennummerierung\nDie Strophennummerierung erfolgt nach folgendem Schema: #(sanza 1) für 1. Strophe, #(stanza 2) für zweite Strophe etc. Das genaue Aussehen kann natürlich global auch angepasst werden.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Musikalischer Inhalt"
+    ]
+  },
+  {
+    "objectID": "musikalischer_inhalt.html#sec-refnum",
+    "href": "musikalischer_inhalt.html#sec-refnum",
+    "title": "Musikalischer Inhalt",
+    "section": "Refrainnummerierung",
+    "text": "Refrainnummerierung\nEin einfacher Refrain wird gesetzt durch den Befehl \\ref. Gibt es mehrere Refrains kann die Strophe spezifiziert werden, nach der der Refrain gesungen wird: \\ref #'(5) für die 5. Strophe oder \\ref #'(3 4) für die 3. und 4. Strophe. Wie zu sehen ist, können auch mehrere Strophennummern übergeben werden.\n\n\n\n\n\n\nWichtig\n\n\n\nBitte beachte unbedingt unsere Standards zur Refrainsetzung!",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Musikalischer Inhalt"
+    ]
+  },
+  {
+    "objectID": "musikalischer_inhalt.html#swing-style",
+    "href": "musikalischer_inhalt.html#swing-style",
+    "title": "Musikalischer Inhalt",
+    "section": "Swing-Style",
+    "text": "Swing-Style\nDen Swing-Style kann man mittels der Funktion \\swingMusic erwirken. Das setzt den folgenden musikalischen Ausdruck im Swing-Style. \\swingMusic kann beispielsweise in die \\melodyVoice gepackt werden (dann geschweifte Klammern nicht vergessen). Die Midi-Ausgabe erfolgt dann sogleich rhythmisch korrekt.\nDer Swing-Style kann mithilfe der Funktion \\swingOff wieder ausgestellt werden. Das ist im unteren Beispiel zwar für die Midi-Ausgabe gar nicht nötig, allerdings printed \\swingOff auch das entsprechende Zeichen, dass kein Swing-Style mehr gespielt werden soll. Andernfalls wüsste man anhand des Liedblattes nicht, dass der Swing-Style aufhört.\nmelodyVoice = {\n  \\global\n  \\swingMusic { \\firstVoice \\interludeVoice }\n  \\swingOff \\refVoice\n  \\bar \"|.\"\n}",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Musikalischer Inhalt"
+    ]
+  },
+  {
+    "objectID": "musikalischer_inhalt.html#sec-kanon",
+    "href": "musikalischer_inhalt.html#sec-kanon",
+    "title": "Musikalischer Inhalt",
+    "section": "Markierungen für beispielsweise Kanoneinsätze",
+    "text": "Markierungen für beispielsweise Kanoneinsätze\nMarkierungen wie beispielsweise eine römische Ziffer für den Einsatz einer Kanonstimme sollten auf folgendem Wege eingetragen werden (Beispiel für dreistimmigen Kanon):\neins = { \\tag #'einsaetze { \\tweak self-alignment-X #LEFT \\mark \\markup { \\italic \"I.\" } } }\nzwei = { \\tag #'einsaetze { \\tweak self-alignment-X #LEFT \\mark \\markup { \\italic \"II.\" } } }\ndrei = { \\tag #'einsaetze { \\tweak self-alignment-X #LEFT \\mark \\markup { \\italic \"III.\" } } }\nWas passiert da und wo gibt es ggf. etwas anzupassen? Der Variablenname kommt als erstes. Dahinter folgt ein Tag, der hier einsaetze heißt, damit die Markierungen unten in den Strophen ausgeschaltet werden können. Anschließend folgen einige Platzierungsbefehle und dann ein \\markup-Befehl: \\markup { \\italic \"I.\" }. In der Regel sollten Markierungen wie diese immer kursiv geschrieben sein. Bei Kanoneinsätzen sollen römische Ziffern genutzt werden. Die Markierungen können aber natürlich auch in der Layout-Datei überschrieben werden.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Musikalischer Inhalt"
+    ]
+  },
+  {
+    "objectID": "musikalischer_inhalt.html#optionale-akkorde",
+    "href": "musikalischer_inhalt.html#optionale-akkorde",
+    "title": "Musikalischer Inhalt",
     "section": "Optionale Akkorde",
-    "text": "Optionale Akkorde\nOptionale Akkorde sollen getaggt werden, damit sie ausgeschaltet werden können.",
+    "text": "Optionale Akkorde\nOptionale Akkorde können eingeklammert werden anhand der Funktion \\klamm { d4:7 }.",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",
-      "Standards beim Liedersetzen"
+      "Musikalischer Inhalt"
     ]
   },
   {
-    "objectID": "liedsatz_standards.html#ganztaktpausen",
-    "href": "liedsatz_standards.html#ganztaktpausen",
-    "title": "Standards beim Liedersetzen",
-    "section": "Ganztaktpausen",
-    "text": "Ganztaktpausen\nWenn ein Takt vollständig pausiert wird, sollten Ganztaktpausen genutzt werden (Lilypond-Befehl: R), die sind genau dafür da. Der Unterschied zu normalen Pausen besteht darin dass sie in der Taktmitte zentriert werde und immer aussehen wie ganze Pausen (außer in bestimmten Takten). Siehe auch https://www.mu-sig.de/Theorie/Notation/Notation07.htm Ausnahme: Wenn erkenntlich gemacht werden muss, wann Akkordwechsel erfolgen.",
+    "objectID": "musikalischer_inhalt.html#sec-altchords",
+    "href": "musikalischer_inhalt.html#sec-altchords",
+    "title": "Musikalischer Inhalt",
+    "section": "Alternative Akkorde",
+    "text": "Alternative Akkorde\nAlternative Akkorde können mit der Funktion \\altChord gesetzt werden. Die Funktion nimmt den nachfolgenden Akkord und behandelt ihn als „normalen“ Akkord (mit Länge, Midi-Ausgabe etc.). Außerdem wird ein zweiter nachfolgender Akkord verlangt, der in Klammern ausgedrückt wird. Dieser Akkord wird allerdings nicht musikalisch beachtet, er kommt weder im Midi vor, noch spielt die Dauer des Akkordes eine Rolle. Ein Beispiel:\nverseChords = \\chordmode {\n  \\altChord b2 g:m c2 f d:m\n}\nDamit unterscheidet sich die Funktion von der Funktion \\klamm, da bei dieser ein Akkord einfach nur geklammert wird, während bei \\altChord der Akkord zwar auch geklammert wird, musikalisch aber gar keine Rolle spielt.\nDas kann beispielsweise genutzt werden, um einen Text, der wiederholt wird mit unterschiedlichen Akkorden, in der Strophe oder in den Noten nicht doppelt schreiben zu müssen. Zum Beispiel beim Lied „Der Tramper“. Code:\nverseChords = \\chordmode {\n  %…\n  \\repeat volta 2 {\n    \\altChord b2 g2:m c2 f d:m\n    b a:7\n  }\n  \\alternative {\n    \\tag #'repeat { d:m d:7 }\n    { d2:m ~ \\tag #'repeat { d4.:m } \\tag #'klamm { \\klamm d4.:7 } }\n  }\n}",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",
-      "Standards beim Liedersetzen"
+      "Musikalischer Inhalt"
     ]
   },
   {
-    "objectID": "liedsatz_standards.html#rhythmusorientierte-taktaufteilung",
-    "href": "liedsatz_standards.html#rhythmusorientierte-taktaufteilung",
-    "title": "Standards beim Liedersetzen",
-    "section": "Rhythmusorientierte Taktaufteilung",
-    "text": "Rhythmusorientierte Taktaufteilung\nDie Hauptzählzeiten des Taktes sollten immer erkennbar sein.\n\n4/4-Takt: 1 und 3\n3/4-Takt: 1\n2/2-Takt: 1\n6/8-Takt: 1 und 4\n6/4-Takt: 1 und 4\nzusammengesetzte Taktarten entsprechend der Zusammensetzungen (siehe unten)\n\n\nBeispiel:\n\\relative c' {\n  \\time 6/8\n  a4.~ 8 cis e |\n  a4 a8~ 8 cis4\n\n  % aber:\n  \\time 3/4\n  a2 cis8 e |\n  a4 a cis\n}\n\nAusgabe:\n\nTakte, die zusammengesetzte Rhythmen haben, notieren wir auch so – sie können aber in den einzelnen Liederbüchern über das Überschreiben der global-Variable auch in einfachen Takten wie 4/4-Takten notiert werden. Unter diesem Link finden sich die Infos dazu in der Doku.\n\nBeispiel Nordwind:\n\\relative c' {\n  \\compoundMeter #'((3 3 8) (2 8))\n  \\partial4\n  e8 fis |\n  g4. g g4 |\n  fis4. e fis4 |\n  g2. g4 |\n}\n\nAusgabe:\n\nWeitere Informationen: https://www.theorie-musik.de/grundlagen/taktarten/",
+    "objectID": "musikalischer_inhalt.html#benutzerdefinierte-akkordnamen",
+    "href": "musikalischer_inhalt.html#benutzerdefinierte-akkordnamen",
+    "title": "Musikalischer Inhalt",
+    "section": "Benutzerdefinierte Akkordnamen",
+    "text": "Benutzerdefinierte Akkordnamen\nAkkordzeichen können unter Umständen deutlich komplizierter sein als beispielsweise a:7. Die in den meisten Fällen verwendete Schreibweise für Akkorde wie a a:m a:7 a:sus4 etc. ist nur eine Kurzschreibform. Grundsätzlich ist jeder denkbare Akkord in LilyPond abbildbar, sofern man weiß, wie man ihn abbilden möchte. Die dafür erforderlichen Informationen finden sich in der LilyPond-Doku.\nIn der Datei lilypond-custom-includes/custom_style_overrides.ly können die Akkorde dann benutzerdefiniert und global angepasst werden, zum Beispiel:\ncustomChordPrintings = {\n  &lt;h dis' fis' e''&gt;-\\markup { \\small \"add11\" }\n  &lt;a cis' gis' h'&gt;-\\markup { \\small \"maj9\" }\n}\nDer obige Code macht aus der Eingabe h:1.3.5.11 ein Hadd11. Hilfreich können gegebenenfalls die Markup-Befehle \\small für eine kleinere Schrift und \\super für Hochstellung sein.",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",
-      "Standards beim Liedersetzen"
+      "Musikalischer Inhalt"
     ]
   },
   {
-    "objectID": "liedsatz_standards.html#takte",
-    "href": "liedsatz_standards.html#takte",
-    "title": "Standards beim Liedersetzen",
-    "section": "Takte",
-    "text": "Takte\nIn LilyPond gibt es eine Taktüberprüfung mittels der Pipe (|), die genutzt werden kann, aber nicht muss. Darüber hinaus setzen wir Takte immer in eine neue Zeile, das heißt, in jede Zeile kommt immer ein Takt. Das hat den Hintergrund, dass man die Änderungen im Diff in Git besser nachverfolgen kann. Beispiel:\n\\relative c' {\n  \\time 3/4\n  a2 r4\n  a a a\n  \\time 6/8\n  a8 a a r4.\n  r r\n}",
+    "objectID": "musikalischer_inhalt.html#akkordtabulatur",
+    "href": "musikalischer_inhalt.html#akkordtabulatur",
+    "title": "Musikalischer Inhalt",
+    "section": "Akkordtabulatur",
+    "text": "Akkordtabulatur\nFür manche speziellen Akkorde ist es nützlich für Gitarrenspieler*innen, eine Tabulatur des Akkords direkt auf der Seite des Liedes zu haben. Das geht so:\nTEXT = \\markuplist {\n  \\fret-chord #\"x;x;o;2;3;2;\" #\"d\"\n}\nIm ersten String bekommt jede Gitarrensaite eine Zuweisung (x für nicht gespielt, o für leer oder Zahl für den Bund), gefolgt von einem Semikolon. Im zweiten String wird die LilyPond-Akkordbezeichnung gefordert. Bei komplizierteren Akkorden hat man dann vermutlich eher etwas wie h:1.3.5.11 (für Hadd11) stehen als d (für D-Dur).",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",
-      "Standards beim Liedersetzen"
+      "Musikalischer Inhalt"
     ]
   },
   {
-    "objectID": "liedsatz_standards.html#wiederholungen",
-    "href": "liedsatz_standards.html#wiederholungen",
-    "title": "Standards beim Liedersetzen",
-    "section": "Wiederholungen",
-    "text": "Wiederholungen\nWenn möglich und sinnvoll, wählen wir eine einfache Notation, auch wenn die musikalisch nicht immer korrekt ist. Das bedeutet, die Wiederholung findet unter Umständen mitten im Takt statt und die Lyrics der Wiederholung stehen ebenfalls unterm Auftakt (siehe Beispiel). Das soll weniger musikalisch Gebildeten das Lesen erleichtern.\nWichtig ist uns, dass der Takt am Ende voll ist (also letzter Takt + Auftakt ergibt einen ganzen Takt) und dass die Noten nicht mit einem Takt, der nur eine Pause enthält, enden (nach solchen In-Takt-Wiederholungen).\nWenn Zwischenspiele und andere musikalisch anspruchsvollere Dinge hinzukommen und generell immer bei Instrumentalnotation, wollen wir musikalisch möglichst korrekt notieren, um Verwirrungen bei Instrumentalist*innen zu vermeiden..\nVerschiedene Varianten zu supporten, ist leider schwierig und erhöht die Komplexität.\n\nBeispiel Ade zur guten Nacht:\nfirstVerse = \\lyricmode {\n  Ich stünd da am He -- cken -- zaun\n  nur um nach dir aus -- zu -- schaun\n  und um dich zu wer -- ben.\n}\n\nfirstVoice = \\relative c'' {\n  \\partial2\n  r4\n  \\repeat volta 2 {\n    a4\n    fis2 a4 d\n    h h8 (a) g4 g\n    e2 g4 h\n    a a8 (g) fis4 a\n    a g8 fis g4 (a)\n    fis2 r4\n  }\n}\n\nAusgabe:",
+    "objectID": "musikalischer_inhalt.html#akkordabstände",
+    "href": "musikalischer_inhalt.html#akkordabstände",
+    "title": "Musikalischer Inhalt",
+    "section": "Akkordabstände",
+    "text": "Akkordabstände\nSiehe Layout-Doku.",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",
-      "Standards beim Liedersetzen"
+      "Musikalischer Inhalt"
     ]
   },
   {
-    "objectID": "liedsatz_standards.html#kanoneinsätze",
-    "href": "liedsatz_standards.html#kanoneinsätze",
-    "title": "Standards beim Liedersetzen",
-    "section": "Kanoneinsätze",
-    "text": "Kanoneinsätze\nKanoneinsätze sollen wie hier beschrieben kursiv und mit römischen Ziffern markiert werden.",
+    "objectID": "musikalischer_inhalt.html#römische-ziffern",
+    "href": "musikalischer_inhalt.html#römische-ziffern",
+    "title": "Musikalischer Inhalt",
+    "section": "Römische Ziffern",
+    "text": "Römische Ziffern\nSiehe Layout-Doku.",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",
-      "Standards beim Liedersetzen"
+      "Musikalischer Inhalt"
     ]
   },
   {
-    "objectID": "lifehacks.html",
-    "href": "lifehacks.html",
-    "title": "Nützliche Lifehacks",
+    "objectID": "musikalischer_inhalt.html#balkensetzung",
+    "href": "musikalischer_inhalt.html#balkensetzung",
+    "title": "Musikalischer Inhalt",
+    "section": "Balkensetzung",
+    "text": "Balkensetzung\nBei der Balkensetzung sind unbedingt unsere Standards zu beachten. Wie man in LilyPond die Balkensetzung beeinflusst, steht in der LilyPond-Doku.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Musikalischer Inhalt"
+    ]
+  },
+  {
+    "objectID": "musikalischer_inhalt.html#sec-textpausen",
+    "href": "musikalischer_inhalt.html#sec-textpausen",
+    "title": "Musikalischer Inhalt",
+    "section": "Textpausen",
+    "text": "Textpausen\nIn bestimmten Fällen kann es gewünscht sein, dass eine In-Text-Pause gesetzt werden soll, also eine musikalische Pause im Text. Das geht mit dem Befehl \\textRest. Die Pause nimmt ein Zeichen ein und sollte immer getaggt werden, damit sie im Zweifel auch ausgeschaltet werden kann. Beispiel:\nfirstVerse = \\lyricmode {\n  Das ist ein \\tag #'textrest { \\textRest } \\tag #'skip Bei -- spiel\n}\nMit einem \\removeWithTag kann die Textpause dann entfernt werden und mit \\pushToTag kann an die Stelle vor dem nächsten Wort, die im obigen Beispiel mit dem Tag skip markiert wurde, ein \\skip4-Befehl eingefügt werden:\nTEXT = \\markuplist {\n  \\group-verses {\n    \\chordlyrics { \\pushToTag #'skip { \\skip4 } \\removeWithTag #'textrest \\firstVerse }\n  }\n}",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Musikalischer Inhalt"
+    ]
+  },
+  {
+    "objectID": "pyyaml.html",
+    "href": "pyyaml.html",
+    "title": "Installation von PyYAML (nur Windows)",
     "section": "",
-    "text": "Du kannst die Silben eines Textes automatisiert trennen: Text auswählen und unter Werkzeuge/Musical Transformations/Liedtext/Trennungsstriche in Text einführen oder einfach Strg + L. Achtung! Die Funktion funktioniert leider nicht absolut fehlerfrei, deswegen definitiv nochmal Korrektur drüber lesen.\nDu kannst Noten ganz einfach transponieren, was in diesem Falle meint, dass sich der tatsächliche Code verändert: entsprechenden Code auswählen unter Werkzeuge/Musical Transformations/Tonhöhen/Transponieren. Dazu wichtig: Abschnitt auswählen und im Dokument vorher temporär \\language \"deutsch\" aufrufen.\nAuch Notenlängen Halbieren oder Verdoppeln geht sehr einfach: entsprechenden Code auswählen Werkzeuge/Musical Transformations/Rythmus/ und dann auf Notenlänge verdoppeln bzw. Notenlänge halbieren.\nEbenfalls kann eine bestimmte rhythmische Form übernommen werden: Werkzeuge/Musical Transformations/Rhythmus/.\nLange Zeilen können im Editor standardmäßig umgebrochen werden: Unter Bearbeiten/Einstellungen/Editor-Einstellungen/Einstellungen zur Ansicht -&gt; Haken setzen.\nZahlreiche LilyPond-Codeschnipsel gibt es unter Schnipsel. Das wollen wir künftig noch mehr ausbauen.",
+    "text": "Zuletzt wird unter Windows noch die Installation von PyYAML benötigt. Wie das geht, wird hier beschrieben.",
     "crumbs": [
-      "Doku",
-      "Liedersetzen-Prozess",
-      "Nützliche Lifehacks"
-    ]
-  },
-  {
-    "objectID": "lifehacks.html#frescobaldi-lifehacks",
-    "href": "lifehacks.html#frescobaldi-lifehacks",
-    "title": "Nützliche Lifehacks",
-    "section": "",
-    "text": "Du kannst die Silben eines Textes automatisiert trennen: Text auswählen und unter Werkzeuge/Musical Transformations/Liedtext/Trennungsstriche in Text einführen oder einfach Strg + L. Achtung! Die Funktion funktioniert leider nicht absolut fehlerfrei, deswegen definitiv nochmal Korrektur drüber lesen.\nDu kannst Noten ganz einfach transponieren, was in diesem Falle meint, dass sich der tatsächliche Code verändert: entsprechenden Code auswählen unter Werkzeuge/Musical Transformations/Tonhöhen/Transponieren. Dazu wichtig: Abschnitt auswählen und im Dokument vorher temporär \\language \"deutsch\" aufrufen.\nAuch Notenlängen Halbieren oder Verdoppeln geht sehr einfach: entsprechenden Code auswählen Werkzeuge/Musical Transformations/Rythmus/ und dann auf Notenlänge verdoppeln bzw. Notenlänge halbieren.\nEbenfalls kann eine bestimmte rhythmische Form übernommen werden: Werkzeuge/Musical Transformations/Rhythmus/.\nLange Zeilen können im Editor standardmäßig umgebrochen werden: Unter Bearbeiten/Einstellungen/Editor-Einstellungen/Einstellungen zur Ansicht -&gt; Haken setzen.\nZahlreiche LilyPond-Codeschnipsel gibt es unter Schnipsel. Das wollen wir künftig noch mehr ausbauen.",
-    "crumbs": [
-      "Doku",
-      "Liedersetzen-Prozess",
-      "Nützliche Lifehacks"
-    ]
-  },
-  {
-    "objectID": "changelog.html",
-    "href": "changelog.html",
-    "title": "Doku-Changelog und wichtige Updates",
-    "section": "",
-    "text": "Hinweis\n\n\n\nAuf dieser Seite halten wir Änderungen an der Doku sowie wichtige Mitteilungen fest, die die Arbeit mit unserem System betreffen.\n\n\n\n\n\n\n\n\n   \n     \n     \n       Sortieren nach\n       Voreinstellung\n         \n          Titel\n        \n         \n          Datum - Datum (aufsteigend)\n        \n         \n          Datum - Neueste\n        \n         \n          Autor:in\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nUpate vom 26.03.2025\n\n\n\n\n\n\nUpdate\n\n\n\n\n\n\n\n\n\n26.03.2025\n\n\n\n\n\n\n\n\n\n\n\n\nDoku-Changelog vom 26.03.2025\n\n\n\n\n\n\nDoku\n\n\n\n\n\n\n\n\n\n26.03.2025\n\n\n\n\n\n\nKeine Treffer"
-  },
-  {
-    "objectID": "liederbuch_layout.html",
-    "href": "liederbuch_layout.html",
-    "title": "Liederbuch-Layout",
-    "section": "",
-    "text": "In diesem Teil der Doku geht es um die Layout-Konfigurationen, die in aller Regel für ein gesamtes Liederbuch gelten sollen, also zum Beispiel die Schriftart der Akkorde, der Lyrics, der Überschriften, Seitenränder, Kategorien und vieles mehr. Generell sind diese Konfigurationen im Ordner lilypond-custom-includes zu machen.",
-    "crumbs": [
-      "Doku",
-      "Liedersetzen-Prozess",
-      "Liederbuch-Layout"
-    ]
-  },
-  {
-    "objectID": "liederbuch_layout.html#einstellungen-überschreiben",
-    "href": "liederbuch_layout.html#einstellungen-überschreiben",
-    "title": "Liederbuch-Layout",
-    "section": "Einstellungen überschreiben",
-    "text": "Einstellungen überschreiben\nIn der Datei lilypond-custom-includes/base_config.ly können unter anderem LilyPond-Einstellungen, die in den lilypond-common-includes definiert wurden, überschrieben werden, zum Beispiel die Einstellungen zu Versetzungszeichen oder Balkensetzungen.",
-    "crumbs": [
-      "Doku",
-      "Liedersetzen-Prozess",
-      "Liederbuch-Layout"
-    ]
-  },
-  {
-    "objectID": "liederbuch_layout.html#generelle-layout-einstellungen",
-    "href": "liederbuch_layout.html#generelle-layout-einstellungen",
-    "title": "Liederbuch-Layout",
-    "section": "Generelle Layout-Einstellungen",
-    "text": "Generelle Layout-Einstellungen\nDie allermeisten liederbuchspezifischen Einstellungen, die man vermutlich verändern will, finden sich in der Datei lilypond-common-includes/default_style.ly. Die dortigen Einstellungen können angepasst werden, indem die entsprechenden Parameter in die Datei lilypond-custom-includes/custom_style_overrides.ly kopiert werden und die Werte entsprechend verändert werden. Sofern nicht anders angegeben, müssen numerische Werte übergeben werden. Folgende Parameter gibt es:\n\nsongFormatAndSize definiert das Format, zum Beispiel a5 oder b6.\nsongMargin definiert den Seitenabstand.\nsongInfoFontSize definiert die Schriftgröße der Songinfo.\nsongInfoLineWidthFraction definiert die Breite der Songinfo.\nsongTitleSize definiert die Schriftgröße des Titels.\nsongTitleFont definiert die Schriftart des Titels. Der Name der Schriftart wird als String, also in Anführungszeichen übergeben.\nsongChordFont definiert die Schriftart der Akkorde. Der Name der Schriftart wird als String, also in Anführungszeichen übergeben.\nsongLyricFont definiert die Schriftart der Lyrics (Strophen). Der Name der Schriftart wird als String, also in Anführungszeichen übergeben.\nsongChordFontSeries. Hier kann eingestellt werden, ob die Akkorde normal (#'normal) oder fett (#'bold) dargestellt werden sollen.\nsongTextChordAlignment ist nur für das „alte“ System notwendig, wenn also keine Noten im Spiel sind. Mit #'left werden die Akkorde dann über den Silben links ausgerichtet, mit #'center werden sie über der jeweiligen Silbe zentriert.\nsongScoreChordFontSize definiert die Größe der Akkordzeichen in den Noten.\nsongTextChordFontSize definiert die Größe der Akkordzeichen in den Strophen. Es empfiehlt sich, beide Variablen gleichzusetzen.\nsongTextChordDistance definiert den Abstand zwischen den Akkordzeichen in den Strophen zu den zugehörigen Lyrics (nur neues System).\nsongTextLineHeigth definiert den Abstand zwischen den Lyric-Zeilen. Da die Akkorde sich jeweils an den Lyrics orientieren, werden die bei Anpassung des Werts mit verschoben.\nsongTocColumns definiert die Anzahl der Spalten, die im Inhaltsverzeichnis genutzt werden sollen.\nglobalSize definiert die Größe des Notensatzes.\nlyricSize definiert die Größe der Lyrics.\nstanzaFormat definiert das Format für die Nummerierung der Strophen. Standardformat ist \"~a.\". ~a ist hierbei ein Platzhalter für die Strophennummer. Hier kann also definiert werden, ob als Ausgabe beispielsweise 1., 1.: oder 1) gewünscht ist.\nromanStanzaFormat definiert das Format für die römische Nummerierung der Strophen, also der Alternativnummerierung, die zum Beispiel für fremdsprachige Strophen genutzt werden kann. Das Prinzip ist dasselbe wie beim stanzaFormat.\nrefString definiert, welche Stanza beim \\ref-Befehl übergeben werden soll.\nrefStringWithNumbers definiert das Format von nummerierten Refrains nach demselben Schema wie beim stanzaFormat.\nrepStart definiert den Befehl \\repStart für das alte System, um typographisch korrekte Wiederholungszeichen zu setzen.\nrepStop siehe repStart.\n\n\n\n\n\n\n\nHinweis\n\n\n\nEs empfiehlt sich, dass die Schriftart ebenfalls im Repo gespeichert wird, da nicht auf jedem Computer dieselben Schriftarten installiert sind.\n\n\nDer Default-Style sieht so aus:\nsongFormatAndSize = \"a5\"\nsongMargin = 5\nsongInfoFontSize = 0\nsongInfoLineWidthFraction = 0.9\nsongTitleSize = 6\nsongTitleFont = \"Liberation Sans\"\nsongChordFont = \"Liberation Sans\"\nsongLyricFont = \"Liberation Sans\"\nsongChordFontSeries = #'bold\nsongTextChordAlignment = #'left\nsongScoreChordFontSize = 2\nsongTextChordFontSize = \\songScoreChordFontSize\nsongTextChordDistance = 2.8\nsongTextLineHeigth = 5.8\nsongTocColumns = 3\nglobalSize = 15\nlyricSize = 1.6\nstanzaFormat = \"~a.\"\nromanStanzaFormat = \"~@r.\"\nrefString = \"Ref.:\"\nrefStringWithNumbers = \"Ref. ~a:\"\n% hübsche Wiederholungszeichen für den Liedtext\nrepStart = \"𝄆\"\nrepStop = \"𝄇\"",
-    "crumbs": [
-      "Doku",
-      "Liedersetzen-Prozess",
-      "Liederbuch-Layout"
-    ]
-  },
-  {
-    "objectID": "liederbuch_layout.html#anpassung-der-akkordsymbole",
-    "href": "liederbuch_layout.html#anpassung-der-akkordsymbole",
-    "title": "Liederbuch-Layout",
-    "section": "Anpassung der Akkordsymbole",
-    "text": "Anpassung der Akkordsymbole\nAuch die bestimmte Darstellung, spezieller Akkordsymbole kann in den custom_style_overrides.ly angepasst werden.",
-    "crumbs": [
-      "Doku",
-      "Liedersetzen-Prozess",
-      "Liederbuch-Layout"
-    ]
-  },
-  {
-    "objectID": "liederbuch_layout.html#kategorien",
-    "href": "liederbuch_layout.html#kategorien",
-    "title": "Liederbuch-Layout",
-    "section": "Kategorien",
-    "text": "Kategorien\nMithilfe unserer Skripte ist es möglich, Lieder Kategorien zuzuordnen und sie optional mit Kategoriebildchen zu versehen. Auch ein Kategorienverzeichnist ist möglich (siehe Einführung). So funktioniert es:\n\nKategorien erstellen\nAls erstes solltest du Kategorien in der Datei lilypond-custom-includes/categories.ly definieren. Die Datei sieht so aus:\n#(define category-names '(\n  (see \"See und\\nPiraten\")\n  ;(categoriekey \"Titel der Kategorie\")\n  ))\n\n%% Path to Category images\n#(define-public (category-image-path category)\n   (string-append \"../../liederbuecher/beispiel_liederbuch/categories/\"\n         category \".eps\"))\nDas gehen wir jetzt Zeile für Zeile durch. In der ersten Zeile wird die Scheme1-Funktion definiert, das ist erstmal uninteressant. Ab der zweiten Zeile werden dann alle Kategorien und ihre Titel definiert. Das Schema wird im auskommentierten Teil beschrieben2: Erst kommt die ID der Kategorie und danach in Anführungszeichen der Titel. Auf die ID wird in der Lied-Layout-Datei referenziert. Der Titel ist der, der dann im Kategorienverzeichnis benutzt wird. Im obigen Beispiel ist also see die ID und \"See und/nPiraten\" der Titel. Das /n bewirkt übrigens einen Zeilenumbruch.\nIm zweiten Teil wird der Pfad zu den Kategoriebildchen definiert. Der sollte auf jeden Fall angepasst werden und auf einen Ordner in deinem Liederbuch-Ordner verweisen. Die Dateinamen müssen dabei der ID entsprechen und das EPS-Format haben.\n\n\nLiedern Kategorien zuweisen\nIn der Layout-Datei der Lieder können im zweiten Schritt dann Kategorien den Liedern zugewiesen werden, in dem in der categories-Variable alle betreffenden IDs durch Leerzeichen getrennt aufgeschrieben werden. Das könnte dann so aussehen:\nHEADER = \\bookpart {\n  \\header {\n    \\basicSongInfo\n    %infotext = \"\"\n    categories = \"see abend andacht\"\n  }\n}\nDas Lied würde also den Kategorien mit den IDs see, abend und andacht zugewiesen werden.",
-    "crumbs": [
-      "Doku",
-      "Liedersetzen-Prozess",
-      "Liederbuch-Layout"
-    ]
-  },
-  {
-    "objectID": "liederbuch_layout.html#footnotes",
-    "href": "liederbuch_layout.html#footnotes",
-    "title": "Liederbuch-Layout",
-    "section": "Fußnoten",
-    "text": "Fußnoten\n\n\nScheme ist die Programmiersprache, in der LilyPond geschrieben ist.↩︎\nBei Scheme wird mit dem Semikolon (;) auskommentiert.↩︎",
-    "crumbs": [
-      "Doku",
-      "Liedersetzen-Prozess",
-      "Liederbuch-Layout"
+      "Einführung",
+      "Vorbereitung",
+      "Installation von PyYAML (nur Windows)"
     ]
   },
   {
@@ -556,6 +846,13 @@
     "title": "Upate vom 26.03.2025",
     "section": "",
     "text": "Leider gibt es aktuell Probleme mit der Nutzung des Python-Parsers bei Windows, der für das Autor*innensystem essenziell ist. Hintergrund ist vermutlich, dass ab der LilyPond-Version 2.25.11 die Guile-Version von 2.2 auf 3.0 geändert wurde. Warum sich genau das benötigte Modul nicht laden lässt, ist unklar. Ein Issue bei den LilyPond-Entwickler*innen ist bereits eingerichtet und wir hoffen, dass sich das bald klärt.\nBei der Nutzung von LilyPond 2.25.10 kommt es aktuell zu anderen Fehlermeldungen, da die Skripte momentan nicht abwärtskompatibel sind. Wenn das Problem länger andauert, werden wir die Skripte eventuell anpassen, um Kompatibilität herzustellen und die problemlose Arbeit auch unter Windows zu ermöglichen."
+  },
+  {
+    "objectID": "changelog/2025-04-19_changelog.html",
+    "href": "changelog/2025-04-19_changelog.html",
+    "title": "Doku-Changelog vom 19.04.2025",
+    "section": "",
+    "text": "Es gibt viele neue Bestandteile der Doku:\n\nEs gibt jetzt eine Seite zu Liederbüchern als Quellen, auf der wir sammeln, welche Liederbücher für welche Autor*innen als Originalquelle dienen und Einschätzungen zur Verlässlichkeit der Notensätze geben.\nWie man die Seitennummerierung beeinflussen kann, steht jetzt im Liederbuch-Layout-Teil.\nAuch wie die Seitennummerierung ausgeblendet werden kann, ist dort jetzt zu finden.\nWie musikalische Textpausen gesetzt werden können, steht jetzt im Musikalischen Inhalt.\nDie Funktion \\altChord wird nun im Musikalischen Inhalt erklärt.\nWie Barcheck-Warnungen, die in manchen Spezialfällen durch die Midi hervorgerufen werden, behoben werden können, steht jetzt ebenso im Musikalischen Inhalt.\nDer Abschnitt Akkordabstände wurde ergänzt um eine elegante Lösung mit \\pushToTag.\nDie Silbentrennung bei Volta-Klammern ist jetzt etwas besser erklärt.\nDie Strophennummerierung ist jetzt auch festgehalten.\nAuch die Refrainnummerierung wird nun erklärt…\n…und ist nun auch Bestandteil unserer Standards.\nWie Strophen ohne Akkorde gesetzt werden können, wird nun im Layout-Teil erklärt.\nDas Satzjahr wurde der Metadaten-Doku hinzugefügt.\nIm Git-Starter-Tutorial steht jetzt auch, dass unbedingt eingestellt werden sollte, dass beim Pullen gerebased wird.\nStandards zur Akkordnotation wurden festgehalten.\nAußerdem wurde ein Link zur LilyPond-Doku bei Anpassung der Akkordsymbole ergänzt.\nDie Taktüberprüfung wurde in die Standards integriert…\nund auch ins Tutorial."
   },
   {
     "objectID": "liedlayout_doku.html",
@@ -598,7 +895,19 @@
     "href": "liedlayout_doku.html#sec-abstand-akkorde",
     "title": "Lied-Layout",
     "section": "Abstand der Akkorde voneinander",
-    "text": "Abstand der Akkorde voneinander\nBei vielen aufeinanderfolgenden Akkorden (zum Beispiel in Zwischenspielen) kann es vorkommen, dass es schöner aussähe, wenn diese in den Strophen mehr Abstand zueinander hätten. Das geht mit dem folgenden Befehl, der in der Layout-Datei in die \\chords { }-Umgebung eingebaut werden muss.\n\\override ChordName.extra-spacing-width = #'(-0.5 . 0.5)\nDurch die Anpassung der übergebenen Werte verändert sich dann der Abstand der Akkorde zueinander entsprechend. Um genau zu sein, wird der horizontale Abstand geändert.\nEin gekürztes Beispiel aus „Tout l’espoir“:\nref-chords = \\chords { \\override ChordName.extra-spacing-width = #'(-0.9 . 0.9) \\refChords }\nref-voice = { \\global \\removeWithTag #'firstVerse \\refVoice }\nref-breaks = { \n  s1 s s s \\break\n  s s s s \\break\n  s1 s\n}\n\nTEXT = \\markuplist {\n  \\group-verses {\n    \\override #`(verse-chords . ,ref-chords)\n    \\override #`(verse-reference-voice . ,#{ \\global \\removeWithTag #'multiVerse \\refVoice #})\n    \\override #`(verse-break-voice . ,ref-breaks)\n    \\chordlyrics \\refLyrics\n}",
+    "text": "Abstand der Akkorde voneinander\nBei vielen aufeinanderfolgenden Akkorden (zum Beispiel in Zwischenspielen) kann es vorkommen, dass es schöner aussähe, wenn diese in den Strophen mehr Abstand zueinander hätten. Das geht mit dem folgenden Befehl, der in der Layout-Datei in die \\chords { }-Umgebung eingebaut werden muss.\n\\override ChordName.extra-spacing-width = #'(-0.5 . 0.5)\nDurch die Anpassung der übergebenen Werte verändert sich dann der Abstand der Akkorde zueinander entsprechend. Um genau zu sein, wird der horizontale Abstand geändert.\nEin gekürztes Beispiel aus „Tout l’espoir“:\nref-chords = \\chords { \\override ChordName.extra-spacing-width = #'(-0.9 . 0.9) \\refChords }\nref-voice = { \\global \\removeWithTag #'firstVerse \\refVoice }\nref-breaks = { \n  s1 s s s \\break\n  s s s s \\break\n  s1 s\n}\n\nTEXT = \\markuplist {\n  \\group-verses {\n    \\override #`(verse-chords . ,ref-chords)\n    \\override #`(verse-reference-voice . ,#{ \\global \\removeWithTag #'multiVerse \\refVoice #})\n    \\override #`(verse-break-voice . ,ref-breaks)\n    \\chordlyrics \\refLyrics\n}\n\nElegantere Lösung und Lösung für einzelne Akkorde mit pushToTag\nEine etwas elegantere Lösung kann man mit \\pushToTag erreichen. Dabei wird der Akkord in den Akkorden, ab dem mehr Platz benötigt wird, mit einem Tag (z.B. moreSpace) markiert, und dann im weiter unten Layout-Teil wird mittels \\pushToTag das gewünschte Kommando inkludiert – das für einzelne Akkorde, die mehr Platz benötigen, auch nur einmal (\\once) genutzt werden kann. Ein Beispiel aus „Banner“:\nrefChords = \\chordmode {\n  \\repeat volta 2 {\n    s4 \\themeChords\n    e2 \\tag #'moreSpace { e:7 }\n  }\n}\nDas E7 ist zu nah am E-Dur, deswegen braucht es mehr Abstand – allerdings betrifft das allein dieses E7. Deswegen markieren wir es mit dem Tag moreSpace.\nMUSIC = { … }\n\nrefChords =  \\chordmode { \\pushToTag #'moreSpace { \\once \\override ChordName.extra-spacing-width = #'(-2 . 0.1) } \\refChords }\n\nTEXT = { … }\nUnten überschreiben wir dann die refChords und nutzen \\pushToTag, um vor den markierten Akkord den eingeklammerten Befehl zu inkludieren.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Lied-Layout"
+    ]
+  },
+  {
+    "objectID": "liedlayout_doku.html#sec-fill-midi",
+    "href": "liedlayout_doku.html#sec-fill-midi",
+    "title": "Lied-Layout",
+    "section": "Barcheck-Warnung durch Midi-Auftakte beheben",
+    "text": "Barcheck-Warnung durch Midi-Auftakte beheben\nIn bestimmten Fällen kann es vorkommen, dass Barcheck-Warnungen durch die Midi-Datei hervorgerufen werden. Begründet ist das dann eigentlich immer durch einen Inline-Score. Wenn ein Lied ein Auftakt hat und eine Coda, die man sowohl als Inline-Score als auch im MUSIC-Teil notiert, kann es sein, dass der Auftakt in der Midi fehlt. Die Funktion hängt dem Midi einfach noch musikalischen Inhalt an, Beispiel „Winterlied“:\n% muss weg, wenn die Coda nicht im MUSIC-Teil notiert ist\n\\fill-midi s16\nWie im Kommentar erwähnt, muss dieser Befehl weggelassen werden, wenn die Coda nicht im MUSIC-Teil notiert ist.",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",
@@ -695,6 +1004,18 @@
     "title": "Lied-Layout",
     "section": "Strophennummern überschreiben",
     "text": "Strophennummern überschreiben\nEs kann vorkommen, dass man bestimmte Strophen nicht in seinem Liederbuch abdrucken will oder eine andere Reihenfolge der Strophen bevorzugt. Für diesen Fall kann die Strophennummer einfach überschrieben werden mit dem Befehl\n\\override-stanza #3\n\n%alternative\n\n#(override-stanza 3)\nDer Befehl muss vor die entsprechende Lyrics-Variable abgerufen werden.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Lied-Layout"
+    ]
+  },
+  {
+    "objectID": "liedlayout_doku.html#sec-strophen-ohne-akkorde",
+    "href": "liedlayout_doku.html#sec-strophen-ohne-akkorde",
+    "title": "Lied-Layout",
+    "section": "Strophen ohne Akkorde",
+    "text": "Strophen ohne Akkorde\nStrophen können natürlich auch ohne Akkorde ausgedrückt werden. Dabei wird im alten System statt \\chordverse \\nochordverse geschrieben und im neuen System (unserem Standardsystem) \\nochordlyrics statt \\chordlyrics. Beispiel:\nTEXT = \\markuplist {\n  \\group-verses {\n    \\chordlyrics \\firstVerse\n    \\chordlyrics \\refLyrics\n    \\nochordlyrics \\secondVerse\n  }\n}",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",
@@ -858,6 +1179,13 @@
     ]
   },
   {
+    "objectID": "generalbass.html",
+    "href": "generalbass.html",
+    "title": "Akkordnotation mit Generalbass – ein Leitfaden",
+    "section": "",
+    "text": "In manchen Liederbüchern (vor allem von olka) wird für die Akkordnotation die Generalbassnotation verwendet. Diese stammt aus der Barockmusik und ist heutzutage alles andere als intuitiv. Wir wollen keine Generalbassnotation notieren, sondern stattdessen moderne Akkordsymbole wie sie geläufig sind. Deswegen gibt es hier eine Erklärung, wie die Generalbassnotation in heutige Akkordsymbole umgewandelt werden kann.\n…bald!"
+  },
+  {
     "objectID": "git_einrichten.html",
     "href": "git_einrichten.html",
     "title": "Einrichtung von Git",
@@ -898,7 +1226,19 @@
     "href": "git_einrichten.html#einrichten-eines-liederbuch-repos",
     "title": "Einrichtung von Git",
     "section": "Einrichten eines Liederbuch-Repos",
-    "text": "Einrichten eines Liederbuch-Repos\nDa du Git vermutlich zum ersten Mal nutzt, brauchst du zuerst einen SSH-Key. Der SSH-Key ist dafür da, dass das Remote-Repo weiß, dass dein lokales Repo auch zu dir gehört. Sonst könnte ja jeder, der den SSH-Link hat (siehe dazu Abbildung 1), Zugriff aufs Repo haben. Er ist also ein Identifikationsmittel für deinen Account. Dafür hinterlegst du den public key in deinem Git-Account und sagst deinem Git-Programm (SmartGit, SourceTree, TortoiseGit), wo deine Schlüssel-Datei liegt. Diese Datei ist auch nochmal extra passwortgeschützt. Sie sollte auf keinen Fall gelöscht oder verschoben werden. Die lange Erklärung kannst du hier nachlesen.\n\n\n\nAbbildung 1: Das ist der SSH-Link.\n\n\n\n\n\n\n\nSSH-Key erstellen\nDu musst dir einen SSH-Key erstellen und das Passwort, public key und private key und Schlüsseldatei speichern/aufbewahren. Eine Anleitung dafür findest du hier.\nAnschließend hinterlegst du den public key in deinem Git-Account (unter Einstellungen -&gt; SSH- / GPG-Schlüssel -&gt; Schlüssel hinzufügen).\nSpäter wirst du beim „Klonen“ eines Liederbuchs irgendwann nach deiner Schlüsseldatei gefragt (für die du dann auch das Passwort brauchst). Es ist also wichtig, dass du beides gut speicherst!\nKlingt alles sehr kompliziert und das ist es auch, aber: Du musst das nur einmal machen und dann funktioniert es einfach. Wenigstens etwas.\n\n\nEin neues Liederbuch-Repo mit dem Vorlagen-Repo erstellen\nDa du ja ganz neu einsteigst, hast du vermutlich noch kein eigenes Liederbuch-Repo. Deswegen erstellen wir erstmal eins. Das tolle ist: Wir haben zu genau diesem Zweck ein Vorlagen-Repo gebaut, mit dem du sofort die meisten wichtigen Sachen eingerichtet hast. Wichtig: Du brauchst vorher einen Account bei tuxgit (siehe Kapitel 1). So geht’s:\n\nDu gehst zu unserem LilyPond-Vorlagen-Repo auf unserem Git-Server.\nDu klickst auf Dieses Template verwenden.\nDu folgst den Schritten (Besitzer*innen, Name, … festlegen) Wichtig: Bei Template muss lilypond-vorlagen ausgewählt sein.\nDann kannst du einfach unten weitermachen.\n\n\n\nEin bestehendes Liederbuch-Repo klonen\nWenn du die obigen Schritte befolgt hast oder schon ein Liederbuch-Repo eingerichtet hast und dass einfach nur klonen willst, dann geht das so:\n\nRemote-Repo klonen\nJe nach GUI funktioniert das unterschiedlich. Irgendwo gibt es die Option Clone und da dann einen Dialog, in dem du unter anderem den SSH-Link des Repos eintragen kannst. Wichtig ist bei dem Prozess: Submodule müssen inkludiert werden. Irgendwo kann man dann den Speicherort des lokalen Repos festlegen. Es empfiehlt sich, einen Ordner zu haben, wo alle Git-Repos drin sind. Dies ist aber nicht notwendig für irgendetwas.\n\nSmartGit: In Smartgit navigierst du zu Repository -&gt; Clone und folgst dem Dialog. Zuerst gibst du deinen SSH-Link ein. Dann achtest du darauf, dass Submodules inkludiert werden und wählst zuletzt den Speicherort des Repos aus.\n\nAls nächstes müssen die Submodule noch richtig eingebunden werden, das geht nämlich leider nicht automatisch. Du brauchst auf jeden Fall unsere Common-Includes als Submodul. Wenn du mit unserem Liederpool arbeitest, brauchst du noch die Song-Includes als Submodul. Für jedes Submodul musst du diesen Prozess einzeln durchführen.\nAuch das funktioniert in jeder GUI anders. So geht es bei SmartGit:\n\nIm Menü Remote anwählen -&gt; Submodule -&gt; Add\nDann brauchst du die SSH-Links der Submodule. Die findest du auf die bekannte Art und Weise (siehe Abbildung 1).\nIm nächsten Schritt wird gefragt, an welcher Stelle das Submodul eingebunden werden soll, da kannst du einfach weiterklicken.\n\nFertig!\n\nUnd jetzt kann’s richtig losgehen!",
+    "text": "Einrichten eines Liederbuch-Repos\nDa du Git vermutlich zum ersten Mal nutzt, brauchst du zuerst einen SSH-Key. Der SSH-Key ist dafür da, dass das Remote-Repo weiß, dass dein lokales Repo auch zu dir gehört. Sonst könnte ja jeder, der den SSH-Link hat (siehe dazu Abbildung 1), Zugriff aufs Repo haben. Er ist also ein Identifikationsmittel für deinen Account. Dafür hinterlegst du den public key in deinem Git-Account und sagst deinem Git-Programm (SmartGit, SourceTree, TortoiseGit), wo deine Schlüssel-Datei liegt. Diese Datei ist auch nochmal extra passwortgeschützt. Sie sollte auf keinen Fall gelöscht oder verschoben werden. Die lange Erklärung kannst du hier nachlesen.\n\n\n\nAbbildung 1: Das ist der SSH-Link.\n\n\n\n\n\n\n\nSSH-Key erstellen\nDu musst dir einen SSH-Key erstellen und das Passwort, public key und private key und Schlüsseldatei speichern/aufbewahren. Eine Anleitung dafür findest du hier.\nAnschließend hinterlegst du den public key in deinem Git-Account (unter Einstellungen -&gt; SSH- / GPG-Schlüssel -&gt; Schlüssel hinzufügen).\nSpäter wirst du beim „Klonen“ eines Liederbuchs irgendwann nach deiner Schlüsseldatei gefragt (für die du dann auch das Passwort brauchst). Es ist also wichtig, dass du beides gut speicherst!\nKlingt alles sehr kompliziert und das ist es auch, aber: Du musst das nur einmal machen und dann funktioniert es einfach. Wenigstens etwas.\n\n\nEin neues Liederbuch-Repo mit dem Vorlagen-Repo erstellen\nDa du ja ganz neu einsteigst, hast du vermutlich noch kein eigenes Liederbuch-Repo. Deswegen erstellen wir erstmal eins. Das tolle ist: Wir haben zu genau diesem Zweck ein Vorlagen-Repo gebaut, mit dem du sofort die meisten wichtigen Sachen eingerichtet hast. Wichtig: Du brauchst vorher einen Account bei tuxgit (siehe Kapitel 1). So geht’s:\n\nDu gehst zu unserem LilyPond-Vorlagen-Repo auf unserem Git-Server.\nDu klickst auf Dieses Template verwenden.\nDu folgst den Schritten (Besitzer*innen, Name, … festlegen) Wichtig: Bei Template muss lilypond-vorlagen ausgewählt sein.\nDann kannst du einfach unten weitermachen.\n\n\n\nEin bestehendes Liederbuch-Repo klonen\nWenn du die obigen Schritte befolgt hast oder schon ein Liederbuch-Repo eingerichtet hast und dass einfach nur klonen willst, dann geht das so:\n\nRemote-Repo klonen\nJe nach GUI funktioniert das unterschiedlich. Irgendwo gibt es die Option Clone und da dann einen Dialog, in dem du unter anderem den SSH-Link des Repos eintragen kannst. Wichtig ist bei dem Prozess: Submodule müssen inkludiert werden. Irgendwo kann man dann den Speicherort des lokalen Repos festlegen. Es empfiehlt sich, einen Ordner zu haben, wo alle Git-Repos drin sind. Dies ist aber nicht notwendig für irgendetwas.\n\nSmartGit: In Smartgit navigierst du zu Repository -&gt; Clone und folgst dem Dialog. Zuerst gibst du deinen SSH-Link ein. Dann achtest du darauf, dass Submodules inkludiert werden und wählst zuletzt den Speicherort des Repos aus.\n\nAls nächstes müssen die Submodule noch richtig eingebunden werden, das geht nämlich leider nicht automatisch. Du brauchst auf jeden Fall unsere Common-Includes als Submodul. Wenn du mit unserem Liederpool arbeitest, brauchst du noch die Song-Includes als Submodul. Für jedes Submodul musst du diesen Prozess einzeln durchführen.\nAuch das funktioniert in jeder GUI anders. So geht es bei SmartGit:\n\nIm Menü Remote anwählen -&gt; Submodule -&gt; Add\nDann brauchst du die SSH-Links der Submodule. Die findest du auf die bekannte Art und Weise (siehe Abbildung 1).\nIm nächsten Schritt wird gefragt, an welcher Stelle das Submodul eingebunden werden soll, da kannst du einfach weiterklicken.\n\nFertig!",
+    "crumbs": [
+      "Einführung",
+      "Vorbereitung",
+      "Einrichtung von Git"
+    ]
+  },
+  {
+    "objectID": "git_einrichten.html#sec-gitsettings",
+    "href": "git_einrichten.html#sec-gitsettings",
+    "title": "Einrichtung von Git",
+    "section": "Wichtige Git-Einstellung",
+    "text": "Wichtige Git-Einstellung\nWichtig ist jetzt noch, dass du in deiner Git-GUI einstellst, dass das Standardverhalten bei Pulls Rebase ist. Dazu musst du deine Git-Config ändern. Das geht meist über ein Einstellungsmenü. In SmartGit über Repository/Settings und dann sollte es so aussehen:\n\n\nDer Radio-Button sollte auf „Rebase local branch onto fetched changes“ stehen.\n\n\n\nOder du änderst die User-Git-Config und fügst folgende Zeilen hinzu:\n[pull]\n    rebase = true\nUnd jetzt kann’s richtig losgehen!",
     "crumbs": [
       "Einführung",
       "Vorbereitung",
@@ -954,6 +1294,13 @@
     ]
   },
   {
+    "objectID": "changelog/2025-04-19_update.html",
+    "href": "changelog/2025-04-19_update.html",
+    "title": "Upate vom 19.04.2025",
+    "section": "",
+    "text": "Wir konnten das Problem unter Windows lösen. Benötigt wird die Installation von „PyYAML“. Wie das geht, ist in der Einführung verlinkt."
+  },
+  {
     "objectID": "changelog/2025-03-26_changelog.html",
     "href": "changelog/2025-03-26_changelog.html",
     "title": "Doku-Changelog vom 26.03.2025",
@@ -961,360 +1308,394 @@
     "text": "Es gibt neue Bestandteile der Doku:\n\nMarkup-Befehle (LilyPond-Doku) wurden verlinkt\n„Strophennummern überschreiben“\n„Abstand der Akkorde voneinander“"
   },
   {
-    "objectID": "musikalischer_inhalt.html",
-    "href": "musikalischer_inhalt.html",
-    "title": "Musikalischer Inhalt",
+    "objectID": "liederbuch_layout.html",
+    "href": "liederbuch_layout.html",
+    "title": "Liederbuch-Layout",
     "section": "",
-    "text": "In diesem Abschnitt der Doku zeigen wir Lösungen für Probleme oder Herausforderungen, die sich aus der Arbeit mit unserem System ergeben. Vieles davon wurde von tux entwickelt und befindet sich in den lilypond-common-includes, bei manchen Themen verweisen wir auch einfach nur auf die LilyPond-Doku. Dieser Teil ist fokussiert auf Fragen bezüglich der Notation und dem Liedtext.",
+    "text": "In diesem Teil der Doku geht es um die Layout-Konfigurationen, die in aller Regel für ein gesamtes Liederbuch gelten sollen, also zum Beispiel die Schriftart der Akkorde, der Lyrics, der Überschriften, Seitenränder, Kategorien und vieles mehr. Generell sind diese Konfigurationen im Ordner lilypond-custom-includes zu machen.",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",
-      "Musikalischer Inhalt"
+      "Liederbuch-Layout"
     ]
   },
   {
-    "objectID": "musikalischer_inhalt.html#wiederholungen-in-den-strophen",
-    "href": "musikalischer_inhalt.html#wiederholungen-in-den-strophen",
-    "title": "Musikalischer Inhalt",
-    "section": "Wiederholungen in den Strophen",
-    "text": "Wiederholungen in den Strophen\nProblem: Wiederholungszeichen (𝄆 und 𝄇 ) im Text sollen nur in den Strophen, nicht aber unter den Noten stehen. Trotzdem wollen wir denselben Text für beides verwenden.\nLösung: Vor den wiederholten Teil im Text \\repStartWithTag und vor der letzten Silbe (nach den -- !) \\repStophWithTag.\nZur Erklärung: Es handelt sich faktisch um eine Stanza, die aber immer vor Silben gesetzt werden muss (sie kann aber auch rechts von Silben ausgerichtet werden). Diese Stanza wird nur bei einem bestimmten Tag ausgegeben, der repeats heißt. Mehr zu Tags findest du in der Lilypond-Doku. Standardmäßig wird der Tag ausgegeben, soll das nicht der Fall sein (wie zum Beispiel unter den Noten), muss innerhalb des MUSIC-Teils der Befehl \\removeWithTag #'repeats inkludiert werden.\nCodebeispiel (aus: Ade zur guten Nacht):\nthirdVerse = \\lyricmode {\n  %…\n  \\repStartWithTag\n  Wie man -- chen _ Glo -- cken -- schlag,\n  da Herz bei _ Her -- zen lag,\n  das hast du ver -- ges -- \\repStopWithTag sen.\n}\n\n%…\n\nMUSIC = {\n  \\removeWithTag #'repeats\n  &lt;&lt;\n      \\songChords\n      \\new ChoirStaff = \"firstStaff\"\n      &lt;&lt;\n        \\new Voice = \"firstVoice\" { \\melodyVoice }\n        \\addlyrics { \\firstVerse }\n        \\addlyrics { \\secondVerse }\n        \\addlyrics { \\thirdVerse }\n        \\addlyrics { \\fourthVerse }\n      &gt;&gt;\n  &gt;&gt;\n}\n\n\nIn den Strophen sieht das dann zum Beispiel so aus:",
+    "objectID": "liederbuch_layout.html#einstellungen-überschreiben",
+    "href": "liederbuch_layout.html#einstellungen-überschreiben",
+    "title": "Liederbuch-Layout",
+    "section": "Einstellungen überschreiben",
+    "text": "Einstellungen überschreiben\nIn der Datei lilypond-custom-includes/base_config.ly können unter anderem LilyPond-Einstellungen, die in den lilypond-common-includes definiert wurden, überschrieben werden, zum Beispiel die Einstellungen zu Versetzungszeichen oder Balkensetzungen.",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",
-      "Musikalischer Inhalt"
+      "Liederbuch-Layout"
     ]
   },
   {
-    "objectID": "musikalischer_inhalt.html#melismata-mehrere-noten-zu-einer-silbe",
-    "href": "musikalischer_inhalt.html#melismata-mehrere-noten-zu-einer-silbe",
-    "title": "Musikalischer Inhalt",
-    "section": "Melismata (mehrere Noten zu einer Silbe)",
-    "text": "Melismata (mehrere Noten zu einer Silbe)\nProblem: In manchen Strophen gibt es an einer Stelle ein Melisma und in der nächsten Strophe an derselben Stelle nicht. Dadurch verschiebt sich der Text.\nLösung: Nutzen von \\set ignoreMelismata = ##t nach Bedarf. Siehe dazu auch in der LilyPond-Doku.\nCodebeispiel:\n%firstVerse mit Melismata:\nfirstVerse = \\lyricmode {\n  #(stanza 1)\n  A -- de zur gu -- ten Nacht!\n  Jetzt wird der Schluss ge -- macht,\n  dass ich muss schei -- den.\n  \\repStartWithTag\n  Im Som -- mer, da wächst der Klee, im Win -- ter da schneit’s den Schnee,\n  da kom -- me ich wie -- \\repStopWithTag der.\n}\n\n%secondVerse ohne Melismata\nsecondVerse = \\lyricmode {\n  #(stanza 2)\n  Es trau -- ern Berg und Tal,\n  wo ich viel tau -- send -- mal\n  bin drü -- ber gan -- gen.\n  \\set ignoreMelismata = ##t %ab hier werden Melismata ignoriert\n  \\repStartWithTag\n  Das hat dei -- ne Schön -- heit ge -- macht,\n  die hat mich zum Lie -- ben ge -- bracht\n  \\unset ignoreMelismata %und hier wieder nicht mehr\n  mit gro -- ßem Ver -- lan -- \\repStopWithTag gen.\n}\n\n\nSo sieht dann der Output der ersten beiden Verse aus:",
+    "objectID": "liederbuch_layout.html#generelle-layout-einstellungen",
+    "href": "liederbuch_layout.html#generelle-layout-einstellungen",
+    "title": "Liederbuch-Layout",
+    "section": "Generelle Layout-Einstellungen",
+    "text": "Generelle Layout-Einstellungen\nDie allermeisten liederbuchspezifischen Einstellungen, die man vermutlich verändern will, finden sich in der Datei lilypond-common-includes/default_style.ly. Die dortigen Einstellungen können angepasst werden, indem die entsprechenden Parameter in die Datei lilypond-custom-includes/custom_style_overrides.ly kopiert werden und die Werte entsprechend verändert werden. Sofern nicht anders angegeben, müssen numerische Werte übergeben werden. Folgende Parameter gibt es:\n\nsongFormatAndSize definiert das Format, zum Beispiel a5 oder b6.\nsongMargin definiert den Seitenabstand.\nsongInfoFontSize definiert die Schriftgröße der Songinfo.\nsongInfoLineWidthFraction definiert die Breite der Songinfo.\nsongTitleSize definiert die Schriftgröße des Titels.\nsongTitleFont definiert die Schriftart des Titels. Der Name der Schriftart wird als String, also in Anführungszeichen übergeben.\nsongChordFont definiert die Schriftart der Akkorde. Der Name der Schriftart wird als String, also in Anführungszeichen übergeben.\nsongLyricFont definiert die Schriftart der Lyrics (Strophen). Der Name der Schriftart wird als String, also in Anführungszeichen übergeben.\nsongChordFontSeries. Hier kann eingestellt werden, ob die Akkorde normal (#'normal) oder fett (#'bold) dargestellt werden sollen.\nsongTextChordAlignment ist nur für das „alte“ System notwendig, wenn also keine Noten im Spiel sind. Mit #'left werden die Akkorde dann über den Silben links ausgerichtet, mit #'center werden sie über der jeweiligen Silbe zentriert.\nsongScoreChordFontSize definiert die Größe der Akkordzeichen in den Noten.\nsongTextChordFontSize definiert die Größe der Akkordzeichen in den Strophen. Es empfiehlt sich, beide Variablen gleichzusetzen.\nsongTextChordDistance definiert den Abstand zwischen den Akkordzeichen in den Strophen zu den zugehörigen Lyrics (nur neues System).\nsongTextLineHeigth definiert den Abstand zwischen den Lyric-Zeilen. Da die Akkorde sich jeweils an den Lyrics orientieren, werden die bei Anpassung des Werts mit verschoben.\nsongTocColumns definiert die Anzahl der Spalten, die im Inhaltsverzeichnis genutzt werden sollen.\nglobalSize definiert die Größe des Notensatzes.\nlyricSize definiert die Größe der Lyrics.\nstanzaFormat definiert das Format für die Nummerierung der Strophen. Standardformat ist \"~a.\". ~a ist hierbei ein Platzhalter für die Strophennummer. Hier kann also definiert werden, ob als Ausgabe beispielsweise 1., 1.: oder 1) gewünscht ist.\nromanStanzaFormat definiert das Format für die römische Nummerierung der Strophen, also der Alternativnummerierung, die zum Beispiel für fremdsprachige Strophen genutzt werden kann. Das Prinzip ist dasselbe wie beim stanzaFormat.\nrefString definiert, welche Stanza beim \\ref-Befehl übergeben werden soll.\nrefStringWithNumbers definiert das Format von nummerierten Refrains nach demselben Schema wie beim stanzaFormat.\nrepStart definiert den Befehl \\repStart für das alte System, um typographisch korrekte Wiederholungszeichen zu setzen.\nrepStop siehe repStart.\n\n\n\n\n\n\n\nHinweis\n\n\n\nEs empfiehlt sich, dass die Schriftart ebenfalls im Repo gespeichert wird, da nicht auf jedem Computer dieselben Schriftarten installiert sind.\n\n\nDer Default-Style sieht so aus:\nsongFormatAndSize = \"a5\"\nsongMargin = 5\nsongInfoFontSize = 0\nsongInfoLineWidthFraction = 0.9\nsongTitleSize = 6\nsongTitleFont = \"Liberation Sans\"\nsongChordFont = \"Liberation Sans\"\nsongLyricFont = \"Liberation Sans\"\nsongChordFontSeries = #'bold\nsongTextChordAlignment = #'left\nsongScoreChordFontSize = 2\nsongTextChordFontSize = \\songScoreChordFontSize\nsongTextChordDistance = 2.8\nsongTextLineHeigth = 5.8\nsongTocColumns = 3\nglobalSize = 15\nlyricSize = 1.6\nstanzaFormat = \"~a.\"\nromanStanzaFormat = \"~@r.\"\nrefString = \"Ref.:\"\nrefStringWithNumbers = \"Ref. ~a:\"\n% hübsche Wiederholungszeichen für den Liedtext\nrepStart = \"𝄆\"\nrepStop = \"𝄇\"",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",
-      "Musikalischer Inhalt"
+      "Liederbuch-Layout"
     ]
   },
   {
-    "objectID": "musikalischer_inhalt.html#mehrere-silben-zu-einer-note",
-    "href": "musikalischer_inhalt.html#mehrere-silben-zu-einer-note",
-    "title": "Musikalischer Inhalt",
-    "section": "Mehrere Silben zu einer Note",
-    "text": "Mehrere Silben zu einer Note\nSiehe Lilypond-Doku.",
+    "objectID": "liederbuch_layout.html#sec-akkordsymbole-anpassen",
+    "href": "liederbuch_layout.html#sec-akkordsymbole-anpassen",
+    "title": "Liederbuch-Layout",
+    "section": "Anpassung der Akkordsymbole",
+    "text": "Anpassung der Akkordsymbole\nAuch die bestimmte Darstellung, spezieller Akkordsymbole kann in den custom_style_overrides.ly angepasst werden. Siehe dazu mehr in der LilyPond-Doku.",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",
-      "Musikalischer Inhalt"
+      "Liederbuch-Layout"
     ]
   },
   {
-    "objectID": "musikalischer_inhalt.html#silbentrennung-bei-volta-klammern",
-    "href": "musikalischer_inhalt.html#silbentrennung-bei-volta-klammern",
-    "title": "Musikalischer Inhalt",
-    "section": "Silbentrennung bei Volta-Klammern",
-    "text": "Silbentrennung bei Volta-Klammern\nProblem: Es kommt vor, dass in Liedern die Melodie der Strophe wiederholt wird. Wenn man dabei eine Wiederholung mit Volta-Klammern notiert und ein Wort in die Wiederholung „hineinragt“, dann skipt man die folgenden Notenwerte, was aber dazu führt, dass unter der gesamten Klammer eins Lyric-Hyphens (Bindestriche zwischen den Silben) gesetzt werden.\nLösung: Mit \\once \\hide \\LyricHyphen werden alle Hyphens der nächsten Silbe unterdrückt. Stattdessen wird mit \\rightHyphen bzw. \\leftHyphen ein manueller Hyphen gesetzt (die Funktion ist in den common-includes definiert). Die \\skip4-Befehle werden ggf. über eine dafür gesetzte Variable definiert (im unteren Beispiel voltaSkipsLyrics). Da die Hyphens im Text (also den „Strophen“) nicht zu sehen sein sollen, werden sie mittels eines Tags gesetzt, der volta heißt. Mehr zu Tags in der Lilypond-Doku.\nCodebeispiel:\nvoltaSkipsLyrics = \\lyricmode {\n  \\repeat unfold 10 { \\skip4 }\n}\n\nfirstVerseB = \\lyricmode {\n  Hab es selbst so ge -- wählt, nie die Jah -- re \\tag #'volta { \\once \\hide LyricHyphen \\rightHyphen } ge -- \\tag #'volta { \\voltaSkipsLyrics \\leftHyphen } zählt,\n  nie nach ges -- tern und mor -- gen ge -- fragt.\n}\n\n\n\nAbbildung 1: Links das Problem, rechts die Lösung.\n\n\n\n\n\n\nSo soll das nicht aussehen.\n\n\n\n\n\n\n\nSo sieht das ganze dann „schön“ aus:",
+    "objectID": "liederbuch_layout.html#kategorien",
+    "href": "liederbuch_layout.html#kategorien",
+    "title": "Liederbuch-Layout",
+    "section": "Kategorien",
+    "text": "Kategorien\nMithilfe unserer Skripte ist es möglich, Lieder Kategorien zuzuordnen und sie optional mit Kategoriebildchen zu versehen. Auch ein Kategorienverzeichnist ist möglich (siehe Einführung). So funktioniert es:\n\nKategorien erstellen\nAls erstes solltest du Kategorien in der Datei lilypond-custom-includes/categories.ly definieren. Die Datei sieht so aus:\n#(define category-names '(\n  (see \"See und\\nPiraten\")\n  ;(categoriekey \"Titel der Kategorie\")\n  ))\n\n%% Path to Category images\n#(define-public (category-image-path category)\n   (string-append \"../../liederbuecher/beispiel_liederbuch/categories/\"\n         category \".eps\"))\nDas gehen wir jetzt Zeile für Zeile durch. In der ersten Zeile wird die Scheme1-Funktion definiert, das ist erstmal uninteressant. Ab der zweiten Zeile werden dann alle Kategorien und ihre Titel definiert. Das Schema wird im auskommentierten Teil beschrieben2: Erst kommt die ID der Kategorie und danach in Anführungszeichen der Titel. Auf die ID wird in der Lied-Layout-Datei referenziert. Der Titel ist der, der dann im Kategorienverzeichnis benutzt wird. Im obigen Beispiel ist also see die ID und \"See und/nPiraten\" der Titel. Das /n bewirkt übrigens einen Zeilenumbruch.\nIm zweiten Teil wird der Pfad zu den Kategoriebildchen definiert. Der sollte auf jeden Fall angepasst werden und auf einen Ordner in deinem Liederbuch-Ordner verweisen. Die Dateinamen müssen dabei der ID entsprechen und das EPS-Format haben.\n\n\nLiedern Kategorien zuweisen\nIn der Layout-Datei der Lieder können im zweiten Schritt dann Kategorien den Liedern zugewiesen werden, in dem in der categories-Variable alle betreffenden IDs durch Leerzeichen getrennt aufgeschrieben werden. Das könnte dann so aussehen:\nHEADER = \\bookpart {\n  \\header {\n    \\basicSongInfo\n    %infotext = \"\"\n    categories = \"see abend andacht\"\n  }\n}\nDas Lied würde also den Kategorien mit den IDs see, abend und andacht zugewiesen werden.",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",
-      "Musikalischer Inhalt"
+      "Liederbuch-Layout"
     ]
   },
   {
-    "objectID": "musikalischer_inhalt.html#umgang-mit-wiederholungen-bei-gleichbleibendem-text",
-    "href": "musikalischer_inhalt.html#umgang-mit-wiederholungen-bei-gleichbleibendem-text",
-    "title": "Musikalischer Inhalt",
-    "section": "Umgang mit Wiederholungen bei gleichbleibendem Text",
-    "text": "Umgang mit Wiederholungen bei gleichbleibendem Text\nProblem: Gibt es Volta-Klammern bei Liedern, in denen der Text des wiederholten Teils gleich ist, zum Beispiel, weil es nach der Klammer anders weitergeht, kommt es vor, dass man in die Lyrics zum Beispiel schreiben müsste: Und je -- der Kerl, der mit uns war, hat für im -- mer sich zu uns ge -- sellt. Und sellt.. Das ist natürlich unpraktisch für die Übernahme in die Strophen, weil man das sellt. Und ja nicht in den Strophen haben möchte.\nLösung: Auch hier kommen wieder Tags zum Einsatz und zwar wie folgt. Es wird ein neuer Tag repeat definiert, der alles in einschließt, was für die Volta-Wiederholungen notwendig ist. Für die Strophen werden dann extra-Variablen definiert, in denen dieser Tag ausgeschaltet wird. Wichtig: Der Tag muss sich natürlich auch in der Melodie und den Akkorden wiederfinden.\nCodebeispiel:\nfirstVerseWithRepeat = \\lyricmode {\n  #(stanza 1)\n  Wir sind ei -- ne klei -- ne ver -- lo -- re -- ne Schar,\n  wir ste -- hen für uns auf der Welt.\n  \\repStartWithTag Und je -- der Kerl, der mit uns war,\n  hat für im -- mer sich zu uns ge -- \\tag #'repeat { sellt. Und } \\repStopWithTag sellt.\n}\n\nfirstVerse = \\lyricmode {\n  \\removeWithTag #'repeat \\firstVerseWithRepeat\n}\n\nfirstVoice = \\relative c' {\n  \\partial4\n  fis4\n  g8 e4 fis8 g e4 g8\n  fis g4 fis8 e4 d4\n  g8 g4 g8 a d4 c8\n  h2. h4\n  \\repeat volta 2 {\n    c4 c c c\n    h8 h4 (a8) g4 g8 a\n    h8 h4 h8 a h4 a8\n  }\n  \\alternative {\n    % Tag bedenken\n    \\tag #'repeat { g2. h4 }\n    { g1 }\n  }\n}\n\nverseChords = \\chordmode {\n  \\partial4\n  s4 e1:m h2:7 e4:m d:7\n  g2 d:7 g1\n  \\repeat volta 2 {\n    c1 g g2 d:7\n  }Bock\n  \\alternative {\n    %Tag bedenken\n    \\tag #'repeat { g1 }\n    { g1 }\n  }\n}\n\n% im MUSIC-Teil wird der Tag dann wieder aktiviert\nMUSIC = {\n  \\keepWithTag #'repeat\n  &lt;&lt;\n      \\songChords\n      \\new ChoirStaff = \"firstStaff\"\n      &lt;&lt;\n        \\new Voice = \"firstVoice\" { \\melodyVoice }\n        \\addlyrics { \\firstVerseWithRepeat }\n        \\addlyrics { \\secondVerseWithRepeat }\n        \\addlyrics { \\thirdVerseWithRepeat }\n      &gt;&gt;\n  &gt;&gt;\n}\n\n% Für die Strophen wollen wir keine Volta-Wiederholung\nverse-chords = \\chords { \\removeWithTag #'repeat \\verseChords }",
+    "objectID": "liederbuch_layout.html#sec-seitennummerierung",
+    "href": "liederbuch_layout.html#sec-seitennummerierung",
+    "title": "Liederbuch-Layout",
+    "section": "Seitennummerierung beeinflussen",
+    "text": "Seitennummerierung beeinflussen\nDie Seitennummerierung bei Liederbüchern folgt der grundsätzlichen Logik, dass gerade Seiten immer links sind und ungerade Seiten immer rechts. Die erste Seite ist grundsätzlich immer die Seite 0. Das führt unter Umständen zu folgendem Problem:\n\n\n\nLinks\nRechts\n\n\n\n\n0 (Deckblatt)\n1 (Leerseite Einband, eigentlich links)\n\n\n2 (erstes Lied, eigentlich rechts)\n3 …\n\n\n\nWie zu sehen, sollte das Deckblatt in diesem Fall (der vermutlich der Regelfall ist) eigentlich die Seite 1 haben. Die Lösung ist, dass im Paper-Block der Book-Umgebung in der Liederbuchdatei die Ziffer der ersten Seite definiert wird (diese folgt dann nach wie vor der oben genannten Logik):\n\\book {\n  \\paper {\n    first-page-number = #1\n  }\n  %…\n}",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",
-      "Musikalischer Inhalt"
+      "Liederbuch-Layout"
     ]
   },
   {
-    "objectID": "musikalischer_inhalt.html#umgang-mit-wiederholungen-bei-neuem-text",
-    "href": "musikalischer_inhalt.html#umgang-mit-wiederholungen-bei-neuem-text",
-    "title": "Musikalischer Inhalt",
-    "section": "Umgang mit Wiederholungen bei „neuem“ Text",
-    "text": "Umgang mit Wiederholungen bei „neuem“ Text\nProblem: Volta-Klammern (Wiederholungsklammern), bei denen nicht derselbe Text wiederholt wird, sollten in den Strophen aufgelöst werden, damit der Text hintereinander (und nicht wie in den Noten untereinander) steht.\nLösung: Dafür nutzen wir den Befehl \\unfoldRepeats, der in den verse-chords und verse-voice gesetzt werden muss und dann per \\override auf die Strophen angewendet werden kann (Achtung: \\override gilt immer nur für das folgende Element, zum Beispiel ein Vers oder ein \\group-verses-Ausdruck). Außerdem müssen die Verse aufgeteilt werden in verschiedene Teile.\nCodebeispiel:\nfirstVerseA = \\lyricmode {\n  #(stanza 1)\n  Er -- ste Wie -- der -- ho -- lung,\n}\n\nfirstVerseB = \\lyricmode {\n  zwei -- te Wie -- der -- ho -- lung.\n}\n\nfirstVerseC = \\lyricmode {\n  Wei -- ter geht’s\n}\n\nfirstVerse = { \\firstVerseA \\firstVerseB \\firsVerseC }\n\nverse-chords = \\chords { \\unfoldRepeats \\verseChords }\nverse-voice = { \\unfoldRepeats \\firstVoice }\nverse-breaks = { \n  s4 s2*3 s4 \\break\n  s4 s2*3 s4 \\break\n  s4 s2*3 s4 \\break\n}\n\nTEXT = \\markuplist {\n  \\override #`(verse-chords . ,verse-chords)\n  \\override #`(verse-reference-voice . ,verse-voice)\n  \\override #`(verse-break-voice . ,verse-breaks)\n  \\group-verses {\n    \\chordlyrics \\firstVerse\n  }\n}",
+    "objectID": "liederbuch_layout.html#sec-seitennummerierungausblenden",
+    "href": "liederbuch_layout.html#sec-seitennummerierungausblenden",
+    "title": "Liederbuch-Layout",
+    "section": "Seitennummerierung ausblenden",
+    "text": "Seitennummerierung ausblenden\nSoll die Seitennummerierung ausgeblendet werden, kann dafür folgender Befehl in der Bookpart-Umgebung verwendet werden:\n\\bookpart {\n  \\paper {\n    print-page-number = ##f\n  }\n}",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",
-      "Musikalischer Inhalt"
+      "Liederbuch-Layout"
     ]
   },
   {
-    "objectID": "musikalischer_inhalt.html#strophen-mit-unterschiedlichen-noten--oder-silbenverteilung-oder-rhythmus",
-    "href": "musikalischer_inhalt.html#strophen-mit-unterschiedlichen-noten--oder-silbenverteilung-oder-rhythmus",
-    "title": "Musikalischer Inhalt",
-    "section": "Strophen mit unterschiedlichen Noten- oder Silbenverteilung oder Rhythmus",
-    "text": "Strophen mit unterschiedlichen Noten- oder Silbenverteilung oder Rhythmus\nProblem:\n\nGerade bei neueren Liedern kommt es häufig vor, dass sie unterschiedliche Rhythmen (zum Beispiel Auftakte) in den Strophen haben. Da der Text an Noten ausgerichtet wird, kommt es somit zu einem Problem, wenn in der 1. Strophe beispielsweise kein Auftakt vorhanden ist, in der 2. Strophe jedoch schon, kann der Versanfang der 2. Strophe nicht an Noten ausgerichtet werden, da diese in der Melodie (der 1. Strophe) gar nicht vorkommen.\nDas Notenbild / der Notensatz der 1. Strophe soll aber nicht unnötig aufgebläht werden durch Auftaktkonstruktionen (und es gibt natürlich auch noch wesentlich komplexere Konflikte), da dadurch die Lesbarkeit erschwert wird und das Notenbild mehr Verwirrung als Klarheit schaffen würde.\n\nLösung:\n\nNutzung von einer Funktion, die Tags nutzt: \\alt (siehe Codebeispiel). Die Idee ist, dass es eine einfache Notation gibt (üblicherweise die der 1. Strophe) und eine komplexere, an der alle Verse ausgerichtet werden können. Die \\alt-Funktion wird im \\relative-Teil wie folgt angewendet: \\alt { A } { B }. A steht für die einfache Notation, B für die komplexe.\nNun gibt es wiederum das Problem, dass der Text in den unterschiedlichen Notationen an unterschiedlichen Stellen geskipt werden muss. Dafür gibt es die Lösung über die Funktion \\multiVerseSkips X. Das X ist dabei zu ersetzen mit der Anzahl der zu skipenden Noten. X muss mindestens den Wert 1 haben.\nIm MUSIC-Teil muss der Tag nun auch angegeben werden. Zum Codebeispiel: Im music-Teil muss nichts angepasst werden, stattdessen kann man nun im MUSIC-Teil angeben, ob man die multiVerse-Ansicht oder die firstVerse-Ansicht angezeigt werden möchte. Das jeweils andere kann auskommentiert werden.\n\nCodebeispiel:\nfirstVerse = \\lyricmode {\n  #(stanza 1)\n  \\multiVerseSkips 4 Komm zu mir, leg dich ins Laub\n  \\\\multiVerseSkips 1 und \\\\multiVerseSkips 1 hör, was die Wur -- zeln er -- zäh -- len.\n  Je -- \\\\multiVerseSkips 1 des \\\\multiVerseSkips 1 Blatt zer -- fällt ein -- mal zu Staub\n  \\\\multiVerseSkips 2 und je -- der Baum wird auch wie -- der zu Er -- de.\n  Doch je -- des En -- de ist ein An -- fang\n  und vol -- ler Kreis -- läu -- fe sind Zeit und Raum.\n  Al -- les ver -- geht, doch nichts geht ver -- lo -- ren,\n  al -- les ist Wirk -- lich -- keit und al -- les ist Traum.\n}\n\n% Verwendung von alt\nfirstVoice = \\relative c' {\n  \\alt {} { \\partial2 a8 a d8 f8 }\n  a4. a8 a4\n  g4 a g\n  e2.\n  \\alt { r2 d4 } { r4 r8 d d d }\n  e4. e8 e4\n  d4 e d\n  c4 a2\n}\n\n% Einbindung in music/MUSIC\nmusic = {\n  &lt;&lt;\n      \\songChords\n      \\new ChoirStaff = \"firstStaff\"\n      &lt;&lt;\n        \\new Voice = \"firstVoice\" { \\melodyVoice }\n        \\addlyrics { \\firstVerse }\n        \\addlyrics { \\tag #'multiVerse \\secondVerse }\n        \\addlyrics { \\tag #'multiVerse \\thirdVerse }\n        \\addlyrics { \\tag #'multiVerse \\fourthVerse }\n        \\addlyrics { \\tag #'multiVerse \\fifthVerse }\n      &gt;&gt;\n  &gt;&gt;\n}\n\nMUSIC = {\n  \\keepWithTag #'multiVerse\n  %\\keepWithTag #'firstVerse\n  \\music\n}\n\n\n\nAbbildung 2: Das sind die beiden möglichen resultierenden Ansichten.\n\n\n\n\n\n\nDie \\firstVerse-Ansicht:\n\n\n\n\n\n\n\nDie \\multiVerse-Ansicht:",
+    "objectID": "liederbuch_layout.html#footnotes",
+    "href": "liederbuch_layout.html#footnotes",
+    "title": "Liederbuch-Layout",
+    "section": "Fußnoten",
+    "text": "Fußnoten\n\n\nScheme ist die Programmiersprache, in der LilyPond geschrieben ist.↩︎\nBei Scheme wird mit dem Semikolon (;) auskommentiert.↩︎",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",
-      "Musikalischer Inhalt"
+      "Liederbuch-Layout"
     ]
   },
   {
-    "objectID": "musikalischer_inhalt.html#zeilenumbrüche-in-den-strophen",
-    "href": "musikalischer_inhalt.html#zeilenumbrüche-in-den-strophen",
-    "title": "Musikalischer Inhalt",
-    "section": "Zeilenumbrüche in den Strophen",
-    "text": "Zeilenumbrüche in den Strophen\nSiehe Layout-Teil der Doku.",
+    "objectID": "changelog.html",
+    "href": "changelog.html",
+    "title": "Doku-Changelog und wichtige Updates",
+    "section": "",
+    "text": "Hinweis\n\n\n\nAuf dieser Seite halten wir Änderungen an der Doku sowie wichtige Mitteilungen fest, die die Arbeit mit unserem System betreffen.\n\n\n\n\n\n\n\n\n   \n     \n     \n       Sortieren nach\n       Voreinstellung\n         \n          Titel\n        \n         \n          Datum - Datum (aufsteigend)\n        \n         \n          Datum - Neueste\n        \n         \n          Autor:in\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nDoku-Changelog vom 19.04.2025\n\n\n\n\n\n\nDoku\n\n\n\n\n\n\n\n\n\n19.04.2025\n\n\n\n\n\n\n\n\n\n\n\n\nUpate vom 19.04.2025\n\n\n\n\n\n\nUpdate\n\n\n\n\n\n\n\n\n\n19.04.2025\n\n\n\n\n\n\n\n\n\n\n\n\nUpate vom 26.03.2025\n\n\n\n\n\n\nUpdate\n\n\n\n\n\n\n\n\n\n26.03.2025\n\n\n\n\n\n\n\n\n\n\n\n\nDoku-Changelog vom 26.03.2025\n\n\n\n\n\n\nDoku\n\n\n\n\n\n\n\n\n\n26.03.2025\n\n\n\n\n\n\nKeine Treffer"
+  },
+  {
+    "objectID": "lifehacks.html",
+    "href": "lifehacks.html",
+    "title": "Nützliche Lifehacks",
+    "section": "",
+    "text": "Du kannst die Silben eines Textes automatisiert trennen: Text auswählen und unter Werkzeuge/Musical Transformations/Liedtext/Trennungsstriche in Text einführen oder einfach Strg + L. Achtung! Die Funktion funktioniert leider nicht absolut fehlerfrei, deswegen definitiv nochmal Korrektur drüber lesen.\nDu kannst Noten ganz einfach transponieren, was in diesem Falle meint, dass sich der tatsächliche Code verändert: entsprechenden Code auswählen unter Werkzeuge/Musical Transformations/Tonhöhen/Transponieren. Dazu wichtig: Abschnitt auswählen und im Dokument vorher temporär \\language \"deutsch\" aufrufen.\nAuch Notenlängen Halbieren oder Verdoppeln geht sehr einfach: entsprechenden Code auswählen Werkzeuge/Musical Transformations/Rythmus/ und dann auf Notenlänge verdoppeln bzw. Notenlänge halbieren.\nEbenfalls kann eine bestimmte rhythmische Form übernommen werden: Werkzeuge/Musical Transformations/Rhythmus/.\nLange Zeilen können im Editor standardmäßig umgebrochen werden: Unter Bearbeiten/Einstellungen/Editor-Einstellungen/Einstellungen zur Ansicht -&gt; Haken setzen.\nZahlreiche LilyPond-Codeschnipsel gibt es unter Schnipsel. Das wollen wir künftig noch mehr ausbauen.",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",
-      "Musikalischer Inhalt"
+      "Nützliche Lifehacks"
     ]
   },
   {
-    "objectID": "musikalischer_inhalt.html#leichte-textvariationen",
-    "href": "musikalischer_inhalt.html#leichte-textvariationen",
-    "title": "Musikalischer Inhalt",
-    "section": "(Leichte) Textvariationen",
-    "text": "(Leichte) Textvariationen\nProblem: Es gibt teilweise leichte Textvariationen bei einzelnen Wörtern.\nLösung: Auch da helfen uns wieder die Tags (Lilypond-Doku). Je nach Belieben kann dann entweder die eine Variante aktiviert werden oder die andere.\n\nInnerhalb einer Variante\nBeim Regenbogenlied gibt es beispielsweise eine Unterscheidung im Artikel zwischen dem ersten und zweitem Refrain. Die Lösung dafür ist, einfach beides einzubauen und dann das jeweils nicht benötigte auszuschalten. Das hat den Vorteil, dass wir trotzdem dieselbe Textbasis verwenden können.\nCodebeispiel:\nrefLyrics = \\lyricmode {\n  \\ref\n  \\repStartWithTag Ü -- ber uns \\tag #'first { ein } \\tag #'second { der } Re -- gen -- bo -- gen,\n  zeigt uns den Weg in sei -- nem Licht,\n  die Wol -- ken sind schon fort -- ge -- zo -- gen,\n  ver -- weh -- ren uns die Son -- ne \\repStopWithTag nicht.\n}\n\nrefLyricsFirst = \\lyricmode { \\removeWithTag #'second \\refLyrics }\nrefLyricsSecond = \\lyricmode { \\removeWithTag #'first \\refLyrics }\n\n\nVerschiedene Varianten\nAnders verhält es sich, wenn wir ein Lied haben, bei dem es verschiedene Varianten gibt. Mitunter kann es hilfreich sein, einen kürzeren Befehl zu haben, wenn beide Varianten sich an vielen Stellen unterscheiden. Das kann folgendermaßen gelöst werden:\nvariant =\n#(define-music-function (parser location a b) (ly:music? ly:music?) \n  #{ \\tag #'bock { #a } \\tag #'codex { #b } #})\nWenn mehr als zwei Varianten benötigt werden, kann der Befehl problemlos erweitert werden, indem weitere Elemente hinzugefügt werden:\n#(define-music-function (parser location a b c d) (ly:music? ly:music? ly:music? ly:music?)  #{ \\tag #'bock { #a } \\tag #'codex { #b } \\tag #'buedel { #c } \\tag #'boernel { #d } #}).\nDer Tag-Abruf erfolgt dann zum Beispiel so:\nfirstVerse = \\lyricmode {\n  #(stanza 1)\n  Das ist der ers -- te \\variant { Vers } { Verse } { Teil } { Ab -- schnitt }.\n}\nDabei ist die oben definierte Reihenfolge entscheidend! Der jeweils gewünschte Tag muss dann unbedingt im MUSIC-Teil zugewiesen werden. Dabei sollte im MUSIC-Teil ebenfalls erkennbar sein, wie viele und welche Varianten es überhaupt gibt, zum Beispiel durch auskommentierte Alternativvarianten:\nMUSIC = {\n  \\keepWithTag #'bock\n  %\\keepWithTag #'codex\n  %\\keepWithTag #'buedel\n  %\\keepWithTag #'boernel\n  &lt;&lt;\n      \\songChords\n      \\new ChoirStaff = \"firstStaff\"\n      &lt;&lt;\n        \\new Voice = \"firstVoice\" { \\melodyVoice }\n        \\addlyrics { \\firstVerse }\n      &gt;&gt;\n  &gt;&gt;\n}",
+    "objectID": "lifehacks.html#frescobaldi-lifehacks",
+    "href": "lifehacks.html#frescobaldi-lifehacks",
+    "title": "Nützliche Lifehacks",
+    "section": "",
+    "text": "Du kannst die Silben eines Textes automatisiert trennen: Text auswählen und unter Werkzeuge/Musical Transformations/Liedtext/Trennungsstriche in Text einführen oder einfach Strg + L. Achtung! Die Funktion funktioniert leider nicht absolut fehlerfrei, deswegen definitiv nochmal Korrektur drüber lesen.\nDu kannst Noten ganz einfach transponieren, was in diesem Falle meint, dass sich der tatsächliche Code verändert: entsprechenden Code auswählen unter Werkzeuge/Musical Transformations/Tonhöhen/Transponieren. Dazu wichtig: Abschnitt auswählen und im Dokument vorher temporär \\language \"deutsch\" aufrufen.\nAuch Notenlängen Halbieren oder Verdoppeln geht sehr einfach: entsprechenden Code auswählen Werkzeuge/Musical Transformations/Rythmus/ und dann auf Notenlänge verdoppeln bzw. Notenlänge halbieren.\nEbenfalls kann eine bestimmte rhythmische Form übernommen werden: Werkzeuge/Musical Transformations/Rhythmus/.\nLange Zeilen können im Editor standardmäßig umgebrochen werden: Unter Bearbeiten/Einstellungen/Editor-Einstellungen/Einstellungen zur Ansicht -&gt; Haken setzen.\nZahlreiche LilyPond-Codeschnipsel gibt es unter Schnipsel. Das wollen wir künftig noch mehr ausbauen.",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",
-      "Musikalischer Inhalt"
+      "Nützliche Lifehacks"
     ]
   },
   {
-    "objectID": "musikalischer_inhalt.html#swing-style",
-    "href": "musikalischer_inhalt.html#swing-style",
-    "title": "Musikalischer Inhalt",
-    "section": "Swing-Style",
-    "text": "Swing-Style\nDen Swing-Style kann man mittels der Funktion \\swingMusic erwirken. Das setzt den folgenden musikalischen Ausdruck im Swing-Style. \\swingMusic kann beispielsweise in die \\melodyVoice gepackt werden (dann geschweifte Klammern nicht vergessen). Die Midi-Ausgabe erfolgt dann sogleich rhythmisch korrekt.\nDer Swing-Style kann mithilfe der Funktion \\swingOff wieder ausgestellt werden. Das ist im unteren Beispiel zwar für die Midi-Ausgabe gar nicht nötig, allerdings printed \\swingOff auch das entsprechende Zeichen, dass kein Swing-Style mehr gespielt werden soll. Andernfalls wüsste man anhand des Liedblattes nicht, dass der Swing-Style aufhört.\nmelodyVoice = {\n  \\global\n  \\swingMusic { \\firstVoice \\interludeVoice }\n  \\swingOff \\refVoice\n  \\bar \"|.\"\n}",
+    "objectID": "liedsatz_standards.html",
+    "href": "liedsatz_standards.html",
+    "title": "Standards beim Liedersetzen",
+    "section": "",
+    "text": "Hier werden Entscheidungen dokumentiert, die mit dem Liedersetzen in Zusammenhang stehen. Die Sortierung erfolgt innerhalb der Teilbereiche alphabetisch.",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",
-      "Musikalischer Inhalt"
+      "Standards beim Liedersetzen"
     ]
   },
   {
-    "objectID": "musikalischer_inhalt.html#sec-kanon",
-    "href": "musikalischer_inhalt.html#sec-kanon",
-    "title": "Musikalischer Inhalt",
-    "section": "Markierungen für beispielsweise Kanoneinsätze",
-    "text": "Markierungen für beispielsweise Kanoneinsätze\nMarkierungen wie beispielsweise eine römische Ziffer für den Einsatz einer Kanonstimme sollten auf folgendem Wege eingetragen werden (Beispiel für dreistimmigen Kanon):\neins = { \\tag #'einsaetze { \\tweak self-alignment-X #LEFT \\mark \\markup { \\italic \"I.\" } } }\nzwei = { \\tag #'einsaetze { \\tweak self-alignment-X #LEFT \\mark \\markup { \\italic \"II.\" } } }\ndrei = { \\tag #'einsaetze { \\tweak self-alignment-X #LEFT \\mark \\markup { \\italic \"III.\" } } }\nWas passiert da und wo gibt es ggf. etwas anzupassen? Der Variablenname kommt als erstes. Dahinter folgt ein Tag, der hier einsaetze heißt, damit die Markierungen unten in den Strophen ausgeschaltet werden können. Anschließend folgen einige Platzierungsbefehle und dann ein \\markup-Befehl: \\markup { \\italic \"I.\" }. In der Regel sollten Markierungen wie diese immer kursiv geschrieben sein. Bei Kanoneinsätzen sollen römische Ziffern genutzt werden. Die Markierungen können aber natürlich auch in der Layout-Datei überschrieben werden.",
+    "objectID": "liedsatz_standards.html#benennung",
+    "href": "liedsatz_standards.html#benennung",
+    "title": "Standards beim Liedersetzen",
+    "section": "Benennung",
+    "text": "Benennung\nDie Dateinamen-Benennung folgt dem Prinzip: lied_anfang_(lied_name). Bitte beachte unbedingt die Kleinschreibung!!!\nEin Beispiel aus der Praxis: hast_du_den_staubigen_(der_meilenorden)",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",
-      "Musikalischer Inhalt"
+      "Standards beim Liedersetzen"
     ]
   },
   {
-    "objectID": "musikalischer_inhalt.html#optionale-akkorde",
-    "href": "musikalischer_inhalt.html#optionale-akkorde",
-    "title": "Musikalischer Inhalt",
+    "objectID": "liedsatz_standards.html#apostrophe",
+    "href": "liedsatz_standards.html#apostrophe",
+    "title": "Standards beim Liedersetzen",
+    "section": "Apostrophe",
+    "text": "Apostrophe\nWir halten uns bei Apostrophen grundsätzlich an den Duden: https://www.duden.de/sprachwissen/rechtschreibregeln/apostroph#D13\nDas bedeutet: Wir setzen Apostrophe nur, wenn es wirklich nötig ist (= die Lesbarkeit fördert). Das stellt die Lesbarkeit in den Mittelpunkt und bedeutet eine einheitliche Linie, an die man sich gut halten kann.\nBeispiele fürs Setzen:\n\n(vgl. D13) Schlaf nun selig und süß, schau im Traum ’s Paradies.\nzusamm’n, richt’ge\nOb der Onkel, der ihn fährt vielleicht ’ne Tante ist, …\n\nBeispiele fürs Nicht-Setzen (jeweils kursiv):\n\nIch wär gern bei den Soldaten, schösse man da mit Tomaten. (vgl. D13 2)\nAls wir endlich groß genug warn, nahmen wir unsre Schuh. (vgl. D13 1;1;3)\nHaben wir den goldnen Daumen längst verlorn? (D13 1;1)\nAuf den Leitplanken stehen die Geschichten drauf. (D14 2)\nDa flog sie, oh Pardon, auf dem Besenstiel davon, gradeaus übers Haus, dreimal rum und hoch hinaus. (D13 1; D14 1;2)\nBis dass die ganze Nachbarschaft Aufhörn schrie. (D13 2)\nWir haben dich schon aus der Ferne gesehn. (D13 2)\nEines Nachts geschiehts im trüben Lampenlicht (D14 4)",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Standards beim Liedersetzen"
+    ]
+  },
+  {
+    "objectID": "liedsatz_standards.html#rechtschreibung",
+    "href": "liedsatz_standards.html#rechtschreibung",
+    "title": "Standards beim Liedersetzen",
+    "section": "Rechtschreibung",
+    "text": "Rechtschreibung\nGrundsätzlich setzen wir immer nach neuer deutscher Rechtschreibung. Es gibt aber auch (sehr wenige) Ausnahmen (siehe Büdel S. 327).\nDer Leitspruch lautet: Bei inhaltlichen Aspekten setzen wir möglichst genau (zum Beispiel Zeichensetzung), bei Aspekten, die keine inhaltlichen Auswirkungen haben (Rechtschreibung, Apostrophen), setzen wir nach einheitlichen und aktuellen Standards.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Standards beim Liedersetzen"
+    ]
+  },
+  {
+    "objectID": "liedsatz_standards.html#textveränderungen-zum-original",
+    "href": "liedsatz_standards.html#textveränderungen-zum-original",
+    "title": "Standards beim Liedersetzen",
+    "section": "Textveränderungen zum Original",
+    "text": "Textveränderungen zum Original\nJe nach Ausmaß sollen Textveränderungen über Tags optional auswählbar sein (wenn es sich z.B. um einzelne Wörter handelt) bzw. in eine neue Variable geschrieben werden (wenn zum Beispiel ein Großteil oder der gesamte Text verschieden ist).",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Standards beim Liedersetzen"
+    ]
+  },
+  {
+    "objectID": "liedsatz_standards.html#title-case-bei-englischsprachigen-liedern",
+    "href": "liedsatz_standards.html#title-case-bei-englischsprachigen-liedern",
+    "title": "Standards beim Liedersetzen",
+    "section": "Title Case bei englischsprachigen Liedern",
+    "text": "Title Case bei englischsprachigen Liedern\nWir nutzen den APA Style. Siehe Wikipedia.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Standards beim Liedersetzen"
+    ]
+  },
+  {
+    "objectID": "liedsatz_standards.html#typografisch-korrekte-zeichen",
+    "href": "liedsatz_standards.html#typografisch-korrekte-zeichen",
+    "title": "Standards beim Liedersetzen",
+    "section": "Typografisch korrekte Zeichen",
+    "text": "Typografisch korrekte Zeichen\nUns ist die typografisch korrekte Zeichensetzung wichtig. Ein Apostroph sieht beispielsweise so aus ’ und nicht so '. Das gilt – so der Kenntnisstand – auch für Englisch und Französisch.\nGedankenstriche und „Bis-Striche“ sind Halbgeviertstriche –, keine -.\nAnführungszeichen sehen so „ und so “ aus, nicht so \".",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Standards beim Liedersetzen"
+    ]
+  },
+  {
+    "objectID": "liedsatz_standards.html#sec-refnum-standards",
+    "href": "liedsatz_standards.html#sec-refnum-standards",
+    "title": "Standards beim Liedersetzen",
+    "section": "Nummerierung von Refrains",
+    "text": "Nummerierung von Refrains\nMitunter kommt es vor, dass ein Lied mehrere Refrains hat. Dann ist es sinnvoll, diese zu nummerieren, damit klar wird, wann welcher Refrain gesungen wird. Es gibt grob zwei Fälle:\n\nEs gibt mehrere Strophen, nach jeder Strophe kommt der Refrain und der letzte Refrain weicht ab. In diesem Fall muss nur der letzte Refrain gekennzeichnet sein.\nEs gibt immer oder meistens verschiedene Refrains. Dann empfiehlt es sich, für jeden Refrain alle Optionen entsprechend zu kennzeichnen.\n\nDie Logik hinter der Refrain-Kennzeichnung bezieht sich immer auf die Strophe, nach der der Refrain gesungen wird. Der Code \\ref #'(4 5) bedeutet also, dass der Refrain jeweils nach der 4. und 5. Strophe gesungen wird. Der Standardausdruck dafür wäre: „Ref. 4, 5:“ und kann natürlich für jedes Liederbuch spezifisch angepasst werden. Siehe auch: Refrainnummerierung.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Standards beim Liedersetzen"
+    ]
+  },
+  {
+    "objectID": "liedsatz_standards.html#balken",
+    "href": "liedsatz_standards.html#balken",
+    "title": "Standards beim Liedersetzen",
+    "section": "Balken",
+    "text": "Balken\nBei der Balkensetzung achten wir möglichst darauf, keine manuelle Balkensetzung zu machen, da sonst die Flexibilität verloren geht. Grundsätzlich kann man LilyPond sagen, in welchen Taktarten welche Balken wie zusammengefasst werden oder nicht.\nUnter einem Balken wird beispielsweise zusammengefasst, was auf einen Grundschlag kommt. Das kann, wie gesagt, LilyPond global gesagt bekommen. Deswegen setzen wir im Liederpool nicht so, wie im Beispiel für 4/4-Takt:\n\\relative c' {\n  \\time 4/4\n  e8 [e8] e8 [e8] e16 [e16 e16 e16] e8 [e16 e16]\n}\nAusgabe:",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Standards beim Liedersetzen"
+    ]
+  },
+  {
+    "objectID": "liedsatz_standards.html#harmoniestimmen",
+    "href": "liedsatz_standards.html#harmoniestimmen",
+    "title": "Standards beim Liedersetzen",
+    "section": "Harmoniestimmen",
+    "text": "Harmoniestimmen\nHarmoniestimmen (2./3./4. Stimmen) schreiben wir grundsätzlich in eigene Variablen (firstVoice, secondVoice etc.), damit Liederbuch-Teams sich entscheiden können, ob sie sie nutzen wollen oder nicht.\nWenn es nur eine Harmoniestimme, also eine zweite Stimme gibt, dann kann dafür im MUSIC-Teil der Befehl \\secondVoiceStyle genutzt werden. Die Standarddarstellung dafür ist, dass die Noten der zweiten Stimme grau werden. Das kann aber liederbuchspezifisch angepasst werden oder der Befehl einfach in der Layout-Datei entfernt werden.\n\nBeispiel Im Burgenland:\nMUSIC = {\n  \\new Staff \n  &lt;&lt;\n    \\new Voice = \"firstVoice\" { \\global \\voiceTwo \\firstVoice }\n    \\addlyrics { \\firstVerse }\n    \\new Voice = \"secondVoice\" { \\global \\voiceOne \\secondVoiceStyle \\secondVoice }\n  &gt;&gt;\n}\n\nAusgabe:",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Standards beim Liedersetzen"
+    ]
+  },
+  {
+    "objectID": "liedsatz_standards.html#optionale-akkorde",
+    "href": "liedsatz_standards.html#optionale-akkorde",
+    "title": "Standards beim Liedersetzen",
     "section": "Optionale Akkorde",
-    "text": "Optionale Akkorde\nOptionale Akkorde können eingeklammert werden anhand der Funktion \\klamm { d4:7 }.",
+    "text": "Optionale Akkorde\nOptionale Akkorde sollen getaggt werden, damit sie ausgeschaltet werden können.",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",
-      "Musikalischer Inhalt"
+      "Standards beim Liedersetzen"
     ]
   },
   {
-    "objectID": "musikalischer_inhalt.html#benutzerdefinierte-akkordnamen",
-    "href": "musikalischer_inhalt.html#benutzerdefinierte-akkordnamen",
-    "title": "Musikalischer Inhalt",
-    "section": "Benutzerdefinierte Akkordnamen",
-    "text": "Benutzerdefinierte Akkordnamen\nAkkordzeichen können unter Umständen deutlich komplizierter sein als beispielsweise a:7. Die in den meisten Fällen verwendete Schreibweise für Akkorde wie a a:m a:7 a:sus4 etc. ist nur eine Kurzschreibform. Grundsätzlich ist jeder denkbare Akkord in LilyPond abbildbar, sofern man weiß, wie man ihn abbilden möchte. Die dafür erforderlichen Informationen finden sich in der LilyPond-Doku.\nIn der Datei lilypond-custom-includes/custom_style_overrides.ly können die Akkorde dann benutzerdefiniert und global angepasst werden, zum Beispiel:\ncustomChordPrintings = {\n  &lt;h dis' fis' e''&gt;-\\markup { \\small \"add11\" }\n  &lt;a cis' gis' h'&gt;-\\markup { \\small \"maj9\" }\n}\nDer obige Code macht aus der Eingabe h:1.3.5.11 ein Hadd11. Hilfreich können gegebenenfalls die Markup-Befehle \\small für eine kleinere Schrift und \\super für Hochstellung sein.",
+    "objectID": "liedsatz_standards.html#ganztaktpausen",
+    "href": "liedsatz_standards.html#ganztaktpausen",
+    "title": "Standards beim Liedersetzen",
+    "section": "Ganztaktpausen",
+    "text": "Ganztaktpausen\nWenn ein Takt vollständig pausiert wird, sollten Ganztaktpausen genutzt werden (Lilypond-Befehl: R), die sind genau dafür da. Der Unterschied zu normalen Pausen besteht darin dass sie in der Taktmitte zentriert werde und immer aussehen wie ganze Pausen (außer in bestimmten Takten). Siehe auch https://www.mu-sig.de/Theorie/Notation/Notation07.htm Ausnahme: Wenn erkenntlich gemacht werden muss, wann Akkordwechsel erfolgen.",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",
-      "Musikalischer Inhalt"
+      "Standards beim Liedersetzen"
     ]
   },
   {
-    "objectID": "musikalischer_inhalt.html#akkordtabulatur",
-    "href": "musikalischer_inhalt.html#akkordtabulatur",
-    "title": "Musikalischer Inhalt",
-    "section": "Akkordtabulatur",
-    "text": "Akkordtabulatur\nFür manche speziellen Akkorde ist es nützlich für Gitarrenspieler*innen, eine Tabulatur des Akkords direkt auf der Seite des Liedes zu haben. Das geht so:\nTEXT = \\markuplist {\n  \\fret-chord #\"x;x;o;2;3;2;\" #\"d\"\n}\nIm ersten String bekommt jede Gitarrensaite eine Zuweisung (x für nicht gespielt, o für leer oder Zahl für den Bund), gefolgt von einem Semikolon. Im zweiten String wird die LilyPond-Akkordbezeichnung gefordert. Bei komplizierteren Akkorden hat man dann vermutlich eher etwas wie h:1.3.5.11 (für Hadd11) stehen als d (für D-Dur).",
+    "objectID": "liedsatz_standards.html#rhythmusorientierte-taktaufteilung",
+    "href": "liedsatz_standards.html#rhythmusorientierte-taktaufteilung",
+    "title": "Standards beim Liedersetzen",
+    "section": "Rhythmusorientierte Taktaufteilung",
+    "text": "Rhythmusorientierte Taktaufteilung\nDie Hauptzählzeiten des Taktes sollten immer erkennbar sein.\n\n4/4-Takt: 1 und 3\n3/4-Takt: 1\n2/2-Takt: 1\n6/8-Takt: 1 und 4\n6/4-Takt: 1 und 4\nzusammengesetzte Taktarten entsprechend der Zusammensetzungen (siehe unten)\n\n\nBeispiel:\n\\relative c' {\n  \\time 6/8\n  a4.~ 8 cis e |\n  a4 a8~ 8 cis4\n\n  % aber:\n  \\time 3/4\n  a2 cis8 e |\n  a4 a cis\n}\n\nAusgabe:\n\nTakte, die zusammengesetzte Rhythmen haben, notieren wir auch so – sie können aber in den einzelnen Liederbüchern über das Überschreiben der global-Variable auch in einfachen Takten wie 4/4-Takten notiert werden. Unter diesem Link finden sich die Infos dazu in der Doku.\n\nBeispiel Nordwind:\n\\relative c' {\n  \\compoundMeter #'((3 3 8) (2 8))\n  \\partial4\n  e8 fis |\n  g4. g g4 |\n  fis4. e fis4 |\n  g2. g4 |\n}\n\nAusgabe:\n\nWeitere Informationen: https://www.theorie-musik.de/grundlagen/taktarten/",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",
-      "Musikalischer Inhalt"
+      "Standards beim Liedersetzen"
     ]
   },
   {
-    "objectID": "musikalischer_inhalt.html#römische-ziffern",
-    "href": "musikalischer_inhalt.html#römische-ziffern",
-    "title": "Musikalischer Inhalt",
-    "section": "Römische Ziffern",
-    "text": "Römische Ziffern\nSiehe Layout-Doku.",
+    "objectID": "liedsatz_standards.html#takte",
+    "href": "liedsatz_standards.html#takte",
+    "title": "Standards beim Liedersetzen",
+    "section": "Takte",
+    "text": "Takte\nIn LilyPond gibt es eine Taktüberprüfung mittels der Pipe (|), die genutzt werden kann, aber nicht muss. Darüber hinaus setzen wir Takte immer in eine neue Zeile, das heißt, in jede Zeile kommt immer ein Takt. Das hat den Hintergrund, dass man die Änderungen im Diff in Git besser nachverfolgen kann. Beispiel:\n\\relative c' {\n  \\time 3/4\n  a2 r4\n  a a a\n  \\time 6/8\n  a8 a a r4.\n  r r\n}",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",
-      "Musikalischer Inhalt"
+      "Standards beim Liedersetzen"
     ]
   },
   {
-    "objectID": "musikalischer_inhalt.html#balkensetzung",
-    "href": "musikalischer_inhalt.html#balkensetzung",
-    "title": "Musikalischer Inhalt",
-    "section": "Balkensetzung",
-    "text": "Balkensetzung\nBei der Balkensetzung sind unbedingt unsere Standards zu beachten. Wie man in LilyPond die Balkensetzung beeinflusst, steht in der LilyPond-Doku.",
+    "objectID": "liedsatz_standards.html#wiederholungen",
+    "href": "liedsatz_standards.html#wiederholungen",
+    "title": "Standards beim Liedersetzen",
+    "section": "Wiederholungen",
+    "text": "Wiederholungen\nWenn möglich und sinnvoll, wählen wir eine einfache Notation, auch wenn die musikalisch nicht immer korrekt ist. Das bedeutet, die Wiederholung findet unter Umständen mitten im Takt statt und die Lyrics der Wiederholung stehen ebenfalls unterm Auftakt (siehe Beispiel). Das soll weniger musikalisch Gebildeten das Lesen erleichtern.\nWichtig ist uns, dass der Takt am Ende voll ist (also letzter Takt + Auftakt ergibt einen ganzen Takt) und dass die Noten nicht mit einem Takt, der nur eine Pause enthält, enden (nach solchen In-Takt-Wiederholungen).\nWenn Zwischenspiele und andere musikalisch anspruchsvollere Dinge hinzukommen und generell immer bei Instrumentalnotation, wollen wir musikalisch möglichst korrekt notieren, um Verwirrungen bei Instrumentalist*innen zu vermeiden..\nVerschiedene Varianten zu supporten, ist leider schwierig und erhöht die Komplexität.\n\nBeispiel Ade zur guten Nacht:\nfirstVerse = \\lyricmode {\n  Ich stünd da am He -- cken -- zaun\n  nur um nach dir aus -- zu -- schaun\n  und um dich zu wer -- ben.\n}\n\nfirstVoice = \\relative c'' {\n  \\partial2\n  r4\n  \\repeat volta 2 {\n    a4\n    fis2 a4 d\n    h h8 (a) g4 g\n    e2 g4 h\n    a a8 (g) fis4 a\n    a g8 fis g4 (a)\n    fis2 r4\n  }\n}\n\nAusgabe:",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",
-      "Musikalischer Inhalt"
+      "Standards beim Liedersetzen"
     ]
   },
   {
-    "objectID": "doku.html",
-    "href": "doku.html",
-    "title": "Doku",
+    "objectID": "liedsatz_standards.html#kanoneinsätze",
+    "href": "liedsatz_standards.html#kanoneinsätze",
+    "title": "Standards beim Liedersetzen",
+    "section": "Kanoneinsätze",
+    "text": "Kanoneinsätze\nKanoneinsätze sollen wie hier beschrieben kursiv und mit römischen Ziffern markiert werden.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Standards beim Liedersetzen"
+    ]
+  },
+  {
+    "objectID": "liedsatz_standards.html#sec-akkorde",
+    "href": "liedsatz_standards.html#sec-akkorde",
+    "title": "Standards beim Liedersetzen",
+    "section": "Akkorde",
+    "text": "Akkorde\nWir wollen Akkorde gerne so genau wie möglich erfassen. Wenn es in LilyPond keine „Kurzform“ wie zum Beispiel c, c:maj7 oder c/g gibt, wollen wir deshalb die Akkorde in LilyPond-Akkordschreibweise erfassen. Das ermöglicht es, die Akkorde auf Liederbuchebene so zu benennen, wie es gewünscht ist. Dabei kann es durchaus sein, dass die Standardausgabe von LilyPond nicht der gewünschten Ausgabe entspricht. Diese kann allerdings gut angepasst werden. Siehe Anpassung der Akkordsymbole.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Standards beim Liedersetzen"
+    ]
+  },
+  {
+    "objectID": "liedsatz_standards.html#sec-barcheck",
+    "href": "liedsatz_standards.html#sec-barcheck",
+    "title": "Standards beim Liedersetzen",
+    "section": "Taktüberprüfung",
+    "text": "Taktüberprüfung\nDamit Fehler gut und schnell nachverfolgt werden können, nutzen wir die Taktüberprüfung in LilyPond. Siehe LilyPond-Doku.",
+    "crumbs": [
+      "Doku",
+      "Liedersetzen-Prozess",
+      "Standards beim Liedersetzen"
+    ]
+  },
+  {
+    "objectID": "liedlayout.html",
+    "href": "liedlayout.html",
+    "title": "Liedlayout",
     "section": "",
-    "text": "Das ist unsere Doku für die Liederpool-spezifischen Befehle und Standards. Hier dokumentieren wir unsere Standards beim Setzen, Lösungen für „Probleme“ in der Anwendung unseres Systems und eigene definierte Befehle, die nicht Teil des Standard-LilyPond sind.\nGrundsätzlich hilft dir bei allen LilyPond-spezifischen Fragen oder Problemen natürlich die LilyPond-Doku.",
-    "crumbs": [
-      "Doku"
-    ]
-  },
-  {
-    "objectID": "liedersetzen.html",
-    "href": "liedersetzen.html",
-    "title": "Liedersetzen",
-    "section": "",
-    "text": "Jetzt kann es losgehen mit dem Lieder setzen. Damit du möglichst einfach reinkommst, erklären wir dir gleich anhand eines Beispiels, dass du bei dir nachvollziehen kannst, wie unser System funktioniert.\nVorneweg gibt es aber noch ein paar wichtige Links und Helfer:\n\nHier gibt es eine LilyPond-Einführung von den LilyPond-Entwickler*innen. Du kannst die auch nochmal machen, aber viele grundlegenden Sachen lernst du in diesem Tutorial schon kennen.\nHier findest du die LilyPond-Dokumentation. Das ist im Grunde der wichtigste und erste Ort, um herauszufinden, wie du musikalische Notation in LilyPond umsetzen kannst. Auch die meisten aufkommenden Probleme lassen sich schon allein mit der Doku beheben. Zusätzlich kannst du auch gerne unsere Setzer*innen-Gruppe auf Signal dafür nutzen.\n\nSo, jetzt geht’s los!",
+    "text": "Jetzt hast du das Lied gesetzt und in den Liederpool eingebracht. Wie toll! Das ist der wichtigste Schritt, weil er der grundlegendste ist. Alle, die Zugriff auf den Liederpool haben, können das Lied jetzt auch verwenden.\nDer nächste Schritt ist, das Lied für dein spezifisches Liederbuch zu layouten. Ich kann dich schonmal beruhigen: Das geht viel leichter als das Setzen in den Liederpool, sogar richtig schnell. Und das ist auch der große Vorteil von unserem System. Die Lieder, die schon im Pool sind, machen deutlich weniger Arbeit – du profitierst also sehr von der Arbeit anderer. Aber genug der langen Vorrede. Los geht’s!",
     "crumbs": [
       "Einführung",
-      "Lieder setzen"
+      "Lieder setzen",
+      "Liedlayout"
     ]
   },
   {
-    "objectID": "metadaten.html",
-    "href": "metadaten.html",
-    "title": "Metadaten",
-    "section": "",
-    "text": "Metadaten werden grundsätzlich in der Variable basicSongInfo gespeichert. Alle untenstehenden Ausführungen beziehen sich auf den Inhalt dieser Variable.",
+    "objectID": "liedlayout.html#layout-datei-erstellen",
+    "href": "liedlayout.html#layout-datei-erstellen",
+    "title": "Liedlayout",
+    "section": "Layout-Datei erstellen",
+    "text": "Layout-Datei erstellen\n\\version \"2.25.8\"\n\n\\include \"../../lilypond-custom-includes/base_config.ly\"\n\\include \"../../lilypond-song-includes/liedbausteine/\"\n\nHEADER = \\bookpart {\n  \\header {\n    \\basicSongInfo\n    %infotext = \"\"\n    categories = \"\"\n  }\n}\n\n\\include \"../../lilypond-common-includes/standalone_output.ly\"\nWenn du ein Repository mithilfe unseres Vorlagenrepos erstellt hast, findest du im Ordner lieder einen Ordner 00_vorlage_light. In diesem Ordner öffnest du die Datei vorlage_light.ly. Als erstes solltest du die Datei neu abspeichern. Dazu drücke einfach Strg + Umschalt + S oder alternativ im Menü Datei -&gt; Save -&gt; Speichern unter. Gehe dann in den Ordner lieder deines Repositories und lege einen neuen Ordner an. Benenne ihn am besten nach demselben Schema wie im Liederpool, in unserem Falle also ueber_meiner_heimat_fruehling. Gehe in den Ordner und speichere die Datei unter demselben Namen dort ab. Fertig.",
     "crumbs": [
-      "Doku",
-      "Liedersetzen-Prozess",
-      "Metadaten"
+      "Einführung",
+      "Lieder setzen",
+      "Liedlayout"
     ]
   },
   {
-    "objectID": "metadaten.html#titel",
-    "href": "metadaten.html#titel",
-    "title": "Metadaten",
-    "section": "Titel",
-    "text": "Titel\nDer Titel wird in der Liederpool-Datei mit der Variable title = \"\" angegeben, wobei innerhalb der Anführungszeichen der Titel steht. Als Titel sollte immer der „Originaltitel“ genutzt werden. Dieser kann in der Layout-Datei, sofern gewünscht, einfach überschrieben werden.",
+    "objectID": "liedlayout.html#auf-die-inhaltsdatei-referenzieren",
+    "href": "liedlayout.html#auf-die-inhaltsdatei-referenzieren",
+    "title": "Liedlayout",
+    "section": "Auf die Inhaltsdatei referenzieren",
+    "text": "Auf die Inhaltsdatei referenzieren\nNun ist der erste Schritt, auf die Inhaltsdatei zu referenzieren, die wir eben im Liederpool erstellt haben. Dazu vervollständigst du den Pfad: \\include \"../../lilypond-song-includes/liedbausteine/\". Tippe dazu einfach nur den Beginn des Dateinamen (also des Liedtitels nach dem bekannten Schema) ein. Unter den dann erscheinenden Optionen kannst du dir bereits das passende Lied auswählen.",
     "crumbs": [
-      "Doku",
-      "Liedersetzen-Prozess",
-      "Metadaten"
+      "Einführung",
+      "Lieder setzen",
+      "Liedlayout"
     ]
   },
   {
-    "objectID": "metadaten.html#liedanfang",
-    "href": "metadaten.html#liedanfang",
-    "title": "Metadaten",
-    "section": "Liedanfang",
-    "text": "Liedanfang\nDer Liedanfang wird mit starttext = \"\" angegeben, wobei innerhalb der Anführungszeichen der Anfang des Liedes steht. Ist der Liedanfang gleich dem Titel, muss er nicht nochmal neu angegeben werden.",
+    "objectID": "liedlayout.html#layouten",
+    "href": "liedlayout.html#layouten",
+    "title": "Liedlayout",
+    "section": "Layouten",
+    "text": "Layouten\nJetzt geht’s ans Layout. Dazu kopierst du dir alles ab dem MUSIC-Teil aus der Inhaltsdatei in die Layoutdatei rüber. Das sieht bei uns dann am Ende so aus:\n\\version \"2.25.8\"\n\n\\include \"../../lilypond-custom-includes/base_config.ly\"\n\\include \"../../lilypond-song-includes/liedbausteine/\"\n\nHEADER = \\bookpart {\n  \\header {\n    \\basicSongInfo\n    %infotext = \"\"\n    categories = \"\"\n  }\n}\n\nMUSIC = {\n  &lt;&lt;\n      \\songChords\n      \\new ChoirStaff = \"firstStaff\"\n      &lt;&lt;        \n        \\new Voice = \"firstVoice\" { \\melodyVoice }\n        \\addlyrics { \\firstVerse }\n        \\addlyrics { \\secondVerse }\n        \\addlyrics { \\thirdVerse }\n        \\addlyrics { \\fourthVerse }\n      &gt;&gt;\n  &gt;&gt;\n}\n\nverse-breaks = {\n  s1 s \\break\n  s s \\break\n  s s \\break\n  s s \\break\n}\n\nTEXT = \\markuplist {\n  \\override #`(verse-break-voice . ,verse-breaks)\n  \\group-verses {\n    \\chordlyrics \\firstVerse\n    \\chordlyrics \\secondVerse\n    \\chordlyrics \\thirdVerse\n    \\chordlyrics \\fourthVerse\n  }\n}\n\n\\include \"../../lilypond-common-includes/standalone_output.ly\"\nJetzt kannst du schon einmal kompilieren und schauen, wie es aussieht. Der letzte Schritt ist nun der Feinschliff. Du kannst dich nun entscheiden: Möchtest du den Text direkt unter den Noten oder als Strophen mit Akkorden unterm gesamten Notensatz. Alles, was du nicht willst, kommentierst du einfach aus. Wenn du also nur die erste Strophe unter den Noten haben möchtest und den Rest unter dem Satz, sähe das so aus:\n\\version \"2.25.8\"\n\n\\include \"../../lilypond-custom-includes/base_config.ly\"\n\\include \"../../lilypond-song-includes/liedbausteine/\"\n\nHEADER = \\bookpart {\n  \\header {\n    \\basicSongInfo\n    %infotext = \"\"\n    categories = \"\"\n  }\n}\n\nMUSIC = {\n  &lt;&lt;\n      \\songChords\n      \\new ChoirStaff = \"firstStaff\"\n      &lt;&lt;        \n        \\new Voice = \"firstVoice\" { \\melodyVoice }\n        \\addlyrics { \\firstVerse }\n        %\\addlyrics { \\secondVerse }\n        %\\addlyrics { \\thirdVerse }\n        %\\addlyrics { \\fourthVerse }\n      &gt;&gt;\n  &gt;&gt;\n}\n\nverse-breaks = {\n  s1 s \\break\n  s s \\break\n  s s \\break\n  s s \\break\n}\n\nTEXT = \\markuplist {\n  \\override #`(verse-break-voice . ,verse-breaks)\n  \\group-verses {\n    %\\chordlyrics \\firstVerse\n    \\chordlyrics \\secondVerse\n    \\chordlyrics \\thirdVerse\n    \\chordlyrics \\fourthVerse\n  }\n}\n\n\\include \"../../lilypond-common-includes/standalone_output.ly\"\nJetzt kannst du kompilieren und schauen, ob es dir schon gefällt. Wenn du wölltest, könntest du auch noch die verse-breaks nach Belieben anpassen. Wie das geht, weißt du ja schon.\nUnd fertig ist dein erstes Liederbuch-Lied!",
     "crumbs": [
-      "Doku",
-      "Liedersetzen-Prozess",
-      "Metadaten"
-    ]
-  },
-  {
-    "objectID": "metadaten.html#alternative-titel",
-    "href": "metadaten.html#alternative-titel",
-    "title": "Metadaten",
-    "section": "Alternative Titel",
-    "text": "Alternative Titel\nAlternative Titel können mittels der Variable alttitle = #'(\"\") angegeben werden, wobei innerhalb der Anführungszeichen der Alternativtitel benannt wird. Wenn es mehrere Alternativtitel gibt einfach in Anführungszeichen daneben, zum Beispiel: alttitle = #'(\"Alttitle A\" \"Alttitle B\" \"Alttitle C\").",
-    "crumbs": [
-      "Doku",
-      "Liedersetzen-Prozess",
-      "Metadaten"
-    ]
-  },
-  {
-    "objectID": "metadaten.html#autorinnenangaben",
-    "href": "metadaten.html#autorinnenangaben",
-    "title": "Metadaten",
-    "section": "Autor*innenangaben",
-    "text": "Autor*innenangaben\nAutor*inneninformationen werden im neuen System aus einer YAML-Datei gezogen. Das bedeutet, in der Lilyponddatei wird lediglich auf eine ID einer Autorin verwiesen, deren Informationen in der YAML-Datei unter dieser ID zu finden sind.\n\nAbruf in der Lilyponddatei\nDie ID der beiden Autor*innen heißt in diesem Fall Autor1 beziehungsweise Autor2.\nbasicSongInfo = \\header {\n  title = \"Liedtitel\"\n  alttitle = \"Liedanfang\"\n  authors = #'(\n    (\"Autor1\" text)\n    (\"Autor2\" melody))\n  year_text = \"2024\"\n  year_melody = \"2024\"\n  infotext = \"Infotext\"\n}\n\n\nAufbau der YAML-Datei\nDie YAML ist wie folgt aufgebaut und alphabetisch sortiert. Die ID für eine*n Autor*in sollte, wenn vorhanden und eindeutig, dem Fahrtennamen entsprechen. Wenn nicht vorhanden oder uneindeutig dem bürgerlichen Namen nach dem Schema VornameNachname. Das hat keine technischen Gründe, sondern soll nur die Arbeit erleichtern. Wenn es einheitlich ist, muss man vielleicht nicht jedes Mal in der YAML-Datei nachschauen, wie nochmal die ID von Autor*in XYZ war.\nAutor1:\n  name: Vorname Nachname\n  trail_name: Autor1\n  birth_year: \"1950\"\n  organization: Bund der Autoren\nAutor2:\n  name: Name Surname\n  trail_name: Autor2\n  death_year: \"2050\"\n  organization: Autorenbund\n\n\nMögliche Optionen beim Abruf\nDa es zahlreiche Wünsche etc. bei der Autor*innenschaft von Liedern gibt, ist das System möglichst umfassend gestaltet. Der grundsätzliche Aufbau ist, dass in Klammern immer die ID benannt wird sowie die Eigenschaften, die diese ID hat (zum Beispiel die Worte geschrieben, die zweite Stimme usw.). Folgende Möglichkeiten gibt es:\n\ntext: Die Person hat am Text mitgeschrieben.\nmelody: Die Person hat an der Melodie mitgeschrieben.\ncomposition: Die Person hat am Satz mitgeschrieben.\n(verse 1): Die Person hat an der ersten Strophe mitgeschrieben.\n\n(verse 1) (verse 2): Die Person hat an der ersten und zweiten Strophe mitgeschrieben.\n\n(voice 2): Die Person hat an der zweiten Stimme mitgeschrieben.\n\n(voice 2) (voice 3): Die Person hat an der zweiten und dritten Stimme mitgeschrieben.\n\ninterlude: Die Person hat am Zwischenspiel mitgeschrieben.\nbridge: Die Person hat an der Bridge mitgeschrieben.\ntranslation: Die Person hat an der Übersetzung mitgeschrieben.\n(meloverse 1): Die Person hat an der ersten Melodiestrophe mitgeschrieben (damit ist die Melodie der ersten Strophe gemeint).\n\n(meloverse 1) (meloverse 2): Die Person hat an der ersten und zweiten Melodiestrophe mitgeschrieben (damit ist die Melodie der ersten Strophe gemeint).\n\n\nDas sind alle möglichen Beispiele, die durchaus schon größtenteils einmal benötigt wurden. Allerdings ist offensichtlich, dass diese Möglichkeitsvielfalt keinesfalls immer sinnvoll ist.\nFür alle diese Möglichkeiten finden sich Anwendungsbeispiele im Repository lilypond-vorlagen, dort im Ordner Lieder (Datei authors-sandbox.ly) (Link). Da kann man sich gut austoben. So sieht das dann aus:\ndude:\n  birth_year: '1950'\n  name: Krasser Dude\n  organization: Bund der krassen Dudes\n  trail_name: dud\nkumpel:\n  death_year: '2050'\n  name: Krasser Kumpel\n  organization: Bund der krassen Kumpels\n  trail_name: dudekumpel\nkumpelerbe:\n  inherits: kumpel\n  organization: Bund der crazy Kumpels\nnocheiner:\n  death_year: '2050'\n  name: Jemand anderes\n  \n\n\nOutput:\n\n\n\n\n\n\n\n\n\nHinweis\n\n\n\nWenn der*die Verfasser*in unbekannt ist, wird dies folgendermaßen kenntlich gemacht: (\"\" melody text). In diesem Falle kann kein Eintrag in der YAML gefunden werden, deswegen wird für die Optionen Melodie und Text „unbekannt“ ausgegeben.\n\n\n\n\nSonderfall „Inherits“\nEs kann vorkommen, dass Autor*innen ihre Bundzugehörigkeit ändern oder bestimmte Lieder für eine Band geschrieben haben, allerdings andere nicht. Dann wäre es unpraktisch, dass als Organisation beispielsweise trotzdem „Schlagsaite“ dort steht, obwohl das Lied mit Schlagsaite nichts zu tun hat (außer, dass der Autor bei Schlagsaite spielt). Die Lösung für dieses Problem lautet Inherits. Das Prinzip ist, dass eine neue ID erstellt wird, die die Eigenschaften einer bestimmten ID erbt. Diese Eigenschaften können dann aber überschrieben werden. Im Lied muss man dann auf diese neue ID verweisen. Das sieht zum Beispiel so aus:\nkumpel:\n  name: Krasser Kumpel\n  trail_name: kumpel\n  death_year: \"2050\"\n  organization: Bund der krassen Kumpels\nkumpelerbe:\n  inherits: kumpel\n  organization: Bund der crazy Kumpels\nZur Erklärung: kumpelerbe übernimmt die Eigenschaften von kumpel, danach wird die Organisation überschrieben auf einen anderen Bund.",
-    "crumbs": [
-      "Doku",
-      "Liedersetzen-Prozess",
-      "Metadaten"
-    ]
-  },
-  {
-    "objectID": "metadaten.html#textjahr",
-    "href": "metadaten.html#textjahr",
-    "title": "Metadaten",
-    "section": "Textjahr",
-    "text": "Textjahr\nÜber die Variable year_text = \"YYYY\" erfassen wir, wann der Text geschrieben bzw. veröffentlicht wurde. Dabei sollte in die Anführungszeichen nur das Jahr geschrieben werden, wenn genauere Daten vorhanden sind, gerne dahinter auskommentiert. Also zum Beispiel: year_text = \"2004\" % 01.01.2004.",
-    "crumbs": [
-      "Doku",
-      "Liedersetzen-Prozess",
-      "Metadaten"
-    ]
-  },
-  {
-    "objectID": "metadaten.html#melodiejahr",
-    "href": "metadaten.html#melodiejahr",
-    "title": "Metadaten",
-    "section": "Melodiejahr",
-    "text": "Melodiejahr\nÜber die Variable year_melody = \"YYYY\" erfassen wir, wann die Melodie geschrieben bzw. veröffentlicht wurde. Dabei sollte in die Anführungszeichen nur das Jahr geschrieben werden, wenn genauere Daten vorhanden sind, gerne dahinter auskommentiert. Also zum Beispiel: year_melody = \"2004\" % 01.01.2004.",
-    "crumbs": [
-      "Doku",
-      "Liedersetzen-Prozess",
-      "Metadaten"
-    ]
-  },
-  {
-    "objectID": "metadaten.html#infotext",
-    "href": "metadaten.html#infotext",
-    "title": "Metadaten",
-    "section": "Infotext",
-    "text": "Infotext\nIn die Variable infotext = \"\" können Informationen zur Entstehungsgeschichte, von oder über den*die Autor*in etc. notiert werden (gerne mit Quellen!). Das darf gerne so ausführlich wie möglich geschehen, damit jedes Liederbuch-Team das ggf. auf dieser Grundlage für sich anpassen kann.",
-    "crumbs": [
-      "Doku",
-      "Liedersetzen-Prozess",
-      "Metadaten"
-    ]
-  },
-  {
-    "objectID": "metadaten.html#übersetzung",
-    "href": "metadaten.html#übersetzung",
-    "title": "Metadaten",
-    "section": "Übersetzung",
-    "text": "Übersetzung\nÜbersetzungen von nicht-deutschsprachigen Texten, können über die Variable translation = \"\" erfasst werden. In der Ausgabe erzeugt dies im Infoteil (wo auch Autor*innen und die Songinfo landen) eine Zeile, die mit „Übersetzung: “ beginnt.",
-    "crumbs": [
-      "Doku",
-      "Liedersetzen-Prozess",
-      "Metadaten"
-    ]
-  },
-  {
-    "objectID": "metadaten.html#aussprache",
-    "href": "metadaten.html#aussprache",
-    "title": "Metadaten",
-    "section": "Aussprache",
-    "text": "Aussprache",
-    "crumbs": [
-      "Doku",
-      "Liedersetzen-Prozess",
-      "Metadaten"
-    ]
-  },
-  {
-    "objectID": "metadaten.html#quellen",
-    "href": "metadaten.html#quellen",
-    "title": "Metadaten",
-    "section": "Quellen",
-    "text": "Quellen\nFür uns ist es sehr wichtig zu wissen, wo unsere Notationen herkommen und auf welche Quellen wir uns stützen. Deswegen ist es obligatorisch, diese beim Setzen eines Liedes immer anzugeben. Beim Verweis auf Internetlinks, sollte die Seite in der Regel über das Internet Archive archiviert werden. Wie das geht, steht hier. Beim Verweis auf Liederbücher sollte die YAML-Datei sources.yml im data-Ordner des Liederpool-Repos genutzt werden, um auf die jeweilige ID zu verweisen. Damit sollen Liederbücher gut identifizierbar sein. Seitenangaben sind auch gerne gesehen. Wenn du selbst den Satz notiert hast, schreib deinen Namen dazu, zum Beispiel: „Satz von žuk“. Auch die Information, ob der Satz mit den Autor*innen abgestimmt wurde, ist relevant und somit anzugeben.",
-    "crumbs": [
-      "Doku",
-      "Liedersetzen-Prozess",
-      "Metadaten"
+      "Einführung",
+      "Lieder setzen",
+      "Liedlayout"
     ]
   },
   {
@@ -1534,11 +1915,11 @@
     ]
   },
   {
-    "objectID": "beispiel_liedersetzen.html#firstvoice-variable",
-    "href": "beispiel_liedersetzen.html#firstvoice-variable",
+    "objectID": "beispiel_liedersetzen.html#sec-firstVoice",
+    "href": "beispiel_liedersetzen.html#sec-firstVoice",
     "title": "Beispiel Liedersetzen",
     "section": "firstVoice-Variable",
-    "text": "firstVoice-Variable\nJetzt geht’s ans Eingemachte, nämlich die Noten! Da, wo jetzt noch das c steht, schreibst du die Noten des Liedes rein – für jeden Takt eine Zeile. Das sieht für den ersten Takt so aus:\nfirstVoice = \\relative c' {\n  f4 a c a\n}\n\nNotenbezeichnungen und Notenwerte\nDie Kleinbuchstaben sind jeweils die deutschen Notenbezeichnungen. Die darauffolgende Zahl ist die Notenlänge. f4 bedeutet also, dass das f eine Viertelnote ist. Bei einer Halben Noten würde man f2 schreiben, bei einer Ganzen f1, bei einer Achtel f8 und so weiter. Hat die darauffolgende Note denselben Notenwert, muss der nicht nochmal dazugeschrieben werden. f4 a bedeutet also eine Viertelnote f und eine Viertelnote a.\n\n\nLegato-Bogen\nfirstVoice = \\relative c' {\n  f4 a c a\n  g8 (a) g (f) e4 c\n}\nSchauen wir uns den zweiten Takt an, stellen wir fest, dass da auch Klammern drin zu finden sind. Auf diese Weise werden Legato-Bögen markiert. Im obigen Beispiel heißt g8 (a), dass vom g zum a gebunden wird. Bei mehr Tönen könnte das dann so aussehen: g8 (a g). Der Legato-Bogen geht hier vom g zum g.\n\n\nParallele Töne und Tonhöhen\nfirstVoice = \\relative c' {\n  f4 a c a\n  g8 (a) g (f) e4 c\n  f a c a\n  g a8 (b) a4 g\n  d f a f\n  e8 (f) e (d) e4 &lt;e a,&gt;\n}\nWenn zwei Töne gleichzeitig erklingen sollen (und es sich nicht um eine ganze Stimme handelt), werden beide Töne von Krokodilsklammern gerahmt: &lt;e a,&gt; bedeutet, dass das e und das a gleichzeitig (also übereinander) notiert werden.\nTonhöhen anzugeben, ist meist gar nicht notwendig, da LilyPond von den naheliegensten Tönen ausgeht. Bei e f geht LilyPond also davon aus, dass der Tonsprung nach oben stattfindet, weil der „Weg“ kürzer ist als nach unten (zum tiefen f). Bei größeren Tonsprüngen helfen die Zeichen ' (englisches Apostroph) für eine Oktave nach oben und , (Komma) für eine Oktave nach unten. Bei zwei Oktaven natürlich dann zweimal und so weiter.\n\n\nPausen\nfirstVoice = \\relative c' {\n  f4 a c a\n  g8 (a) g (f) e4 c\n  f a c a\n  g a8 (b) a4 g\n  d f a f\n  e8 (f) e (d) e4 &lt;e a,&gt;\n  d8 (e) f (g) a4 a8 (f)\n  d2 d4 r\n}\nZuletzt benötigen wir noch eine Pause zum Abschluss. Pausen werden mit r (engl. rest = Pause) bezeichnet. Die Angabe des Pausenwertes erfolgt analog zu den Notenwerten.",
+    "text": "firstVoice-Variable\nJetzt geht’s ans Eingemachte, nämlich die Noten! Da, wo jetzt noch das c steht, schreibst du die Noten des Liedes rein – für jeden Takt eine Zeile und am Ende kommt eine Pipe / ein Senkrechtstrich (|), der zu einer Taktüberprüfung führt. Das sieht für den ersten Takt so aus:\nfirstVoice = \\relative c' {\n  f4 a c a |\n}\n\nNotenbezeichnungen und Notenwerte\nDie Kleinbuchstaben sind jeweils die deutschen Notenbezeichnungen. Die darauffolgende Zahl ist die Notenlänge. f4 bedeutet also, dass das f eine Viertelnote ist. Bei einer Halben Noten würde man f2 schreiben, bei einer Ganzen f1, bei einer Achtel f8 und so weiter. Hat die darauffolgende Note denselben Notenwert, muss der nicht nochmal dazugeschrieben werden. f4 a bedeutet also eine Viertelnote f und eine Viertelnote a.\n\n\nLegato-Bogen\nfirstVoice = \\relative c' {\n  f4 a c a |\n  g8 (a) g (f) e4 c |\n}\nSchauen wir uns den zweiten Takt an, stellen wir fest, dass da auch Klammern drin zu finden sind. Auf diese Weise werden Legato-Bögen markiert. Im obigen Beispiel heißt g8 (a), dass vom g zum a gebunden wird. Bei mehr Tönen könnte das dann so aussehen: g8 (a g). Der Legato-Bogen geht hier vom g zum g.\n\n\nParallele Töne und Tonhöhen\nfirstVoice = \\relative c' {\n  f4 a c a |\n  g8 (a) g (f) e4 c |\n  f a c a |\n  g a8 (b) a4 g |\n  d f a f |\n  e8 (f) e (d) e4 &lt;e a,&gt; |\n}\nWenn zwei Töne gleichzeitig erklingen sollen (und es sich nicht um eine ganze Stimme handelt), werden beide Töne von Krokodilsklammern gerahmt: &lt;e a,&gt; bedeutet, dass das e und das a gleichzeitig (also übereinander) notiert werden.\nTonhöhen anzugeben, ist meist gar nicht notwendig, da LilyPond von den naheliegensten Tönen ausgeht. Bei e f geht LilyPond also davon aus, dass der Tonsprung nach oben stattfindet, weil der „Weg“ kürzer ist als nach unten (zum tiefen f). Bei größeren Tonsprüngen helfen die Zeichen ' (englisches Apostroph) für eine Oktave nach oben und , (Komma) für eine Oktave nach unten. Bei zwei Oktaven natürlich dann zweimal und so weiter.\n\n\nPausen\nfirstVoice = \\relative c' {\n  f4 a c a |\n  g8 (a) g (f) e4 c |\n  f a c a |\n  g a8 (b) a4 g |\n  d f a f |\n  e8 (f) e (d) e4 &lt;e a,&gt; |\n  d8 (e) f (g) a4 a8 (f) |\n  d2 d4 r |\n}\nZuletzt benötigen wir noch eine Pause zum Abschluss. Pausen werden mit r (engl. rest = Pause) bezeichnet. Die Angabe des Pausenwertes erfolgt analog zu den Notenwerten.",
     "crumbs": [
       "Einführung",
       "Lieder setzen",
@@ -1634,7 +2015,7 @@
     "href": "vorbereitung.html",
     "title": "Vorbereitung",
     "section": "",
-    "text": "Zuerst richten wir alle Programme ein, die du brauchst. Du benötigst als erstes LilyPond und Frescobaldi. Dann Git und dann einen Account bei dem Git-Server von tux.\nWir erklären dir jetzt Schritt für Schritt, was du dafür tun musst.",
+    "text": "Zuerst richten wir alle Programme ein, die du brauchst. Du benötigst als erstes LilyPond und Frescobaldi. Dann Git und dann einen Account bei dem Git-Server von tux. Wenn du Windows nutzt, ist dann noch die Installation von PyYAML erforderlich.\nWir erklären dir jetzt Schritt für Schritt, was du dafür tun musst.",
     "crumbs": [
       "Einführung",
       "Vorbereitung"
