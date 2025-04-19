@@ -1,0 +1,6 @@
+---
+title: "Installation von PyYAML (nur Windows)"
+format: html
+---
+
+Zuletzt wird unter Windows noch die Installation von PyYAML benötigt. Wie das geht, wird [hier](https://www.geeksforgeeks.org/how-to-install-pyyaml-on-windows/?ref=ml_lbp) beschrieben.

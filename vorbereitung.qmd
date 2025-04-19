@@ -2,6 +2,6 @@
 title: "Vorbereitung"
 ---
 
-Zuerst richten wir alle Programme ein, die du brauchst. Du benötigst als erstes LilyPond und Frescobaldi. Dann Git und dann einen Account bei dem Git-Server von tux.
+Zuerst richten wir alle Programme ein, die du brauchst. Du benötigst als erstes LilyPond und Frescobaldi. Dann Git und dann einen Account bei dem Git-Server von tux. Wenn du Windows nutzt, ist dann noch die Installation von PyYAML erforderlich.
 
 Wir erklären dir jetzt Schritt für Schritt, was du dafür tun musst.
