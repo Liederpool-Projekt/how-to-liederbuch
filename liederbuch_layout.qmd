@@ -160,7 +160,7 @@ Wie zu sehen, sollte das Deckblatt in diesem Fall (der vermutlich der Regelfall 
 }
 ```
 
-## Seitennummerierung ausblenden {#sec-seitennummerierung-ausblenden}
+## Seitennummerierung ausblenden {#sec-seitennummerierungausblenden}
 
 Soll die Seitennummerierung ausgeblendet werden, kann dafür folgender Befehl in der Bookpart-Umgebung verwendet werden:
 
