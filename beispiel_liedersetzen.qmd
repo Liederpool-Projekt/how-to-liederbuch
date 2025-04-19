@@ -124,7 +124,7 @@ Durch die werden wir uns jetzt Stück für Stück durcharbeiten.
 ![Das wird unser vorläufiges Endprodukt.](images/ueber_meiner_heimat-fruehling.png)
 
 ::: callout-note
-Wundere dich nicht, dass sich gar nichts verändert, gar keine Noten oder Sonstiges entstehen, wenn du in der Datei schreibst. Das ist normal, denn die werden immer nur aktualisiert, wenn du „kompilierst“, also die Datei ausführst. Das machst du, in dem du auf die Seerose in der oberen Werkzeugleiste klickst oder mit der Tastenkombination `Strg + M`.
+Wundere dich nicht, dass sich gar nichts verändert, gar keine Noten oder Sonstiges entstehen, wenn du in der Datei schreibst. Das ist normal, denn die werden immer nur aktualisiert, wenn du „kompilierst“, also LilyPond benutzt, um aus der Datei verschiedene Ausgaben zu erzeugen (z.B. PDF, MIDI). Das machst du, in dem du auf die Seerose in der oberen Werkzeugleiste klickst oder mit der Tastenkombination `Strg + M`.
 :::
 
 ## Abspeichern der Lieddatei
