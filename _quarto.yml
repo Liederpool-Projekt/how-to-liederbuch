@@ -39,6 +39,7 @@ website:
             - lilypond_einrichten.qmd
             - frescobaldi_einrichten.qmd
             - git_einrichten.qmd
+            - pyyaml.qmd
         - section: "Lieder setzen"
           href: liedersetzen.qmd
           contents: 
@@ -64,6 +65,7 @@ website:
                 - musikalischer_inhalt.qmd
                 - liedlayout_doku.qmd
                 - liederbuch_layout.qmd
+                - quellen.qmd
                 - quellenlinks.qmd
                 - lifehacks.qmd
             - section: "Review-Prozess"
