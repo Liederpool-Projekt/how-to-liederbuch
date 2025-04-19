@@ -61,6 +61,42 @@ TEXT = \markuplist {
 }
 ```
 
+### Elegantere Lösung und Lösung für einzelne Akkorde mit `pushToTag`
+
+Eine etwas elegantere Lösung kann man mit `\pushToTag` erreichen. Dabei wird der Akkord in den Akkorden, ab dem mehr Platz benötigt wird, mit einem Tag (z.B. `moreSpace`) markiert, und dann im weiter unten Layout-Teil wird mittels `\pushToTag` das gewünschte Kommando inkludiert – das für einzelne Akkorde, die mehr Platz benötigen, auch nur einmal (`\once`) genutzt werden kann. Ein Beispiel aus „Banner“:
+
+``` lilypond
+refChords = \chordmode {
+  \repeat volta 2 {
+    s4 \themeChords
+    e2 \tag #'moreSpace { e:7 }
+  }
+}
+```
+
+Das E7 ist zu nah am E-Dur, deswegen braucht es mehr Abstand – allerdings betrifft das allein dieses E7. Deswegen markieren wir es mit dem Tag `moreSpace`.
+
+``` lilypond
+MUSIC = { … }
+
+refChords =  \chordmode { \pushToTag #'moreSpace { \once \override ChordName.extra-spacing-width = #'(-2 . 0.1) } \refChords }
+
+TEXT = { … }
+```
+
+Unten überschreiben wir dann die `refChords` und nutzen `\pushToTag`, um vor den markierten Akkord den eingeklammerten Befehl zu inkludieren.
+
+## Barcheck-Warnung durch Midi-Auftakte beheben  {#sec-fill-midi}
+
+In bestimmten Fällen kann es vorkommen, dass Barcheck-Warnungen durch die Midi-Datei hervorgerufen werden. Begründet ist das dann eigentlich immer durch einen Inline-Score. Wenn ein Lied ein Auftakt hat und eine Coda, die man sowohl als Inline-Score als auch im MUSIC-Teil notiert, kann es sein, dass der Auftakt in der Midi fehlt. Die Funktion hängt dem Midi einfach noch musikalischen Inhalt an, Beispiel „Winterlied“:
+
+``` lilypond
+% muss weg, wenn die Coda nicht im MUSIC-Teil notiert ist
+\fill-midi s16
+```
+
+Wie im Kommentar erwähnt, muss dieser Befehl weggelassen werden, wenn die Coda nicht im MUSIC-Teil notiert ist.
+
 # Layout der Strophen
 
 ## Zeilenumbrüche in den Strophen {#sec-zeilenumbrueche}
