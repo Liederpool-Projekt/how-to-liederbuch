@@ -1,0 +1,9 @@
+---
+title: "Upate vom 19.04.2025"
+date: 2025-04-19
+categories: [Update]
+format: html
+description: ""
+---
+
+Wir konnten das Problem unter Windows lösen. Benötigt wird die Installation von „PyYAML“. Wie das geht, ist in der [Einführung](pyyaml.qmd) verlinkt.

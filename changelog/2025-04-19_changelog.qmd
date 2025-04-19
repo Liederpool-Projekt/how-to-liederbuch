@@ -1,0 +1,11 @@
+---
+title: "Doku-Changelog vom 19.04.2025"
+date: 2025-04-19
+categories: [Doku]
+format: html
+description: ""
+---
+
+Es gibt viele neue Bestandteile der Doku:
+
+-   Es gibt jetzt eine Seite zu [Liederbüchern als Quellen](quellen.qmd), auf der wir sammeln, welche Liederbücher für welche Autor\*innen als Originalquelle dienen und Einschätzungen zur Verlässlichkeit der Notensätze geben.
