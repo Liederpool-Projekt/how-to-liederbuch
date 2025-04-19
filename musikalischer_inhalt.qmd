@@ -307,7 +307,7 @@ Das sind die beiden möglichen resultierenden Ansichten.
 
 ## Zeilenumbrüche in den Strophen
 
-Siehe [Layout-Teil der Doku](layout.qmd#zeilenumbrueche).
+Siehe [Layout-Teil der Doku](liedlayout.qmd#zeilenumbrueche).
 
 ## (Leichte) Textvariationen
 
@@ -436,7 +436,7 @@ Im ersten String bekommt jede Gitarrensaite eine Zuweisung (`x` für nicht gespi
 
 ## Römische Ziffern
 
-Siehe [Layout-Doku](layout.qmd#sec-romanstanza).
+Siehe [Layout-Doku](liedlayout_doku.qmd#sec-romanstanza).
 
 ## Balkensetzung
 
