@@ -31,6 +31,36 @@ TEXT = \markuplist {
 }
 ```
 
+## Abstand der Akkorde voneinander {#sec-abstand-akkorde}
+
+Bei vielen aufeinanderfolgenden Akkorden (zum Beispiel in Zwischenspielen) kann es vorkommen, dass es schöner aussähe, wenn diese in den Strophen mehr Abstand zueinander hätten. Das geht mit dem folgenden Befehl, der in der Layout-Datei in die `\chords { }`-Umgebung eingebaut werden muss.
+
+``` lilypond
+\override ChordName.extra-spacing-width = #'(-0.5 . 0.5)
+```
+
+Durch die Anpassung der übergebenen Werte verändert sich dann der Abstand der Akkorde zueinander entsprechend. Um genau zu sein, wird der horizontale Abstand geändert.
+
+Ein gekürztes Beispiel aus „Tout l’espoir“:
+
+``` lilypond
+ref-chords = \chords { \override ChordName.extra-spacing-width = #'(-0.9 . 0.9) \refChords }
+ref-voice = { \global \removeWithTag #'firstVerse \refVoice }
+ref-breaks = { 
+  s1 s s s \break
+  s s s s \break
+  s1 s
+}
+
+TEXT = \markuplist {
+  \group-verses {
+    \override #`(verse-chords . ,ref-chords)
+    \override #`(verse-reference-voice . ,#{ \global \removeWithTag #'multiVerse \refVoice #})
+    \override #`(verse-break-voice . ,ref-breaks)
+    \chordlyrics \refLyrics
+}
+```
+
 # Layout der Strophen
 
 ## Zeilenumbrüche in den Strophen {#sec-zeilenumbrueche}
@@ -150,6 +180,42 @@ TEXT = \markuplist {
 }
 ```
 
+## Gepunktete Fülllinien
+
+Gepunktete Fülllinien sehen in den Strophen etwas schicker aus. Deswegen gibt es dafür einen eigenen Befehl: `\dottedExtender`. Er kann einfach im `TEXT`-Block vor die betreffende Variable geschrieben werden. Ein Beispiel aus „Über das Meer“:
+
+``` lilypond
+outroLyrics = \lyricmode {
+  \ref
+  "mmhh " __ \repeat unfold 14 { _ }
+  " zu" se -- geln ü -- ber das Meer.
+}
+
+% …
+
+TEXT = \markuplist {
+  \group-verses {
+    \chordlyrics { \dottedExtender \outroLyrics }
+  }
+}
+```
+
+Nach dem `mmhh` und vor dem `zu` wurde zusätzlich noch ein Leerzeichen ergänzt, da das in der Ausgabe schöner aussieht.
+
+## Strophennummern überschreiben {#sec-strophennummern-ueberschreiben}
+
+Es kann vorkommen, dass man bestimmte Strophen nicht in seinem Liederbuch abdrucken will oder eine andere Reihenfolge der Strophen bevorzugt. Für diesen Fall kann die Strophennummer einfach überschrieben werden mit dem Befehl
+
+``` lilypond
+\override-stanza #3
+
+%alternative
+
+#(override-stanza 3)
+```
+
+Der Befehl muss vor die entsprechende Lyrics-Variable abgerufen werden.
+
 # Layout von Inline-Scores
 
 Inline-Scores sind Notensätze (Scores), die innerhalb der TEXT-Umgebung genutzt werden, also zum Beispiel eine Bridge oder auch eine Coda.
@@ -250,11 +316,17 @@ HEADER = \bookpart {
 }
 ```
 
-# Illustrationen
+# Illustrationen {#sec-illustrationen}
 
 Illustrationen bekommen im einfachsten Fall eine ganze `imagepage`. Das wird in der Liederbuchdatei bearbeitet. Wenn eine Illustration auf ein „Liedblatt“ drauf kommt, wird dies in der Layout-Datei des Liedes organisiert. Das Bild muss für diesen Fall im Ordner des Liedes gespeichert sein und idealerweise als EPS-Datei vorliegen (im Zweifel hilft Inkscape).
 
 Objekte wie Illustrationen an die gewünschte Stelle zu verschieben, kann etwas frickelig sein, aber funktioniert mit verschiedenen Methoden.
+
+Generell findet ihr alle Markup-Befehle in der LilyPond-Doku:
+
+-   [Textbeschriftungsbefehle](https://lilypond.org/doc/v2.25/Documentation/notation/text-markup-commands): Für die Nutzung innerhalb eines `\markup { }`-Blocks.
+
+-   [Textbeschriftungslistenbefehle](https://lilypond.org/doc/v2.25/Documentation/notation/text-markup-list-commands): Für die Nutzung innerhalb eines `\markuplist { }`-Blocks.
 
 ## Verschieben von Objekten
 
