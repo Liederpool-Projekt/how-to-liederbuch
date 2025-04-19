@@ -9,3 +9,39 @@ description: ""
 Es gibt viele neue Bestandteile der Doku:
 
 -   Es gibt jetzt eine Seite zu [Liederbüchern als Quellen](../quellen.qmd), auf der wir sammeln, welche Liederbücher für welche Autor\*innen als Originalquelle dienen und Einschätzungen zur Verlässlichkeit der Notensätze geben.
+
+-   Wie man die [Seitennummerierung beeinflussen](../liederbuch_layout.qmd#sec-seitennummerierung) kann, steht jetzt im Liederbuch-Layout-Teil.
+
+-   Auch wie die [Seitennummerierung ausgeblendet](../liederbuch_layout.qmd#sec-seitennummerierungausblenden) werden kann, ist dort jetzt zu finden.
+
+-   Wie [musikalische Textpausen](../musikalischer_inhalt.qmd#sec-textpausen) gesetzt werden können, steht jetzt im Musikalischen Inhalt.
+
+-   Die Funktion [`\altChord`](../musikalischer_inhalt.qmd#sec-altchords) wird nun im Musikalischen Inhalt erklärt.
+
+-   Wie [Barcheck-Warnungen](../liedlayout_doku.qmd#sec-fill-midi), die in manchen Spezialfällen durch die Midi hervorgerufen werden, behoben werden können, steht jetzt ebenso im Musikalischen Inhalt.
+
+-   Der Abschnitt Akkordabstände wurde ergänzt um eine [elegante Lösung mit `\pushToTag`](../liedlayout_doku.qmd#sec-abstand-akkorde).
+
+-   Die [Silbentrennung bei Volta-Klammern](../musikalischer_inhalt.qmd#sec-silbentrennung-volta-klammern) ist jetzt etwas besser erklärt.
+
+-   Die [Strophennummerierung](../musikalischer_inhalt.qmd#sec-strophennummerierung) ist jetzt auch festgehalten.
+
+-   Auch die [Refrainnummerierung](../musikalischer_inhalt.qmd#sec-refnum) wird nun erklärt…
+
+-   …und ist nun auch Bestandteil unserer [Standards](../liedsatz_standards.qmd#sec-refnum-standards).
+
+-   Wie [Strophen ohne Akkorde](../liedlayout_doku.qmd#sec-strophen-ohne-akkorde) gesetzt werden können, wird nun im Layout-Teil erklärt.
+
+-   Das [Satzjahr](../metadaten.qmd#sec-year-composition) wurde der Metadaten-Doku hinzugefügt.
+
+-   Im [Git-Starter-Tutorial](../git_einrichten.qmd#sec-gitsettings) steht jetzt auch, dass unbedingt eingestellt werden sollte, dass beim Pullen gerebased wird.
+
+-   [Standards zur Akkordnotation](../liedsatz_standards.qmd#sec-akkorde) wurden festgehalten.
+
+-   Außerdem wurde ein Link zur LilyPond-Doku bei [Anpassung der Akkordsymbole](../liederbuch_layout.qmd#sec-akkordsymbole-anpassen) ergänzt.
+
+-   Die [Taktüberprüfung](../liedsatz_standards.qmd#sec-barcheck) wurde in die Standards integriert…
+
+-   und auch ins [Tutorial](../beispiel_liedersetzen.qmd#sec-firstVoice).
+
+-   Wie [PyYAML](../pyyaml.qmd) installiert wird, findet sich nun auch in der Einführung.

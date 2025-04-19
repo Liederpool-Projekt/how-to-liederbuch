@@ -6,4 +6,4 @@ format: html
 description: ""
 ---
 
-Wir konnten das Problem unter Windows lösen. Benötigt wird die Installation von „PyYAML“. Wie das geht, ist in der [Einführung](pyyaml.qmd) verlinkt.
+Wir konnten das Problem unter Windows lösen. Benötigt wird die Installation von „PyYAML“. Wie das geht, ist in der [Einführung](../pyyaml.qmd) verlinkt.
