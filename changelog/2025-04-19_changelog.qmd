@@ -8,4 +8,4 @@ description: ""
 
 Es gibt viele neue Bestandteile der Doku:
 
--   Es gibt jetzt eine Seite zu [Liederbüchern als Quellen](quellen.qmd), auf der wir sammeln, welche Liederbücher für welche Autor\*innen als Originalquelle dienen und Einschätzungen zur Verlässlichkeit der Notensätze geben.
+-   Es gibt jetzt eine Seite zu [Liederbüchern als Quellen](../quellen.qmd), auf der wir sammeln, welche Liederbücher für welche Autor\*innen als Originalquelle dienen und Einschätzungen zur Verlässlichkeit der Notensätze geben.

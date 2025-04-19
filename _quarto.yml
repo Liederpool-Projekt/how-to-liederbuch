@@ -78,10 +78,11 @@ website:
     locale: de_DE
   announcement: 
     #icon: exclamation-triangle-fill # Warning
-    icon: check-square-fill #success
+    #icon: check-square-fill #success
+    icon: info-circle-fill #info
     dismissable: false
-    content: "Die Probleme unter Windows 10/11 sind nun behoben. Allerdings ist es nun erforderlich, ebenfalls „PyYAML“ zu installieren. In Kürze wird es dazu Anleitungen geben."
-    type: success
+    content: "Wir haben die Dokumentation aktualisiert. Alles neue erfährst du im Changelog."
+    type: info
     position: below-navbar
 
 bibliography: references.bib
