@@ -441,3 +441,23 @@ Siehe [Layout-Doku](liedlayout_doku.qmd#sec-romanstanza).
 ## Balkensetzung
 
 Bei der Balkensetzung sind unbedingt [unsere Standards](liedsatz_standards.qmd) zu beachten. Wie man in LilyPond die Balkensetzung beeinflusst, steht in der [LilyPond-Doku](https://lilypond.org/doc/v2.25/Documentation/notation/setting-automatic-beam-behavior).
+
+## Textpausen
+
+In bestimmten Fällen kann es gewünscht sein, dass eine In-Text-Pause gesetzt werden soll, also eine musikalische Pause im Text. Das geht mit dem Befehl `\textRest`. Die Pause nimmt ein Zeichen ein und sollte immer getaggt werden, damit sie im Zweifel auch ausgeschaltet werden kann. Beispiel:
+
+``` lilypond
+firstVerse = \lyricmode {
+  Das ist ein \tag #'textrest { \textRest } \tag #'skip Bei -- spiel
+}
+```
+
+Mit einem `\removeWithTag` kann die Textpause dann entfernt werden und mit `\pushToTag` kann an die Stelle vor dem nächsten Wort, die im obigen Beispiel mit dem Tag `skip` markiert wurde, ein `\skip4`-Befehl eingefügt werden:
+
+``` lilypond
+TEXT = \markuplist {
+  \group-verses {
+    \chordlyrics { \pushToTag #'skip { \skip4 } \removeWithTag #'textrest \firstVerse }
+  }
+}
+```
