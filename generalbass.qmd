@@ -2,3 +2,7 @@
 title: "Akkordnotation mit Generalbass – ein Leitfaden"
 format: html
 ---
+
+In manchen Liederbüchern (vor allem von olka) wird für die Akkordnotation die Generalbassnotation verwendet. Diese stammt aus der Barockmusik und ist heutzutage alles andere als intuitiv. Wir wollen keine Generalbassnotation notieren, sondern stattdessen moderne Akkordsymbole wie sie geläufig sind. Deswegen gibt es hier eine Erklärung, wie die Generalbassnotation in heutige Akkordsymbole umgewandelt werden kann.
+
+…bald!
