@@ -252,6 +252,20 @@ Es kann vorkommen, dass man bestimmte Strophen nicht in seinem Liederbuch abdruc
 
 Der Befehl muss vor die entsprechende Lyrics-Variable abgerufen werden.
 
+## Strophen ohne Akkorde  {#sec-strophen-ohne-akkorde}
+
+Strophen können natürlich auch ohne Akkorde ausgedrückt werden. Dabei wird im alten System statt `\chordverse` `\nochordverse` geschrieben und im neuen System (unserem Standardsystem) `\nochordlyrics` statt `\chordlyrics`. Beispiel:
+
+``` lilypond
+TEXT = \markuplist {
+  \group-verses {
+    \chordlyrics \firstVerse
+    \chordlyrics \refLyrics
+    \nochordlyrics \secondVerse
+  }
+}
+```
+
 # Layout von Inline-Scores
 
 Inline-Scores sind Notensätze (Scores), die innerhalb der TEXT-Umgebung genutzt werden, also zum Beispiel eine Bridge oder auch eine Coda.
