@@ -132,11 +132,15 @@ Zur Erklärung: `kumpelerbe` übernimmt die Eigenschaften von `kumpel`, danach w
 
 ## Textjahr
 
-Über die Variable `year_text = "YYYY"` erfassen wir, wann der Text geschrieben bzw. veröffentlicht wurde. Dabei sollte in die Anführungszeichen nur das Jahr geschrieben werden, wenn genauere Daten vorhanden sind, gerne dahinter auskommentiert. Also zum Beispiel: `year_text = "2004" % 01.01.2004`.
+Über die Variable `year_text = "YYYY"` erfassen wir, wann der Text geschrieben bzw. veröffentlicht wurde. Dabei kann gerne so genau wie möglich vorgegangen werden, also zum Beispiel: `year_text = "``01.01.2004``"`.
 
 ## Melodiejahr
 
-Über die Variable `year_melody = "YYYY"` erfassen wir, wann die Melodie geschrieben bzw. veröffentlicht wurde. Dabei sollte in die Anführungszeichen nur das Jahr geschrieben werden, wenn genauere Daten vorhanden sind, gerne dahinter auskommentiert. Also zum Beispiel: `year_melody = "2004" % 01.01.2004`.
+Über die Variable `year_melody = "YYYY"` erfassen wir, wann die Melodie geschrieben bzw. veröffentlicht wurde. Dabei kann gerne so genau wie möglich vorgegangen werden, also zum Beispiel: `year_melody = "Oktober 2004"`.
+
+## Satzjahr  {#sec-year-composition}
+
+Über die Variable `year_composition = "YYYY"` erfassen wir, wann die Melodie geschrieben bzw. veröffentlicht wurde. Dabei kann gerne so genau und detailreich wie möglich vorgegangen werden, also zum Beispiel: `year_melody = "Frühjahr 2004"`.
 
 ## Infotext
 
