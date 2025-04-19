@@ -92,9 +92,9 @@ repStart = "𝄆"
 repStop = "𝄇"
 ```
 
-## Anpassung der Akkordsymbole
+## Anpassung der Akkordsymbole  {#sec-akkordsymbole-anpassen}
 
-Auch die bestimmte Darstellung, spezieller Akkordsymbole kann in den `custom_style_overrides.ly` angepasst werden.
+Auch die bestimmte Darstellung, spezieller Akkordsymbole kann in den `custom_style_overrides.ly` angepasst werden. Siehe dazu mehr in der [LilyPond-Doku](https://lilypond.org/doc/v2.24/Documentation/notation/displaying-chords.de.html#customizing-chord-names).
 
 ## Kategorien
 
