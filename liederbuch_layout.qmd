@@ -139,3 +139,35 @@ HEADER = \bookpart {
 ```
 
 Das Lied würde also den Kategorien mit den IDs `see`, `abend` und `andacht` zugewiesen werden.
+
+## Seitennummerierung beeinflussen {#sec-seitennummerierung}
+
+Die Seitennummerierung bei Liederbüchern folgt der grundsätzlichen Logik, dass gerade Seiten immer links sind und ungerade Seiten immer rechts. Die erste Seite ist grundsätzlich immer die Seite 0. Das führt unter Umständen zu folgendem Problem:
+
+| Links | Rechts |
+|----|----|
+| 0 (Deckblatt) | 1 (Leerseite Einband, eigentlich links) |
+| 2 (erstes Lied, eigentlich rechts) | 3 … |
+
+Wie zu sehen, sollte das Deckblatt in diesem Fall (der vermutlich der Regelfall ist) eigentlich die Seite 1 haben. Die Lösung ist, dass im Paper-Block der Book-Umgebung in der Liederbuchdatei die Ziffer der ersten Seite definiert wird (diese folgt dann nach wie vor der oben genannten Logik):
+
+``` lilypond
+\book {
+  \paper {
+    first-page-number = #1
+  }
+  %…
+}
+```
+
+## Seitennummerierung ausblenden {#sec-seitennummerierung-ausblenden}
+
+Soll die Seitennummerierung ausgeblendet werden, kann dafür folgender Befehl in der Bookpart-Umgebung verwendet werden:
+
+``` lilypond
+\bookpart {
+  \paper {
+    print-page-number = ##f
+  }
+}
+```
