@@ -89,7 +89,7 @@ secondVerse = \lyricmode {
 
 Siehe [Lilypond-Doku](https://lilypond.org/doc/v2.24/Documentation/notation/common-notation-for-vocal-music#multiple-syllables-to-one-note).
 
-## Silbentrennung bei Volta-Klammern  {#sec-silbentrennung-volta-klammern}
+## Silbentrennung bei Volta-Klammern {#sec-silbentrennung-volta-klammern}
 
 Problem: Es kommt vor, dass in Liedern die Melodie der Strophe wiederholt wird. Wenn man dabei eine Wiederholung mit Volta-Klammern notiert und ein Wort in die Wiederholung „hineinragt“, dann skipt man die folgenden Notenwerte, was aber dazu führt, dass unter der gesamten Klammer eins Lyric-Hyphens (Bindestriche zwischen den Silben) gesetzt werden.
 
@@ -400,11 +400,11 @@ MUSIC = {
 }
 ```
 
-## Strophennummerierung  {#sec-strophennummerierung}
+## Strophennummerierung {#sec-strophennummerierung}
 
 Die Strophennummerierung erfolgt nach folgendem Schema: `#(sanza 1)` für 1. Strophe, `#(stanza 2)` für zweite Strophe etc. Das genaue Aussehen kann natürlich global auch angepasst werden.
 
-## Refrainnummerierung  {#sec-refnum}
+## Refrainnummerierung {#sec-refnum}
 
 Ein einfacher Refrain wird gesetzt durch den Befehl `\ref`. Gibt es mehrere Refrains kann die Strophe spezifiziert werden, nach der der Refrain gesungen wird: `\ref #'(5)` für die 5. Strophe oder `\ref #'(3 4)` für die 3. und 4. Strophe. Wie zu sehen ist, können auch mehrere Strophennummern übergeben werden.
 
@@ -443,7 +443,7 @@ Was passiert da und wo gibt es ggf. etwas anzupassen? Der Variablenname kommt al
 
 Optionale Akkorde können eingeklammert werden anhand der Funktion `\klamm { d4:7 }`.
 
-## Alternative Akkorde  {#sec-altchords}
+## Alternative Akkorde {#sec-altchords}
 
 Alternative Akkorde können mit der Funktion `\altChord` gesetzt werden. Die Funktion nimmt den nachfolgenden Akkord und behandelt ihn als „normalen“ Akkord (mit Länge, Midi-Ausgabe etc.). Außerdem wird ein zweiter nachfolgender Akkord verlangt, der in Klammern ausgedrückt wird. Dieser Akkord wird allerdings nicht musikalisch beachtet, er kommt weder im Midi vor, noch spielt die Dauer des Akkordes eine Rolle. Ein Beispiel:
 
@@ -510,7 +510,7 @@ Siehe [Layout-Doku](liedlayout_doku.qmd#sec-romanstanza).
 
 Bei der Balkensetzung sind unbedingt [unsere Standards](liedsatz_standards.qmd) zu beachten. Wie man in LilyPond die Balkensetzung beeinflusst, steht in der [LilyPond-Doku](https://lilypond.org/doc/v2.25/Documentation/notation/setting-automatic-beam-behavior).
 
-## Textpausen  {#sec-textpausen}
+## Textpausen {#sec-textpausen}
 
 In bestimmten Fällen kann es gewünscht sein, dass eine In-Text-Pause gesetzt werden soll, also eine musikalische Pause im Text. Das geht mit dem Befehl `\textRest`. Die Pause nimmt ein Zeichen ein und sollte immer getaggt werden, damit sie im Zweifel auch ausgeschaltet werden kann. Beispiel:
 
@@ -530,4 +530,14 @@ TEXT = \markuplist {
 }
 ```
 
-## 
+## Kanon- und sonstige Einsätze {#sec-einsaetze}
+
+Kanoneinsätze können mit dem Befehl `\cue` angegeben werden. Dem Befehl wird mindestens eine Zahl übergeben, also beispielsweise `\cue 1` oder `\cue 1,2`. Der Einsatz muss **vor** der Note markiert werden, wo der Einsatz stattfindet. Beispiel:
+
+``` lilypond
+firstVoice = \relative c' {
+  \cue 1 d4 e2 f4 |
+}
+```
+
+Die Standardeinstellung ist, dass die Einsätze mit römischen Zahlen und kursiv angegeben werden, also z.B. *`I.`* oder *`I., II.`*. Das kann über die Paper-Variable für ein einzelnes Lied oder auch das gesamte Liederbuch (dann am besten in den `custom-includes`) angepasst werden.
