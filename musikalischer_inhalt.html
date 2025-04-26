@@ -315,7 +315,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#römische-ziffern" id="toc-römische-ziffern" class="nav-link" data-scroll-target="#römische-ziffern">Römische Ziffern</a></li>
   <li><a href="#balkensetzung" id="toc-balkensetzung" class="nav-link" data-scroll-target="#balkensetzung">Balkensetzung</a></li>
   <li><a href="#sec-textpausen" id="toc-sec-textpausen" class="nav-link" data-scroll-target="#sec-textpausen">Textpausen</a></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
+  <li><a href="#sec-einsaetze" id="toc-sec-einsaetze" class="nav-link" data-scroll-target="#sec-einsaetze">Kanon- und sonstige Einsätze</a></li>
+  <li><a href="#sec-melismata" id="toc-sec-melismata" class="nav-link" data-scroll-target="#sec-melismata">Melismata</a></li>
   </ul>
 </nav>
     </div>
@@ -851,8 +852,21 @@ Wichtig
 <span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
 <span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section"></h2>
+<section id="sec-einsaetze" class="level2">
+<h2 class="anchored" data-anchor-id="sec-einsaetze">Kanon- und sonstige Einsätze</h2>
+<p>Kanoneinsätze können mit dem Befehl <code>\cue</code> angegeben werden. Dem Befehl wird mindestens eine Zahl übergeben, also beispielsweise <code>\cue 1</code> oder <code>\cue 1,2</code>. Der Einsatz muss <strong>vor</strong> der Note markiert werden, wo der Einsatz stattfindet. Beispiel:</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>firstVoice = <span class="fu">\relative c'</span> <span class="kw">{</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\cue</span> 1 d<span class="dt">4</span> e<span class="dt">2</span> f<span class="dt">4</span> <span class="dv">|</span></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Die Standardeinstellung ist, dass die Einsätze mit römischen Zahlen und kursiv angegeben werden, also z.B. <em><code>I.</code></em> oder <em><code>I., II.</code></em>. Das kann über die Paper-Variable für ein einzelnes Lied oder auch das gesamte Liederbuch (dann am besten in den <code>custom-includes</code>) angepasst werden.</p>
+</section>
+<section id="sec-melismata" class="level2">
+<h2 class="anchored" data-anchor-id="sec-melismata">Melismata</h2>
+<p>Als nützlicher Lifehack haben wir Kurzformen für <code>\set ignoreMelismata = ##f</code> und <code>\unset ignoreMelismata</code>. Diese lauten:</p>
+<ul>
+<li><p><code>\melisOff</code> = <code>\set ignoreMelismata = ##f</code></p></li>
+<li><p><code>\melisOn</code> = <code>\unset ignoreMelismata</code></p></li>
+</ul>
 
 
 </section>

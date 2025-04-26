@@ -303,7 +303,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#textjahr" id="toc-textjahr" class="nav-link" data-scroll-target="#textjahr">Textjahr</a></li>
   <li><a href="#melodiejahr" id="toc-melodiejahr" class="nav-link" data-scroll-target="#melodiejahr">Melodiejahr</a></li>
   <li><a href="#sec-year-composition" id="toc-sec-year-composition" class="nav-link" data-scroll-target="#sec-year-composition">Satzjahr</a></li>
-  <li><a href="#infotext" id="toc-infotext" class="nav-link" data-scroll-target="#infotext">Infotext</a></li>
+  <li><a href="#sec-infotext" id="toc-sec-infotext" class="nav-link" data-scroll-target="#sec-infotext">Infotext</a>
+  <ul class="collapse">
+  <li><a href="#formatierung" id="toc-formatierung" class="nav-link" data-scroll-target="#formatierung">Formatierung</a></li>
+  </ul></li>
   <li><a href="#übersetzung" id="toc-übersetzung" class="nav-link" data-scroll-target="#übersetzung">Übersetzung</a></li>
   <li><a href="#aussprache" id="toc-aussprache" class="nav-link" data-scroll-target="#aussprache">Aussprache</a></li>
   <li><a href="#quellen" id="toc-quellen" class="nav-link" data-scroll-target="#quellen">Quellen</a></li>
@@ -454,7 +457,7 @@ Hinweis
 </section>
 <section id="textjahr" class="level2">
 <h2 class="anchored" data-anchor-id="textjahr">Textjahr</h2>
-<p>Über die Variable <code>year_text = "YYYY"</code> erfassen wir, wann der Text geschrieben bzw. veröffentlicht wurde. Dabei kann gerne so genau wie möglich vorgegangen werden, also zum Beispiel: <code>year_text = "``01.01.2004``"</code>.</p>
+<p>Über die Variable <code>year_text = "YYYY"</code> erfassen wir, wann der Text geschrieben bzw. veröffentlicht wurde. Dabei kann gerne so genau wie möglich vorgegangen werden, also zum Beispiel: <code>year_text = "01.01.2004"</code>.</p>
 </section>
 <section id="melodiejahr" class="level2">
 <h2 class="anchored" data-anchor-id="melodiejahr">Melodiejahr</h2>
@@ -464,9 +467,13 @@ Hinweis
 <h2 class="anchored" data-anchor-id="sec-year-composition">Satzjahr</h2>
 <p>Über die Variable <code>year_composition = "YYYY"</code> erfassen wir, wann die Melodie geschrieben bzw. veröffentlicht wurde. Dabei kann gerne so genau und detailreich wie möglich vorgegangen werden, also zum Beispiel: <code>year_melody = "Frühjahr 2004"</code>.</p>
 </section>
-<section id="infotext" class="level2">
-<h2 class="anchored" data-anchor-id="infotext">Infotext</h2>
+<section id="sec-infotext" class="level2">
+<h2 class="anchored" data-anchor-id="sec-infotext">Infotext</h2>
 <p>In die Variable <code>infotext = ""</code> können Informationen zur Entstehungsgeschichte, von oder über den*die Autor*in etc. notiert werden (gerne mit Quellen!). Das darf gerne so ausführlich wie möglich geschehen, damit jedes Liederbuch-Team das ggf. auf dieser Grundlage für sich anpassen kann.</p>
+<section id="formatierung" class="level3">
+<h3 class="anchored" data-anchor-id="formatierung">Formatierung</h3>
+<p>Innerhalb der <code>infotext</code>, <code>pronunciation</code> und <code>translation</code> Variablen kann die Markup-Formatierung genutzt werden, die aber einen zusätzlichen <code>\</code> benötigt, also beispielsweise <code>\\bold { … }</code>.</p>
+</section>
 </section>
 <section id="übersetzung" class="level2">
 <h2 class="anchored" data-anchor-id="übersetzung">Übersetzung</h2>

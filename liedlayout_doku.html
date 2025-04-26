@@ -329,6 +329,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </ul></li>
   <li><a href="#größe-des-bildtitels" id="toc-größe-des-bildtitels" class="nav-link" data-scroll-target="#größe-des-bildtitels">Größe des Bildtitels</a></li>
   <li><a href="#abstand-des-titels-zum-oberen-seitenrand" id="toc-abstand-des-titels-zum-oberen-seitenrand" class="nav-link" data-scroll-target="#abstand-des-titels-zum-oberen-seitenrand">Abstand des Titels zum oberen Seitenrand</a></li>
+  <li><a href="#sec-breaks" id="toc-sec-breaks" class="nav-link" data-scroll-target="#sec-breaks">Zeilenumbrüche</a></li>
+  <li><a href="#sec-indents" id="toc-sec-indents" class="nav-link" data-scroll-target="#sec-indents">Zeileneinzüge anpassen</a></li>
   </ul></li>
   <li><a href="#sec-illustrationen" id="toc-sec-illustrationen" class="nav-link" data-scroll-target="#sec-illustrationen">Illustrationen</a>
   <ul class="collapse">
@@ -665,6 +667,32 @@ Warnung
 <span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
 <span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
+<section id="sec-breaks" class="level2">
+<h2 class="anchored" data-anchor-id="sec-breaks">Zeilenumbrüche</h2>
+<p>Zeilenumbrüche können anhand einer Silentvoice hinzugefügt werden. Das geht, in dem eine neue Stimme in der Layout-Datei angelegt wird, in der die Umbrüche integriert werden (<code>\break</code>). Die Stimme muss dann im <code>MUSIC</code>-Part eingebunden werden. Beispiel:</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>breakVoice = <span class="kw">{</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>  s<span class="dt">1*5</span> <span class="fu">\break</span></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>  s<span class="dt">1*5</span> <span class="fu">\break</span></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>  s<span class="dt">1*5</span> <span class="fu">\break</span></span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>MUSIC = <span class="kw">{</span></span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;&lt;</span></span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\songChords</span></span>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">\new</span> <span class="dt">ChoirStaff</span> = "<span class="st">firstStaff"</span></span>
+<span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;&lt;</span></span>
+<span id="cb21-12"><a href="#cb21-12" aria-hidden="true" tabindex="-1"></a>      <span class="kw">\new</span> <span class="dt">Voice</span> = "<span class="st">firstVoice"</span> <span class="kw">{</span> <span class="fu">\melodyVoice</span> <span class="kw">}</span></span>
+<span id="cb21-13"><a href="#cb21-13" aria-hidden="true" tabindex="-1"></a>      \addlyrics<span class="kw"> </span><span class="fu">\firstVerse</span></span>
+<span id="cb21-14"><a href="#cb21-14" aria-hidden="true" tabindex="-1"></a>      <span class="kw">\new</span> <span class="dt">Voice</span> <span class="kw">{</span> <span class="fu">\breakVoice</span> <span class="kw">}</span></span>
+<span id="cb21-15"><a href="#cb21-15" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&gt;&gt;</span></span>
+<span id="cb21-16"><a href="#cb21-16" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&gt;&gt;</span></span>
+<span id="cb21-17"><a href="#cb21-17" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Im Beispiel wird also der Staff alle fünf Takte insgesamt dreimal umgebrochen.</p>
+</section>
+<section id="sec-indents" class="level2">
+<h2 class="anchored" data-anchor-id="sec-indents">Zeileneinzüge anpassen</h2>
+<p>Zeileneinzüge, also der Abstand einer einzelnen Notenzeile zum linken oder rechten Seitenrand, können ebenfalls angepasst werden. Dazu gibt es zwei Befehle: <code>\pseudoIndent n</code> und <code>\pseudoIndents n n</code>. Der Befehl macht quasi einen Break und die nächste Zeile bekommt dann die angegebenen Einzüge. Eine ausführliche Erklärung mit Bildern und Beispielen findet sich <a href="https://lsr.di.unimi.it/LSR/Item?id=1098">hier</a>.</p>
+</section>
 </section>
 <section id="sec-illustrationen" class="level1">
 <h1>Illustrationen</h1>
@@ -678,6 +706,7 @@ Warnung
 <section id="verschieben-von-objekten" class="level2">
 <h2 class="anchored" data-anchor-id="verschieben-von-objekten">Verschieben von Objekten</h2>
 <p>Die Funktion <code>\translate #'(x . y)</code> verschiebt das nächste, was geprinted wird, nicht an die eigentliche Stelle, sondern verschiebt es um die Koordinaten <code>x</code> und <code>y</code> (jeweils numerische Werte). Ausprobieren hilft.</p>
+<p>Mit <code>\pad-x x markup</code> kann ein Markup (<code>markup</code>) um <code>x</code> auf der x-Achse verschoben werden.</p>
 
 
 </section>

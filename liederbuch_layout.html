@@ -291,7 +291,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#einstellungen-überschreiben" id="toc-einstellungen-überschreiben" class="nav-link active" data-scroll-target="#einstellungen-überschreiben">Einstellungen überschreiben</a></li>
-  <li><a href="#generelle-layout-einstellungen" id="toc-generelle-layout-einstellungen" class="nav-link" data-scroll-target="#generelle-layout-einstellungen">Generelle Layout-Einstellungen</a></li>
+  <li><a href="#generelle-layout-einstellungen" id="toc-generelle-layout-einstellungen" class="nav-link" data-scroll-target="#generelle-layout-einstellungen">Generelle Layout-Einstellungen</a>
+  <ul class="collapse">
+  <li><a href="#sec-einsaetze" id="toc-sec-einsaetze" class="nav-link" data-scroll-target="#sec-einsaetze">Anpassung von Kanoneinsätzen</a></li>
+  </ul></li>
   <li><a href="#sec-akkordsymbole-anpassen" id="toc-sec-akkordsymbole-anpassen" class="nav-link" data-scroll-target="#sec-akkordsymbole-anpassen">Anpassung der Akkordsymbole</a></li>
   <li><a href="#kategorien" id="toc-kategorien" class="nav-link" data-scroll-target="#kategorien">Kategorien</a>
   <ul class="collapse">
@@ -396,6 +399,20 @@ Hinweis
 <span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>%<span class="co"> hübsche Wiederholungszeichen für den Liedtext</span></span>
 <span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>repStart = "<span class="st">𝄆"</span></span>
 <span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>repStop = "<span class="st">𝄇"</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="sec-einsaetze" class="level3">
+<h3 class="anchored" data-anchor-id="sec-einsaetze">Anpassung von Kanoneinsätzen</h3>
+<p>Der Stil, in dem Kanoneinsätze markiert werden, kann in den <code>lilypond-custom-includes/base_config.ly</code> eingestellt werden (unbedingt unter die <code>general_include</code>!). So sieht die Standardeinstellung aus:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>\paper<span class="kw"> {</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  cueMarkup = <span class="bn">\markup</span> <span class="kw">{</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="bn">\italic</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>      #<span class="fl">(make-on-the-fly-markup (lambda (layout props m)</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fl">        (interpret-markup layout props </span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="fl">          (string-join (map (lambda (n) (format </span><span class="dv">#f</span><span class="fl"> "</span><span class="st">~@r."</span><span class="fl"> n)) (chain-assoc-get 'cues props)) "</span><span class="st">, "</span><span class="fl">)))</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fl">        (make-null-markup))</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Relevant sind vermutlich die Auszeichnung (italic, bold). Das kann entsprechend angepasst werden. Außerdem das Ziffernformat, also römisch oder arabisch. Das funktioniert mit dem String <code>"~@r."</code>. Arabische Ziffern könnten mit dem String <code>"~a."</code> erreicht werden. Alle verfügbaren Formatspezifikationen gibt es in der <a href="https://www.gnu.org/software/guile/manual/html_node/Formatted-Output.html">Scheme-Doku</a> zu finden.</p>
+</section>
 </section>
 <section id="sec-akkordsymbole-anpassen" class="level2">
 <h2 class="anchored" data-anchor-id="sec-akkordsymbole-anpassen">Anpassung der Akkordsymbole</h2>
@@ -407,28 +424,28 @@ Hinweis
 <section id="kategorien-erstellen" class="level3">
 <h3 class="anchored" data-anchor-id="kategorien-erstellen">Kategorien erstellen</h3>
 <p>Als erstes solltest du Kategorien in der Datei <code>lilypond-custom-includes/categories.ly</code> definieren. Die Datei sieht so aus:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>#<span class="fl">(define category-names '(</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fl">  (see "</span><span class="st">See und\nPiraten"</span><span class="fl">)</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fl">  ;</span><span class="co">(categoriekey "Titel der Kategorie")</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fl">  ))</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>%<span class="co">% Path to Category images</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>#<span class="fl">(define-public (category-image-path category)</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fl">   (string-append "</span><span class="st">../../liederbuecher/beispiel_liederbuch/categories/"</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="fl">         category "</span><span class="st">.eps"</span><span class="fl">))</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>#<span class="fl">(define category-names '(</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fl">  (see "</span><span class="st">See und\nPiraten"</span><span class="fl">)</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fl">  ;</span><span class="co">(categoriekey "Titel der Kategorie")</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fl">  ))</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>%<span class="co">% Path to Category images</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>#<span class="fl">(define-public (category-image-path category)</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="fl">   (string-append "</span><span class="st">../../liederbuecher/beispiel_liederbuch/categories/"</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="fl">         category "</span><span class="st">.eps"</span><span class="fl">))</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Das gehen wir jetzt Zeile für Zeile durch. In der ersten Zeile wird die Scheme<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>-Funktion definiert, das ist erstmal uninteressant. Ab der zweiten Zeile werden dann alle Kategorien und ihre Titel definiert. Das Schema wird im auskommentierten Teil beschrieben<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>: Erst kommt die ID der Kategorie und danach in Anführungszeichen der Titel. Auf die ID wird in der Lied-Layout-Datei referenziert. Der Titel ist der, der dann im Kategorienverzeichnis benutzt wird. Im obigen Beispiel ist also <code>see</code> die ID und <code>"See und/nPiraten"</code> der Titel. Das <code>/n</code> bewirkt übrigens einen Zeilenumbruch.</p>
 <p>Im zweiten Teil wird der Pfad zu den Kategoriebildchen definiert. Der sollte auf jeden Fall angepasst werden und auf einen Ordner in deinem Liederbuch-Ordner verweisen. Die Dateinamen müssen dabei der ID entsprechen und das EPS-Format haben.</p>
 </section>
 <section id="liedern-kategorien-zuweisen" class="level3">
 <h3 class="anchored" data-anchor-id="liedern-kategorien-zuweisen">Liedern Kategorien zuweisen</h3>
 <p>In der Layout-Datei der Lieder können im zweiten Schritt dann Kategorien den Liedern zugewiesen werden, in dem in der <code>categories</code>-Variable alle betreffenden IDs durch Leerzeichen getrennt aufgeschrieben werden. Das könnte dann so aussehen:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>HEADER = <span class="kw">\bookpart</span> <span class="kw">{</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  \header<span class="kw"> {</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\basicSongInfo</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    %<span class="co">infotext = ""</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    categories = "<span class="st">see abend andacht"</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>HEADER = <span class="kw">\bookpart</span> <span class="kw">{</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  \header<span class="kw"> {</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\basicSongInfo</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    %<span class="co">infotext = ""</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    categories = "<span class="st">see abend andacht"</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Das Lied würde also den Kategorien mit den IDs <code>see</code>, <code>abend</code> und <code>andacht</code> zugewiesen werden.</p>
 </section>
 </section>
@@ -454,21 +471,21 @@ Hinweis
 </tbody>
 </table>
 <p>Wie zu sehen, sollte das Deckblatt in diesem Fall (der vermutlich der Regelfall ist) eigentlich die Seite 1 haben. Die Lösung ist, dass im Paper-Block der Book-Umgebung in der Liederbuchdatei die Ziffer der ersten Seite definiert wird (diese folgt dann nach wie vor der oben genannten Logik):</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">\book</span> <span class="kw">{</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  \paper<span class="kw"> {</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">first-page-number</span> = #<span class="dv">1</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  %<span class="co">…</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">\book</span> <span class="kw">{</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  \paper<span class="kw"> {</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">first-page-number</span> = #<span class="dv">1</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  %<span class="co">…</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="sec-seitennummerierungausblenden" class="level2">
 <h2 class="anchored" data-anchor-id="sec-seitennummerierungausblenden">Seitennummerierung ausblenden</h2>
 <p>Soll die Seitennummerierung ausgeblendet werden, kann dafür folgender Befehl in der Bookpart-Umgebung verwendet werden:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">\bookpart</span> <span class="kw">{</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  \paper<span class="kw"> {</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">print-page-number</span> = #<span class="dv">#f</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">\bookpart</span> <span class="kw">{</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  \paper<span class="kw"> {</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">print-page-number</span> = #<span class="dv">#f</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 </section>
