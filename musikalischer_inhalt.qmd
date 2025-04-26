@@ -541,3 +541,11 @@ firstVoice = \relative c' {
 ```
 
 Die Standardeinstellung ist, dass die Einsätze mit römischen Zahlen und kursiv angegeben werden, also z.B. *`I.`* oder *`I., II.`*. Das kann über die Paper-Variable für ein einzelnes Lied oder auch das gesamte Liederbuch (dann am besten in den `custom-includes`) angepasst werden.
+
+## Melismata
+
+Als nützlicher Lifehack haben wir Kurzformen für `\set ignoreMelismata = ##f` und `\unset ignoreMelismata`. Diese lauten:
+
+-   `\melisOff` = `\set ignoreMelismata = ##f`
+
+-   `\melisOn` = `\unset ignoreMelismata`
