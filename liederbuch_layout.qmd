@@ -92,7 +92,25 @@ repStart = "𝄆"
 repStop = "𝄇"
 ```
 
-## Anpassung der Akkordsymbole  {#sec-akkordsymbole-anpassen}
+### Anpassung von Kanoneinsätzen {#sec-einsaetze}
+
+Der Stil, in dem Kanoneinsätze markiert werden, kann in den `lilypond-custom-includes/base_config.ly` eingestellt werden (unbedingt unter die `general_include`!). So sieht die Standardeinstellung aus:
+
+``` lilypond
+\paper {
+  cueMarkup = \markup {
+    \italic
+      #(make-on-the-fly-markup (lambda (layout props m)
+        (interpret-markup layout props 
+          (string-join (map (lambda (n) (format #f "~@r." n)) (chain-assoc-get 'cues props)) ", ")))
+        (make-null-markup))
+  }
+}
+```
+
+Relevant sind vermutlich die Auszeichnung (italic, bold). Das kann entsprechend angepasst werden. Außerdem das Ziffernformat, also römisch oder arabisch. Das funktioniert mit dem String `"~@r."`. Arabische Ziffern könnten mit dem String `"~a."` erreicht werden. Alle verfügbaren Formatspezifikationen gibt es in der [Scheme-Doku](https://www.gnu.org/software/guile/manual/html_node/Formatted-Output.html) zu finden.
+
+## Anpassung der Akkordsymbole {#sec-akkordsymbole-anpassen}
 
 Auch die bestimmte Darstellung, spezieller Akkordsymbole kann in den `custom_style_overrides.ly` angepasst werden. Siehe dazu mehr in der [LilyPond-Doku](https://lilypond.org/doc/v2.24/Documentation/notation/displaying-chords.de.html#customizing-chord-names).
 
