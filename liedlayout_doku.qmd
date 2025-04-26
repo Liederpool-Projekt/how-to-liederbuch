@@ -86,7 +86,7 @@ TEXT = { … }
 
 Unten überschreiben wir dann die `refChords` und nutzen `\pushToTag`, um vor den markierten Akkord den eingeklammerten Befehl zu inkludieren.
 
-## Barcheck-Warnung durch Midi-Auftakte beheben  {#sec-fill-midi}
+## Barcheck-Warnung durch Midi-Auftakte beheben {#sec-fill-midi}
 
 In bestimmten Fällen kann es vorkommen, dass Barcheck-Warnungen durch die Midi-Datei hervorgerufen werden. Begründet ist das dann eigentlich immer durch einen Inline-Score. Wenn ein Lied ein Auftakt hat und eine Coda, die man sowohl als Inline-Score als auch im MUSIC-Teil notiert, kann es sein, dass der Auftakt in der Midi fehlt. Die Funktion hängt dem Midi einfach noch musikalischen Inhalt an, Beispiel „Winterlied“:
 
@@ -252,7 +252,7 @@ Es kann vorkommen, dass man bestimmte Strophen nicht in seinem Liederbuch abdruc
 
 Der Befehl muss vor die entsprechende Lyrics-Variable abgerufen werden.
 
-## Strophen ohne Akkorde  {#sec-strophen-ohne-akkorde}
+## Strophen ohne Akkorde {#sec-strophen-ohne-akkorde}
 
 Strophen können natürlich auch ohne Akkorde ausgedrückt werden. Dabei wird im alten System statt `\chordverse` `\nochordverse` geschrieben und im neuen System (unserem Standardsystem) `\nochordlyrics` statt `\chordlyrics`. Beispiel:
 
@@ -365,6 +365,36 @@ HEADER = \bookpart {
   }
 }
 ```
+
+## Zeilenumbrüche {#sec-breaks}
+
+Zeilenumbrüche können anhand einer Silentvoice hinzugefügt werden. Das geht, in dem eine neue Stimme in der Layout-Datei angelegt wird, in der die Umbrüche integriert werden (`\break`). Die Stimme muss dann im `MUSIC`-Part eingebunden werden. Beispiel:
+
+``` lilypond
+breakVoice = {
+  s1*5 \break
+  s1*5 \break
+  s1*5 \break
+}
+
+MUSIC = {
+  <<
+    \songChords
+    \new ChoirStaff = "firstStaff"
+    <<
+      \new Voice = "firstVoice" { \melodyVoice }
+      \addlyrics \firstVerse
+      \new Voice { \breakVoice }
+    >>
+  >>
+}
+```
+
+Im Beispiel wird also der Staff alle fünf Takte insgesamt dreimal umgebrochen.
+
+## Zeileneinzüge anpassen {#sec-indents}
+
+Zeileneinzüge, also der Abstand einer einzelnen Notenzeile zum linken oder rechten Seitenrand, können ebenfalls angepasst werden. Dazu gibt es zwei Befehle: `\pseudoIndent n` und `\pseudoIndents n n`. Der Befehl macht quasi einen Break und die nächste Zeile bekommt dann die angegebenen Einzüge. Eine ausführliche Erklärung mit Bildern und Beispielen findet sich [hier](https://lsr.di.unimi.it/LSR/Item?id=1098).
 
 # Illustrationen {#sec-illustrationen}
 
