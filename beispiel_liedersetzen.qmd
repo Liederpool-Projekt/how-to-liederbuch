@@ -270,7 +270,7 @@ fourthVerse = \lyricmode {
 
 Da, wo jetzt noch `Ly -- rics` steht, muss natürlich der Liedtext hin.
 
-## firstVoice-Variable  {#sec-firstVoice}
+## firstVoice-Variable {#sec-firstVoice}
 
 Jetzt geht’s ans Eingemachte, nämlich die Noten! Da, wo jetzt noch das c steht, schreibst du die Noten des Liedes rein – für jeden Takt eine Zeile und am Ende kommt eine Pipe / ein Senkrechtstrich (`|`), der zu einer Taktüberprüfung führt. Das sieht für den ersten Takt so aus:
 

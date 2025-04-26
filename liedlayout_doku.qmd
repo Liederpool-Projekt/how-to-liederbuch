@@ -411,3 +411,5 @@ Generell findet ihr alle Markup-Befehle in der LilyPond-Doku:
 ## Verschieben von Objekten
 
 Die Funktion `\translate #'(x . y)` verschiebt das nächste, was geprinted wird, nicht an die eigentliche Stelle, sondern verschiebt es um die Koordinaten `x` und `y` (jeweils numerische Werte). Ausprobieren hilft.
+
+Mit `\pad-x x markup` kann ein Markup (`markup`) um `x` auf der x-Achse verschoben werden.

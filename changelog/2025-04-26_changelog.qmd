@@ -1,0 +1,21 @@
+---
+title: "Doku-Changelog vom 19.04.2025"
+date: 2025-04-19
+categories: [Doku]
+format: html
+description: ""
+---
+
+Es gibt viele neue Bestandteile der Doku:
+
+-   Kanoneinsätze können jetzt einheitlich (semantisch höchst korrekt) genutzt werden mit einer neuen Funktion. Mehr [hier](../musikalischer_inhalt.qmd#sec-einsaetze).
+
+-   Wie [Einsätze für Liederbücher](../liederbuch_layout.qmd#sec-einsaetze) angepasst werden können, ist nun auch dokumentiert.
+
+-   Einige Metadaten-Variablen können jetzt [mit Markup formatiert](../metadaten.qmd#sec-infotext) werden.
+
+-   Für Melismata gibt’s jetzt eine [Kurzform](../musikalischer_inhalt.qmd#sec-melismata).
+
+-   Jetzt ist auch erklärt, wie [Zeilenumbrüche](../liedlayout_doku.qmd#sec-breaks) in Layout-Dateien gemacht werden können.
+
+-   Wie krasse Zeileneinzüge verändert werden können, steht jetzt [hier](../liedlayout_doku.qmd#sec-indents).

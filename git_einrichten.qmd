@@ -77,7 +77,7 @@ Wenn du die obigen Schritte befolgt hast oder schon ein Liederbuch-Repo eingeric
     3.  Im nächsten Schritt wird gefragt, an welcher Stelle das Submodul eingebunden werden soll, da kannst du einfach weiterklicken.
 3.  Fertig!
 
-## Wichtige Git-Einstellung  {#sec-gitsettings}
+## Wichtige Git-Einstellung {#sec-gitsettings}
 
 Wichtig ist jetzt noch, dass du in deiner Git-GUI einstellst, dass das Standardverhalten bei Pulls Rebase ist. Dazu musst du deine Git-Config ändern. Das geht meist über ein Einstellungsmenü. In SmartGit über `Repository/Settings` und dann sollte es so aussehen:
 
