@@ -546,6 +546,6 @@ Die Standardeinstellung ist, dass die Einsätze mit römischen Zahlen und kursiv
 
 Als nützlicher Lifehack haben wir Kurzformen für `\set ignoreMelismata = ##f` und `\unset ignoreMelismata`. Diese lauten:
 
--   `\melisOff` = `\set ignoreMelismata = ##f`
+-   `\melisOff` = `\set ignoreMelismata = ##t`
 
 -   `\melisOn` = `\unset ignoreMelismata`
