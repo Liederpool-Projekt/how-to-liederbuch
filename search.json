@@ -845,7 +845,7 @@
     "href": "musikalischer_inhalt.html#sec-melismata",
     "title": "Musikalischer Inhalt",
     "section": "Melismata",
-    "text": "Melismata\nAls nützlicher Lifehack haben wir Kurzformen für \\set ignoreMelismata = ##f und \\unset ignoreMelismata. Diese lauten:\n\n\\melisOff = \\set ignoreMelismata = ##f\n\\melisOn = \\unset ignoreMelismata",
+    "text": "Melismata\nAls nützlicher Lifehack haben wir Kurzformen für \\set ignoreMelismata = ##f und \\unset ignoreMelismata. Diese lauten:\n\n\\melisOff = \\set ignoreMelismata = ##t\n\\melisOn = \\unset ignoreMelismata",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",
