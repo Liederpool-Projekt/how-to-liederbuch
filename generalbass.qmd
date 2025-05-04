@@ -5,4 +5,18 @@ format: html
 
 In manchen Liederbüchern (vor allem von olka) wird für die Akkordnotation die Generalbassnotation verwendet. Diese stammt aus der Barockmusik und ist heutzutage alles andere als intuitiv. Wir wollen keine Generalbassnotation notieren, sondern stattdessen moderne Akkordsymbole wie sie geläufig sind. Deswegen gibt es hier eine Erklärung, wie die Generalbassnotation in heutige Akkordsymbole umgewandelt werden kann.
 
-…bald!
+Grundsätzlich ist der Generalbass so aufgebaut, dass der Akkord ausgehend vom Basston nach der Anleitung der Ziffern aufgebaut wird. Dabei ist die Basis der Grunddreiklang, bestehend aus Grundton, Terz (3), Quinte (5). Das ist quasi der Standard-Akkord, der wird als „gegeben“ vorausgesetzt. Das heißt, nur *Abweichungen* von diesem Standard werden angegeben. Dabei gelten einige Regeln:
+
+-   Eine Sexte ersetzt immer die Quinte.
+
+-   Eine Quarte ersetzt immer die Terz.
+
+-   Eine Sekunde bedeutet immer Sekunde, Quarte, Sexte.
+
+Alles darüber hinaus wird ergänzend gespielt.
+
+::: callout-important
+Zwar wird der Akkord vom Basston aus gebildet, allerdings ist daran nicht erkennbar, ob der Basston auch der Grundton ist. Bei den Umkehrungen eines Akkords ist dies nämlich nicht der Fall (Beispiel 2 und 3 -\> 6 und 6/4)
+:::
+
+Hin und wieder kann es vorkommen, dass auch Vorhalte notiert werden, also ein Ton sich auflöst zu einem „normalen“ Akkordton. Zum Beispiel könnte aus 6/3 dann 5/3 werden. In dem Falle wird dann 5/3 notiert, obwohl es, da Standard, normalerweise nicht notiert wird.
