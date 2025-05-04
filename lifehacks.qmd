@@ -15,3 +15,11 @@ title: "Nützliche Lifehacks"
 -   Lange Zeilen können im Editor standardmäßig umgebrochen werden: Unter `Bearbeiten/Einstellungen/Editor-Einstellungen/Einstellungen zur Ansicht` -\> Haken setzen.
 
 -   Zahlreiche LilyPond-Codeschnipsel gibt es unter `Schnipsel`. Das wollen wir künftig noch mehr ausbauen.
+
+## LilyPond-Lifehacks {#sec-lilypond}
+
+Falls du mal gerade unterwegs bist und nur ein Handy zur Verfügung hast, aber grad ein Lied notieren willst, gibt es zwei fantastische Möglichkeiten Möglichkeiten:
+
+-   Lilypond im Browser: <https://www.hacklily.org/>
+
+-   Telegrambot: LilyPondBot
