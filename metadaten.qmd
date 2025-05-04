@@ -17,9 +17,9 @@ Der Liedanfang wird mit `starttext = ""` angegeben, wobei innerhalb der Anführu
 
 Alternative Titel können mittels der Variable `alttitle = #'("")` angegeben werden, wobei innerhalb der Anführungszeichen der Alternativtitel benannt wird. Wenn es mehrere Alternativtitel gibt einfach in Anführungszeichen daneben, zum Beispiel: `alttitle = #'("Alttitle A" "Alttitle B" "Alttitle C")`.
 
-## Autor\*innenangaben
+## Autor\*innenangaben {#sec-autoren}
 
-Autor\*inneninformationen werden im neuen System aus einer YAML-Datei gezogen. Das bedeutet, in der Lilyponddatei wird lediglich auf eine ID einer Autorin verwiesen, deren Informationen in der YAML-Datei unter dieser ID zu finden sind.
+Autor\*inneninformationen werden im neuen System aus einer YAML-Datei gezogen. Das bedeutet, in der Lilyponddatei wird lediglich auf eine ID einer Autorin verwiesen, deren Informationen in der YAML-Datei unter dieser ID zu finden sind. Wird keine ID gefunden, erfolgt die Ausgabe des angegebenen Strings, bedeutet: Die ID `"olka"` wird gefunden, es erfolgt die normale und gewünschte Ausgabe. Die ID `"olks"` existiert nicht, es erfolgt somit die Ausgabe `olkas`.
 
 ### Abruf in der Lilyponddatei
 
@@ -111,6 +111,10 @@ nocheiner:
 
 ::: callout-note
 Wenn der\*die Verfasser\*in unbekannt ist, wird dies folgendermaßen kenntlich gemacht: `("" melody text)`. In diesem Falle kann kein Eintrag in der YAML gefunden werden, deswegen wird für die Optionen Melodie und Text „unbekannt“ ausgegeben.
+:::
+
+::: callout-note
+Wenn es sich um ein Traditional handelt oder du aus anderen Gründen ein manuelles Freitextfeld brauchst, kannst du einfach in die Anführungsschreiben, z.B.: `("nach dem italienischen Volkslied …" melody)`.
 :::
 
 ### Sonderfall „Inherits“
