@@ -81,9 +81,10 @@ website:
     #icon: check-square-fill #success
     icon: info-circle-fill #info
     dismissable: false
-    content: "Wir haben die Dokumentation aktualisiert. Alles neue erfährst du im Changelog."
+    content: "Wir haben die Dokumentation am 04.05.2025 aktualisiert. Alles neue erfährst du im [Changelog](changelog/2025-05-04_changelog.qmd)."
     type: info
     position: below-navbar
+  page-footer: "Gebaut mit [Quarto](https://quarto.org)"
 
 bibliography: references.bib
 lang: de
