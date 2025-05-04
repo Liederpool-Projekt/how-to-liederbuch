@@ -19,7 +19,7 @@ Die allermeisten liederbuchspezifischen Einstellungen, die man vermutlich verän
 
 -   `songInfoFontSize` definiert die Schriftgröße der Songinfo.
 
--   `songInfoLineWidthFraction` definiert die Breite der Songinfo.
+-   `songInfoLineWidthFraction` definiert die Breite der Songinfo in Prozent
 
 -   `songTitleSize` definiert die Schriftgröße des Titels.
 
