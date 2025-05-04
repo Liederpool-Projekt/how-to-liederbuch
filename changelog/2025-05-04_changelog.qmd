@@ -1,0 +1,15 @@
+---
+title: "Doku-Changelog vom 04.05.2025"
+date: 2025-05-04
+categories: [Doku]
+format: html
+description: ""
+---
+
+Es gibt wieder ein Doku-Update:
+
+-   [LilyPond für unterwegs](../lifehacks.qmd#sec-lilypond).
+
+-   Das [Autor\*innensystem](../metadaten.qmd#sec-autoren) wird jetzt korrekt beschrieben für den Fall, dass die ID nicht gefunden wird.
+
+-   In Kürze ist die Anleitung für den [Generalbass](generalbass.qmd) fertig.
