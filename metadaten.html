@@ -171,9 +171,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         </a>
     </div>
   </nav>
-  <div id="quarto-announcement" data-announcement-id="5a9023b00438b8f739094ca72edfd8fe" class="alert alert-info hidden"><i class="bi bi-info-circle-fill quarto-announcement-icon"></i><div class="quarto-announcement-content">
-<p>Wir haben die Dokumentation aktualisiert. Alles neue erfährst du im Changelog.</p>
-</div></div>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
@@ -293,7 +290,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#titel" id="toc-titel" class="nav-link active" data-scroll-target="#titel">Titel</a></li>
   <li><a href="#liedanfang" id="toc-liedanfang" class="nav-link" data-scroll-target="#liedanfang">Liedanfang</a></li>
   <li><a href="#alternative-titel" id="toc-alternative-titel" class="nav-link" data-scroll-target="#alternative-titel">Alternative Titel</a></li>
-  <li><a href="#autorinnenangaben" id="toc-autorinnenangaben" class="nav-link" data-scroll-target="#autorinnenangaben">Autor*innenangaben</a>
+  <li><a href="#sec-autoren" id="toc-sec-autoren" class="nav-link" data-scroll-target="#sec-autoren">Autor*innenangaben</a>
   <ul class="collapse">
   <li><a href="#abruf-in-der-lilyponddatei" id="toc-abruf-in-der-lilyponddatei" class="nav-link" data-scroll-target="#abruf-in-der-lilyponddatei">Abruf in der Lilyponddatei</a></li>
   <li><a href="#aufbau-der-yaml-datei" id="toc-aufbau-der-yaml-datei" class="nav-link" data-scroll-target="#aufbau-der-yaml-datei">Aufbau der YAML-Datei</a></li>
@@ -348,9 +345,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="alternative-titel">Alternative Titel</h2>
 <p>Alternative Titel können mittels der Variable <code>alttitle = #'("")</code> angegeben werden, wobei innerhalb der Anführungszeichen der Alternativtitel benannt wird. Wenn es mehrere Alternativtitel gibt einfach in Anführungszeichen daneben, zum Beispiel: <code>alttitle = #'("Alttitle A" "Alttitle B" "Alttitle C")</code>.</p>
 </section>
-<section id="autorinnenangaben" class="level2">
-<h2 class="anchored" data-anchor-id="autorinnenangaben">Autor*innenangaben</h2>
-<p>Autor*inneninformationen werden im neuen System aus einer YAML-Datei gezogen. Das bedeutet, in der Lilyponddatei wird lediglich auf eine ID einer Autorin verwiesen, deren Informationen in der YAML-Datei unter dieser ID zu finden sind.</p>
+<section id="sec-autoren" class="level2">
+<h2 class="anchored" data-anchor-id="sec-autoren">Autor*innenangaben</h2>
+<p>Autor*inneninformationen werden im neuen System aus einer YAML-Datei gezogen. Das bedeutet, in der Lilyponddatei wird lediglich auf eine ID einer Autorin verwiesen, deren Informationen in der YAML-Datei unter dieser ID zu finden sind. Wird keine ID gefunden, erfolgt die Ausgabe des angegebenen Strings, bedeutet: Die ID <code>"olka"</code> wird gefunden, es erfolgt die normale und gewünschte Ausgabe. Die ID <code>"olks"</code> existiert nicht, es erfolgt somit die Ausgabe <code>olkas</code>.</p>
 <section id="abruf-in-der-lilyponddatei" class="level3">
 <h3 class="anchored" data-anchor-id="abruf-in-der-lilyponddatei">Abruf in der Lilyponddatei</h3>
 <p>Die ID der beiden Autor*innen heißt in diesem Fall <code>Autor1</code> beziehungsweise <code>Autor2</code>.</p>
@@ -438,6 +435,19 @@ Hinweis
 </div>
 <div class="callout-body-container callout-body">
 <p>Wenn der*die Verfasser*in unbekannt ist, wird dies folgendermaßen kenntlich gemacht: <code>("" melody text)</code>. In diesem Falle kann kein Eintrag in der YAML gefunden werden, deswegen wird für die Optionen Melodie und Text „unbekannt“ ausgegeben.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hinweis
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Wenn es sich um ein Traditional handelt oder du aus anderen Gründen ein manuelles Freitextfeld brauchst, kannst du einfach in die Anführungsschreiben, z.B.: <code>("nach dem italienischen Volkslied …" melody)</code>.</p>
 </div>
 </div>
 </section>
@@ -1067,6 +1077,19 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>Gebaut mit <a href="https://quarto.org">Quarto</a></p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
 
 
 
