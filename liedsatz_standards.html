@@ -293,6 +293,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#datei" id="toc-datei" class="nav-link active" data-scroll-target="#datei">Datei</a>
   <ul class="collapse">
   <li><a href="#benennung" id="toc-benennung" class="nav-link" data-scroll-target="#benennung">Benennung</a></li>
+  <li><a href="#sec-dateistruktur" id="toc-sec-dateistruktur" class="nav-link" data-scroll-target="#sec-dateistruktur">Struktur der Datei</a></li>
   </ul></li>
   <li><a href="#text" id="toc-text" class="nav-link" data-scroll-target="#text">Text</a>
   <ul class="collapse">
@@ -348,6 +349,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="benennung">Benennung</h2>
 <p>Die Dateinamen-Benennung folgt dem Prinzip: <code>lied_anfang_(lied_name)</code>. Bitte beachte unbedingt die Kleinschreibung!!!</p>
 <p>Ein Beispiel aus der Praxis: <code>hast_du_den_staubigen_(der_meilenorden)</code></p>
+</section>
+<section id="sec-dateistruktur" class="level2">
+<h2 class="anchored" data-anchor-id="sec-dateistruktur">Struktur der Datei</h2>
+<p>Damit es möglichst einfach ist, mit dem Liederpool zu arbeiten und damit alles auch funktioniert, gibt es ein paar Aspekte, die wichtig sind, wenn du ein Lied einbringst:</p>
+<ul>
+<li><p>Bitte rücke Code korrekt ein. Das erleichtert die Übersicht enorm. Du kannst dich an unserer Vorlagendatei im Liederpool orientieren oder Frescobaldi diesen Job für dich machen lassen. Dazu in die Einstellungen von Frescobaldi -&gt; Allgemeine Einstellungen -&gt; Im Kasten den Reiter Saving und den Haken bei „Format on save“ setzen.</p></li>
+<li><p>Bitte grundsätzlich keine Layout-Befehle in die Notenvariablen setzen. Das führt zu gewissen Unflexibilitäten, weil das Layout dann nicht überschrieben werden kann, ohne die Noten zu überschreiben. Damit wären die Vorteile des Liederpools dahin. Deswegen: Layout-Befehle wie <code>\voiceOne</code>, <code>\break</code> etc. <em>immer</em> in den <code>MUSIC</code>-Teil oder zumindest die <code>\melodyVoice</code>-Variable (wobei es natürlich Ausnahmen gibt).</p></li>
+<li><p>Wenn du Variablen im Header (z. B. <code>year_melody</code>) nicht füllen kannst, dann lösch sie nicht raus. Grundsätzlich haben wir den Anspruch, Metadaten wie diese füllen zu wollen und man hat das mehr im Kopf, wenn da noch etwas steht und denkt sich vielleicht, da recherchiere ich jetzt nochmal.</p></li>
+<li><p>Bitte benenne deine Variablen und Tags ähnlich wie die im Liederpool. Das hat den Vorteil, dass man sich nicht immer an neue Variablen gewöhnen muss und dadurch ggf. schneller die Struktur des Stückes checkt. Du kannst dich gern an der Vorlage und dem existierenden Material orientieren.</p></li>
+</ul>
 </section>
 </section>
 <section id="text" class="level1">

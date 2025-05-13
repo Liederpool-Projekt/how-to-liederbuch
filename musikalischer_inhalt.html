@@ -316,6 +316,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#balkensetzung" id="toc-balkensetzung" class="nav-link" data-scroll-target="#balkensetzung">Balkensetzung</a></li>
   <li><a href="#sec-textpausen" id="toc-sec-textpausen" class="nav-link" data-scroll-target="#sec-textpausen">Textpausen</a></li>
   <li><a href="#sec-einsaetze" id="toc-sec-einsaetze" class="nav-link" data-scroll-target="#sec-einsaetze">Kanon- und sonstige Einsätze</a></li>
+  <li><a href="#sec-coda" id="toc-sec-coda" class="nav-link" data-scroll-target="#sec-coda">Coda</a></li>
   <li><a href="#sec-melismata" id="toc-sec-melismata" class="nav-link" data-scroll-target="#sec-melismata">Melismata</a></li>
   </ul>
 </nav>
@@ -859,6 +860,17 @@ Wichtig
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\cue</span> 1 d<span class="dt">4</span> e<span class="dt">2</span> f<span class="dt">4</span> <span class="dv">|</span></span>
 <span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Die Standardeinstellung ist, dass die Einsätze mit römischen Zahlen und kursiv angegeben werden, also z.B. <em><code>I.</code></em> oder <em><code>I., II.</code></em>. Das kann über die Paper-Variable für ein einzelnes Lied oder auch das gesamte Liederbuch (dann am besten in den <code>custom-includes</code>) angepasst werden.</p>
+</section>
+<section id="sec-coda" class="level2">
+<h2 class="anchored" data-anchor-id="sec-coda">Coda</h2>
+<p>Codas können mit folgendem Befehl gesetzt werden: <code>\mark \markup { \coda }</code>. Der Befehl wird idealerweise in die <code>melodyVoice</code> direkt vor die <code>codaVoice</code> gesetzt. Beispiel:</p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>melodyVoice = <span class="fu">\relative c'</span> <span class="kw">{</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\global</span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\firstVoice</span></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\bar</span> "<span class="st">||"</span></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\mark</span> <span class="bn">\markup</span> <span class="kw">{</span> <span class="fu">\coda</span> <span class="kw">}</span> <span class="fu">\codaVoice</span></span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\bar</span> "<span class="st">|."</span></span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="sec-melismata" class="level2">
 <h2 class="anchored" data-anchor-id="sec-melismata">Melismata</h2>

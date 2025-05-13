@@ -311,6 +311,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#gepunktete-fülllinien" id="toc-gepunktete-fülllinien" class="nav-link" data-scroll-target="#gepunktete-fülllinien">Gepunktete Fülllinien</a></li>
   <li><a href="#sec-strophennummern-ueberschreiben" id="toc-sec-strophennummern-ueberschreiben" class="nav-link" data-scroll-target="#sec-strophennummern-ueberschreiben">Strophennummern überschreiben</a></li>
   <li><a href="#sec-strophen-ohne-akkorde" id="toc-sec-strophen-ohne-akkorde" class="nav-link" data-scroll-target="#sec-strophen-ohne-akkorde">Strophen ohne Akkorde</a></li>
+  <li><a href="#sec-line-indents" id="toc-sec-line-indents" class="nav-link" data-scroll-target="#sec-line-indents">Zeileneinzüge der Strophen anpassen</a></li>
+  <li><a href="#sec-verse-size" id="toc-sec-verse-size" class="nav-link" data-scroll-target="#sec-verse-size">Veränderung der Strophengröße</a></li>
   </ul></li>
   <li><a href="#layout-von-inline-scores" id="toc-layout-von-inline-scores" class="nav-link" data-scroll-target="#layout-von-inline-scores">Layout von Inline-Scores</a>
   <ul class="collapse">
@@ -583,6 +585,26 @@ Warnung
 <span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
 <span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
+<section id="sec-line-indents" class="level2">
+<h2 class="anchored" data-anchor-id="sec-line-indents">Zeileneinzüge der Strophen anpassen</h2>
+<p>Zeileneinzüge, also der Abstand einer einzelnen Strophenzeile zum linken Seitenrand, können ebenfalls angepasst werden. Dazu gibt es den Befehl <code>\override #'(line-indents . (0 5 10))</code>. Der Befehl definiert den linken Zeileneinzug für jede Zeile. Im Beispiel also die erste Zeile keinen Einzug, die zweite 5, die dritte 10 und alle folgenden 0.</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="kw">\override</span> #<span class="fl">'(line-indents . (</span><span class="dv">0</span><span class="fl"> </span><span class="dv">5</span><span class="fl"> </span><span class="dv">10</span><span class="fl">))</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">\chordlyrics</span> <span class="fu">\firstVerse</span> </span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="sec-verse-size" class="level2">
+<h2 class="anchored" data-anchor-id="sec-verse-size">Veränderung der Strophengröße</h2>
+<p>Wenn nur die Ausgabegröße der Strophen verringert werden soll, nicht aber der gesamte Satz (also Noten und Strophen), kann das wie folgt über die Anpassung der <code>size</code> geschehen:</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>verse-<span class="fu">layout</span> = \layout<span class="kw"> {</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\LAYOUT</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>  size = 15</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>TEXT = <span class="fu">\markuplist</span> <span class="kw">{</span></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">\override</span> #<span class="fl">`(verselayout . ,verse-layout)</span></span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\group</span>-verses <span class="kw">{</span></span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\chordlyrics</span> <span class="fu">\firstVerse</span></span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
 </section>
 <section id="layout-von-inline-scores" class="level1">
 <h1>Layout von Inline-Scores</h1>
@@ -590,16 +612,16 @@ Warnung
 <section id="abstand-der-notenzeilen" class="level2">
 <h2 class="anchored" data-anchor-id="abstand-der-notenzeilen">Abstand der Notenzeilen</h2>
 <p>Der Abstand der Notenzeilen von Inline-Scores kann angepasst werden mit dem Befehl <code>\override #'(baseline-skip . 1)</code>.</p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>TEXT = <span class="fu">\markuplist</span> <span class="kw">{</span></span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\group</span>-verses <span class="kw">{</span></span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">\override</span> #<span class="fl">'(baseline-skip . </span><span class="dv">1</span><span class="fl">)</span></span>
-<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">\score</span> <span class="kw">{</span></span>
-<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>      <span class="fu">\inline</span>-score</span>
-<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>      <span class="fu">\BRIDGE</span></span>
-<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>      \layout<span class="kw"> {</span> <span class="fu">\generalLayout</span><span class="kw">}</span></span>
-<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>    <span class="kw">}</span></span>
-<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
-<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>TEXT = <span class="fu">\markuplist</span> <span class="kw">{</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\group</span>-verses <span class="kw">{</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">\override</span> #<span class="fl">'(baseline-skip . </span><span class="dv">1</span><span class="fl">)</span></span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">\score</span> <span class="kw">{</span></span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>      <span class="fu">\inline</span>-score</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>      <span class="fu">\BRIDGE</span></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>      \layout<span class="kw"> {</span> <span class="fu">\generalLayout</span><span class="kw">}</span></span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>    <span class="kw">}</span></span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 </section>
 <section id="seitenlayout" class="level1">
@@ -607,25 +629,25 @@ Warnung
 <section id="sec-size" class="level2">
 <h2 class="anchored" data-anchor-id="sec-size">Ausgabe-Größe</h2>
 <p>Um Platz zu sparen, kann es hilfreich sein, die Größe des Staffs (wozu effektiv fast alle Ausgabe-Elemente gehören: Noten, Lyrics, Akkorde und somit auch die Strophen) abweichend von den globalen Liederbucheinstellungen anzupassen. Das erfolgt mit der Ergänzung des <code>LAYOUT</code>-Blocks:</p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>LAYOUT = \layout<span class="kw"> {</span></span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\LAYOUT</span></span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>  size = 15 %<span class="co">hier die gewünschte Größe anpassen</span></span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb19"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>LAYOUT = \layout<span class="kw"> {</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\LAYOUT</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>  size = 15 %<span class="co">hier die gewünschte Größe anpassen</span></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Das ergänzt den in den Skripten bereits existierenden <code>LAYOUT</code>-Block um die Staff-Size, die effektiv mit dem Scheme-Befehl <code>#(layout-set-staff-size 13.8)</code> überschrieben wird. Aus technischen Gründen funktioniert der nicht immer zuverlässig, weshalb es den oben genannten Befehl für diesen Zweck gibt.</p>
 </section>
 <section id="der-paper-block" class="level2">
 <h2 class="anchored" data-anchor-id="der-paper-block">Der <code>\paper</code>-Block</h2>
 <p>Im <code>\paper</code>-Block können etliche Schrauben am Layout gedreht werden. Dabei nutzen wir ausschließlich schon vorhandene LilyPond-Funktionen und verweisen an dieser Stelle jeweils auf die offizielle LilyPond-Doku.</p>
 <p>Der <code>\paper</code>-Block ist Teil des <code>HEADER</code>’s und wird an die folgende Stelle in der Layout-Datei eingefügt:</p>
-<div class="sourceCode" id="cb18"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>HEADER = <span class="kw">\bookpart</span> <span class="kw">{</span></span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  \paper<span class="kw"> {</span></span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>    %<span class="co">hier kommt alles rein, was in den Paper-Block gehört</span></span>
-<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
-<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>  \header<span class="kw"> {</span></span>
-<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\basicSongInfo</span></span>
-<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>    %<span class="co">infotext = ""</span></span>
-<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
-<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>HEADER = <span class="kw">\bookpart</span> <span class="kw">{</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>  \paper<span class="kw"> {</span></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>    %<span class="co">hier kommt alles rein, was in den Paper-Block gehört</span></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>  \header<span class="kw"> {</span></span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\basicSongInfo</span></span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>    %<span class="co">infotext = ""</span></span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <section id="seitenanzahl-eines-liedes-bestimmen" class="level3">
 <h3 class="anchored" data-anchor-id="seitenanzahl-eines-liedes-bestimmen">Seitenanzahl eines Liedes bestimmen</h3>
 <p>Wenn ein Lied auf eine Seite gequetscht werden soll, geht das mit dem Befehl <code>page-count = #1</code>, wobei die Nummer hinter dem <code>#</code>-Zeichen jeweils für die Anzahl der Seiten steht. Mehr dazu in der <a href="https://lilypond.org/doc/v2.24/Documentation/notation/other-paper-variables#paper-variables-for-page-breaking">LilyPond-Doku</a>.</p>
@@ -650,43 +672,43 @@ Warnung
 <section id="größe-des-bildtitels" class="level2">
 <h2 class="anchored" data-anchor-id="größe-des-bildtitels">Größe des Bildtitels</h2>
 <p>Wenn ein Lied anstatt eines Schrifttitels ein Bildtitel hat (also eine eps-Datei, die im Layout-Ordner liegt), dann kann die Größe dieser eps-Datei mittels der Variable <code>titlesize = 11</code> angepasst werden, die in den Header eingefügt werden muss, also:</p>
-<div class="sourceCode" id="cb19"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>HEADER = <span class="kw">\bookpart</span> <span class="kw">{</span></span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>  \header<span class="kw"> {</span></span>
-<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\basicSongInfo</span></span>
-<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>    titlesize = 11 %<span class="co">hier die Zahl anpassen</span></span>
-<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
-<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>HEADER = <span class="kw">\bookpart</span> <span class="kw">{</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>  \header<span class="kw"> {</span></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\basicSongInfo</span></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>    titlesize = 11 %<span class="co">hier die Zahl anpassen</span></span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="abstand-des-titels-zum-oberen-seitenrand" class="level2">
 <h2 class="anchored" data-anchor-id="abstand-des-titels-zum-oberen-seitenrand">Abstand des Titels zum oberen Seitenrand</h2>
 <p>Der Abstand des Titels (egal ob Bild oder Schrift) zum oberen Seitenrand kann mittels der Variable <code>titletopspace = 2</code> eingestellt werden, die ebenfalls in den Header muss:</p>
-<div class="sourceCode" id="cb20"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>HEADER = <span class="kw">\bookpart</span> <span class="kw">{</span></span>
-<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>  \header<span class="kw"> {</span></span>
-<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\basicSongInfo</span></span>
-<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>    titletopspace = 2 %<span class="co">hier die Zahl anpassen</span></span>
-<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
-<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>HEADER = <span class="kw">\bookpart</span> <span class="kw">{</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>  \header<span class="kw"> {</span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\basicSongInfo</span></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>    titletopspace = 2 %<span class="co">hier die Zahl anpassen</span></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="sec-breaks" class="level2">
 <h2 class="anchored" data-anchor-id="sec-breaks">Zeilenumbrüche</h2>
 <p>Zeilenumbrüche können anhand einer Silentvoice hinzugefügt werden. Das geht, in dem eine neue Stimme in der Layout-Datei angelegt wird, in der die Umbrüche integriert werden (<code>\break</code>). Die Stimme muss dann im <code>MUSIC</code>-Part eingebunden werden. Beispiel:</p>
-<div class="sourceCode" id="cb21"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>breakVoice = <span class="kw">{</span></span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>  s<span class="dt">1*5</span> <span class="fu">\break</span></span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>  s<span class="dt">1*5</span> <span class="fu">\break</span></span>
-<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>  s<span class="dt">1*5</span> <span class="fu">\break</span></span>
-<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span>
-<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>MUSIC = <span class="kw">{</span></span>
-<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;&lt;</span></span>
-<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\songChords</span></span>
-<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">\new</span> <span class="dt">ChoirStaff</span> = "<span class="st">firstStaff"</span></span>
-<span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;&lt;</span></span>
-<span id="cb21-12"><a href="#cb21-12" aria-hidden="true" tabindex="-1"></a>      <span class="kw">\new</span> <span class="dt">Voice</span> = "<span class="st">firstVoice"</span> <span class="kw">{</span> <span class="fu">\melodyVoice</span> <span class="kw">}</span></span>
-<span id="cb21-13"><a href="#cb21-13" aria-hidden="true" tabindex="-1"></a>      \addlyrics<span class="kw"> </span><span class="fu">\firstVerse</span></span>
-<span id="cb21-14"><a href="#cb21-14" aria-hidden="true" tabindex="-1"></a>      <span class="kw">\new</span> <span class="dt">Voice</span> <span class="kw">{</span> <span class="fu">\breakVoice</span> <span class="kw">}</span></span>
-<span id="cb21-15"><a href="#cb21-15" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&gt;&gt;</span></span>
-<span id="cb21-16"><a href="#cb21-16" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&gt;&gt;</span></span>
-<span id="cb21-17"><a href="#cb21-17" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb23"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>breakVoice = <span class="kw">{</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>  s<span class="dt">1*5</span> <span class="fu">\break</span></span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>  s<span class="dt">1*5</span> <span class="fu">\break</span></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>  s<span class="dt">1*5</span> <span class="fu">\break</span></span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>MUSIC = <span class="kw">{</span></span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;&lt;</span></span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">\songChords</span></span>
+<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">\new</span> <span class="dt">ChoirStaff</span> = "<span class="st">firstStaff"</span></span>
+<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;&lt;</span></span>
+<span id="cb23-12"><a href="#cb23-12" aria-hidden="true" tabindex="-1"></a>      <span class="kw">\new</span> <span class="dt">Voice</span> = "<span class="st">firstVoice"</span> <span class="kw">{</span> <span class="fu">\melodyVoice</span> <span class="kw">}</span></span>
+<span id="cb23-13"><a href="#cb23-13" aria-hidden="true" tabindex="-1"></a>      \addlyrics<span class="kw"> </span><span class="fu">\firstVerse</span></span>
+<span id="cb23-14"><a href="#cb23-14" aria-hidden="true" tabindex="-1"></a>      <span class="kw">\new</span> <span class="dt">Voice</span> <span class="kw">{</span> <span class="fu">\breakVoice</span> <span class="kw">}</span></span>
+<span id="cb23-15"><a href="#cb23-15" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&gt;&gt;</span></span>
+<span id="cb23-16"><a href="#cb23-16" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&gt;&gt;</span></span>
+<span id="cb23-17"><a href="#cb23-17" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Im Beispiel wird also der Staff alle fünf Takte insgesamt dreimal umgebrochen.</p>
 </section>
 <section id="sec-indents" class="level2">

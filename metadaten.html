@@ -291,6 +291,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#titel" id="toc-titel" class="nav-link active" data-scroll-target="#titel">Titel</a></li>
+  <li><a href="#sec-subtitle" id="toc-sec-subtitle" class="nav-link" data-scroll-target="#sec-subtitle">Untertitel</a></li>
   <li><a href="#liedanfang" id="toc-liedanfang" class="nav-link" data-scroll-target="#liedanfang">Liedanfang</a></li>
   <li><a href="#alternative-titel" id="toc-alternative-titel" class="nav-link" data-scroll-target="#alternative-titel">Alternative Titel</a></li>
   <li><a href="#sec-autoren" id="toc-sec-autoren" class="nav-link" data-scroll-target="#sec-autoren">Autor*innenangaben</a>
@@ -309,7 +310,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </ul></li>
   <li><a href="#übersetzung" id="toc-übersetzung" class="nav-link" data-scroll-target="#übersetzung">Übersetzung</a></li>
   <li><a href="#aussprache" id="toc-aussprache" class="nav-link" data-scroll-target="#aussprache">Aussprache</a></li>
-  <li><a href="#quellen" id="toc-quellen" class="nav-link" data-scroll-target="#quellen">Quellen</a></li>
+  <li><a href="#quellen" id="toc-quellen" class="nav-link" data-scroll-target="#quellen">Quellen</a>
+  <ul class="collapse">
+  <li><a href="#sec-quellenverweise" id="toc-sec-quellenverweise" class="nav-link" data-scroll-target="#sec-quellenverweise">Verweise auf Liederbücher</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -339,6 +343,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="titel" class="level2">
 <h2 class="anchored" data-anchor-id="titel">Titel</h2>
 <p>Der Titel wird in der Liederpool-Datei mit der Variable <code>title = ""</code>&nbsp;angegeben, wobei innerhalb der Anführungszeichen der Titel steht. Als Titel sollte immer der „Originaltitel“ genutzt werden. Dieser kann in der Layout-Datei, sofern gewünscht, einfach überschrieben werden.</p>
+</section>
+<section id="sec-subtitle" class="level2">
+<h2 class="anchored" data-anchor-id="sec-subtitle">Untertitel</h2>
+<p>Untertitel können mit der Variable <code>subtitle = ""</code> gesetzt werden. Sie werden nicht im Inhaltsverzeichnis ausgegeben. Wenn es sich um einen Alternativtitel handelt, der auch im Inhaltsverzeichnis angegeben werden soll, so muss der Titel nochmal als <code>alttitle</code> (siehe unten) gesetzt sein.</p>
 </section>
 <section id="liedanfang" class="level2">
 <h2 class="anchored" data-anchor-id="liedanfang">Liedanfang</h2>
@@ -498,11 +506,49 @@ Hinweis
 <section id="quellen" class="level2">
 <h2 class="anchored" data-anchor-id="quellen">Quellen</h2>
 <p>Für uns ist es sehr wichtig zu wissen, wo unsere Notationen herkommen und auf welche Quellen wir uns stützen. Deswegen ist es obligatorisch, diese beim Setzen eines Liedes immer anzugeben. Beim Verweis auf Internetlinks, sollte die Seite in der Regel über das Internet Archive archiviert werden. Wie das geht, steht <a href="./quellenlinks.html">hier</a>. Beim Verweis auf Liederbücher sollte die YAML-Datei <code>sources.yml</code> im <code>data</code>-Ordner des Liederpool-Repos genutzt werden, um auf die jeweilige ID zu verweisen. Damit sollen Liederbücher gut identifizierbar sein. Seitenangaben sind auch gerne gesehen. Wenn du selbst den Satz notiert hast, schreib deinen Namen dazu, zum Beispiel: „Satz von žuk“. Auch die Information, ob der Satz mit den Autor*innen abgestimmt wurde, ist relevant und somit anzugeben.</p>
+<section id="sec-quellenverweise" class="level3">
+<h3 class="anchored" data-anchor-id="sec-quellenverweise">Verweise auf Liederbücher</h3>
+<p>In der Datei <code>sources.yml</code> werden Metadaten zu Liederbüchern gesammelt. Dabei funktioniert der Verweis wie auch beim Autor*innensystem über IDs (für die Literaturgeeks: Siglen), die folgender Benennungsstruktur folgen sollten:</p>
+<ul>
+<li><p>Grundsätzlich folgt die Benennung dem Titel des Liederbuchs.</p></li>
+<li><p>Der Titel wird entweder abgekürzt oder verschlagwortet.</p>
+<ul>
+<li><p>Beispiel für Abkürzung: „Liederblätter deutscher Jugend 54“ wird zu <code>ldj54</code>.</p></li>
+<li><p>Beispiel für Verschlagwortung: „Lieder der Rotte Brabant“ wird zu <code>rotte-brabant</code>. Oder: „Liederblätter deutscher Jugend – Die Fahrt“ wird zu <code>ldj-fahrt</code>. „Die 100 schönsten Lieder von Fredrik Vahle“ wird zu <code>vahle-100</code>.</p></li>
+</ul></li>
+<li><p>Gehören Liederbücher zu einer Reihe, sollte die Reihe in der ID zu Beginn genannt werden.</p>
+<ul>
+<li><p>Beispiel: „Liederblätter deutscher Jugend“-Reihe wird zu <code>ldj-…</code>.</p></li>
+<li><p>Beispiel: „Kunterbund“-Reihe wird zu <code>kb-…</code></p></li>
+</ul></li>
+</ul>
+<p>Die einzelnen Variablen, also Eigenschaften der Liederbücher folgen den <a href="https://de.wikipedia.org/wiki/BibTeX">BibTeX-Konventionen</a>, das ist praktisch, da die yml dann einfach in BibTeX konvertierbar ist, was ein etabliertes und standardisiertes Format darstellt. Für uns sind vor allem folgende Eigenschaften wichtig:</p>
+<ul>
+<li><p><code>title</code>: Titel</p></li>
+<li><p><code>subtitle</code>: Untertitel</p></li>
+<li><p><code>author</code>: Autor*innen werden nur genannt, wenn ausschließlich ihre eigenen Lieder im Liederbuch veröffentlicht wurden.</p></li>
+<li><p><code>author-id</code>: Autor*innen-IDs von unserer <code>authors.yml</code>.</p></li>
+<li><p><code>editor</code>: Herausgeber*innen.</p></li>
+<li><p><code>location</code>: Ort der Publikation (orientiert sich am Verlag).</p></li>
+<li><p><code>publisher</code>: Der veröffentlichende Verlag. Teilweise gibt es Überschneidungen mit <code>editor</code>, wenn z.B. der VCP ein Liederbuch herausgegeben und veröffentlicht hat. Der Begriff „Verlag“ kann gerne weggelassen werden.</p></li>
+<li><p><code>date</code>: Veröffentlichungsjahr.</p></li>
+<li><p><code>edition</code>: Auflagennummer (nur wenn nicht die erste Auflage).<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p></li>
+<li><p><code>comment</code>: Kommentar – was noch gut zu wissen wäre.</p></li>
+<li><p><code>lang</code>: Die Sprache des Werkes. Muss nur angegeben werden, wenn es sich nicht um ein deutsches Werk handelt. Dafür bitte die <a href="https://de.wikipedia.org/wiki/Liste_der_ISO-639-Sprachcodes">ISO-Sprachcodes</a> verwenden.</p></li>
+<li><p><code>isbn</code>: Die ISBN sollte ebenfalls angegeben werden, wenn vorhanden.</p></li>
+</ul>
 
 
 </section>
+</section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Fußnoten</h2>
+
+<ol>
+<li id="fn1"><p>Alternativ kann auch eine „Lizenzausgabe für …“ als Eintrag genutzt werden, falls dieser Fall gegeben ist.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
