@@ -337,8 +337,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         </a>
     </div>
   </nav>
-  <div id="quarto-announcement" data-announcement-id="032cf861e779f5be97fcf25b574caa59" class="alert alert-info hidden"><i class="bi bi-info-circle-fill quarto-announcement-icon"></i><div class="quarto-announcement-content">
-<p>Wir haben die Dokumentation am 12.08.2025 aktualisiert. Alles neue erfährst du im <a href="./changelog/2025-06-05_changelog.html">Changelog</a>.</p>
+  <div id="quarto-announcement" data-announcement-id="92fae8554a3911e42df03997f5a633be" class="alert alert-info hidden"><i class="bi bi-info-circle-fill quarto-announcement-icon"></i><div class="quarto-announcement-content">
+<p>Wir haben die Dokumentation am 12.08.2025 aktualisiert. Alles neue erfährst du im <a href="./changelog/2025-08-12_changelog.html">Changelog</a>.</p>
 </div></div>
 </header>
 <!-- content -->
@@ -731,12 +731,12 @@ Hinweis
 <section id="sec-verse-chord" class="level2">
 <h2 class="anchored" data-anchor-id="sec-verse-chord">Abstand der Strophen zu den (darüberstehenden) Akkorden</h2>
 <p>Der Abstand zwischen einer Strophe und dem dazugehörigen, darüberstehenden Akkord kann mit dem Befehl <code>\override #'(verse-text-chord-distance . 0.3)</code> beeinflusst werden.</p>
-<pre class="lilyond"><code>TEXT = \markuplist {
-  \override #'(verse-text-chord-distance . 0.3)
-  \group-verses {
-    %…
-  }
-}</code></pre>
+<div class="sourceCode" id="cb12"><pre class="sourceCode lilypond code-with-copy"><code class="sourceCode lilypond"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>TEXT = <span class="fu">\markuplist</span> <span class="kw">{</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">\override</span> #<span class="fl">'(verse-text-chord-distance . </span><span class="dv">0.3</span><span class="fl">)</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">\group</span>-verses <span class="kw">{</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>    %<span class="co">…</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">}</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="kw">}</span></span></code><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
