@@ -1,0 +1,2151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.2"
+   width="135mm"
+   height="50mm"
+   viewBox="0 0 102.42988 37.937"
+   id="svg858"
+   sodipodi:docname="generalbass.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs862" />
+  <sodipodi:namedview
+     id="namedview860"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.85800595"
+     inkscape:cx="279.71834"
+     inkscape:cy="396.26765"
+     inkscape:window-width="1920"
+     inkscape:window-height="996"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg858" />
+  <style
+     type="text/css"
+     id="style2"><![CDATA[
+tspan { white-space: pre; }
+]]></style>
+  <g
+     transform="translate(3.7937,3.7937)"
+     id="g4" />
+  <g
+     transform="translate(38.741245,4.6646527)"
+     id="g10">
+    <text
+       font-family="'Liberation Sans'"
+       font-size="4.3999px"
+       text-anchor="start"
+       fill="currentColor"
+       id="text8"><tspan
+         id="tspan6">Generalbass</tspan></text>
+  </g>
+  <g
+     transform="translate(2.6555454,13.932253)"
+     id="g14">
+    <rect
+       x="71.672302"
+       y="-0.111"
+       width="2.8900001"
+       height="0.2219"
+       ry="0.111"
+       fill="currentColor"
+       id="rect12" />
+  </g>
+  <g
+     transform="translate(2.6555454,13.932253)"
+     id="g18">
+    <rect
+       x="8.0864"
+       y="-0.111"
+       width="2.8900001"
+       height="0.2219"
+       ry="0.111"
+       fill="currentColor"
+       id="rect16" />
+  </g>
+  <g
+     transform="translate(28.451845,10.932253)"
+     id="g22">
+    <rect
+       x="0"
+       y="-2"
+       width="0.2316"
+       height="4"
+       ry="0.0000"
+       fill="currentColor"
+       id="rect20" />
+  </g>
+  <g
+     transform="translate(99.542645,10.932253)"
+     id="g26">
+    <rect
+       x="0"
+       y="-2"
+       width="0.2316"
+       height="4"
+       ry="0.0000"
+       fill="currentColor"
+       id="rect24" />
+  </g>
+  <g
+     transform="translate(71.702645,10.932253)"
+     id="g30">
+    <rect
+       x="0"
+       y="-2"
+       width="0.2316"
+       height="4"
+       ry="0.0000"
+       fill="currentColor"
+       id="rect28" />
+  </g>
+  <g
+     transform="translate(51.358145,10.932253)"
+     id="g34">
+    <rect
+       x="0"
+       y="-2"
+       width="0.2316"
+       height="4"
+       ry="0.0000"
+       fill="currentColor"
+       id="rect32" />
+  </g>
+  <g
+     transform="translate(2.6555454,12.932253)"
+     id="g38">
+    <line
+       stroke-linejoin="round"
+       stroke-linecap="round"
+       stroke-width="0.1219"
+       stroke="currentColor"
+       x1="0.061000001"
+       y1="0"
+       x2="97.0578"
+       y2="0"
+       id="line36" />
+  </g>
+  <g
+     transform="translate(2.6555454,11.932253)"
+     id="g42">
+    <line
+       stroke-linejoin="round"
+       stroke-linecap="round"
+       stroke-width="0.1219"
+       stroke="currentColor"
+       x1="0.061000001"
+       y1="0"
+       x2="97.0578"
+       y2="0"
+       id="line40" />
+  </g>
+  <g
+     transform="translate(2.6555454,10.932253)"
+     id="g46">
+    <line
+       stroke-linejoin="round"
+       stroke-linecap="round"
+       stroke-width="0.1219"
+       stroke="currentColor"
+       x1="0.061000001"
+       y1="0"
+       x2="97.0578"
+       y2="0"
+       id="line44" />
+  </g>
+  <g
+     transform="translate(2.6555454,9.9322527)"
+     id="g50">
+    <line
+       stroke-linejoin="round"
+       stroke-linecap="round"
+       stroke-width="0.1219"
+       stroke="currentColor"
+       x1="0.061000001"
+       y1="0"
+       x2="97.0578"
+       y2="0"
+       id="line48" />
+  </g>
+  <g
+     transform="translate(2.6555454,8.9322527)"
+     id="g54">
+    <line
+       stroke-linejoin="round"
+       stroke-linecap="round"
+       stroke-width="0.1219"
+       stroke="currentColor"
+       x1="0.061000001"
+       y1="0"
+       x2="97.0578"
+       y2="0"
+       id="line52" />
+  </g>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:29:14:15"
+     id="a60"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(80.973,19.9247)"
+       id="g58">
+      <path
+         transform="scale(0.0022,-0.0022)"
+         d="m 87,500 c 42,-7 84,-14 127,-14 43,0 85,7 127,14 2,0 5,1 7,1 17,0 27,-12 27,-22 0,-4 -1,-6 -4,-9 -61,-61 -144,-91 -230,-91 -17,0 -31,-14 -31,-31 v -41 c 25,25 63,25 98,25 h 4 C 327,332 394,277 394,166 394,67 298,0 192,0 104,0 23,52 23,133 c 0,32 26,58 58,58 32,0 58,-26 58,-58 0,-22 -36,-26 -36,-48 0,-36 47,-42 89,-42 52,0 73,63 73,123 0,53 -7,112 -53,112 -41,0 -83,-1 -106,-33 -6,-8 -14,-11 -22,-11 -14,0 -28,10 -28,27 v 209 c 0,17 12,30 27,30 z"
+         fill="currentColor"
+         id="path56" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:29:12:13"
+     id="a66"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(80.973,18.4247)"
+       id="g64">
+      <path
+         transform="scale(0.0022,-0.0022)"
+         d="M 422,458 C 347,351 283,230 283,104 c 0,-24 2,-49 7,-74 0,-2 1,-3 1,-5 0,-14 -12,-26 -25,-26 -2,0 -4,0 -6,1 -22,6 -44,14 -67,14 -23,0 -44,-8 -66,-14 -3,-1 -6,-1 -8,-1 -14,0 -25,11 -25,23 0,3 1,5 2,8 48,112 113,216 182,316 -9,-2 -19,-3 -28,-3 -25,0 -48,8 -68,29 -11,12 -21,17 -31,17 -32,0 -55,-51 -55,-78 0,-18 -14,-27 -27,-27 -13,0 -27,9 -27,27 v 162 c 0,18 14,27 27,27 13,0 27,-9 27,-27 v -16 c 0,-10 14,-19 22,-19 2,0 4,1 5,3 26,37 55,56 84,56 23,0 46,-12 69,-36 9,-10 22,-14 34,-14 24,0 50,17 68,42 6,8 13,11 21,11 14,0 28,-12 28,-27 0,-5 -1,-10 -5,-15 z"
+         fill="currentColor"
+         id="path62" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:29:7:8"
+     id="a72"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(75.9476,18.4247)"
+       id="g70">
+      <path
+         transform="scale(0.0022,-0.0022)"
+         d="M 422,458 C 347,351 283,230 283,104 c 0,-24 2,-49 7,-74 0,-2 1,-3 1,-5 0,-14 -12,-26 -25,-26 -2,0 -4,0 -6,1 -22,6 -44,14 -67,14 -23,0 -44,-8 -66,-14 -3,-1 -6,-1 -8,-1 -14,0 -25,11 -25,23 0,3 1,5 2,8 48,112 113,216 182,316 -9,-2 -19,-3 -28,-3 -25,0 -48,8 -68,29 -11,12 -21,17 -31,17 -32,0 -55,-51 -55,-78 0,-18 -14,-27 -27,-27 -13,0 -27,9 -27,27 v 162 c 0,18 14,27 27,27 13,0 27,-9 27,-27 v -16 c 0,-10 14,-19 22,-19 2,0 4,1 5,3 26,37 55,56 84,56 23,0 46,-12 69,-36 9,-10 22,-14 34,-14 24,0 50,17 68,42 6,8 13,11 21,11 14,0 28,-12 28,-27 0,-5 -1,-10 -5,-15 z"
+         fill="currentColor"
+         id="path68" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:13:2:3"
+     id="a86"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(75.9476,10.633)"
+       id="g78">
+      <text
+         font-family="'Liberation Sans'"
+         font-weight="bold"
+         font-size="2.7717px"
+         text-anchor="start"
+         fill="currentColor"
+         id="text76"><tspan
+           id="tspan74">C</tspan></text>
+    </g>
+    <g
+       transform="translate(77.9507,9.3731)"
+       id="g84">
+      <text
+         font-family="'Liberation Sans'"
+         font-weight="bold"
+         font-size="1.9598px"
+         text-anchor="start"
+         fill="currentColor"
+         id="text82"><tspan
+           id="tspan80">7</tspan></text>
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:29:18:19"
+     id="a92"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(85.9985,18.4247)"
+       id="g90">
+      <path
+         transform="scale(0.0022,-0.0022)"
+         d="M 422,458 C 347,351 283,230 283,104 c 0,-24 2,-49 7,-74 0,-2 1,-3 1,-5 0,-14 -12,-26 -25,-26 -2,0 -4,0 -6,1 -22,6 -44,14 -67,14 -23,0 -44,-8 -66,-14 -3,-1 -6,-1 -8,-1 -14,0 -25,11 -25,23 0,3 1,5 2,8 48,112 113,216 182,316 -9,-2 -19,-3 -28,-3 -25,0 -48,8 -68,29 -11,12 -21,17 -31,17 -32,0 -55,-51 -55,-78 0,-18 -14,-27 -27,-27 -13,0 -27,9 -27,27 v 162 c 0,18 14,27 27,27 13,0 27,-9 27,-27 v -16 c 0,-10 14,-19 22,-19 2,0 4,1 5,3 26,37 55,56 84,56 23,0 46,-12 69,-36 9,-10 22,-14 34,-14 24,0 50,17 68,42 6,8 13,11 21,11 14,0 28,-12 28,-27 0,-5 -1,-10 -5,-15 z"
+         fill="currentColor"
+         id="path88" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:29:22:23"
+     id="a98"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(85.9985,21.4247)"
+       id="g96">
+      <path
+         transform="scale(0.0022,-0.0022)"
+         d="m 190,457 c -33,0 -68,-9 -68,-38 0,-19 31,-23 31,-42 0,-28 -22,-51 -50,-51 -28,0 -51,23 -51,51 0,71 64,123 138,123 93,0 174,-31 174,-113 0,-36 -11,-65 -43,-80 -17,-8 -25,-25 -25,-41 0,-16 8,-32 25,-40 37,-17 59,-45 59,-85 C 380,47 297,0 194,0 110,0 35,54 35,133 c 0,32 26,58 58,58 32,0 58,-26 58,-58 0,-22 -36,-26 -36,-48 0,-33 41,-42 79,-42 41,0 57,50 57,98 v 21 c 0,44 -3,77 -44,77 h -65 c -18,0 -27,14 -27,27 0,13 9,27 27,27 h 65 c 42,0 44,36 44,83 v 11 c 0,43 -20,70 -61,70 z"
+         fill="currentColor"
+         id="path94" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:29:20:21"
+     id="a104"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(85.9985,19.9247)"
+       id="g102">
+      <path
+         transform="scale(0.0022,-0.0022)"
+         d="m 87,500 c 42,-7 84,-14 127,-14 43,0 85,7 127,14 2,0 5,1 7,1 17,0 27,-12 27,-22 0,-4 -1,-6 -4,-9 -61,-61 -144,-91 -230,-91 -17,0 -31,-14 -31,-31 v -41 c 25,25 63,25 98,25 h 4 C 327,332 394,277 394,166 394,67 298,0 192,0 104,0 23,52 23,133 c 0,32 26,58 58,58 32,0 58,-26 58,-58 0,-22 -36,-26 -36,-48 0,-36 47,-42 89,-42 52,0 73,63 73,123 0,53 -7,112 -53,112 -41,0 -83,-1 -106,-33 -6,-8 -14,-11 -22,-11 -14,0 -28,10 -28,27 v 209 c 0,17 12,30 27,30 z"
+         fill="currentColor"
+         id="path100" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:27:7:8"
+     id="a110"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(31.7062,18.4247)"
+       id="g108">
+      <path
+         transform="scale(0.0022,-0.0022)"
+         d="m 207,226 c -44,0 -46,-40 -46,-92 0,-52 2,-91 46,-91 46,0 55,38 55,91 0,53 -9,92 -55,92 z m -46,31 c 14,8 29,12 46,12 103,0 177,-41 177,-135 C 384,40 310,0 207,0 93,0 31,124 31,250 c 0,129 77,250 197,250 75,0 141,-52 141,-123 0,-32 -26,-58 -58,-58 -32,0 -58,26 -58,58 0,21 35,23 35,44 0,26 -31,36 -60,36 -61,0 -69,-60 -69,-129 0,-23 2,-48 2,-71 z"
+         fill="currentColor"
+         id="path106" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:11:2:3"
+     id="a130"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(31.7062,10.633)"
+       id="g116">
+      <text
+         font-family="'Liberation Sans'"
+         font-weight="bold"
+         font-size="2.7717px"
+         text-anchor="start"
+         fill="currentColor"
+         id="text114"><tspan
+           id="tspan112">C</tspan></text>
+    </g>
+    <g
+       transform="translate(33.7093,10.633)"
+       id="g122">
+      <text
+         font-family="'Liberation Sans'"
+         font-weight="bold"
+         font-size="2.7717px"
+         text-anchor="start"
+         fill="currentColor"
+         id="text120"><tspan
+           id="tspan118">/</tspan></text>
+    </g>
+    <g
+       transform="translate(34.4832,10.633)"
+       id="g128">
+      <text
+         font-family="'Liberation Sans'"
+         font-weight="bold"
+         font-size="2.7717px"
+         text-anchor="start"
+         fill="currentColor"
+         id="text126"><tspan
+           id="tspan124">E</tspan></text>
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:28:9:10"
+     id="a136"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(55.6125,19.9247)"
+       id="g134">
+      <path
+         transform="scale(0.0022,-0.0022)"
+         d="m 204,223 c 21,13 46,23 59,45 8,14 10,46 31,46 11,0 24,-8 24,-25 V 179 h 70 c 18,0 27,-14 27,-27 0,-13 -9,-27 -27,-27 h -70 c 2,-45 58,-60 80,-82 14,0 22,-10 22,-21 C 420,11 412,0 398,0 349,0 302,14 253,14 204,14 156,0 107,0 93,0 86,11 86,22 c 0,11 7,21 21,21 44,0 79,37 81,82 H 54 c -43,0 -57,25 -57,42 0,5 1,10 3,12 73,81 123,182 123,291 0,23 12,29 27,29 21,0 50,-13 70,-13 23,0 45,8 67,14 3,1 6,1 9,1 15,0 26,-11 26,-21 0,-4 -1,-7 -4,-10 L 54,179 h 134 v 4 c 0,16 3,32 16,40 z"
+         fill="currentColor"
+         id="path132" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:28:7:8"
+     id="a142"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(55.6125,18.4247)"
+       id="g140">
+      <path
+         transform="scale(0.0022,-0.0022)"
+         d="m 207,226 c -44,0 -46,-40 -46,-92 0,-52 2,-91 46,-91 46,0 55,38 55,91 0,53 -9,92 -55,92 z m -46,31 c 14,8 29,12 46,12 103,0 177,-41 177,-135 C 384,40 310,0 207,0 93,0 31,124 31,250 c 0,129 77,250 197,250 75,0 141,-52 141,-123 0,-32 -26,-58 -58,-58 -32,0 -58,26 -58,58 0,21 35,23 35,44 0,26 -31,36 -60,36 -61,0 -69,-60 -69,-129 0,-23 2,-48 2,-71 z"
+         fill="currentColor"
+         id="path138" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:12:2:3"
+     id="a162"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(55.6125,10.633)"
+       id="g148">
+      <text
+         font-family="'Liberation Sans'"
+         font-weight="bold"
+         font-size="2.7717px"
+         text-anchor="start"
+         fill="currentColor"
+         id="text146"><tspan
+           id="tspan144">C</tspan></text>
+    </g>
+    <g
+       transform="translate(57.6156,10.633)"
+       id="g154">
+      <text
+         font-family="'Liberation Sans'"
+         font-weight="bold"
+         font-size="2.7717px"
+         text-anchor="start"
+         fill="currentColor"
+         id="text152"><tspan
+           id="tspan150">/</tspan></text>
+    </g>
+    <g
+       transform="translate(58.3895,10.633)"
+       id="g160">
+      <text
+         font-family="'Liberation Sans'"
+         font-weight="bold"
+         font-size="2.7717px"
+         text-anchor="start"
+         fill="currentColor"
+         id="text158"><tspan
+           id="tspan156">G</tspan></text>
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:10:2:3"
+     id="a170"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(12.3617,10.633)"
+       id="g168">
+      <text
+         font-family="'Liberation Sans'"
+         font-weight="bold"
+         font-size="2.7717px"
+         text-anchor="start"
+         fill="currentColor"
+         id="text166"><tspan
+           id="tspan164">C</tspan></text>
+    </g>
+  </a>
+  <g
+     transform="translate(3.4555454,11.932253)"
+     id="g174">
+    <path
+       transform="scale(0.004,-0.004)"
+       d="m 246,555 c -31,95 -56,192 -56,311 0,140 41,246 148,324 4,3 8,4 12,4 5,0 9,-2 13,-5 72,-83 135,-243 135,-356 0,-142 -84,-255 -176,-364 21,-68 40,-136 57,-205 3,0 8,1 11,1 157,0 257,-129 257,-263 0,-77 -33,-155 -108,-211 -22,-16 -46,-29 -72,-37 3,-33 4,-66 4,-99 0,-21 0,-41 -1,-62 -7,-121 -91,-229 -211,-229 -108,0 -196,88 -196,197 0,58 54,103 113,103 54,0 95,-47 95,-103 0,-52 -43,-95 -95,-95 -9,0 -18,1 -27,4 25,-37 66,-61 113,-61 95,0 156,93 162,191 1,19 2,38 2,57 0,29 -1,58 -3,87 -29,-5 -58,-8 -88,-8 C 146,-264 2,-91 2,112 2,289 131,420 246,555 Z M 406,148 c 24,-114 44,-227 57,-349 74,28 108,92 108,158 0,87 -59,178 -165,191 z M 77,25 c 0,-133 128,-243 261,-243 27,0 55,1 81,5 C 406,-87 384,31 359,149 280,141 235,89 235,31 c 0,-43 25,-88 80,-120 5,-5 7,-11 7,-17 0,-12 -10,-23 -23,-23 -3,0 -7,1 -10,2 -81,43 -118,115 -118,186 0,89 60,177 163,200 -14,57 -30,113 -47,169 C 182,306 77,185 77,25 Z m 166,757 c 0,-70 20,-129 38,-186 76,94 143,199 143,323 0,38 -7,77 -21,119 C 302,991 243,897 243,782 Z"
+       fill="currentColor"
+       id="path172" />
+  </g>
+  <g
+     transform="translate(7.5406454,10.932253)"
+     id="g178">
+    <path
+       transform="scale(0.004,-0.004)"
+       d="m 356,30 c -48,0 -72,40 -72,72 0,37 26,75 70,75 3,0 6,-1 9,-1 -26,36 -67,59 -113,59 -107,0 -113,-74 -113,-189 0,-15 1,-30 1,-46 0,-16 -1,-31 -1,-46 0,-115 6,-189 113,-189 78,0 133,70 151,149 2,8 8,11 14,11 7,0 15,-5 15,-14 v -4 c -21,-93 -89,-172 -180,-172 -68,0 -137,20 -184,70 C 17,-143 0,-71 0,0 c 0,71 17,143 66,195 47,50 116,70 184,70 86,0 156,-67 171,-153 1,-4 1,-9 1,-13 0,-38 -30,-69 -66,-69 z"
+       fill="currentColor"
+       id="path176" />
+  </g>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:27:14:15"
+     id="a184"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(36.7316,19.9247)"
+       id="g182">
+      <path
+         transform="scale(0.0022,-0.0022)"
+         d="m 190,457 c -33,0 -68,-9 -68,-38 0,-19 31,-23 31,-42 0,-28 -22,-51 -50,-51 -28,0 -51,23 -51,51 0,71 64,123 138,123 93,0 174,-31 174,-113 0,-36 -11,-65 -43,-80 -17,-8 -25,-25 -25,-41 0,-16 8,-32 25,-40 37,-17 59,-45 59,-85 C 380,47 297,0 194,0 110,0 35,54 35,133 c 0,32 26,58 58,58 32,0 58,-26 58,-58 0,-22 -36,-26 -36,-48 0,-33 41,-42 79,-42 41,0 57,50 57,98 v 21 c 0,44 -3,77 -44,77 h -65 c -18,0 -27,14 -27,27 0,13 9,27 27,27 h 65 c 42,0 44,36 44,83 v 11 c 0,43 -20,70 -61,70 z"
+         fill="currentColor"
+         id="path180" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:27:12:13"
+     id="a190"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(36.7316,18.4247)"
+       id="g188">
+      <path
+         transform="scale(0.0022,-0.0022)"
+         d="m 207,226 c -44,0 -46,-40 -46,-92 0,-52 2,-91 46,-91 46,0 55,38 55,91 0,53 -9,92 -55,92 z m -46,31 c 14,8 29,12 46,12 103,0 177,-41 177,-135 C 384,40 310,0 207,0 93,0 31,124 31,250 c 0,129 77,250 197,250 75,0 141,-52 141,-123 0,-32 -26,-58 -58,-58 -32,0 -58,26 -58,58 0,21 35,23 35,44 0,26 -31,36 -60,36 -61,0 -69,-60 -69,-129 0,-23 2,-48 2,-71 z"
+         fill="currentColor"
+         id="path186" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:10:2:3"
+     id="a196"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(12.3617,16.2494)"
+       id="g194">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 210,110 c -47,0 -68,-41 -68,-84 0,-68 40,-111 91,-129 13,-4 26,-7 39,-7 47,0 67,41 67,84 0,68 -39,111 -90,129 -13,4 -26,7 -39,7 z M 482,0 c 0,-43 -33,-76 -71,-98 -51,-30 -111,-40 -170,-40 -59,0 -119,10 -170,40 -38,22 -71,55 -71,98 0,43 33,76 71,98 51,30 111,40 170,40 59,0 119,-10 170,-40 38,-22 71,-55 71,-98 z"
+         fill="currentColor"
+         id="path192" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:10:2:3"
+     id="a202"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(12.3617,15.2494)"
+       id="g200">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 210,110 c -47,0 -68,-41 -68,-84 0,-68 40,-111 91,-129 13,-4 26,-7 39,-7 47,0 67,41 67,84 0,68 -39,111 -90,129 -13,4 -26,7 -39,7 z M 482,0 c 0,-43 -33,-76 -71,-98 -51,-30 -111,-40 -170,-40 -59,0 -119,10 -170,40 -38,22 -71,55 -71,98 0,43 33,76 71,98 51,30 111,40 170,40 59,0 119,-10 170,-40 38,-22 71,-55 71,-98 z"
+         fill="currentColor"
+         id="path198" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:10:2:3"
+     id="a208"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(12.3617,14.2494)"
+       id="g206">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 210,110 c -47,0 -68,-41 -68,-84 0,-68 40,-111 91,-129 13,-4 26,-7 39,-7 47,0 67,41 67,84 0,68 -39,111 -90,129 -13,4 -26,7 -39,7 z M 482,0 c 0,-43 -33,-76 -71,-98 -51,-30 -111,-40 -170,-40 -59,0 -119,10 -170,40 -38,22 -71,55 -71,98 0,43 33,76 71,98 51,30 111,40 170,40 59,0 119,-10 170,-40 38,-22 71,-55 71,-98 z"
+         fill="currentColor"
+         id="path204" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:12:2:3"
+     id="a214"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(55.6125,11.7494)"
+       id="g212">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 210,110 c -47,0 -68,-41 -68,-84 0,-68 40,-111 91,-129 13,-4 26,-7 39,-7 47,0 67,41 67,84 0,68 -39,111 -90,129 -13,4 -26,7 -39,7 z M 482,0 c 0,-43 -33,-76 -71,-98 -51,-30 -111,-40 -170,-40 -59,0 -119,10 -170,40 -38,22 -71,55 -71,98 0,43 33,76 71,98 51,30 111,40 170,40 59,0 119,-10 170,-40 38,-22 71,-55 71,-98 z"
+         fill="currentColor"
+         id="path210" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:13:2:3"
+     id="a220"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(75.9476,16.2494)"
+       id="g218">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 210,110 c -47,0 -68,-41 -68,-84 0,-68 40,-111 91,-129 13,-4 26,-7 39,-7 47,0 67,41 67,84 0,68 -39,111 -90,129 -13,4 -26,7 -39,7 z M 482,0 c 0,-43 -33,-76 -71,-98 -51,-30 -111,-40 -170,-40 -59,0 -119,10 -170,40 -38,22 -71,55 -71,98 0,43 33,76 71,98 51,30 111,40 170,40 59,0 119,-10 170,-40 38,-22 71,-55 71,-98 z"
+         fill="currentColor"
+         id="path216" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:13:2:3"
+     id="a226"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(75.9476,15.2494)"
+       id="g224">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 210,110 c -47,0 -68,-41 -68,-84 0,-68 40,-111 91,-129 13,-4 26,-7 39,-7 47,0 67,41 67,84 0,68 -39,111 -90,129 -13,4 -26,7 -39,7 z M 482,0 c 0,-43 -33,-76 -71,-98 -51,-30 -111,-40 -170,-40 -59,0 -119,10 -170,40 -38,22 -71,55 -71,98 0,43 33,76 71,98 51,30 111,40 170,40 59,0 119,-10 170,-40 38,-22 71,-55 71,-98 z"
+         fill="currentColor"
+         id="path222" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:13:2:3"
+     id="a232"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(75.9476,14.2494)"
+       id="g230">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 210,110 c -47,0 -68,-41 -68,-84 0,-68 40,-111 91,-129 13,-4 26,-7 39,-7 47,0 67,41 67,84 0,68 -39,111 -90,129 -13,4 -26,7 -39,7 z M 482,0 c 0,-43 -33,-76 -71,-98 -51,-30 -111,-40 -170,-40 -59,0 -119,10 -170,40 -38,22 -71,55 -71,98 0,43 33,76 71,98 51,30 111,40 170,40 59,0 119,-10 170,-40 38,-22 71,-55 71,-98 z"
+         fill="currentColor"
+         id="path228" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:13:2:3"
+     id="a238"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(75.9476,13.2494)"
+       id="g236">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 210,110 c -47,0 -68,-41 -68,-84 0,-68 40,-111 91,-129 13,-4 26,-7 39,-7 47,0 67,41 67,84 0,68 -39,111 -90,129 -13,4 -26,7 -39,7 z M 482,0 c 0,-43 -33,-76 -71,-98 -51,-30 -111,-40 -170,-40 -59,0 -119,10 -170,40 -38,22 -71,55 -71,98 0,43 33,76 71,98 51,30 111,40 170,40 59,0 119,-10 170,-40 38,-22 71,-55 71,-98 z"
+         fill="currentColor"
+         id="path234" />
+    </g>
+  </a>
+  <g
+     transform="translate(73.659445,10.932253)"
+     id="g242">
+    <path
+       transform="scale(0.004,-0.004)"
+       d="m 31,37 -2,-62 v -11 c 0,-22 2,-43 5,-64 43,38 89,80 89,137 0,32 -14,65 -42,65 C 50,102 32,70 31,37 Z m -61,413 c 9,5 20,8 30,8 10,0 21,-3 30,-8 L 22,110 c 25,24 59,38 94,38 50,0 84,-50 84,-104 0,-78 -83,-117 -141,-169 -17,-15 -25,-44 -49,-44 -15,0 -26,13 -26,29 z"
+       fill="currentColor"
+       id="path240" />
+  </g>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:12:2:3"
+     id="a248"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(55.6125,14.2494)"
+       id="g246">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 210,110 c -47,0 -68,-41 -68,-84 0,-68 40,-111 91,-129 13,-4 26,-7 39,-7 47,0 67,41 67,84 0,68 -39,111 -90,129 -13,4 -26,7 -39,7 z M 482,0 c 0,-43 -33,-76 -71,-98 -51,-30 -111,-40 -170,-40 -59,0 -119,10 -170,40 -38,22 -71,55 -71,98 0,43 33,76 71,98 51,30 111,40 170,40 59,0 119,-10 170,-40 38,-22 71,-55 71,-98 z"
+         fill="currentColor"
+         id="path244" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:11:2:3"
+     id="a254"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(31.7062,12.7494)"
+       id="g252">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 210,110 c -47,0 -68,-41 -68,-84 0,-68 40,-111 91,-129 13,-4 26,-7 39,-7 47,0 67,41 67,84 0,68 -39,111 -90,129 -13,4 -26,7 -39,7 z M 482,0 c 0,-43 -33,-76 -71,-98 -51,-30 -111,-40 -170,-40 -59,0 -119,10 -170,40 -38,22 -71,55 -71,98 0,43 33,76 71,98 51,30 111,40 170,40 59,0 119,-10 170,-40 38,-22 71,-55 71,-98 z"
+         fill="currentColor"
+         id="path250" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:11:2:3"
+     id="a260"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(31.7062,14.2494)"
+       id="g258">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 210,110 c -47,0 -68,-41 -68,-84 0,-68 40,-111 91,-129 13,-4 26,-7 39,-7 47,0 67,41 67,84 0,68 -39,111 -90,129 -13,4 -26,7 -39,7 z M 482,0 c 0,-43 -33,-76 -71,-98 -51,-30 -111,-40 -170,-40 -59,0 -119,10 -170,40 -38,22 -71,55 -71,98 0,43 33,76 71,98 51,30 111,40 170,40 59,0 119,-10 170,-40 38,-22 71,-55 71,-98 z"
+         fill="currentColor"
+         id="path256" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:12:2:3"
+     id="a266"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(55.6125,12.7494)"
+       id="g264">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 210,110 c -47,0 -68,-41 -68,-84 0,-68 40,-111 91,-129 13,-4 26,-7 39,-7 47,0 67,41 67,84 0,68 -39,111 -90,129 -13,4 -26,7 -39,7 z M 482,0 c 0,-43 -33,-76 -71,-98 -51,-30 -111,-40 -170,-40 -59,0 -119,10 -170,40 -38,22 -71,55 -71,98 0,43 33,76 71,98 51,30 111,40 170,40 59,0 119,-10 170,-40 38,-22 71,-55 71,-98 z"
+         fill="currentColor"
+         id="path262" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:11:2:3"
+     id="a272"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(31.7062,15.2494)"
+       id="g270">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 210,110 c -47,0 -68,-41 -68,-84 0,-68 40,-111 91,-129 13,-4 26,-7 39,-7 47,0 67,41 67,84 0,68 -39,111 -90,129 -13,4 -26,7 -39,7 z M 482,0 c 0,-43 -33,-76 -71,-98 -51,-30 -111,-40 -170,-40 -59,0 -119,10 -170,40 -38,22 -71,55 -71,98 0,43 33,76 71,98 51,30 111,40 170,40 59,0 119,-10 170,-40 38,-22 71,-55 71,-98 z"
+         fill="currentColor"
+         id="path268" />
+    </g>
+  </a>
+  <g
+     transform="translate(2.6555454,29.783053)"
+     id="g276">
+    <rect
+       x="77.619102"
+       y="-0.111"
+       width="2.8900001"
+       height="0.2219"
+       ry="0.111"
+       fill="currentColor"
+       id="rect274" />
+  </g>
+  <g
+     transform="translate(2.6555454,29.783053)"
+     id="g280">
+    <rect
+       x="65.101196"
+       y="-0.111"
+       width="2.0755999"
+       height="0.2219"
+       ry="0.111"
+       fill="currentColor"
+       id="rect278" />
+  </g>
+  <g
+     transform="translate(2.6555454,29.783053)"
+     id="g284">
+    <rect
+       x="50.9828"
+       y="-0.111"
+       width="2.0755999"
+       height="0.2219"
+       ry="0.111"
+       fill="currentColor"
+       id="rect282" />
+  </g>
+  <g
+     transform="translate(2.6555454,29.783053)"
+     id="g288">
+    <rect
+       x="39.319801"
+       y="-0.111"
+       width="2.0755999"
+       height="0.2219"
+       ry="0.111"
+       fill="currentColor"
+       id="rect286" />
+  </g>
+  <g
+     transform="translate(2.6555454,29.783053)"
+     id="g292">
+    <rect
+       x="28.218399"
+       y="-0.111"
+       width="2.0755999"
+       height="0.2219"
+       ry="0.111"
+       fill="currentColor"
+       id="rect290" />
+  </g>
+  <g
+     transform="translate(2.6555454,29.783053)"
+     id="g296">
+    <rect
+       x="16.5555"
+       y="-0.111"
+       width="2.0755999"
+       height="0.2219"
+       ry="0.111"
+       fill="currentColor"
+       id="rect294" />
+  </g>
+  <g
+     transform="translate(2.6555454,29.783053)"
+     id="g300">
+    <rect
+       x="5.4541001"
+       y="-0.111"
+       width="2.0755999"
+       height="0.2219"
+       ry="0.111"
+       fill="currentColor"
+       id="rect298" />
+  </g>
+  <g
+     transform="translate(52.264045,26.783053)"
+     id="g304">
+    <rect
+       x="0"
+       y="-2"
+       width="0.2316"
+       height="4"
+       ry="0.0000"
+       fill="currentColor"
+       id="rect302" />
+  </g>
+  <g
+     transform="translate(78.045445,26.783053)"
+     id="g308">
+    <rect
+       x="0"
+       y="-2"
+       width="0.2316"
+       height="4"
+       ry="0.0000"
+       fill="currentColor"
+       id="rect306" />
+  </g>
+  <g
+     transform="translate(29.499645,26.783053)"
+     id="g312">
+    <rect
+       x="0"
+       y="-2"
+       width="0.2316"
+       height="4"
+       ry="0.0000"
+       fill="currentColor"
+       id="rect310" />
+  </g>
+  <g
+     transform="translate(99.542645,26.783053)"
+     id="g316">
+    <rect
+       x="0"
+       y="-2"
+       width="0.2316"
+       height="4"
+       ry="0.0000"
+       fill="currentColor"
+       id="rect314" />
+  </g>
+  <g
+     transform="translate(2.6555454,28.783053)"
+     id="g320">
+    <line
+       stroke-linejoin="round"
+       stroke-linecap="round"
+       stroke-width="0.1219"
+       stroke="currentColor"
+       x1="0.061000001"
+       y1="0"
+       x2="97.0578"
+       y2="0"
+       id="line318" />
+  </g>
+  <g
+     transform="translate(2.6555454,27.783053)"
+     id="g324">
+    <line
+       stroke-linejoin="round"
+       stroke-linecap="round"
+       stroke-width="0.1219"
+       stroke="currentColor"
+       x1="0.061000001"
+       y1="0"
+       x2="97.0578"
+       y2="0"
+       id="line322" />
+  </g>
+  <g
+     transform="translate(2.6555454,26.783053)"
+     id="g328">
+    <line
+       stroke-linejoin="round"
+       stroke-linecap="round"
+       stroke-width="0.1219"
+       stroke="currentColor"
+       x1="0.061000001"
+       y1="0"
+       x2="97.0578"
+       y2="0"
+       id="line326" />
+  </g>
+  <g
+     transform="translate(2.6555454,25.783053)"
+     id="g332">
+    <line
+       stroke-linejoin="round"
+       stroke-linecap="round"
+       stroke-width="0.1219"
+       stroke="currentColor"
+       x1="0.061000001"
+       y1="0"
+       x2="97.0578"
+       y2="0"
+       id="line330" />
+  </g>
+  <g
+     transform="translate(2.6555454,24.783053)"
+     id="g336">
+    <line
+       stroke-linejoin="round"
+       stroke-linecap="round"
+       stroke-width="0.1219"
+       stroke="currentColor"
+       x1="0.061000001"
+       y1="0"
+       x2="97.0578"
+       y2="0"
+       id="line334" />
+  </g>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:17:2:3"
+     id="a350"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(81.8945,25.5447)"
+       id="g342">
+      <text
+         font-family="'Liberation Sans'"
+         font-weight="bold"
+         font-size="2.7717px"
+         text-anchor="start"
+         fill="currentColor"
+         id="text340"><tspan
+           id="tspan338">C</tspan></text>
+    </g>
+    <g
+       transform="translate(83.8976,24.2848)"
+       id="g348">
+      <text
+         font-family="'Liberation Sans'"
+         font-weight="bold"
+         font-size="1.9598px"
+         text-anchor="start"
+         fill="currentColor"
+         id="text346"><tspan
+           id="tspan344">9</tspan></text>
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:33:7:8"
+     id="a356"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(81.8945,34.2777)"
+       id="g354">
+      <path
+         transform="scale(0.0022,-0.0022)"
+         d="m 207,274 c 44,0 47,40 47,92 0,52 -3,91 -47,91 -46,0 -55,-38 -55,-91 0,-53 9,-92 55,-92 z m 47,-31 C 240,235 224,231 207,231 104,231 31,272 31,366 31,460 104,500 207,500 321,500 384,376 384,250 384,121 306,0 186,0 111,0 45,52 45,123 c 0,32 26,58 58,58 32,0 59,-26 59,-58 0,-21 -35,-23 -35,-44 0,-26 30,-36 59,-36 61,0 69,60 69,129 0,23 -1,48 -1,71 z"
+         fill="currentColor"
+         id="path352" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:33:9:10"
+     id="a362"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(81.8945,35.7777)"
+       id="g360">
+      <path
+         transform="scale(0.0022,-0.0022)"
+         d="M 422,458 C 347,351 283,230 283,104 c 0,-24 2,-49 7,-74 0,-2 1,-3 1,-5 0,-14 -12,-26 -25,-26 -2,0 -4,0 -6,1 -22,6 -44,14 -67,14 -23,0 -44,-8 -66,-14 -3,-1 -6,-1 -8,-1 -14,0 -25,11 -25,23 0,3 1,5 2,8 48,112 113,216 182,316 -9,-2 -19,-3 -28,-3 -25,0 -48,8 -68,29 -11,12 -21,17 -31,17 -32,0 -55,-51 -55,-78 0,-18 -14,-27 -27,-27 -13,0 -27,9 -27,27 v 162 c 0,18 14,27 27,27 13,0 27,-9 27,-27 v -16 c 0,-10 14,-19 22,-19 2,0 4,1 5,3 26,37 55,56 84,56 23,0 46,-12 69,-36 9,-10 22,-14 34,-14 24,0 50,17 68,42 6,8 13,11 21,11 14,0 28,-12 28,-27 0,-5 -1,-10 -5,-15 z"
+         fill="currentColor"
+         id="path358" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:32:7:8"
+     id="a368"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(55.1224,34.2777)"
+       id="g366">
+      <path
+         transform="scale(0.0022,-0.0022)"
+         d="m 153,150 c 35,-1 74,-13 111,-41 17,-13 37,-20 54,-20 18,0 33,7 37,24 3,11 11,17 20,17 11,0 23,-8 23,-21 0,-2 0,-5 -1,-7 C 380,37 315,0 253,0 214,0 176,15 150,47 140,60 125,66 111,66 87,66 63,49 60,20 59,7 49,0 39,0 28,0 17,7 17,21 v 2 c 15,169 232,158 232,332 0,50 -17,102 -61,102 -33,0 -65,-15 -65,-44 0,-24 31,-37 31,-61 0,-34 -27,-61 -61,-61 -34,0 -61,27 -61,61 0,83 71,148 156,148 98,0 190,-55 190,-145 C 378,215 247,201 153,150 Z"
+         fill="currentColor"
+         id="path364" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:33:14:15"
+     id="a374"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(91.4035,34.2777)"
+       id="g372">
+      <path
+         transform="scale(0.0022,-0.0022)"
+         d="m 207,274 c 44,0 47,40 47,92 0,52 -3,91 -47,91 -46,0 -55,-38 -55,-91 0,-53 9,-92 55,-92 z m 47,-31 C 240,235 224,231 207,231 104,231 31,272 31,366 31,460 104,500 207,500 321,500 384,376 384,250 384,121 306,0 186,0 111,0 45,52 45,123 c 0,32 26,58 58,58 32,0 59,-26 59,-58 0,-21 -35,-23 -35,-44 0,-26 30,-36 59,-36 61,0 69,60 69,129 0,23 -1,48 -1,71 z"
+         fill="currentColor"
+         id="path370" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:32:12:13"
+     id="a380"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(59.4991,34.2777)"
+       id="g378">
+      <path
+         transform="scale(0.0022,-0.0022)"
+         d="m 204,223 c 21,13 46,23 59,45 8,14 10,46 31,46 11,0 24,-8 24,-25 V 179 h 70 c 18,0 27,-14 27,-27 0,-13 -9,-27 -27,-27 h -70 c 2,-45 58,-60 80,-82 14,0 22,-10 22,-21 C 420,11 412,0 398,0 349,0 302,14 253,14 204,14 156,0 107,0 93,0 86,11 86,22 c 0,11 7,21 21,21 44,0 79,37 81,82 H 54 c -43,0 -57,25 -57,42 0,5 1,10 3,12 73,81 123,182 123,291 0,23 12,29 27,29 21,0 50,-13 70,-13 23,0 45,8 67,14 3,1 6,1 9,1 15,0 26,-11 26,-21 0,-4 -1,-7 -4,-10 L 54,179 h 134 v 4 c 0,16 3,32 16,40 z"
+         fill="currentColor"
+         id="path376" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:32:14:15"
+     id="a386"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(59.4991,35.7777)"
+       id="g384">
+      <path
+         transform="scale(0.0022,-0.0022)"
+         d="m 153,150 c 35,-1 74,-13 111,-41 17,-13 37,-20 54,-20 18,0 33,7 37,24 3,11 11,17 20,17 11,0 23,-8 23,-21 0,-2 0,-5 -1,-7 C 380,37 315,0 253,0 214,0 176,15 150,47 140,60 125,66 111,66 87,66 63,49 60,20 59,7 49,0 39,0 28,0 17,7 17,21 v 2 c 15,169 232,158 232,332 0,50 -17,102 -61,102 -33,0 -65,-15 -65,-44 0,-24 31,-37 31,-61 0,-34 -27,-61 -61,-61 -34,0 -61,27 -61,61 0,83 71,148 156,148 98,0 190,-55 190,-145 C 378,215 247,201 153,150 Z"
+         fill="currentColor"
+         id="path382" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:32:18:19"
+     id="a392"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(63.8758,34.2777)"
+       id="g390">
+      <path
+         transform="scale(0.0022,-0.0022)"
+         d="m 207,226 c -44,0 -46,-40 -46,-92 0,-52 2,-91 46,-91 46,0 55,38 55,91 0,53 -9,92 -55,92 z m -46,31 c 14,8 29,12 46,12 103,0 177,-41 177,-135 C 384,40 310,0 207,0 93,0 31,124 31,250 c 0,129 77,250 197,250 75,0 141,-52 141,-123 0,-32 -26,-58 -58,-58 -32,0 -58,26 -58,58 0,21 35,23 35,44 0,26 -31,36 -60,36 -61,0 -69,-60 -69,-129 0,-23 2,-48 2,-71 z"
+         fill="currentColor"
+         id="path388" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:32:20:21"
+     id="a398"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(63.8758,35.7777)"
+       id="g396">
+      <path
+         transform="scale(0.0022,-0.0022)"
+         d="m 204,223 c 21,13 46,23 59,45 8,14 10,46 31,46 11,0 24,-8 24,-25 V 179 h 70 c 18,0 27,-14 27,-27 0,-13 -9,-27 -27,-27 h -70 c 2,-45 58,-60 80,-82 14,0 22,-10 22,-21 C 420,11 412,0 398,0 349,0 302,14 253,14 204,14 156,0 107,0 93,0 86,11 86,22 c 0,11 7,21 21,21 44,0 79,37 81,82 H 54 c -43,0 -57,25 -57,42 0,5 1,10 3,12 73,81 123,182 123,291 0,23 12,29 27,29 21,0 50,-13 70,-13 23,0 45,8 67,14 3,1 6,1 9,1 15,0 26,-11 26,-21 0,-4 -1,-7 -4,-10 L 54,179 h 134 v 4 c 0,16 3,32 16,40 z"
+         fill="currentColor"
+         id="path394" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:32:22:23"
+     id="a404"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(63.8758,37.2777)"
+       id="g402">
+      <path
+         transform="scale(0.0022,-0.0022)"
+         d="m 153,150 c 35,-1 74,-13 111,-41 17,-13 37,-20 54,-20 18,0 33,7 37,24 3,11 11,17 20,17 11,0 23,-8 23,-21 0,-2 0,-5 -1,-7 C 380,37 315,0 253,0 214,0 176,15 150,47 140,60 125,66 111,66 87,66 63,49 60,20 59,7 49,0 39,0 28,0 17,7 17,21 v 2 c 15,169 232,158 232,332 0,50 -17,102 -61,102 -33,0 -65,-15 -65,-44 0,-24 31,-37 31,-61 0,-34 -27,-61 -61,-61 -34,0 -61,27 -61,61 0,83 71,148 156,148 98,0 190,-55 190,-145 C 378,215 247,201 153,150 Z"
+         fill="currentColor"
+         id="path400" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:16:13:14"
+     id="a430"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(69.2409,25.5447)"
+       id="g410">
+      <text
+         font-family="'Liberation Sans'"
+         font-weight="bold"
+         font-size="2.7717px"
+         text-anchor="start"
+         fill="currentColor"
+         id="text408"><tspan
+           id="tspan406">d</tspan></text>
+    </g>
+    <g
+       transform="translate(70.9253,24.2848)"
+       id="g416">
+      <text
+         font-family="'Liberation Sans'"
+         font-weight="bold"
+         font-size="1.9598px"
+         text-anchor="start"
+         fill="currentColor"
+         id="text414"><tspan
+           id="tspan412">7</tspan></text>
+    </g>
+    <g
+       transform="translate(72.0179,25.5447)"
+       id="g422">
+      <text
+         font-family="'Liberation Sans'"
+         font-weight="bold"
+         font-size="2.7717px"
+         text-anchor="start"
+         fill="currentColor"
+         id="text420"><tspan
+           id="tspan418">/</tspan></text>
+    </g>
+    <g
+       transform="translate(72.7918,25.5447)"
+       id="g428">
+      <text
+         font-family="'Liberation Sans'"
+         font-weight="bold"
+         font-size="2.7717px"
+         text-anchor="start"
+         fill="currentColor"
+         id="text426"><tspan
+           id="tspan424">C</tspan></text>
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:33:16:17"
+     id="a436"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(91.4035,35.7777)"
+       id="g434">
+      <path
+         transform="scale(0.0022,-0.0022)"
+         d="M 422,458 C 347,351 283,230 283,104 c 0,-24 2,-49 7,-74 0,-2 1,-3 1,-5 0,-14 -12,-26 -25,-26 -2,0 -4,0 -6,1 -22,6 -44,14 -67,14 -23,0 -44,-8 -66,-14 -3,-1 -6,-1 -8,-1 -14,0 -25,11 -25,23 0,3 1,5 2,8 48,112 113,216 182,316 -9,-2 -19,-3 -28,-3 -25,0 -48,8 -68,29 -11,12 -21,17 -31,17 -32,0 -55,-51 -55,-78 0,-18 -14,-27 -27,-27 -13,0 -27,9 -27,27 v 162 c 0,18 14,27 27,27 13,0 27,-9 27,-27 v -16 c 0,-10 14,-19 22,-19 2,0 4,1 5,3 26,37 55,56 84,56 23,0 46,-12 69,-36 9,-10 22,-14 34,-14 24,0 50,17 68,42 6,8 13,11 21,11 14,0 28,-12 28,-27 0,-5 -1,-10 -5,-15 z"
+         fill="currentColor"
+         id="path432" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:33:18:19"
+     id="a442"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(91.4035,37.2777)"
+       id="g440">
+      <path
+         transform="scale(0.0022,-0.0022)"
+         d="m 87,500 c 42,-7 84,-14 127,-14 43,0 85,7 127,14 2,0 5,1 7,1 17,0 27,-12 27,-22 0,-4 -1,-6 -4,-9 -61,-61 -144,-91 -230,-91 -17,0 -31,-14 -31,-31 v -41 c 25,25 63,25 98,25 h 4 C 327,332 394,277 394,166 394,67 298,0 192,0 104,0 23,52 23,133 c 0,32 26,58 58,58 32,0 58,-26 58,-58 0,-22 -36,-26 -36,-48 0,-36 47,-42 89,-42 52,0 73,63 73,123 0,53 -7,112 -53,112 -41,0 -83,-1 -106,-33 -6,-8 -14,-11 -22,-11 -14,0 -28,10 -28,27 v 209 c 0,17 12,30 27,30 z"
+         fill="currentColor"
+         id="path438" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:33:20:21"
+     id="a448"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(91.4035,38.7777)"
+       id="g446">
+      <path
+         transform="scale(0.0022,-0.0022)"
+         d="m 190,457 c -33,0 -68,-9 -68,-38 0,-19 31,-23 31,-42 0,-28 -22,-51 -50,-51 -28,0 -51,23 -51,51 0,71 64,123 138,123 93,0 174,-31 174,-113 0,-36 -11,-65 -43,-80 -17,-8 -25,-25 -25,-41 0,-16 8,-32 25,-40 37,-17 59,-45 59,-85 C 380,47 297,0 194,0 110,0 35,54 35,133 c 0,32 26,58 58,58 32,0 58,-26 58,-58 0,-22 -36,-26 -36,-48 0,-33 41,-42 79,-42 41,0 57,50 57,98 v 21 c 0,44 -3,77 -44,77 h -65 c -18,0 -27,14 -27,27 0,13 9,27 27,27 h 65 c 42,0 44,36 44,83 v 11 c 0,43 -20,70 -61,70 z"
+         fill="currentColor"
+         id="path444" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:30:14:15"
+     id="a454"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(13.5634,34.2777)"
+       id="g452">
+      <path
+         transform="scale(0.0022,-0.0022)"
+         d="m 207,226 c -44,0 -46,-40 -46,-92 0,-52 2,-91 46,-91 46,0 55,38 55,91 0,53 -9,92 -55,92 z m -46,31 c 14,8 29,12 46,12 103,0 177,-41 177,-135 C 384,40 310,0 207,0 93,0 31,124 31,250 c 0,129 77,250 197,250 75,0 141,-52 141,-123 0,-32 -26,-58 -58,-58 -32,0 -58,26 -58,58 0,21 35,23 35,44 0,26 -31,36 -60,36 -61,0 -69,-60 -69,-129 0,-23 2,-48 2,-71 z"
+         fill="currentColor"
+         id="path450" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:30:16:17"
+     id="a460"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(13.5634,35.7777)"
+       id="g458">
+      <path
+         transform="scale(0.0022,-0.0022)"
+         d="m 87,500 c 42,-7 84,-14 127,-14 43,0 85,7 127,14 2,0 5,1 7,1 17,0 27,-12 27,-22 0,-4 -1,-6 -4,-9 -61,-61 -144,-91 -230,-91 -17,0 -31,-14 -31,-31 v -41 c 25,25 63,25 98,25 h 4 C 327,332 394,277 394,166 394,67 298,0 192,0 104,0 23,52 23,133 c 0,32 26,58 58,58 32,0 58,-26 58,-58 0,-22 -36,-26 -36,-48 0,-36 47,-42 89,-42 52,0 73,63 73,123 0,53 -7,112 -53,112 -41,0 -83,-1 -106,-33 -6,-8 -14,-11 -22,-11 -14,0 -28,10 -28,27 v 209 c 0,17 12,30 27,30 z"
+         fill="currentColor"
+         id="path456" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:30:18:19"
+     id="a466"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(13.5634,37.2777)"
+       id="g464">
+      <path
+         transform="scale(0.0022,-0.0022)"
+         d="m 190,457 c -33,0 -68,-9 -68,-38 0,-19 31,-23 31,-42 0,-28 -22,-51 -50,-51 -28,0 -51,23 -51,51 0,71 64,123 138,123 93,0 174,-31 174,-113 0,-36 -11,-65 -43,-80 -17,-8 -25,-25 -25,-41 0,-16 8,-32 25,-40 37,-17 59,-45 59,-85 C 380,47 297,0 194,0 110,0 35,54 35,133 c 0,32 26,58 58,58 32,0 58,-26 58,-58 0,-22 -36,-26 -36,-48 0,-33 41,-42 79,-42 41,0 57,50 57,98 v 21 c 0,44 -3,77 -44,77 h -65 c -18,0 -27,14 -27,27 0,13 9,27 27,27 h 65 c 42,0 44,36 44,83 v 11 c 0,43 -20,70 -61,70 z"
+         fill="currentColor"
+         id="path462" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:14:13:14"
+     id="a492"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(20.6951,25.5447)"
+       id="g472">
+      <text
+         font-family="'Liberation Sans'"
+         font-weight="bold"
+         font-size="2.7717px"
+         text-anchor="start"
+         fill="currentColor"
+         id="text470"><tspan
+           id="tspan468">a</tspan></text>
+    </g>
+    <g
+       transform="translate(22.2429,24.2848)"
+       id="g478">
+      <text
+         font-family="'Liberation Sans'"
+         font-weight="bold"
+         font-size="1.9598px"
+         text-anchor="start"
+         fill="currentColor"
+         id="text476"><tspan
+           id="tspan474">7</tspan></text>
+    </g>
+    <g
+       transform="translate(23.3355,25.5447)"
+       id="g484">
+      <text
+         font-family="'Liberation Sans'"
+         font-weight="bold"
+         font-size="2.7717px"
+         text-anchor="start"
+         fill="currentColor"
+         id="text482"><tspan
+           id="tspan480">/</tspan></text>
+    </g>
+    <g
+       transform="translate(24.1094,25.5447)"
+       id="g490">
+      <text
+         font-family="'Liberation Sans'"
+         font-weight="bold"
+         font-size="2.7717px"
+         text-anchor="start"
+         fill="currentColor"
+         id="text488"><tspan
+           id="tspan486">C</tspan></text>
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:15:2:3"
+     id="a524"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(32.3581,25.5447)"
+       id="g498">
+      <text
+         font-family="'Liberation Sans'"
+         font-weight="bold"
+         font-size="2.7717px"
+         text-anchor="start"
+         fill="currentColor"
+         id="text496"><tspan
+           id="tspan494">C</tspan></text>
+    </g>
+    <g
+       transform="translate(34.3611,24.2848)"
+       id="g504">
+      <text
+         font-family="'Liberation Sans'"
+         font-weight="bold"
+         font-size="1.9598px"
+         text-anchor="start"
+         fill="currentColor"
+         id="text502"><tspan
+           id="tspan500">6</tspan></text>
+    </g>
+    <g
+       transform="translate(35.9537,24.2848)"
+       id="g510">
+      <text
+         font-family="'Liberation Sans'"
+         font-weight="bold"
+         font-size="1.9598px"
+         text-anchor="start"
+         fill="currentColor"
+         id="text508"><tspan
+           id="tspan506">sus</tspan></text>
+    </g>
+    <g
+       transform="translate(39.3225,24.2848)"
+       id="g516">
+      <text
+         font-family="'Liberation Sans'"
+         font-weight="bold"
+         font-size="1.9598px"
+         text-anchor="start"
+         fill="currentColor"
+         id="text514"><tspan
+           id="tspan512">4</tspan></text>
+    </g>
+    <g
+       transform="translate(40.9151,24.2848)"
+       id="g522">
+      <text
+         font-family="'Liberation Sans'"
+         font-weight="bold"
+         font-size="1.9598px"
+         text-anchor="start"
+         fill="currentColor"
+         id="text520"><tspan
+           id="tspan518">3</tspan></text>
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:31:7:8"
+     id="a530"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(32.3581,34.2777)"
+       id="g528">
+      <path
+         transform="scale(0.0022,-0.0022)"
+         d="m 204,223 c 21,13 46,23 59,45 8,14 10,46 31,46 11,0 24,-8 24,-25 V 179 h 70 c 18,0 27,-14 27,-27 0,-13 -9,-27 -27,-27 h -70 c 2,-45 58,-60 80,-82 14,0 22,-10 22,-21 C 420,11 412,0 398,0 349,0 302,14 253,14 204,14 156,0 107,0 93,0 86,11 86,22 c 0,11 7,21 21,21 44,0 79,37 81,82 H 54 c -43,0 -57,25 -57,42 0,5 1,10 3,12 73,81 123,182 123,291 0,23 12,29 27,29 21,0 50,-13 70,-13 23,0 45,8 67,14 3,1 6,1 9,1 15,0 26,-11 26,-21 0,-4 -1,-7 -4,-10 L 54,179 h 134 v 4 c 0,16 3,32 16,40 z"
+         fill="currentColor"
+         id="path526" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:31:9:10"
+     id="a536"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(32.3581,35.7777)"
+       id="g534">
+      <path
+         transform="scale(0.0022,-0.0022)"
+         d="m 190,457 c -33,0 -68,-9 -68,-38 0,-19 31,-23 31,-42 0,-28 -22,-51 -50,-51 -28,0 -51,23 -51,51 0,71 64,123 138,123 93,0 174,-31 174,-113 0,-36 -11,-65 -43,-80 -17,-8 -25,-25 -25,-41 0,-16 8,-32 25,-40 37,-17 59,-45 59,-85 C 380,47 297,0 194,0 110,0 35,54 35,133 c 0,32 26,58 58,58 32,0 58,-26 58,-58 0,-22 -36,-26 -36,-48 0,-33 41,-42 79,-42 41,0 57,50 57,98 v 21 c 0,44 -3,77 -44,77 h -65 c -18,0 -27,14 -27,27 0,13 9,27 27,27 h 65 c 42,0 44,36 44,83 v 11 c 0,43 -20,70 -61,70 z"
+         fill="currentColor"
+         id="path532" />
+    </g>
+  </a>
+  <g
+     transform="translate(3.4555454,27.783053)"
+     id="g540">
+    <path
+       transform="scale(0.004,-0.004)"
+       d="m 246,555 c -31,95 -56,192 -56,311 0,140 41,246 148,324 4,3 8,4 12,4 5,0 9,-2 13,-5 72,-83 135,-243 135,-356 0,-142 -84,-255 -176,-364 21,-68 40,-136 57,-205 3,0 8,1 11,1 157,0 257,-129 257,-263 0,-77 -33,-155 -108,-211 -22,-16 -46,-29 -72,-37 3,-33 4,-66 4,-99 0,-21 0,-41 -1,-62 -7,-121 -91,-229 -211,-229 -108,0 -196,88 -196,197 0,58 54,103 113,103 54,0 95,-47 95,-103 0,-52 -43,-95 -95,-95 -9,0 -18,1 -27,4 25,-37 66,-61 113,-61 95,0 156,93 162,191 1,19 2,38 2,57 0,29 -1,58 -3,87 -29,-5 -58,-8 -88,-8 C 146,-264 2,-91 2,112 2,289 131,420 246,555 Z M 406,148 c 24,-114 44,-227 57,-349 74,28 108,92 108,158 0,87 -59,178 -165,191 z M 77,25 c 0,-133 128,-243 261,-243 27,0 55,1 81,5 C 406,-87 384,31 359,149 280,141 235,89 235,31 c 0,-43 25,-88 80,-120 5,-5 7,-11 7,-17 0,-12 -10,-23 -23,-23 -3,0 -7,1 -10,2 -81,43 -118,115 -118,186 0,89 60,177 163,200 -14,57 -30,113 -47,169 C 182,306 77,185 77,25 Z m 166,757 c 0,-70 20,-129 38,-186 76,94 143,199 143,323 0,38 -7,77 -21,119 C 302,991 243,897 243,782 Z"
+       fill="currentColor"
+       id="path538" />
+  </g>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:14:2:3"
+     id="a554"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(9.5937,25.5447)"
+       id="g546">
+      <text
+         font-family="'Liberation Sans'"
+         font-weight="bold"
+         font-size="2.7717px"
+         text-anchor="start"
+         fill="currentColor"
+         id="text544"><tspan
+           id="tspan542">C</tspan></text>
+    </g>
+    <g
+       transform="translate(11.5968,24.2848)"
+       id="g552">
+      <text
+         font-family="'Liberation Sans'"
+         font-weight="bold"
+         font-size="1.9598px"
+         text-anchor="start"
+         fill="currentColor"
+         id="text550"><tspan
+           id="tspan548">6</tspan></text>
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:30:7:8"
+     id="a560"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(9.5937,34.2777)"
+       id="g558">
+      <path
+         transform="scale(0.0022,-0.0022)"
+         d="m 207,226 c -44,0 -46,-40 -46,-92 0,-52 2,-91 46,-91 46,0 55,38 55,91 0,53 -9,92 -55,92 z m -46,31 c 14,8 29,12 46,12 103,0 177,-41 177,-135 C 384,40 310,0 207,0 93,0 31,124 31,250 c 0,129 77,250 197,250 75,0 141,-52 141,-123 0,-32 -26,-58 -58,-58 -32,0 -58,26 -58,58 0,21 35,23 35,44 0,26 -31,36 -60,36 -61,0 -69,-60 -69,-129 0,-23 2,-48 2,-71 z"
+         fill="currentColor"
+         id="path556" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:30:9:10"
+     id="a566"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(9.5937,35.7777)"
+       id="g564">
+      <path
+         transform="scale(0.0022,-0.0022)"
+         d="m 87,500 c 42,-7 84,-14 127,-14 43,0 85,7 127,14 2,0 5,1 7,1 17,0 27,-12 27,-22 0,-4 -1,-6 -4,-9 -61,-61 -144,-91 -230,-91 -17,0 -31,-14 -31,-31 v -41 c 25,25 63,25 98,25 h 4 C 327,332 394,277 394,166 394,67 298,0 192,0 104,0 23,52 23,133 c 0,32 26,58 58,58 32,0 58,-26 58,-58 0,-22 -36,-26 -36,-48 0,-36 47,-42 89,-42 52,0 73,63 73,123 0,53 -7,112 -53,112 -41,0 -83,-1 -106,-33 -6,-8 -14,-11 -22,-11 -14,0 -28,10 -28,27 v 209 c 0,17 12,30 27,30 z"
+         fill="currentColor"
+         id="path562" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:15:13:14"
+     id="a592"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(43.4595,25.5447)"
+       id="g572">
+      <text
+         font-family="'Liberation Sans'"
+         font-weight="bold"
+         font-size="2.7717px"
+         text-anchor="start"
+         fill="currentColor"
+         id="text570"><tspan
+           id="tspan568">F</tspan></text>
+    </g>
+    <g
+       transform="translate(45.1439,24.2848)"
+       id="g578">
+      <text
+         font-family="'Liberation Sans'"
+         font-weight="bold"
+         font-size="1.9598px"
+         text-anchor="start"
+         fill="currentColor"
+         id="text576"><tspan
+           id="tspan574">maj7</tspan></text>
+    </g>
+    <g
+       transform="translate(49.6053,25.5447)"
+       id="g584">
+      <text
+         font-family="'Liberation Sans'"
+         font-weight="bold"
+         font-size="2.7717px"
+         text-anchor="start"
+         fill="currentColor"
+         id="text582"><tspan
+           id="tspan580">/</tspan></text>
+    </g>
+    <g
+       transform="translate(50.3792,25.5447)"
+       id="g590">
+      <text
+         font-family="'Liberation Sans'"
+         font-weight="bold"
+         font-size="2.7717px"
+         text-anchor="start"
+         fill="currentColor"
+         id="text588"><tspan
+           id="tspan586">C</tspan></text>
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:31:14:15"
+     id="a598"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(36.3277,34.2777)"
+       id="g596">
+      <path
+         transform="scale(0.0022,-0.0022)"
+         d="m 207,226 c -44,0 -46,-40 -46,-92 0,-52 2,-91 46,-91 46,0 55,38 55,91 0,53 -9,92 -55,92 z m -46,31 c 14,8 29,12 46,12 103,0 177,-41 177,-135 C 384,40 310,0 207,0 93,0 31,124 31,250 c 0,129 77,250 197,250 75,0 141,-52 141,-123 0,-32 -26,-58 -58,-58 -32,0 -58,26 -58,58 0,21 35,23 35,44 0,26 -31,36 -60,36 -61,0 -69,-60 -69,-129 0,-23 2,-48 2,-71 z"
+         fill="currentColor"
+         id="path594" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:16:2:3"
+     id="a636"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(55.1224,25.5447)"
+       id="g604">
+      <text
+         font-family="'Liberation Sans'"
+         font-weight="bold"
+         font-size="2.7717px"
+         text-anchor="start"
+         fill="currentColor"
+         id="text602"><tspan
+           id="tspan600">C</tspan></text>
+    </g>
+    <g
+       transform="translate(57.1255,24.2848)"
+       id="g610">
+      <text
+         font-family="'Liberation Sans'"
+         font-weight="bold"
+         font-size="1.9598px"
+         text-anchor="start"
+         fill="currentColor"
+         id="text608"><tspan
+           id="tspan606">6</tspan></text>
+    </g>
+    <g
+       transform="translate(58.7181,24.2848)"
+       id="g616">
+      <text
+         font-family="'Liberation Sans'"
+         font-weight="bold"
+         font-size="1.9598px"
+         text-anchor="start"
+         fill="currentColor"
+         id="text614"><tspan
+           id="tspan612">sus</tspan></text>
+    </g>
+    <g
+       transform="translate(62.0869,24.2848)"
+       id="g622">
+      <text
+         font-family="'Liberation Sans'"
+         font-weight="bold"
+         font-size="1.9598px"
+         text-anchor="start"
+         fill="currentColor"
+         id="text620"><tspan
+           id="tspan618">4</tspan></text>
+    </g>
+    <g
+       transform="translate(63.6795,24.2848)"
+       id="g628">
+      <text
+         font-family="'Liberation Sans'"
+         font-weight="bold"
+         font-size="1.9598px"
+         text-anchor="start"
+         fill="currentColor"
+         id="text626"><tspan
+           id="tspan624">sus</tspan></text>
+    </g>
+    <g
+       transform="translate(67.0483,24.2848)"
+       id="g634">
+      <text
+         font-family="'Liberation Sans'"
+         font-weight="bold"
+         font-size="1.9598px"
+         text-anchor="start"
+         fill="currentColor"
+         id="text632"><tspan
+           id="tspan630">2</tspan></text>
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:31:16:17"
+     id="a642"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(36.3277,35.7777)"
+       id="g640">
+      <path
+         transform="scale(0.0022,-0.0022)"
+         d="m 204,223 c 21,13 46,23 59,45 8,14 10,46 31,46 11,0 24,-8 24,-25 V 179 h 70 c 18,0 27,-14 27,-27 0,-13 -9,-27 -27,-27 h -70 c 2,-45 58,-60 80,-82 14,0 22,-10 22,-21 C 420,11 412,0 398,0 349,0 302,14 253,14 204,14 156,0 107,0 93,0 86,11 86,22 c 0,11 7,21 21,21 44,0 79,37 81,82 H 54 c -43,0 -57,25 -57,42 0,5 1,10 3,12 73,81 123,182 123,291 0,23 12,29 27,29 21,0 50,-13 70,-13 23,0 45,8 67,14 3,1 6,1 9,1 15,0 26,-11 26,-21 0,-4 -1,-7 -4,-10 L 54,179 h 134 v 4 c 0,16 3,32 16,40 z"
+         fill="currentColor"
+         id="path638" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:31:18:19"
+     id="a648"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(36.3277,37.2777)"
+       id="g646">
+      <path
+         transform="scale(0.0022,-0.0022)"
+         d="m 190,457 c -33,0 -68,-9 -68,-38 0,-19 31,-23 31,-42 0,-28 -22,-51 -50,-51 -28,0 -51,23 -51,51 0,71 64,123 138,123 93,0 174,-31 174,-113 0,-36 -11,-65 -43,-80 -17,-8 -25,-25 -25,-41 0,-16 8,-32 25,-40 37,-17 59,-45 59,-85 C 380,47 297,0 194,0 110,0 35,54 35,133 c 0,32 26,58 58,58 32,0 58,-26 58,-58 0,-22 -36,-26 -36,-48 0,-33 41,-42 79,-42 41,0 57,50 57,98 v 21 c 0,44 -3,77 -44,77 h -65 c -18,0 -27,14 -27,27 0,13 9,27 27,27 h 65 c 42,0 44,36 44,83 v 11 c 0,43 -20,70 -61,70 z"
+         fill="currentColor"
+         id="path644" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:14:2:3"
+     id="a654"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(9.5937,30.1002)"
+       id="g652">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 300,36 c 7,9 10,17 10,26 0,22 -20,41 -42,41 -4,0 -6,-1 -10,-2 C 228,93 183,63 147,40 111,17 66,-12 46,-36 39,-45 36,-53 36,-62 c 0,-22 19,-41 41,-41 4,0 7,1 11,2 30,8 75,38 111,61 36,23 81,52 101,76 z m -44,102 c 50,0 90,-22 90,-77 0,-18 -5,-37 -10,-55 -11,-38 -30,-74 -63,-96 -53,-35 -111,-48 -183,-48 -50,0 -90,22 -90,77 0,18 5,37 10,55 11,38 30,74 63,96 53,36 111,48 183,48 z"
+         fill="currentColor"
+         id="path650" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:15:13:14"
+     id="a660"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(44.764,30.6002)"
+       id="g658">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 300,36 c 7,9 10,17 10,26 0,22 -20,41 -42,41 -4,0 -6,-1 -10,-2 C 228,93 183,63 147,40 111,17 66,-12 46,-36 39,-45 36,-53 36,-62 c 0,-22 19,-41 41,-41 4,0 7,1 11,2 30,8 75,38 111,61 36,23 81,52 101,76 z m -44,102 c 50,0 90,-22 90,-77 0,-18 -5,-37 -10,-55 -11,-38 -30,-74 -63,-96 -53,-35 -111,-48 -183,-48 -50,0 -90,22 -90,77 0,18 5,37 10,55 11,38 30,74 63,96 53,36 111,48 183,48 z"
+         fill="currentColor"
+         id="path656" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:14:2:3"
+     id="a666"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(10.8982,29.6002)"
+       id="g664">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 300,36 c 7,9 10,17 10,26 0,22 -20,41 -42,41 -4,0 -6,-1 -10,-2 C 228,93 183,63 147,40 111,17 66,-12 46,-36 39,-45 36,-53 36,-62 c 0,-22 19,-41 41,-41 4,0 7,1 11,2 30,8 75,38 111,61 36,23 81,52 101,76 z m -44,102 c 50,0 90,-22 90,-77 0,-18 -5,-37 -10,-55 -11,-38 -30,-74 -63,-96 -53,-35 -111,-48 -183,-48 -50,0 -90,22 -90,77 0,18 5,37 10,55 11,38 30,74 63,96 53,36 111,48 183,48 z"
+         fill="currentColor"
+         id="path662" />
+    </g>
+  </a>
+  <g
+     transform="translate(9.7600454,26.783053)"
+     id="g670">
+    <rect
+       x="-0.0792"
+       y="-3"
+       width="0.1585"
+       height="5.7544999"
+       ry="0.053300001"
+       fill="currentColor"
+       id="rect668" />
+  </g>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:16:13:14"
+     id="a676"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(69.2409,32.1002)"
+       id="g674">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 300,36 c 7,9 10,17 10,26 0,22 -20,41 -42,41 -4,0 -6,-1 -10,-2 C 228,93 183,63 147,40 111,17 66,-12 46,-36 39,-45 36,-53 36,-62 c 0,-22 19,-41 41,-41 4,0 7,1 11,2 30,8 75,38 111,61 36,23 81,52 101,76 z m -44,102 c 50,0 90,-22 90,-77 0,-18 -5,-37 -10,-55 -11,-38 -30,-74 -63,-96 -53,-35 -111,-48 -183,-48 -50,0 -90,22 -90,77 0,18 5,37 10,55 11,38 30,74 63,96 53,36 111,48 183,48 z"
+         fill="currentColor"
+         id="path672" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:16:13:14"
+     id="a682"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(70.5454,31.6002)"
+       id="g680">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 300,36 c 7,9 10,17 10,26 0,22 -20,41 -42,41 -4,0 -6,-1 -10,-2 C 228,93 183,63 147,40 111,17 66,-12 46,-36 39,-45 36,-53 36,-62 c 0,-22 19,-41 41,-41 4,0 7,1 11,2 30,8 75,38 111,61 36,23 81,52 101,76 z m -44,102 c 50,0 90,-22 90,-77 0,-18 -5,-37 -10,-55 -11,-38 -30,-74 -63,-96 -53,-35 -111,-48 -183,-48 -50,0 -90,22 -90,77 0,18 5,37 10,55 11,38 30,74 63,96 53,36 111,48 183,48 z"
+         fill="currentColor"
+         id="path678" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:14:13:14"
+     id="a688"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(20.6951,32.1002)"
+       id="g686">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 300,36 c 7,9 10,17 10,26 0,22 -20,41 -42,41 -4,0 -6,-1 -10,-2 C 228,93 183,63 147,40 111,17 66,-12 46,-36 39,-45 36,-53 36,-62 c 0,-22 19,-41 41,-41 4,0 7,1 11,2 30,8 75,38 111,61 36,23 81,52 101,76 z m -44,102 c 50,0 90,-22 90,-77 0,-18 -5,-37 -10,-55 -11,-38 -30,-74 -63,-96 -53,-35 -111,-48 -183,-48 -50,0 -90,22 -90,77 0,18 5,37 10,55 11,38 30,74 63,96 53,36 111,48 183,48 z"
+         fill="currentColor"
+         id="path684" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:14:2:3"
+     id="a694"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(9.5937,31.1002)"
+       id="g692">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 300,36 c 7,9 10,17 10,26 0,22 -20,41 -42,41 -4,0 -6,-1 -10,-2 C 228,93 183,63 147,40 111,17 66,-12 46,-36 39,-45 36,-53 36,-62 c 0,-22 19,-41 41,-41 4,0 7,1 11,2 30,8 75,38 111,61 36,23 81,52 101,76 z m -44,102 c 50,0 90,-22 90,-77 0,-18 -5,-37 -10,-55 -11,-38 -30,-74 -63,-96 -53,-35 -111,-48 -183,-48 -50,0 -90,22 -90,77 0,18 5,37 10,55 11,38 30,74 63,96 53,36 111,48 183,48 z"
+         fill="currentColor"
+         id="path690" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:14:2:3"
+     id="a700"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(9.5937,32.1002)"
+       id="g698">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 300,36 c 7,9 10,17 10,26 0,22 -20,41 -42,41 -4,0 -6,-1 -10,-2 C 228,93 183,63 147,40 111,17 66,-12 46,-36 39,-45 36,-53 36,-62 c 0,-22 19,-41 41,-41 4,0 7,1 11,2 30,8 75,38 111,61 36,23 81,52 101,76 z m -44,102 c 50,0 90,-22 90,-77 0,-18 -5,-37 -10,-55 -11,-38 -30,-74 -63,-96 -53,-35 -111,-48 -183,-48 -50,0 -90,22 -90,77 0,18 5,37 10,55 11,38 30,74 63,96 53,36 111,48 183,48 z"
+         fill="currentColor"
+         id="path696" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:15:13:14"
+     id="a706"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(43.4595,32.1002)"
+       id="g704">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 300,36 c 7,9 10,17 10,26 0,22 -20,41 -42,41 -4,0 -6,-1 -10,-2 C 228,93 183,63 147,40 111,17 66,-12 46,-36 39,-45 36,-53 36,-62 c 0,-22 19,-41 41,-41 4,0 7,1 11,2 30,8 75,38 111,61 36,23 81,52 101,76 z m -44,102 c 50,0 90,-22 90,-77 0,-18 -5,-37 -10,-55 -11,-38 -30,-74 -63,-96 -53,-35 -111,-48 -183,-48 -50,0 -90,22 -90,77 0,18 5,37 10,55 11,38 30,74 63,96 53,36 111,48 183,48 z"
+         fill="currentColor"
+         id="path702" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:15:13:14"
+     id="a712"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(43.4595,31.1002)"
+       id="g710">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 300,36 c 7,9 10,17 10,26 0,22 -20,41 -42,41 -4,0 -6,-1 -10,-2 C 228,93 183,63 147,40 111,17 66,-12 46,-36 39,-45 36,-53 36,-62 c 0,-22 19,-41 41,-41 4,0 7,1 11,2 30,8 75,38 111,61 36,23 81,52 101,76 z m -44,102 c 50,0 90,-22 90,-77 0,-18 -5,-37 -10,-55 -11,-38 -30,-74 -63,-96 -53,-35 -111,-48 -183,-48 -50,0 -90,22 -90,77 0,18 5,37 10,55 11,38 30,74 63,96 53,36 111,48 183,48 z"
+         fill="currentColor"
+         id="path708" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:17:2:3"
+     id="a718"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(81.8945,29.1002)"
+       id="g716">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 210,110 c -47,0 -68,-41 -68,-84 0,-68 40,-111 91,-129 13,-4 26,-7 39,-7 47,0 67,41 67,84 0,68 -39,111 -90,129 -13,4 -26,7 -39,7 z M 482,0 c 0,-43 -33,-76 -71,-98 -51,-30 -111,-40 -170,-40 -59,0 -119,10 -170,40 -38,22 -71,55 -71,98 0,43 33,76 71,98 51,30 111,40 170,40 59,0 119,-10 170,-40 38,-22 71,-55 71,-98 z"
+         fill="currentColor"
+         id="path714" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:15:13:14"
+     id="a724"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(43.4595,29.6002)"
+       id="g722">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 300,36 c 7,9 10,17 10,26 0,22 -20,41 -42,41 -4,0 -6,-1 -10,-2 C 228,93 183,63 147,40 111,17 66,-12 46,-36 39,-45 36,-53 36,-62 c 0,-22 19,-41 41,-41 4,0 7,1 11,2 30,8 75,38 111,61 36,23 81,52 101,76 z m -44,102 c 50,0 90,-22 90,-77 0,-18 -5,-37 -10,-55 -11,-38 -30,-74 -63,-96 -53,-35 -111,-48 -183,-48 -50,0 -90,22 -90,77 0,18 5,37 10,55 11,38 30,74 63,96 53,36 111,48 183,48 z"
+         fill="currentColor"
+         id="path720" />
+    </g>
+  </a>
+  <g
+     transform="translate(43.625845,26.783053)"
+     id="g728">
+    <rect
+       x="-0.0792"
+       y="-3"
+       width="0.1585"
+       height="5.7544999"
+       ry="0.053300001"
+       fill="currentColor"
+       id="rect726" />
+  </g>
+  <g
+     transform="translate(55.288745,26.783053)"
+     id="g732">
+    <rect
+       x="-0.0792"
+       y="-3"
+       width="0.1585"
+       height="5.7544999"
+       ry="0.053300001"
+       fill="currentColor"
+       id="rect730" />
+  </g>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:16:2:3"
+     id="a738"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(55.1224,32.1002)"
+       id="g736">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 300,36 c 7,9 10,17 10,26 0,22 -20,41 -42,41 -4,0 -6,-1 -10,-2 C 228,93 183,63 147,40 111,17 66,-12 46,-36 39,-45 36,-53 36,-62 c 0,-22 19,-41 41,-41 4,0 7,1 11,2 30,8 75,38 111,61 36,23 81,52 101,76 z m -44,102 c 50,0 90,-22 90,-77 0,-18 -5,-37 -10,-55 -11,-38 -30,-74 -63,-96 -53,-35 -111,-48 -183,-48 -50,0 -90,22 -90,77 0,18 5,37 10,55 11,38 30,74 63,96 53,36 111,48 183,48 z"
+         fill="currentColor"
+         id="path734" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:16:2:3"
+     id="a744"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(56.4269,31.6002)"
+       id="g742">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 300,36 c 7,9 10,17 10,26 0,22 -20,41 -42,41 -4,0 -6,-1 -10,-2 C 228,93 183,63 147,40 111,17 66,-12 46,-36 39,-45 36,-53 36,-62 c 0,-22 19,-41 41,-41 4,0 7,1 11,2 30,8 75,38 111,61 36,23 81,52 101,76 z m -44,102 c 50,0 90,-22 90,-77 0,-18 -5,-37 -10,-55 -11,-38 -30,-74 -63,-96 -53,-35 -111,-48 -183,-48 -50,0 -90,22 -90,77 0,18 5,37 10,55 11,38 30,74 63,96 53,36 111,48 183,48 z"
+         fill="currentColor"
+         id="path740" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:16:2:3"
+     id="a750"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(55.1224,30.6002)"
+       id="g748">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 300,36 c 7,9 10,17 10,26 0,22 -20,41 -42,41 -4,0 -6,-1 -10,-2 C 228,93 183,63 147,40 111,17 66,-12 46,-36 39,-45 36,-53 36,-62 c 0,-22 19,-41 41,-41 4,0 7,1 11,2 30,8 75,38 111,61 36,23 81,52 101,76 z m -44,102 c 50,0 90,-22 90,-77 0,-18 -5,-37 -10,-55 -11,-38 -30,-74 -63,-96 -53,-35 -111,-48 -183,-48 -50,0 -90,22 -90,77 0,18 5,37 10,55 11,38 30,74 63,96 53,36 111,48 183,48 z"
+         fill="currentColor"
+         id="path746" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:15:2:3"
+     id="a756"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(32.3581,31.1002)"
+       id="g754">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 300,36 c 7,9 10,17 10,26 0,22 -20,41 -42,41 -4,0 -6,-1 -10,-2 C 228,93 183,63 147,40 111,17 66,-12 46,-36 39,-45 36,-53 36,-62 c 0,-22 19,-41 41,-41 4,0 7,1 11,2 30,8 75,38 111,61 36,23 81,52 101,76 z m -44,102 c 50,0 90,-22 90,-77 0,-18 -5,-37 -10,-55 -11,-38 -30,-74 -63,-96 -53,-35 -111,-48 -183,-48 -50,0 -90,22 -90,77 0,18 5,37 10,55 11,38 30,74 63,96 53,36 111,48 183,48 z"
+         fill="currentColor"
+         id="path752" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:17:2:3"
+     id="a762"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(81.8945,28.1002)"
+       id="g760">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 210,110 c -47,0 -68,-41 -68,-84 0,-68 40,-111 91,-129 13,-4 26,-7 39,-7 47,0 67,41 67,84 0,68 -39,111 -90,129 -13,4 -26,7 -39,7 z M 482,0 c 0,-43 -33,-76 -71,-98 -51,-30 -111,-40 -170,-40 -59,0 -119,10 -170,40 -38,22 -71,55 -71,98 0,43 33,76 71,98 51,30 111,40 170,40 59,0 119,-10 170,-40 38,-22 71,-55 71,-98 z"
+         fill="currentColor"
+         id="path758" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:17:2:3"
+     id="a768"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(81.8945,30.1002)"
+       id="g766">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 210,110 c -47,0 -68,-41 -68,-84 0,-68 40,-111 91,-129 13,-4 26,-7 39,-7 47,0 67,41 67,84 0,68 -39,111 -90,129 -13,4 -26,7 -39,7 z M 482,0 c 0,-43 -33,-76 -71,-98 -51,-30 -111,-40 -170,-40 -59,0 -119,10 -170,40 -38,22 -71,55 -71,98 0,43 33,76 71,98 51,30 111,40 170,40 59,0 119,-10 170,-40 38,-22 71,-55 71,-98 z"
+         fill="currentColor"
+         id="path764" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:17:2:3"
+     id="a774"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(81.8945,31.1002)"
+       id="g772">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 210,110 c -47,0 -68,-41 -68,-84 0,-68 40,-111 91,-129 13,-4 26,-7 39,-7 47,0 67,41 67,84 0,68 -39,111 -90,129 -13,4 -26,7 -39,7 z M 482,0 c 0,-43 -33,-76 -71,-98 -51,-30 -111,-40 -170,-40 -59,0 -119,10 -170,40 -38,22 -71,55 -71,98 0,43 33,76 71,98 51,30 111,40 170,40 59,0 119,-10 170,-40 38,-22 71,-55 71,-98 z"
+         fill="currentColor"
+         id="path770" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:17:2:3"
+     id="a780"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(81.8945,32.1002)"
+       id="g778">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 210,110 c -47,0 -68,-41 -68,-84 0,-68 40,-111 91,-129 13,-4 26,-7 39,-7 47,0 67,41 67,84 0,68 -39,111 -90,129 -13,4 -26,7 -39,7 z M 482,0 c 0,-43 -33,-76 -71,-98 -51,-30 -111,-40 -170,-40 -59,0 -119,10 -170,40 -38,22 -71,55 -71,98 0,43 33,76 71,98 51,30 111,40 170,40 59,0 119,-10 170,-40 38,-22 71,-55 71,-98 z"
+         fill="currentColor"
+         id="path776" />
+    </g>
+  </a>
+  <g
+     transform="translate(32.524445,26.783053)"
+     id="g784">
+    <rect
+       x="-0.0792"
+       y="-3"
+       width="0.1585"
+       height="5.7544999"
+       ry="0.053300001"
+       fill="currentColor"
+       id="rect782" />
+  </g>
+  <g
+     transform="translate(79.606345,26.783053)"
+     id="g788">
+    <path
+       transform="scale(0.004,-0.004)"
+       d="m 31,37 -2,-62 v -11 c 0,-22 2,-43 5,-64 43,38 89,80 89,137 0,32 -14,65 -42,65 C 50,102 32,70 31,37 Z m -61,413 c 9,5 20,8 30,8 10,0 21,-3 30,-8 L 22,110 c 25,24 59,38 94,38 50,0 84,-50 84,-104 0,-78 -83,-117 -141,-169 -17,-15 -25,-44 -49,-44 -15,0 -26,13 -26,29 z"
+       fill="currentColor"
+       id="path786" />
+  </g>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:16:2:3"
+     id="a794"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(55.1224,29.6002)"
+       id="g792">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 300,36 c 7,9 10,17 10,26 0,22 -20,41 -42,41 -4,0 -6,-1 -10,-2 C 228,93 183,63 147,40 111,17 66,-12 46,-36 39,-45 36,-53 36,-62 c 0,-22 19,-41 41,-41 4,0 7,1 11,2 30,8 75,38 111,61 36,23 81,52 101,76 z m -44,102 c 50,0 90,-22 90,-77 0,-18 -5,-37 -10,-55 -11,-38 -30,-74 -63,-96 -53,-35 -111,-48 -183,-48 -50,0 -90,22 -90,77 0,18 5,37 10,55 11,38 30,74 63,96 53,36 111,48 183,48 z"
+         fill="currentColor"
+         id="path790" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:15:2:3"
+     id="a800"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(32.3581,29.6002)"
+       id="g798">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 300,36 c 7,9 10,17 10,26 0,22 -20,41 -42,41 -4,0 -6,-1 -10,-2 C 228,93 183,63 147,40 111,17 66,-12 46,-36 39,-45 36,-53 36,-62 c 0,-22 19,-41 41,-41 4,0 7,1 11,2 30,8 75,38 111,61 36,23 81,52 101,76 z m -44,102 c 50,0 90,-22 90,-77 0,-18 -5,-37 -10,-55 -11,-38 -30,-74 -63,-96 -53,-35 -111,-48 -183,-48 -50,0 -90,22 -90,77 0,18 5,37 10,55 11,38 30,74 63,96 53,36 111,48 183,48 z"
+         fill="currentColor"
+         id="path796" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:15:2:3"
+     id="a806"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(33.6626,30.6002)"
+       id="g804">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 300,36 c 7,9 10,17 10,26 0,22 -20,41 -42,41 -4,0 -6,-1 -10,-2 C 228,93 183,63 147,40 111,17 66,-12 46,-36 39,-45 36,-53 36,-62 c 0,-22 19,-41 41,-41 4,0 7,1 11,2 30,8 75,38 111,61 36,23 81,52 101,76 z m -44,102 c 50,0 90,-22 90,-77 0,-18 -5,-37 -10,-55 -11,-38 -30,-74 -63,-96 -53,-35 -111,-48 -183,-48 -50,0 -90,22 -90,77 0,18 5,37 10,55 11,38 30,74 63,96 53,36 111,48 183,48 z"
+         fill="currentColor"
+         id="path802" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:14:13:14"
+     id="a812"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(20.6951,31.1002)"
+       id="g810">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 300,36 c 7,9 10,17 10,26 0,22 -20,41 -42,41 -4,0 -6,-1 -10,-2 C 228,93 183,63 147,40 111,17 66,-12 46,-36 39,-45 36,-53 36,-62 c 0,-22 19,-41 41,-41 4,0 7,1 11,2 30,8 75,38 111,61 36,23 81,52 101,76 z m -44,102 c 50,0 90,-22 90,-77 0,-18 -5,-37 -10,-55 -11,-38 -30,-74 -63,-96 -53,-35 -111,-48 -183,-48 -50,0 -90,22 -90,77 0,18 5,37 10,55 11,38 30,74 63,96 53,36 111,48 183,48 z"
+         fill="currentColor"
+         id="path808" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:15:2:3"
+     id="a818"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(32.3581,32.1002)"
+       id="g816">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 300,36 c 7,9 10,17 10,26 0,22 -20,41 -42,41 -4,0 -6,-1 -10,-2 C 228,93 183,63 147,40 111,17 66,-12 46,-36 39,-45 36,-53 36,-62 c 0,-22 19,-41 41,-41 4,0 7,1 11,2 30,8 75,38 111,61 36,23 81,52 101,76 z m -44,102 c 50,0 90,-22 90,-77 0,-18 -5,-37 -10,-55 -11,-38 -30,-74 -63,-96 -53,-35 -111,-48 -183,-48 -50,0 -90,22 -90,77 0,18 5,37 10,55 11,38 30,74 63,96 53,36 111,48 183,48 z"
+         fill="currentColor"
+         id="path814" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:14:13:14"
+     id="a824"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(20.6951,30.1002)"
+       id="g822">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 300,36 c 7,9 10,17 10,26 0,22 -20,41 -42,41 -4,0 -6,-1 -10,-2 C 228,93 183,63 147,40 111,17 66,-12 46,-36 39,-45 36,-53 36,-62 c 0,-22 19,-41 41,-41 4,0 7,1 11,2 30,8 75,38 111,61 36,23 81,52 101,76 z m -44,102 c 50,0 90,-22 90,-77 0,-18 -5,-37 -10,-55 -11,-38 -30,-74 -63,-96 -53,-35 -111,-48 -183,-48 -50,0 -90,22 -90,77 0,18 5,37 10,55 11,38 30,74 63,96 53,36 111,48 183,48 z"
+         fill="currentColor"
+         id="path820" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:14:13:14"
+     id="a830"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(21.9996,29.6002)"
+       id="g828">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 300,36 c 7,9 10,17 10,26 0,22 -20,41 -42,41 -4,0 -6,-1 -10,-2 C 228,93 183,63 147,40 111,17 66,-12 46,-36 39,-45 36,-53 36,-62 c 0,-22 19,-41 41,-41 4,0 7,1 11,2 30,8 75,38 111,61 36,23 81,52 101,76 z m -44,102 c 50,0 90,-22 90,-77 0,-18 -5,-37 -10,-55 -11,-38 -30,-74 -63,-96 -53,-35 -111,-48 -183,-48 -50,0 -90,22 -90,77 0,18 5,37 10,55 11,38 30,74 63,96 53,36 111,48 183,48 z"
+         fill="currentColor"
+         id="path826" />
+    </g>
+  </a>
+  <g
+     transform="translate(20.861445,26.783053)"
+     id="g834">
+    <rect
+       x="-0.0792"
+       y="-3"
+       width="0.1585"
+       height="5.7544999"
+       ry="0.053300001"
+       fill="currentColor"
+       id="rect832" />
+  </g>
+  <g
+     transform="translate(69.407245,26.783053)"
+     id="g838">
+    <rect
+       x="-0.0792"
+       y="-3"
+       width="0.1585"
+       height="5.7544999"
+       ry="0.053300001"
+       fill="currentColor"
+       id="rect836" />
+  </g>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:16:13:14"
+     id="a844"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(69.2409,30.6002)"
+       id="g842">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 300,36 c 7,9 10,17 10,26 0,22 -20,41 -42,41 -4,0 -6,-1 -10,-2 C 228,93 183,63 147,40 111,17 66,-12 46,-36 39,-45 36,-53 36,-62 c 0,-22 19,-41 41,-41 4,0 7,1 11,2 30,8 75,38 111,61 36,23 81,52 101,76 z m -44,102 c 50,0 90,-22 90,-77 0,-18 -5,-37 -10,-55 -11,-38 -30,-74 -63,-96 -53,-35 -111,-48 -183,-48 -50,0 -90,22 -90,77 0,18 5,37 10,55 11,38 30,74 63,96 53,36 111,48 183,48 z"
+         fill="currentColor"
+         id="path840" />
+    </g>
+  </a>
+  <a
+     style="color:inherit"
+     xlink:href="textedit:///home/zuk/Dokumente/Git-Repos/georgienfahrt/lilypond-song-includes/liedbausteine/generalbass.ly:16:13:14"
+     id="a850"
+     transform="translate(-1.1381546,-2.3171473)">
+    <g
+       transform="translate(69.2409,29.6002)"
+       id="g848">
+      <path
+         transform="scale(0.004,-0.004)"
+         d="m 300,36 c 7,9 10,17 10,26 0,22 -20,41 -42,41 -4,0 -6,-1 -10,-2 C 228,93 183,63 147,40 111,17 66,-12 46,-36 39,-45 36,-53 36,-62 c 0,-22 19,-41 41,-41 4,0 7,1 11,2 30,8 75,38 111,61 36,23 81,52 101,76 z m -44,102 c 50,0 90,-22 90,-77 0,-18 -5,-37 -10,-55 -11,-38 -30,-74 -63,-96 -53,-35 -111,-48 -183,-48 -50,0 -90,22 -90,77 0,18 5,37 10,55 11,38 30,74 63,96 53,36 111,48 183,48 z"
+         fill="currentColor"
+         id="path846" />
+    </g>
+  </a>
+  <g
+     transform="translate(3.7937,155.5176)"
+     id="g856">
+    <text
+       font-family="'Liberation Sans'"
+       font-weight="bold"
+       font-size="2.4697px"
+       text-anchor="start"
+       fill="currentColor"
+       id="text854"><tspan
+         id="tspan852">0</tspan></text>
+  </g>
+</svg>
