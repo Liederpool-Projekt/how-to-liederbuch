@@ -1692,7 +1692,7 @@
     "href": "metadaten.html#liedanfang",
     "title": "Metadaten",
     "section": "Liedanfang",
-    "text": "Liedanfang\nDer Liedanfang wird mit starttext = \"\" angegeben, wobei innerhalb der Anführungszeichen der Anfang des Liedes steht. Ist der Liedanfang gleich dem Titel, muss er nicht nochmal neu angegeben werden.",
+    "text": "Liedanfang\nDer Liedanfang wird mit starttext = \"\" angegeben, wobei innerhalb der Anführungszeichen der Anfang des Liedes steht. Ist der Liedanfang gleich dem Titel, muss er nicht nochmal neu angegeben werden.\n\n\n\n\n\n\nVorsicht\n\n\n\nWenn der Liedanfang gleich dem Liedtitel ist, muss er auskommentiert werden, da sonst die Variable – egal ob leer und gleich – ins Inhaltsverzeichnis eingepflegt wird.",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",
@@ -1704,7 +1704,7 @@
     "href": "metadaten.html#alternative-titel",
     "title": "Metadaten",
     "section": "Alternative Titel",
-    "text": "Alternative Titel\nAlternative Titel können mittels der Variable alttitle = #'(\"\") angegeben werden, wobei innerhalb der Anführungszeichen der Alternativtitel benannt wird. Wenn es mehrere Alternativtitel gibt einfach in Anführungszeichen daneben, zum Beispiel: alttitle = #'(\"Alttitle A\" \"Alttitle B\" \"Alttitle C\").",
+    "text": "Alternative Titel\nAlternative Titel können mittels der Variable alttitle = #'(\"\") angegeben werden, wobei innerhalb der Anführungszeichen der Alternativtitel benannt wird. Wenn es mehrere Alternativtitel gibt einfach in Anführungszeichen daneben, zum Beispiel: alttitle = #'(\"Alttitle A\" \"Alttitle B\" \"Alttitle C\").\n\n\n\n\n\n\nVorsicht\n\n\n\nWenn es keine Alternativtitel gibt, muss die Variable unbedingt auskommentiert werden, da sie sonst – egal ob leer oder mit Alternativtitel (wie in der Vorlage) bestückt – ins Inhaltsverzeichnis eingepflegt wird.",
     "crumbs": [
       "Doku",
       "Liedersetzen-Prozess",
