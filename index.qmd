@@ -1,55 +1,63 @@
-# Moin. {.unnumbered}
+# Schön, dass du da bist! {.unnumbered}
 
-Schön, dass du hergefunden hast! In diesem Leitfaden zeigen wir dir, wie du mit [LilyPond](https://lilypond.org/) und [Git](https://git-scm.com/) Liederbücher anhand unserer Vorlagen und Skripte erstellen kannst. Wir versuchen dich dabei bestmöglich an die Hand zu nehmen, um die Hürden, die es dabei gibt, möglichst niedrig zu halten. Zu diesem Zwecke gibt es diesen Leitfaden, aber auch eine Gruppe auf Signal, in der sich alle Personen befinden, die mit unserem System Liederbücher machen.
+Hier findest du alles, was du brauchst, um mit [LilyPond](https://lilypond.org/) und [Git](https://git-scm.com/) eigene Liederbücher zu erstellen – hochwertig, flexibel und kostenlos.
 
-::: callout-note
-Mit unserem System arbeiten beispielsweise das [Börnel](https://boernel.sachsen.pfadfinden.de/)- und das [Liederbock](https://bockbuecher.de/liederbock)-Team.
-:::
+Unsere Vorlagen und Skripte helfen dir dabei, sofort loszulegen. Und keine Sorge: Wir begleiten dich Schritt für Schritt – mit einem klaren Leitfaden und einer **aktiven Signal-Gruppe**, in der alle mit unserem System arbeitenden Teams und Personen miteinander im Austausch sind.
 
-## Was können wir dir bieten?
+## Warum unser System?
 
-Eine kleine Übersicht über Vorteile, die unser System mit sich bringt. Wenn dir davon nicht alles was sagt, ist das gar nicht schlimm.
+### Unsere Vorteile auf einen Blick:
 
--   Du kannst Liederbücher mit Noten und ohne Noten erstellen. Du kannst außerdem entscheiden, ob du Akkorde über den Strophen haben möchtest oder nicht.
+-   **Flexibel:** Liederbücher mit oder ohne Noten, mit oder ohne Akkorde über den Strophen, A5, B6, A6 oder welche Layout-Wünsche auch immer – du entscheidest. Auch verschiedene Varianten eines Liedes sind problemlos abbildbar.
 
--   Du benötigst dafür keine kostenpflichtigen Programme. Alle Programme, die wir nutzen, sind Free and Open Source Software.
+-   **Kostenlos & frei:** Wir nutzen ausschließlich **Free and Open Source Software** – du benötigst keine teuren Extraprogramme.
 
--   Du kannst davon profitieren, dass wir in unserem Liederpool schon etliche Lieder gesetzt haben.
+-   **Großer Pool an Liedern:** Über **550 Lieder** sind bereits im Liederpool gesetzt (Stand August 2025).
 
--   Durch unsere Struktur profitierst du von Fehlerkorrekturen anderer Liederbuchprojekte.
+-   **Gemeinschaftliche Qualität:** Durch ein Review-System ist unser System weniger fehleranfällig und noch besser: Fehlerkorrekturen und Verbesserungen kommen allen Projekten zugute.
 
--   LilyPond ist ein codebasiertes Notensatzprogramm, das bedeutet, man kann sehr gut ein Versionierungs- und Nachverfolgungssystem mit Git nutzen.
+-   **Versionskontrolle:** Dank Git kannst du Änderungen nachverfolgen, ältere Versionen wiederherstellen und problemlos im Team arbeiten.
 
-## Wer „wir“ sind
+-   **Schnelle Hilfe:** Mit unserer Signal-Gruppe stehst du in direktem Kontakt mit allen Menschen, die mit unserem System arbeiten. Falls es Probleme gibt oder Hilfe gefragt ist, findet sich schnell jemand, der\*die dich unterstützt.
 
-Wir sind ein Zusammenschluss an verschiedenen Liederbuchprojekten, die alle LilyPond nutzen. Irgendwann kamen wir an den Punkt, dass es cool wäre, wenn man mehr Synergien untereinander hätte. Daraufhin haben wir das Konzept unseres Liederpools entwickelt, in dem sich nur der musikalische Inhalt eines Liedes befindet, den man dann in seinem Liederbuchprojekt spezifisch layouten kann. Das hat zwei riesige Vorteile: Einerseits kann man von dem profitieren, was andere schon gesetzt haben, und andererseits kann man von den Fehlerkorrekturen anderer profitieren.
+## Wer wir sind
 
-## Kleiner Überblick darüber, was du auf dieser Website alles findest
+Wir sind ein **Zusammenschluss mehrere Liederbuchprojekte**, die alle mit LilyPond arbeiten. Irgendwann wurde uns klar: **Gemeinsam geht es deutlich besser**. So entstand die Idee des Liederpools – einer zentralen Sammlung, in der nur der **musikalische Inhalt** eines Liedes liegt. Aus dieser Sammlung kann jedes Projekt sein eigenes Layout erstellen.
 
-Diese Website besteht aus grob zwei Teilen:
+Das hat zwei große **Vorteile**:
 
--   Einem How-To-Liederbuch, das dir bei der Einrichtung von LilyPond, Frescobaldi und Git hilft. Außerdem wird darin erklärt, wie du dein erstes Lied setzt, wie du es in unseren Pool einbringen kannst und natürlich, wie du ein eigenes Liederbuch anfertigst.
+1.  Du profitierst von bereits gesetzten Liedern anderer.
+2.  Fehlerkorrekturen und Verbesserungen werden automatisch geteilt.
 
--   Einer möglichst vollständigen Dokumentation unseres Systems, einschließlich der selbstgeschriebenen Skripte. Das umfasst:
+## Was dich hier erwartet
 
-    -   Standards für den Liedersatz
+Unsere Website besteht aus zwei Hauptbereichen:
 
-    -   Doku von Metadaten-Angaben
+1.  **How-To Liederbuch**
+    -   Einrichtung von LilyPond, Frescobaldi und Git
 
-    -   Doku von musikalischem Inhalt
+    -   Dein erstes Lied setzen und in den Pool einbringen
 
-    -   Doku vom Lied-Layouten
+    -   Ein eigenes Liederbuch erstellen
+2.  **Dokumentation unseres Systems**
+    -   **Standards** für den Liedsatz
 
-    -   Doku vom Liederbuch-Layouten
+    -   **Metadaten-Dokumentation**
 
-    -   Wie Links als Quelle in die Metadaten eingebunden werden sollen
+    -   Anleitungen für Funktionen im Bereich **musikalischer Inhalt**
 
-    -   Nützliche Lifehacks
+    -   **Layout-Anleitungen** für Lieder und Liederbücher
 
-    -   Eine ausführlichere Einführung in Git
+    -   **Quellenverweise** korrekt einbinden
 
-    -   Doku unseres Review-Prozesses
+    -   Praktische **Lifehacks**
 
-    -   Einführung in Markdown (in Markdown bzw. Quarto ist diese Website geschrieben)
+    -   Ausführliche Einführung in **Git**
 
-So, jetzt genug der langen Vorrede. Los geht’s!
+    -   **Review-Prozess** verstehen
+
+    -   Einführung in **Quarto Markdown** (Basis von dieser Website)
+
+**Genug der Vorrede – los geht’s!**
+
+Schau dir gleich unsere [Einführung](vorbereitung.qmd) an und werde Teil einer wachsenden, offenen Liederbuch-Community.

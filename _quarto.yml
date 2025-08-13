@@ -26,6 +26,8 @@ website:
         href: doku.qmd
       - text: "Changelog"
         href: changelog.qmd
+      - text: "Über uns"
+        href: about.qmd
   sidebar: 
     - id: vorbereitung
       title: "Vorbereitung"
@@ -63,11 +65,13 @@ website:
                 - liedsatz_standards.qmd
                 - metadaten.qmd
                 - musikalischer_inhalt.qmd
+                - tags.qmd
                 - liedlayout_doku.qmd
                 - liederbuch_layout.qmd
                 - quellen.qmd
                 - quellenlinks.qmd
                 - lifehacks.qmd
+                - generalbassnotation.qmd
             - section: "Review-Prozess"
               contents:
                 - git_verstehen.qmd
@@ -80,11 +84,13 @@ website:
     #icon: exclamation-triangle-fill # Warning
     #icon: check-square-fill #success
     icon: info-circle-fill #info
-    dismissable: false
-    content: "Wir haben die Dokumentation am 04.05.2025 aktualisiert. Alles neue erfährst du im [Changelog](changelog/2025-05-04_changelog.qmd)."
+    dismissable: true
+    content: "Wir haben die Dokumentation am 12.08.2025 aktualisiert. Alles neue erfährst du im [Changelog](/changelog/2025-08-12_changelog.qmd)."
     type: info
     position: below-navbar
-  page-footer: "Gebaut mit [Quarto](https://quarto.org)"
+  page-footer:
+    center: "Made with [Quarto](https://quarto.org)."
+    right: "[Über uns](about.qmd)"
 
 bibliography: references.bib
 lang: de
@@ -106,8 +112,9 @@ format:
       sidebar-width: 250px
       body-width: 900px
       margin-width: 300px
+    link-external-newwindow: true
 
 freeze: true
 
 editor: visual
-
+pagetitle: "{{< meta title >}} | Das Liederpool-Projekt"
