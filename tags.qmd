@@ -1,0 +1,75 @@
+---
+title: "How To Tag"
+format: html
+---
+
+Wir nutzen Tags für verschiedene Fälle. Einerseits, um bestimmte Situationen, die mit unserem System vorkommen, zu lösen. Andererseits, um Varianten abzubilden. Damit der Einstieg in diese Materie einfacher ist, gibt es dieses How To, obwohl eigentlich alles auch in der LilyPond-Doku steht.
+
+## Wie funktionieren Tags?
+
+Grundsätzlich handelt es sich bei Tags um Markierungen eines bestimmten Inhalts, zum Beispiel: `\tag #'buendisch { es }`. Der übergebene Inhalt, der innerhalb der geschweiften Klammern steht, wird markiert mit dem Tag `buendisch`. Das heißt das Wort `es`[^1] wird bei diesem Code mit dem Tag `buendisch` markiert.
+
+[^1]: Wir befinden uns übrigens in einem realen Beispiel. Im „Frühlingslied“ („Wir warn im letzten Herbst“) kommt in der bündischen Version das Wort „es“ im Refrain zusätzlich vor.
+
+So weit, so gut. Ohne weiteres Eingreifen in den Code würde sich nichts verändern – grundsätzlich verarbeitet LilyPond den Code immer inklusive aller Tags. Für die konkrete Anwendung gibt es dann zwei verschiedene Befehle:
+
+-   `removeWithTag`
+
+    Wie der Name schon sagt, entfernt diese Funktion alle übergebenen Tags. Wenn ich also den Befehl `\removeWithTag #'buendisch` im Music-Teil abrufe, dann wird jeder Teil entfernt, der mit dem Tag `buendisch` markiert ist.
+
+-   `keepWithTag`
+
+    Diese Funktion nimmt alle übergebenen Tags *und* entfernt darüber hinaus alle übrigen Tags. Wenn ich also den Befehl `\keepWithTag #'original` im Music-Teil nutze, dann bleibt jeder Code erhalten, der nicht getaggt ist *und* der mit dem Tag `original` markiert ist. *Wichtig*: Es werden alle Teile entfernt, die mit anderen Tags markiert sind, also auch die Teile, die mit dem Tag `buendisch` markiert sind.
+
+::: callout-important
+Wichtig: Die beiden Befehle haben immer nur Auswirkungen auf getaggte Bereiche. Code, der nicht getaggt ist, bleibt **immer** von diesen Befehlen verschont.
+:::
+
+Ok, das ist schon etwas komplexer. Deswegen folgt hier eine möglichst einfache Anwendung aus der Praxis.
+
+``` lilypond
+MUSIC = {
+  \keepWithTag #'multiVerse
+  %\keepWithTag #'firstVerse
+  <<
+    \songChords
+    \new ChoirStaff = "firstStaff"
+    <<
+      \new Voice = "firstVoice" { \melodyVoice }
+      \addlyrics { \firstVerse }
+      \addlyrics { \tag #'multiVerse \secondVerse }
+      \addlyrics { \tag #'multiVerse \thirdVerse }
+      \addlyrics { \tag #'multiVerse \fourthVerse }
+      \addlyrics { \tag #'multiVerse \fifthVerse }
+    >>
+  >>
+}
+```
+
+Was passiert da im Code? Das zweite `keepWithTag` ist auskommentiert, deswegen können wir das ignorieren. Dem ersten `keepWithTag` wird der Tag `multiVerse` übergeben. Das bedeutet, alle Teile, die markiert sind, aber nicht mit dem Tag `multiVerse`, werden ignoriert. Wenn wir davon ausgehen, dass es nur die beiden Tags `multiVerse` und `firstVerse` gibt, bleiben also alle Teile erhalten, die
+
+-   nicht getaggt sind und
+
+-   mit dem Tag `multiVerse` markiert sind.
+
+Alle Teile, die mit dem Tag `firstVerse` markiert sind, werden dagegen rausgeschmissen.
+
+Klar soweit?
+
+Dann wird’s jetzt etwas komplizierter…
+
+## Wie Tags übergeben werden können
+
+Es gibt verschiedene Arten, wie Tags übergeben werden können. Im Wesentlichen hängt das mit Scheme, der Programmiersprache, in der LilyPond geschrieben ist, zusammen. Doch worüber sprechen wir hier gerade? Es geht darum, wie wir den Befehlen `removeWithTag` und `keepWithTag` sagen, welche Tags sie verarbeiten sollen. Dafür gibt es verschiedene Methoden:
+
+-   `\keepWithTag #'buendisch`
+
+    Diese haben wir schon kennengelernt. Es kann immer nur ein Tag übergeben werden. Faktisch handelt es sich um ein Element, was dem Befehl übergeben wird.
+
+-   `\keepWithTag #'(buendisch firstVerse)`
+
+    Diese Form ist auch sehr intuitiv. Der einzige Unterschied sind die Klammern um die verschiedenen Tags. Faktisch handelt es sich um eine Liste von Elementen, die dem Befehl übergeben wird. Dementsprechend können auch mehrere Tags übergeben werden (siehe Beispiel), aber auch nur ein einzelner: `\keepWithTag #'(buendisch)`.
+
+-   `` \keepWithTag #`(,usedTag firstVerse) ``
+
+    Diese Form ist quasi die komplizierteste Form. Der Backtick sorgt dafür, dass Scheme die Elemente der Liste nicht mehr nur als einfache Elemente behandelt, sondern sie auch als Variablen behandeln kann. In unserem Beispiel ist `buendisch` einfach der Name des Tags, also ein Element. `usedTag` dagegen ist kein Element, sondern eine Variable, die wiederum ein Element enthält, z.B. `usedTag = #'buendisch`. Wofür das gut ist, wird an anderer Stelle erklärt.
