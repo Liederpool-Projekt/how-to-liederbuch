@@ -12,4 +12,4 @@ Es gibt wieder ein Doku-Update:
 
 -   Das [Autor\*innensystem](../metadaten.qmd#sec-autoren) wird jetzt korrekt beschrieben für den Fall, dass die ID nicht gefunden wird.
 
--   In Kürze ist die Anleitung für den [Generalbass](generalbass.qmd) fertig.
+-   In Kürze ist die Anleitung für den [Generalbass](../generalbass.qmd) fertig.

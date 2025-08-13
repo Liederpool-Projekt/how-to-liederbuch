@@ -1,0 +1,11 @@
+---
+title: "Doku-Changelog vom 05.06.2025"
+date: 2025-06-05
+categories: [Doku]
+format: html
+description: ""
+---
+
+Es gibt wieder ein Doku-Update:
+
+-   Der Anfang eines [How-To-Tags](../tags.qmd) ist online.

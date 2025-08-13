@@ -1,0 +1,9 @@
+---
+title: "Upate vom 12.08.2025"
+date: 2025-08-12
+categories: [Update]
+format: html
+description: ""
+---
+
+Mit der neuesten Entwicklerversion, LilyPond 2.25.27 ist tux’ neues Feature jetzt zu haben. `\remove-with-tag` und Co. kann man jetzt auch in Markups verwenden. Die Benennung ist allerdings im Kebab-Case, also mit Minus zwischen den Wortbestandteilen: `remove-with-tag`, `keep-with-tag`, `push-to-tag` etc. Das Feature macht den Umgang mit Tags in den Strophen deutlich leichter.

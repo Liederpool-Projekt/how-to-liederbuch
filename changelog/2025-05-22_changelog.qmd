@@ -1,0 +1,11 @@
+---
+title: "Doku-Changelog vom 22.05.2025"
+date: 2025-05-22
+categories: [Doku]
+format: html
+description: ""
+---
+
+Es gibt wieder ein Doku-Update:
+
+-   [Seitenumbrüche](../liedlayout_doku.qmd#sec-pagebreaks) im Markup-Teil sind jetzt (frisch!) möglich.

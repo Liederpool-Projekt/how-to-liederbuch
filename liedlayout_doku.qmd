@@ -190,7 +190,7 @@ TEXT = \markuplist {
 
 ## Zeilenabstand (Abstand innerhalb der Strophen)
 
-Der Zeilenabstand, also der Abstand der Verse innerhalb der Strophen zueinander, kann mit dem Befehl `\override #'(intraverse-vspace . 0.3)` beeinflusst werden. Der Standardwert beträgt `0`. Werte können auch negativ sein. Der Befehl muss vor die Group-Verses-Umgebung geschrieben werden.
+Der Zeilenabstand, also der Abstand der Verse innerhalb der Strophen zueinander, kann mit dem Befehl `\override #'(intraverse-vspace . 0.3)` beeinflusst werden. Der Standardwert beträgt `0`. Werte können auch negativ sein.
 
 ``` lilypond
 TEXT = \markuplist {
@@ -200,6 +200,27 @@ TEXT = \markuplist {
   }
 }
 ```
+
+::: callout-note
+Der Befehl sollte in der Regel immer auf alle Strophen angewendet werden und somit z.B. vor einem `group-verses`-Befehl stehen.
+:::
+
+## Abstand der Strophen zu den (darüberstehenden) Akkorden {#sec-verse-chord}
+
+Der Abstand zwischen einer Strophe und dem dazugehörigen, darüberstehenden Akkord kann mit dem Befehl `\override #'(verse-text-chord-distance . 0.3)` beeinflusst werden.
+
+``` lilypond
+TEXT = \markuplist {
+  \override #'(verse-text-chord-distance . 0.3)
+  \group-verses {
+    %…
+  }
+}
+```
+
+::: callout-note
+Der Befehl sollte in der Regel immer auf alle Strophen angewendet werden und somit z.B. vor einem `group-verses`-Befehl stehen.
+:::
 
 ## Spalten
 
@@ -265,6 +286,53 @@ TEXT = \markuplist {
   }
 }
 ```
+
+## Zeileneinzüge der Strophen anpassen {#sec-line-indents}
+
+Zeileneinzüge, also der Abstand einer einzelnen Strophenzeile zum linken Seitenrand, können ebenfalls angepasst werden. Dazu gibt es den Befehl `\override #'(line-indents . (0 5 10))`. Der Befehl definiert den linken Zeileneinzug für jede Zeile. Im Beispiel also die erste Zeile keinen Einzug, die zweite 5, die dritte 10 und alle folgenden 0.
+
+``` lilypond
+\override #'(line-indents . (0 5 10))
+\chordlyrics \firstVerse 
+```
+
+## Veränderung der Strophengröße {#sec-verse-size}
+
+Wenn nur die Ausgabegröße der Strophen verringert werden soll, nicht aber der gesamte Satz (also Noten und Strophen), kann das wie folgt über die Anpassung der `size` geschehen:
+
+``` lilypond
+verse-layout = \layout {
+  \LAYOUT
+  size = 15
+}
+TEXT = \markuplist {
+  \override #`(verselayout . ,verse-layout)
+  \group-verses {
+    \chordlyrics \firstVerse
+  }
+}
+```
+
+## Seitenumbrüche {#sec-pagebreaks}
+
+Seitenumbrüche sind etwas kompliziert, aber es gibt eine Möglichkeit, die im Layout einfach zu ermöglichen:
+
+``` lilypond
+pageOne = \markuplist { 
+  \group-verses {
+    \chordlyrics \firstVerse
+  } 
+}
+pageTwo = \markup { 
+  \group-verses {
+    \chordlyrics \secondVerse
+  }
+}
+
+TEXT_PAGES = #(list pageOne pageTwo)
+```
+
+Was passiert da? Normalerweise nutzen wir die Variable `TEXT` und da kommt das ganze Markup rein. Alternativ dazu kann man aber auch `TEXT_PAGES` setzen. `TEXT_PAGES` nimmt eine Liste (!) an Markups oder Markup-Listen (siehe Beispiel) entgegen und jedes Element der Liste bekommt eine eigene Seite (außer die erste, die direkt unter die Noten gesetzt wird).
 
 # Layout von Inline-Scores
 

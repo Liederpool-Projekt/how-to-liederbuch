@@ -1,0 +1,21 @@
+---
+title: "Doku-Changelog vom 13.05.2025"
+date: 2025-05-13
+categories: [Doku]
+format: html
+description: ""
+---
+
+Es gibt wieder ein Doku-Update:
+
+-   Jetzt wird das [Verhalten von Untertiteln](../metadaten.qmd#sec-subtitle) erklärt.
+
+-   Wie auf Quellen verwiesen wird, steht jetzt [hier](../metadaten.qmd#sec-quellenverweise).
+
+-   Jetzt können auch Zeilen in den Strophen eingerückt werden. Wie das geht, steht [hier](../liedlayout_doku.qmd#sec-line-indents).
+
+-   Wie die Strophengröße verändert werden kann, steht [hier](../liedlayout_doku.qmd#sec-verse-size).
+
+-   Und [hier](../musikalischer_inhalt.qmd#sec-coda) werden jetzt Codas erklärt.
+
+-   Den Standards wurden [Leitlinien zur Dateistruktur](../liedsatz_standards.qmd#sec-dateistruktur) beigefügt.

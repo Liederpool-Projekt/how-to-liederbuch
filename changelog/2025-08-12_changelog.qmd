@@ -1,0 +1,19 @@
+---
+title: "Doku-Changelog vom 12.08.2025"
+date: 2025-08-12
+categories: [Doku]
+format: html
+description: ""
+---
+
+Es gibt wieder ein Doku-Update. Neu ist diesmal:
+
+-   Ein [Leitfaden zum Umgang mit dem Generalbass und dem Spezialfall „olka-Bass“](../generalbassnotation.qmd).
+
+-   [Liedausgabe automatisieren](../liederbuecher_machen.qmd#sec-lieder).
+
+-   [Cues sind immer getaggt](../musikalischer_inhalt.qmd#sec-einsaetze).
+
+-   [Abstand Strophen-Akkorde](../liedlayout_doku.qmd#sec-verse-chord).
+
+-   Für [Zwischenrufe](musikalischer_inhalt.qmd#sec-zwischenruf) gibt’s jetzt einen einheitlichen Befehl.

@@ -9,13 +9,25 @@ Metadaten werden grundsätzlich in der Variable `basicSongInfo` gespeichert. All
 
 Der Titel wird in der Liederpool-Datei mit der Variable `title = ""` angegeben, wobei innerhalb der Anführungszeichen der Titel steht. Als Titel sollte immer der „Originaltitel“ genutzt werden. Dieser kann in der Layout-Datei, sofern gewünscht, einfach überschrieben werden.
 
+## Untertitel {#sec-subtitle}
+
+Untertitel können mit der Variable `subtitle = ""` gesetzt werden. Sie werden nicht im Inhaltsverzeichnis ausgegeben. Wenn es sich um einen Alternativtitel handelt, der auch im Inhaltsverzeichnis angegeben werden soll, so muss der Titel nochmal als `alttitle` (siehe unten) gesetzt sein.
+
 ## Liedanfang
 
 Der Liedanfang wird mit `starttext = ""` angegeben, wobei innerhalb der Anführungszeichen der Anfang des Liedes steht. Ist der Liedanfang gleich dem Titel, muss er nicht nochmal neu angegeben werden.
 
+::: callout-caution
+Wenn der Liedanfang gleich dem Liedtitel ist, muss er auskommentiert werden, da sonst die Variable – egal ob leer und gleich – ins Inhaltsverzeichnis eingepflegt wird.
+:::
+
 ## Alternative Titel
 
 Alternative Titel können mittels der Variable `alttitle = #'("")` angegeben werden, wobei innerhalb der Anführungszeichen der Alternativtitel benannt wird. Wenn es mehrere Alternativtitel gibt einfach in Anführungszeichen daneben, zum Beispiel: `alttitle = #'("Alttitle A" "Alttitle B" "Alttitle C")`.
+
+::: callout-caution
+Wenn es keine Alternativtitel gibt, muss die Variable unbedingt auskommentiert werden, da sie sonst – egal ob leer oder mit `Alternativtitel` (wie in der Vorlage) bestückt – ins Inhaltsverzeichnis eingepflegt wird.
+:::
 
 ## Autor\*innenangaben {#sec-autoren}
 
@@ -163,3 +175,49 @@ Innerhalb der `infotext`, `pronunciation` und `translation` Variablen kann die M
 ## Quellen
 
 Für uns ist es sehr wichtig zu wissen, wo unsere Notationen herkommen und auf welche Quellen wir uns stützen. Deswegen ist es obligatorisch, diese beim Setzen eines Liedes immer anzugeben. Beim Verweis auf Internetlinks, sollte die Seite in der Regel über das Internet Archive archiviert werden. Wie das geht, steht [hier](quellenlinks.qmd). Beim Verweis auf Liederbücher sollte die YAML-Datei `sources.yml` im `data`-Ordner des Liederpool-Repos genutzt werden, um auf die jeweilige ID zu verweisen. Damit sollen Liederbücher gut identifizierbar sein. Seitenangaben sind auch gerne gesehen. Wenn du selbst den Satz notiert hast, schreib deinen Namen dazu, zum Beispiel: „Satz von žuk“. Auch die Information, ob der Satz mit den Autor\*innen abgestimmt wurde, ist relevant und somit anzugeben.
+
+### Verweise auf Liederbücher {#sec-quellenverweise}
+
+In der Datei `sources.yml` werden Metadaten zu Liederbüchern gesammelt. Dabei funktioniert der Verweis wie auch beim Autor\*innensystem über IDs (für die Literaturgeeks: Siglen), die folgender Benennungsstruktur folgen sollten:
+
+-   Grundsätzlich folgt die Benennung dem Titel des Liederbuchs.
+
+-   Der Titel wird entweder abgekürzt oder verschlagwortet.
+
+    -   Beispiel für Abkürzung: „Liederblätter deutscher Jugend 54“ wird zu `ldj54`.
+
+    -   Beispiel für Verschlagwortung: „Lieder der Rotte Brabant“ wird zu `rotte-brabant`. Oder: „Liederblätter deutscher Jugend – Die Fahrt“ wird zu `ldj-fahrt`. „Die 100 schönsten Lieder von Fredrik Vahle“ wird zu `vahle-100`.
+
+-   Gehören Liederbücher zu einer Reihe, sollte die Reihe in der ID zu Beginn genannt werden.
+
+    -   Beispiel: „Liederblätter deutscher Jugend“-Reihe wird zu `ldj-…`.
+
+    -   Beispiel: „Kunterbund“-Reihe wird zu `kb-…`
+
+Die einzelnen Variablen, also Eigenschaften der Liederbücher folgen den [BibTeX-Konventionen](https://de.wikipedia.org/wiki/BibTeX), das ist praktisch, da die yml dann einfach in BibTeX konvertierbar ist, was ein etabliertes und standardisiertes Format darstellt. Für uns sind vor allem folgende Eigenschaften wichtig:
+
+-   `title`: Titel
+
+-   `subtitle`: Untertitel
+
+-   `author`: Autor\*innen werden nur genannt, wenn ausschließlich ihre eigenen Lieder im Liederbuch veröffentlicht wurden.
+
+-   `author-id`: Autor\*innen-IDs von unserer `authors.yml`.
+
+-   `editor`: Herausgeber\*innen.
+
+-   `location`: Ort der Publikation (orientiert sich am Verlag).
+
+-   `publisher`: Der veröffentlichende Verlag. Teilweise gibt es Überschneidungen mit `editor`, wenn z.B. der VCP ein Liederbuch herausgegeben und veröffentlicht hat. Der Begriff „Verlag“ kann gerne weggelassen werden.
+
+-   `date`: Veröffentlichungsjahr.
+
+-   `edition`: Auflagennummer (nur wenn nicht die erste Auflage).[^1]
+
+-   `comment`: Kommentar – was noch gut zu wissen wäre.
+
+-   `lang`: Die Sprache des Werkes. Muss nur angegeben werden, wenn es sich nicht um ein deutsches Werk handelt. Dafür bitte die [ISO-Sprachcodes](https://de.wikipedia.org/wiki/Liste_der_ISO-639-Sprachcodes) verwenden.
+
+-   `isbn`: Die ISBN sollte ebenfalls angegeben werden, wenn vorhanden.
+
+[^1]: Alternativ kann auch eine „Lizenzausgabe für …“ als Eintrag genutzt werden, falls dieser Fall gegeben ist.

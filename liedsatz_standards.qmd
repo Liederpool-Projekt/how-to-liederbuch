@@ -13,6 +13,18 @@ Die Dateinamen-Benennung folgt dem Prinzip: `lied_anfang_(lied_name)`. Bitte bea
 
 Ein Beispiel aus der Praxis: `hast_du_den_staubigen_(der_meilenorden)`
 
+## Struktur der Datei {#sec-dateistruktur}
+
+Damit es möglichst einfach ist, mit dem Liederpool zu arbeiten und damit alles auch funktioniert, gibt es ein paar Aspekte, die wichtig sind, wenn du ein Lied einbringst:
+
+-   Bitte rücke Code korrekt ein. Das erleichtert die Übersicht enorm. Du kannst dich an unserer Vorlagendatei im Liederpool orientieren oder Frescobaldi diesen Job für dich machen lassen. Dazu in die Einstellungen von Frescobaldi -\> Allgemeine Einstellungen -\> Im Kasten den Reiter Saving und den Haken bei „Format on save“ setzen.
+
+-   Bitte grundsätzlich keine Layout-Befehle in die Notenvariablen setzen. Das führt zu gewissen Unflexibilitäten, weil das Layout dann nicht überschrieben werden kann, ohne die Noten zu überschreiben. Damit wären die Vorteile des Liederpools dahin. Deswegen: Layout-Befehle wie `\voiceOne`, `\break` etc. *immer* in den `MUSIC`-Teil oder zumindest die `\melodyVoice`-Variable (wobei es natürlich Ausnahmen gibt).
+
+-   Wenn du Variablen im Header (z. B. `year_melody`) nicht füllen kannst, dann lösch sie nicht raus. Grundsätzlich haben wir den Anspruch, Metadaten wie diese füllen zu wollen und man hat das mehr im Kopf, wenn da noch etwas steht und denkt sich vielleicht, da recherchiere ich jetzt nochmal.
+
+-   Bitte benenne deine Variablen und Tags ähnlich wie die im Liederpool. Das hat den Vorteil, dass man sich nicht immer an neue Variablen gewöhnen muss und dadurch ggf. schneller die Struktur des Stückes checkt. Du kannst dich gern an der Vorlage und dem existierenden Material orientieren.
+
 # Text
 
 ## Apostrophe

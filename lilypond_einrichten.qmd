@@ -5,6 +5,10 @@ format: html
 
 LilyPond ist die Software, die wir zum Noten setzen benutzen. Als erstes müssen wir LilyPond bei dir installieren.
 
+::: callout-note
+In neueren Frescobaldi-Versionen kann LilyPond direkt in Frescobaldi (`Einstellungen/LilyPond`, dort `Zu benutzende LilyPond-Versionen`) installiert werden. Bitte nutze mindestens die Entwicklerversion `2.25.27`, damit alle Skripte und Dateien im Liederpool funktionieren.
+:::
+
 ## LilyPond installieren
 
 1.  Gehe auf <https://lilypond.org/> und wähle unter `Downloads` die neueste LilyPond-Version. Grundsätzlich ist immer die stabile Version zu bevorzugen (alle geraden Zahlen, z.B. `2.24`). Unser System funktioniert aber (unter Windows) erst ab der Version `2.25.24`, das ist eine Entwicklerversion (zu erkennen an der ungeraden `25`).

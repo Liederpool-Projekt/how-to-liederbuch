@@ -98,9 +98,20 @@ Wichtig: Wenn in einem `\bookpart` kein `\markup` oder eine `\markuplist` aktiv 
 
 Wenn du ein Vorwort erzeugen möchtest, kannst du das zum Beispiel mit diesem Bookpart machen. Passe einfach alles nach deinen Wünschen an. Mit `\override #'(font-name . "Schriftname")` änderst du die Schriftart, mit `\fontsize` die Schriftgröße. Wichtig ist, dass du irgendwo in deinem Liederbuch (in einem Bookpart) den Befehl `\markuplist { \embed-category-images }` übergibst, denn der stellt sicher, dass die Kategoriebildchen auch reingeladen werden.
 
-### Die Lied-Ausgabe
+### Die Lied-Ausgabe {#sec-lieder}
 
 Mit dem nächsten Befehl wird die Lied-Ausgabe bewirkt: `\songs`.
+
+::: callout-tip
+Alle sich im Liederverzeichnis befindenden Lieder können mit folgendem Code inkludiert werden:
+
+``` lilypond
+% alle Lieder auf einmal reinhaun:
+#(for-each (lambda (song) (includeSong song)) (sort-list (files-in-directory songPath) string-ci<?))
+```
+
+Der Befehl kann an die Stelle geschrieben werden, wo sonst die einzelnen Lieder referenziert werden würden.
+:::
 
 ### Kategorienverzeichnis {#sec-kategorienverzeichnis}
 
