@@ -1,0 +1,34 @@
+---
+title: "Generalbassnotation"
+format: html
+---
+
+In manchen Liederbüchern werden Akkorde nicht in der heute üblichen Schreibweise, sondern im Generalbass notiert. Als Hilfestellung für die Übertragung in das Akkordsymbol-System, das wir im Liederpool standardmäßig verwenden, soll dieser Leitfaden dienen. Er beschäftigt sich auch, mit der etwas spezielleren Notation, die olka in seinen Liederbüchern verwendet.
+
+## Grundsätze der Generalbassnotation
+
+Grundsätzlich ist der Generalbass so aufgebaut, dass der Akkord ausgehend vom Basston nach der Anleitung der Ziffern aufgebaut wird. Dabei ist die Basis der Grunddreiklang, bestehend aus Grundton, Terz (3), Quinte (5). Das ist quasi der Standard-Akkord, der wird als „gegeben“ vorausgesetzt. Das heißt, nur *Abweichungen* von diesem Standard werden angegeben. Dabei gelten einige Regeln:
+
+-   Eine Sexte ersetzt immer die Quinte.
+
+-   Eine Quarte ersetzt immer die Terz.
+
+-   Eine Sekunde bedeutet immer Sekunde, Quarte, Sexte.
+
+Alles darüber hinaus wird ergänzend gespielt. Mehr dazu in der [Wikipedia](https://de.wikipedia.org/wiki/Generalbass#Typische_Dreikl%C3%A4nge). Als kleine Hilfestellung soll an dieser Stelle nur die folgende Abbildung dienen.
+
+![Die Grafik ist wie folgt zu lesen: Jeder Takt bildet einen Akkord ab in verschiedenen Schreibweisen. *Über der Notenzeile* ist das Akkordsymbol zu sehen. In der zweiten Zeile ist für die Notation im Liederpool das rechte Akkordsymbol zu benutzen. *In der Notenzeile* sind die Töne der jeweils oben drüberstehenden Akkorde abgebildet. *Unter der Notenzeile* sind verschiedene Schreibweisen des Generalbass dargestellt, die einander entsprechen (natürlich immer nur innerhalb eines Taktes).](images/generalbass.svg)
+
+::: callout-important
+Zwar wird der Akkord vom Basston aus gebildet, allerdings ist daran nicht erkennbar, ob der Basston auch der Grundton ist. Bei den Umkehrungen eines Akkords ist dies nämlich nicht der Fall (Beispiel 2 und 3 -\> 6 und 6/4)
+:::
+
+Hin und wieder kann es vorkommen, dass auch Vorhalte notiert werden, also ein Ton sich auflöst zu einem „normalen“ Akkordton. Zum Beispiel könnte aus 6/3 dann 5/3 werden. In dem Falle wird dann 5/3 notiert, obwohl es, da Standard, normalerweise nicht notiert wird.
+
+## Spezielle Notation bei olka – Der „olka-Bass“
+
+In seinen Liederbüchern verwendet olka den Generalbass in einer sehr verwirrenden Weise. Interpretiert man ihn so, wie man es aus den Konventionen gewohnt ist, ergeben die Akkorde keinen Sinn. Wir vermuten deshalb, dass olka konsistent ein anderes Schema zur Notation des Generalbasses nutzt. Dieses funktioniert nach unseren Annahmen wie folgt:
+
+Olka schreibt jeweils den Ziel-Akkord (z.B. in H6/3 das H-Dur) und denkt den Generalbass dann quasi rückwärts. Wir wissen, 6/3 ist die Generalbass-Schreibweise für die erste Umkehrung, also ist der gemeinte Akkord ein H-Dur in der ersten Umkehrung, also ein H/Dis. Das ist etwas wild und unüblich – aber die sich daraus ergebenden Akkorde ergeben deutlich mehr Sinn (bzw. überhaupt Sinn) als wenn man annähme, dass die olka-Bass-Akkorde in Generalbass-Manier vom angegebenen Ton aus aufgebaut werden würden (im Beispiel H - D - G, da tonartimmanente Töne in E-Moll).
+
+![Links hdg (Generalbass, keine gemeinsamen Töne mit der Stimme), rechts disfish (olka-Bass, ein gemeinsamer Ton mit der Stimme).](images/generalbass_beispiel.svg)
