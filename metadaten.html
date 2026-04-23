@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Metadaten – How To Liederbuch – Das Liederpool-Projekt</title>
+<title>Metadaten | Das Liederpool-Projekt – How To Liederbuch – Das Liederpool-Projekt</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -111,7 +111,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<meta property="og:title" content="Metadaten – How To Liederbuch – Das Liederpool-Projekt">
+<meta property="og:title" content="Metadaten | Das Liederpool-Projekt">
 <meta property="og:description" content="Wir sind das Liederpool-Projekt und wir machen Liederbücher. Auf dieser Website wollen wir eine möglichst vollständige Dokumentation unseres Systems sowie Tutorials und How-To’s bereitstellen, um den Einstieg und die Arbeit mit unserem System zu erleichtern.">
 <meta property="og:image" content="https://apfelpfluecker.github.io/how-to-liederbuch/images/autor-innen.svg">
 <meta property="og:site_name" content="How-To Liederbuch – Das Liederpool-Projekt">
@@ -338,9 +338,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         </a>
     </div>
   </nav>
-  <div id="quarto-announcement" data-announcement-id="92fae8554a3911e42df03997f5a633be" class="alert alert-info hidden"><i class="bi bi-info-circle-fill quarto-announcement-icon"></i><div class="quarto-announcement-content">
-<p>Wir haben die Dokumentation am 12.08.2025 aktualisiert. Alles neue erfährst du im <a href="./changelog/2025-08-12_changelog.html">Changelog</a>.</p>
-</div></div>
+  <div id="quarto-announcement" data-announcement-id="b4c687ddfd9c6fa7ce15b069b615f586" class="alert alert-info hidden"><i class="bi bi-exclamation-triangle-fill quarto-announcement-icon"></i><div class="quarto-announcement-content">
+<p>ACHTUNG! DIE DOKU IST UMGEZOGEN AUF <a href="https://liederpool.notenbund.de">LIEDERPOOL.NOTENBUND.DE</a> UND WIRD HIER NICHT MEHR AKTUALISIERT. BITTE FOLGT DEM LINK, UM DIE NEUE DOKU ZU FINDEN.</p>
+</div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
@@ -854,6 +854,11 @@ Hinweis
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -1186,11 +1191,11 @@ Hinweis
       &nbsp;
     </div>   
     <div class="nav-footer-center">
-<p>Gebaut mit <a href="https://quarto.org">Quarto</a></p>
+<p>Made with <a href="https://quarto.org">Quarto</a>.</p>
 </div>
     <div class="nav-footer-right">
-      &nbsp;
-    </div>
+<p>Über uns</p>
+</div>
   </div>
 </footer>
 
